@@ -21,7 +21,7 @@ def relative(path,root=ROOT):
     resolved=Path(path).resolve()
     if not resolved.is_relative_to(root.resolve()):
         raise ValueError('冻结模型/报告路径必须在项目目录内')
-    return str(resolved.relative_to(root.resolve()))
+    return resolved.relative_to(root.resolve()).as_posix()
 
 def freeze(folders,csv_root,report_json,output):
     audited=audit(folders,csv_root)
