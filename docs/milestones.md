@@ -19,3 +19,7 @@
 ## M4 — 2026-10-04
 
 独立训练入口复用原随机种子/调度器和官方模型，使用 PyG Batch、AdamW 与 clip_grad_norm。记录源码哈希、数据哈希、配对、配置、初始化、训练权重、预算、最佳模型和验证预测。两任务×8组×3轮 smoke 完成，所有预测有限且非常量；重载最佳 checkpoint 与最低验证 MSE 一致，预测重算一致。共享编码器及兼容 head 初值一致，三种 Loss 组完整模型初值一致。8 项测试通过。检查第一版 smoke 后补齐兼容 head 初始化并固定 attention math backend；仅 smoke_20261004_verified 是当前验收证据，第一版不作模型比较。源码最终补充 code_dirty/source manifest 身份字段，未改变计算行为。未运行完整预算实验或 test。
+
+## M5a — 2026-10-04
+
+冻结首轮24次交互验证矩阵和两份阶段配置；先seed42的8次完整预算稳定性检查，再补43/44。预定资源Go门槛与阴性停止规则已写入 interaction_preregistration.md，先于完整预算训练。此提交是设计冻结，不是训练完成。
