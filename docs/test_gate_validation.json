@@ -1,0 +1,8 @@
+{
+  "contract_tests_passed": 15,
+  "missing_freeze_rejected": true,
+  "changed_checkpoint_rejected": true,
+  "full_validation_freeze_created": false,
+  "actual_test_evaluated": false,
+  "scope": "precondition tests only; real test evaluation pending"
+}
