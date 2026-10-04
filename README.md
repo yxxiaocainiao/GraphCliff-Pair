@@ -2,7 +2,7 @@
 
 基于 GraphCliff 编码器的参考分子差值回归研究项目。逐项验证跨分子 Cross-Attention、FPPool、动态加权 Loss，保留原短长程编码机制。
 
-**状态：独立数据接口及三项模块已实现，8 项契约测试与 16 组真实数据 smoke 已通过；尚无效果结论。**
+**状态：独立数据接口、三项模块与只输入 SMILES 的预测入口已实现，10 项契约测试与 16 组真实数据 smoke 已通过；正式验证正在运行，尚无三项机制的效果结论。**
 
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
@@ -24,6 +24,8 @@ python tools/verify_smoke.py artifacts/my_smoke --report docs/my_smoke_validatio
 将示例数据路径替换为自己的 MoleculeACE CSV 目录，至少包含 smiles/y/split/cliff_mol。输出目录必须全新，拒绝覆盖和静默重用模型。安装采用 editable checkout，因为固定来源和外部源码相对项目根目录加载。
 
 `configs/smoke.json` 是 2 任务×8 组×3 轮的基础检查，每个任务只用 64 个训练查询和 64 个验证查询；参考池仍是完整训练集。它不能用于效果排名。`configs/development.json` 是完整预算候选，正式运行前须冻结阶段配置，不默认启动全部组合。
+
+正式配置为 `configs/interaction_seed42.json`、`interaction_seed43_44.json` 与 `ablation_seed42/43/44.json`；设计见 [交互冻结记录](docs/interaction_preregistration.md) 和 [三机制完整消融](docs/three_mechanism_preregistration.md)。训练按队列串行执行，各阶段审计通过后继续，错误即停止；本机 Windows 入口为 `tools/run_queue.ps1`。共24次交互训练与54次后续消融，是否完成以实际输出和独立审计为准。
 
 实现与权重公式见 [docs/design.md](docs/design.md)，提交记录见 [docs/milestones.md](docs/milestones.md)。公开仓库不包含数据或权重，数据应自行从 [GraphCliff 官方仓库](https://github.com/dmis-lab/GraphCliff) 获取并核对 SHA256。FPPool 通过固定版本下载脚本获取，来源说明见 [docs/sources.json](docs/sources.json)。
 
