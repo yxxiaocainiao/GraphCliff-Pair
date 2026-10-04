@@ -4,6 +4,8 @@
 
 **状态：独立数据接口、三项模块与只输入 SMILES 的预测入口已实现，17 项契约测试与 16 组真实数据 smoke 已通过；正式验证正在运行，尚无三项机制的效果结论。**
 
+首轮两任务三种子24次交互实验已完成并独立审计：[完整验证结果](docs/interaction_three_seed_results.md)。Cross-Attention在两任务上均未超过原GraphCliff或容量匹配的pair MLP，预定额外任务扩展为No-Go；继续完成全部54次已冻结消融，test尚未评估。
+
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
 预测契约：`delta(query, reference) = y_query - y_reference`，`y_hat = y_reference + delta_hat`。参考来自同任务训练集，按结构选择；查询活性不传入模型。

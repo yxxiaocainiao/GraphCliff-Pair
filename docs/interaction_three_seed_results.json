@@ -1,0 +1,798 @@
+{
+  "phase": "interaction",
+  "runs": 24,
+  "summary": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "direct",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "mean": 0.6073953920062504,
+        "sd": 0.01349012756714805,
+        "n": 3
+      },
+      "cliff_rmse": {
+        "mean": 0.6621383978280105,
+        "sd": 0.009713635020505222,
+        "n": 3
+      },
+      "noncliff_rmse": {
+        "mean": 0.5609345277638021,
+        "sd": 0.01758349499331627,
+        "n": 3
+      },
+      "mae": {
+        "mean": 0.44644104563057013,
+        "sd": 0.02220191885224804,
+        "n": 3
+      },
+      "elapsed_seconds": {
+        "mean": 192.82788593333194,
+        "sd": 69.67634828081815,
+        "n": 3
+      },
+      "peak_cuda_mb": {
+        "mean": 389.23974609375,
+        "sd": 8.41946981194727,
+        "n": 3
+      },
+      "morgan_signed_delta_mae": {
+        "mean": 0.5084490617589345,
+        "sd": 0.013498318761820399,
+        "n": 3
+      },
+      "morgan_sign_accuracy": {
+        "mean": 0.6349206349206349,
+        "sd": 0.0549857399228215,
+        "n": 3
+      },
+      "morgan_delta_spearman": {
+        "mean": 0.3636363636363636,
+        "sd": 0.03199658440196081,
+        "n": 3
+      }
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "global",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "mean": 0.7287463246101898,
+        "sd": 0.02710193878190096,
+        "n": 3
+      },
+      "cliff_rmse": {
+        "mean": 0.7694388019844274,
+        "sd": 0.0251034004827637,
+        "n": 3
+      },
+      "noncliff_rmse": {
+        "mean": 0.6952141047379583,
+        "sd": 0.032638602183593775,
+        "n": 3
+      },
+      "mae": {
+        "mean": 0.5568570831628966,
+        "sd": 0.017830907831480163,
+        "n": 3
+      },
+      "elapsed_seconds": {
+        "mean": 175.99230516667012,
+        "sd": 34.19370695355418,
+        "n": 3
+      },
+      "peak_cuda_mb": {
+        "mean": 518.8131510416666,
+        "sd": 18.023774607834472,
+        "n": 3
+      },
+      "morgan_signed_delta_mae": {
+        "mean": 0.7974464810556836,
+        "sd": 0.1349389592185208,
+        "n": 3
+      },
+      "morgan_sign_accuracy": {
+        "mean": 0.6031746031746031,
+        "sd": 0.22503883934536228,
+        "n": 3
+      },
+      "morgan_delta_spearman": {
+        "mean": 0.1688311688311688,
+        "sd": 0.31799888724981956,
+        "n": 3
+      }
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "pair_mlp",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "mean": 0.6788904527707742,
+        "sd": 0.006320232427583236,
+        "n": 3
+      },
+      "cliff_rmse": {
+        "mean": 0.7301348878515131,
+        "sd": 0.02087984352169085,
+        "n": 3
+      },
+      "noncliff_rmse": {
+        "mean": 0.6355580618563704,
+        "sd": 0.025215259172811144,
+        "n": 3
+      },
+      "mae": {
+        "mean": 0.5087827863299275,
+        "sd": 0.004181612547712317,
+        "n": 3
+      },
+      "elapsed_seconds": {
+        "mean": 150.03212409999105,
+        "sd": 22.412376436462946,
+        "n": 3
+      },
+      "peak_cuda_mb": {
+        "mean": 519.71923828125,
+        "sd": 20.995724293851556,
+        "n": 3
+      },
+      "morgan_signed_delta_mae": {
+        "mean": 0.6760911409343993,
+        "sd": 0.025059168735979076,
+        "n": 3
+      },
+      "morgan_sign_accuracy": {
+        "mean": 0.5714285714285714,
+        "sd": 0.047619047619047616,
+        "n": 3
+      },
+      "morgan_delta_spearman": {
+        "mean": 0.0696969696969697,
+        "sd": 0.08924576044279947,
+        "n": 3
+      }
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "cross",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "mean": 0.6938656532567121,
+        "sd": 0.007901084574536109,
+        "n": 3
+      },
+      "cliff_rmse": {
+        "mean": 0.7431795199483244,
+        "sd": 0.017841128794459767,
+        "n": 3
+      },
+      "noncliff_rmse": {
+        "mean": 0.6526424629264934,
+        "sd": 0.012585180918485579,
+        "n": 3
+      },
+      "mae": {
+        "mean": 0.522614819661089,
+        "sd": 0.01736626900087046,
+        "n": 3
+      },
+      "elapsed_seconds": {
+        "mean": 286.51080850000045,
+        "sd": 172.1476765000604,
+        "n": 3
+      },
+      "peak_cuda_mb": {
+        "mean": 533.9269205729166,
+        "sd": 7.224418038774299,
+        "n": 3
+      },
+      "morgan_signed_delta_mae": {
+        "mean": 0.6114487127652244,
+        "sd": 0.14731807422557366,
+        "n": 3
+      },
+      "morgan_sign_accuracy": {
+        "mean": 0.6190476190476191,
+        "sd": 0.09523809523809523,
+        "n": 3
+      },
+      "morgan_delta_spearman": {
+        "mean": 0.37272727272727274,
+        "sd": 0.2827383386150281,
+        "n": 3
+      }
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "direct",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "mean": 0.7264796372563431,
+        "sd": 0.004069272155667987,
+        "n": 3
+      },
+      "cliff_rmse": {
+        "mean": 0.8642776082079137,
+        "sd": 0.008774240441578837,
+        "n": 3
+      },
+      "noncliff_rmse": {
+        "mean": 0.571875307156282,
+        "sd": 0.017063278933918877,
+        "n": 3
+      },
+      "mae": {
+        "mean": 0.5081632451359157,
+        "sd": 0.011429312142712762,
+        "n": 3
+      },
+      "elapsed_seconds": {
+        "mean": 244.51012453333047,
+        "sd": 27.87316942390715,
+        "n": 3
+      },
+      "peak_cuda_mb": {
+        "mean": 489.8702799479167,
+        "sd": 38.502811460310014,
+        "n": 3
+      },
+      "morgan_signed_delta_mae": {
+        "mean": 0.5706233262705306,
+        "sd": 0.06186891247528265,
+        "n": 3
+      },
+      "morgan_sign_accuracy": {
+        "mean": 0.5666666666666668,
+        "sd": 0.02886751345948125,
+        "n": 3
+      },
+      "morgan_delta_spearman": {
+        "mean": 0.12030075187969923,
+        "sd": 0.15835236225413837,
+        "n": 3
+      }
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "global",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "mean": 0.868255283644868,
+        "sd": 0.024932780165917497,
+        "n": 3
+      },
+      "cliff_rmse": {
+        "mean": 0.9996120061295531,
+        "sd": 0.03129830726641205,
+        "n": 3
+      },
+      "noncliff_rmse": {
+        "mean": 0.7273982316624116,
+        "sd": 0.02793340292510829,
+        "n": 3
+      },
+      "mae": {
+        "mean": 0.6489805980395732,
+        "sd": 0.043160531025160875,
+        "n": 3
+      },
+      "elapsed_seconds": {
+        "mean": 297.3515793000018,
+        "sd": 84.14206707538152,
+        "n": 3
+      },
+      "peak_cuda_mb": {
+        "mean": 671.24951171875,
+        "sd": 59.83158438706767,
+        "n": 3
+      },
+      "morgan_signed_delta_mae": {
+        "mean": 0.6886776149893801,
+        "sd": 0.08172692634962063,
+        "n": 3
+      },
+      "morgan_sign_accuracy": {
+        "mean": 0.5166666666666667,
+        "sd": 0.07637626158259732,
+        "n": 3
+      },
+      "morgan_delta_spearman": {
+        "mean": 0.20802005012531324,
+        "sd": 0.10024937342575178,
+        "n": 3
+      }
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "pair_mlp",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "mean": 0.8372272175772745,
+        "sd": 0.031181175306343532,
+        "n": 3
+      },
+      "cliff_rmse": {
+        "mean": 0.9876994132366876,
+        "sd": 0.03821992791775068,
+        "n": 3
+      },
+      "noncliff_rmse": {
+        "mean": 0.6704840058503091,
+        "sd": 0.029130960674815055,
+        "n": 3
+      },
+      "mae": {
+        "mean": 0.6122548432289227,
+        "sd": 0.013921405495726836,
+        "n": 3
+      },
+      "elapsed_seconds": {
+        "mean": 256.4600770000009,
+        "sd": 50.16003364197836,
+        "n": 3
+      },
+      "peak_cuda_mb": {
+        "mean": 677.5615234375,
+        "sd": 54.45438806281225,
+        "n": 3
+      },
+      "morgan_signed_delta_mae": {
+        "mean": 0.6106183562427759,
+        "sd": 0.08543210742643971,
+        "n": 3
+      },
+      "morgan_sign_accuracy": {
+        "mean": 0.5833333333333334,
+        "sd": 0.1040832999733066,
+        "n": 3
+      },
+      "morgan_delta_spearman": {
+        "mean": 0.118796992481203,
+        "sd": 0.15528090706682793,
+        "n": 3
+      }
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "cross",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "mean": 0.910558482237222,
+        "sd": 0.028918997322448185,
+        "n": 3
+      },
+      "cliff_rmse": {
+        "mean": 1.0850428075878362,
+        "sd": 0.06602939280146632,
+        "n": 3
+      },
+      "noncliff_rmse": {
+        "mean": 0.7132032089055796,
+        "sd": 0.02314590587289298,
+        "n": 3
+      },
+      "mae": {
+        "mean": 0.6580998550084961,
+        "sd": 0.0062712324308787344,
+        "n": 3
+      },
+      "elapsed_seconds": {
+        "mean": 176.49251599999843,
+        "sd": 56.95936633911465,
+        "n": 3
+      },
+      "peak_cuda_mb": {
+        "mean": 775.5055338541666,
+        "sd": 46.41551257427444,
+        "n": 3
+      },
+      "morgan_signed_delta_mae": {
+        "mean": 0.680011956517895,
+        "sd": 0.0659359205889859,
+        "n": 3
+      },
+      "morgan_sign_accuracy": {
+        "mean": 0.55,
+        "sd": 0.0,
+        "n": 3
+      },
+      "morgan_delta_spearman": {
+        "mean": 0.21553884711779447,
+        "sd": 0.09238436562599084,
+        "n": 3
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "comparison": "attention_vs_global",
+      "reference": "global",
+      "treatment": "cross",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "reference_mean": 0.7287463246101898,
+        "treatment_mean": 0.6938656532567121,
+        "paired_delta_mean": -0.034880671353477645,
+        "paired_delta_sd": 0.03305253475792184,
+        "relative_change_percent": -4.786394136826086,
+        "improved_seeds": 3,
+        "seed_deltas": {
+          "42": -0.014146471611656386,
+          "43": -0.07299736175692273,
+          "44": -0.017498180691853826
+        }
+      },
+      "cliff_rmse": {
+        "reference_mean": 0.7694388019844274,
+        "treatment_mean": 0.7431795199483244,
+        "paired_delta_mean": -0.026259282036103098,
+        "paired_delta_sd": 0.04175498167756805,
+        "relative_change_percent": -3.4127837026646866,
+        "improved_seeds": 2,
+        "seed_deltas": {
+          "42": 0.003230087766142753,
+          "43": -0.0740382112360417,
+          "44": -0.007969722638410337
+        }
+      },
+      "noncliff_rmse": {
+        "reference_mean": 0.6952141047379583,
+        "treatment_mean": 0.6526424629264934,
+        "paired_delta_mean": -0.04257164181146474,
+        "paired_delta_sd": 0.025741916802372103,
+        "relative_change_percent": -6.12352964667066,
+        "improved_seeds": 3,
+        "seed_deltas": {
+          "42": -0.029194418318512216,
+          "43": -0.07224793937828722,
+          "44": -0.026272567737594787
+        }
+      },
+      "mae": {
+        "reference_mean": 0.5568570831628966,
+        "treatment_mean": 0.522614819661089,
+        "paired_delta_mean": -0.0342422635018077,
+        "paired_delta_sd": 0.0308659673826406,
+        "relative_change_percent": -6.149201390653902,
+        "improved_seeds": 3,
+        "seed_deltas": {
+          "42": -0.0191466140956299,
+          "43": -0.06975075645908102,
+          "44": -0.013829419950712185
+        }
+      }
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "comparison": "attention_vs_mlp",
+      "reference": "pair_mlp",
+      "treatment": "cross",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "reference_mean": 0.6788904527707742,
+        "treatment_mean": 0.6938656532567121,
+        "paired_delta_mean": 0.014975200485937848,
+        "paired_delta_sd": 0.010872271524668955,
+        "relative_change_percent": 2.20583459744046,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.022046567133164108,
+          "43": 0.0024560257246096784,
+          "44": 0.02042300860003976
+        }
+      },
+      "cliff_rmse": {
+        "reference_mean": 0.7301348878515131,
+        "treatment_mean": 0.7431795199483244,
+        "paired_delta_mean": 0.013044632096811318,
+        "paired_delta_sd": 0.0123285862389289,
+        "relative_change_percent": 1.7866057784468117,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.00026058907783022,
+          "43": 0.014012612518944811,
+          "44": 0.024860694693658925
+        }
+      },
+      "noncliff_rmse": {
+        "reference_mean": 0.6355580618563704,
+        "treatment_mean": 0.6526424629264934,
+        "paired_delta_mean": 0.017084401070123063,
+        "paired_delta_sd": 0.024704827995430636,
+        "relative_change_percent": 2.688094463033322,
+        "improved_seeds": 1,
+        "seed_deltas": {
+          "42": 0.04209051474236092,
+          "43": -0.007307694227627337,
+          "44": 0.01647038269563561
+        }
+      },
+      "mae": {
+        "reference_mean": 0.5087827863299275,
+        "treatment_mean": 0.522614819661089,
+        "paired_delta_mean": 0.01383203333116149,
+        "paired_delta_sd": 0.021514412060657632,
+        "relative_change_percent": 2.7186519872140456,
+        "improved_seeds": 1,
+        "seed_deltas": {
+          "42": 0.03357664647524894,
+          "43": -0.009097172381126728,
+          "44": 0.01701662589936226
+        }
+      }
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "comparison": "attention_vs_direct",
+      "reference": "direct",
+      "treatment": "cross",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "reference_mean": 0.6073953920062504,
+        "treatment_mean": 0.6938656532567121,
+        "paired_delta_mean": 0.08647026125046171,
+        "paired_delta_sd": 0.008701214272185813,
+        "relative_change_percent": 14.236239258392652,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.08683767929344621,
+          "43": 0.09498194657291714,
+          "44": 0.0775911578850218
+        }
+      },
+      "cliff_rmse": {
+        "reference_mean": 0.6621383978280105,
+        "treatment_mean": 0.7431795199483244,
+        "paired_delta_mean": 0.08104112212031382,
+        "paired_delta_sd": 0.010027789215115818,
+        "relative_change_percent": 12.239302596881597,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.0803761425347328,
+          "43": 0.07136237282117053,
+          "44": 0.09138485100503813
+        }
+      },
+      "noncliff_rmse": {
+        "reference_mean": 0.5609345277638021,
+        "treatment_mean": 0.6526424629264934,
+        "paired_delta_mean": 0.09170793516269131,
+        "paired_delta_sd": 0.025606479054034136,
+        "relative_change_percent": 16.349133566138324,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.09308933892269444,
+          "43": 0.1165957508762403,
+          "44": 0.06543871568913917
+        }
+      },
+      "mae": {
+        "reference_mean": 0.44644104563057013,
+        "treatment_mean": 0.522614819661089,
+        "paired_delta_mean": 0.07617377403051885,
+        "paired_delta_sd": 0.006849209268786617,
+        "relative_change_percent": 17.062448620271507,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.07595555030115664,
+          "43": 0.08312948734486753,
+          "44": 0.0694362844455324
+        }
+      }
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "comparison": "attention_vs_global",
+      "reference": "global",
+      "treatment": "cross",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "reference_mean": 0.868255283644868,
+        "treatment_mean": 0.910558482237222,
+        "paired_delta_mean": 0.04230319859235417,
+        "paired_delta_sd": 0.03343257965047712,
+        "relative_change_percent": 4.8722074474189725,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.009281750901665164,
+          "43": 0.04149556869394422,
+          "44": 0.07613227618145313
+        }
+      },
+      "cliff_rmse": {
+        "reference_mean": 0.9996120061295531,
+        "treatment_mean": 1.0850428075878362,
+        "paired_delta_mean": 0.08543080145828286,
+        "paired_delta_sd": 0.05413871743553874,
+        "relative_change_percent": 8.546396095127628,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.041529354915295746,
+          "43": 0.06883936639451915,
+          "44": 0.14592368306503367
+        }
+      },
+      "noncliff_rmse": {
+        "reference_mean": 0.7273982316624116,
+        "treatment_mean": 0.7132032089055796,
+        "paired_delta_mean": -0.014195022756831857,
+        "paired_delta_sd": 0.020390246773820245,
+        "relative_change_percent": -1.9514788652139448,
+        "improved_seeds": 2,
+        "seed_deltas": {
+          "42": -0.031806890884199746,
+          "43": 0.008143418070029385,
+          "44": -0.018921595456325213
+        }
+      },
+      "mae": {
+        "reference_mean": 0.6489805980395732,
+        "treatment_mean": 0.6580998550084961,
+        "paired_delta_mean": 0.009119256968922981,
+        "paired_delta_sd": 0.04548805109834929,
+        "relative_change_percent": 1.4051663480341576,
+        "improved_seeds": 1,
+        "seed_deltas": {
+          "42": -0.03950634295580835,
+          "43": 0.01623246197396444,
+          "44": 0.05063165188861285
+        }
+      }
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "comparison": "attention_vs_mlp",
+      "reference": "pair_mlp",
+      "treatment": "cross",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "reference_mean": 0.8372272175772745,
+        "treatment_mean": 0.910558482237222,
+        "paired_delta_mean": 0.07333126465994766,
+        "paired_delta_sd": 0.015281557510778703,
+        "relative_change_percent": 8.758824739614871,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.09004595288483286,
+          "43": 0.06007592114837279,
+          "44": 0.06987191994663733
+        }
+      },
+      "cliff_rmse": {
+        "reference_mean": 0.9876994132366876,
+        "treatment_mean": 1.0850428075878362,
+        "paired_delta_mean": 0.09734339435114832,
+        "paired_delta_sd": 0.045006151294711624,
+        "relative_change_percent": 9.85556871317303,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.11293586275711476,
+          "43": 0.04661454025234257,
+          "44": 0.13247978004398764
+        }
+      },
+      "noncliff_rmse": {
+        "reference_mean": 0.6704840058503091,
+        "treatment_mean": 0.7132032089055796,
+        "paired_delta_mean": 0.04271920305527055,
+        "paired_delta_sd": 0.05152385425730292,
+        "relative_change_percent": 6.371397778697789,
+        "improved_seeds": 1,
+        "seed_deltas": {
+          "42": 0.06325765544165651,
+          "43": 0.08080632636973695,
+          "44": -0.015906372645581812
+        }
+      },
+      "mae": {
+        "reference_mean": 0.6122548432289227,
+        "treatment_mean": 0.6580998550084961,
+        "paired_delta_mean": 0.04584501177957345,
+        "paired_delta_sd": 0.01237437584611008,
+        "relative_change_percent": 7.487896957710462,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.060116791954407334,
+          "43": 0.03810712870074673,
+          "44": 0.039311114683566295
+        }
+      }
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "comparison": "attention_vs_direct",
+      "reference": "direct",
+      "treatment": "cross",
+      "n_seeds": 3,
+      "overall_rmse": {
+        "reference_mean": 0.7264796372563431,
+        "treatment_mean": 0.910558482237222,
+        "paired_delta_mean": 0.18407884498087898,
+        "paired_delta_sd": 0.029749048561754348,
+        "relative_change_percent": 25.338472758311525,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.17224880237435003,
+          "43": 0.16206460816160462,
+          "44": 0.21792312440668227
+        }
+      },
+      "cliff_rmse": {
+        "reference_mean": 0.8642776082079137,
+        "treatment_mean": 1.0850428075878362,
+        "paired_delta_mean": 0.22076519937992245,
+        "paired_delta_sd": 0.05726170852863864,
+        "relative_change_percent": 25.543320489082312,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.20154132032539096,
+          "43": 0.17558904604759573,
+          "44": 0.28516523176678066
+        }
+      },
+      "noncliff_rmse": {
+        "reference_mean": 0.571875307156282,
+        "treatment_mean": 0.7132032089055796,
+        "paired_delta_mean": 0.14132790174929774,
+        "paired_delta_sd": 0.008737396443564081,
+        "relative_change_percent": 24.71306244224243,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.1402097838334988,
+          "43": 0.15057053461756287,
+          "44": 0.13320338679683152
+        }
+      },
+      "mae": {
+        "reference_mean": 0.5081632451359157,
+        "treatment_mean": 0.6580998550084961,
+        "paired_delta_mean": 0.14993660987258042,
+        "paired_delta_sd": 0.016627030568366355,
+        "relative_change_percent": 29.50559909787998,
+        "improved_seeds": 0,
+        "seed_deltas": {
+          "42": 0.14013967285241924,
+          "43": 0.14053566705601417,
+          "44": 0.16913448970930783
+        }
+      }
+    }
+  ],
+  "interaction_expansion_gate": {
+    "go": false,
+    "tasks": [
+      {
+        "dataset": "CHEMBL234_Ki",
+        "controls": [
+          {
+            "control": "global",
+            "pass": true
+          },
+          {
+            "control": "pair_mlp",
+            "pass": false
+          }
+        ],
+        "pass": false
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "controls": [
+          {
+            "control": "global",
+            "pass": false
+          },
+          {
+            "control": "pair_mlp",
+            "pass": false
+          }
+        ],
+        "pass": false
+      }
+    ],
+    "meaning": "resource expansion gate, not significance or publication standard"
+  },
+  "test_evaluated": false,
+  "limitations": "two previously explored development tasks; 3 seeds per task; pairs share molecules; no significance claim"
+}
