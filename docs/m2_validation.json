@@ -1,0 +1,7 @@
+{
+  "tests_passed": 5,
+  "added_attention_parameters": 329729,
+  "added_mlp_parameters": 329561,
+  "test_evaluated": false,
+  "edge_free_batch_adaptation": "Encode individual graphs when a batch contains any edge-free graph; upstream source remains unchanged."
+}

@@ -11,3 +11,5 @@ GraphCliff 官方 MIT，当前 main=d18857db0303346c0be715a56febf71da1768592。�
 FPPool 官方 main=ef2afe82e0490dc31a7cbb6146acea810de393fe，README 声明 MIT，但仓库许可证 API 未识别独立许可证。公开项目先提供固定版本下载脚本和来源说明，不把本地官方源码快照直接重新发布。
 
 SQRL 原文已核对：全局表示差 + MSE + 训练近邻恢复活性已有先例；本项目不宣称参考回归本身新颖，也不把独立适配称官方 SQRL 复现。
+
+M2：批次隔离测试捕获上游无键图边界差异，已用外部包装修复，不修改 vendor。根 LICENSE 同官方 MIT，版权保留。
