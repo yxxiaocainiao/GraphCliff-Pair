@@ -61,3 +61,9 @@ if ($LASTEXITCODE -ne 0) { throw '最终test独立核对失败' }
 2026-10-05的seed43 CUDA失败现场保留于artifacts/ablation_seed43_20261004；该目录未完成，不计入正式汇总。恢复使用tools/recover_validation.py，保持原冻结配置/源字节/设备类型；14个完整模型逐文件复制，4个失败或未启动模型从初始状态重新训练。原partial best.pt不作为完成结果，也不据失败尝试挑选指标。恢复来源、复制哈希和失败历史epoch记录在recovery.json。失败尝试的全部额外耗时无法精确恢复，最终成本表只计完成模型并披露此限制。
 
 本机正式五阶段输出为interaction_seed42_20261004、interaction_seed43_44_20261004、ablation_seed42_20261004、ablation_seed43_recovered_20261005、ablation_seed44_20261005（均在artifacts下）；不要同时加入原失败seed43目录。该恢复安排不增加有效训练组或修改模型/超参数。新机器从前述五个正式配置全新运行即可，不需要复用本机失败现场。
+
+## 本机收尾队列
+
+finish_frozen_experiment.ps1 -ObserverPid <run_queue进程号>等待本机现有训练队列。它核对五阶段完成数量及queue_state完成状态，再依次调用上文四个收尾工具；锁防止重复观察进程并发执行。此脚本绑定本机路径，其他机器沿用前述手工顺序即可。
+
+预定输出为docs/full_validation_results.md/json、artifacts/final_validation_freeze_20261005.json及.replay.json、artifacts/final_test_20261005、docs/final_test_results.md/json。当前实际阶段与具体子进程记录于artifacts/finalization_state.json，对应日志为finalization_<stage>.out/err.log。任何失败都保留现场并停止；不能直接再次运行整个收尾脚本覆盖已生成文件。完整报告形成后还需检查结论范围并发布，不能仅凭脚本返回成功宣称研究目标达成。
