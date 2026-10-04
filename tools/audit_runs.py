@@ -13,6 +13,7 @@ import pandas as pd
 from rdkit import Chem, DataStructs
 from graphcliff_pair.data import FP, digest, read_development
 from graphcliff_pair.train import metrics
+from tools.report_diagnostics import nearest_reference, check_metrics, reconstruct_weights, check_weight_history
 
 def read_json(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
@@ -62,6 +63,7 @@ def check_initializations(initializations,variants):
 def audit(folders, csv_root):
     records, evidence, initializations = [], [], {}
     seen, cached, variants = set(), {}, {}
+    baselines, baseline_checked, weight_cache = {}, set(), {}
     training_hashes = None
     fixed_config = None
     for folder in map(Path, folders):
@@ -100,6 +102,7 @@ def audit(folders, csv_root):
                 frame, _, tr, va, tp, vp=read_development(source, config["split_seed"])
                 cached[dataset]=(frame,tr,va,tp,vp,digest(source))
             frame,tr,va,tp,vp,data_hash=cached[dataset]
+            scale=max(float(np.median([abs(frame.at[p['query'],'y']-frame.at[p['reference'],'y']) for p in tp])),1e-6)
             pairing=read_json(folder/dataset/"pairs.json")
             if pairing["input_sha256"]!=data_hash or pairing["train_rows"]!=tr.tolist() or pairing["valid_rows"]!=va.tolist():
                 raise AssertionError("数据身份或原划分不符")
@@ -107,6 +110,15 @@ def audit(folders, csv_root):
             vp=vp[:config.get("limit_valid_queries",len(vp))]
             if pairing["train_pairs"]!=tp or pairing["valid_pairs"]!=vp:
                 raise AssertionError("不是完整固定 Top-1 配对流")
+            if not np.isclose(pairing['scale'],scale,rtol=1e-12,atol=1e-12) or not np.isclose(item['train_delta_scale'],scale,rtol=1e-12,atol=1e-12):
+                raise AssertionError('Loss scale不是完整训练配对的中位绝对差')
+            if (folder,dataset) not in baseline_checked:
+                baseline=nearest_reference(frame,vp)
+                check_metrics(baseline,read_json(folder/dataset/'nearest_reference.json'),'Top-1参考标签')
+                if dataset in baselines:
+                    check_metrics(baseline,baselines[dataset],'跨队列Top-1参考标签')
+                baselines[dataset]=dict(dataset=dataset,**baseline)
+                baseline_checked.add((folder,dataset))
             model_dir=folder/dataset/f"seed{seed}"/arm
             predictions=pd.read_csv(model_dir/"validation_predictions.csv")
             if not predictions["query"].is_unique or predictions["query"].tolist()!=[p["query"] for p in vp]:
@@ -125,6 +137,12 @@ def audit(folders, csv_root):
                 elif abs(result[name]-item[name])>1e-6:
                     raise AssertionError(f"指标重算不符: {name}")
             history=read_json(model_dir/"history.json")
+            arm_config=next(a for a in config['arms'] if a['name']==arm)
+            weight_key=(dataset,seed,arm_config['loss'])
+            if weight_key not in weight_cache:
+                weight_cache[weight_key]=reconstruct_weights(frame,tp,config,arm_config['loss'],seed,scale,config['epochs'])
+            weight_distributions=weight_cache[weight_key][:len(history)]
+            check_weight_history(weight_distributions,history)
             best=min(history,key=lambda h:h["valid_mse"])
             if item["best_epoch"]!=best["epoch"] or abs(result["overall_rmse"]**2-best["valid_mse"])>1e-5:
                 raise AssertionError("未使用最低验证 Overall MSE")
@@ -138,13 +156,16 @@ def audit(folders, csv_root):
             steps=((len(tp)+config["batch_size"]-1)//config["batch_size"])*len(history)
             record={k:v for k,v in item.items() if k!="initialization"}
             record.update(result,optimizer_steps=steps,**pair_metrics(predictions,frame))
+            record['weight_diagnostics']={'mode':arm_config['loss'],'epoch_distributions':weight_distributions,
+                                          'history_extrema_checked':True,'reconstructed_on':'cpu_float32',
+                                          'definition':'normalized training batch weights, each training query once per epoch'}
             records.append(record)
             evidence.append(dict(dataset=dataset,seed=seed,arm=arm,predictions_sha256=digest(model_dir/"validation_predictions.csv"),
                                  checkpoint_sha256=digest(model_dir/"best.pt"),history_sha256=digest(model_dir/"history.json")))
         if actual!=expected:
             raise AssertionError("结果没有覆盖预定矩阵")
     check_initializations(initializations,variants)
-    return dict(runs=len(records),records=records,evidence=evidence,
+    return dict(runs=len(records),records=records,evidence=evidence,nearest_reference=[baselines[d] for d in sorted(baselines)],
                 verification="source/data/row/pair/label/initialization/selection/metrics checked",test_evaluated=False,
                 pair_definition="validation-internal Morgan radius2/1024 Tanimoto>=0.8; delta=y_b-y_a; secondary diagnosis, not official cliff mask")
 
