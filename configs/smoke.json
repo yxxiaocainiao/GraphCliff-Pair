@@ -1,0 +1,33 @@
+{
+  "status": "infrastructure smoke only; not performance evidence",
+  "datasets": ["CHEMBL234_Ki", "CHEMBL244_Ki"],
+  "seeds": [42],
+  "split_seed": 42,
+  "hidden_size": 64,
+  "num_layers": 1,
+  "heads": 4,
+  "epochs": 3,
+  "schedule_epochs": 100,
+  "warmup_epochs": 10,
+  "patience": 15,
+  "batch_size": 16,
+  "lr": 0.0001,
+  "min_lr": 0.000001,
+  "weight_decay": 0.00001,
+  "betas": [0.9, 0.95],
+  "gradient_clip": 1,
+  "alpha_max": 1,
+  "weight_cap": 3,
+  "limit_train_queries": 64,
+  "limit_valid_queries": 64,
+  "arms": [
+    {"name": "direct", "variant": "direct", "readout": "sag", "loss": "mse"},
+    {"name": "global", "variant": "global_diff", "readout": "sag", "loss": "mse"},
+    {"name": "pair_mlp", "variant": "pair_mlp", "readout": "sag", "loss": "mse"},
+    {"name": "cross", "variant": "cross_attention", "readout": "sag", "loss": "mse"},
+    {"name": "global_fp", "variant": "global_diff", "readout": "fppool", "loss": "mse"},
+    {"name": "cross_fp", "variant": "cross_attention", "readout": "fppool", "loss": "mse"},
+    {"name": "cross_fp_static", "variant": "cross_attention", "readout": "fppool", "loss": "static"},
+    {"name": "cross_fp_dynamic", "variant": "cross_attention", "readout": "fppool", "loss": "dynamic"}
+  ]
+}

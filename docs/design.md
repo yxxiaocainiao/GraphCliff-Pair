@@ -6,7 +6,7 @@
 
 复用固定官方 GraphCliff 的 AtomEncoder、GraphCliffEncoder、SAGPooling 与 Max/Mean。查询和训练参考共享参数。Cross-Attention 在完整原子表示上双向调用同一个 PyTorch MultiheadAttention，Q 来自当前分子，K/V 来自另一分子；padding 只掩蔽 K/V，每对在独立 batch 位置计算，然后取真实节点。注意力残差 + LayerNorm 后读出。
 
-所有 pair 组使用 `delta = (h(q,r)-h(r,q))/2`。global_diff/cross_attention 的 head 输入读出差；pair_mlp 输入两个读出及其差。无 dropout，交换严格反对称、同分子为零。global_diff 为 SQRL 式任务适配，使用 Top-1 配对而非论文所有相似度阈值对，且 head 强制反对称，不能称官方复现。
+所有 pair 组使用 `delta = (h(q,r)-h(r,q))/2`。global_diff/cross_attention 的 head 输入读出差；pair_mlp 输入两个读出及其差。head/attention 无 dropout；官方 LongPoly 内部仍保留其默认 dropout=0.1，故交换反对称与同分子零值保证针对 eval 推理，训练随机前向不保证逐次严格相等。global_diff 为 SQRL 式任务适配，使用 Top-1 配对而非论文所有相似度阈值对，且 head 强制反对称，不能称官方复现。
 
 pair_mlp 的新增 head 参数匹配 attention 的 head + interaction，误差 <0.5%；仅与同读出组比较。共享编码器/SAG 初始权重须显式加载和记录哈希。参数匹配不等于计算预算匹配。
 

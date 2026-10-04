@@ -1,6 +1,7 @@
 """薄适配：复用 GraphCliff 编码/读出，注意力由 PyTorch 实现。"""
 import torch
 from torch import nn
+from torch.nn.attention import SDPBackend, sdpa_kernel
 from torch_geometric.nn import global_max_pool, global_mean_pool
 from torch_geometric.utils import to_dense_batch
 
@@ -23,8 +24,9 @@ class CrossInteraction(nn.Module):
         if q_dense.size(0) != r_dense.size(0):
             raise ValueError("查询和参考图数量必须相同")
         # K/V 来自配对的另一分子；batch 维度不参与注意力混合。
-        qr, _ = self.attention(q_dense, r_dense, r_dense, key_padding_mask=~rm, need_weights=False)
-        rq, _ = self.attention(r_dense, q_dense, q_dense, key_padding_mask=~qm, need_weights=False)
+        with sdpa_kernel(SDPBackend.MATH):
+            qr, _ = self.attention(q_dense, r_dense, r_dense, key_padding_mask=~rm, need_weights=False)
+            rq, _ = self.attention(r_dense, q_dense, q_dense, key_padding_mask=~qm, need_weights=False)
         return self.norm(q_dense + qr)[qm], self.norm(r_dense + rq)[rm]
 
 class PairRegressor(nn.Module):
@@ -93,4 +95,9 @@ class PairRegressor(nn.Module):
         result = self.load_state_dict(selected, strict=False)
         if result.unexpected_keys:
             raise RuntimeError(result.unexpected_keys)
+        if self.variant != "pair_mlp":
+            # 官方末层索引为4（含无参数 Dropout），本包装为3。
+            head_state = {key.replace("reg_head.", "").replace("4.", "3."): value
+                          for key, value in base_state.items() if key.startswith("reg_head.")}
+            self.head.load_state_dict(head_state)
         return selected

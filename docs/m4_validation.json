@@ -1,0 +1,11 @@
+{
+  "runs": 16,
+  "all_nonconstant_finite": true,
+  "predictions_recalculated": true,
+  "best_checkpoint_verified": true,
+  "shared_encoder_verified": true,
+  "shared_head_verified": true,
+  "loss_ablation_initialization_verified": true,
+  "test_evaluated": false,
+  "status": "infrastructure verified; no efficacy claim"
+}

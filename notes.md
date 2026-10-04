@@ -13,3 +13,5 @@ FPPool 官方 main=ef2afe82e0490dc31a7cbb6146acea810de393fe，README 声明 MIT�
 SQRL 原文已核对：全局表示差 + MSE + 训练近邻恢复活性已有先例；本项目不宣称参考回归本身新颖，也不把独立适配称官方 SQRL 复现。
 
 M2：批次隔离测试捕获上游无键图边界差异，已用外部包装修复，不修改 vendor。根 LICENSE 同官方 MIT，版权保留。
+
+M4：原 LongPoly 的 dropout=0.1 即使上层 dropout=0 仍保留，因此反对称/同分子零值保证针对 eval 推理；训练时有随机性。共享 head 从原 base 显式加载，训练前重新设置随机种子；attention 使用 math backend。smoke 第一版已被初始化更严格的第二版取代，均不作效果结论。

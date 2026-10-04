@@ -1,0 +1,11 @@
+{
+  "python": "3.10.21",
+  "torch": "2.7.1+cu128",
+  "torch_geometric": "2.6.1",
+  "rdkit": "2025.03.6",
+  "pandas": "2.3.2",
+  "numpy": "2.0.1",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "interpreter": "D:/Tools/conda-envs/graphcliff/python.exe"
+}

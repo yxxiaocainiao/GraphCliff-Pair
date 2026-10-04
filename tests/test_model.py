@@ -6,6 +6,7 @@ import torch
 from torch_geometric.data import Batch, Data
 from graphcliff_pair.model import PairRegressor, parameters
 from graphcliff_pair.vendor.dataset_utils import smiles_to_graph
+from graphcliff_pair.vendor.model import GraphCliffRegressor
 
 def graphs(smiles):
     values = []
@@ -56,6 +57,17 @@ class ModelContracts(unittest.TestCase):
         added_a = parameters(attention.head) + parameters(attention.interaction)
         added_b = parameters(mlp.head)
         self.assertLess(abs(added_a-added_b) / added_a, 0.005)
+
+    def test_shared_encoder_and_head_initialization(self):
+        base=GraphCliffRegressor(38,13,hidden_size=32,num_layers=1,dropout=0).state_dict()
+        global_model=PairRegressor('global_diff',hidden_size=32,num_layers=1)
+        cross_model=PairRegressor('cross_attention',hidden_size=32,num_layers=1)
+        global_model.load_shared(base)
+        cross_model.load_shared(base)
+        for key,value in global_model.head.state_dict().items():
+            torch.testing.assert_close(value,cross_model.head.state_dict()[key],rtol=0,atol=0)
+        for key,value in global_model.encoder.state_dict().items():
+            torch.testing.assert_close(value,cross_model.encoder.state_dict()[key],rtol=0,atol=0)
 
 if __name__ == "__main__":
     unittest.main()

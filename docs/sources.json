@@ -45,5 +45,11 @@
       "commit": "c18f19c0ca557c8c82bc015a66f19f06543311a2",
       "change": "Extract function unchanged and use package feature imports"
     }
+  },
+  "training": {
+    "origin": "GraphCliff-reproduction/main.py:set_seed,WarmupCosineScheduler",
+    "commit": "c18f19c0ca557c8c82bc015a66f19f06543311a2",
+    "adaptation": "Extract definitions unchanged; remove unrelated wandb imports",
+    "sha256": "55e5a523fe45923170fd971f3edf7a2e79ad5c3ebcb6bfb75b7e7be2bc2899f0"
   }
 }
