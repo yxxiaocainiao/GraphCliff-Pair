@@ -1,0 +1,9 @@
+{
+  "tests_passed": 7,
+  "fppool_hash_verified": true,
+  "official_fppool_published": false,
+  "mse_value_gradient_identity": true,
+  "loss_default": "mse",
+  "dynamic_status": "provisional candidate; training-only target severity and epoch ramp",
+  "test_evaluated": false
+}

@@ -32,5 +32,18 @@
     "commit": "ef2afe82e0490dc31a7cbb6146acea810de393fe",
     "sha256": "8392b0bf6243f78ab52bf445ea575fafe108f26da244a9b0d04a0ef04ddab13f",
     "license_status": "README declares MIT; separate LICENSE absent; fetch externally, no vendored redistribution"
+  },
+  "local_adapters": {
+    "fppool.py": {
+      "origin": "GraphCliff-reproduction/fppool_adapter.py",
+      "commit": "c18f19c0ca557c8c82bc015a66f19f06543311a2",
+      "change": "Only replace upstream import with pinned external loader",
+      "source_sha256": "b50ba8fd7f63cfad6ca7c0b29005136edcf2cb28ae42525637c79cf8940b4773"
+    },
+    "fingerprint.py": {
+      "origin": "GraphCliff-reproduction/scripts/fppool_pilot/run_pilot.py:membership",
+      "commit": "c18f19c0ca557c8c82bc015a66f19f06543311a2",
+      "change": "Extract function unchanged and use package feature imports"
+    }
   }
 }
