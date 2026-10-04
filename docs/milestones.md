@@ -101,3 +101,7 @@ seed42后续18次消融训练已完成；原队列因审计把pair_mlp_fp误归�
 ## M5n — 2026-10-05
 
 新增recover_validation.py薄恢复入口，复用未修改的train.run/train_arm。原冻结配置与核心源必须一致；仅原summary明确完成的模型可复制，逐文件哈希、checkpoint epoch、预测指标、初始化和数据/配对均核对。中断模型即使有best.pt也从初值重跑，原失败目录保留。恢复后完整18组须通过原独立审计；审计额外核对原完成组全部原样复用及其余预定组完整覆盖。队列新增RecoverSeed43入口，恢复审计后串行seed44。36项测试、PowerShell解析及实际14组恢复前检查通过。最终报告记录失败尝试，不把完成模型表称为全部尝试总成本。准备推送后启动，真实恢复完成及最终78次重放/test待验证。
+
+## M6g — 2026-10-05：恢复与冻结路径只读复查
+
+复查recover_validation与原train.run/train_arm：每dataset/seed重建base_state，每组构造前/训练前重置seed并使用独立Generator，所以复制已完成14组不会改变其余4组的随机起点。复查replay_validation/freeze_validation：实际加载权重、核对epoch和逐行预测，证明必须覆盖完整78模型，绑定当前权重/预测/history/summary/manifest/pairs及训练核心源码；同设备类型限制已落实。本次复查未发现该范围内的实质缺口，不等于正式78模型重放已经完成。实际恢复进程129704仍存活，首个重训组已到第8轮，无新增错误；训练继续。只更新记录，未改模型/配置/训练源。
