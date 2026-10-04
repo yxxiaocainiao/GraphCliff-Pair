@@ -37,7 +37,7 @@ if ($LASTEXITCODE -ne 0) { throw '完整验证汇总失败' }
 
 ## 完整验证后冻结，再执行一次test
 
-只有上述78次全部完成且审计/报告核对通过才能执行。结构重复或无效分子检查失败时保留错误，不改划分来继续，不按test调整模型。
+只有上述78次全部完成且审计/报告核对通过才能执行。freeze_validation会在生成冻结文件前重放全部保存权重的validation；也可先用replay_validation.py生成证据，再传入--replay-json。严格重放必须使用原训练设备类型：本次GPU训练须用CUDA；CPU与GPU的matmul数值差异不以放宽容差处理。结构重复或无效分子检查失败时保留错误，不改划分来继续，不按test调整模型。
 
 ```powershell
 python tools/freeze_validation.py --runs @pairRuns --csv-root $pairCsvRoot --report-json artifacts/repro_validation_results.json --output artifacts/repro_validation_freeze.json
@@ -48,7 +48,7 @@ python tools/summarize_test.py --freeze artifacts/repro_validation_freeze.json -
 if ($LASTEXITCODE -ne 0) { throw '最终test独立核对失败' }
 ```
 
-测试先完成全部固定模型的只输入SMILES预测，再读取test标签；训练参考活性仅从既定train行加载。只有未读取标签的中断预测阶段可以显式使用--resume-predictions；已开始标签评估或已完成的测试拒绝重复执行。报告核对不重新预测或选模。
+同一冻结内容绑定唯一输出目录，登记在artifacts/test_evaluation_registry内；复制冻结JSON或换输出目录不能用于重复评估。JSON状态和预测输出原子发布，纯预测阶段未登记的孤立文件会重新生成。测试先完成全部固定模型的只输入SMILES预测，再读取test标签；训练参考活性仅从既定train行加载。只有未读取标签的中断预测阶段可以显式使用--resume-predictions；已开始标签评估或已完成的测试拒绝重复执行。报告核对不重新预测或选模。
 
 ## 保留的复现证据
 

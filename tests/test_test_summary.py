@@ -30,25 +30,33 @@ class FinalSummaryContracts(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);output=root/'test';output.mkdir()
             freeze=root/'freeze.json';freeze.write_text('{}')
-            models=[];records=[];data_hashes={}
+            models=[];records=[];data_hashes={};baselines=[]
             for task in TASKS:
                 source=root/f'{task}.csv'
                 pd.DataFrame({'smiles':['CCC','CCN','CCO'],'split':['train','test','test'],
                               'y':[99.,1.,2.],'cliff_mol':[0,0,1]}).to_csv(source,index=False)
                 data_hashes[task]=module.digest(source)
+                baselines.append(dict(dataset=task,**module.metrics([dict(prediction=99.,y=1.,cliff_mol=0),dict(prediction=99.,y=2.,cliff_mol=1)])))
             for task,seed,arm in itertools.product(TASKS,SEEDS,FULL):
                 path=output/f'{task}_seed{seed}_{arm}_predictions.csv'
-                pd.DataFrame({'query_index':[0,1],'smiles':['CCN','CCO'],'prediction':[1.5,2.5]}).to_csv(path,index=False)
-                models.append(dict(dataset=task,seed=seed,arm=arm,checkpoint_sha256='synthetic'))
+                pd.DataFrame({'query_index':[0,1],'smiles':['CCN','CCO'],'prediction':[1.5,2.5],'reference_row':[0,0]}).to_csv(path,index=False)
+                run_dir=Path('artifacts/synthetic')/task/f'seed{seed}'/arm
+                pairing=(root/run_dir).parents[1]/'pairs.json'
+                pairing.parent.mkdir(parents=True,exist_ok=True)
+                pairing.write_text(json.dumps({'train_rows':[0]}))
+                models.append(dict(dataset=task,seed=seed,arm=arm,checkpoint_sha256='synthetic',run_dir=run_dir.as_posix()))
                 records.append(dict(dataset=task,seed=seed,arm=arm,test_evaluated=True,
                                     checkpoint_sha256='synthetic',predictions_sha256=module.digest(path),
                                     **module.metrics([dict(prediction=1.5,y=1.,cliff_mol=0),dict(prediction=2.5,y=2.,cliff_mol=1)])))
             (output/'completed.json').write_text(json.dumps(dict(runs=78,test_evaluated=True,model_selection_on_test=False)))
-            report=dict(records=records,freeze_sha256=module.digest(freeze),test_evaluated=True,model_selection_on_test=False)
+            report=dict(records=records,nearest_reference=baselines,freeze_sha256=module.digest(freeze),test_evaluated=True,model_selection_on_test=False)
             (output/'test_metrics.json').write_text(json.dumps(report))
-            with patch.object(module,'validate_freeze',return_value=dict(models=models,data_sha256=data_hashes)):
+            with patch.object(module,'ROOT',root), patch.object(module,'validate_freeze',return_value=dict(models=models,data_sha256=data_hashes)):
                 module.run(freeze,output,root,root/'verified')
                 self.assertTrue((root/'verified.md').is_file())
+                saved=json.loads((root/'verified.json').read_text(encoding='utf-8'))
+                self.assertEqual(len(saved['nearest_reference']),2)
+                self.assertEqual(saved['nearest_reference'][0]['prediction_std'],0.)
                 records[0]['cliff_rmse']=.1
                 (output/'test_metrics.json').write_text(json.dumps(report))
                 with self.assertRaisesRegex(ValueError,'测试指标不一致'):

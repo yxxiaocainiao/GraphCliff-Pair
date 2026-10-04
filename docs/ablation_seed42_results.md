@@ -6,7 +6,7 @@
 
 ## CHEMBL234_Ki
 
-|模型|Overall RMSE|Cliff RMSE|实际轮数|参数数|耗时秒|峰值CUDA MB|
+|模型|Overall RMSE|Cliff RMSE|实际轮数|参数数|完整拟合秒|峰值CUDA MiB|
 |---|---:|---:|---:|---:|---:|---:|
 |direct|0.6156|0.6704|45|6021198|140.5|380.2|
 |global|0.7165|0.7475|29|6021198|160.7|539.1|
@@ -46,7 +46,7 @@
 
 ## CHEMBL244_Ki
 
-|模型|Overall RMSE|Cliff RMSE|实际轮数|参数数|耗时秒|峰值CUDA MB|
+|模型|Overall RMSE|Cliff RMSE|实际轮数|参数数|完整拟合秒|峰值CUDA MiB|
 |---|---:|---:|---:|---:|---:|---:|
 |direct|0.7312|0.8617|80|6021198|227.6|467.3|
 |global|0.8941|1.0217|51|6021198|269.8|610.8|
@@ -83,3 +83,5 @@
 |control|pair_mlp|cross|+0.0900|+0.1129|
 |control|pair_mlp_fp|cross_fp|+0.0237|+0.0739|
 |control|direct|cross_fp_dynamic|+0.2051|+0.2890|
+
+完整拟合耗时含各轮验证、checkpoint操作和最后重载；显存单位MiB为2^20字节。数值未改变。

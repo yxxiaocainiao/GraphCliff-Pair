@@ -11,11 +11,12 @@ sys.path.insert(0,str(ROOT))
 from audit_runs import audit
 from summarize_results import analyze,TASKS,SEEDS,FULL
 from graphcliff_pair.data import digest
+from replay_validation import check_training_sources,replay,validate_replay,CORE_SOURCES
 
 REQUIRED_SOURCES={'graphcliff_pair/model.py','graphcliff_pair/predict.py','graphcliff_pair/data.py',
                   'graphcliff_pair/fppool.py','graphcliff_pair/fingerprint.py','graphcliff_pair/external.py',
                   'graphcliff_pair/vendor/model.py','graphcliff_pair/vendor/dataset_utils.py',
-                  'docs/sources.json','tools/evaluate_test.py'}
+                  'docs/sources.json','tools/evaluate_test.py','tools/replay_validation.py'} | CORE_SOURCES
 
 def relative(path,root=ROOT):
     resolved=Path(path).resolve()
@@ -23,14 +24,16 @@ def relative(path,root=ROOT):
         raise ValueError('冻结模型/报告路径必须在项目目录内')
     return resolved.relative_to(root.resolve()).as_posix()
 
-def freeze(folders,csv_root,report_json,output):
+def freeze(folders,csv_root,report_json,output,replay_json=None,device=None):
+    output=Path(output)
+    if output.exists(): raise FileExistsError('冻结文件已存在，拒绝覆盖')
+    for folder in map(Path,folders):
+        check_training_sources(json.loads((folder/'manifest.json').read_text(encoding='utf-8')))
     audited=audit(folders,csv_root)
     expected=analyze(audited,'full')
     recorded=json.loads(Path(report_json).read_text(encoding='utf-8'))
     if recorded!=expected:
         raise ValueError('完整验证报告与独立重算不一致')
-    output=Path(output)
-    if output.exists(): raise FileExistsError('冻结文件已存在，拒绝覆盖')
     models=[]
     for folder in map(Path,folders):
         manifest=json.loads((folder/'manifest.json').read_text())
@@ -42,11 +45,19 @@ def freeze(folders,csv_root,report_json,output):
             models.append(dict(dataset=dataset,seed=seed,arm=arm['name'],run_dir=relative(model_dir),
                                checkpoint_sha256=digest(model_dir/'best.pt'),
                                manifest_sha256=digest(folder/'manifest.json'),pairs_sha256=digest(folder/dataset/'pairs.json')))
-    sources=[p for p in (ROOT/'graphcliff_pair').rglob('*.py')]+[ROOT/'docs/sources.json',ROOT/'tools/evaluate_test.py']
+    if replay_json is None:
+        replay_json=output.with_suffix('.replay.json')
+        replay(folders,csv_root,replay_json,device)
+    evidence=validate_replay(replay_json,models)
+    data_hashes={d:digest(Path(csv_root)/f'{d}.csv') for d in TASKS}
+    if evidence.get('data_sha256')!=data_hashes:
+        raise ValueError('重放数据身份与待冻结数据不一致')
+    sources=[p for p in (ROOT/'graphcliff_pair').rglob('*.py')]+[ROOT/'docs/sources.json',ROOT/'tools/evaluate_test.py',ROOT/'tools/replay_validation.py']
     result=dict(status='validation_complete_frozen',runs=78,test_evaluated=False,
                 report=relative(report_json),report_sha256=digest(report_json),models=models,
+                validation_replay=dict(path=relative(replay_json),sha256=digest(replay_json)),
                 source_sha256={relative(p):digest(p) for p in sources},
-                data_sha256={d:digest(Path(csv_root)/f'{d}.csv') for d in TASKS})
+                data_sha256=data_hashes)
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_text(json.dumps(result,indent=2,allow_nan=False),encoding='utf-8')
     print('FREEZE_OK 78 validated checkpoints; test not evaluated')
@@ -76,6 +87,15 @@ def validate_freeze(path,root=ROOT):
         model_dir=protected(m['run_dir'])
         if digest(model_dir/'best.pt')!=m['checkpoint_sha256'] or digest(model_dir.parents[2]/'manifest.json')!=m['manifest_sha256'] or digest(model_dir.parents[1]/'pairs.json')!=m['pairs_sha256']:
             raise ValueError('冻结权重或运行身份被修改')
+    proof=frozen.get('validation_replay',{})
+    if not proof.get('path') or not proof.get('sha256'):
+        raise ValueError('缺少全部冻结权重的validation重放证明')
+    replay_path=protected(proof['path'])
+    if digest(replay_path)!=proof['sha256']:
+        raise ValueError('验证重放证明被修改')
+    evidence=validate_replay(replay_path,frozen['models'],root)
+    if evidence.get('data_sha256')!=frozen['data_sha256']:
+        raise ValueError('冻结与重放数据身份不一致')
     return frozen
 
 if __name__=='__main__':
@@ -84,5 +104,7 @@ if __name__=='__main__':
     parser.add_argument('--csv-root',required=True)
     parser.add_argument('--report-json',required=True)
     parser.add_argument('--output',required=True)
+    parser.add_argument('--replay-json',help='可复用已完成的全78重放证据；省略则在冻结前执行重放')
+    parser.add_argument('--device',choices=['cpu','cuda'],help='自动重放使用的设备')
     args=parser.parse_args()
-    freeze(args.runs,args.csv_root,args.report_json,args.output)
+    freeze(args.runs,args.csv_root,args.report_json,args.output,args.replay_json,args.device)
