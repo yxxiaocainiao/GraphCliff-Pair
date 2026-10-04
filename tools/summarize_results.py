@@ -65,7 +65,7 @@ def analyze(audited,phase):
     for task,arm in itertools.product(TASKS,arms):
         selected=frame[(frame.dataset==task)&(frame.arm==arm)]
         summary={'dataset':task,'arm':arm,'n_seeds':3}
-        for metric in METRICS+['elapsed_seconds','peak_cuda_mb','morgan_signed_delta_mae','morgan_sign_accuracy','morgan_delta_spearman']:
+        for metric in METRICS+['parameters','epochs_run','optimizer_steps','train_graph_forwards','elapsed_seconds','peak_cuda_mb','morgan_signed_delta_mae','morgan_sign_accuracy','morgan_delta_spearman']:
             values=pd.to_numeric(selected[metric],errors='coerce').dropna() if metric in selected else pd.Series(dtype=float)
             summary[metric]={'mean':float(values.mean()) if len(values) else None,
                              'sd':float(values.std(ddof=1)) if len(values)>1 else None,'n':len(values)}
@@ -108,6 +108,13 @@ def write_markdown(path,result):
         fp='NA' if f is None or f['relative_change_percent'] is None else f"{f['relative_change_percent']:.2f}"
         wins='NA' if f is None else f"{f['improved_seeds']}/3"
         lines.append(f"|{c['dataset']}|{c['reference']} → {c['treatment']}|{op}|{fp}|{wins}|")
+    lines+=['','## 实际计算预算','',
+            '各组分别报告三种子的均值±SD。训练步数由完整训练查询数、batch大小和实际history轮数核算；图前向次数按训练查询图计数，不包括验证或测试。早停导致实际轮数与工作量不同，不能把最大100轮当相同实际成本。','',
+            '|任务|组|参数数|实际轮数|训练步数|训练图前向次数|训练秒数|峰值显存MiB|',
+            '|---|---|---:|---:|---:|---:|---:|---:|']
+    for r in result['summary']:
+        budgets=[value(r[name]) for name in ['parameters','epochs_run','optimizer_steps','train_graph_forwards','elapsed_seconds','peak_cuda_mb']]
+        lines.append(f"|{r['dataset']}|{r['arm']}|"+'|'.join(budgets)+'|')
     gate=result['interaction_expansion_gate']['go']
     lines+=['','## 预定门槛与限制','',f"交互阶段额外任务扩展门槛：{'Go' if gate else 'No-Go'}。这不代表统计显著性或发表条件。",
             '仅两项既有开发任务，不能推广到全部MoleculeACE。均值、方差和逐seed差值全部保留，不挑最优seed或组合。完整组合对基线的总差值不能归因给单个模块。',

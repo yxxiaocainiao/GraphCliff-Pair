@@ -12,7 +12,8 @@ def fixture(arms):
         for seed in module.SEEDS:
             for arm in arms:
                 value=.95 if arm=='cross' else 1.
-                records.append(dict(dataset=task,seed=seed,arm=arm,overall_rmse=value,cliff_rmse=value,noncliff_rmse=value,mae=value))
+                records.append(dict(dataset=task,seed=seed,arm=arm,overall_rmse=value,cliff_rmse=value,noncliff_rmse=value,mae=value,
+                                    parameters=100,epochs_run=20,optimizer_steps=200,train_graph_forwards=400))
     return {'records':records,'test_evaluated':False}
 
 class SummaryContracts(unittest.TestCase):
@@ -31,6 +32,8 @@ class SummaryContracts(unittest.TestCase):
     def test_complete_factorial_and_static_controls(self):
         result=module.analyze(fixture(module.FULL),'full')
         self.assertEqual(result['runs'],78)
+        self.assertEqual(result['summary'][0]['optimizer_steps']['mean'],200)
+        self.assertEqual(result['summary'][0]['train_graph_forwards']['n'],3)
         labels=[r['comparison'] for r in result['comparisons']]
         self.assertEqual(sum(s.startswith('attention_conditional') for s in labels),8)
         self.assertEqual(sum(s.startswith('fppool_conditional') for s in labels),8)
