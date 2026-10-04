@@ -1,0 +1,13 @@
+# Findings and decisions
+
+2026-10-04：用户明确底座 GraphCliff，三项机制为跨分子 Cross-Attention、FPPool、动态加权 Loss；授权按小里程碑推送，随后明确公开仓库。
+
+原项目存在 README 修改与大量 untracked 研究文件。只读引用，全部留在原处。
+
+当前可用解释器 D:/Tools/conda-envs/graphcliff/python.exe：torch 2.7.1+cu128、PyG 2.6.1、RDKit 2025.03.6；CUDA 可用，RTX 5060 Laptop 8 GB。不升级已有环境。
+
+GraphCliff 官方 MIT，当前 main=d18857db0303346c0be715a56febf71da1768592。本地 HEAD=c18f19c0ca557c8c82bc015a66f19f06543311a2。
+
+FPPool 官方 main=ef2afe82e0490dc31a7cbb6146acea810de393fe，README 声明 MIT，但仓库许可证 API 未识别独立许可证。公开项目先提供固定版本下载脚本和来源说明，不把本地官方源码快照直接重新发布。
+
+SQRL 原文已核对：全局表示差 + MSE + 训练近邻恢复活性已有先例；本项目不宣称参考回归本身新颖，也不把独立适配称官方 SQRL 复现。
