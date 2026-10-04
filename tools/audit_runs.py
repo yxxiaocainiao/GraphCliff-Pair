@@ -39,15 +39,36 @@ def pair_metrics(predictions, source):
                 morgan_sign_accuracy=float(np.mean(np.sign(truth[nonzero])==np.sign(prediction[nonzero]))) if nonzero.any() else None,
                 morgan_delta_spearman=rho)
 
+def check_initializations(initializations,variants):
+    if set(initializations)!=set(variants) or any(v not in ['direct','global_diff','cross_attention','pair_mlp'] for v in variants.values()):
+        raise AssertionError('初始化与预定模型类型不一致')
+    groups={(d,s) for d,s,a in initializations}
+    for dataset,seed in groups:
+        selected={arm:value for (d,s,arm),value in initializations.items() if (d,s)==(dataset,seed)}
+        if len({v['encoder_sha256'] for v in selected.values()})!=1:
+            raise AssertionError('编码器初始化不同')
+        # pair_mlp输入为6H，不能加载2H的原reg_head；按variant而非arm别名识别。
+        heads={value['head_sha256'] for (d,s,arm),value in initializations.items()
+               if (d,s)==(dataset,seed) and variants[(d,s,arm)] in ['global_diff','cross_attention']}
+        if len(heads)>1:
+            raise AssertionError('兼容 head 初始化不同')
+        for loss_group in [('global','global_dynamic'),('cross','cross_dynamic'),
+                           ('global_fp','global_fp_static','global_fp_dynamic'),
+                           ('cross_fp','cross_fp_static','cross_fp_dynamic')]:
+            hashes={selected[name]['full_sha256'] for name in loss_group if name in selected}
+            if len(hashes)>1:
+                raise AssertionError(f'Loss 对照模型完整初值不同: {loss_group}')
+
 def audit(folders, csv_root):
     records, evidence, initializations = [], [], {}
-    seen, cached = set(), {}
+    seen, cached, variants = set(), {}, {}
     training_hashes = None
     fixed_config = None
     for folder in map(Path, folders):
         manifest = read_json(folder/"manifest.json")
         complete = read_json(folder/"completed.json")
         config = manifest["config"]
+        arm_variants={arm['name']:arm['variant'] for arm in config['arms']}
         core_config={k:v for k,v in config.items() if k not in ["status","datasets","seeds","arms"]}
         if fixed_config is None:
             fixed_config=core_config
@@ -113,6 +134,7 @@ def audit(folders, csv_root):
             if initialization!=item["initialization"]:
                 raise AssertionError("初始化记录不一致")
             initializations[key]=initialization
+            variants[key]=arm_variants[arm]
             steps=((len(tp)+config["batch_size"]-1)//config["batch_size"])*len(history)
             record={k:v for k,v in item.items() if k!="initialization"}
             record.update(result,optimizer_steps=steps,**pair_metrics(predictions,frame))
@@ -121,20 +143,7 @@ def audit(folders, csv_root):
                                  checkpoint_sha256=digest(model_dir/"best.pt"),history_sha256=digest(model_dir/"history.json")))
         if actual!=expected:
             raise AssertionError("结果没有覆盖预定矩阵")
-    groups={(d,s) for d,s,a in seen}
-    for dataset,seed in groups:
-        selected={arm:initializations[(d,s,arm)] for d,s,arm in seen if (d,s)==(dataset,seed)}
-        if len({v["encoder_sha256"] for v in selected.values()})!=1:
-            raise AssertionError("编码器初始化不同")
-        heads={v["head_sha256"] for arm,v in selected.items() if arm not in ["direct","pair_mlp"]}
-        if len(heads)>1:
-            raise AssertionError("兼容 head 初始化不同")
-        for loss_group in [('global','global_dynamic'),('cross','cross_dynamic'),
-                           ('global_fp','global_fp_static','global_fp_dynamic'),
-                           ('cross_fp','cross_fp_static','cross_fp_dynamic')]:
-            hashes={selected[name]['full_sha256'] for name in loss_group if name in selected}
-            if len(hashes)>1:
-                raise AssertionError(f"Loss 对照模型完整初值不同: {loss_group}")
+    check_initializations(initializations,variants)
     return dict(runs=len(records),records=records,evidence=evidence,
                 verification="source/data/row/pair/label/initialization/selection/metrics checked",test_evaluated=False,
                 pair_definition="validation-internal Morgan radius2/1024 Tanimoto>=0.8; delta=y_b-y_a; secondary diagnosis, not official cliff mask")

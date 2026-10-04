@@ -1,4 +1,4 @@
-param([Parameter(Mandatory=$true)][int]$WaitPid)
+param([int]$WaitPid, [switch]$ResumeAfterSeed42)
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $pythonPath = 'D:\Tools\conda-envs\graphcliff\python.exe'
@@ -11,20 +11,31 @@ function Write-QueueState($phase, $current, $childId, $message) {
 }
 
 try {
-    Write-QueueState 'waiting' 'interaction_seed42_20261004' $WaitPid '等待已启动的具体进程；不会重启原队列'
-    $observedProcess = Get-Process -Id $WaitPid -ErrorAction SilentlyContinue
-    if ($null -ne $observedProcess) { $observedProcess.WaitForExit() }
-    if (-not (Test-Path -LiteralPath 'artifacts/interaction_seed42_20261004/completed.json')) {
-        throw '原进程已终止但首队列未完成，停止后续，不重启或覆盖'
+    if ($ResumeAfterSeed42) {
+        $activeTraining = Get-CimInstance Win32_Process -Filter "Name = 'python.exe'" | Where-Object { $_.CommandLine -match 'graphcliff_pair\.train' }
+        if ($activeTraining) { throw '已有项目训练进程，拒绝启动重复队列' }
+        $completedStages = @('artifacts/interaction_seed42_20261004','artifacts/interaction_seed43_44_20261004','artifacts/ablation_seed42_20261004')
+        Write-QueueState 'auditing' 'completed_before_resume' 0 '先联合审计已完成42次训练，不重启或覆盖'
+        & $pythonPath tools/audit_runs.py --runs @completedStages --csv-root D:/GraphCliff-main/benchmark_data --output artifacts/resumed_completed_validation_audit.json
+        if ($LASTEXITCODE -ne 0) { throw '恢复前联合审计失败' }
+    } else {
+        if ($WaitPid -le 0) { throw '首次观察队列需要明确WaitPid；恢复使用ResumeAfterSeed42' }
+        Write-QueueState 'waiting' 'interaction_seed42_20261004' $WaitPid '等待已启动的具体进程；不会重启原队列'
+        $observedProcess = Get-Process -Id $WaitPid -ErrorAction SilentlyContinue
+        if ($null -ne $observedProcess) { $observedProcess.WaitForExit() }
+        if (-not (Test-Path -LiteralPath 'artifacts/interaction_seed42_20261004/completed.json')) {
+            throw '原进程已终止但首队列未完成，停止后续，不重启或覆盖'
+        }
+        & $pythonPath tools/audit_runs.py --runs artifacts/interaction_seed42_20261004 --csv-root D:/GraphCliff-main/benchmark_data --output artifacts/interaction_seed42_audit.json
+        if ($LASTEXITCODE -ne 0) { throw '首队列独立审计失败' }
     }
-    & $pythonPath tools/audit_runs.py --runs artifacts/interaction_seed42_20261004 --csv-root D:/GraphCliff-main/benchmark_data --output artifacts/interaction_seed42_audit.json
-    if ($LASTEXITCODE -ne 0) { throw '首队列独立审计失败' }
     $stages = @(
         @{config='configs/interaction_seed43_44.json'; name='interaction_seed43_44_20261004'},
         @{config='configs/ablation_seed42.json'; name='ablation_seed42_20261004'},
         @{config='configs/ablation_seed43.json'; name='ablation_seed43_20261004'},
         @{config='configs/ablation_seed44.json'; name='ablation_seed44_20261004'}
     )
+    if ($ResumeAfterSeed42) { $stages = $stages[2..3] }
     foreach ($stage in $stages) {
         $outputPath = 'artifacts/' + $stage.name
         if (Test-Path -LiteralPath $outputPath) { throw "输出已存在，拒绝重用: $outputPath" }
