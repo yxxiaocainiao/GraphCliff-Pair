@@ -63,3 +63,5 @@ python -m graphcliff_pair.predict --run-dir artifacts/my_smoke/CHEMBL234_Ki/seed
 最终test完成后使用 `python tools/summarize_test.py --freeze <freeze.json> --test-output <test-folder> --csv-root <csv-root> --output-prefix <report-prefix>`。它核对完整78个模型、数据/权重/预测身份与结构行序，重新计算各指标并汇总三种子；不按test选模型，不在test上执行扩展门槛。当前只完成合成流程检查，真实端到端核对待test评估后进行。
 
 当前完成24次交互及seed42的18次消融，共42次联合审计通过（[审计记录](docs/validation_through_seed42_audit.json)）。20项契约测试通过。Windows队列可用 `-ResumeAfterSeed42` 在重新审计后继续剩余36次；它拒绝重复训练及已有输出。完整78次报告与test仍待完成。
+
+[seed42完整消融阶段表](docs/ablation_seed42_results.md)包含26组及全部条件差；仅单种子开发证据，不能替代完整三种子结论。
