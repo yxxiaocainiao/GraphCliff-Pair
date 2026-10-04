@@ -1,0 +1,85 @@
+{
+  "status": "frozen three-mechanism ablation on two development tasks; no test-based selection",
+  "datasets": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki"
+  ],
+  "seeds": [
+    42
+  ],
+  "split_seed": 42,
+  "hidden_size": 256,
+  "num_layers": 3,
+  "heads": 4,
+  "epochs": 100,
+  "schedule_epochs": 100,
+  "warmup_epochs": 10,
+  "patience": 15,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "min_lr": 1e-06,
+  "weight_decay": 1e-05,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "gradient_clip": 1,
+  "alpha_max": 1,
+  "weight_cap": 3,
+  "arms": [
+    {
+      "name": "global_dynamic",
+      "variant": "global_diff",
+      "readout": "sag",
+      "loss": "dynamic"
+    },
+    {
+      "name": "cross_dynamic",
+      "variant": "cross_attention",
+      "readout": "sag",
+      "loss": "dynamic"
+    },
+    {
+      "name": "global_fp",
+      "variant": "global_diff",
+      "readout": "fppool",
+      "loss": "mse"
+    },
+    {
+      "name": "cross_fp",
+      "variant": "cross_attention",
+      "readout": "fppool",
+      "loss": "mse"
+    },
+    {
+      "name": "global_fp_dynamic",
+      "variant": "global_diff",
+      "readout": "fppool",
+      "loss": "dynamic"
+    },
+    {
+      "name": "cross_fp_dynamic",
+      "variant": "cross_attention",
+      "readout": "fppool",
+      "loss": "dynamic"
+    },
+    {
+      "name": "global_fp_static",
+      "variant": "global_diff",
+      "readout": "fppool",
+      "loss": "static"
+    },
+    {
+      "name": "cross_fp_static",
+      "variant": "cross_attention",
+      "readout": "fppool",
+      "loss": "static"
+    },
+    {
+      "name": "pair_mlp_fp",
+      "variant": "pair_mlp",
+      "readout": "fppool",
+      "loss": "mse"
+    }
+  ]
+}
