@@ -1,0 +1,20 @@
+{
+  "candidate": {
+    "dataset": "CHEMBL234_Ki",
+    "treatment": "global",
+    "reference": "direct"
+  },
+  "expected_gap_direction": -1,
+  "delta_boundary": 0.45154499349597177,
+  "delta_boundary_source": "full training-pair median abs delta, already recorded",
+  "partitions": [
+    "molecule_cliff",
+    "delta_magnitude",
+    "joint"
+  ],
+  "minimum_queries_per_extreme_bin": 20,
+  "continuation_rule": "At least one stable subgroup in each of molecule_cliff and delta_magnitude; joint descriptive only",
+  "stable_rule": "same D1 gap direction in all 3 seeds and after dropping max abs penalty per cell",
+  "previous_results_lf_text_sha256": "cec0fff06e51eca9073a8ba664fa139038d9c50d57b5c83904e31c2a1e8cf8c6",
+  "previous_plan_lf_text_sha256": "0c1b028c9deec48a4ba86723686c22844e9e2c64b4846aa9e08fd463c45a0bc1"
+}

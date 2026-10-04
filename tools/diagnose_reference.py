@@ -30,9 +30,14 @@ def read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
+def document_sha(path):
+    # Git normalizes tracked text to LF; artifact files retain exact byte hashes.
+    return hashlib.sha256(Path(path).read_text(encoding="utf-8").encode("utf-8")).hexdigest()
+
+
 def write(path, value):
     Path(path).write_text(json.dumps(value, ensure_ascii=False, indent=2,
-                                     allow_nan=False) + "\n", encoding="utf-8")
+                                     allow_nan=False) + "\n", encoding="utf-8", newline="\n")
 
 
 def locations():
@@ -73,7 +78,8 @@ def prepare(output):
                            training_pair_count=len(values), scale=pairs["scale"],
                            pairs_path=path.relative_to(ROOT).as_posix(), pairs_sha256=sha(path))
     write(output, dict(status="frozen_before_stratified_errors", runs=RUNS, tasks=tasks,
-                       audit_sha256=sha(AUDIT), model_count=42,
+                       audit_lf_text_sha256=document_sha(AUDIT), model_count=42,
+                       hash_representation="LF-normalized UTF-8 for tracked documents; exact bytes for artifacts",
                        candidate_rule=dict(contrasts=CONTRASTS, task_order=TASKS,
                            seeds=SEEDS, compare="Q1 minus Q4 paired squared-error penalty",
                            minimum_queries_per_extreme_bin=20,
@@ -94,7 +100,7 @@ def metrics(frame):
 
 
 def load_checked(plan):
-    assert sha(AUDIT) == plan["audit_sha256"], "Historical audit changed"
+    assert document_sha(AUDIT) == plan["audit_lf_text_sha256"], "Historical audit changed"
     historical = read(AUDIT)
     records = {tuple(row[k] for k in ("dataset", "seed", "arm")): row
                for row in historical["records"]}
@@ -271,7 +277,11 @@ def plot_reference(result, plan, output):
     fig.suptitle("Reference similarity diagnostics: 3 training seeds, 1 fixed split\n"
                  "Error bars: between-seed SD; positive penalty is worse", fontsize=13)
     for ext in ["png", "svg", "pdf"]:
-        fig.savefig(output / f"reference_similarity.{ext}", dpi=220)
+        target = output / f"reference_similarity.{ext}"
+        fig.savefig(target, dpi=220)
+        if ext == "svg":
+            target.write_text("\n".join(line.rstrip() for line in target.read_text(encoding="utf-8").splitlines())
+                              + "\n", encoding="utf-8", newline="\n")
     plt.close(fig)
 
 
@@ -333,8 +343,8 @@ def main():
     frames, checks = load_checked(plan)
     write(output / "input_check.json", checks)
     result = reference_results(frames, plan)
-    result["plan_sha256"] = sha(plan_path)
-    result["input_check_sha256"] = sha(output / "input_check.json")
+    result["plan_lf_text_sha256"] = document_sha(plan_path)
+    result["input_check_lf_text_sha256"] = document_sha(output / "input_check.json")
     write(output / "reference_results.json", result)
     plot_reference(result, plan, output)
     markdown_reference(result, plan, output / "reference_results.md")

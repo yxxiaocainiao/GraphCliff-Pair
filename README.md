@@ -6,9 +6,9 @@
 
 首轮两任务三种子24次交互实验已完成并独立审计：[完整验证结果](docs/interaction_three_seed_results.md)。Cross-Attention在两任务上均未超过原GraphCliff或容量匹配的pair MLP，预定额外任务扩展为No-Go；用户已暂停余下消融，test尚未评估。
 
-[阶段性证据解读](docs/development_evidence_summary.md)分别说明三个模块已有的支持、反证和未解决问题。用户已选定[新诊断目标及提前暂停条件](docs/diagnostic_goal.md)：仅用现有审计结果判断参考差值路线是否值得继续，不新增训练或读取test。系统自动目标因旧目标未完成而尚未切换；按用户随后“继续”的指令，诊断在本轮手动执行。
+[阶段性证据解读](docs/development_evidence_summary.md)分别说明三个模块已有的支持、反证和未解决问题。用户选定[新诊断目标及提前暂停条件](docs/diagnostic_goal.md)，本轮手动完成D0/D1/D2并在D2按预设规则提前暂停：[阶段报告与暂停原因](docs/diagnostics/diagnosis_report.md)。D3和新增训练未启动，系统旧目标仍保持暂停。
 
-[D1参考相似度诊断](docs/diagnostics/reference_results.md)已完成42组输入身份/指标核对及训练分位数固定分层。CHEMBL234的global−direct在最高相似度层反而更不利，三seed及极端样本删除检查方向一致；继续仅检查该候选的差值/cliff构成。这是探索性关联，尚无原因归因。
+[D1参考相似度诊断](docs/diagnostics/reference_results.md)发现234/global−direct在最高相似度层反而更不利；[D2构成检查](docs/diagnostics/composition_results.md)显示其子组证据未达到继续门槛。分析没有确认退化原因，保留所有反例和样本数。
 
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 

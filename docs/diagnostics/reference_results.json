@@ -2385,6 +2385,8 @@
   },
   "decision": "continue_D2",
   "inference": "Exploratory association only; no new mechanism cause has been demonstrated",
-  "plan_sha256": "ad7e5207f0c3cf5010772165182c9e49989f896ab12cbdade81f2950eb9baf6e",
-  "input_check_sha256": "d95a7ed50dbf77fbdc7cc5dc897cb0a31a09d94c26a24846c42dbacea70fd24c"
+  "initial_plan_bytes_sha256": "ad7e5207f0c3cf5010772165182c9e49989f896ab12cbdade81f2950eb9baf6e",
+  "initial_input_check_bytes_sha256": "d95a7ed50dbf77fbdc7cc5dc897cb0a31a09d94c26a24846c42dbacea70fd24c",
+  "plan_lf_text_sha256": "0c1b028c9deec48a4ba86723686c22844e9e2c64b4846aa9e08fd463c45a0bc1",
+  "input_check_lf_text_sha256": "11b1efb98ee3c541aedd4c57ba798c1632778aef5add9cea3c74f2de8b4172a5"
 }

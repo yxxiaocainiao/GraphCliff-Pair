@@ -1,0 +1,708 @@
+{
+  "stage": "D2_composition",
+  "candidate": {
+    "dataset": "CHEMBL234_Ki",
+    "treatment": "global",
+    "reference": "direct"
+  },
+  "delta_boundary": 0.45154499349597177,
+  "rows": [
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "noncliff",
+      "similarity_bin": "Q1",
+      "seed": 42,
+      "count": 46,
+      "mean_penalty": 0.25272608940763613,
+      "dropped_penalty": 0.12604044952420748,
+      "mean_abs_delta": 0.6963499730209941
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "noncliff",
+      "similarity_bin": "Q4",
+      "seed": 42,
+      "count": 32,
+      "mean_penalty": 0.1000558429150428,
+      "dropped_penalty": 0.045251025379089475,
+      "mean_abs_delta": 0.34816661290824413
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "noncliff",
+      "similarity_bin": "Q1",
+      "seed": 43,
+      "count": 46,
+      "mean_penalty": 0.33162048022074364,
+      "dropped_penalty": 0.20223635637181744,
+      "mean_abs_delta": 0.6963499730209941
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "noncliff",
+      "similarity_bin": "Q4",
+      "seed": 43,
+      "count": 32,
+      "mean_penalty": 0.2799713850503628,
+      "dropped_penalty": 0.21210057285325615,
+      "mean_abs_delta": 0.34816661290824413
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "noncliff",
+      "similarity_bin": "Q1",
+      "seed": 44,
+      "count": 46,
+      "mean_penalty": 0.1234888496748198,
+      "dropped_penalty": -0.044990847929903564,
+      "mean_abs_delta": 0.6963499730209941
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "noncliff",
+      "similarity_bin": "Q4",
+      "seed": 44,
+      "count": 32,
+      "mean_penalty": 0.10766103669245605,
+      "dropped_penalty": 0.07450652139519509,
+      "mean_abs_delta": 0.34816661290824413
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "cliff",
+      "similarity_bin": "Q1",
+      "seed": 42,
+      "count": 18,
+      "mean_penalty": -0.2167679157344321,
+      "dropped_penalty": 0.0976113425358997,
+      "mean_abs_delta": 0.9037788742118411
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "cliff",
+      "similarity_bin": "Q4",
+      "seed": 42,
+      "count": 33,
+      "mean_penalty": 0.3843663928420175,
+      "dropped_penalty": 0.3091995499882154,
+      "mean_abs_delta": 0.6827549252546194
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "cliff",
+      "similarity_bin": "Q1",
+      "seed": 43,
+      "count": 18,
+      "mean_penalty": -0.33244839447799696,
+      "dropped_penalty": 0.22861467664763863,
+      "mean_abs_delta": 0.9037788742118411
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "cliff",
+      "similarity_bin": "Q4",
+      "seed": 43,
+      "count": 33,
+      "mean_penalty": 0.4896852379351639,
+      "dropped_penalty": 0.3664824134680418,
+      "mean_abs_delta": 0.6827549252546194
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "cliff",
+      "similarity_bin": "Q1",
+      "seed": 44,
+      "count": 18,
+      "mean_penalty": -0.19487185582067865,
+      "dropped_penalty": 0.15212597677567133,
+      "mean_abs_delta": 0.9037788742118411
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "cliff",
+      "similarity_bin": "Q4",
+      "seed": 44,
+      "count": 33,
+      "mean_penalty": 0.41310694745954146,
+      "dropped_penalty": 0.3359978108461914,
+      "mean_abs_delta": 0.6827549252546194
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "small_delta",
+      "similarity_bin": "Q1",
+      "seed": 42,
+      "count": 25,
+      "mean_penalty": -0.0880714932415394,
+      "dropped_penalty": 0.04419973334533441,
+      "mean_abs_delta": 0.23175780057907105
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "small_delta",
+      "similarity_bin": "Q4",
+      "seed": 42,
+      "count": 33,
+      "mean_penalty": 0.07824713584064322,
+      "dropped_penalty": 0.035081136929407224,
+      "mean_abs_delta": 0.18088782556129224
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "small_delta",
+      "similarity_bin": "Q1",
+      "seed": 43,
+      "count": 25,
+      "mean_penalty": 0.11146747823729453,
+      "dropped_penalty": 0.1985731647524873,
+      "mean_abs_delta": 0.23175780057907105
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "small_delta",
+      "similarity_bin": "Q4",
+      "seed": 43,
+      "count": 33,
+      "mean_penalty": 0.30557217541775095,
+      "dropped_penalty": 0.20268930055515336,
+      "mean_abs_delta": 0.18088782556129224
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "small_delta",
+      "similarity_bin": "Q1",
+      "seed": 44,
+      "count": 25,
+      "mean_penalty": -0.05867086695516229,
+      "dropped_penalty": 0.010897299725592197,
+      "mean_abs_delta": 0.23175780057907105
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "small_delta",
+      "similarity_bin": "Q4",
+      "seed": 44,
+      "count": 33,
+      "mean_penalty": 0.11041014474464456,
+      "dropped_penalty": 0.023841733046454046,
+      "mean_abs_delta": 0.18088782556129224
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "large_delta",
+      "similarity_bin": "Q1",
+      "seed": 42,
+      "count": 39,
+      "mean_penalty": 0.25449653745051204,
+      "dropped_penalty": 0.10452065990547482,
+      "mean_abs_delta": 1.08990188411031
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "large_delta",
+      "similarity_bin": "Q4",
+      "seed": 42,
+      "count": 32,
+      "mean_penalty": 0.41574132669770997,
+      "dropped_penalty": 0.33916184161816243,
+      "mean_abs_delta": 0.8657170594669878
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "large_delta",
+      "similarity_bin": "Q1",
+      "seed": 43,
+      "count": 39,
+      "mean_penalty": 0.16625087265686914,
+      "dropped_penalty": 0.4303764378218867,
+      "mean_abs_delta": 1.08990188411031
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "large_delta",
+      "similarity_bin": "Q4",
+      "seed": 43,
+      "count": 32,
+      "mean_penalty": 0.46983798077144495,
+      "dropped_penalty": 0.34202063754203754,
+      "mean_abs_delta": 0.8657170594669878
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "large_delta",
+      "similarity_bin": "Q1",
+      "seed": 44,
+      "count": 39,
+      "mean_penalty": 0.09332218856791161,
+      "dropped_penalty": -0.10698710230891628,
+      "mean_abs_delta": 1.08990188411031
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "large_delta",
+      "similarity_bin": "Q4",
+      "seed": 44,
+      "count": 32,
+      "mean_penalty": 0.4198171144921935,
+      "dropped_penalty": 0.3444561739230089,
+      "mean_abs_delta": 0.8657170594669878
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_small",
+      "similarity_bin": "Q1",
+      "seed": 42,
+      "count": 23,
+      "mean_penalty": -0.08085151433027503,
+      "dropped_penalty": 0.06377255007864478,
+      "mean_abs_delta": 0.2232444986053135
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_small",
+      "similarity_bin": "Q4",
+      "seed": 42,
+      "count": 20,
+      "mean_penalty": 0.010780549064643086,
+      "dropped_penalty": 0.04133604755041592,
+      "mean_abs_delta": 0.17082242518663407
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_small",
+      "similarity_bin": "Q1",
+      "seed": 43,
+      "count": 23,
+      "mean_penalty": 0.11561519852351206,
+      "dropped_penalty": 0.21082811655309586,
+      "mean_abs_delta": 0.2232444986053135
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_small",
+      "similarity_bin": "Q4",
+      "seed": 43,
+      "count": 20,
+      "mean_penalty": 0.21864375121850627,
+      "dropped_penalty": 0.1820163279457233,
+      "mean_abs_delta": 0.17082242518663407
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_small",
+      "similarity_bin": "Q1",
+      "seed": 44,
+      "count": 23,
+      "mean_penalty": -0.07608443503784101,
+      "dropped_penalty": -0.0009834153898669747,
+      "mean_abs_delta": 0.2232444986053135
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_small",
+      "similarity_bin": "Q4",
+      "seed": 44,
+      "count": 20,
+      "mean_penalty": 0.02842858780650981,
+      "dropped_penalty": -0.010598546625961363,
+      "mean_abs_delta": 0.17082242518663407
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_large",
+      "similarity_bin": "Q1",
+      "seed": 42,
+      "count": 23,
+      "mean_penalty": 0.5863036931455473,
+      "dropped_penalty": 0.34233659355389373,
+      "mean_abs_delta": 1.1694554474366747
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_large",
+      "similarity_bin": "Q4",
+      "seed": 42,
+      "count": 12,
+      "mean_penalty": 0.24884799933237564,
+      "dropped_penalty": 0.10792461867808291,
+      "mean_abs_delta": 0.6437402591109276
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_large",
+      "similarity_bin": "Q1",
+      "seed": 43,
+      "count": 23,
+      "mean_penalty": 0.5476257619179751,
+      "dropped_penalty": 0.29279483957686403,
+      "mean_abs_delta": 1.1694554474366747
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_large",
+      "similarity_bin": "Q4",
+      "seed": 43,
+      "count": 12,
+      "mean_penalty": 0.3821841081034571,
+      "dropped_penalty": 0.20020388491643779,
+      "mean_abs_delta": 0.6437402591109276
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_large",
+      "similarity_bin": "Q1",
+      "seed": 44,
+      "count": 23,
+      "mean_penalty": 0.3230621343874806,
+      "dropped_penalty": -0.012483915953423514,
+      "mean_abs_delta": 1.1694554474366747
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_large",
+      "similarity_bin": "Q4",
+      "seed": 44,
+      "count": 12,
+      "mean_penalty": 0.23971511816903313,
+      "dropped_penalty": 0.15828458246553198,
+      "mean_abs_delta": 0.6437402591109276
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_small",
+      "similarity_bin": "Q1",
+      "seed": 42,
+      "count": 2,
+      "mean_penalty": -0.17110125072107962,
+      "dropped_penalty": 0.013981694947062806,
+      "mean_abs_delta": 0.3296607732772827
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_small",
+      "similarity_bin": "Q4",
+      "seed": 42,
+      "count": 13,
+      "mean_penalty": 0.1820418847267973,
+      "dropped_penalty": 0.07558211670401412,
+      "mean_abs_delta": 0.19637305690692022
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_small",
+      "similarity_bin": "Q1",
+      "seed": 43,
+      "count": 2,
+      "mean_penalty": 0.06376869494579296,
+      "dropped_penalty": 0.018675407512489528,
+      "mean_abs_delta": 0.3296607732772827
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_small",
+      "similarity_bin": "Q4",
+      "seed": 43,
+      "count": 13,
+      "mean_penalty": 0.43930821264735825,
+      "dropped_penalty": 0.17609854944956518,
+      "mean_abs_delta": 0.19637305690692022
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_small",
+      "similarity_bin": "Q1",
+      "seed": 44,
+      "count": 2,
+      "mean_penalty": 0.14158516599564308,
+      "dropped_penalty": -0.04717305819212925,
+      "mean_abs_delta": 0.3296607732772827
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_small",
+      "similarity_bin": "Q4",
+      "seed": 44,
+      "count": 13,
+      "mean_penalty": 0.23653561695715955,
+      "dropped_penalty": 0.016196975113027774,
+      "mean_abs_delta": 0.19637305690692022
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_large",
+      "similarity_bin": "Q1",
+      "seed": 42,
+      "count": 16,
+      "mean_penalty": -0.22247624886110118,
+      "dropped_penalty": 0.13343968830349695,
+      "mean_abs_delta": 0.975543636828661
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_large",
+      "similarity_bin": "Q4",
+      "seed": 42,
+      "count": 20,
+      "mean_penalty": 0.5158773231169105,
+      "dropped_penalty": 0.39620216306181727,
+      "mean_abs_delta": 0.998903139680624
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_large",
+      "similarity_bin": "Q1",
+      "seed": 43,
+      "count": 16,
+      "mean_penalty": -0.3819755306559707,
+      "dropped_penalty": 0.2505941408745514,
+      "mean_abs_delta": 0.975543636828661
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_large",
+      "similarity_bin": "Q4",
+      "seed": 43,
+      "count": 20,
+      "mean_penalty": 0.5224303043722376,
+      "dropped_penalty": 0.3166542350821937,
+      "mean_abs_delta": 0.998903139680624
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_large",
+      "similarity_bin": "Q1",
+      "seed": 44,
+      "count": 16,
+      "mean_penalty": -0.23692898354771885,
+      "dropped_penalty": 0.15353141821300842,
+      "mean_abs_delta": 0.975543636828661
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_large",
+      "similarity_bin": "Q4",
+      "seed": 44,
+      "count": 20,
+      "mean_penalty": 0.5278783122860897,
+      "dropped_penalty": 0.41060841966236206,
+      "mean_abs_delta": 0.998903139680624
+    }
+  ],
+  "checks": [
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "noncliff",
+      "low_count": 46,
+      "high_count": 32,
+      "seeds": [
+        {
+          "seed": 42,
+          "gap": 0.15267024649259334,
+          "dropped_gap": 0.080789424145118
+        },
+        {
+          "seed": 43,
+          "gap": 0.051649095170380854,
+          "dropped_gap": -0.009864216481438703
+        },
+        {
+          "seed": 44,
+          "gap": 0.015827812982363743,
+          "dropped_gap": -0.11949736932509866
+        }
+      ],
+      "same_direction_all_seeds_and_drop": false,
+      "enough_queries": true,
+      "stable": false
+    },
+    {
+      "partition": "molecule_cliff",
+      "subgroup": "cliff",
+      "low_count": 18,
+      "high_count": 33,
+      "seeds": [
+        {
+          "seed": 42,
+          "gap": -0.6011343085764496,
+          "dropped_gap": -0.2115882074523157
+        },
+        {
+          "seed": 43,
+          "gap": -0.8221336324131608,
+          "dropped_gap": -0.13786773682040315
+        },
+        {
+          "seed": 44,
+          "gap": -0.6079788032802201,
+          "dropped_gap": -0.18387183407052007
+        }
+      ],
+      "same_direction_all_seeds_and_drop": true,
+      "enough_queries": false,
+      "stable": false
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "small_delta",
+      "low_count": 25,
+      "high_count": 33,
+      "seeds": [
+        {
+          "seed": 42,
+          "gap": -0.16631862908218262,
+          "dropped_gap": 0.009118596415927188
+        },
+        {
+          "seed": 43,
+          "gap": -0.19410469718045642,
+          "dropped_gap": -0.0041161358026660655
+        },
+        {
+          "seed": 44,
+          "gap": -0.16908101169980685,
+          "dropped_gap": -0.01294443332086185
+        }
+      ],
+      "same_direction_all_seeds_and_drop": false,
+      "enough_queries": true,
+      "stable": false
+    },
+    {
+      "partition": "delta_magnitude",
+      "subgroup": "large_delta",
+      "low_count": 39,
+      "high_count": 32,
+      "seeds": [
+        {
+          "seed": 42,
+          "gap": -0.16124478924719793,
+          "dropped_gap": -0.2346411817126876
+        },
+        {
+          "seed": 43,
+          "gap": -0.3035871081145758,
+          "dropped_gap": 0.08835580027984918
+        },
+        {
+          "seed": 44,
+          "gap": -0.32649492592428186,
+          "dropped_gap": -0.4514432762319252
+        }
+      ],
+      "same_direction_all_seeds_and_drop": false,
+      "enough_queries": true,
+      "stable": false
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_small",
+      "low_count": 23,
+      "high_count": 20,
+      "seeds": [
+        {
+          "seed": 42,
+          "gap": -0.09163206339491811,
+          "dropped_gap": 0.02243650252822886
+        },
+        {
+          "seed": 43,
+          "gap": -0.10302855269499421,
+          "dropped_gap": 0.028811788607372546
+        },
+        {
+          "seed": 44,
+          "gap": -0.10451302284435082,
+          "dropped_gap": 0.009615131236094388
+        }
+      ],
+      "same_direction_all_seeds_and_drop": false,
+      "enough_queries": true,
+      "stable": false
+    },
+    {
+      "partition": "joint",
+      "subgroup": "noncliff_large",
+      "low_count": 23,
+      "high_count": 12,
+      "seeds": [
+        {
+          "seed": 42,
+          "gap": 0.33745569381317164,
+          "dropped_gap": 0.23441197487581084
+        },
+        {
+          "seed": 43,
+          "gap": 0.16544165381451797,
+          "dropped_gap": 0.09259095466042624
+        },
+        {
+          "seed": 44,
+          "gap": 0.08334701621844748,
+          "dropped_gap": -0.1707684984189555
+        }
+      ],
+      "same_direction_all_seeds_and_drop": false,
+      "enough_queries": false,
+      "stable": false
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_small",
+      "low_count": 2,
+      "high_count": 13,
+      "seeds": [
+        {
+          "seed": 42,
+          "gap": -0.3531431354478769,
+          "dropped_gap": -0.06160042175695131
+        },
+        {
+          "seed": 43,
+          "gap": -0.3755395177015653,
+          "dropped_gap": -0.15742314193707566
+        },
+        {
+          "seed": 44,
+          "gap": -0.09495045096151647,
+          "dropped_gap": -0.06337003330515702
+        }
+      ],
+      "same_direction_all_seeds_and_drop": true,
+      "enough_queries": false,
+      "stable": false
+    },
+    {
+      "partition": "joint",
+      "subgroup": "cliff_large",
+      "low_count": 16,
+      "high_count": 20,
+      "seeds": [
+        {
+          "seed": 42,
+          "gap": -0.7383535719780117,
+          "dropped_gap": -0.2627624747583203
+        },
+        {
+          "seed": 43,
+          "gap": -0.9044058350282083,
+          "dropped_gap": -0.0660600942076423
+        },
+        {
+          "seed": 44,
+          "gap": -0.7648072958338086,
+          "dropped_gap": -0.25707700144935364
+        }
+      ],
+      "same_direction_all_seeds_and_drop": true,
+      "enough_queries": false,
+      "stable": false
+    }
+  ],
+  "stable_subgroups": {
+    "molecule_cliff": [],
+    "delta_magnitude": []
+  },
+  "decision": "pause_composition_evidence_insufficient",
+  "limitation": "Within-subgroup association rules out neither causal confounding nor training/inference failure; small joint cells are descriptive",
+  "plan_lf_text_sha256": "ab3f35b648f76770ca436c232986dda7c671d1ba96545b97d0a7a761da5b837b"
+}
