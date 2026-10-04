@@ -43,10 +43,16 @@ def audit(folders, csv_root):
     records, evidence, initializations = [], [], {}
     seen, cached = set(), {}
     training_hashes = None
+    fixed_config = None
     for folder in map(Path, folders):
         manifest = read_json(folder/"manifest.json")
         complete = read_json(folder/"completed.json")
         config = manifest["config"]
+        core_config={k:v for k,v in config.items() if k not in ["status","datasets","seeds","arms"]}
+        if fixed_config is None:
+            fixed_config=core_config
+        elif fixed_config!=core_config:
+            raise AssertionError("队列的固定训练预算/超参数不一致")
         expected = {(d,s,a["name"]) for d in config["datasets"] for s in config["seeds"] for a in config["arms"]}
         summaries = read_json(folder/"summary.json")
         if len(summaries)!=len(expected) or complete["runs"]!=len(expected) or complete["test_evaluated"]:
@@ -121,6 +127,12 @@ def audit(folders, csv_root):
         heads={v["head_sha256"] for arm,v in selected.items() if arm not in ["direct","pair_mlp"]}
         if len(heads)>1:
             raise AssertionError("兼容 head 初始化不同")
+        for loss_group in [('global','global_dynamic'),('cross','cross_dynamic'),
+                           ('global_fp','global_fp_static','global_fp_dynamic'),
+                           ('cross_fp','cross_fp_static','cross_fp_dynamic')]:
+            hashes={selected[name]['full_sha256'] for name in loss_group if name in selected}
+            if len(hashes)>1:
+                raise AssertionError(f"Loss 对照模型完整初值不同: {loss_group}")
     return dict(runs=len(records),records=records,evidence=evidence,
                 verification="source/data/row/pair/label/initialization/selection/metrics checked",test_evaluated=False,
                 pair_definition="validation-internal Morgan radius2/1024 Tanimoto>=0.8; delta=y_b-y_a; secondary diagnosis, not official cliff mask")

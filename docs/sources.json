@@ -24,8 +24,10 @@
   "protocol": {
     "source": "local GraphCliff-reproduction/dataset.py:split_train_valid",
     "commit": "c18f19c0ca557c8c82bc015a66f19f06543311a2",
-    "sha256": "d0ff2a54e6c0b6c1e60cd48d05a31e17808267da77f72c828318a5e9cf8ac8de",
-    "adaptation": "Extract function verbatim with numpy/pandas imports; do not import GraphDataset that silently drops invalid rows."
+    "adaptation": "Extract function verbatim with numpy/pandas imports; do not import GraphDataset that silently drops invalid rows.",
+    "normalized_lf_sha256": "d0ff2a54e6c0b6c1e60cd48d05a31e17808267da77f72c828318a5e9cf8ac8de",
+    "windows_extraction_bytes_sha256": "6be54a19390588fbf0987123030793301d9fbe5e328fa1ac4dcd09cbc32bd1e5",
+    "hash_note": "Previous sha256 was normalized LF text, not Windows CRLF bytes. Source and algorithm unchanged. Run manifests separately record actual workspace byte hashes."
   },
   "fppool": {
     "url": "https://raw.githubusercontent.com/shenwxlab/FPPool/ef2afe82e0490dc31a7cbb6146acea810de393fe/fppcode/pooling.py",
@@ -50,6 +52,8 @@
     "origin": "GraphCliff-reproduction/main.py:set_seed,WarmupCosineScheduler",
     "commit": "c18f19c0ca557c8c82bc015a66f19f06543311a2",
     "adaptation": "Extract definitions unchanged; remove unrelated wandb imports",
-    "sha256": "55e5a523fe45923170fd971f3edf7a2e79ad5c3ebcb6bfb75b7e7be2bc2899f0"
+    "normalized_lf_sha256": "55e5a523fe45923170fd971f3edf7a2e79ad5c3ebcb6bfb75b7e7be2bc2899f0",
+    "windows_extraction_bytes_sha256": "ac137f560475362917d4331d5b3a6bd2855c1d99264a9ff1ba298e7b23a2ab31",
+    "hash_note": "Previous sha256 was normalized LF text, not Windows CRLF bytes. Source and algorithm unchanged. Run manifests separately record actual workspace byte hashes."
   }
 }

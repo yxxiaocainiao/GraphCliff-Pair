@@ -1,0 +1,7 @@
+{
+  "contract_tests_passed": 13,
+  "official_fppool_compaction_value_gradient_equivalence": true,
+  "formal_seed42_reaudit_runs": 8,
+  "summary_real_matrix_status": "pending full 24/78 run matrix; synthetic tests only so far",
+  "test_evaluated": false
+}

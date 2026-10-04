@@ -13,6 +13,9 @@ class DataContracts(unittest.TestCase):
         sources = json.loads((ROOT / "docs/sources.json").read_text())
         for name, record in sources["graphcliff"]["files"].items():
             self.assertEqual(hashlib.sha256((ROOT / "graphcliff_pair/vendor" / name).read_bytes()).hexdigest(), record["sha256"])
+        for section,name in [("protocol","protocol.py"),("training","training.py")]:
+            normalized=(ROOT / "graphcliff_pair/vendor" / name).read_text(encoding="utf-8").encode()
+            self.assertEqual(hashlib.sha256(normalized).hexdigest(),sources[section]["normalized_lf_sha256"])
 
     def test_self_duplicate_and_tie(self):
         mols = {i: Chem.MolFromSmiles(s) for i, s in enumerate(["CCO", "OCC", "CCN", "CCN"])}

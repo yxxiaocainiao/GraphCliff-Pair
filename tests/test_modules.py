@@ -1,4 +1,5 @@
 import unittest
+import copy
 import torch
 from torch_geometric.data import Batch, Data
 from graphcliff_pair.fingerprint import membership
@@ -14,6 +15,21 @@ def fp_graphs(smiles):
     return Batch.from_data_list(graphs)
 
 class ModuleContracts(unittest.TestCase):
+    def test_fppool_compaction_preserves_official_value_and_gradient(self):
+        from graphcliff_pair.fppool import FPPoolReadout
+        torch.set_num_threads(2)
+        graph=fp_graphs(['CCO','CCN'])
+        compact=FPPoolReadout(8).eval()
+        full=copy.deepcopy(compact)
+        x=torch.randn(graph.num_nodes,8,requires_grad=True)
+        x2=x.detach().clone().requires_grad_(True)
+        actual=compact(x,graph.batch,graph.atom_fp)
+        original=full.projection(full.pool(x2,graph.batch,graph.atom_fp)[0])
+        torch.testing.assert_close(actual,original,atol=2e-6,rtol=1e-5)
+        actual.square().sum().backward()
+        original.square().sum().backward()
+        torch.testing.assert_close(x.grad,x2.grad,atol=2e-6,rtol=1e-5)
+
     def test_weight_identity_gradient_and_bounds(self):
         p=torch.tensor([[0.3],[-1.]],requires_grad=True)
         y=torch.tensor([[0.],[-3.]])
