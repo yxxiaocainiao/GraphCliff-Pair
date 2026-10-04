@@ -2,9 +2,11 @@
 
 基于 GraphCliff 编码器的参考分子差值回归研究项目。逐项验证跨分子 Cross-Attention、FPPool、动态加权 Loss，保留原短长程编码机制。
 
-**状态：独立数据接口、三项模块与只输入 SMILES 的预测入口已实现，19 项契约测试与 16 组真实数据 smoke 已通过；正式验证正在运行，尚无三项机制的效果结论。**
+**状态（2026-10-05）：旧实验目标已暂停，后台训练与自动收尾均已停止。独立数据接口、三项模块和预测入口已实现，36项测试与16组真实数据smoke已通过。完整三种子消融、78模型权重重放及最终test未完成。**
 
-首轮两任务三种子24次交互实验已完成并独立审计：[完整验证结果](docs/interaction_three_seed_results.md)。Cross-Attention在两任务上均未超过原GraphCliff或容量匹配的pair MLP，预定额外任务扩展为No-Go；继续完成全部54次已冻结消融，test尚未评估。
+首轮两任务三种子24次交互实验已完成并独立审计：[完整验证结果](docs/interaction_three_seed_results.md)。Cross-Attention在两任务上均未超过原GraphCliff或容量匹配的pair MLP，预定额外任务扩展为No-Go；用户已暂停余下消融，test尚未评估。
+
+[阶段性证据解读](docs/development_evidence_summary.md)分别说明三个模块已有的支持、反证和未解决问题。用户已选定[新诊断目标及提前暂停条件](docs/diagnostic_goal.md)：仅用现有审计结果判断参考差值路线是否值得继续，不新增训练或读取test。系统自动目标因旧目标未完成而尚未切换；按用户随后“继续”的指令，诊断在本轮手动执行。
 
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
@@ -50,7 +52,7 @@ python -m graphcliff_pair.predict --run-dir artifacts/my_smoke/CHEMBL234_Ki/seed
 ## Sources
 
 - [GraphCliff official code](https://github.com/dmis-lab/GraphCliff)：复用分子特征、编码器及原读出。
-- [FPPool official code](https://github.com/shenwxlab/FPPool)：计划复用指纹分层池化，不自行重写算法。
+- [FPPool official code](https://github.com/shenwxlab/FPPool)：固定版本按需下载，已接入指纹分层池化，并核对适配后输出与梯度等价性。
 - [SQRL paper](https://arxiv.org/html/2501.09103v1)：参考相对回归的任务定义；不是官方复现。
 - [Siamese-Regression-Pairing](https://github.com/AstraZeneca/Siamese-Regression-Pairing)：参考近邻配对流程，是否借用具体源码需逐文件检查。
 - [PyTorch MultiheadAttention](https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html)：使用库内注意力运算。
@@ -62,12 +64,16 @@ python -m graphcliff_pair.predict --run-dir artifacts/my_smoke/CHEMBL234_Ki/seed
 
 最终test完成后使用 `python tools/summarize_test.py --freeze <freeze.json> --test-output <test-folder> --csv-root <csv-root> --output-prefix <report-prefix>`。它核对完整78个模型、数据/权重/预测身份与结构行序，重新计算各指标并汇总三种子；不按test选模型，不在test上执行扩展门槛。当前只完成合成流程检查，真实端到端核对待test评估后进行。
 
-当前完成24次交互及seed42的18次消融，共42次联合审计通过（[审计记录](docs/validation_through_seed42_audit.json)）。20项契约测试通过。Windows队列可用 `-ResumeAfterSeed42` 在重新审计后继续剩余36次；它拒绝重复训练及已有输出。完整78次报告与test仍待完成。
+## 当前验收与运行记录
+
+24次交互及seed42的18次消融，共42次联合审计通过（[审计记录](docs/validation_through_seed42_audit.json)）。当前36项测试覆盖模型接口、指标汇总、冻结重放、测试评估生命周期和恢复契约；通过这些测试不代表正式78模型已经全部验收。历史测试数量与提交见[里程碑](docs/milestones.md)。
 
 [seed42完整消融阶段表](docs/ablation_seed42_results.md)包含26组及全部条件差；仅单种子开发证据，不能替代完整三种子结论。
 
 [42次已完成训练的补充诊断](docs/validation_diagnostics_42.md)包含预定最近邻参考标签基线与加权Loss的训练分布；逐轮极值已与history核对。
 
-最终freeze现要求全部保存权重的validation重放，须使用原训练设备类型；33项契约测试通过。最终test通过原子状态保存及唯一输出登记处理中断和重复执行。正式全78重放及真实test尚未完成。
+最终freeze要求全部保存权重的validation重放，须使用原训练设备类型。最终test通过原子状态保存及唯一输出登记处理中断和重复执行。正式全78重放及真实test尚未完成。
 
-seed43在14/18组完成后发生CUDA非法指令，原进程已终止。`tools/run_queue.ps1 -RecoverSeed43`会保留失败目录，在新目录逐字节复用14完整组并按原配置从头训练4组，再串行seed44。36项测试通过；恢复结果仍须整阶段审计。
+seed43在14/18组完成后发生CUDA非法指令，随后在新目录复用14完整组并从头重训剩余组。用户暂停时，首个重训组完成至第46轮，尚未形成该组正式完成记录；已停止恢复队列并保留现场。当前恢复目录不能直接重新运行以覆盖结果；未来如另行恢复，须重新核对完整组与中断组。原失败目录与恢复目录不能重复计数。
+
+本机 `tools/finish_frozen_experiment.ps1` 原用于训练完成后串行收尾，现已随用户暂停停止。入口已通过前置与并发检查，但正式78模型重放及test未执行；不能将工具实现完成等同于实验验收完成。
