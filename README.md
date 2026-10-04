@@ -8,6 +8,8 @@
 
 [阶段性证据解读](docs/development_evidence_summary.md)分别说明三个模块已有的支持、反证和未解决问题。用户已选定[新诊断目标及提前暂停条件](docs/diagnostic_goal.md)：仅用现有审计结果判断参考差值路线是否值得继续，不新增训练或读取test。系统自动目标因旧目标未完成而尚未切换；按用户随后“继续”的指令，诊断在本轮手动执行。
 
+[D1参考相似度诊断](docs/diagnostics/reference_results.md)已完成42组输入身份/指标核对及训练分位数固定分层。CHEMBL234的global−direct在最高相似度层反而更不利，三seed及极端样本删除检查方向一致；继续仅检查该候选的差值/cliff构成。这是探索性关联，尚无原因归因。
+
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
 完整复现顺序、数据哈希及验证后测试步骤见[复现说明](docs/reproduction.md)。

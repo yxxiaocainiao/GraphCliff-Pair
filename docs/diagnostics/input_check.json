@@ -1,0 +1,312 @@
+{
+  "runs": 42,
+  "status": "passed",
+  "sources": {
+    "CHEMBL234_Ki/42/direct": {
+      "folder": "artifacts/interaction_seed42_20261004/CHEMBL234_Ki/seed42/direct",
+      "validation_predictions.csv": "3ddb7df945413b679ef99650bd08fe65ac03b97b2871d8bd84333896e19d3c3b",
+      "history.json": "56f0f04c8a601817784e1b39c1dd6ff11a75bd6d1623800d6ee8db2145e41afd",
+      "best.pt": "e34b8a761b3b04b61d2a289d7be412040f5a35b841ab70fd4f3e3488d3bb24ee",
+      "summary_sha256": "84fd0a76411aba3ae02457377e3a03f8321e52ac215b9a6a37b868ab17fa64c4"
+    },
+    "CHEMBL234_Ki/42/global": {
+      "folder": "artifacts/interaction_seed42_20261004/CHEMBL234_Ki/seed42/global",
+      "validation_predictions.csv": "cf804fa31450b02f260bfe794b307a829251c469298bf9c88be514f84a022142",
+      "history.json": "9bbc90ffbbff781b537aa72688cb77b07a0a4ebcf8a4384bba473b5ba3a3183d",
+      "best.pt": "62d0fc320e7a8e1ecde1de866250c9d58649dd802457ade824821de2334f1b98",
+      "summary_sha256": "0427f40b1c0f03bc1dc02dfbf9cb83bb0c6dd591bd4eb554df7c52e8a7064ac0"
+    },
+    "CHEMBL234_Ki/42/pair_mlp": {
+      "folder": "artifacts/interaction_seed42_20261004/CHEMBL234_Ki/seed42/pair_mlp",
+      "validation_predictions.csv": "283beadeb827c6e98c6193de90b48e072c62d7f67accb70473d65004f0242b0b",
+      "history.json": "af4f4b4e8be7bb5ec6fe1df8665adb87f00a66cc38de1f5b606eef265157b364",
+      "best.pt": "8e7db1271e6599c9313a31e67a2ad1d9fea0e88a573a52c33a45b70627e7aa72",
+      "summary_sha256": "9fd0fb3b665fa1bd37d7e1d88ede9b45fd635860fe7121d0c9317d8b93c4dc01"
+    },
+    "CHEMBL234_Ki/42/cross": {
+      "folder": "artifacts/interaction_seed42_20261004/CHEMBL234_Ki/seed42/cross",
+      "validation_predictions.csv": "fabd99ec371e8f7dd72aded436a239dbf67aad70cd906a1b33bd8eae9856665e",
+      "history.json": "f799e03e493dada09159f7afb389224eeaa9152491bcf862510f8e04045207d8",
+      "best.pt": "73ad832f61dccc91a2150aab8fca1446ec03ccae8fb0bde82cf3f3a164b66fba",
+      "summary_sha256": "0e1d7a191bd6ebe8f320983f512231d2ab87beb955190b4fb21b3c3502d9831d"
+    },
+    "CHEMBL244_Ki/42/direct": {
+      "folder": "artifacts/interaction_seed42_20261004/CHEMBL244_Ki/seed42/direct",
+      "validation_predictions.csv": "c69affbe06e2280d1f777ccc54e1b6e97514886d1893bdf8b6d48fa0fc792d7a",
+      "history.json": "96933d9cdf6439c43003af2bdd46e5dd8da8a13a1a8341871333f981fb939219",
+      "best.pt": "6c528440575d5b2ad0625e236d61f115a832d3272e23319156a5c8cecac21f8b",
+      "summary_sha256": "5e8358590c24db9bc4278de672afe5a95598f2dfe3bd418b69083aedd8b99522"
+    },
+    "CHEMBL244_Ki/42/global": {
+      "folder": "artifacts/interaction_seed42_20261004/CHEMBL244_Ki/seed42/global",
+      "validation_predictions.csv": "50d2fa33286a647445759731278453350e5c07bf22a24b9ca6a9569cb4a14d38",
+      "history.json": "5549e78530c27c71ee842128b34b6dc964e37b82537e8f809fa303187d966d29",
+      "best.pt": "be26897e2fa83eb11ae5d0428a994565765277e117af96d5bb58762014b46a16",
+      "summary_sha256": "d28687f81e93144b03327f808651d1bf11b259009371cb5dfe4aaf6f26f8f627"
+    },
+    "CHEMBL244_Ki/42/pair_mlp": {
+      "folder": "artifacts/interaction_seed42_20261004/CHEMBL244_Ki/seed42/pair_mlp",
+      "validation_predictions.csv": "53ad21ba792d50a7d47020e41fc1fa88bb2cf4f8ffe0b5ac39f57689b1480562",
+      "history.json": "8e30cc2d69ef3d1af51d9d1be370df7f4055aabdb1f6690031f857c8a10a0893",
+      "best.pt": "c8fa787ca2ddac62871eaa51fcd2a3d2e637d049e6b853edaca7919303bea952",
+      "summary_sha256": "849fe2c7ea0f8358fd5f664517cf5c4d39056d299d1f337b57cf81d096e5b5df"
+    },
+    "CHEMBL244_Ki/42/cross": {
+      "folder": "artifacts/interaction_seed42_20261004/CHEMBL244_Ki/seed42/cross",
+      "validation_predictions.csv": "b5d06d11708d12154fb6034966ea3030904286ac18bf8f6e8ba42cceb541da42",
+      "history.json": "919f4e0149c6e3cb76b113d1e222c1bfe93a4f97ca7084d334babb134721a1ba",
+      "best.pt": "481c8f743a56f595dd80fd832236cd0ede8f7f8cc2e2aa20cc05b4ffe4343c21",
+      "summary_sha256": "8132321e2079366cb517c8f8eae2e6789009737d6fdffe55896d4ce2e96b352e"
+    },
+    "CHEMBL234_Ki/43/direct": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL234_Ki/seed43/direct",
+      "validation_predictions.csv": "67aad2bb813575a9cc630fb79053bce5060f6bff8dd0d22d6ec4a528453e024e",
+      "history.json": "55d22e0fcab3dde5e7ea74c11bcad14efba867404dd1ab6462073798ff10cb10",
+      "best.pt": "3699610aa0492b5df2f9c3a323bc5146efdf9764d28e6cc7da2a3ad086891544",
+      "summary_sha256": "d65e422503f21342ad85af8732fdff7f98805677d281be329327b4f1b8a0b075"
+    },
+    "CHEMBL234_Ki/43/global": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL234_Ki/seed43/global",
+      "validation_predictions.csv": "9baa73066d4bd11fb5782b4cd6aa93446054f3970733760c6120b8a09bfda3bb",
+      "history.json": "0310b7e90fc2480cbaac88cc64a9388c6a47fd528912b086b1b0454021109952",
+      "best.pt": "ed66f7840f2b5b6b77652c16780216cd98e7dba4e6a90873816224f202a6203f",
+      "summary_sha256": "dff1bcd8eca800ed5d52797ab1b5a7e78ab7e407323dd5534ade5d3ef69e93ad"
+    },
+    "CHEMBL234_Ki/43/pair_mlp": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL234_Ki/seed43/pair_mlp",
+      "validation_predictions.csv": "e8ebf1365d2e6875c16657de31eb3a0395ef64da2e4b84ba4f1a380e57a742b2",
+      "history.json": "e8f2ef6d2827da23b7d9968e90e9d481fec8a137d3f1dcf2bab9359dd0d4f706",
+      "best.pt": "008997b2d047c72e1810b75b4f0378b4d4005698d10c6d2388d8cea1cd7caeb7",
+      "summary_sha256": "318b20b5aa9d60b87cdc2cf875af9067a08f1c4de59087c6e7b8aebc12720368"
+    },
+    "CHEMBL234_Ki/43/cross": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL234_Ki/seed43/cross",
+      "validation_predictions.csv": "e531db7b417d85fba06a8f109c2948fbe2c0a725793e662c8db1666d07e4cc34",
+      "history.json": "da4ff99fcce608f1cdb453e02552486e67964393dd584a0631b542cccc1d4dc7",
+      "best.pt": "cdd14999780f441b15bd42b1ba9d3c7ff254bc4bb7923dc7b9a29aeeae7f938e",
+      "summary_sha256": "7372ab6f3124e424e2dcfe239653c88168ffefd7eb23aa9be92cbe203661ac34"
+    },
+    "CHEMBL234_Ki/44/direct": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL234_Ki/seed44/direct",
+      "validation_predictions.csv": "3c54405767190f541ae8c1a22163507301e2887fe8717177bbeefb475a1e5b31",
+      "history.json": "090ce1e3616df5eac8b959e59939268ef0adc48e3cdfb7f1f2475ddcf9dfbb0a",
+      "best.pt": "6728b38f3351f4347b1992c64123f9c1635590bad44f33e95eebed6fe203d2da",
+      "summary_sha256": "3621bd41b9ee0ebbfbd9f938408dcfee77bae4a94295b87bbe97b5ed47e1cad8"
+    },
+    "CHEMBL234_Ki/44/global": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL234_Ki/seed44/global",
+      "validation_predictions.csv": "986c1064af7e33cf86029c96bdada1fb52830fb2a06ada2880b7a163df99dcb2",
+      "history.json": "676077b2b1267d44db130bd569bea9111385c731d55482d6bc999abcacc0bd0f",
+      "best.pt": "5fdb72f8edba58d5a29380902e715aa9f370a3cc207c6d5458111278487b2d6e",
+      "summary_sha256": "2bf7e6d39e36afbc17857640c71a022dba8663c71a3981817c40f7b4dfbad6f3"
+    },
+    "CHEMBL234_Ki/44/pair_mlp": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL234_Ki/seed44/pair_mlp",
+      "validation_predictions.csv": "8d0b501b4c46f3c8261e7025091b1282d00b39680baaf128225e09415ac161de",
+      "history.json": "14d624548ed98404e9a4588159e657b86d8774f2c745739d62afa80b6bfee283",
+      "best.pt": "4d2147fc284a5cc8d73cc70589cf918dc0aa2d67ebb35ac2683e372edba0ec0a",
+      "summary_sha256": "661005a087b0113378b947f7b1ba0c557a909c79e4f049eb31f5e4a2c1cf31f9"
+    },
+    "CHEMBL234_Ki/44/cross": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL234_Ki/seed44/cross",
+      "validation_predictions.csv": "88c6efcf7e2a780b29358fe8392bdc049c8aeeb3ed37ad40cbffd2b6a1f88bd1",
+      "history.json": "222fb48fa9bd7560366152516f698fe33016e8a0c227d037bc2235cf1cf99787",
+      "best.pt": "1846b63d1c68c95e78013aacbede78bc9a6a741267c6cfca86165170da6d3de6",
+      "summary_sha256": "7000ab1b08a42d0b619db029b76e77426383c8b28c0134ccb2571789c3c6a136"
+    },
+    "CHEMBL244_Ki/43/direct": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL244_Ki/seed43/direct",
+      "validation_predictions.csv": "b457d5f3eaec1bd801630359e93a73449b786231684b3a58871099ea068b250c",
+      "history.json": "442ad054ef6de850ff8c53f7f2a03c271580916b476651c5565669aa9cc4b212",
+      "best.pt": "e532ff3d03dc50fb396b5fe15273805e0c7387c62d9dc99fa8a9cd3b62d5cba6",
+      "summary_sha256": "8f335eb576ac913831bdcef3dffe8fd275294b2cfb22a7f5651ffb869ab6a0a2"
+    },
+    "CHEMBL244_Ki/43/global": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL244_Ki/seed43/global",
+      "validation_predictions.csv": "f2550151bdb33dffc62fba0535c08d5c91ff0a502e87815fc231975fbd945012",
+      "history.json": "b30b0d64575aace45c6dbf2cb63d827727555e745b6007035b9e51d7d17f7881",
+      "best.pt": "b04d6be6b42285ba6361618d2a07cf111017b8047ea19bab7446ae81e771c70b",
+      "summary_sha256": "8c3aed5c4b842f54a7d8f210166c2fc089eecad0c2db3d6ce45be8d7561250d6"
+    },
+    "CHEMBL244_Ki/43/pair_mlp": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL244_Ki/seed43/pair_mlp",
+      "validation_predictions.csv": "5374e0972da0bfe912555ce2a334c7406f46e3e23c282e35e9056fb9f94602d0",
+      "history.json": "8ebf11f7654ce41e57dd09176ab232c6878cb0f420f6e19f023350382baa01c8",
+      "best.pt": "f87edbbd08ef1c65f256828c9ad7db92aa089bed84c4c63273ed1624d250953b",
+      "summary_sha256": "511a0e962bdb621ce49106ad03b71b9d2a44e5d9469beb05ee0d11eb2b39a9b9"
+    },
+    "CHEMBL244_Ki/43/cross": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL244_Ki/seed43/cross",
+      "validation_predictions.csv": "b9cd413502090043d7047ba8a183bdde6a583e544e65f0d8195a3fbfcecf994f",
+      "history.json": "53b5ede8aca47585101d2fdff384d825ab076c91179d02c273d6c61b26887da9",
+      "best.pt": "1a55025f7efdb33886ab3704d2ab2fe9add1ff300c538037253767f819f70d05",
+      "summary_sha256": "838a3d37496ff84d8a02d4e17d6612218ddc1214f7340ec21ccc6973568360a3"
+    },
+    "CHEMBL244_Ki/44/direct": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL244_Ki/seed44/direct",
+      "validation_predictions.csv": "d475269d4670097f85936fdcf941b8a840ced44692502bcd88df3035e20a5f32",
+      "history.json": "da1aabb2ae157e84045b16111f84f37c611f17fca998b21d86c44a712c133020",
+      "best.pt": "d4df1e079d86efe10ea736608bbc756eb9776b8ffc2e27ecab7ec04141469d32",
+      "summary_sha256": "eb213bfbef0221c2666264c1160b8a0ccef3f3d63e977ce6803cf75db7759131"
+    },
+    "CHEMBL244_Ki/44/global": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL244_Ki/seed44/global",
+      "validation_predictions.csv": "cb39e6754cf75fb554afb9d28545dc58eb050f03ff08906d97cb6f08062574b9",
+      "history.json": "1286ac59cdc39e25abfd3bdedca9c18149ffc95d810900e35fbaed667e1cc0c5",
+      "best.pt": "668a2bd6a784a95d80ba12842aadd32f0a1ec7347618ec65d91089a60182f19a",
+      "summary_sha256": "4fe7304c60ae6414178e96338c0afd588cb55012b02fbaf70214cc08ed048110"
+    },
+    "CHEMBL244_Ki/44/pair_mlp": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL244_Ki/seed44/pair_mlp",
+      "validation_predictions.csv": "33da1b7c72b95471c73308eed788f7b0380052fdbef18e16330e86b409c80054",
+      "history.json": "c16ed36f9c6d8ecd0c51cfca687e57340e4798b2df25ac691baacff41d036781",
+      "best.pt": "5189fa9901b8de2468af40b37623597066a74b09dfebd0ec3c487cd305738d64",
+      "summary_sha256": "558e9ecf3c0a9c1489b5e52db79ec65540a9aa7434a6f59a1090de17e2302c06"
+    },
+    "CHEMBL244_Ki/44/cross": {
+      "folder": "artifacts/interaction_seed43_44_20261004/CHEMBL244_Ki/seed44/cross",
+      "validation_predictions.csv": "a081c3ff933e98069fa1e978a818c54bc8ae4e18cf96b295fc36ccf1848a0668",
+      "history.json": "87add77cc0b1a615876042d2ea7e118433798c6739c4887ee0e15e05d272d5c5",
+      "best.pt": "1d3e782c9288d7d6d5620aab90c389fcb830caf1c147507c9944e0ee07a71c27",
+      "summary_sha256": "5533843d11df7f8059764d33f6f9938ec669c1578d6c2a2b8215b56d9e7527c2"
+    },
+    "CHEMBL234_Ki/42/global_dynamic": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/global_dynamic",
+      "validation_predictions.csv": "818e4d7561b996f6cc6567ab8bcbe2f7ceeafbf2810b4d7317075454bae4f735",
+      "history.json": "ab0c1648c1d3517b754b6b6326a825aa9da7af2e2d891bc1437a4963336fa3be",
+      "best.pt": "7e285621963108f68b21a0dbc0070cda48c9a905c3c6b3068fabee241672a194",
+      "summary_sha256": "7fd478cea9d5fca90c036d440d613c8ef922a51cbd46ef5baa4c80bd3ef15858"
+    },
+    "CHEMBL234_Ki/42/cross_dynamic": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/cross_dynamic",
+      "validation_predictions.csv": "52e9dabf938cf90caa8755586046e176e9716094ddd9b1b58eb6a9450935fcfa",
+      "history.json": "8c1d59f63105834f5d566b69fee86a2780ec82602b5b31f05f036a69bbe46af2",
+      "best.pt": "43208db5ef6e583f3aee84a90274fc838962cde7e7daa0e5159a9ddfd9de24b1",
+      "summary_sha256": "3765f924cafea67a68e84b8760c7622a38a9dbb20c21ffe00ea2d49ec4e0640d"
+    },
+    "CHEMBL234_Ki/42/global_fp": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/global_fp",
+      "validation_predictions.csv": "f384a4682930c05fc18d56462200565b0b94d786d0800c53e4bdc90bef336ad8",
+      "history.json": "bba97d588cbd1f5ab03d326c9857070eba28da366946a0936914c17d220e9ea0",
+      "best.pt": "86b0e9262d89bddaa4c4c53a4c4975517204d7ba5d711ff0e9849a9bd0cb6f63",
+      "summary_sha256": "52c4d2ffb099ba27db742863d445928669b5c0232bf712d9af06674f700bb8a1"
+    },
+    "CHEMBL234_Ki/42/cross_fp": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/cross_fp",
+      "validation_predictions.csv": "271e9695fec2d17e898dc92175c7296b7686be0426e321f3f016a294b834e733",
+      "history.json": "7884d0c0e3fbcb41bf4e3ed1b35e1ecb99b0740e8369e6416f637744ebcbca8f",
+      "best.pt": "0a32dbdfab24e970299af6265d0b13ece5aac0b1d87e20d221fd36fa20a64b86",
+      "summary_sha256": "f709396d594ab81557387406ad13fa9d7a16ffd1b324f6f634a6d5eb7d2c0d30"
+    },
+    "CHEMBL234_Ki/42/global_fp_dynamic": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/global_fp_dynamic",
+      "validation_predictions.csv": "eed1c0bba4dee11e3e6b4c26edc383d2c239358acfad5bf519f10a0b679bceec",
+      "history.json": "33386c312d6b0d287e38252597514ff07fea40d35fe789ea86e52071ae093e37",
+      "best.pt": "4ed27a0541d911ffcee8a285a102abb7141730df7838a6ced89e97661cfd0745",
+      "summary_sha256": "1ee7476bcaccc8c57f99c89ce4f197c628e668df83b1a78db24a9c843ccca164"
+    },
+    "CHEMBL234_Ki/42/cross_fp_dynamic": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/cross_fp_dynamic",
+      "validation_predictions.csv": "d160ae2e43b8defdebcb697140557e459cd734434495c9a242e77fce6d54054f",
+      "history.json": "69c83d36fb57c843642e9fa22f849d50d4b60d374955769c019fda19c0ab22f9",
+      "best.pt": "4a97c89aa347dc004676dc1862da74c7954bdb20bf3301b631e11f930194b35e",
+      "summary_sha256": "922313c6925418aad2c6c0c8e727da6cd988dfef5d312c0cb1a8a17dccbfbaee"
+    },
+    "CHEMBL234_Ki/42/global_fp_static": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/global_fp_static",
+      "validation_predictions.csv": "e4c5b6691c311fa59c766f7c3659f899eaa7759012f2b10fe651de25f60db0d4",
+      "history.json": "762cb58067d997609412f3e817884a422558ecb2b57ad3ff676bf3e71c0b0440",
+      "best.pt": "2157d30c46ca02fb4ccb8fd6da81ed7617b0d2608705bfe1cdc95bb991face1e",
+      "summary_sha256": "8a696775c1d92afbb721c5020c7be2657f2a11fbaf2ec6c61a5850bab5ba35f3"
+    },
+    "CHEMBL234_Ki/42/cross_fp_static": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/cross_fp_static",
+      "validation_predictions.csv": "8269214077de83d1ee5329e58e2fbaaa091750e646dc8c2f730e5967ad9f06e3",
+      "history.json": "5acac6bcc98a1935c9b84264f2faf82e23e9f37f0c83b6d1b47e56847c53d3f3",
+      "best.pt": "008cf7e811b8a1380b1dc61f0602128ce40858adbba3cce30dbcc5abd928d49a",
+      "summary_sha256": "610ab9d38e0f29bd8afe2c9c766fef654c71ab82eb8e373aef0030a61294f551"
+    },
+    "CHEMBL234_Ki/42/pair_mlp_fp": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL234_Ki/seed42/pair_mlp_fp",
+      "validation_predictions.csv": "734f0c472d4f2c060e8f548e354702bc7b902d93e885ac5827ce318891bee305",
+      "history.json": "d5a9522222846a93bf5ce3b10233993ca10ee2be0615382f113b106ca45c5d59",
+      "best.pt": "56dc799a28ea64d6fac13f13814f3e832ce66a69e76f28f739c45d17dd82be3e",
+      "summary_sha256": "ada52cef29b8be0d792623a959cf1c160ab0867756d1d0f3c39d839d90d1a6e1"
+    },
+    "CHEMBL244_Ki/42/global_dynamic": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/global_dynamic",
+      "validation_predictions.csv": "31a08c7b6b63ae2713fd2fdb913c54c53d934b2d507fa373cfd5012dbfd7e523",
+      "history.json": "6ad489b818879840caf785f916c203e49921bfcffba372ac561efecf81d6f844",
+      "best.pt": "536d76a631b7359313eb145d0865f72cc757213a84ea26bcbe93cb7648817a2c",
+      "summary_sha256": "18c981734be698af0e135dc904e90e2a6ca5cb9029fac4b7c393ef1da01a1f12"
+    },
+    "CHEMBL244_Ki/42/cross_dynamic": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/cross_dynamic",
+      "validation_predictions.csv": "52d023e1b59cbe3eaddd80885489a537be7e911c352179f8f414f068539f773a",
+      "history.json": "4f560592fb3fddafa7e4c594133eb60472f3395f28a1742bed7ac43a60a90561",
+      "best.pt": "57470fc4f6a52eb27461c6196cf0f701405ef0872618ed2d4f016b2037769200",
+      "summary_sha256": "f4c86925dec9e1fdaec3ec64b5ef42c2eda89b35a3b37ecb780f1339ef0103ca"
+    },
+    "CHEMBL244_Ki/42/global_fp": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/global_fp",
+      "validation_predictions.csv": "21a3fe3976b74880758e046219d12d9bcefa3cf79b8d835f7ebecdd9acc25a5e",
+      "history.json": "74352df3a19f1e3eb341b38816855c96e0939855766af0454f816a0eb67e001a",
+      "best.pt": "07816fd0554411bdae7659f822586143b20be4a3048b8ee5ae04536219b61473",
+      "summary_sha256": "d8a4a2af8094550ef3e51d7a0eca3430c7ac8a06b9f23dd1dc1e9689035f453c"
+    },
+    "CHEMBL244_Ki/42/cross_fp": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/cross_fp",
+      "validation_predictions.csv": "f201cc2c8a58821f68db5a3b5b1e26b9f0b40be9a5cc73ea1cb6939ea71f0760",
+      "history.json": "489dcdb7a5c593b2a57a9c1a2b0ae19944e28c72f7ce00ea75692a4dd109f462",
+      "best.pt": "62e6ed0c3065c732ae229b4910241e5502585b0ed10173add49e055c554ffe64",
+      "summary_sha256": "45522708afe8aadad137c5b54b674abc64044a80f0524b9958a5c4e30c2abd38"
+    },
+    "CHEMBL244_Ki/42/global_fp_dynamic": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/global_fp_dynamic",
+      "validation_predictions.csv": "548e6aa37cec485f65390c82c527a87bf320df5532901e6d7613f5b58b4f2019",
+      "history.json": "ba849ea5fcc009f18688ae9e902503d4394f7540bdb1e2148507a6293fd60556",
+      "best.pt": "4443caf838f303772fdbad8ee010b443e42f72a00d5c5ccb844fd6560f81452b",
+      "summary_sha256": "aa2e7bc35393803fa445b19ed1058f43bbd6f63635e8063654c7493d5a349a96"
+    },
+    "CHEMBL244_Ki/42/cross_fp_dynamic": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/cross_fp_dynamic",
+      "validation_predictions.csv": "5053117335965c500444b747f685759cc50b111e91daa50d22ed43168ff31253",
+      "history.json": "f55e022fded0c56800032bba07e41bf669a2818ade31f0ef70b57fdab448ec22",
+      "best.pt": "f7bab7f137889f5a6796c2bfe01e28f311a98dbba7190a54b9cd4c21d21dd61e",
+      "summary_sha256": "edfca70fb6e97855b86eef3daab1dcb01d685678ce9c2ff34639adfeb1943c49"
+    },
+    "CHEMBL244_Ki/42/global_fp_static": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/global_fp_static",
+      "validation_predictions.csv": "ca9c5aeb537575a0a2c50cf73e25e8fcb6187b6db54700d7c235463c982504b6",
+      "history.json": "042c31d898d3ff7117ddae9ab3eeaef5e864b38b0bdc1c0958f7e6b692bd5811",
+      "best.pt": "097ff10ac8c4a90fb9d9a83261f81b67e7f8a2e960ab54fad29c58194dde1f7f",
+      "summary_sha256": "30bbb288b995dca21ef34da046fb0ec146dc1c53de567c3ab7931c79c654cb02"
+    },
+    "CHEMBL244_Ki/42/cross_fp_static": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/cross_fp_static",
+      "validation_predictions.csv": "60a74f20286d656678558671fbfe19d65b70494869c0e8d8317edffcf7097604",
+      "history.json": "3020f853ee18188fceb96764481859b28f816960636081b8695a8cf454b078fc",
+      "best.pt": "caebc46347c3326f843fff15688a325273502bc17913d112d54903629b8ee09f",
+      "summary_sha256": "7c2367107af04e5aeb3e488a6227c1089221c3f697a599008efb4f77f9963a7d"
+    },
+    "CHEMBL244_Ki/42/pair_mlp_fp": {
+      "folder": "artifacts/ablation_seed42_20261004/CHEMBL244_Ki/seed42/pair_mlp_fp",
+      "validation_predictions.csv": "f875617993621b5a248d19f105aecd738b2f89c5eae7cab919becdba2335d30c",
+      "history.json": "cf3d21f03594c92b2bf9d7d1959ea41e4ce5cc2351d97edcd6b99c85b55ddae0",
+      "best.pt": "2169ab2645a2a394507dfdd12924cae82803cca1fb858431ab983a17d5f76bf9",
+      "summary_sha256": "eaa9a7212de79ad8a019f297f99b6738cb613caddc0f7032e892bb0a9cdd3453"
+    }
+  },
+  "checks": [
+    "audited prediction/history/checkpoint bytes unchanged",
+    "all metrics independently recomputed",
+    "identical query/reference/labels/similarity across all arms and seeds",
+    "train-only reference row membership and recorded validation pairs",
+    "best epoch equals minimum saved validation MSE"
+  ],
+  "limitations": [
+    "No raw source CSV opened; source label provenance inherited from historical audit",
+    "Checkpoint hashed only; no inference/replay or training performed",
+    "No test labels or interrupted-stage outputs read"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "status": "frozen_before_stratified_errors",
+  "runs": [
+    "artifacts/interaction_seed42_20261004",
+    "artifacts/interaction_seed43_44_20261004",
+    "artifacts/ablation_seed42_20261004"
+  ],
+  "tasks": {
+    "CHEMBL234_Ki": {
+      "edges": [
+        0.0,
+        0.7073170731707317,
+        0.7894736842105263,
+        0.8492924528301887,
+        1.0
+      ],
+      "bin_rule": "[lower,upper), final bin includes 1; tied edges merged",
+      "training_pair_count": 2632,
+      "scale": 0.45154499349597177,
+      "pairs_path": "artifacts/interaction_seed42_20261004/CHEMBL234_Ki/pairs.json",
+      "pairs_sha256": "2efc52184ab01480c61383f5da25fe678e915e726c5bd1db89ca969e0da5e51b"
+    },
+    "CHEMBL244_Ki": {
+      "edges": [
+        0.0,
+        0.7564102564102564,
+        0.8166666666666667,
+        0.859375,
+        1.0
+      ],
+      "bin_rule": "[lower,upper), final bin includes 1; tied edges merged",
+      "training_pair_count": 2229,
+      "scale": 0.45593195564972433,
+      "pairs_path": "artifacts/interaction_seed42_20261004/CHEMBL244_Ki/pairs.json",
+      "pairs_sha256": "6da38e733e0d063ff8414a2cf3a7b034fef74c240729d87b090a1d95ef11b2c8"
+    }
+  },
+  "audit_sha256": "c9a6b1ace3178f5810ab78c620a202761e1d48db46dfc0948d37b9509333e728",
+  "model_count": 42,
+  "candidate_rule": {
+    "contrasts": [
+      [
+        "global",
+        "direct"
+      ],
+      [
+        "cross",
+        "global"
+      ],
+      [
+        "cross",
+        "pair_mlp"
+      ]
+    ],
+    "task_order": [
+      "CHEMBL234_Ki",
+      "CHEMBL244_Ki"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "compare": "Q1 minus Q4 paired squared-error penalty",
+    "minimum_queries_per_extreme_bin": 20,
+    "same_direction_all_three_seeds": true,
+    "same_direction_after_dropping_largest_absolute_penalty_in_each_bin": true,
+    "minimum_mean_gap_fraction_of_direct_overall_mse": 0.05,
+    "interpretation": "Pragmatic exploratory screening, not power or significance"
+  }
+}

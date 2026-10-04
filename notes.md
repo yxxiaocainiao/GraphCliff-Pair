@@ -83,3 +83,11 @@ seed42后续18次消融训练已完成；原队列因审计把pair_mlp_fp误归�
 新增docs/diagnostic_goal.md，限制输入为已联合审计42组，按D0身份核对、D1参考可靠性、D2差值/cliff覆盖、D3曲线与决策顺序检查信息价值，不为交付数量扩展计算。新增中文阶段性证据解读，统一README当前36项历史测试与暂停口径，修正“没有学习曲线”应为未完成归因分析。4份文档本地链接与git diff --check通过。没有修改训练源码、配置、模型或Loss。
 
 create_goal被系统拒绝，因为此聊天存在尚未完成的旧目标；保留旧目标paused，不将其标记complete。用户随后要求继续，本轮手动开展新诊断，不恢复旧队列。已有CSV包含验证标签、参考标签、相似度和分子cliff标记，第一轮诊断不需读取原CSV或test标签。
+
+## M7b — 2026-10-05：固定分层的参考可靠性诊断
+
+新增tools/diagnose_reference.py，仅读取已审计三阶段输出，不导入训练、不打开源CSV。prepare先保存训练相似度四分位数边界及操作门槛；reference核对42组预测/history/checkpoint哈希、重算指标、同样本身份和训练参考membership后分层。CSV使用round_trip读取，避免默认浮点解析导致与JSON相似度相差一个ULP；未改变结果或审计容差。
+
+docs/diagnostics包含analysis_plan、input_check、reference_results JSON/中文报告及PNG/SVG/PDF。固定候选门槛为两端各20查询、三个seed方向及每层删除最大|平方误差差|后方向一致、平均层间差达到direct总体MSE的5%；这是分析前记录的实用筛选，不是论文参数或显著性。首个候选234/global−direct的Q1−Q4差为−0.1237/−0.2416/−0.2288，表明高相似度层相对direct反而更差，平均差绝对值相当于direct总体MSE的53.7%。删除检查三seed仍负；标准库csv/math独立复算逐项一致。其余候选与244反例均保留。
+
+Matplotlib技能用于独立科研图，现有3.10.8环境可用；新增可选diagnostics依赖，不安装或升级环境。图已目视检查并修正计数标注与图例留白。D1有新增稳定模式，按门槛继续D2检查分子cliff构成及训练中位差值尺度，保持旧训练/test暂停。
