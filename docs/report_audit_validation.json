@@ -1,0 +1,8 @@
+{
+  "runs": 16,
+  "verification": "source/data/row/pair/label/initialization/selection/metrics checked",
+  "test_evaluated": false,
+  "pair_definition": "validation-internal Morgan radius2/1024 Tanimoto>=0.8; delta=y_b-y_a; secondary diagnosis, not official cliff mask",
+  "contract_tests_passed": 9,
+  "scope": "16 infrastructure smoke runs; formal interaction queue is still running"
+}
