@@ -57,7 +57,9 @@ def audit(folders, csv_root):
         summaries = read_json(folder/"summary.json")
         if len(summaries)!=len(expected) or complete["runs"]!=len(expected) or complete["test_evaluated"]:
             raise AssertionError("队列不完整或出现 test 评估")
-        core = {k:v for k,v in manifest["source_sha256"].items() if not k.endswith("report.py")}
+        # 独立predict CLI不被train/evaluate导入，其后续I/O修正不改变训练身份。
+        core = {k:v for k,v in manifest["source_sha256"].items()
+                if k.replace('\\','/')!='graphcliff_pair/predict.py'}
         if training_hashes is None:
             training_hashes=core
         else:

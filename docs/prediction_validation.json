@@ -5,7 +5,8 @@
   "input_order_verified": true,
   "reference_selection_matches_training_evaluation": true,
   "same_device_max_prediction_difference": 0.0,
-  "contract_tests_passed": 10,
+  "contract_tests_passed": 17,
+  "reference_labels_loaded": "only declared training rows; non-training y records skipped",
   "test_evaluated": false,
   "numeric_settings": "match upstream CUBLAS workspace, deterministic warn_only, high matmul precision and stored batch size"
 }

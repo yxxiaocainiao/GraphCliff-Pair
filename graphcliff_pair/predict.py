@@ -26,6 +26,20 @@ def graph_and_identity(smiles, with_fp=False):
         graph.atom_fp=membership(sample)
     return graph,Chem.MolToSmiles(mol,canonical=True),FP.GetFingerprint(mol)
 
+def training_rows_only(source_csv,rows):
+    if rows!=sorted(set(rows)) or not rows:
+        raise ValueError('训练参考行号必须非空、唯一且有序')
+    structures=pd.read_csv(source_csv,usecols=['smiles','split'])
+    selected=structures.loc[rows].copy()
+    if not selected['split'].eq('train').all():
+        raise ValueError('参考行不属于官方train')
+    row_set=set(rows)
+    # skiprows保留header及指定训练记录，避免加载验证/test的y列值。
+    labels=pd.read_csv(source_csv,usecols=['y'],skiprows=lambda line:line>0 and line-1 not in row_set)
+    if len(labels)!=len(rows): raise ValueError('训练标签读取与行号不一致')
+    selected['y']=pd.Series(labels.y.to_numpy(),index=rows)
+    return selected
+
 @torch.no_grad()
 def infer(model,variant,query_smiles,bank,batch_size=32,device="cpu",with_fp=False):
     if not query_smiles or batch_size<1:
@@ -83,10 +97,8 @@ def run(run_dir,source_csv,query_csv,output,batch_size=None,device=None):
     batch_size=config["batch_size"] if batch_size is None else batch_size
     arm=next(a for a in config["arms"] if a["name"]==run_dir.name)
     fp=arm["readout"]=="fppool"
-    frame=pd.read_csv(source_csv,usecols=["smiles","y","split"])
     rows=pairing["train_rows"]
-    if not all(frame.loc[rows,"split"]=="train"):
-        raise ValueError("参考行不属于官方 train")
+    frame=training_rows_only(source_csv,rows)
     bank={}
     for row in rows:
         graph,canonical,fingerprint=graph_and_identity(frame.at[row,"smiles"],fp)

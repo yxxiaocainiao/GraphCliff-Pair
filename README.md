@@ -2,7 +2,7 @@
 
 基于 GraphCliff 编码器的参考分子差值回归研究项目。逐项验证跨分子 Cross-Attention、FPPool、动态加权 Loss，保留原短长程编码机制。
 
-**状态：独立数据接口、三项模块与只输入 SMILES 的预测入口已实现，16 项契约测试与 16 组真实数据 smoke 已通过；正式验证正在运行，尚无三项机制的效果结论。**
+**状态：独立数据接口、三项模块与只输入 SMILES 的预测入口已实现，17 项契约测试与 16 组真实数据 smoke 已通过；正式验证正在运行，尚无三项机制的效果结论。**
 
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
@@ -33,7 +33,7 @@ python tools/verify_smoke.py artifacts/my_smoke --report docs/my_smoke_validatio
 
 ## 独立预测
 
-查询 CSV 只需 `smiles` 列，附带的 `y` 不读取。参考库使用训练时同一份 CSV，并核对文件哈希与训练行号。
+查询 CSV 只需 `smiles` 列，附带的 `y` 不读取。参考库使用训练时同一份 CSV，并核对文件哈希与训练行号；仅加载这些训练行的活性值。
 
 ```powershell
 python -m graphcliff_pair.predict --run-dir artifacts/my_smoke/CHEMBL234_Ki/seed42/cross_fp_dynamic --source-csv "D:/GraphCliff-main/benchmark_data/CHEMBL234_Ki.csv" --query-csv queries.csv --output artifacts/query_predictions.csv

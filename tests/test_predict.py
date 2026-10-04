@@ -1,9 +1,22 @@
 import unittest
+import tempfile
+from pathlib import Path
+import pandas as pd
 import torch
 from graphcliff_pair.model import PairRegressor
-from graphcliff_pair.predict import graph_and_identity,infer
+from graphcliff_pair.predict import graph_and_identity,infer,training_rows_only
 
 class PredictContracts(unittest.TestCase):
+    def test_bank_reads_only_declared_training_labels(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'source.csv'
+            pd.DataFrame({'smiles':['CCO','CCN','CCC','CCCl'],'y':[1,'test-secret',2,'validation-secret'],
+                          'split':['train','test','train','train']}).to_csv(path,index=False)
+            selected=training_rows_only(path,[0,2])
+            self.assertEqual(selected.index.tolist(),[0,2])
+            self.assertEqual(selected.y.tolist(),[1,2])
+            with self.assertRaises(ValueError): training_rows_only(path,[0,1])
+
     def test_order_batch_and_reference_label_boundary(self):
         torch.manual_seed(42)
         torch.set_num_threads(2)
