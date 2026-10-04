@@ -1,4 +1,4 @@
-param([int]$WaitPid, [switch]$ResumeAfterSeed42)
+param([int]$WaitPid, [switch]$ResumeAfterSeed42, [switch]$RecoverSeed43)
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $pythonPath = 'D:\Tools\conda-envs\graphcliff\python.exe'
@@ -11,7 +11,20 @@ function Write-QueueState($phase, $current, $childId, $message) {
 }
 
 try {
-    if ($ResumeAfterSeed42) {
+    if ($RecoverSeed43 -and $ResumeAfterSeed42) { throw '恢复入口互斥，只选择一个' }
+    if ($RecoverSeed43) {
+        $activeTraining = Get-CimInstance Win32_Process -Filter "Name = 'python.exe'" | Where-Object { $_.CommandLine -match 'graphcliff_pair\.train|recover_validation\.py' }
+        if ($activeTraining) { throw '已有项目训练或恢复进程，拒绝重复启动' }
+        $recoveredOutput = 'artifacts/ablation_seed43_recovered_20261005'
+        if (Test-Path -LiteralPath $recoveredOutput) { throw '恢复目录已存在，拒绝覆盖' }
+        $recoveryArgs = @('tools/recover_validation.py','--source','artifacts/ablation_seed43_20261004','--config','configs/ablation_seed43.json','--csv-root','D:/GraphCliff-main/benchmark_data','--output',$recoveredOutput)
+        $child = Start-Process -FilePath $pythonPath -ArgumentList $recoveryArgs -WorkingDirectory $projectRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $projectRoot ($recoveredOutput + '.out.log')) -RedirectStandardError (Join-Path $projectRoot ($recoveredOutput + '.err.log')) -PassThru
+        Write-QueueState 'running' 'ablation_seed43_recovered_20261005' $child.Id '原样复用14个完整模型，其余4个按冻结配置从头训练；保留失败现场'
+        $child.WaitForExit()
+        if ($child.ExitCode -ne 0) { throw "恢复训练失败，保留新输出: exit=$($child.ExitCode)" }
+        & $pythonPath tools/audit_runs.py --runs $recoveredOutput --csv-root D:/GraphCliff-main/benchmark_data --output ($recoveredOutput + '_audit.json')
+        if ($LASTEXITCODE -ne 0) { throw '恢复阶段独立审计失败' }
+    } elseif ($ResumeAfterSeed42) {
         $activeTraining = Get-CimInstance Win32_Process -Filter "Name = 'python.exe'" | Where-Object { $_.CommandLine -match 'graphcliff_pair\.train' }
         if ($activeTraining) { throw '已有项目训练进程，拒绝启动重复队列' }
         $completedStages = @('artifacts/interaction_seed42_20261004','artifacts/interaction_seed43_44_20261004','artifacts/ablation_seed42_20261004')
@@ -36,6 +49,7 @@ try {
         @{config='configs/ablation_seed44.json'; name='ablation_seed44_20261004'}
     )
     if ($ResumeAfterSeed42) { $stages = $stages[2..3] }
+    if ($RecoverSeed43) { $stages = @(@{config='configs/ablation_seed44.json'; name='ablation_seed44_20261005'}) }
     foreach ($stage in $stages) {
         $outputPath = 'artifacts/' + $stage.name
         if (Test-Path -LiteralPath $outputPath) { throw "输出已存在，拒绝重用: $outputPath" }

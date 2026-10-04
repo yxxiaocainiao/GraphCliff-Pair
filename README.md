@@ -69,3 +69,5 @@ python -m graphcliff_pair.predict --run-dir artifacts/my_smoke/CHEMBL234_Ki/seed
 [42次已完成训练的补充诊断](docs/validation_diagnostics_42.md)包含预定最近邻参考标签基线与加权Loss的训练分布；逐轮极值已与history核对。
 
 最终freeze现要求全部保存权重的validation重放，须使用原训练设备类型；33项契约测试通过。最终test通过原子状态保存及唯一输出登记处理中断和重复执行。正式全78重放及真实test尚未完成。
+
+seed43在14/18组完成后发生CUDA非法指令，原进程已终止。`tools/run_queue.ps1 -RecoverSeed43`会保留失败目录，在新目录逐字节复用14完整组并按原配置从头训练4组，再串行seed44。36项测试通过；恢复结果仍须整阶段审计。

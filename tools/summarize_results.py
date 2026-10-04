@@ -95,6 +95,7 @@ def analyze(audited,phase):
              for r in records if 'weight_diagnostics' in r]
     return {'phase':phase,'runs':len(records),'summary':groups,'comparisons':comparisons,
             'nearest_reference':baselines,'weight_diagnostics':weights,
+            'recovery_events':audited.get('recovery_events',[]),
             'interaction_expansion_gate':interaction_gate(comparisons),'test_evaluated':False,
             'limitations':'two previously explored development tasks; 3 seeds per task; pairs share molecules; no significance claim'}
 
@@ -131,6 +132,11 @@ def write_markdown(path,result):
     for r in result['summary']:
         budgets=[value(r[name]) for name in ['parameters','epochs_run','optimizer_steps','train_graph_forwards','elapsed_seconds','peak_cuda_mb']]
         lines.append(f"|{r['dataset']}|{r['arm']}|"+'|'.join(budgets)+'|')
+    if result.get('recovery_events'):
+        lines+=['','中断与恢复记录：下表成本只计完成的模型，不含失败尝试的额外工作量；中断过程没有完整耗时记录，不能称所有尝试的总计算成本。完整失败现场和来源身份保留在恢复记录中。']
+        for event in result['recovery_events']:
+            epochs=sum(m['completed_epochs_before_failure'] for m in event['interrupted_attempts'])
+            lines.append(f"- {event['run_folder']}：原样复用{len(event['completed_copied'])}个完整模型，{len(event['restarted_from_initialization'])}个未完成模型从初值重跑；失败尝试已记录{epochs}个完整epoch。未从中断best.pt继续或跨尝试挑选指标。")
     weights=[w for w in result.get('weight_diagnostics',[]) if w['mode']!='mse']
     if weights:
         lines+=['','## 训练权重分布','',

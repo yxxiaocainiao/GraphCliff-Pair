@@ -64,6 +64,7 @@ def audit(folders, csv_root):
     records, evidence, initializations = [], [], {}
     seen, cached, variants = set(), {}, {}
     baselines, baseline_checked, weight_cache = {}, set(), {}
+    recovery_events=[]
     training_hashes = None
     fixed_config = None
     for folder in map(Path, folders):
@@ -77,6 +78,34 @@ def audit(folders, csv_root):
         elif fixed_config!=core_config:
             raise AssertionError("队列的固定训练预算/超参数不一致")
         expected = {(d,s,a["name"]) for d in config["datasets"] for s in config["seeds"] for a in config["arms"]}
+        recovery_path=folder/'recovery.json'
+        if recovery_path.exists():
+            recovery=read_json(recovery_path)
+            source=(ROOT/recovery['source']).resolve()
+            if not source.is_relative_to(ROOT) or recovery['test_evaluated'] or digest(source/'manifest.json')!=recovery['source_manifest_sha256']:
+                raise AssertionError('恢复源身份或test边界不同')
+            if read_json(source/'manifest.json')['config']!=config:
+                raise AssertionError('恢复配置不同于原冻结阶段')
+            copied=set()
+            for model in recovery['completed_copied']:
+                key=(model['dataset'],model['seed'],model['arm'])
+                if key not in expected or key in copied:
+                    raise AssertionError('恢复复用组重复或越出矩阵')
+                copied.add(key)
+                relative=Path(key[0])/f'seed{key[1]}'/key[2]
+                if set(model['files'])!={'best.pt','summary.json','history.json','validation_predictions.csv','initialization.json'}:
+                    raise AssertionError('恢复复用组缺少完整文件身份')
+                for name,sha in model['files'].items():
+                    if name not in ['best.pt','summary.json','history.json','validation_predictions.csv','initialization.json'] or digest(source/relative/name)!=sha or digest(folder/relative/name)!=sha:
+                        raise AssertionError('恢复复用结果字节不同')
+            source_completed=[(m['dataset'],m['seed'],m['arm']) for m in read_json(source/'summary.json')]
+            if len(source_completed)!=len(set(source_completed)) or set(source_completed)!=copied:
+                raise AssertionError('未原样复用所有原完成组')
+            restarted=[(m['dataset'],m['seed'],m['arm']) for m in recovery['restarted_from_initialization']]
+            if len(restarted)!=len(set(restarted)) or set(restarted)!=expected-copied:
+                raise AssertionError('恢复阶段未保留全部预定组')
+            recovery_events.append(dict(run_folder=folder.resolve().relative_to(ROOT).as_posix(),
+                                        recovery_sha256=digest(recovery_path),**recovery))
         summaries = read_json(folder/"summary.json")
         if len(summaries)!=len(expected) or complete["runs"]!=len(expected) or complete["test_evaluated"]:
             raise AssertionError("队列不完整或出现 test 评估")
@@ -165,7 +194,7 @@ def audit(folders, csv_root):
         if actual!=expected:
             raise AssertionError("结果没有覆盖预定矩阵")
     check_initializations(initializations,variants)
-    return dict(runs=len(records),records=records,evidence=evidence,nearest_reference=[baselines[d] for d in sorted(baselines)],
+    return dict(runs=len(records),records=records,evidence=evidence,recovery_events=recovery_events,nearest_reference=[baselines[d] for d in sorted(baselines)],
                 verification="source/data/row/pair/label/initialization/selection/metrics checked",test_evaluated=False,
                 pair_definition="validation-internal Morgan radius2/1024 Tanimoto>=0.8; delta=y_b-y_a; secondary diagnosis, not official cliff mask")
 

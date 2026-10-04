@@ -55,3 +55,9 @@ if ($LASTEXITCODE -ne 0) { throw '最终test独立核对失败' }
 保留各阶段manifest.json（环境、配置、Git提交、源哈希、dirty状态）、任务pairs.json（行号/参考/数据哈希）、模型initialization.json、history.json、best.pt、validation_predictions.csv、summary.json、completed.json，以及独立audit和最终freeze/test报告。终止输出不能冒充完成。公开发布配置、汇总和来源证据；原始数据、预测与checkpoint留在忽略的artifacts内。
 
 已完成的本机交互数值见interaction_three_seed_results.md及对应audit.json。新的复跑结果需独立核对；此说明中的正式命令/最终测试流程不能视作已在第二台机器端到端验证。
+
+## 本机失败阶段恢复
+
+2026-10-05的seed43 CUDA失败现场保留于artifacts/ablation_seed43_20261004；该目录未完成，不计入正式汇总。恢复使用tools/recover_validation.py，保持原冻结配置/源字节/设备类型；14个完整模型逐文件复制，4个失败或未启动模型从初始状态重新训练。原partial best.pt不作为完成结果，也不据失败尝试挑选指标。恢复来源、复制哈希和失败历史epoch记录在recovery.json。失败尝试的全部额外耗时无法精确恢复，最终成本表只计完成模型并披露此限制。
+
+本机正式五阶段输出为interaction_seed42_20261004、interaction_seed43_44_20261004、ablation_seed42_20261004、ablation_seed43_recovered_20261005、ablation_seed44_20261005（均在artifacts下）；不要同时加入原失败seed43目录。该恢复安排不增加有效训练组或修改模型/超参数。新机器从前述五个正式配置全新运行即可，不需要复用本机失败现场。
