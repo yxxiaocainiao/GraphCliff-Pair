@@ -2,7 +2,7 @@
 
 基于 GraphCliff 编码器的参考分子差值回归研究项目。逐项验证跨分子 Cross-Attention、FPPool、动态加权 Loss，保留原短长程编码机制。
 
-**状态：独立数据接口、三项模块与只输入 SMILES 的预测入口已实现，17 项契约测试与 16 组真实数据 smoke 已通过；正式验证正在运行，尚无三项机制的效果结论。**
+**状态：独立数据接口、三项模块与只输入 SMILES 的预测入口已实现，19 项契约测试与 16 组真实数据 smoke 已通过；正式验证正在运行，尚无三项机制的效果结论。**
 
 首轮两任务三种子24次交互实验已完成并独立审计：[完整验证结果](docs/interaction_three_seed_results.md)。Cross-Attention在两任务上均未超过原GraphCliff或容量匹配的pair MLP，预定额外任务扩展为No-Go；继续完成全部54次已冻结消融，test尚未评估。
 
@@ -57,3 +57,5 @@ python -m graphcliff_pair.predict --run-dir artifacts/my_smoke/CHEMBL234_Ki/seed
 三种子矩阵形成后运行 `python tools/summarize_results.py --runs <run-folders> --csv-root <csv-root> --phase interaction --output-prefix <report-prefix>`；完整消融使用 `--phase full`。工具先独立审计再汇总，拒绝不完整矩阵。
 
 最终test入口为 `tools/freeze_validation.py` 与 `tools/evaluate_test.py`。只有完整78次验证及报告核对通过后才能冻结；冻结后核对所有权重、来源和数据身份。当前test尚未执行，不能用单种子或smoke跳过完整验证。
+
+最终test完成后使用 `python tools/summarize_test.py --freeze <freeze.json> --test-output <test-folder> --csv-root <csv-root> --output-prefix <report-prefix>`。它核对完整78个模型、数据/权重/预测身份与结构行序，重新计算各指标并汇总三种子；不按test选模型，不在test上执行扩展门槛。当前只完成合成流程检查，真实端到端核对待test评估后进行。
