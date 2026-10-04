@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphcliff-pair"
+version = "0.1.0"
+description = "Controlled reference regression with a reused GraphCliff encoder"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.7,<2.8", "torch-geometric>=2.6,<2.7", "rdkit>=2025.3,<2026", "numpy>=2,<3", "pandas>=2.3,<3"]
+
+[tool.setuptools.packages.find]
+include = ["graphcliff_pair*"]

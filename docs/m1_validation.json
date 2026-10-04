@@ -1,0 +1,25 @@
+{
+  "CHEMBL234_Ki": {
+    "input_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "train_count": 2632,
+    "valid_count": 292,
+    "graph_count": 2924,
+    "train_valid_canonical_overlap": 0,
+    "test_evaluated": false
+  },
+  "CHEMBL244_Ki": {
+    "input_sha256": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+    "train_count": 2229,
+    "valid_count": 247,
+    "graph_count": 2476,
+    "train_valid_canonical_overlap": 0,
+    "test_evaluated": false
+  },
+  "checks": [
+    "official source hashes",
+    "self/canonical exclusion and tie rule",
+    "original split row identity",
+    "reference train membership",
+    "all development graphs built"
+  ]
+}
