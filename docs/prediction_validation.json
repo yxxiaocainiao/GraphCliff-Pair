@@ -1,0 +1,11 @@
+{
+  "queries": 64,
+  "query_y_column": 999999,
+  "query_labels_ignored": true,
+  "input_order_verified": true,
+  "reference_selection_matches_training_evaluation": true,
+  "same_device_max_prediction_difference": 0.0,
+  "contract_tests_passed": 10,
+  "test_evaluated": false,
+  "numeric_settings": "match upstream CUBLAS workspace, deterministic warn_only, high matmul precision and stored batch size"
+}

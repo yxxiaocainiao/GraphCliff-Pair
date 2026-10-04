@@ -29,6 +29,18 @@ python tools/verify_smoke.py artifacts/my_smoke --report docs/my_smoke_validatio
 
 在本机已验证的环境为 torch 2.7.1+cu128 / PyG 2.6.1 / RDKit 2025.03.6。保留上游 best-effort 确定性策略，不保证 GPU 跨硬件逐位相同；attention 使用 PyTorch math backend。
 
+## 独立预测
+
+查询 CSV 只需 `smiles` 列，附带的 `y` 不读取。参考库使用训练时同一份 CSV，并核对文件哈希与训练行号。
+
+```powershell
+python -m graphcliff_pair.predict --run-dir artifacts/my_smoke/CHEMBL234_Ki/seed42/cross_fp_dynamic --source-csv "D:/GraphCliff-main/benchmark_data/CHEMBL234_Ki.csv" --query-csv queries.csv --output artifacts/query_predictions.csv
+```
+
+输出保留输入顺序，包含预测活性、训练参考行号、结构相似度和预测差值。`direct` arm 的 `delta_prediction` 为空；它仍输出结构选出的参考信息作审计，但原模型预测不使用参考标签。
+
+完成正式队列后使用 `python tools/audit_runs.py --runs <run-folder> --csv-root <csv-root> --output <audit.json>` 独立核对。验证内部 Morgan 相似对的差值指标只是辅助诊断，不等于官方 Cliff RMSE。
+
 ## Sources
 
 - [GraphCliff official code](https://github.com/dmis-lab/GraphCliff)：复用分子特征、编码器及原读出。
