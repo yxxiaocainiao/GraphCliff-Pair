@@ -8,6 +8,8 @@
 
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
+完整复现顺序、数据哈希及验证后测试步骤见[复现说明](docs/reproduction.md)。
+
 预测契约：`delta(query, reference) = y_query - y_reference`，`y_hat = y_reference + delta_hat`。参考来自同任务训练集，按结构选择；查询活性不传入模型。
 
 ## 使用
