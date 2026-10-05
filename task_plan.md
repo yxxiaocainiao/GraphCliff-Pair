@@ -231,3 +231,9 @@ P0：首次预检3979未达每角色100样本门槛；改用已有244资产，�
 
 
 M23：有限基线协议已冻结：234/244/4792仅official train，fit/monitor/calibration/evaluation角色分开并按canonical排重；先seed42三任务，筛查通过才43/44，最多90次fit（含辅助RF），当前0训练/0预测/0test。数值止损、解释、异常和预检修订见[固定协议](experiments/reliability_base/fixed_protocol.md)。下一步仅薄CLI编排与契约验收，再执行A；不是新算法效果。
+
+## M24：官方CLI编排与阶段A（运行前，2026-10-05）
+先添加最薄的prepare/run入口，复用既有Chemprop CLI、固定作者特征入口及安装的sklearn RF。prepare只校验所有来源/数据/角色/折/CLI默认并生成输入，核验作者cq有限样本秩；旧234权重只做两分子无标签接口预测（1次预测job、0fit），不进入正式风险实验。风险拟合采用协议已允许的sklearn等价薄适配，UNIQUE整流水线未运行；查询特征入口用y=0/cliff=0占位，查询真值只在OOF风险目标及校准/评价阶段使用。小型确定性风险曲线检查不拟合。prepare通过后先提交代码/接口记录，再执行seed42三个任务阶段A（12主干+12特征RF+6风险RF上限）；超时/失败保留现场并停止，不换参数或补训练。A不通过即提交停止报告及固定六个失败/一般案例（私有逐分子输出），不进入B。原目录只读。
+
+
+M24入口验收通过：12固定CLI任务，来源/数据角色/canonical/预测接口/cq边界与离散指标检查；0正式fit、2次历史权重接口预测job（1失败/1成功），UTF8问题修复并留现场。见[验收](experiments/reliability_base/phase_a_preflight.md)。下一步按固定A预算执行，失败/筛查未通过即停，不恢复旧队列。

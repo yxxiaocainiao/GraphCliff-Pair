@@ -150,3 +150,6 @@ M22完成本地复用核验：30 Chemprop权重hash相符，27神经对照资产
 
 
 M23：有限基线协议已冻结：234/244/4792仅official train，fit/monitor/calibration/evaluation角色分开并按canonical排重；先seed42三任务，筛查通过才43/44，最多90次fit（含辅助RF），当前0训练/0预测/0test。数值止损、解释、异常和预检修订见[固定协议](experiments/reliability_base/fixed_protocol.md)。下一步仅薄CLI编排与契约验收，再执行A；不是新算法效果。
+
+
+M24入口验收通过：12固定CLI任务，来源/数据角色/canonical/预测接口/cq边界与离散指标检查；0正式fit、2次历史权重接口预测job（1失败/1成功），UTF8问题修复并留现场。见[验收](experiments/reliability_base/phase_a_preflight.md)。下一步按固定A预算执行，失败/筛查未通过即停，不恢复旧队列。

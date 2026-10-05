@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "protocol_sha256": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+  "runner_sha256": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+  "fits": 0,
+  "interface_prediction_jobs": 1,
+  "query_rows": 2,
+  "quantile_checks": 13,
+  "risk_metric_check": true,
+  "feature_invariance_evidence": "M21 three-variant checks; features use query y=0 in this adapter",
+  "RF_adapter": "installed sklearn following UNIQUE fit/predict; no full UNIQUE pipeline",
+  "CLI_job_count": 12,
+  "preserved_interrupted_directories": [
+    "artifacts/reliability_phase_a_20261005",
+    "artifacts/reliability_phase_a_20261005_v2"
+  ],
+  "anomalies": [
+    "Prepare1: GBK default decoding failed while reading UTF8 provenance; 0fit/0prediction job.",
+    "Prepare2: old-checkpoint 2-row CLI prediction exited nonzero due to GBK Rich logging; 0fits.",
+    "Prepare3: explicit UTF8 file reads and shared subprocess encoding fixed; interface prediction finite/order/shape checks passed.",
+    "Optional Triton warning and loader/precision advisories are logged; no dependency or precision changes."
+  ],
+  "planned_actual": {
+    "interface_prediction_jobs": [
+      1,
+      2
+    ],
+    "successful_interface_prediction_jobs": 1,
+    "formal_fits": [
+      0,
+      0
+    ],
+    "CLI_parses": [
+      12,
+      36
+    ]
+  },
+  "limitations": [
+    "Old checkpoint only tests CLI output; excluded from formal risk predictions.",
+    "UNIQUE full pipeline not imported; documented sklearn RF adapter used.",
+    "No formal performance or gradient/training replay claim from preflight.",
+    "GPU peak memory not measured by this runner; resource limitation must be reported."
+  ]
+}
