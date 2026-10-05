@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-05",
+  "source_filename": "cliff_29篇文献阅读整理.xlsx",
+  "sha256": "1dfe319cceb81fb2c79bc67a05897e76c9b1c0ad668a1b6f4f115ed6964924a4",
+  "sheet_names": [
+    "文献阅读表",
+    "来源与核对",
+    "影响因子与说明"
+  ],
+  "records": [
+    {
+      "record": 1,
+      "title": "Similarity-based pairing improves efficiency of siamese neural networks for regression tasks and uncertainty quantification",
+      "doi_as_recorded": "10.1186/s13321-023-00744-6",
+      "workbook_row": 6,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 2,
+      "title": "Quantitative evaluation of explainable graph neural networks for molecular property prediction",
+      "doi_as_recorded": "10.1016/j.patter.2022.100628",
+      "workbook_row": 7,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 3,
+      "title": "DeepDelta: predicting ADMET improvements of molecular derivatives with deep learning",
+      "doi_as_recorded": "10.1186/s13321-023-00769-x",
+      "workbook_row": 8,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 4,
+      "title": "GraphCliff: short-long range gating for modeling critical activity changes caused by subtle molecular differences",
+      "doi_as_recorded": "",
+      "workbook_row": 9,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 5,
+      "title": "MTPNet: multi-grained target perception for unified activity cliff prediction",
+      "doi_as_recorded": "10.48550/arXiv.2506.05427",
+      "workbook_row": 10,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 6,
+      "title": "Exposing the limitations of molecular machine learning with activity cliffs",
+      "doi_as_recorded": "10.1021/acs.jcim.2c01073",
+      "workbook_row": 11,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 7,
+      "title": "MAPCliff-WMGR: exploring activity cliffs in molecular activity prediction enhanced by weighted molecular graph representations",
+      "doi_as_recorded": "10.1021/acs.jcim.5c01915",
+      "workbook_row": 12,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 8,
+      "title": "ACtriplet: an improved deep learning model for activity cliffs prediction by integrating triplet loss and pre-training",
+      "doi_as_recorded": "10.1016/j.jpha.2025.101317",
+      "workbook_row": 13,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 9,
+      "title": "Bridging molecular fingerprints and graph neural networks through knowledge-guided pooling",
+      "doi_as_recorded": "10.26434/chemrxiv.15001102/v1",
+      "workbook_row": 14,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 10,
+      "title": "Spectral decomposition of chemical semantics for activity cliffs-aware molecular property prediction",
+      "doi_as_recorded": "10.1002/advs.202517579",
+      "workbook_row": 15,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 11,
+      "title": "ACES-GNN: can graph neural network learn to explain activity cliffs?",
+      "doi_as_recorded": "10.26434/chemrxiv-2025-11wfv",
+      "workbook_row": 16,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 12,
+      "title": "Activity-cliff awareness enables robust graph learning for molecular property prediction",
+      "doi_as_recorded": "10.1038/s41467-026-75713-2",
+      "workbook_row": 17,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 13,
+      "title": "MolFPG: multi-level fingerprint-based graph transformer for accurate and robust drug toxicity prediction",
+      "doi_as_recorded": "10.1016/j.compbiomed.2023.106904",
+      "workbook_row": 18,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 14,
+      "title": "From obstacle to design advantage: activity cliff aware modeling for small-molecule drug discovery",
+      "doi_as_recorded": "10.1016/j.drudis.2025.104589",
+      "workbook_row": 19,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 15,
+      "title": "DeepAC – conditional transformer-based chemical language model for the prediction of activity cliffs formed by bioactive compounds",
+      "doi_as_recorded": "10.1039/D2DD00077F",
+      "workbook_row": 20,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 16,
+      "title": "Anatomy of potency predictions focusing on structural analogues with increasing potency differences including activity cliffs",
+      "doi_as_recorded": "10.1021/acs.jcim.3c01530",
+      "workbook_row": 21,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 17,
+      "title": "A Semi-supervised Molecular Learning Framework for Activity Cliff Estimation",
+      "doi_as_recorded": "10.24963/ijcai.2024/672",
+      "workbook_row": 22,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 18,
+      "title": "Activity cliff prediction: dataset and benchmark",
+      "doi_as_recorded": "10.48550/arXiv.2302.07541",
+      "workbook_row": 23,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 19,
+      "title": "Unimodal vs Multimodal Learning: A Systematic Evaluation of Fusion Strategies and Model Design for Molecular Property Prediction and Uncertainty Quantification",
+      "doi_as_recorded": "10.1021/acs.jcim.6c01878",
+      "workbook_row": 24,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 20,
+      "title": "Local structure-activity landscape roughness detects the activity-cliff failure mode that standard QSAR reliability methods miss",
+      "doi_as_recorded": "10.21203/rs.3.rs-10071162/v1",
+      "workbook_row": 25,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 21,
+      "title": "Exploring QSAR models for activity-cliff prediction",
+      "doi_as_recorded": "10.1186/s13321-023-00708-w",
+      "workbook_row": 26,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 22,
+      "title": "Roughness of molecular property landscapes and its impact on modellability",
+      "doi_as_recorded": "10.1021/acs.jcim.2c00903",
+      "workbook_row": 27,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 23,
+      "title": "Benchmarking molecular feature attribution methods with activity cliffs",
+      "doi_as_recorded": "10.1021/acs.jcim.1c01163",
+      "workbook_row": 28,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 24,
+      "title": "Chemprop: a machine learning package for chemical property prediction",
+      "doi_as_recorded": "10.1021/acs.jcim.3c01250",
+      "workbook_row": 29,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 25,
+      "title": "Experimental error, kurtosis, activity cliffs, and methodology: what limits the predictivity of quantitative structure–activity relationship models?",
+      "doi_as_recorded": "10.1021/acs.jcim.9b01067",
+      "workbook_row": 30,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 26,
+      "title": "ACGCN: graph convolutional networks for activity cliff prediction between matched molecular pairs",
+      "doi_as_recorded": "10.1021/acs.jcim.2c00327",
+      "workbook_row": 31,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 27,
+      "title": "Pushing the boundaries of molecular representation for drug discovery with the graph attention mechanism",
+      "doi_as_recorded": "10.1021/acs.jmedchem.9b00959",
+      "workbook_row": 32,
+      "reading_basis_as_recorded": "官方摘要（对应全文未取得）"
+    },
+    {
+      "record": 28,
+      "title": "Activity cliff-informed contrastive learning for molecular property prediction",
+      "doi_as_recorded": "10.21203/rs.3.rs-2988283/v2",
+      "workbook_row": 33,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    },
+    {
+      "record": 29,
+      "title": "Matched pairs demonstrate robustness against inter-assay variability",
+      "doi_as_recorded": "10.1186/s13321-025-00956-y",
+      "workbook_row": 34,
+      "reading_basis_as_recorded": "对应英文全文；重点核对方法、结果与结论"
+    }
+  ],
+  "record_count": 29,
+  "unique_record_keys": 29,
+  "independent_studies_after_documented_version_merge": 28,
+  "merged_records": [
+    12,
+    28
+  ],
+  "reading_basis_counts_as_recorded": {
+    "对应英文全文；重点核对方法、结果与结论": 28,
+    "官方摘要（对应全文未取得）": 1
+  },
+  "abstract_only_record": 27,
+  "source_row_alignment_checks": 58,
+  "source_unchanged": true,
+  "zip_integrity": "pass",
+  "scope": "User-provided workbook; not a live aidd inventory or a new full-text review"
+}

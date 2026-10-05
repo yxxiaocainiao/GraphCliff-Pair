@@ -1,0 +1,26 @@
+{
+  "base_commit": "de3d51d3d8ea111051913268a1c2b0837f4aea1e",
+  "date": "2026-10-05",
+  "input_workbook_sha256": "1dfe319cceb81fb2c79bc67a05897e76c9b1c0ad668a1b6f4f115ed6964924a4",
+  "local_excerpt_sources_sha256": {
+    "C:\\Users\\yangxu\\Documents\\Codex\\2026-10-03\\new-chat\\work\\papers\\SBJG3GHM.txt": "4297b6c7ebf3a1924dad147c4fbfd2689eaebfd48f0f8e27c7c49d1953f2005f",
+    "C:\\Users\\yangxu\\Documents\\Codex\\2026-10-03\\new-chat\\work\\papers\\9ZI2LY6U.txt": "7c67f216186860263123a21f12d311f58ffe54471def32132acbef19eb3de1d8",
+    "C:\\Users\\yangxu\\Documents\\Codex\\2026-10-03\\new-chat\\work\\papers\\A6TPYN4M.txt": "4f0681f06ee905fb21a4a99d98e46c364e9acbe7defbda19e50dfda138d680e0"
+  },
+  "audit_tool_sha256": "54e4964a12dd38e5af063c9c1e50a7ea4ba53f685f12123e19441d7a5658b793",
+  "official_pages": [
+    "https://pubs.rsc.org/en/content/articlelanding/2025/dd/d5dd00012b",
+    "https://github.com/Liu-group/XACs",
+    "https://github.com/GZU-SAMLab/PrismNet",
+    "https://github.com/GZU-SAMLab/PrismNet/blob/main/LICENSE",
+    "https://github.com/tfwuSUDA/MAPCliff-WMGR"
+  ],
+  "web_limitations": [
+    "RSC full HTML returned 403",
+    "PMC full text returned reCAPTCHA; not treated as read"
+  ],
+  "training_planned": 0,
+  "training_actual": 0,
+  "test_actual": 0,
+  "status": "G0 workbook intake complete; G1 initial matrix only; no algorithm candidate retained"
+}

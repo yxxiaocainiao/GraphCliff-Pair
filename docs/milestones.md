@@ -168,3 +168,10 @@ seed42后续18次消融训练已完成；原队列因审计把pair_mlp_fp误归�
 - `notes.md`: `b6902b8e9afe4be19c5e920231e0c122ac8b939c57e372e93d89dd05ed503311`
 - `docs/milestones.md`: `37fda3c581d1014627154da4dcd7ca8addbad0f11808178f3eddf1610ed743de`
 - `docs/research/algorithm_framework.md`: `c7e859d808773e554adfabc9d5f297c9f68d4f229ecb2eb3b22fbb59ee6147de`
+
+
+## M17 — 2026-10-05：已读文献附件接入与方法边界初表
+
+用户提供29条已读文献xlsx，完成附件范围G0与G1方法边界初表；58项来源对应及输入哈希核验通过，ACA版本合并后28研究条目。已抽查三个机制近邻的本地提取片段和作者入口，但G1完整公式/协议/代码审查未完成，G2核心未选择，0训练/0test。aidd全库仍未读取，不再以其入口作为处理本附件的阻碍。 见[初表](research/literature_29_20261005/method_boundary.md)。
+
+目的：使用用户指定附件解除文献输入障碍，避免重复方法。来源/哈希、基准代码版本、计划/实际运行数见[provenance.json](research/literature_29_20261005/provenance.json)；逐条题名/DOI/证据范围见[workbook_audit.json](research/literature_29_20261005/workbook_audit.json)。无新训练配置、无作者训练或代码复制。异常：初次控制台输出遇GBK无法编码，改UTF-8后重新读取成功，原文件不变；独立计数初次按“全文”子串误包含“全文未取得”，改为完整证据类别匹配后28/1核验通过；RSC全文403、PMC验证码，使用已有本地提取片段并标明范围，不冒充整篇阅读。历史28全文/1摘要状态仅从表格复核；本轮没有补全aidd全库、没有29篇新全文阅读。核验：ZIP完整性、29唯一键、58来源对应、版本合并、输入前后哈希、独立计数、拒绝覆盖、相对链接/diff及提交范围。下一步仅有界G1深核验；G2/G4未启动，旧队列仍暂停。原Excel、原项目/my_work、模型/Loss/配置均未改。
