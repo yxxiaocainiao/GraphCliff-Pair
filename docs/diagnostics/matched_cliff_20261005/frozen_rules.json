@@ -1,0 +1,29 @@
+{
+  "datasets": [
+    "CHEMBL234_Ki",
+    "CHEMBL3979_EC50",
+    "CHEMBL4792_Ki"
+  ],
+  "models": [
+    "gcn",
+    "gat",
+    "mlp"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "activity_quantiles": [
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "min_per_class_per_cell": 3,
+  "min_retained_per_class": 20,
+  "min_retained_fraction": 0.5,
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20261005,
+  "scope": "Exploratory screening; fixed validation split, not causal or independent confirmation."
+}

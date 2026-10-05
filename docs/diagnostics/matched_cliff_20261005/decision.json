@@ -1,0 +1,12 @@
+{
+  "go": false,
+  "qualifying_tasks_by_model": {
+    "gcn": [],
+    "gat": [],
+    "mlp": [
+      "CHEMBL3979_EC50"
+    ]
+  },
+  "rule": "At least two same models qualify on at least two tasks, in both frozen designs.",
+  "meaning": "Information-value screening only; no causal, novelty, journal acceptance or training authorization implied."
+}

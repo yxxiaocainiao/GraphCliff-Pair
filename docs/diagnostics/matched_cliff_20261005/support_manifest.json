@@ -1,0 +1,539 @@
+[
+  {
+    "dataset": "CHEMBL234_Ki",
+    "training_rows": 2632,
+    "validation_rows": 292,
+    "activity_edges": [
+      -2.7189991301874334,
+      -1.8195439355418688,
+      -1.0882047681196807,
+      -0.47011595499431785
+    ],
+    "train_loo_similarity_median": 0.7894736842105263,
+    "designs": [
+      {
+        "design": "activity",
+        "cells": [
+          {
+            "key": [
+              0
+            ],
+            "noncliff": 27,
+            "cliff": 14,
+            "retained": true,
+            "weight_count": 14
+          },
+          {
+            "key": [
+              1
+            ],
+            "noncliff": 45,
+            "cliff": 22,
+            "retained": true,
+            "weight_count": 22
+          },
+          {
+            "key": [
+              2
+            ],
+            "noncliff": 36,
+            "cliff": 37,
+            "retained": true,
+            "weight_count": 36
+          },
+          {
+            "key": [
+              3
+            ],
+            "noncliff": 27,
+            "cliff": 25,
+            "retained": true,
+            "weight_count": 25
+          },
+          {
+            "key": [
+              4
+            ],
+            "noncliff": 29,
+            "cliff": 30,
+            "retained": true,
+            "weight_count": 29
+          }
+        ],
+        "retained_noncliff": 164,
+        "retained_cliff": 128,
+        "original_noncliff": 164,
+        "original_cliff": 128,
+        "eligible": true
+      },
+      {
+        "design": "activity_coverage",
+        "cells": [
+          {
+            "key": [
+              0,
+              0
+            ],
+            "noncliff": 22,
+            "cliff": 10,
+            "retained": true,
+            "weight_count": 10
+          },
+          {
+            "key": [
+              0,
+              1
+            ],
+            "noncliff": 5,
+            "cliff": 4,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              1,
+              0
+            ],
+            "noncliff": 30,
+            "cliff": 10,
+            "retained": true,
+            "weight_count": 10
+          },
+          {
+            "key": [
+              1,
+              1
+            ],
+            "noncliff": 15,
+            "cliff": 12,
+            "retained": true,
+            "weight_count": 12
+          },
+          {
+            "key": [
+              2,
+              0
+            ],
+            "noncliff": 20,
+            "cliff": 10,
+            "retained": true,
+            "weight_count": 10
+          },
+          {
+            "key": [
+              2,
+              1
+            ],
+            "noncliff": 16,
+            "cliff": 27,
+            "retained": true,
+            "weight_count": 16
+          },
+          {
+            "key": [
+              3,
+              0
+            ],
+            "noncliff": 16,
+            "cliff": 8,
+            "retained": true,
+            "weight_count": 8
+          },
+          {
+            "key": [
+              3,
+              1
+            ],
+            "noncliff": 11,
+            "cliff": 17,
+            "retained": true,
+            "weight_count": 11
+          },
+          {
+            "key": [
+              4,
+              0
+            ],
+            "noncliff": 11,
+            "cliff": 9,
+            "retained": true,
+            "weight_count": 9
+          },
+          {
+            "key": [
+              4,
+              1
+            ],
+            "noncliff": 18,
+            "cliff": 21,
+            "retained": true,
+            "weight_count": 18
+          }
+        ],
+        "retained_noncliff": 164,
+        "retained_cliff": 128,
+        "original_noncliff": 164,
+        "original_cliff": 128,
+        "eligible": true
+      }
+    ]
+  },
+  {
+    "dataset": "CHEMBL3979_EC50",
+    "training_rows": 810,
+    "validation_rows": 89,
+    "activity_edges": [
+      -3.384885509657251,
+      -2.7484979607061844,
+      -1.9116823189816898,
+      -1.0791812460476249
+    ],
+    "train_loo_similarity_median": 0.8130296610169492,
+    "designs": [
+      {
+        "design": "activity",
+        "cells": [
+          {
+            "key": [
+              0
+            ],
+            "noncliff": 12,
+            "cliff": 7,
+            "retained": true,
+            "weight_count": 7
+          },
+          {
+            "key": [
+              1
+            ],
+            "noncliff": 12,
+            "cliff": 6,
+            "retained": true,
+            "weight_count": 6
+          },
+          {
+            "key": [
+              2
+            ],
+            "noncliff": 11,
+            "cliff": 10,
+            "retained": true,
+            "weight_count": 10
+          },
+          {
+            "key": [
+              3
+            ],
+            "noncliff": 10,
+            "cliff": 9,
+            "retained": true,
+            "weight_count": 9
+          },
+          {
+            "key": [
+              4
+            ],
+            "noncliff": 7,
+            "cliff": 5,
+            "retained": true,
+            "weight_count": 5
+          }
+        ],
+        "retained_noncliff": 52,
+        "retained_cliff": 37,
+        "original_noncliff": 52,
+        "original_cliff": 37,
+        "eligible": true
+      },
+      {
+        "design": "activity_coverage",
+        "cells": [
+          {
+            "key": [
+              0,
+              0
+            ],
+            "noncliff": 8,
+            "cliff": 4,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              0,
+              1
+            ],
+            "noncliff": 4,
+            "cliff": 3,
+            "retained": true,
+            "weight_count": 3
+          },
+          {
+            "key": [
+              1,
+              0
+            ],
+            "noncliff": 5,
+            "cliff": 3,
+            "retained": true,
+            "weight_count": 3
+          },
+          {
+            "key": [
+              1,
+              1
+            ],
+            "noncliff": 7,
+            "cliff": 3,
+            "retained": true,
+            "weight_count": 3
+          },
+          {
+            "key": [
+              2,
+              0
+            ],
+            "noncliff": 5,
+            "cliff": 6,
+            "retained": true,
+            "weight_count": 5
+          },
+          {
+            "key": [
+              2,
+              1
+            ],
+            "noncliff": 6,
+            "cliff": 4,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              3,
+              0
+            ],
+            "noncliff": 6,
+            "cliff": 3,
+            "retained": true,
+            "weight_count": 3
+          },
+          {
+            "key": [
+              3,
+              1
+            ],
+            "noncliff": 4,
+            "cliff": 6,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              4,
+              0
+            ],
+            "noncliff": 5,
+            "cliff": 1,
+            "retained": false,
+            "weight_count": 1
+          },
+          {
+            "key": [
+              4,
+              1
+            ],
+            "noncliff": 2,
+            "cliff": 4,
+            "retained": false,
+            "weight_count": 2
+          }
+        ],
+        "retained_noncliff": 45,
+        "retained_cliff": 32,
+        "original_noncliff": 52,
+        "original_cliff": 37,
+        "eligible": true
+      }
+    ]
+  },
+  {
+    "dataset": "CHEMBL4792_Ki",
+    "training_rows": 1057,
+    "validation_rows": 117,
+    "activity_edges": [
+      -3.0161136340877595,
+      -2.437427177911837,
+      -1.8909452716196653,
+      -1.1760912590556811
+    ],
+    "train_loo_similarity_median": 0.7833333333333333,
+    "designs": [
+      {
+        "design": "activity",
+        "cells": [
+          {
+            "key": [
+              0
+            ],
+            "noncliff": 11,
+            "cliff": 8,
+            "retained": true,
+            "weight_count": 8
+          },
+          {
+            "key": [
+              1
+            ],
+            "noncliff": 11,
+            "cliff": 12,
+            "retained": true,
+            "weight_count": 11
+          },
+          {
+            "key": [
+              2
+            ],
+            "noncliff": 11,
+            "cliff": 12,
+            "retained": true,
+            "weight_count": 11
+          },
+          {
+            "key": [
+              3
+            ],
+            "noncliff": 7,
+            "cliff": 15,
+            "retained": true,
+            "weight_count": 7
+          },
+          {
+            "key": [
+              4
+            ],
+            "noncliff": 14,
+            "cliff": 16,
+            "retained": true,
+            "weight_count": 14
+          }
+        ],
+        "retained_noncliff": 54,
+        "retained_cliff": 63,
+        "original_noncliff": 54,
+        "original_cliff": 63,
+        "eligible": true
+      },
+      {
+        "design": "activity_coverage",
+        "cells": [
+          {
+            "key": [
+              0,
+              0
+            ],
+            "noncliff": 6,
+            "cliff": 4,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              0,
+              1
+            ],
+            "noncliff": 5,
+            "cliff": 4,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              1,
+              0
+            ],
+            "noncliff": 7,
+            "cliff": 4,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              1,
+              1
+            ],
+            "noncliff": 4,
+            "cliff": 8,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              2,
+              0
+            ],
+            "noncliff": 8,
+            "cliff": 9,
+            "retained": true,
+            "weight_count": 8
+          },
+          {
+            "key": [
+              2,
+              1
+            ],
+            "noncliff": 3,
+            "cliff": 3,
+            "retained": true,
+            "weight_count": 3
+          },
+          {
+            "key": [
+              3,
+              0
+            ],
+            "noncliff": 5,
+            "cliff": 4,
+            "retained": true,
+            "weight_count": 4
+          },
+          {
+            "key": [
+              3,
+              1
+            ],
+            "noncliff": 2,
+            "cliff": 11,
+            "retained": false,
+            "weight_count": 2
+          },
+          {
+            "key": [
+              4,
+              0
+            ],
+            "noncliff": 10,
+            "cliff": 1,
+            "retained": false,
+            "weight_count": 1
+          },
+          {
+            "key": [
+              4,
+              1
+            ],
+            "noncliff": 4,
+            "cliff": 15,
+            "retained": true,
+            "weight_count": 4
+          }
+        ],
+        "retained_noncliff": 42,
+        "retained_cliff": 51,
+        "original_noncliff": 54,
+        "original_cliff": 63,
+        "eligible": true
+      }
+    ]
+  }
+]

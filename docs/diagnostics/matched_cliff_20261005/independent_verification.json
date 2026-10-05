@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "comparisons": 18,
+  "seed_gap_checks": 54,
+  "bootstrap_intervals_checked": 18,
+  "original_prediction_row_checks": 4482,
+  "maximum_seed_gap_difference": 2.3592239273284576e-16,
+  "unchanged_input_files": 184,
+  "independently_verified_decision": false,
+  "scope": "Arithmetic/support/percentile/decision and hash checks; no claim of inferential validity or model replay."
+}
