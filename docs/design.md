@@ -45,3 +45,5 @@ static 对照始终使用 alpha_max，用于区分“加权”与“动态日程
 ## 当前执行状态（2026-10-05）
 
 上述是历史实现契约，不表示候选有效或训练仍授权运行。当前方法审查No-Go，见[停止报告](research/framework_review_20261005/decision.md)。可解释性是最终必需交付，见[具体规范与接口限制](research/framework_review_20261005/explainability.md)；停止当前路线，不构建阴性模型新解释系统。
+
+后续算法创新研究的总体任务与框架见[当前框架文档](research/algorithm_framework.md)。此处Pair设计保留为历史实现，不把参考差值推理默认延续到新方法。
