@@ -117,3 +117,5 @@ ccc570b公开固定官方GPLv3 Loss、原GraphCliff及三任务三seed18组上�
 2026-10-05用户明确尽量复用GitHub算法/项目，必要时调研。完成DIR、BalancedMSE、IA-MoE版本/入口/许可/划分审查，见docs/research/github_reuse_candidates_20261005.md。准备MIT原文件缓存、校验及合成检查，未启动训练；两处BMC设备适配已核验，不修改现有Loss。
 
 三任务固定分层筛查完成：27组已有预测、18比较、54个seed差值及4482原始预测行独立核验通过，184输入哈希未变。仅MLP/3979两设计均通过，未达跨模型/任务继续门槛；No-Go，结束该候选诊断，不训练新Loss。旧neural.py源码哈希差异保留，论文目标未完成。报告见docs/diagnostics/matched_cliff_20261005/results.md。
+
+历史台账核对完成：223条保存验证产物（含冒烟、恢复复制，不等于独立正式运行）、2处未确认中断现场；874输入哈希未变。原3979直接FPPool三seed已测且No-Go，纠正未测推荐；已有12模型942次解释，144项摘要复算通过。详见docs/research/framework_review_20261005/inventory.md。

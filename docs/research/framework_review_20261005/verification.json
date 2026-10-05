@@ -1,0 +1,11 @@
+{
+  "saved_runs": 223,
+  "incomplete_histories": 2,
+  "parse_errors": 0,
+  "protected_inputs": 874,
+  "inputs_unchanged": true,
+  "fppool_direct_checks": 18,
+  "explanation_summary_checks": 144,
+  "no_training": true,
+  "no_test_prediction_or_label_evaluation": true
+}

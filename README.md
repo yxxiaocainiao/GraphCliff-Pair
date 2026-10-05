@@ -18,6 +18,8 @@
 
 [三任务固定分层误差筛查](docs/diagnostics/matched_cliff_20261005/results.md)已完成：复用27组已有验证预测，只有MLP/3979满足两种设计；未达到跨模型、跨任务继续门槛，No-Go。不据此启动新Loss训练，论文目标仍未完成。
 
+[历史实验台账及框架纠错](docs/research/framework_review_20261005/inventory.md)：原GraphCliff直接FPPool已完成3979三seed，未过旧门槛；另有残差/跨任务/归属/解释试验。不重复已失败路线；可解释性为最终论文必需验收。
+
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
 完整复现顺序、数据哈希及验证后测试步骤见[复现说明](docs/reproduction.md)。
