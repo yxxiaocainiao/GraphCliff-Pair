@@ -1,0 +1,70 @@
+{
+  "torch": "2.7.1+cu128",
+  "pyg": "2.6.1",
+  "device": "cpu",
+  "passed": true,
+  "checks": [
+    {
+      "model": "direct",
+      "all_one_mask_exact": true,
+      "all_zero_mask_finite": true,
+      "parameters_unchanged": true,
+      "classification_metrics_rejected": [
+        "fidelity",
+        "unfaithfulness"
+      ]
+    },
+    {
+      "model": "global_sag",
+      "all_one_mask_exact": true,
+      "all_zero_mask_finite": true,
+      "parameters_unchanged": true,
+      "classification_metrics_rejected": [
+        "fidelity",
+        "unfaithfulness"
+      ]
+    },
+    {
+      "model": "cross_sag",
+      "all_one_mask_exact": true,
+      "all_zero_mask_finite": true,
+      "parameters_unchanged": true,
+      "classification_metrics_rejected": [
+        "fidelity",
+        "unfaithfulness"
+      ]
+    },
+    {
+      "model": "global_fppool",
+      "all_one_mask_exact": true,
+      "all_zero_mask_finite": true,
+      "parameters_unchanged": true,
+      "classification_metrics_rejected": [
+        "fidelity",
+        "unfaithfulness"
+      ]
+    },
+    {
+      "model": "cross_fppool",
+      "all_one_mask_exact": true,
+      "all_zero_mask_finite": true,
+      "parameters_unchanged": true,
+      "classification_metrics_rejected": [
+        "fidelity",
+        "unfaithfulness"
+      ]
+    }
+  ],
+  "scope": "Random synthetic H32 models, node-feature mask plumbing only. No trained checkpoint replay, learned explanation, edge-mask coverage or chemical validity claim.",
+  "no_optimizer_steps": true,
+  "input_sha256": {
+    "D:\\Tools\\conda-envs\\graphcliff\\lib\\site-packages\\torch_geometric\\explain\\explainer.py": "f3f3594e6953e163bd4602b1a5251046ddeb6d5c055111796d258e3e57ce2e30",
+    "D:\\Tools\\conda-envs\\graphcliff\\lib\\site-packages\\torch_geometric\\explain\\algorithm\\gnn_explainer.py": "4d11b068a627f672e7ddfa74ad24b3786b3db878f6ad9cdfa2632c7837eaf0ef",
+    "D:\\Tools\\conda-envs\\graphcliff\\lib\\site-packages\\torch_geometric\\explain\\metric\\fidelity.py": "5bf6ca01611e8ee762c032d50a09a77e4986a1db92f69b54467703fe5ad6b5b3",
+    "D:\\GraphCliff-Pair\\graphcliff_pair\\model.py": "3207d09c60bd468f579d3495808221f28198bf771cced0530898c8b2170e31eb",
+    "D:\\GraphCliff-Pair\\graphcliff_pair\\vendor\\model.py": "20d90ec7602e63bd20a063ac6db94faf3194d1c12c4c96902d927b08d634cb52",
+    "D:\\GraphCliff-Pair\\graphcliff_pair\\fppool.py": "7d149e36f21d9a5815b057de466860701fee42be13656415b391329e5dedfc5e",
+    "D:\\GraphCliff-Pair\\external\\fppool\\pooling.py": "8392b0bf6243f78ab52bf445ea575fafe108f26da244a9b0d04a0ef04ddab13f",
+    "D:\\GraphCliff-Pair\\tools\\check_explanation_interface.py": "2e5de7900369b58431747b1312d4cd758cb98ecbfaa63bcc573b568d0d291c14"
+  }
+}

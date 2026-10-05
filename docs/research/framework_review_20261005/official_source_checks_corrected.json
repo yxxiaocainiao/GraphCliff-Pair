@@ -1,0 +1,43 @@
+[
+  {
+    "name": "FPPool example",
+    "url": "https://raw.githubusercontent.com/shenwxlab/FPPool/ef2afe82e0490dc31a7cbb6146acea810de393fe/MoleculeACE_example.py",
+    "local": "D:/WORK_SPACE/WORK_SPACE/my_work/FPPooling/MoleculeACE_example.py",
+    "sha256": "01f7088b1dbe973bc0e4edc7e116bd180a8a9a7c3e396211bcdfc5ef2e1d00e9",
+    "local_matches": false,
+    "status": "read_verified",
+    "normalized_utf8_text_matches": true,
+    "local_sha256": "e6d2d8fc39b2863f01f6eb5b39ac0df3e7e24e0ddc6a8d07809a36e4b42f855b",
+    "protocol_scope": "This fixed example only; do not infer all paper experiments use this selection.",
+    "observed_protocol": {
+      "split": "random_scaffold_split 0.8/0.1/0.1",
+      "seeds": [
+        0,
+        42,
+        100
+      ],
+      "epochs_setting": 200,
+      "criterion": "minimum per-epoch test_rmse; valid_loader absent in this trainer"
+    }
+  },
+  {
+    "name": "GraphCliff license",
+    "url": "https://raw.githubusercontent.com/dmis-lab/GraphCliff/d18857db0303346c0be715a56febf71da1768592/LICENSE",
+    "local": "D:/GraphCliff-Pair/graphcliff_pair/vendor/LICENSE",
+    "sha256": "b033ad237d8deac41324104223985782232530c7feb3cb16bf80a38436a71da2",
+    "local_matches": true,
+    "status": "read_verified",
+    "normalized_utf8_text_matches": true,
+    "local_sha256": "b033ad237d8deac41324104223985782232530c7feb3cb16bf80a38436a71da2"
+  },
+  {
+    "name": "ACA license",
+    "url": "https://raw.githubusercontent.com/shenwanxiang/ACANet/4c43e6024345d0ec4d40fdc88ad57224c898b6da/LICENSE.txt",
+    "local": "D:/GraphCliff-Pair/experiments/aca_pilot/vendor/LICENSE.upstream.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "local_matches": true,
+    "status": "read_verified",
+    "normalized_utf8_text_matches": true,
+    "local_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  }
+]

@@ -2,7 +2,7 @@
 
 最终目标：形成可复现、有明确贡献的论文并投稿，争取中科院二区发表。研究范围允许限定到有证据支持的任务和条件，不要求彻底解决活性悬崖；三项机制是可删减的候选手段。具体投稿口径和证据要求见[项目计划](task_plan.md)。
 
-基于 GraphCliff 编码器的参考分子差值回归研究项目。逐项验证跨分子 Cross-Attention、FPPool、动态加权 Loss，保留原短长程编码机制。
+历史候选框架为基于 GraphCliff 编码器的参考分子差值回归研究项目。逐项验证跨分子 Cross-Attention、FPPool、动态加权 Loss，保留原短长程编码机制。
 
 **状态（2026-10-05）：旧实验目标已暂停，后台训练与自动收尾均已停止。独立数据接口、三项模块和预测入口已实现，36项测试与16组真实数据smoke已通过。完整三种子消融、78模型权重重放及最终test未完成。**
 
@@ -19,6 +19,8 @@
 [三任务固定分层误差筛查](docs/diagnostics/matched_cliff_20261005/results.md)已完成：复用27组已有验证预测，只有MLP/3979满足两种设计；未达到跨模型、跨任务继续门槛，No-Go。不据此启动新Loss训练，论文目标仍未完成。
 
 [历史实验台账及框架纠错](docs/research/framework_review_20261005/inventory.md)：原GraphCliff直接FPPool已完成3979三seed，未过旧门槛；另有残差/跨任务/归属/解释试验。不重复已失败路线；可解释性为最终论文必需验收。
+
+**[最新方法审查：No-Go](docs/research/framework_review_20261005/decision.md)**：本轮保留0个新训练候选，停止继续当前三模块/迁移路线；发表目标未完成。[可解释性必需验收与已有案例](docs/research/framework_review_20261005/explainability.md)、[完整阶段/异常日志](docs/research/framework_review_20261005/milestone_log.md)已保存。旧训练队列及自动收尾继续暂停。
 
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 

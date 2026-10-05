@@ -41,3 +41,7 @@ static 对照始终使用 alpha_max，用于区分“加权”与“动态日程
 ## 首轮实施边界
 
 先做两任务小规模真实数据 smoke，验证能训练、重载、恢复预测；不是效果评估。之后独立冻结完整训练矩阵，再决定是否扩大。默认预算候选为既有 pilot：100 epoch、patience15、batch32、AdamW(lr=1e-4, weight_decay=1e-5, betas=0.9/0.95)、clip1、warmup10/cosine。它不是论文精确复现协议。不得根据 test 修改配置。
+
+## 当前执行状态（2026-10-05）
+
+上述是历史实现契约，不表示候选有效或训练仍授权运行。当前方法审查No-Go，见[停止报告](research/framework_review_20261005/decision.md)。可解释性是最终必需交付，见[具体规范与接口限制](research/framework_review_20261005/explainability.md)；停止当前路线，不构建阴性模型新解释系统。

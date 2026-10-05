@@ -1,0 +1,18 @@
+{
+  "D:\\GraphCliff-Pair\\tools\\audit_framework.py": "ec85689f8c648764fd9d8af914d79df8fec8f69ec91b0e0cadc76173828d680f",
+  "D:\\GraphCliff-Pair\\tools\\check_explanation_interface.py": "2e5de7900369b58431747b1312d4cd758cb98ecbfaa63bcc573b568d0d291c14",
+  "D:\\GraphCliff-Pair\\docs\\sources.json": "b3cddc83f69c4e2cb7008444bb7b6e5367a7d3305379dd7dc7a64c694b156d47",
+  "D:\\GraphCliff-Pair\\experiments\\aca_pilot\\sources.json": "98ff4d3f446351d14e0229efaab71a49aae458e4bf79fa847e4bc14577783e29",
+  "D:\\GraphCliff-Pair\\docs\\research\\github_reuse_audit_20261005.json": "ed314361fc5e08b3430346ef08a0b19f2357a76e04d22976bc1b85fd2b1a6d5e",
+  "D:\\GraphCliff-Pair\\docs\\research\\reuse_candidates_interface_20261005.json": "d236d70442c0a2ef444e618c33e6a848f8c70879f5622553dc2e0b7cf0a9b2ec",
+  "D:\\GraphCliff-main\\docs\\读出与损失实验总览.md": "9ade4bcfd9e1d2fe3361e8e1ab7f7a799149ef35dab63bd8788c6725b3ae3a24",
+  "D:\\GraphCliff-main\\docs\\explanation_plan_20260930.md": "092371927828b356e438e6cbab4ef1f4edbe8dcd2a01264f532e0ae233d61f6e",
+  "D:\\GraphCliff-main\\scripts\\fppool_pilot\\explain_existing.py": "200c9dcf81d5f35eede3e4b8fa86f362e40c3dddf38146526351058c6a498ce7",
+  "D:\\GraphCliff-main\\eval_out\\explanation_diagnostics\\20260930_validation_v4\\verification.json": "e135fe0db6ec7ac5bceecd1dca8161564b612b061aef83dbdb6c56ae72fe7b17",
+  "D:\\GraphCliff-main\\eval_out\\component_pair_pilot\\20261001_frozen\\three_seed_report\\gate_checks.csv": "72972d36e3f541a4085b0ded5c4ed0fe3a567c973c2547801a6a0c391a1d2f35",
+  "D:\\GraphCliff-main\\eval_out\\membership_ablation\\20260920_permuted\\结论.md": "06722b747b7588ce03a4a6db3777d507cbeddb613f2ed5157fa4341514988aa1",
+  "D:\\GraphCliff-main\\eval_out\\cross_task_residual\\20260920_frozen\\RESULTS.md": "6761052dce27eade8e44f0b866977c0f2e26c21374b32adfc19cdb878b77c001",
+  "D:\\GraphCliff-Pair\\docs\\diagnostics\\hard_case_audit_234\\results.md": "7e5f566ba35d96a4c9f41b02128b1b3e7c54885bb9f4a66942dc4398cb5b5151",
+  "D:\\GraphCliff-main\\eval_out\\explanation_diagnostics\\20260930_validation_v4\\CHEMBL287_Ki_fixed_cases.png": "9839021731283e818b08cd1753392ad902524bb50ee0be08faa63cd119c518bb",
+  "D:\\GraphCliff-main\\eval_out\\explanation_diagnostics\\20260930_validation_v4\\CHEMBL2047_EC50_fixed_cases.png": "20978fe3cdd56ed9206d1ada21dd69ac649bb8f13eb65a6041d544b5023fa116"
+}

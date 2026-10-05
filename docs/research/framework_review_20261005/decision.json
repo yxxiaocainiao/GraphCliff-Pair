@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-05",
+  "retained_training_candidates": [],
+  "go": false,
+  "stop_scope": "Current GraphCliff/Cross-Attention/FPPool/weighted-loss method routes and further diagnostics without a distinct hypothesis.",
+  "publication_goal_completed": false,
+  "old_queues_remain_paused": true,
+  "new_training_runs": 0,
+  "explanation_required_for_final_paper": true,
+  "reason": "No bounded candidate with both a concrete distinction from closest public methods and adequate supporting replicated local evidence.",
+  "uncertainty": "Not a theorem of universal module failure or a prediction of journal acceptance. Review is bounded, not exhaustive."
+}

@@ -143,3 +143,5 @@ P1：分两里程碑提交推送（台账纠错；创新/解释/停止判断）�
 状态：开始原始产物核对。原项目与my_work只读；缺失expression-skill/planning-with-files已确认，使用现有task_plan和notes记录。
 
 历史台账核对完成：223条保存验证产物（含冒烟、恢复复制，不等于独立正式运行）、2处未确认中断现场；874输入哈希未变。原3979直接FPPool三seed已测且No-Go，纠正未测推荐；已有12模型942次解释，144项摘要复算通过。详见docs/research/framework_review_20261005/inventory.md。
+
+框架核对与止损审查完成：保留0个新训练候选，当前三模块/迁移路线不足以支撑新的二区方法论文主张，停止继续堆模块或诊断。已核查五模型PyG节点mask合成接口，分类忠实度函数拒绝回归；复用旧解释和有限失败案例。可解释性为最终必需验收，发表目标仍未完成。详见docs/research/framework_review_20261005/decision.md及explainability.md，日志见milestone_log.md。
