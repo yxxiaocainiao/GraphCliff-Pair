@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-05",
+  "baseline_commit": "4b379e2de04948173ebe70a1c0d0f46630f8d72d",
+  "authorization": "User explicitly authorizes starting reusable foundation; GraphCliff optional; publication remains ultimate goal.",
+  "sources": {
+    "roughness_commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+    "roughness_license": "MIT",
+    "unchanged_source_sha256": {
+      "LICENSE": "692eff71860f45438688b0630b92739637cd105e9b086ad6e39d7d2805a0a147",
+      "src/config.py": "f4e1c25a9afc201d2b38dd104c30b69bb6060ca277435115b1cbb2ed21a3e0da",
+      "src/build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+      "src/conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f"
+    },
+    "UNIQUE_commit": "c6d65b9c63102bc18e68c25c98d76e24650c3e4a",
+    "UNIQUE_license": "BSD-3-Clause",
+    "UNIQUE_executed": false,
+    "SelectiveNet_checks": [
+      {
+        "repo": "geifmany/selectivenet",
+        "commit": "a6d0a8fd33dae61da910b61a2aae93102d2d4869",
+        "complete_tree_sha256": "dd0f94645a8507a297d92c1a92f1b0ccdc92b15c629872fbd12fffe8009b387f",
+        "license_file_found": false,
+        "integration": "excluded; public method may be studied, source not copied into project"
+      },
+      {
+        "repo": "setarehc/selectivenet_pytorch",
+        "commit": "3a7b8635b1bf40cdf0ee55a14f0b81e331d57029",
+        "complete_tree_sha256": "40848a800654c0572c3abbd9dddad59a3f6446f62428bae553435d9d34b5388b",
+        "license_file_found": false,
+        "integration": "excluded; public method may be studied, source not copied into project"
+      }
+    ]
+  },
+  "input_identity": {
+    "dataset": "CHEMBL234_Ki",
+    "csv_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "manifest_sha256": "c1f7067d644f1310e46a12826467390e43925f19da59428bd526722f40496c62",
+    "source_row_selection": "first 128 sorted manifest train rows; first 32 sorted manifest validation rows",
+    "official_test_rows_used": 0
+  },
+  "planned_actual": {
+    "RF_smoke_fits": [
+      3,
+      3
+    ],
+    "formal_training": [
+      0,
+      0
+    ],
+    "test_evaluation": [
+      0,
+      0
+    ],
+    "new_repositories": [
+      0,
+      0
+    ]
+  },
+  "configuration": {
+    "RF_n_estimators": 200,
+    "RF_max_features": "sqrt",
+    "RF_seed": 0,
+    "fingerprint_radius": 2,
+    "fingerprint_bits": 2048,
+    "K": 10,
+    "K_holder": 25,
+    "highsim": 0.9,
+    "query_label_shift": 1000,
+    "train_label_permutation_seed": 0,
+    "author_conformal_functions": [
+      "cq",
+      "qbins"
+    ],
+    "smoke_calibration_bins": 2,
+    "alpha": 0.1,
+    "calibration_validation_rows": 16,
+    "evaluation_validation_rows": 16
+  },
+  "versions": {
+    "python": "3.11.15",
+    "sklearn": "1.9.0",
+    "rdkit": "2026.03.4"
+  },
+  "runtime_seconds": {
+    "original": 1.7960000000020955,
+    "query_label_shift": 1.5320000000065193,
+    "train_label_permutation": 1.4839999999967404
+  },
+  "runner_sha256": "ff90fda504ab3e9df727d6de05798e10eecd5fcddf1b8ddff6f8d96887425e7a",
+  "raw_result_sha256": "711c0532b19d5cee89cdca9f4f07f883849c1b4d55962e8b931a36cbdcf2e7c9",
+  "anomalies": [
+    "graphcliff environment lacks sklearn; reused existing chemprop_baseline environment, no installation.",
+    "Two SelectiveNet trees have no license file; source excluded, no forced rewrite.",
+    "Sandbox GitHub CLI config read denied; public repo verification retried with already-authorized escalation."
+  ],
+  "deviations": [
+    "Upstream CSV test token maps to copied manifest validation rows, explicitly not original official test.",
+    "128/32 and 2-bin 16/16 are engineering fixtures, not paper settings or performance selection.",
+    "Original author script needs query labels for descriptive outputs; deployment whitelist excludes query-dependent features.",
+    "Reused two inspected pure functions from conformal AST, avoiding its cache-reading top level."
+  ],
+  "decision": "Foundation runnable. Continue bounded baseline/protocol preparation; no algorithm novelty or efficacy claim; old training queues remain paused.",
+  "verification": {
+    "independent_raw_rows": 96,
+    "source_hashes": 4,
+    "input_hashes": 2,
+    "local_links": 78,
+    "public_summary_matches_raw": true,
+    "python_ast_parses": true,
+    "existing_output_rejected_without_fit": true,
+    "ignored_raw_and_source_caches": true,
+    "github_visibility": "PUBLIC",
+    "git_diff_check": "passed"
+  }
+}
