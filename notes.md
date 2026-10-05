@@ -123,3 +123,6 @@ ccc570b公开固定官方GPLv3 Loss、原GraphCliff及三任务三seed18组上�
 框架核对与止损审查完成：保留0个新训练候选，当前三模块/迁移路线不足以支撑新的二区方法论文主张，停止继续堆模块或诊断。已核查五模型PyG节点mask合成接口，分类忠实度函数拒绝回归；复用旧解释和有限失败案例。可解释性为最终必需验收，发表目标仍未完成。详见docs/research/framework_review_20261005/decision.md及explainability.md，日志见milestone_log.md。
 
 用户明确优先算法创新型论文；总体框架已固定为现有分子图接口、成熟GraphCliff底座、唯一待验证创新核心、默认原读出/单分子活性预测、消融与必需可解释性。核心尚未确定，不建空模块或开始训练。详见docs/research/algorithm_framework.md；下一步只做最多三个具体算法问题的有界文献/代码审查，保留零或一个。
+
+
+研究顺序已细化为G0资料接入、G1已有方法边界、G2最多三个问题、G3零或一个创新核心、G4固定方案、G5有限试验、G6确认与必需解释、G7投稿证据。见[算法研究执行计划](docs/research/algorithm_research_plan.md)。用户截图确认aidd是Codex自带资料库；当前工具没有提供其内容读取入口，未统计或阅读新上传论文。未启动训练或test；旧路线继续暂停。

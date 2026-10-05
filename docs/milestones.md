@@ -153,3 +153,18 @@ seed42后续18次消融训练已完成；原队列因审计把pair_mlp_fp误归�
 ## M15 — 2026-10-05：算法创新优先级与总体框架
 
 用户明确优先算法创新型论文；总体框架已固定为现有分子图接口、成熟GraphCliff底座、唯一待验证创新核心、默认原读出/单分子活性预测、消融与必需可解释性。核心尚未确定，不建空模块或开始训练。详见docs/research/algorithm_framework.md；下一步只做最多三个具体算法问题的有界文献/代码审查，保留零或一个。 仅新增框架文档并更新README/design/task_plan/notes/milestones；模型、Loss、配置、旧实验及原项目/my_work不改。
+
+
+## M16 — 2026-10-05：有顺序的算法研究计划与资料库入口纠正
+
+研究顺序已细化为G0资料接入、G1已有方法边界、G2最多三个问题、G3零或一个创新核心、G4固定方案、G5有限试验、G6确认与必需解释、G7投稿证据。见[算法研究执行计划](research/algorithm_research_plan.md)。用户截图确认aidd是Codex自带资料库；当前工具没有提供其内容读取入口，未统计或阅读新上传论文。未启动训练或test；旧路线继续暂停。
+
+目的：先核清用户已读文献，再决定算法核心，避免重复失败路线。输入：M15提交3e46957761628a0f76c0e92a5d106ef57e8f06f6的五份文档、用户需求及侧栏截图；未读库内PDF。入口核查：先误查外部文献应用，随后由用户截图纠正为Codex自带资料库；不把误查结果算作aidd内容，不公开账号信息。该核查为计划修订时记录，不伪装成既有实验预注册。计划/实际训练0/0、test0/0，配置与模型均未改；新论文读取0，文献总数未知。expression-skill/planning-with-files入口未找到，复用现有task_plan/notes。异常：首次链接核验发现milestones的相对路径多了一层docs，已修正并重新检查。核验：文档链接、diff、六文件范围；推送后核对本地/远端SHA。下一步：接入可读文献后完成G0/G1；目前不能声称开始全文审查。
+
+输入文档修改前SHA256：
+
+- `README.md`: `877b343034784459365c6adce852a64203b2e7ec86381d8d6cbb6b7ac3f6e707`
+- `task_plan.md`: `bd60085954ac7dbfec5ea5d7bc8ad659d5f67f5b4b799253c2b2cd95ea6e0673`
+- `notes.md`: `b6902b8e9afe4be19c5e920231e0c122ac8b939c57e372e93d89dd05ed503311`
+- `docs/milestones.md`: `37fda3c581d1014627154da4dcd7ca8addbad0f11808178f3eddf1610ed743de`
+- `docs/research/algorithm_framework.md`: `c7e859d808773e554adfabc9d5f297c9f68d4f229ecb2eb3b22fbb59ee6147de`
