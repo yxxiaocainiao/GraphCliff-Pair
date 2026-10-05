@@ -217,3 +217,9 @@ M21：用户确认以成熟公开项目为底座，不再限定GraphCliff。MIT�
 
 M22完成本地复用核验：30 Chemprop权重hash相符，27神经对照资产存在；优先复用官方Chemprop2.2.3及本项目已有身份/验证工具。0训练/0预测/0test，旧validation不能作独立校准。来源、版本和两次清点中断见[本地复用报告](../experiments/reliability_base/local_reuse.md)。下一步固定有限基线协议。
 目的、输入hash/源码版本、计划实际、验证/异常/局限见报告与JSON清单。新增报告和清单，更新计划/记录；未改原GraphCliff/my_work、任何模型或配置；未装依赖、不建新仓库。提交后核对远端SHA。
+
+
+## M23 — 2026-10-05：训练前有限基线协议
+
+M23：有限基线协议已冻结：234/244/4792仅official train，fit/monitor/calibration/evaluation角色分开并按canonical排重；先seed42三任务，筛查通过才43/44，最多90次fit（含辅助RF），当前0训练/0预测/0test。数值止损、解释、异常和预检修订见[固定协议](../experiments/reliability_base/fixed_protocol.md)。下一步仅薄CLI编排与契约验收，再执行A；不是新算法效果。
+基准811f196；来源/输入hash、预算计划实际、角色计数与异常见fixed_protocol.json。每角色至少100行，每OOF折至少50；3任务全部通过。未改原目录/模型/Loss，无新依赖，不公开行号/分子数据。核对manifest/hash/互斥、预算、链接/diff后提交；push核对远端。

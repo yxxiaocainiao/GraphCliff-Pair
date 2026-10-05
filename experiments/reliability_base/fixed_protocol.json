@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-05",
+  "base_commit": "811f196be2a5e7688fe8009018db6345bf7f0690",
+  "status": "frozen_baseline_screening_not_novel_method",
+  "tasks": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "csv_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+      "partition_manifest_sha256": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+      "role_rows": {
+        "fit": 1755,
+        "monitor": 295,
+        "calibration": 426,
+        "evaluation": 448
+      },
+      "oof_fold_rows": {
+        "0": 571,
+        "1": 608,
+        "2": 576
+      },
+      "canonical_groups": 2924,
+      "duplicate_extra_rows": 0,
+      "canonical_role_overlap": 0,
+      "official_test_rows_used": 0
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "csv_sha256": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+      "partition_manifest_sha256": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+      "role_rows": {
+        "fit": 1462,
+        "monitor": 237,
+        "calibration": 375,
+        "evaluation": 402
+      },
+      "oof_fold_rows": {
+        "0": 492,
+        "1": 485,
+        "2": 485
+      },
+      "canonical_groups": 2476,
+      "duplicate_extra_rows": 0,
+      "canonical_role_overlap": 0,
+      "official_test_rows_used": 0
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "csv_sha256": "7fca442ad925803a72f9285b01d28a7b32372466a61183a0d5f2cdc4be90eb5e",
+      "partition_manifest_sha256": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
+      "role_rows": {
+        "fit": 702,
+        "monitor": 106,
+        "calibration": 179,
+        "evaluation": 187
+      },
+      "oof_fold_rows": {
+        "0": 242,
+        "1": 230,
+        "2": 230
+      },
+      "canonical_groups": 1174,
+      "duplicate_extra_rows": 0,
+      "canonical_role_overlap": 0,
+      "official_test_rows_used": 0
+    }
+  ],
+  "seed_roles": {
+    "partition": 20261005,
+    "first_model_seed": 42,
+    "confirmation_model_seeds": [
+      43,
+      44
+    ]
+  },
+  "chemprop": {
+    "installed_version": "2.2.3",
+    "task_type": "regression",
+    "loss": "mse",
+    "epochs": 50,
+    "patience": 15,
+    "batch_size": 64,
+    "num_workers": 0,
+    "accelerator": "gpu",
+    "devices": 1,
+    "architecture": "installed v2.2.3 defaults; save effective config before fit",
+    "initialization": "fresh for each fold/full model; no old checkpoints"
+  },
+  "risk_RF": {
+    "n_estimators": 200,
+    "max_features": "sqrt",
+    "min_samples_leaf": 5,
+    "random_state": "same model seed",
+    "n_jobs": -1,
+    "target": "OOF absolute residual",
+    "origin": "project fixed settings using installed sklearn, following UNIQUE RF error-model interface, not author-tuned values"
+  },
+  "neighbor_features": {
+    "radius": 2,
+    "bits": 2048,
+    "K": 10,
+    "K_holder": 25,
+    "highsim": 0.9,
+    "generic": [
+      "prediction",
+      "nn_sim",
+      "local_dens",
+      "mol_size",
+      "rf_var"
+    ],
+    "augmented_extra": [
+      "nbr_disp",
+      "sali_mean"
+    ],
+    "no_query_label_features": [
+      "dirichlet",
+      "lipschitz",
+      "y",
+      "cliff_mol",
+      "rf_err"
+    ]
+  },
+  "phase_A": {
+    "seeds": [
+      42
+    ],
+    "chemprop_fits": 12,
+    "author_feature_RF_fits": 12,
+    "risk_RF_fits": 6,
+    "total_fits": 30,
+    "max_wall_minutes": 180
+  },
+  "phase_B_if_A_passes": {
+    "seeds": [
+      43,
+      44
+    ],
+    "chemprop_fits": 24,
+    "author_feature_RF_fits": 24,
+    "risk_RF_fits": 12,
+    "total_fits": 60,
+    "max_wall_minutes": 360
+  },
+  "maximum_total_fits": 90,
+  "per_chemprop_fit_timeout_minutes": 15,
+  "coverage_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "conformal_alpha": 0.1,
+  "risk_floor": 0.001,
+  "planned_actual_this_milestone": {
+    "training": [
+      0,
+      0
+    ],
+    "prediction": [
+      0,
+      0
+    ],
+    "official_test": [
+      0,
+      0
+    ],
+    "task_partition_manifests": [
+      3,
+      3
+    ]
+  },
+  "source_sha256": {
+    "D:\\Tools\\conda-envs\\chemprop_baseline\\Lib\\site-packages\\chemprop\\cli\\train.py": "86edfce645fd664544b333032ffcac19dcacb9f63f989a76aa9a8689f2c68ed5",
+    "D:\\GraphCliff-Pair\\artifacts\\roughness_sources_20261005\\UNIQUE\\unique\\error_models\\base.py": "9eb8b309257638dc07155339f41563f201cdbf570006ef9d5fbce3b22e5e3321",
+    "D:\\GraphCliff-Pair\\artifacts\\roughness_sources_20261005\\UNIQUE\\unique\\error_models\\models\\random_forest_regressor.py": "104a570bf1a2010b09beef4facc7c8cd96c842b727445871f1b9421bd03c45d5",
+    "D:\\GraphCliff-Pair\\artifacts\\roughness_sources_20261005\\qsar-landscape-roughness\\src\\build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+    "D:\\GraphCliff-Pair\\artifacts\\roughness_sources_20261005\\qsar-landscape-roughness\\src\\conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f"
+  },
+  "anomalies": [
+    "UNIQUE docs page inaccessible via web tool; cached pinned official source inspected instead.",
+    "Official latest Chemprop docs 2.3.1 differ from installed2.2.3; source/defaults checked locally.",
+    "First preflight stopped on CHEMBL3979_EC50 fewer than100 rows in at least one role. Before training replaced it with existing CHEMBL244_Ki asset; first partial manifest retained in ignored original directory, final manifests in v2.",
+    "One separate metadata inspection shell command failed quoting before Python execution; no fit or source mutation."
+  ],
+  "execution_gate": "No formal fits until command dry-run/effective config, UNIQUE or documented sklearn adapter, feature invariance and independent role identity checks pass.",
+  "decision_rules": {
+    "metric": "mean RMSE over accepted fractions .5,.6,.7,.8,.9,1.0; equal task weight",
+    "primary_comparator": "generic_RF",
+    "phase_A_pass": "augmented vs generic >=5% improvement on >=2/3 tasks; no task >5% worse; macro relative improvement >=3%; macro curve RMSE below both distance and SALI-only",
+    "phase_B_pass": "same criteria on seed-mean per task; >=6/9 task-seed cells improve vs generic",
+    "phase_failure": "Stop roughness-augmentation candidate; no added modules or extra tasks/seeds to rescue it.",
+    "interpretation": "Project screening only; no publication threshold or proof of novel algorithm."
+  },
+  "explainability": {
+    "cases": "per task seed42 evaluation: smallest, largest and nearest-median absolute error, canonical tie-break; reuse exact9 cases across seeds",
+    "mask_fraction": 0.2,
+    "minimum_masked_atoms": 1,
+    "random_masks_per_case_seed": 20,
+    "random_seed": 20261005,
+    "fidelity_screen": "positive mean important-minus-random absolute prediction change in >=6/9 cases after averaging3seeds; publish all cases",
+    "stability": "pairwise seed Jaccard of top20% atoms, report distribution without universal pass claim",
+    "compatibility": "Chemprop is not native PyG; audit official Chemprop explanation example first, no claimed working Explainer"
+  },
+  "verification": {
+    "task_manifest_hashes": 3,
+    "canonical_role_identity": "independently_recomputed",
+    "official_train_row_coverage": "complete",
+    "fold_row_union": "fit exactly",
+    "source_hashes": 5,
+    "local_links": 35,
+    "budget_sum": 90,
+    "fit_count": 0
+  }
+}

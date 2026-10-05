@@ -220,3 +220,14 @@ P0：优先核对my_work已存在的模型入口、许可、来源、配置、�
 
 
 M22完成本地复用核验：30 Chemprop权重hash相符，27神经对照资产存在；优先复用官方Chemprop2.2.3及本项目已有身份/验证工具。0训练/0预测/0test，旧validation不能作独立校准。来源、版本和两次清点中断见[本地复用报告](experiments/reliability_base/local_reuse.md)。下一步固定有限基线协议。
+
+
+## M23：固定有限基线方案（运行前，2026-10-05）
+P0：以已有神经对照三任务固定范围（234/3979/4792），不用测试成绩选择；仅official train，按canonical SMILES与SHA256确定60%fit/10%monitor/15%calibration/15%evaluation，同canonical不跨角色。fit内另按hash三折OOF，共用外部monitor早停；禁止OOF查询标签/monitor标签进入邻域参考。P0：冻结主干、对照、阶段预算、数值筛查、解释与停止规则，记录样本数/输入hash/分区hash；不执行拟合。P1：核对实际2.2.3源码/官方文档版本及UNIQUE源码边界，未知兼容不假称通过；提交后核对远端SHA。0训练/0预测/0test，原目录只读。
+
+
+## M23预检修订：样本量门槛触发（训练前，2026-10-05）
+P0：首次预检3979未达每角色100样本门槛；改用已有244资产，最终范围234/244/4792，旧预检产物保留，新目录v2，不用测试成绩选择；仅official train，按canonical SMILES与SHA256确定60%fit/10%monitor/15%calibration/15%evaluation，同canonical不跨角色。fit内另按hash三折OOF，共用外部monitor早停；禁止OOF查询标签/monitor标签进入邻域参考。P0：冻结主干、对照、阶段预算、数值筛查、解释与停止规则，记录样本数/输入hash/分区hash；不执行拟合。P1：核对实际2.2.3源码/官方文档版本及UNIQUE源码边界，未知兼容不假称通过；提交后核对远端SHA。0训练/0预测/0test，原目录只读。
+
+
+M23：有限基线协议已冻结：234/244/4792仅official train，fit/monitor/calibration/evaluation角色分开并按canonical排重；先seed42三任务，筛查通过才43/44，最多90次fit（含辅助RF），当前0训练/0预测/0test。数值止损、解释、异常和预检修订见[固定协议](experiments/reliability_base/fixed_protocol.md)。下一步仅薄CLI编排与契约验收，再执行A；不是新算法效果。

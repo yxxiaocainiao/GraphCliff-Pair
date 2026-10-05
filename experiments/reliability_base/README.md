@@ -74,3 +74,8 @@ for item in meta['sources']:
 ## M22补充：本地模型资产
 
 M22完成本地复用核验：30 Chemprop权重hash相符，27神经对照资产存在；优先复用官方Chemprop2.2.3及本项目已有身份/验证工具。0训练/0预测/0test，旧validation不能作独立校准。来源、版本和两次清点中断见[本地复用报告](local_reuse.md)。下一步固定有限基线协议。
+
+
+## M23：固定协议
+
+M23：有限基线协议已冻结：234/244/4792仅official train，fit/monitor/calibration/evaluation角色分开并按canonical排重；先seed42三任务，筛查通过才43/44，最多90次fit（含辅助RF），当前0训练/0预测/0test。数值止损、解释、异常和预检修订见[固定协议](fixed_protocol.md)。下一步仅薄CLI编排与契约验收，再执行A；不是新算法效果。
