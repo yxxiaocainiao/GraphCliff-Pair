@@ -69,3 +69,8 @@ for item in meta['sources']:
 最终解释仍必须提供结构、真值/预测/误差、固定成功/失败/一般案例、重要对随机同规模掩蔽和跨seed稳定性；拒答另展示风险及合法邻域证据。注意力/指纹/粗糙度关联不独立证明化学因果。见[解释规范](../../docs/research/framework_review_20261005/explainability.md)。
 
 异常：GraphCliff环境无sklearn，改用已安装chemprop环境；两SelectiveNet仓库缺许可证未接入；GitHub CLI沙箱读取配置失败后授权重试。无训练失败或重跑；实际3次RF冒烟/0正式效果训练/0test。原项目/my_work、模型/Loss/旧配置与数据不改。
+
+
+## M22补充：本地模型资产
+
+M22完成本地复用核验：30 Chemprop权重hash相符，27神经对照资产存在；优先复用官方Chemprop2.2.3及本项目已有身份/验证工具。0训练/0预测/0test，旧validation不能作独立校准。来源、版本和两次清点中断见[本地复用报告](local_reuse.md)。下一步固定有限基线协议。

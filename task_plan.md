@@ -213,3 +213,10 @@ P0：核对SelectiveNet官方/第三方许可，选择现有MIT粗糙度代码�
 
 
 M21：用户确认以成熟公开项目为底座，不再限定GraphCliff。MIT粗糙度作者代码已原样跑通3次RF小样本接口，128train/32validation，部署特征标签依赖及作者纯校准接口通过，官方test使用0；UNIQUE为已审查但未运行参考。进入有限基线方案准备，尚无新方法效果结论。见[底座验收](experiments/reliability_base/README.md)。发表目标不变，旧队列暂停。
+
+
+## M22：本地复用资产核验（2026-10-05，运行前计划）
+P0：优先核对my_work已存在的模型入口、许可、来源、配置、权重manifest/hash及训练/验证身份；不读取旧test预测/指标，不修改原目录。P0：核验已有Chemprop2.2.3环境和官方接口，优先使用已有reuse_baselines/verify_baseline_reuse，不重写训练循环。P1：30任务仅核对checkpoint与manifest，27神经对照仅检查配置/权重/验证产物存在；不据性能选任务/模型。P1：记录复用角色、旧validation选模与独立校准边界、官方文档版本差异及失败检索，提交push；0训练/0预测/0test。正式风险训练方案另定，旧队列不恢复。
+
+
+M22完成本地复用核验：30 Chemprop权重hash相符，27神经对照资产存在；优先复用官方Chemprop2.2.3及本项目已有身份/验证工具。0训练/0预测/0test，旧validation不能作独立校准。来源、版本和两次清点中断见[本地复用报告](experiments/reliability_base/local_reuse.md)。下一步固定有限基线协议。

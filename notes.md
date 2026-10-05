@@ -144,3 +144,6 @@ M20粗糙度方向差异审查完成：固定两仓库/14文件/9份Python静态
 
 
 M21：用户确认以成熟公开项目为底座，不再限定GraphCliff。MIT粗糙度作者代码已原样跑通3次RF小样本接口，128train/32validation，部署特征标签依赖及作者纯校准接口通过，官方test使用0；UNIQUE为已审查但未运行参考。进入有限基线方案准备，尚无新方法效果结论。见[底座验收](experiments/reliability_base/README.md)。发表目标不变，旧队列暂停。
+
+
+M22完成本地复用核验：30 Chemprop权重hash相符，27神经对照资产存在；优先复用官方Chemprop2.2.3及本项目已有身份/验证工具。0训练/0预测/0test，旧validation不能作独立校准。来源、版本和两次清点中断见[本地复用报告](experiments/reliability_base/local_reuse.md)。下一步固定有限基线协议。

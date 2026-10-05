@@ -1,0 +1,453 @@
+{
+  "date": "2026-10-05",
+  "project_base_commit": "08f24ce76338da201982e77b78be49d7912d5c23",
+  "local_source": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines",
+  "source_commit": null,
+  "source_versions": {
+    "MoleculeACE": {
+      "commit": "7e6de0bd2968c56589c580f2a397f01c531ede26",
+      "remote": "https://github.com/molML/MoleculeACE.git",
+      "local_modifications": {
+        "file": "MoleculeACE/benchmark/const.py",
+        "change": "WORKING_DIR honors MOLECULEACE_DATA_DIR; model code unchanged"
+      }
+    },
+    "chemprop": {
+      "commit": "c83f4838cfc05a072f6741ae5b9700a1453ed571",
+      "remote": "https://github.com/chemprop/chemprop.git"
+    }
+  },
+  "input_sha256": {
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\models\\chemprop.py": "22c72deda8d25606f1a98c82a8040a40a63440c97e2147cc86408449b80948e7",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\third_party\\provenance.json": "c43dd39effcb10f22e5d48564003e2f41aec678d4d46c45bc3f59f93266f46b6",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\third_party\\chemprop\\LICENSE.txt": "0b8db524e0c61365824ee6480838563344fe79ae1733721f2bb9591e38ecb28d",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\configs\\benchmark_30.json": "9ae7acca1d8adb7c2416bc255c6e1dd54aa76d4a04aed1336b2075c914a692a3",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\utils\\splits.py": "7523baf22b05c4225b4dc3680a16ab6625a5cfc21dc06b5bf795397d03c4dee6",
+    "D:\\GraphCliff-Pair\\tools\\reuse_baselines.py": "51c5fa08e742605ba82f9df3db8c21f39a8802998b11a3ef08c1b161279b2b61",
+    "D:\\GraphCliff-Pair\\tools\\verify_baseline_reuse.py": "37d01fd36ef3b7fc7dc26e7f0b1e494da793e5d53b003b304501c0b4028fbf89",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\MoleculeACE\\LICENCE": "fa5550e77810f026154185d653867090db1c49ba79e6a78b35425ba111ad0cc6",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\configs\\neural_pilot.json": "3728b5c29fa4d8a1fed9cdb3ac158f7ef8f5bb47baba764fa87df948904d1aae"
+  },
+  "chemprop_checkpoint_checks": [
+    {
+      "dataset": "CHEMBL1862_Ki",
+      "seed": 42,
+      "manifest_sha256": "2a35e090e1087d7cab9dcd737b66e76cfc992f2a9640ee4cf6d67f482d281f90",
+      "checkpoint_sha256": "514b0d6a5f7ba34773c654c026e20783561b6d4e1e6e8be1fbcdb2086f0a60be",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL1871_Ki",
+      "seed": 42,
+      "manifest_sha256": "cc78a9b56b0151fb43c04642c7c9459c219ba0d1876798a4f99f12e4bf4e2b60",
+      "checkpoint_sha256": "f8487ba82324b956ab63d865bf7af4c493c14a8c707a55a1d166c936736b627a",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL2034_Ki",
+      "seed": 42,
+      "manifest_sha256": "a6a3a5abcbf2de5bf4e30b804e094448d00f096732055f5f038bc0904df3093d",
+      "checkpoint_sha256": "cbb72637d772bbc0741acd5bac1066e9b426c92b7382c2b7a158433be53bd96f",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "seed": 42,
+      "manifest_sha256": "42cf63a3374c95e69af1ed0a4babae2c7aaf6b692937c48fa4c919fe36e3cf6f",
+      "checkpoint_sha256": "ddf74600485a3b810579187dda64905f5e3c8662642be0dcdaadb12e4a15edd0",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL204_Ki",
+      "seed": 42,
+      "manifest_sha256": "81b840fac48e0c994a1a9d859d086e754191c8e1c2dbcb22d608db231e26cb4e",
+      "checkpoint_sha256": "56e0df3092a8a6bec4a32649204830b00112d9f74b3e69c00d291432d0963e52",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL2147_Ki",
+      "seed": 42,
+      "manifest_sha256": "7b1279642a5f479963a3668e30c00a5317d57ac7cc50825cb5bec523ca658952",
+      "checkpoint_sha256": "4069099ff6c59254459d3fc6576ef603b71a5e11b53cfa17fedce6a54f16e306",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL214_Ki",
+      "seed": 42,
+      "manifest_sha256": "f6748e76c601ee1225824e8444da506163f058111c351617c869a481f20de598",
+      "checkpoint_sha256": "14a27391055650370a40625219d0ec5d0532e258152bc163209a411ad208b8c1",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL218_EC50",
+      "seed": 42,
+      "manifest_sha256": "2411a85cf1702b79a92770c64c6f48d76204f85cfb2941edf9d571b9a5bdf0a9",
+      "checkpoint_sha256": "37bcd0a47b466d37b29cc9bfe05942f922c9763000853f0922dbab13aea9912c",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL219_Ki",
+      "seed": 42,
+      "manifest_sha256": "025e094bab64df6b7855bd9368a8fb34b22b6028fe16241a6ed76ee099dc2c6b",
+      "checkpoint_sha256": "744f8c8e3e7349d029de19b75b43108c4f7f9c0a4dbd60f58396b474448d6243",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL228_Ki",
+      "seed": 42,
+      "manifest_sha256": "bb664616c0ad5dac3ad81a5fa858c35b5cb931f08116424457005e27ad0375ea",
+      "checkpoint_sha256": "5633394087ee534ec0bd3bab4a001aab74557059774f9c4ead9dc806c067b18d",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL231_Ki",
+      "seed": 42,
+      "manifest_sha256": "3c6824e071eab5b633ddc267067e373749bcaf25fc45692695f57fb2bafa1f10",
+      "checkpoint_sha256": "b10b246f8d79ec52aaf63e0a417edccc92a16ed6df174a24e7f244f59c539d67",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL233_Ki",
+      "seed": 42,
+      "manifest_sha256": "41053a51c75f489a704b430b30d5683d551afa06920880f34c82c8cb46c6e659",
+      "checkpoint_sha256": "bb9b72b52e0b359c16d570ff604af9881c6458b101038928fa50ae4fb6fbcdad",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "manifest_sha256": "003379c3fd6653444c6baaceeea2795d17295e070daeb0203a8ba5bffbb7990a",
+      "checkpoint_sha256": "2e3444e15014eec3cc76930f99c7f1ab4321aec09f9d0be6a7a145d01f9ec5e0",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL235_EC50",
+      "seed": 42,
+      "manifest_sha256": "30a4447533c6effd833e901285ece29e3985de964833c3c436529abacc480d59",
+      "checkpoint_sha256": "cce3158184914be0de65b9beb6a430294944bda5c8e39337440177f65b53f4e4",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL236_Ki",
+      "seed": 42,
+      "manifest_sha256": "4fbfb36cb5aef2d3af954dfeea2fe2393ce1fd716de09cabc50ae8c6cd4cdde7",
+      "checkpoint_sha256": "8c1997c79935d2e8b7e333a85780a0265c86eb5f7881d9d2ba1cb0bfb4488c7f",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL237_EC50",
+      "seed": 42,
+      "manifest_sha256": "d4fd5f8c09c2dc8007f858ab10060707acbe886432076991378d7bfca3caa091",
+      "checkpoint_sha256": "15fb36d64d73262daa0f2e75a821cead2c88b7238f3f29310904371ee42676df",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL237_Ki",
+      "seed": 42,
+      "manifest_sha256": "4e56a0c5fd2e9562f2b4f74e059eda3d94bf5b7447551f130293e71ede822531",
+      "checkpoint_sha256": "4d43a100d9f81a4da9865cf638359f7470dfbe54693872bccc8a5e08c2653a8f",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL238_Ki",
+      "seed": 42,
+      "manifest_sha256": "a56e6daa644dabf91092e6e1092f7944d137e3e3a8f18118f4ab19dae9801844",
+      "checkpoint_sha256": "014e88deefd51258c9ff1b87908a718ef877947c9d0f6518e2c27c9d3c7deed1",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL239_EC50",
+      "seed": 42,
+      "manifest_sha256": "c9e06364d2044356389abcbfd4326199daa1db9792e998df3b23670d35f37fe5",
+      "checkpoint_sha256": "e1583467b9424cb53443a479e720b7e1f62a8a432d24bbefeeb9fa34a9518d9e",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "manifest_sha256": "1bd65671d19cf43a0ce6c346436d9af99d1c6267ba58d59de6c2b474e052a043",
+      "checkpoint_sha256": "844fadb335f834dcc19b1773d4e1ae2d4d82d9b917bed909f1ff17b3e8e78f5b",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL262_Ki",
+      "seed": 42,
+      "manifest_sha256": "1b9b43305c81b11c59839344c6128b72d0faa8b78793abaf1c542a871c2ad78b",
+      "checkpoint_sha256": "01f9392f6d4448f5fe566648195427e480ea22999c83a01ddf8602c844ee4c05",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL264_Ki",
+      "seed": 42,
+      "manifest_sha256": "386c63487f13aeae44d6ccf5d92a162add9976b5ee20ef2b3449cfbbbc94497d",
+      "checkpoint_sha256": "e6a115d97b2ff7a1c1517f7b7df377fb31839b9e3db80600ea4a022ad1426484",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL2835_Ki",
+      "seed": 42,
+      "manifest_sha256": "de4ce2ed3fdac1b4b68da3aa5799ca47a37e9e8eccb2040aa8457d725caf0925",
+      "checkpoint_sha256": "3423b466966e955b231a6b41d54a184396fbe84a3328f5169df314c5b9003fa1",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "seed": 42,
+      "manifest_sha256": "b28081a5c8e6fc4c26e38a05ee2a27d0691a4c46b2608788a00bda9f308e311a",
+      "checkpoint_sha256": "9876436e5ec57f3f829de774058c7c31d542eaa226edf2ea5b36458d3ecc68ef",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL2971_Ki",
+      "seed": 42,
+      "manifest_sha256": "8fc7201e6da16e5d80b538dd6b98a5e9ef4dcfa3deaadf257c25b8a521f7efe9",
+      "checkpoint_sha256": "9dfaeb8bf5a9aef2fb4f986f29936059762ea77eabf2bea2f1bf2ae9ad6a06ae",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 42,
+      "manifest_sha256": "d6088b1f33df0e06ab60dab9bca72b10983927b8089e6949d6418ae1ed795ce3",
+      "checkpoint_sha256": "0dcece309f774ffbbcf9687c3611936e90b1fb2ec5509723627745aa62ea8ea5",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL4005_Ki",
+      "seed": 42,
+      "manifest_sha256": "3f3d25a14fbaf5e7dbb3f2f56b85bd736238024577ff506af1244943c2e49ecc",
+      "checkpoint_sha256": "7d0129892f908e693208a405f92f7b65cca91977e4d7662a0199249d5f6ac4d8",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL4203_Ki",
+      "seed": 42,
+      "manifest_sha256": "d71a86dcf03708a99651cd432b485317d095083cf30ad28c731cb6cbc155985f",
+      "checkpoint_sha256": "b0b65e8d7686081c8e89714a6f6f063b91338165c195d0a43c70997c66235886",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL4616_EC50",
+      "seed": 42,
+      "manifest_sha256": "aa58c4f1c445ea4f117e3e7e5aec162b7bef9a16d6f7aa3e9d8776e0cda31dbd",
+      "checkpoint_sha256": "308a925a88591e2203ac4bea8ee2b7b64771bc58517aca90893f38dde7cea2cd",
+      "checkpoint_hash_matches": true
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "manifest_sha256": "d15c13a2137e561cda54b035224549d75728ecaa8d413b285113faae9d7ae02a",
+      "checkpoint_sha256": "3fcee9db23382bebc2258f4ef5fc75fed8067f99499113147fd68ebcc1dadfb3",
+      "checkpoint_hash_matches": true
+    }
+  ],
+  "neural_existence_checks": [
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 44,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 44,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gcn",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 44,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 44,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 44,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "gat",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 44,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL3979_EC50",
+      "seed": 44,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 44,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 43,
+      "four_artifacts_present": true
+    },
+    {
+      "model": "mlp",
+      "dataset": "CHEMBL234_Ki",
+      "seed": 44,
+      "four_artifacts_present": true
+    }
+  ],
+  "selected_backbone": "Existing installed official Chemprop 2.2.3 D-MPNN; engineering baseline choice, not novelty/performance selection.",
+  "runtime_check": {
+    "chemprop": "2.2.3",
+    "import_passed": true,
+    "EnsembleEstimator": true,
+    "MVEEstimator": true,
+    "ConformalCalibrator_export_checked": false,
+    "note": "No replacement API inferred; actual calibration module compatibility pending."
+  },
+  "planned_actual": {
+    "checkpoint_hash_checks": [
+      30,
+      30
+    ],
+    "neural_asset_existence_checks": [
+      27,
+      27
+    ],
+    "new_training": [
+      0,
+      0
+    ],
+    "prediction": [
+      0,
+      0
+    ],
+    "test_evaluation": [
+      0,
+      0
+    ]
+  },
+  "limits": [
+    "Checkpoint hashes/metadata verified, not 30 forward passes or historical training reproduction.",
+    "Neural assets existence only; no score/ranking claim.",
+    "Old validation was used for model selection; cannot claim independent calibration.",
+    "Current official latest docs are 2.3.1, installed 2.2.3; APIs must be checked before adaptation.",
+    "No new model source copied; existing official CLI and audit helpers retained.",
+    "No fresh per-row split alignment in M22; existing reuse_baselines.py provides it. New protocol must run that contract before use."
+  ],
+  "anomalies": [
+    "Pinned GitHub tree browser fetch failed with cache miss; local stored provenance used, not live source-tree verification.",
+    "Import warning: optional Triton unavailable for flop counting; model import completed.",
+    "Local baseline .git has no resolvable HEAD; source commit unavailable, rely on per-file hashes and stored upstream provenance. Second inventory attempt aborted on this metadata check; no training occurred.",
+    "First inventory check aborted: audit script incorrectly hardcoded CHEMBL244_Ki as a historical neural task. Corrected to read unchanged neural_pilot.json (CHEMBL3979_EC50/4792_Ki/234_Ki), repeated read-only audit. No training or source edits occurred."
+  ],
+  "next": "Freeze bounded development-only OOF/calibration protocol before formal risk training."
+}
