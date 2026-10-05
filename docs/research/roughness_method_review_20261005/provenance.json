@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-05",
+  "baseline_commit": "bda678f0b074960eeb449a2fbe9cdce6ed3a9d48",
+  "user_input": {
+    "filename": "局部结构—活性粗糙度能否跨时间改善QSAR拒答：活性悬崖方法的严格独立复核 _ AIDD Idea Atlas.pdf",
+    "sha256": "b8b4cdbff7e4574b8e3bc737d7c9ab18e418ab0193f2133f4c3fc457376b8e21"
+  },
+  "sources": [
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/README.md",
+      "sha256": "6d1ea6418ebb73231833c002e58f25c6e07b2a5756e27d3a9de65aaa5fbaa3b2",
+      "bytes": 12126
+    },
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/LICENSE",
+      "sha256": "692eff71860f45438688b0630b92739637cd105e9b086ad6e39d7d2805a0a147",
+      "bytes": 1254
+    },
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "src/build_features.py",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/src/build_features.py",
+      "sha256": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+      "bytes": 4618
+    },
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "src/conformal.py",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/src/conformal.py",
+      "sha256": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f",
+      "bytes": 7995
+    },
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "src/gnn.py",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/src/gnn.py",
+      "sha256": "ee76ecd39d7fe90cd6aae47259525baca3fac44273c24d840892d55980f07107",
+      "bytes": 4483
+    },
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "src/gnn_tuned.py",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/src/gnn_tuned.py",
+      "sha256": "e062d70d55590993b986ad643835c6e3f0cbfed5955214685f0e4c472351a203",
+      "bytes": 5171
+    },
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "src/config.py",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/src/config.py",
+      "sha256": "f4e1c25a9afc201d2b38dd104c30b69bb6060ca277435115b1cbb2ed21a3e0da",
+      "bytes": 1238
+    },
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "src/analyze.py",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/src/analyze.py",
+      "sha256": "44dff37d9d15c41f4742807cc5b675c6207c498ba91ce5f9a1fe310af08fc939",
+      "bytes": 6555
+    },
+    {
+      "repo": "krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "path": "paper/main.tex",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/paper/main.tex",
+      "sha256": "94f6b83208670fd13cfa7e8546fb649850dca7f0b82d2b8445abf31c96ac333e",
+      "bytes": 33652
+    },
+    {
+      "repo": "Novartis/UNIQUE",
+      "commit": "c6d65b9c63102bc18e68c25c98d76e24650c3e4a",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Novartis/UNIQUE/c6d65b9c63102bc18e68c25c98d76e24650c3e4a/README.md",
+      "sha256": "b26dad87eab6531892295001b42a2f91edb5a7fb9ea0756c423bac1fdb92375f",
+      "bytes": 7829
+    },
+    {
+      "repo": "Novartis/UNIQUE",
+      "commit": "c6d65b9c63102bc18e68c25c98d76e24650c3e4a",
+      "path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/Novartis/UNIQUE/c6d65b9c63102bc18e68c25c98d76e24650c3e4a/LICENSE.md",
+      "sha256": "27d53fe57014dae91df0ec17a331af3175b5ff82696bdd929beb5f40e5fcb325",
+      "bytes": 1495
+    },
+    {
+      "repo": "Novartis/UNIQUE",
+      "commit": "c6d65b9c63102bc18e68c25c98d76e24650c3e4a",
+      "path": "unique/pipeline.py",
+      "url": "https://raw.githubusercontent.com/Novartis/UNIQUE/c6d65b9c63102bc18e68c25c98d76e24650c3e4a/unique/pipeline.py",
+      "sha256": "005bfbb8f024fad43cb8d84ef2bc0d14e6c1824aca78ed2411ae664c5922e2aa",
+      "bytes": 58200
+    },
+    {
+      "repo": "Novartis/UNIQUE",
+      "commit": "c6d65b9c63102bc18e68c25c98d76e24650c3e4a",
+      "path": "unique/error_models/base.py",
+      "url": "https://raw.githubusercontent.com/Novartis/UNIQUE/c6d65b9c63102bc18e68c25c98d76e24650c3e4a/unique/error_models/base.py",
+      "sha256": "9eb8b309257638dc07155339f41563f201cdbf570006ef9d5fbce3b22e5e3321",
+      "bytes": 10583
+    },
+    {
+      "repo": "Novartis/UNIQUE",
+      "commit": "c6d65b9c63102bc18e68c25c98d76e24650c3e4a",
+      "path": "unique/error_models/models/random_forest_regressor.py",
+      "url": "https://raw.githubusercontent.com/Novartis/UNIQUE/c6d65b9c63102bc18e68c25c98d76e24650c3e4a/unique/error_models/models/random_forest_regressor.py",
+      "sha256": "104a570bf1a2010b09beef4facc7c8cd96c842b727445871f1b9421bd03c45d5",
+      "bytes": 2563
+    }
+  ],
+  "commits": {
+    "krishnatheaverage/qsar-landscape-roughness": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+    "Novartis/UNIQUE": "c6d65b9c63102bc18e68c25c98d76e24650c3e4a"
+  },
+  "tree_sha256": {
+    "krishnatheaverage/qsar-landscape-roughness": "a233938668721076a2933e451e6c6d03737c270ee406e72312d3e1f3fa677969",
+    "Novartis/UNIQUE": "efbdc4af2fc63a6f76d541cbc54445a0c328c249cca5dfb70863f44074bf470b"
+  },
+  "primary_related_method": {
+    "title": "SelectiveNet: A Deep Neural Network with an Integrated Reject Option",
+    "url": "https://proceedings.mlr.press/v97/geifman19a.html",
+    "evidence": "official abstract; not full formula/code audit"
+  },
+  "searches": [
+    "molecular selective prediction risk coverage roughness neural network error model uncertainty graph",
+    "selective regression deep neural networks risk coverage SelectiveNet github",
+    "molecular uncertainty error prediction learned uncertainty UNIQUE error models roughness conformal"
+  ],
+  "configuration": "static inspection only; AST syntax check; no upstream imports, dependency changes or execution",
+  "planned_actual": {
+    "repositories": [
+      2,
+      2
+    ],
+    "training": [
+      0,
+      0
+    ],
+    "test_evaluation": [
+      0,
+      0
+    ]
+  },
+  "retained_algorithm_candidates": 0,
+  "limits": "Bounded review, not exhaustive novelty search; pinned repository manuscript not independently published-paper verification; no local replication.",
+  "anomalies": [
+    "GitHub src tree browser cache miss; used GitHub API complete trees and pinned raw files.",
+    "ACS publisher HTTP403; UNIQUE mechanism checked in pinned authors code.",
+    "No training interruption or budget deviation; two UNIQUE error-model files added to resolve a specific mechanism question."
+  ],
+  "decision": "No-Go for module transfer/combination/ordinary learned reject head as current algorithm proposal; preserve replication assets; no three-task pilot yet"
+}

@@ -1,0 +1,15 @@
+{
+  "files_sha256_and_git_blob_checked": 14,
+  "python_ast_parsed_not_executed": 9,
+  "complete_trees": 2,
+  "licenses": [
+    "roughness:MIT",
+    "UNIQUE:BSD-3-Clause"
+  ],
+  "upstream_execution": 0,
+  "training": 0,
+  "test_evaluation": 0,
+  "relative_links_checked": 73,
+  "pdf_hash_recheck": "pass",
+  "source_counts_independently_rechecked": "pass"
+}
