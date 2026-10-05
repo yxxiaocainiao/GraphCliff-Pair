@@ -114,3 +114,4 @@ ccc570b公开固定官方GPLv3 Loss、原GraphCliff及三任务三seed18组上�
 2026-10-05用户明确最终目标是发刊（中科院二区），不是彻底解决活性悬崖。项目按可发表的限定贡献、必要实验、写作投稿排序；诊断须服务具体论文决策，阴性结果只能止损，不能当作最终目标完成。旧目标和训练仍暂停。
 
 2026-10-05：完成有限难例与文献排查，结果见docs/diagnostics/hard_case_audit_234/results.md。现有证据不能包装成新方法；ICML2021 DIR、CVPR2022 BalancedMSE及JCIM2026 IA-MoE已覆盖不平衡路线。决定结束病例核查，旧队列暂停，无新训练/test读取。
+2026-10-05用户明确尽量复用GitHub算法/项目，必要时调研。完成DIR、BalancedMSE、IA-MoE版本/入口/许可/划分审查，见docs/research/github_reuse_candidates_20261005.md。准备MIT原文件缓存、校验及合成检查，未启动训练；两处BMC设备适配已核验，不修改现有Loss。

@@ -1,0 +1,59 @@
+{
+  "torch_version": "2.7.1+cu128",
+  "synthetic_only": true,
+  "training_started": false,
+  "existing_model_or_loss_modified": false,
+  "upstream_files_unmodified": true,
+  "init_noise_sigma_note": "1.0 is only a synthetic interface-check value, not a chosen experiment hyperparameter.",
+  "scope": "Loss interfaces only; LDS/FDS, IA-MoE and end-to-end molecular integration not executed.",
+  "checks": [
+    {
+      "method": "DIR weighted_mse_loss",
+      "device": "cpu",
+      "passed": true,
+      "ones_weights_equal_mse": true
+    },
+    {
+      "method": "unmodified BalancedMSE BMCLossMD",
+      "device": "cpu",
+      "passed": true,
+      "loss": 1.660075306892395,
+      "finite_prediction_and_sigma_gradient": true
+    },
+    {
+      "method": "DIR weighted_mse_loss",
+      "device": "cuda",
+      "passed": true,
+      "ones_weights_equal_mse": true
+    },
+    {
+      "method": "unmodified BalancedMSE BMCLossMD",
+      "device": "cuda",
+      "passed": false,
+      "error": "Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!",
+      "thin_device_adaptation_required": true
+    }
+  ],
+  "thin_device_adaptation": {
+    "changes": [
+      "torch.eye device=pred.device",
+      "torch.arange device=pred.device"
+    ],
+    "formula_unchanged": true,
+    "upstream_file_unmodified": true,
+    "checks": [
+      {
+        "device": "cpu",
+        "passed": true,
+        "loss": 1.660075306892395,
+        "finite_gradients": true
+      },
+      {
+        "device": "cuda",
+        "passed": true,
+        "loss": 1.660075306892395,
+        "finite_gradients": true
+      }
+    ]
+  }
+}
