@@ -1,0 +1,27 @@
+{
+  "rule": "First five SVM-better cliff cases and first five shared-hard cliff cases, union; fixed before case audit.",
+  "svm_better_rows": [
+    1524,
+    3145,
+    1866,
+    3191,
+    676
+  ],
+  "shared_hard_rows": [
+    1524,
+    2286,
+    1866,
+    640,
+    2340
+  ],
+  "selected_rows": [
+    640,
+    676,
+    1524,
+    1866,
+    2286,
+    2340,
+    3145,
+    3191
+  ]
+}

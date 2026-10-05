@@ -1,0 +1,9 @@
+{
+  "D:\\GraphCliff-Pair\\artifacts\\hard_case_audit_234_20261005\\case_audit.json": "1b4a2f05947b1117a73fa0b01774c2e1918e602cc485fb439d30390d07889269",
+  "D:\\GraphCliff-Pair\\artifacts\\hard_case_audit_234_20261005\\selection.json": "293ad7218faf8e66c68ee1c79b3cf34dd1404106a6c1cd0c0de7fd76f936d519",
+  "D:\\GraphCliff-Pair\\tools\\audit_hard_cases.py": "e2b0dd53b48d358c270b1dee8aa0fcfbc62bd0d96e725397bd7de1c4dfb41cea",
+  "D:\\GraphCliff-Pair\\artifacts\\baseline_reuse_234_20261005\\aligned_validation_predictions.csv": "5e5aefc10dee51a22de289fdfc859eb812dc71478dffbaf37fd3ca7e4fe50484",
+  "D:\\GraphCliff-Pair\\artifacts\\baseline_reuse_234_20261005\\cliff_case_ranking.csv": "b8788818eedf4b460e0688943fa027d1ceb2fc4be6d25e51ae504517cbc85b1f",
+  "D:\\GraphCliff-Pair\\artifacts\\baseline_reuse_234_20261005\\shared_hard_case_ranking.csv": "b7e53394983db9aabf04abca15f590cfc516850b55a46d3f1302aee50c03de56",
+  "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657"
+}

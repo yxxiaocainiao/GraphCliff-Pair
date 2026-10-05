@@ -14,6 +14,8 @@
 
 [已有基线复用诊断](docs/diagnostics/baseline_reuse_234/results.md)已完成：234任务14组验证预测逐行对齐；原GraphCliff在这些既有对照中表现最好，但预算不完全匹配，尚未形成值得新增训练的改进假设。旧my_work基线直接复用，不重建、不读取旧test预测。
 
+[有限难例核查](docs/diagnostics/hard_case_audit_234/results.md)已完成：234高活性尾部有三个seed重复低估，但已有分子不平衡回归文献覆盖相关机制；尚未形成新方法贡献，诊断到此结束，不据此追加Loss或训练。
+
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
 完整复现顺序、数据哈希及验证后测试步骤见[复现说明](docs/reproduction.md)。

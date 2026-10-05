@@ -1,0 +1,185 @@
+{
+  "dataset": "CHEMBL234_Ki",
+  "selection_count": 8,
+  "all_selected_within_training_label_range": true,
+  "selected_three_seed_same_sign_count": 8,
+  "selected_above_train_q90_count": 5,
+  "selected_identical_nearest_graph_count": 0,
+  "stereochemical_connectivity_groups_delta_at_least_one_count": 0,
+  "train_q10": -3.204119982655925,
+  "train_q90": -0.1139433523068367,
+  "tail_description": [
+    {
+      "stratum": "low_tail",
+      "cliff_only": false,
+      "n": 26,
+      "metrics": {
+        "graphcliff_42": {
+          "rmse": 0.7053018711858787,
+          "signed_bias": 0.561793289473777
+        },
+        "graphcliff_43": {
+          "rmse": 0.6074983051984211,
+          "signed_bias": 0.4292777948337202
+        },
+        "graphcliff_44": {
+          "rmse": 0.748336659241431,
+          "signed_bias": 0.48523316357262825
+        },
+        "svm": {
+          "rmse": 0.8553790474391555,
+          "signed_bias": 0.6216417456913736
+        }
+      }
+    },
+    {
+      "stratum": "low_tail",
+      "cliff_only": true,
+      "n": 9,
+      "metrics": {
+        "graphcliff_42": {
+          "rmse": 0.6461621845344592,
+          "signed_bias": 0.5765539826853948
+        },
+        "graphcliff_43": {
+          "rmse": 0.530279388183465,
+          "signed_bias": 0.4001181412309948
+        },
+        "graphcliff_44": {
+          "rmse": 0.5636656928045024,
+          "signed_bias": 0.38019350057547735
+        },
+        "svm": {
+          "rmse": 0.7162525536544158,
+          "signed_bias": 0.490731307790275
+        }
+      }
+    },
+    {
+      "stratum": "middle",
+      "cliff_only": false,
+      "n": 231,
+      "metrics": {
+        "graphcliff_42": {
+          "rmse": 0.4996255866322299,
+          "signed_bias": -0.03666157543532919
+        },
+        "graphcliff_43": {
+          "rmse": 0.5180397982517753,
+          "signed_bias": -0.0616383404868778
+        },
+        "graphcliff_44": {
+          "rmse": 0.5478344021537079,
+          "signed_bias": 0.004206227400833006
+        },
+        "svm": {
+          "rmse": 0.5329491358392864,
+          "signed_bias": -0.009602085002355392
+        }
+      }
+    },
+    {
+      "stratum": "middle",
+      "cliff_only": true,
+      "n": 99,
+      "metrics": {
+        "graphcliff_42": {
+          "rmse": 0.5213814334285819,
+          "signed_bias": -0.021675517945427377
+        },
+        "graphcliff_43": {
+          "rmse": 0.5501123702537389,
+          "signed_bias": -0.03938444277960173
+        },
+        "graphcliff_44": {
+          "rmse": 0.5649467490758134,
+          "signed_bias": 0.03541026908535616
+        },
+        "svm": {
+          "rmse": 0.5701884337074482,
+          "signed_bias": 0.034897513083276745
+        }
+      }
+    },
+    {
+      "stratum": "high_tail",
+      "cliff_only": false,
+      "n": 35,
+      "metrics": {
+        "graphcliff_42": {
+          "rmse": 0.888850106523187,
+          "signed_bias": -0.5934859169767973
+        },
+        "graphcliff_43": {
+          "rmse": 0.9221402422525948,
+          "signed_bias": -0.5372922380442667
+        },
+        "graphcliff_44": {
+          "rmse": 0.8025709635054556,
+          "signed_bias": -0.38755428156294625
+        },
+        "svm": {
+          "rmse": 0.8877116468207614,
+          "signed_bias": -0.6318620311027071
+        }
+      }
+    },
+    {
+      "stratum": "high_tail",
+      "cliff_only": true,
+      "n": 20,
+      "metrics": {
+        "graphcliff_42": {
+          "rmse": 1.0144769983167008,
+          "signed_bias": -0.6854577329471837
+        },
+        "graphcliff_43": {
+          "rmse": 1.0158273649773473,
+          "signed_bias": -0.5885907080486548
+        },
+        "graphcliff_44": {
+          "rmse": 0.9521778190541599,
+          "signed_bias": -0.47464861911685574
+        },
+        "svm": {
+          "rmse": 0.9774069908588806,
+          "signed_bias": -0.7144345689668623
+        }
+      }
+    }
+  ],
+  "high_tail_cliff_single_extreme_removal": {
+    "42": {
+      "n": 20,
+      "removed_source_row": 1524,
+      "remaining_n": 19,
+      "signed_bias": -0.5790511864065951
+    },
+    "43": {
+      "n": 20,
+      "removed_source_row": 1524,
+      "remaining_n": 19,
+      "signed_bias": -0.4603687015288582
+    },
+    "44": {
+      "n": 20,
+      "removed_source_row": 1524,
+      "remaining_n": 19,
+      "signed_bias": -0.35338253412935144
+    }
+  },
+  "independent_verification": {
+    "passed": true,
+    "descriptive_rmse_bias_checks": 48,
+    "selection_and_eight_cases_checked": true
+  },
+  "official_test_labels_read": false,
+  "trained": false,
+  "decision": "Close the bounded case audit. Tail bias is an exploratory candidate; no new method contribution established. Do not start another weighted-loss pilot solely from these cases.",
+  "limitations": [
+    "Selected using validation errors, so exploratory only.",
+    "No assay-level provenance verification.",
+    "Nearest reference is structural, not a causal explanation.",
+    "Train-tail groups cannot establish a new method or generalization."
+  ]
+}
