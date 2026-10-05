@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-05",
+  "pinned_source_files_checked": 33,
+  "python_files_parsed_not_executed": 25,
+  "commits": {
+    "Liu-group/XACs": "889b6596913161490dbade6b2203183a9f41c3bf",
+    "GZU-SAMLab/PrismNet": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+    "tfwuSUDA/MAPCliff-WMGR": "56f6653b31d63dcdc65184fb2f442d28d4a32bd5",
+    "microsoft/molucn": "5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3",
+    "FrancisShizy/SAGGLR": "7bfbe330d0108a34547b2ce7607a60e4a3e8a4d1"
+  },
+  "git_blob_and_sha256_checks": "pass",
+  "text_extract_hashes": "pass",
+  "text_hash_convention": "UTF-8 text with universal-newline normalization",
+  "text_files": [
+    {
+      "file": "ACES-GNN_paper.txt",
+      "normalized_text_sha256": "43421db89a2e3d71e28d0c5d305a893b98791f7dd72363da0d532942a37d212a",
+      "cached_bytes_sha256": "4297b6c7ebf3a1924dad147c4fbfd2689eaebfd48f0f8e27c7c49d1953f2005f"
+    },
+    {
+      "file": "PrismNet_paper.txt",
+      "normalized_text_sha256": "2d8da205059e2b763530e5a227d1b93f617c36024cf11b111dab99f5a8927a24",
+      "cached_bytes_sha256": "7c67f216186860263123a21f12d311f58ffe54471def32132acbef19eb3de1d8"
+    },
+    {
+      "file": "MAPCliff-WMGR_paper.txt",
+      "normalized_text_sha256": "fbbf90da34b7eeb1cb1811fee583c7f26518b94e684cffdf51d89c0720f5c5d1",
+      "cached_bytes_sha256": "4f0681f06ee905fb21a4a99d98e46c364e9acbe7defbda19e50dfda138d680e0"
+    }
+  ],
+  "licenses_verified": [
+    "XACs:MIT",
+    "PrismNet:MIT",
+    "molucn:MIT"
+  ],
+  "no_license_file_in_pinned_complete_tree": [
+    "MAPCliff-WMGR",
+    "SAGGLR"
+  ],
+  "single_task_normalized_weight_identity": "pass",
+  "upstream_execution": 0,
+  "training": 0,
+  "test_evaluation": 0,
+  "delivery_checks": {
+    "relative_links_checked": 60,
+    "input_excel_sha256_unchanged": true,
+    "three_original_pdf_sha256_unchanged_since_provenance_capture": true,
+    "overwrite_refusal": "pass",
+    "cache_ignored": "pass",
+    "git_diff_check": "pass",
+    "counts_independently_rechecked": "pass"
+  }
+}

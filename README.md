@@ -4,9 +4,11 @@
 
 **研究优先级：算法创新型论文。** [总体模型框架](docs/research/algorithm_framework.md)已明确任务、可复用底座、创新核心位置及解释/消融验收；核心尚未确定，不宣称新算法已完成，不恢复旧三板斧训练。
 
-**下一步按[算法研究执行计划](docs/research/algorithm_research_plan.md)执行：先接入aidd已读文献，核对方法边界，再筛选唯一算法核心；没有合格核心即停止，不先启动训练。**
+**按[算法研究执行计划](docs/research/algorithm_research_plan.md)完成本轮筛查后已停止：需要新的具体方法差异才重新开启选题；当前不启动训练。**
 
-[文献接入与方法边界初表](docs/research/literature_29_20261005/method_boundary.md)：本轮用户提供的29条整理已接入；G1关键近邻审查进行中，不再等待资料库入口，也不启动训练。
+**M18当前状态：** 有界G1关键近邻审查、G2三个问题和G3筛查完成：非共有幅度监督、共有上下文差值、高低频交互加动态Loss均存在直接公开重叠，保留0个候选，暂停本轮选题；不进入G4，不恢复旧队列。发表目标未完成。见[近邻审查与停止报告](docs/research/neighbor_audit_20261005/report.md)。
+
+[文献边界初表](docs/research/literature_29_20261005/method_boundary.md)保留历史证据范围；本轮只做有界深核验，不代表全库穷尽。
 
 历史候选框架为基于 GraphCliff 编码器的参考分子差值回归研究项目。逐项验证跨分子 Cross-Attention、FPPool、动态加权 Loss，保留原短长程编码机制。
 

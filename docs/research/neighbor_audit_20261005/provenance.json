@@ -1,0 +1,382 @@
+{
+  "date": "2026-10-05",
+  "baseline_commit": "f6a5ab0de7765a543d2e46669d70e2418172ee76",
+  "scope": "bounded G1/G2/G3 source audit; not exhaustive novelty or performance evaluation",
+  "sources": [
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/LICENSE",
+      "sha256": "72735b2b55ac217a8d8bde54716c12aeb87cf6dbf3351893bf7d7b48b0ccd2b9",
+      "bytes": 1066
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/README.md",
+      "sha256": "23823a6c1fe79bcadd6bc17461d4b890b23b9bd70ffb0193ef598d6b8f94cfb8",
+      "bytes": 4504
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "main.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/main.py",
+      "sha256": "5b5ca008c43c2dcfb7ac6ced59fc02ed2a955579c4ecfe8e903d67a2b37fb5c3",
+      "bytes": 7072
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/train.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/train.py",
+      "sha256": "189ec2f5e56af6f08344448290a9b29019db52d948e20796e652ddc3a8f76647",
+      "bytes": 15574
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/dataset.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/dataset.py",
+      "sha256": "3643f6fa65f6d2325a3413c0277b4adff0ecd6b7f6c1660367390754102aec76",
+      "bytes": 16405
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/cliffs.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/cliffs.py",
+      "sha256": "58bef6027bf4af30767f1f18d437842233c6ea74bdbaf3ee166c12601103d013",
+      "bytes": 17003
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/mmpa.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/mmpa.py",
+      "sha256": "35df9a5142011ef7df2d5ce1373ffdc10f245f40cde3c2580d5f8776839911fb",
+      "bytes": 2512
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/attribution/GradCAM.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/attribution/GradCAM.py",
+      "sha256": "b6070d64083fa68d26abb141bc8128269055f8934bfffb1a957cb2150f7fe93d",
+      "bytes": 2990
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/utils/parsing.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/utils/parsing.py",
+      "sha256": "5734038459e8d1bd4efc0523a742d77b1813b6376df6e6fa92f9bf57b66973bf",
+      "bytes": 5290
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/utils/explain_utils.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/utils/explain_utils.py",
+      "sha256": "7b55ad65873ebf5926c573361a1e54d037af1f5ef9fd957840431fa0c9300bc4",
+      "bytes": 13285
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/models/GNN.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/models/GNN.py",
+      "sha256": "5161cdc7a22e2238c44864d81d4f0694b4dccb016bea029fc2f904a26f2d6b31",
+      "bytes": 12886
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/GZU-SAMLab/PrismNet/4698a5bc6c3ae0e31284e84676a375f8ed10941b/LICENSE",
+      "sha256": "e70d23f040e0fe92b4512c9157c331dc94ca7999df7cb81b34b5903d805d7371",
+      "bytes": 1063
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/GZU-SAMLab/PrismNet/4698a5bc6c3ae0e31284e84676a375f8ed10941b/README.md",
+      "sha256": "b0c20498ec8d80be612b54a8731cdfc04665ceeef91e0144abdcadca48185169",
+      "bytes": 4327
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "path": "models/prismnet.py",
+      "url": "https://raw.githubusercontent.com/GZU-SAMLab/PrismNet/4698a5bc6c3ae0e31284e84676a375f8ed10941b/models/prismnet.py",
+      "sha256": "152989124b66ffef5446ca1230b21c358c6a05657f8338059a4a3226509f4222",
+      "bytes": 20143
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "path": "scripts/finetune.py",
+      "url": "https://raw.githubusercontent.com/GZU-SAMLab/PrismNet/4698a5bc6c3ae0e31284e84676a375f8ed10941b/scripts/finetune.py",
+      "sha256": "c16335b3c790c14459b862da3efb986f4f0d0fe94fed4659cbb4cd42dda95f11",
+      "bytes": 23807
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "path": "scripts/pretrain.py",
+      "url": "https://raw.githubusercontent.com/GZU-SAMLab/PrismNet/4698a5bc6c3ae0e31284e84676a375f8ed10941b/scripts/pretrain.py",
+      "sha256": "cf28fc1759829356ec72f5a4eca5421b0b83185f4fb9df8c827505c0de303533",
+      "bytes": 4914
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "path": "scripts/utils.py",
+      "url": "https://raw.githubusercontent.com/GZU-SAMLab/PrismNet/4698a5bc6c3ae0e31284e84676a375f8ed10941b/scripts/utils.py",
+      "sha256": "834b82af74da1658fbb66d26678604558fbdaf5f888c202159958343fb176986",
+      "bytes": 19975
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "path": "data_process/dataset_graph.py",
+      "url": "https://raw.githubusercontent.com/GZU-SAMLab/PrismNet/4698a5bc6c3ae0e31284e84676a375f8ed10941b/data_process/dataset_graph.py",
+      "sha256": "57addfdf3a35bf59fa59f9e3c9aaab10e3f7b90ae365468d45a65f65e02d5672",
+      "bytes": 20616
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "path": "data_process/preprocess.py",
+      "url": "https://raw.githubusercontent.com/GZU-SAMLab/PrismNet/4698a5bc6c3ae0e31284e84676a375f8ed10941b/data_process/preprocess.py",
+      "sha256": "a59eb2cf1f0d720cc8c6021562c06294d3f56ab8002315451a758bbe95fb1279",
+      "bytes": 726
+    },
+    {
+      "repo": "tfwuSUDA/MAPCliff-WMGR",
+      "commit": "56f6653b31d63dcdc65184fb2f442d28d4a32bd5",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/tfwuSUDA/MAPCliff-WMGR/56f6653b31d63dcdc65184fb2f442d28d4a32bd5/README.md",
+      "sha256": "7d003e7784857ea8560e4cde83adcefa52df7c77ddb9675281eb5f25b90f48ac",
+      "bytes": 3046
+    },
+    {
+      "repo": "tfwuSUDA/MAPCliff-WMGR",
+      "commit": "56f6653b31d63dcdc65184fb2f442d28d4a32bd5",
+      "path": "code/end2end_train.py",
+      "url": "https://raw.githubusercontent.com/tfwuSUDA/MAPCliff-WMGR/56f6653b31d63dcdc65184fb2f442d28d4a32bd5/code/end2end_train.py",
+      "sha256": "1a5af16b808a924ecf6d75472b1c7cc66b5d152da1f615bc60239c54c2306cca",
+      "bytes": 23060
+    },
+    {
+      "repo": "tfwuSUDA/MAPCliff-WMGR",
+      "commit": "56f6653b31d63dcdc65184fb2f442d28d4a32bd5",
+      "path": "code/evaluation.py",
+      "url": "https://raw.githubusercontent.com/tfwuSUDA/MAPCliff-WMGR/56f6653b31d63dcdc65184fb2f442d28d4a32bd5/code/evaluation.py",
+      "sha256": "38dfbaf2a79cf12a46a29649edda0ab15b26166e249139ff61547b9dfc5fd63d",
+      "bytes": 13157
+    },
+    {
+      "repo": "tfwuSUDA/MAPCliff-WMGR",
+      "commit": "56f6653b31d63dcdc65184fb2f442d28d4a32bd5",
+      "path": "code/units/GraphSNN_GAT.py",
+      "url": "https://raw.githubusercontent.com/tfwuSUDA/MAPCliff-WMGR/56f6653b31d63dcdc65184fb2f442d28d4a32bd5/code/units/GraphSNN_GAT.py",
+      "sha256": "12e9f456fa5ea80f26b1f6548b1d35c140dff90bde23244c72e09433002b1c8e",
+      "bytes": 9695
+    },
+    {
+      "repo": "tfwuSUDA/MAPCliff-WMGR",
+      "commit": "56f6653b31d63dcdc65184fb2f442d28d4a32bd5",
+      "path": "code/units/ednn_utils.py",
+      "url": "https://raw.githubusercontent.com/tfwuSUDA/MAPCliff-WMGR/56f6653b31d63dcdc65184fb2f442d28d4a32bd5/code/units/ednn_utils.py",
+      "sha256": "731d6331f6725bac6b7b373b07fbfddc78d0e164ed4f68a0c06517fa4b146ef8",
+      "bytes": 16288
+    },
+    {
+      "repo": "tfwuSUDA/MAPCliff-WMGR",
+      "commit": "56f6653b31d63dcdc65184fb2f442d28d4a32bd5",
+      "path": "code/units/getFeatures.py",
+      "url": "https://raw.githubusercontent.com/tfwuSUDA/MAPCliff-WMGR/56f6653b31d63dcdc65184fb2f442d28d4a32bd5/code/units/getFeatures.py",
+      "sha256": "c840abebded5bf31cf50269a06ce4b0e821986e03ed843404169d3640670437e",
+      "bytes": 27801
+    },
+    {
+      "source": "existing formal English attachment fulltext",
+      "filename": "SBJG3GHM.json",
+      "input_json_sha256": "ad4e2dd76fc8208cfc2fd3e9ce3c042d88a5cd639044b5983a751694899017ea",
+      "selected_attachment": "H5X5TFFZ",
+      "extracted_text_sha256": "43421db89a2e3d71e28d0c5d305a893b98791f7dd72363da0d532942a37d212a",
+      "output": "ACES-GNN_paper.txt"
+    },
+    {
+      "source": "existing formal English attachment fulltext",
+      "filename": "9ZI2LY6U.json",
+      "input_json_sha256": "6307e2d0d122037d8372671aa68653c11dc29121d6944bcd51f5b39a303021e7",
+      "selected_attachment": "DTVDTHLV",
+      "extracted_text_sha256": "2d8da205059e2b763530e5a227d1b93f617c36024cf11b111dab99f5a8927a24",
+      "output": "PrismNet_paper.txt"
+    },
+    {
+      "source": "existing formal English attachment fulltext",
+      "filename": "A6TPYN4M.json",
+      "input_json_sha256": "c7f1ded7e642e37c9248af5912a70ea6bae9d55d60794b76e3ed2692dd38ba57",
+      "selected_attachment": "ZX9WQDNY",
+      "extracted_text_sha256": "fbbf90da34b7eeb1cb1811fee583c7f26518b94e684cffdf51d89c0720f5c5d1",
+      "output": "MAPCliff-WMGR_paper.txt"
+    },
+    {
+      "repo": "microsoft/molucn",
+      "commit": "5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/microsoft/molucn/5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3/LICENSE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141
+    },
+    {
+      "repo": "microsoft/molucn",
+      "commit": "5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/microsoft/molucn/5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3/README.md",
+      "sha256": "b8eb184fc2c3e2bf86414ea0d9a2f84f999d254e911ad150f7ec0fc2da3ce943",
+      "bytes": 4318
+    },
+    {
+      "repo": "microsoft/molucn",
+      "commit": "5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3",
+      "path": "molucn/gnn/loss.py",
+      "url": "https://raw.githubusercontent.com/microsoft/molucn/5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3/molucn/gnn/loss.py",
+      "sha256": "2627900a86b941e5ea3d829fd5df392350ed632f5740e44cc61aa6b155910dae",
+      "bytes": 2767
+    },
+    {
+      "repo": "microsoft/molucn",
+      "commit": "5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3",
+      "path": "molucn/gnn/model.py",
+      "url": "https://raw.githubusercontent.com/microsoft/molucn/5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3/molucn/gnn/model.py",
+      "sha256": "188a4e7361d1fb36d6aea14944a03762d6b4b07832a2c23c223370319acc13c9",
+      "bytes": 9576
+    },
+    {
+      "repo": "FrancisShizy/SAGGLR",
+      "commit": "7bfbe330d0108a34547b2ce7607a60e4a3e8a4d1",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/FrancisShizy/SAGGLR/7bfbe330d0108a34547b2ce7607a60e4a3e8a4d1/README.md",
+      "sha256": "121231c4a23b18954740a0b8080df01689e4fadf9323acb11aaa2e34d7c6cb2a",
+      "bytes": 2634
+    },
+    {
+      "repo": "FrancisShizy/SAGGLR",
+      "commit": "7bfbe330d0108a34547b2ce7607a60e4a3e8a4d1",
+      "path": "SAGGLR/gnn_framework/loss.py",
+      "url": "https://raw.githubusercontent.com/FrancisShizy/SAGGLR/7bfbe330d0108a34547b2ce7607a60e4a3e8a4d1/SAGGLR/gnn_framework/loss.py",
+      "sha256": "f559f336ba0ff1f6913db5caef24026cf5ace306dd54aef7032155aa2fcfbcb6",
+      "bytes": 12069
+    },
+    {
+      "repo": "FrancisShizy/SAGGLR",
+      "commit": "7bfbe330d0108a34547b2ce7607a60e4a3e8a4d1",
+      "path": "SAGGLR/gnn_framework/model.py",
+      "url": "https://raw.githubusercontent.com/FrancisShizy/SAGGLR/7bfbe330d0108a34547b2ce7607a60e4a3e8a4d1/SAGGLR/gnn_framework/model.py",
+      "sha256": "a7c2b0111b991a1707d3aa246ebe166a986b95c2bf8f6ad3485f946edd468836",
+      "bytes": 17863
+    },
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "path": "XACs/utils/utils.py",
+      "url": "https://raw.githubusercontent.com/Liu-group/XACs/889b6596913161490dbade6b2203183a9f41c3bf/XACs/utils/utils.py",
+      "sha256": "dc2cc18d5ec25c2fd5862ef8498d6c2e587d3bc291f04c03d7a07e425b50d6f4",
+      "bytes": 6356
+    }
+  ],
+  "trees": [
+    {
+      "repo": "Liu-group/XACs",
+      "commit": "889b6596913161490dbade6b2203183a9f41c3bf",
+      "sha256": "cccdc52da33fc898c82fb96434ca57889eabde298f11927731511e3a6f3c9bd9",
+      "complete_tree": true
+    },
+    {
+      "repo": "GZU-SAMLab/PrismNet",
+      "commit": "4698a5bc6c3ae0e31284e84676a375f8ed10941b",
+      "sha256": "eadaf8ed294507a9fba846198a42ce301f1d1182be2b83676d6861d56f301ae3",
+      "complete_tree": true
+    },
+    {
+      "repo": "tfwuSUDA/MAPCliff-WMGR",
+      "commit": "56f6653b31d63dcdc65184fb2f442d28d4a32bd5",
+      "sha256": "9089c762fab7ff8babfef00abfbb4f94034e89a7c40cf1a78c0c23e9918d6c73",
+      "complete_tree": true
+    },
+    {
+      "repo": "microsoft/molucn",
+      "commit": "5c9c689c1c9ca1dc12b2c933648bf6e30edf70c3",
+      "sha256": "c1e9281b2c3d6807504527d00cb097b70559c94babe114ca097627acdde361ec",
+      "complete_tree": true
+    },
+    {
+      "repo": "FrancisShizy/SAGGLR",
+      "commit": "7bfbe330d0108a34547b2ce7607a60e4a3e8a4d1",
+      "sha256": "dd7210d14bf12ed5f1f68261e76fbb019d7d98e41cc0357f57830e5221b010ee",
+      "complete_tree": true
+    }
+  ],
+  "original_pdfs": [
+    {
+      "attachment_key": "H5X5TFFZ",
+      "filename": "Chen 等 - 2025 - ACES-GNN can graph neural network learn to explain activity cliffs.pdf",
+      "sha256": "82d4eefe45528354f6efc9ee636d059ae4b81d659839deb42524f82c002a09f6",
+      "visually_inspected_pdf_pages_one_based": [
+        5
+      ]
+    },
+    {
+      "attachment_key": "DTVDTHLV",
+      "filename": "Xie 等 - 2026 - Spectral decomposition of chemical semantics for activity cliffs-aware molecular property prediction.pdf",
+      "sha256": "bf1bbdfd190ab4811658543e860ad8c032b62ee53f1ac3bf06f59c1f71edc394",
+      "visually_inspected_pdf_pages_one_based": [
+        15,
+        16
+      ]
+    },
+    {
+      "attachment_key": "ZX9WQDNY",
+      "filename": "Chen 等 - 2025 - MAPCliff-WMGR exploring activity cliffs in molecular activity prediction enhanced by weighted molec.pdf",
+      "sha256": "0012a18360e88b97321d8db4ef978dee9efbdd13012ba106a49c59e550c8b07e",
+      "visually_inspected_pdf_pages_one_based": [
+        5
+      ]
+    }
+  ],
+  "configuration": "read-only static source inspection; no upstream imports; no training configuration",
+  "planned": {
+    "primary_neighbors": 3,
+    "maximum_questions": 3,
+    "training": 0,
+    "test_evaluation": 0
+  },
+  "actual": {
+    "primary_neighbors": 3,
+    "additional_direct_neighbors": 2,
+    "questions": 3,
+    "retained_candidates": 0,
+    "training": 0,
+    "test_evaluation": 0
+  },
+  "local_cache": "artifacts/neighbor_audit_20261005 (ignored, not distributed)",
+  "evidence_level": {
+    "ACES-GNN_PrismNet_MAPCliff-WMGR": "formal English local paper methods/experiment sections plus pinned code; indicated formula pages visually inspected",
+    "UCN_SAGGLR": "official publication metadata plus pinned official code; not full-paper deep reading"
+  },
+  "anomalies": [
+    "Publisher HTTP403 and PMC challenge limited live full text; used existing formal English local PDFs for three primary papers.",
+    "Initial text hash check compared CRLF cache bytes against normalized extracted string hash and failed; retained expected hash, verified LF-normalized text and separately recorded cache byte hash.",
+    "Console DOI extraction hit GBK UnicodeEncodeError; no source mutation or inferred DOI; delivery script uses UTF-8 files.",
+    "Poppler font warnings while rendering; exit zero and formula pages visually readable."
+  ],
+  "deviation": "Added two targeted official neighbors after direct formula overlap was found; no fourth question or training.",
+  "next_decision": "No-Go for these three questions; stop current bounded topic; publication goal remains unfinished"
+}
