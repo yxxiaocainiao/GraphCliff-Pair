@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-05",
+  "baseline_commit": "2dca4766ae0eeb016dd81deefc3f0122a1c22803",
+  "purpose": "one bounded renewed question: nonunique structural explanation masks",
+  "queries": [
+    "molecular explanation activity cliffs maximum common substructure ambiguous atom mapping attribution symmetry invariant",
+    "ACES GNN multiple maximum common substructures atom alignment explanation loss ambiguity",
+    "graph neural network molecular explanation symmetry invariant attribution automorphism activity cliffs",
+    "\"activity cliff\" \"ambiguous\" \"substructure\"",
+    "\"explanation\" \"maximum common substructure\" \"multiple\" GNN",
+    "\"activity cliffs\" \"symmetry\" explanation",
+    "\"DeepDelta\" \"cycle\" consistency",
+    "\"maximum common substructure\" \"degenerate\" explanation",
+    "\"molecular\" \"explanation\" \"automorphism\"",
+    "\"activity\" \"MCS\" \"uncertainty\" explanation GNN",
+    "DeepDelta molecular property differences antisymmetry additivity",
+    "\"graph explanations\" \"symmetry\" \"impossibility\"",
+    "\"molecular\" \"attribution\" \"symmetry\" \"explanation\" maximum common",
+    "site:rdkit.org \"StoreAll\" \"degenerate\"",
+    "\"explanation supervision\" \"uncertainty\" graph neural networks substructure",
+    "\"graph\" \"explanations\" \"symmetry\" impossibility minimal",
+    "\"substructure-aware\" \"ambiguous\"",
+    "\"ACES-GNN\" \"symmetry\"",
+    "\"maximum common substructure\" \"explanation\" uncertainty learning"
+  ],
+  "primary_urls": [
+    "https://github.com/Liu-group/XACs/blob/889b6596913161490dbade6b2203183a9f41c3bf/XACs/cliffs.py#L194",
+    "https://www.rdkit.org/docs/source/rdkit.Chem.rdFMCS.html",
+    "https://www.rdkit.org/docs/source/rdkit.Chem.rdchem.html",
+    "https://arxiv.org/abs/2304.06715v3",
+    "https://arxiv.org/abs/2607.26344v1",
+    "https://arxiv.org/abs/2403.10831v1",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10605784/"
+  ],
+  "source_sha256": {
+    "tools/audit_mcs_masks.py": "b32de4628c3d0a1eba2c16a6351d4f4fa8612a9e6d3f6a05e866150ee8445539",
+    "artifacts/mcs_mask_audit_20261005/results.json": "12c701d9665783a8c4b6eb18062f15e52f6f5e79e0fa0d18f52bd2f5ddc2bfc8",
+    "artifacts/prepare/CHEMBL234_Ki/pairs.json": "c1f7067d644f1310e46a12826467390e43925f19da59428bd526722f40496c62",
+    "artifacts/prepare/CHEMBL244_Ki/pairs.json": "64faf0c0d3074e89a8e9ed3126e9ef43bdc5d852af10734b4fccdfcd91b01146",
+    "artifacts/neighbor_audit_20261005/XACs/XACs/cliffs.py": "58bef6027bf4af30767f1f18d437842233c6ea74bdbaf3ee166c12601103d013",
+    "graphcliff_pair/vendor/protocol.py": "6be54a19390588fbf0987123030793301d9fbe5e328fa1ac4dcd09cbc32bd1e5",
+    "graphcliff_pair/data.py": "78ed3cb8f49e2402234170f15e71978df6bf91343fd387a4e1739767dd60cf97"
+  },
+  "csv_inputs": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "csv_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+      "manifest_sha256": "c1f7067d644f1310e46a12826467390e43925f19da59428bd526722f40496c62"
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "csv_sha256": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+      "manifest_sha256": "64faf0c0d3074e89a8e9ed3126e9ef43bdc5d852af10734b4fccdfcd91b01146"
+    }
+  ],
+  "plan": {
+    "questions": 1,
+    "pairs_per_task": 24,
+    "tasks": [
+      "CHEMBL234_Ki",
+      "CHEMBL244_Ki"
+    ],
+    "selection": "sorted unique existing train_pairs by query/reference; first 24; no label filtering",
+    "mcs_timeout_seconds": 2,
+    "max_matches_per_query_molecule": 256,
+    "StoreAll": true,
+    "matchValences": true,
+    "ringMatchesRingOnly": true,
+    "completeRingsOnly": true,
+    "synthetic_cases": 3,
+    "permutations_per_case": 24,
+    "permutation_seed": 20261005,
+    "continue_rule": "each task >=2 different-rank-multiset certificates; incompletion or cap <=25% each task",
+    "training": 0,
+    "test_evaluation": 0
+  },
+  "actual": {
+    "questions": 1,
+    "structural_pairs": 48,
+    "complete": 43,
+    "timeouts": 5,
+    "capped": 0,
+    "synthetic_cases": 3,
+    "permutation_checks": 72,
+    "training": 0,
+    "test_evaluation": 0,
+    "candidate_retained": 0
+  },
+  "historical_or_exploratory": "13 toy pairs explored before formal synthetic fixtures; successful fixture is post-exploration, not chemical prevalence evidence. Actual-data sample/rules were fixed before execution.",
+  "anomalies": "5 MCS timeouts retained; no retries or budget expansion; no failed training",
+  "limits": "Not cliff-selected pairs; not random prevalence sample; no exact automorphism-orbit classification; no trained attributions or prediction metrics; primary new papers read at abstract level only.",
+  "decision": "No-Go for this question under bounded structural screen; no G3 admission; original goal remains unfinished"
+}

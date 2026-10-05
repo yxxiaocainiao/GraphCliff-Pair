@@ -1,0 +1,124 @@
+{
+  "rdkit_version": "2025.03.6",
+  "synthetic": [
+    {
+      "case": "unique",
+      "synthetic_smiles": [
+        "CCCO",
+        "CCCO"
+      ],
+      "permutations": 24,
+      "mask_statistics": {
+        "complete": true,
+        "mcs_atoms": 4,
+        "degenerate_queries": 1,
+        "sides": [
+          {
+            "mask_sets": 1,
+            "rank_multisets": 1,
+            "capped": false
+          },
+          {
+            "mask_sets": 1,
+            "rank_multisets": 1,
+            "capped": false
+          }
+        ],
+        "different_environment_certificate": false,
+        "capped": false
+      },
+      "selected_mask_sets": 1,
+      "first_match_common_square_range": 0.0,
+      "all_unique_masks_mean_common_square_range": 0.0
+    },
+    {
+      "case": "symmetry_only",
+      "synthetic_smiles": [
+        "CC(C)CO",
+        "CCCO"
+      ],
+      "permutations": 24,
+      "mask_statistics": {
+        "complete": true,
+        "mcs_atoms": 4,
+        "degenerate_queries": 1,
+        "sides": [
+          {
+            "mask_sets": 2,
+            "rank_multisets": 1,
+            "capped": false
+          },
+          {
+            "mask_sets": 1,
+            "rank_multisets": 1,
+            "capped": false
+          }
+        ],
+        "different_environment_certificate": false,
+        "capped": false
+      },
+      "selected_mask_sets": 2,
+      "first_match_common_square_range": 0.0,
+      "all_unique_masks_mean_common_square_range": 0.0
+    },
+    {
+      "case": "different_environments",
+      "synthetic_smiles": [
+        "CCC(C)CO",
+        "CCCO"
+      ],
+      "permutations": 24,
+      "mask_statistics": {
+        "complete": true,
+        "mcs_atoms": 4,
+        "degenerate_queries": 1,
+        "sides": [
+          {
+            "mask_sets": 2,
+            "rank_multisets": 2,
+            "capped": false
+          },
+          {
+            "mask_sets": 1,
+            "rank_multisets": 1,
+            "capped": false
+          }
+        ],
+        "different_environment_certificate": true,
+        "capped": false
+      },
+      "selected_mask_sets": 2,
+      "first_match_common_square_range": 4.200000000000003,
+      "all_unique_masks_mean_common_square_range": 0.0
+    }
+  ],
+  "summaries": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "manifest_sha256": "c1f7067d644f1310e46a12826467390e43925f19da59428bd526722f40496c62",
+      "csv_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+      "pairs": 24,
+      "complete": 23,
+      "capped": 0,
+      "different_environment_certificates": 0,
+      "multiple_mask_sets": 2,
+      "seconds": 3.312999999994645
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "manifest_sha256": "64faf0c0d3074e89a8e9ed3126e9ef43bdc5d852af10734b4fccdfcd91b01146",
+      "csv_sha256": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+      "pairs": 24,
+      "complete": 20,
+      "capped": 0,
+      "different_environment_certificates": 0,
+      "multiple_mask_sets": 1,
+      "seconds": 12.046000000002095
+    }
+  ],
+  "structural_screen": "uncertain_or_stop",
+  "training": 0,
+  "test_evaluation": 0,
+  "activity_fields_used": [],
+  "limits": "No performance or attribution result; rank multiset is a sufficient difference certificate, not exact orbit enumeration."
+}

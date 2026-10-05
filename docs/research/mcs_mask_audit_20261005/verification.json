@@ -1,0 +1,9 @@
+{
+  "independent_counts": "pass",
+  "input_manifest_csv_code_hashes": "pass",
+  "public_raw_rows_excluded": "pass",
+  "relative_links_checked": 66,
+  "overwrite_refusal": "pass",
+  "training": 0,
+  "test_evaluation": 0
+}
