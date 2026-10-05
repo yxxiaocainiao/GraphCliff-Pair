@@ -1,0 +1,51 @@
+{
+  "status": "preregistered long-branch replacement; validation only",
+  "datasets": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki"
+  ],
+  "seeds": [
+    42
+  ],
+  "split_seed": 42,
+  "hidden_size": 32,
+  "num_layers": 2,
+  "heads": 4,
+  "epochs": 2,
+  "schedule_epochs": 100,
+  "warmup_epochs": 10,
+  "patience": 15,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "min_lr": 1e-06,
+  "weight_decay": 1e-05,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "gradient_clip": 1,
+  "alpha_max": 1,
+  "weight_cap": 3,
+  "arms": [
+    {
+      "name": "full",
+      "variant": "branch_full",
+      "readout": "sag",
+      "loss": "mse"
+    },
+    {
+      "name": "short",
+      "variant": "branch_short",
+      "readout": "sag",
+      "loss": "mse"
+    },
+    {
+      "name": "cross",
+      "variant": "branch_cross",
+      "readout": "sag",
+      "loss": "mse"
+    }
+  ],
+  "limit_train_queries": 64,
+  "limit_valid_queries": 64
+}
