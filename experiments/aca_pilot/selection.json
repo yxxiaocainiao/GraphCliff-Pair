@@ -1,0 +1,212 @@
+[
+  {
+    "dataset": "CHEMBL1862_Ki",
+    "train_count": 633,
+    "train_cliff_count": 263,
+    "carved_valid_count": 63,
+    "carved_valid_cliff_count": 26
+  },
+  {
+    "dataset": "CHEMBL1871_Ki",
+    "train_count": 525,
+    "train_cliff_count": 130,
+    "carved_valid_count": 53,
+    "carved_valid_cliff_count": 13
+  },
+  {
+    "dataset": "CHEMBL2034_Ki",
+    "train_count": 598,
+    "train_cliff_count": 199,
+    "carved_valid_count": 60,
+    "carved_valid_cliff_count": 20
+  },
+  {
+    "dataset": "CHEMBL2047_EC50",
+    "train_count": 503,
+    "train_cliff_count": 195,
+    "carved_valid_count": 51,
+    "carved_valid_cliff_count": 20
+  },
+  {
+    "dataset": "CHEMBL204_Ki",
+    "train_count": 2201,
+    "train_cliff_count": 874,
+    "carved_valid_count": 220,
+    "carved_valid_cliff_count": 87
+  },
+  {
+    "dataset": "CHEMBL2147_Ki",
+    "train_count": 1162,
+    "train_cliff_count": 456,
+    "carved_valid_count": 117,
+    "carved_valid_cliff_count": 46
+  },
+  {
+    "dataset": "CHEMBL214_Ki",
+    "train_count": 2651,
+    "train_cliff_count": 977,
+    "carved_valid_count": 265,
+    "carved_valid_cliff_count": 98
+  },
+  {
+    "dataset": "CHEMBL218_EC50",
+    "train_count": 823,
+    "train_cliff_count": 293,
+    "carved_valid_count": 82,
+    "carved_valid_cliff_count": 29
+  },
+  {
+    "dataset": "CHEMBL219_Ki",
+    "train_count": 1491,
+    "train_cliff_count": 592,
+    "carved_valid_count": 149,
+    "carved_valid_cliff_count": 59
+  },
+  {
+    "dataset": "CHEMBL228_Ki",
+    "train_count": 1362,
+    "train_cliff_count": 511,
+    "carved_valid_count": 136,
+    "carved_valid_cliff_count": 51
+  },
+  {
+    "dataset": "CHEMBL231_Ki",
+    "train_count": 776,
+    "train_cliff_count": 189,
+    "carved_valid_count": 78,
+    "carved_valid_cliff_count": 19
+  },
+  {
+    "dataset": "CHEMBL233_Ki",
+    "train_count": 2512,
+    "train_cliff_count": 1035,
+    "carved_valid_count": 252,
+    "carved_valid_cliff_count": 104
+  },
+  {
+    "dataset": "CHEMBL234_Ki",
+    "train_count": 2924,
+    "train_cliff_count": 1284,
+    "carved_valid_count": 292,
+    "carved_valid_cliff_count": 128
+  },
+  {
+    "dataset": "CHEMBL235_EC50",
+    "train_count": 1877,
+    "train_cliff_count": 707,
+    "carved_valid_count": 188,
+    "carved_valid_cliff_count": 71
+  },
+  {
+    "dataset": "CHEMBL236_Ki",
+    "train_count": 2077,
+    "train_cliff_count": 813,
+    "carved_valid_count": 207,
+    "carved_valid_cliff_count": 81
+  },
+  {
+    "dataset": "CHEMBL237_EC50",
+    "train_count": 762,
+    "train_cliff_count": 365,
+    "carved_valid_count": 76,
+    "carved_valid_cliff_count": 36
+  },
+  {
+    "dataset": "CHEMBL237_Ki",
+    "train_count": 2081,
+    "train_cliff_count": 887,
+    "carved_valid_count": 208,
+    "carved_valid_cliff_count": 89
+  },
+  {
+    "dataset": "CHEMBL238_Ki",
+    "train_count": 839,
+    "train_cliff_count": 211,
+    "carved_valid_count": 84,
+    "carved_valid_cliff_count": 21
+  },
+  {
+    "dataset": "CHEMBL239_EC50",
+    "train_count": 1374,
+    "train_cliff_count": 558,
+    "carved_valid_count": 138,
+    "carved_valid_cliff_count": 56
+  },
+  {
+    "dataset": "CHEMBL244_Ki",
+    "train_count": 2476,
+    "train_cliff_count": 1182,
+    "carved_valid_count": 247,
+    "carved_valid_cliff_count": 118
+  },
+  {
+    "dataset": "CHEMBL262_Ki",
+    "train_count": 683,
+    "train_cliff_count": 128,
+    "carved_valid_count": 69,
+    "carved_valid_cliff_count": 13
+  },
+  {
+    "dataset": "CHEMBL264_Ki",
+    "train_count": 2288,
+    "train_cliff_count": 952,
+    "carved_valid_count": 229,
+    "carved_valid_cliff_count": 95
+  },
+  {
+    "dataset": "CHEMBL2835_Ki",
+    "train_count": 489,
+    "train_cliff_count": 47,
+    "carved_valid_count": 49,
+    "carved_valid_cliff_count": 5
+  },
+  {
+    "dataset": "CHEMBL287_Ki",
+    "train_count": 1061,
+    "train_cliff_count": 404,
+    "carved_valid_count": 106,
+    "carved_valid_cliff_count": 40
+  },
+  {
+    "dataset": "CHEMBL2971_Ki",
+    "train_count": 779,
+    "train_cliff_count": 128,
+    "carved_valid_count": 78,
+    "carved_valid_cliff_count": 13
+  },
+  {
+    "dataset": "CHEMBL3979_EC50",
+    "train_count": 899,
+    "train_cliff_count": 374,
+    "carved_valid_count": 89,
+    "carved_valid_cliff_count": 37
+  },
+  {
+    "dataset": "CHEMBL4005_Ki",
+    "train_count": 767,
+    "train_cliff_count": 320,
+    "carved_valid_count": 77,
+    "carved_valid_cliff_count": 32
+  },
+  {
+    "dataset": "CHEMBL4203_Ki",
+    "train_count": 582,
+    "train_cliff_count": 51,
+    "carved_valid_count": 58,
+    "carved_valid_cliff_count": 5
+  },
+  {
+    "dataset": "CHEMBL4616_EC50",
+    "train_count": 543,
+    "train_cliff_count": 282,
+    "carved_valid_count": 54,
+    "carved_valid_cliff_count": 28
+  },
+  {
+    "dataset": "CHEMBL4792_Ki",
+    "train_count": 1174,
+    "train_cliff_count": 634,
+    "carved_valid_count": 117,
+    "carved_valid_cliff_count": 63
+  }
+]

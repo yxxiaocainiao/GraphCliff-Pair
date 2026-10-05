@@ -1,0 +1,3 @@
+# Preflight verification
+
+42 unit tests passed. Three planned tasks x two arms completed two-epoch hidden32 smoke and GPU checkpoint replay: first two tasks from artifacts/aca_smoke_20261005, third from artifacts/aca_coverage_smoke_20261005. Two excluded2835 technical smoke runs remain preserved. None are efficacy evidence. Official label-only definitions are executed without body changes; model state/inference equal original, alpha0 equals MSE including gradients, finite representation gradients and zero-triplet behavior verified. Source unit calibration uses carved training rows only. Actual full validation cliff counts are128,118,20. Test activity/cliff labels not parsed, no test inference.

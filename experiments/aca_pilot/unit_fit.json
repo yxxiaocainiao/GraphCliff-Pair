@@ -1,0 +1,35 @@
+{
+  "policy": "raw potency parsed only on carved train rows; target units -log10(nM)",
+  "rows": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "input_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+      "train_count": 2632,
+      "valid_count": 292,
+      "valid_cliff_count": 128,
+      "slope": 0.9999999999999994,
+      "intercept": -9.382758841749793e-17,
+      "max_residual": 3.552713678800501e-15
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "input_sha256": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+      "train_count": 2229,
+      "valid_count": 247,
+      "valid_cliff_count": 118,
+      "slope": 0.9999999999999997,
+      "intercept": -1.5921500846751432e-16,
+      "max_residual": 2.6645352591003757e-15
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "input_sha256": "db8946f3daa245ad3e03576aca1e6ea44eda560abd9f730090762a6b68cc8c39",
+      "train_count": 452,
+      "valid_count": 51,
+      "valid_cliff_count": 20,
+      "slope": 0.9999999999999994,
+      "intercept": 3.122901141574944e-17,
+      "max_residual": 2.6645352591003757e-15
+    }
+  ]
+}

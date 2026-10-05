@@ -1,0 +1,3 @@
+vendor/upstream_loss.py -text whitespace=-trailing-space,-blank-at-eof
+vendor/LICENSE.upstream.txt -text
+LICENSE -text

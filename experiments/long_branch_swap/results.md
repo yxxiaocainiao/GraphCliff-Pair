@@ -21,6 +21,6 @@ Decision: No-Go: stop expansion; no extra seeds/tasks/FPPool/loss changes.
 
 Verification: 6 completed runs; saved metrics independently recomputed; best checkpoints replayed on cuda; maximum absolute replay error 8.8817842e-16; retained initialization and prediction head identical across arms.
 
-Limits: one training seed and two datasets, capacity/normalization differ between arms, standardized activity rather than raw pKi. This does not establish universal failure or an attention-specific causal effect.
+Limits: one training seed and two datasets, capacity/normalization differ between arms, labels equal -log10(nM) on audited training rows (pKi is shifted by9); the earlier standardized-label description is corrected without changing metrics. This does not establish universal failure or an attention-specific causal effect.
 
 Training code commit: `b67cc089ed567bb3d762dcf7312c5835f3cbc76d`. Dirty working tree at launch: `False`. Raw data, predictions and checkpoints remain ignored local artifacts.
