@@ -1,0 +1,89 @@
+{
+  "config": {
+    "status": "preregistered long-branch replacement; validation only",
+    "datasets": [
+      "CHEMBL234_Ki",
+      "CHEMBL244_Ki"
+    ],
+    "seeds": [
+      42
+    ],
+    "split_seed": 42,
+    "hidden_size": 256,
+    "num_layers": 3,
+    "heads": 4,
+    "epochs": 100,
+    "schedule_epochs": 100,
+    "warmup_epochs": 10,
+    "patience": 15,
+    "batch_size": 32,
+    "lr": 0.0001,
+    "min_lr": 1e-06,
+    "weight_decay": 1e-05,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "gradient_clip": 1,
+    "alpha_max": 1,
+    "weight_cap": 3,
+    "arms": [
+      {
+        "name": "full",
+        "variant": "branch_full",
+        "readout": "sag",
+        "loss": "mse"
+      },
+      {
+        "name": "short",
+        "variant": "branch_short",
+        "readout": "sag",
+        "loss": "mse"
+      },
+      {
+        "name": "cross",
+        "variant": "branch_cross",
+        "readout": "sag",
+        "loss": "mse"
+      }
+    ]
+  },
+  "config_sha256": "d8f20c3c44c061a9aba218e710d3fbf50f6baf5e00f608e553ee30db829b56c0",
+  "device": "cuda",
+  "torch": "2.7.1+cu128",
+  "pyg": "2.6.1",
+  "rdkit": "2025.03.6",
+  "source_sha256": {
+    "graphcliff_pair\\__init__.py": "775f6afadfae1b3642db4dea2ec37a849adde23693e8586fb968742042524b3c",
+    "graphcliff_pair\\data.py": "78ed3cb8f49e2402234170f15e71978df6bf91343fd387a4e1739767dd60cf97",
+    "graphcliff_pair\\external.py": "703f616833118664de00430da65cffd41db3a753e42cade5dbebc2982a8ba939",
+    "graphcliff_pair\\fingerprint.py": "4f3204b8eaa64e1d6497ff7f3e152bcb290c1905edf8d81aada84cba573bfacf",
+    "graphcliff_pair\\fppool.py": "7d149e36f21d9a5815b057de466860701fee42be13656415b391329e5dedfc5e",
+    "graphcliff_pair\\loss.py": "66ac7610d88cc4273300b0f4afb60f0e43b98496a92e813d92915d262bf09c98",
+    "graphcliff_pair\\model.py": "3207d09c60bd468f579d3495808221f28198bf771cced0530898c8b2170e31eb",
+    "graphcliff_pair\\predict.py": "a3e9350ff3d82c73578c3bff576bb3a304f4bbe3e78224df477dc583bc4a9d10",
+    "graphcliff_pair\\train.py": "f9b9fe88c0341f78a1d59c1f73f47c18bbeb364e846e70411528937e94739fb8",
+    "graphcliff_pair\\vendor\\__init__.py": "5bfcbfec7e48fb78914210319095c9b35c2706d21d0d47caa94af951289c5557",
+    "graphcliff_pair\\vendor\\dataset_utils.py": "7811462425d9c0c44e4ef3ba007a8043960121da42c24745156755b537179226",
+    "graphcliff_pair\\vendor\\model.py": "20d90ec7602e63bd20a063ac6db94faf3194d1c12c4c96902d927b08d634cb52",
+    "graphcliff_pair\\vendor\\protocol.py": "6be54a19390588fbf0987123030793301d9fbe5e328fa1ac4dcd09cbc32bd1e5",
+    "graphcliff_pair\\vendor\\training.py": "ac137f560475362917d4331d5b3a6bd2855c1d99264a9ff1ba298e7b23a2ab31"
+  },
+  "source_manifest_sha256": "b3cddc83f69c4e2cb7008444bb7b6e5367a7d3305379dd7dc7a64c694b156d47",
+  "code_commit": "b67cc089ed567bb3d762dcf7312c5835f3cbc76d",
+  "code_dirty": false,
+  "test_evaluated": false,
+  "deterministic": "upstream best-effort warn_only; not bitwise GPU guarantee",
+  "experiment_source_sha256": {
+    "experiments\\long_branch_swap\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments\\long_branch_swap\\audit.py": "514431cb084a2a9406ae4602499e3980cbfb6441a5396581355391d4c221130a",
+    "experiments\\long_branch_swap\\model.py": "58e76a197a514c1f2a42dab03f2c5759a062b37201e3efa1e4a1d5a8d33d2c39",
+    "experiments\\long_branch_swap\\report.py": "690b822efd9b6f4a3a1487bf0eef9d8f36aa48f62b8899cd0b3e1d402c7e0c50",
+    "experiments\\long_branch_swap\\run.py": "5eddfc29f5d25fc381351123e90e726ced011d30640e7ac09bd5ed527d4de25b"
+  },
+  "frozen_pair_sha256": {
+    "CHEMBL234_Ki": "2efc52184ab01480c61383f5da25fe678e915e726c5bd1db89ca969e0da5e51b",
+    "CHEMBL244_Ki": "6da38e733e0d063ff8414a2cf3a7b034fef74c240729d87b090a1d95ef11b2c8"
+  },
+  "test_label_policy": "parse labels only on frozen official-train rows"
+}

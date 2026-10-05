@@ -1,0 +1,39 @@
+{
+  "go": false,
+  "decisions": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "checks": {
+        "cliff_vs_full": false,
+        "cliff_vs_short": false,
+        "overall_noninferiority": true,
+        "archived_direct_noninferiority": false
+      },
+      "go": false
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "checks": {
+        "cliff_vs_full": false,
+        "cliff_vs_short": false,
+        "overall_noninferiority": false,
+        "archived_direct_noninferiority": false
+      },
+      "go": false
+    }
+  ],
+  "direct_provenance": {
+    "CHEMBL234_Ki": {
+      "summary_sha256": "84fd0a76411aba3ae02457377e3a03f8321e52ac215b9a6a37b868ab17fa64c4",
+      "pairs_sha256": "2efc52184ab01480c61383f5da25fe678e915e726c5bd1db89ca969e0da5e51b",
+      "cliff_rmse": 0.6703955325438461
+    },
+    "CHEMBL244_Ki": {
+      "summary_sha256": "5e8358590c24db9bc4278de672afe5a95598f2dfe3bd418b69083aedd8b99522",
+      "pairs_sha256": "6da38e733e0d063ff8414a2cf3a7b034fef74c240729d87b090a1d95ef11b2c8",
+      "cliff_rmse": 0.8617367985339476
+    }
+  },
+  "scope": "seed42 full-budget validation screen",
+  "test_evaluated": false
+}

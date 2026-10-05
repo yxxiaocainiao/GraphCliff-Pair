@@ -77,3 +77,5 @@ D2已完成并触发暂停：非cliff子组方向与总体相反；cliff子组Q1
 ## 2026-10-05 用户授权的新 LongPoly 替换试验
 
 旧诊断目标及旧队列继续暂停。新试验方案见 experiments/long_branch_swap/README.md：full/short/cross，两个任务 seed42 共6组，固定通过门槛才扩展seed43/44。原核心与vendor不改；仅新增实验适配和契约测试。39项测试及6组两轮GPU冒烟和检查点重放通过；下一步先提交方案，再启动正式筛选。
+
+新分支替换试验完成：b67cc08已公开提交预注册方案，39项测试及6组冒烟通过；6组正式训练、指标复算和GPU检查点重放全部通过。两个任务均未过门槛，No-Go；不扩展seed、任务或组件，旧目标和队列继续暂停。结果见experiments/long_branch_swap/结果报告.md。

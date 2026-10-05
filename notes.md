@@ -99,3 +99,7 @@ D2的差值界限使用已记录训练配对中位绝对差0.451545；分析前�
 新增tools/diagnose_composition.py，复用D0输入核对与已有绘图库；docs/diagnostics新增固定计划、完整聚合JSON/报告及PNG/SVG/PDF，diagnosis_report.md记录暂停理由、未完成项和复现入口。标准库csv/math独立核对24个子组×seed的计数、原始及删除差全部一致；图目视检查通过。没有源CSV/test标签读取、模型前向或训练。
 
 另修正文档哈希的跨平台换行表示：Git跟踪文本使用明确LF规范化UTF-8哈希，ignored artifact保持原字节核对。保留初次冻结计划的commit和哈希；与a8ffff1逐项核对科学分层、候选门槛、全部D1指标与结论完全未变。此修正解决复现文档检验问题，不重选结果。
+
+## M8 — 2026-10-05：用户重新授权独立LongPoly替换，完成后No-Go
+
+复用ShortGINE/原SAG/训练器与CrossInteraction，只在filter内部替换LongPoly；另设恒等LongPoly对照。方案、门槛与验证代码先公开提交b67cc08，再运行6组正式训练。234的cross Cliff相对full仅改善0.08%，相对short改善2.58%；244相对full恶化4.93%。6个最佳检查点实际GPU重放、源代码/初始化/数据身份及指标复算通过。停止扩展，不重启旧诊断/训练/test；仅两个任务单seed的负结果，容量/归一化/dropout贡献未分离。完整数据见experiments/long_branch_swap/结果报告.md及三个screen记录。

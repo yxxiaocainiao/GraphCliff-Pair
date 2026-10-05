@@ -25,3 +25,7 @@ Both datasets must have cross Cliff RMSE <= 0.95 times BOTH full and short contr
 ## notes
 
 Earlier post-encoder attention did not support expansion. This pilot tests a different implementation location; the earlier diagnostics establish no causal mechanism. Report parameter counts, actual epochs/time and standardized activity units. A seed-42 gate failure is a bounded negative result, not a proof that all cross attention is impossible.
+
+## Completed screen
+
+All six full-budget seed-42 runs and GPU checkpoint replays completed. No-Go: neither task passes the frozen gate; no expansion. See [Chinese results](结果报告.md), [aggregate results](results.md), and screen_manifest/audit/decision JSON records.
