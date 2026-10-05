@@ -4,9 +4,11 @@
 
 **研究优先级：可复用底座上的算法方法论文。** [总体框架](docs/research/algorithm_framework.md)已更新为可靠预测方向，GraphCliff可选；核心尚未确定，不宣称新算法已完成，不恢复旧三板斧训练。
 
-**当前按用户最新授权进入复用底座与有限基线准备；已完成接口冒烟，尚未启动正式效果训练。** [执行计划](docs/research/algorithm_research_plan.md)已更新。
+**当前有限基线阶段A已完成；粗糙度增强候选未过继续门槛，B不启动。** [执行计划](docs/research/algorithm_research_plan.md)已更新。
 
-**M21最新状态：** M21：用户确认以成熟公开项目为底座，不再限定GraphCliff。MIT粗糙度作者代码已原样跑通3次RF小样本接口，128train/32validation，部署特征标签依赖及作者纯校准接口通过，官方test使用0；UNIQUE为已审查但未运行参考。进入有限基线方案准备，尚无新方法效果结论。见[底座验收](experiments/reliability_base/README.md)。发表目标不变，旧队列暂停。
+**M25最新状态：** M25完成：阶段A 30/30fit，0test；未通过项目筛查，停止粗糙度增强候选；不运行seed43/44，不追加模块/任务或调参救结果。 结果与原因分层见[阶段A报告](experiments/reliability_base/phase_a_report.md)。发表目标仍未完成；原项目/my_work/旧队列不变。
+
+**M21历史状态：** M21：用户确认以成熟公开项目为底座，不再限定GraphCliff。MIT粗糙度作者代码已原样跑通3次RF小样本接口，128train/32validation，部署特征标签依赖及作者纯校准接口通过，官方test使用0；UNIQUE为已审查但未运行参考。进入有限基线方案准备，尚无新方法效果结论。见[底座验收](experiments/reliability_base/README.md)。发表目标不变，旧队列暂停。
 
 **M20历史状态：** M20粗糙度方向差异审查完成：固定两仓库/14文件/9份Python静态核验；作者已有风险组合、GIN和粗糙度条件校准，UNIQUE已有误差模型，普通联合拒答亦有近邻。当前迁移/组合方案未形成算法贡献，保留0，不启动三任务训练；复核价值与算法贡献分开。见[差异审查](docs/research/roughness_method_review_20261005/report.md)。发表目标仍未完成。
 

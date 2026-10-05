@@ -1,0 +1,372 @@
+{
+  "results": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "arms": {
+        "distance": {
+          "curve_rmse": [
+            0.6638918641385456,
+            0.6608331285299783,
+            0.6782524966997238,
+            0.7115763188557791,
+            0.7518706075037406,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7130701462348817,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.8995535714285714,
+          "interval_mean_width": 3.206924143059534,
+          "calibration_q": 6.154620310828906,
+          "acceptance_threshold": 0.3015151515151515,
+          "deployment_acceptance": 0.6964285714285714,
+          "deployment_rmse": 0.677168296033843,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8542713567839196,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.9357429718875502
+        },
+        "sali": {
+          "curve_rmse": [
+            0.7351455411778942,
+            0.7715661592617272,
+            0.7767683329067399,
+            0.7862480375757416,
+            0.8049665125951072,
+            0.8119964616815233
+          ],
+          "curve_mean_rmse": 0.7811151741997889,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.890625,
+          "interval_mean_width": 4.26492324221649,
+          "calibration_q": 0.6867179615496913,
+          "acceptance_threshold": 2.2924612350686875,
+          "deployment_acceptance": 0.6450892857142857,
+          "deployment_rmse": 0.7676290901716899,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.9045226130653267,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.8795180722891566
+        },
+        "generic": {
+          "curve_rmse": [
+            0.6441615822418397,
+            0.6881593000218779,
+            0.7052097588685812,
+            0.7393359104709604,
+            0.78087951095968,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7282904207074105,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.8816964285714286,
+          "interval_mean_width": 2.478507926927719,
+          "calibration_q": 1.9482187467544783,
+          "acceptance_threshold": 0.6918200304332098,
+          "deployment_acceptance": 0.6674107142857143,
+          "deployment_rmse": 0.6929883688899642,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8492462311557789,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.9076305220883534
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.6456756354059194,
+            0.6597581759023515,
+            0.7020600611386355,
+            0.7050904676993351,
+            0.7542640966281442,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7131408164093181,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.8638392857142857,
+          "interval_mean_width": 2.409619499419582,
+          "calibration_q": 1.8775015405316926,
+          "acceptance_threshold": 0.7006733023200991,
+          "deployment_acceptance": 0.6808035714285714,
+          "deployment_rmse": 0.698200480892461,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8190954773869347,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.8995983935742972
+        }
+      }
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "arms": {
+        "distance": {
+          "curve_rmse": [
+            0.8302472632815052,
+            0.835632751625424,
+            0.8450413763950158,
+            0.9269057616195047,
+            0.9380360827277546,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8893194900659784,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.9029850746268657,
+          "interval_mean_width": 3.893536182484497,
+          "calibration_q": 8.426602059285822,
+          "acceptance_threshold": 0.2599433160132263,
+          "deployment_acceptance": 0.6915422885572139,
+          "deployment_rmse": 0.8481555838596344,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8924731182795699,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9120370370370371
+        },
+        "sali": {
+          "curve_rmse": [
+            0.8622721157176205,
+            0.8873832661759645,
+            0.9082478134416709,
+            0.9323835996736282,
+            0.9448021879569355,
+            0.9600537047466658
+          ],
+          "curve_mean_rmse": 0.9158571146187474,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.9054726368159204,
+          "interval_mean_width": 3.521982509808285,
+          "calibration_q": 0.6439395503717588,
+          "acceptance_threshold": 3.388508976403513,
+          "deployment_acceptance": 0.7686567164179104,
+          "deployment_rmse": 0.9374635132496744,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8978494623655914,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9120370370370371
+        },
+        "generic": {
+          "curve_rmse": [
+            0.8075715424604308,
+            0.8251067804356877,
+            0.8450708740383831,
+            0.8848794091977507,
+            0.9278352183062891,
+            0.9600537047466658
+          ],
+          "curve_mean_rmse": 0.8750862548642012,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.8631840796019901,
+          "interval_mean_width": 2.8905079525981336,
+          "calibration_q": 1.8173091619785846,
+          "acceptance_threshold": 0.8837534793727551,
+          "deployment_acceptance": 0.7014925373134329,
+          "deployment_rmse": 0.8450708740383831,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8172043010752689,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9027777777777778
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.7675570859329395,
+            0.7801233289789571,
+            0.8234429388504209,
+            0.8711807363753707,
+            0.9175680006127084,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.853320965916177,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.8855721393034826,
+          "interval_mean_width": 3.0149695219174206,
+          "calibration_q": 1.8930781161839456,
+          "acceptance_threshold": 0.8604341267059151,
+          "deployment_acceptance": 0.6716417910447762,
+          "deployment_rmse": 0.8015738516220063,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8494623655913979,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9166666666666666
+        }
+      }
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "arms": {
+        "distance": {
+          "curve_rmse": [
+            0.8181639949204855,
+            0.8046325847445717,
+            0.7869600817074167,
+            0.7671531941425914,
+            0.7573699718380671,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7914599461613867,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.9197860962566845,
+          "interval_mean_width": 3.44029901352341,
+          "calibration_q": 6.7807651600000005,
+          "acceptance_threshold": 0.2736070381231671,
+          "deployment_acceptance": 0.6256684491978609,
+          "deployment_rmse": 0.7996489568398936,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.8953488372093024,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9405940594059405
+        },
+        "sali": {
+          "curve_rmse": [
+            0.7459654751654624,
+            0.7981464650751762,
+            0.7878936937041915,
+            0.7676484030914676,
+            0.7953164523808167,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7849083898387171,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.9197860962566845,
+          "interval_mean_width": 3.3905522969126247,
+          "calibration_q": 0.7642096660763398,
+          "acceptance_threshold": 2.473203480221629,
+          "deployment_acceptance": 0.732620320855615,
+          "deployment_rmse": 0.780251401607964,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.9302325581395349,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9108910891089109
+        },
+        "generic": {
+          "curve_rmse": [
+            0.7498188684654019,
+            0.7192756255063278,
+            0.7484739812649281,
+            0.7483672391057266,
+            0.7775869211935221,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7596670808585158,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.9251336898395722,
+          "interval_mean_width": 2.931437746752581,
+          "calibration_q": 2.050109323308157,
+          "acceptance_threshold": 0.7921000985607891,
+          "deployment_acceptance": 0.732620320855615,
+          "deployment_rmse": 0.7499835032822112,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.8837209302325582,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9603960396039604
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.6722329251651569,
+            0.669873678112277,
+            0.7152528625391763,
+            0.7286751049299318,
+            0.7861029050159658,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7311028875629493,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.93048128342246,
+          "interval_mean_width": 2.979439095569589,
+          "calibration_q": 2.1209889167487943,
+          "acceptance_threshold": 0.7606520815009311,
+          "deployment_acceptance": 0.7058823529411765,
+          "deployment_rmse": 0.7142759292742537,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.9069767441860465,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9504950495049505
+        }
+      }
+    }
+  ],
+  "relative_improvements": [
+    0.020801597642019023,
+    0.024872164117583834,
+    0.037600936009081085
+  ],
+  "macro_curve_rmse": {
+    "distance": 0.7979498608207489,
+    "sali": 0.8272935595524178,
+    "generic": 0.7876812521433759,
+    "augmented": 0.7658548899628149
+  },
+  "phase_A_pass": false,
+  "decision": "Stop roughness-augmentation candidate; do not run phase B",
+  "official_test_rows_used": 0,
+  "execution": {
+    "code_commit": "f02a95fdc97428c6e31b35816f9a15272668be9c",
+    "runner_sha256": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "protocol_sha256": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "status": "complete",
+    "chemprop_fits_started": 12,
+    "author_RF_fits_started": 12,
+    "risk_RF_fits_started": 6,
+    "completed_jobs": 12,
+    "seconds": 425.56200000000536
+  },
+  "protocol_sha256": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+  "artifact_binding_sha256": "2c894993caacdd524db6718937d59626e260b4b2ef8ba09ff3875c57b0fcd1db",
+  "verification": {
+    "independent_curve_and_calibration_checks": 108,
+    "train_monitor_rows_checked": 14309,
+    "checkpoint_and_output_hash_count": 60,
+    "task_input_hashes_unchanged": 3,
+    "official_test_rows_used": 0,
+    "decision_recomputed": true,
+    "local_links": 97
+  },
+  "limitations": [
+    "Only3tasks1seed, no new algorithm; fixed stop rule prohibits phase B.",
+    "No measured GPU peak VRAM; do not invent a value.",
+    "OOF-to-final reference/training-size differences not controlled by this screen.",
+    "No full attribution/faithfulness/seed-stability validation.",
+    "This development evaluation set is now consumed for screening; no confirmatory inference from reuse."
+  ],
+  "failure_cases": {
+    "count": 6,
+    "selection": "per task maximum and median absolute error, canonical/source-row tie-break",
+    "private_csv_sha256": "ea45fb816e730f02684daf96c0d18cea0c8a6ac27af9865ce75df6fe03e4dac8",
+    "private_figure_sha256": "76563607dac12e921424ef7736959ca6ce270009df258cc101cebc2a313f72db",
+    "claim": "Structure/prediction/risk illustrations only; no atom attribution or chemical mechanism claim"
+  }
+}

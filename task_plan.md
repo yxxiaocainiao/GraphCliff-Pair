@@ -237,3 +237,6 @@ M23：有限基线协议已冻结：234/244/4792仅official train，fit/monitor/
 
 
 M24入口验收通过：12固定CLI任务，来源/数据角色/canonical/预测接口/cq边界与离散指标检查；0正式fit、2次历史权重接口预测job（1失败/1成功），UTF8问题修复并留现场。见[验收](experiments/reliability_base/phase_a_preflight.md)。下一步按固定A预算执行，失败/筛查未通过即停，不恢复旧队列。
+
+
+M25完成：阶段A 30/30fit，0test；未通过项目筛查，停止粗糙度增强候选；不运行seed43/44，不追加模块/任务或调参救结果。 结果与原因分层见[阶段A报告](experiments/reliability_base/phase_a_report.md)。发表目标仍未完成；原项目/my_work/旧队列不变。
