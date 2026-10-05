@@ -1,0 +1,23 @@
+{
+  "status": "paused_early",
+  "go": false,
+  "planned_runs": 18,
+  "completed_runs": 6,
+  "audited_runs": 6,
+  "unfinished_runs": 12,
+  "never_started_runs": 11,
+  "interrupted_runs": [
+    {
+      "folder": "artifacts\\aca_pilot_20261005\\CHEMBL244_Ki\\seed42\\mse",
+      "epochs_saved": 16,
+      "summary_exists": false,
+      "best_checkpoint_exists": true
+    }
+  ],
+  "cliff_relative_change": 0.030134330603863946,
+  "overall_relative_change": 0.04545514190437183,
+  "improving_cliff_seeds": 1,
+  "reason": "existing task-level deterioration veto; user explicitly requested immediate pause on poor outcomes",
+  "timing_change": "original efficacy assessment after18 was advanced to first complete three-seed task; numerical gates unchanged; remaining tasks unassessed",
+  "test_evaluated": false
+}

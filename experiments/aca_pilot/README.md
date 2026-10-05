@@ -24,3 +24,7 @@ ACA source is pinned to4c43e6024345d0ec4d40fdc88ad57224c898b6da (v3), GPLv3. Ful
 ## notes
 
 A training-only check shows current CSV y equals -log10(nM), with affine slope1 and tiny residual; earlier local reports calling these labels standardized are corrected using this evidence. No test labels are required for this check. Hooks capture the original pooled representation without replacing its encoder or prediction head. Calibration, triplet totals and zero-triplet batches are saved per run. alpha0 and alpha0.1 have identical model capacity and inference signatures.
+
+## Paused after the first complete task
+
+Six of18 runs completed and replayed. Task234 three-seed Cliff mean worsened3.01%, Overall4.55%; one seed improved and two worsened. Existing task-level deterioration veto triggered. User priority to pause on poor outcomes advanced assessment timing from the full matrix to the first complete task; thresholds unchanged. Remaining12 runs unfinished (one244 control interrupted,11 not started); no completion flag is created. See results.md, early_audit.json and stop_decision.json. Do not automatically resume or tune.
