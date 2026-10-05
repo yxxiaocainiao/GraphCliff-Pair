@@ -1,0 +1,27 @@
+{
+  "dataset": "CHEMBL234_Ki",
+  "passed": true,
+  "train_rows": 2632,
+  "validation_rows": 292,
+  "validation_cliff": 128,
+  "split_seed": 42,
+  "valid_fraction": 0.1,
+  "official_test_labels_read": false,
+  "old_test_predictions_read": false,
+  "source_sha256": {
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\Data\\processed\\CHEMBL234_Ki\\rows.csv": "69a2233c714679962c21b83e55c422198a5405a97e44b5d10aec268e0160bba9",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\svm\\CHEMBL234_Ki\\config.json": "194c2c276c4366c1dd9cd516c41ee856f707206a11bb04a698f6a0c70dc8ecd5",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\utils\\splits.py": "7523baf22b05c4225b4dc3680a16ab6625a5cfc21dc06b5bf795397d03c4dee6",
+    "D:\\GraphCliff-Pair\\graphcliff_pair\\vendor\\protocol.py": "6be54a19390588fbf0987123030793301d9fbe5e328fa1ac4dcd09cbc32bd1e5",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL234_Ki\\training\\train.csv": "c02656e8b20c1cf84b636f63b35195ef6eaf349193d8b92d8eef77f61653b2a3",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL234_Ki\\training\\val.csv": "c1e544127cee8aaf10513714326e7ca5cf1d96bf47fe9119a68f963e5a862df1"
+  },
+  "checks": [
+    "both split functions",
+    "processed train/val row identity",
+    "SMILES/y/cliff equality",
+    "SVM fit row identity",
+    "Chemprop saved train/val identity"
+  ]
+}

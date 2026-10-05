@@ -10,6 +10,8 @@
 
 [D1参考相似度诊断](docs/diagnostics/reference_results.md)发现234/global−direct在最高相似度层反而更不利；[D2构成检查](docs/diagnostics/composition_results.md)显示其子组证据未达到继续门槛。分析没有确认退化原因，保留所有反例和样本数。
 
+[已有基线复用诊断](docs/diagnostics/baseline_reuse_234/results.md)已完成：234任务14组验证预测逐行对齐；原GraphCliff在这些既有对照中表现最好，但预算不完全匹配，尚未形成值得新增训练的改进假设。旧my_work基线直接复用，不重建、不读取旧test预测。
+
 终极目标与进度见 [task_plan.md](task_plan.md)，来源与决策见 [notes.md](notes.md)。本仓库公开，只发布源码、配置、来源记录和验证摘要。数据与训练权重不随仓库发布。
 
 完整复现顺序、数据哈希及验证后测试步骤见[复现说明](docs/reproduction.md)。

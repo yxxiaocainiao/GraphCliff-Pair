@@ -1,0 +1,12 @@
+{
+  "weight": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\svm\\CHEMBL234_Ki\\model.pkl",
+  "sha256": "7a25832cd396c9c71c688196f60ee48886dcf83ddfe5e0dfcf456905ccf51a2a",
+  "trained": false,
+  "versions": {
+    "rdkit": "2023.9.5",
+    "scikit-learn": "1.5.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3"
+  },
+  "featurizer_sha256": "ac6913f319af58189cbbd5ff0d249e9d27f8274a7fa827fd2a1c9282df4f92cf"
+}

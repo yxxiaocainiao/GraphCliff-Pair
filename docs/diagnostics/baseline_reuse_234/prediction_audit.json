@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "prediction_sets": 14,
+  "official_test_predictions_read": false,
+  "fitting_performed": false,
+  "source_sha256": {
+    "D:\\GraphCliff-Pair\\artifacts\\baseline_reuse_234_20261005\\svm_validation_predictions.csv": "28502ae7bdce139819b478b52315e2c16823d7c85de66056105fb396523c8c91",
+    "D:\\GraphCliff-Pair\\artifacts\\baseline_reuse_234_20261005\\chemprop_validation_predictions.csv": "a4225541ee64ab62674dba8aa9ffdfc4144be632f02d60e8134fa20576183529",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_42\\validation_predictions.csv": "5a9aba77829b6e2f6fbc07a10920d48c904959026ef6970eb7ebfb42d33a6d35",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_43\\validation_predictions.csv": "b4a500f62c5bf079ace2c3e97a490ff498b41a2bd905225a9ea994c114413238",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_44\\validation_predictions.csv": "9310ac8219c194e8581dcdaad1baf98b1b67839bb11dbc5bf282a70b6405d7c9",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_42\\validation_predictions.csv": "b3183a4b529c4d28de4acfe9bd53609b301e7f7aac19ffdc964a55935a5cd36e",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_43\\validation_predictions.csv": "7696c977824fdb7923ae952d5d295dd4263dc69e228d4f627d002ef67a4a69b2",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_44\\validation_predictions.csv": "964a648d4136d39ebdce99e320bb8f1daa7cf046a5e78d9b2074b9bfe0399eeb",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_42\\validation_predictions.csv": "c53e3b8cf592fb783d1635f661d23aecaba778ba1c44b0f283dae8c40f0b2ffd",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_43\\validation_predictions.csv": "289fd67593ba9f75193b79798bd1c5888f6b48bb8deb743900555d727d9e7725",
+    "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_44\\validation_predictions.csv": "60cbad6cd6886abf39547abc98e5bfc0b6dcf801202ad3b37ce3f9f7314d4309",
+    "D:\\GraphCliff-Pair\\artifacts\\aca_pilot_20261005\\CHEMBL234_Ki\\seed42\\mse\\validation_predictions.csv": "37143d6b3188b9f77367ec0e50243cb1dacb291e82903e10599194dbb9d66ce8",
+    "D:\\GraphCliff-Pair\\artifacts\\aca_pilot_20261005\\CHEMBL234_Ki\\seed43\\mse\\validation_predictions.csv": "032ed8084252d1114a918b4a4843c13fde6109490a9083a044d6534c2de4d559",
+    "D:\\GraphCliff-Pair\\artifacts\\aca_pilot_20261005\\CHEMBL234_Ki\\seed44\\mse\\validation_predictions.csv": "75024468f8500a8402fc26f0518a5ba37a3d01e1fbdd34fb655dbae9cf94eade"
+  },
+  "label_absolute_tolerance": 3e-07,
+  "note": "GraphCliff saved labels are float32; metrics recomputed against source float64 labels."
+}
