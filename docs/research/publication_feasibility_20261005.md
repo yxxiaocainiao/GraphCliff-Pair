@@ -1,0 +1,60 @@
+# MoleculeACE30与二区投稿：条件性评估
+
+日期：2026-10-05。研究问题：多数数据集涨点是否足够投稿，以及是否还值得加入新模块。当前仅调研；没有新增训练、修改模型或改动旧暂停目标。分区口径待用户明确，不宣称任何期刊的当前分区。
+
+## 判断
+
+30个任务多数改善可以成为方法论文的主要性能证据，但不能单独保证二区录用。关键是相对于哪些强基线、改善有多大、跨种子是否可靠、方法的新贡献以及严格的评测和化学解释。没有统一的“赢N/30即够发表”门槛。
+
+建议形成的证据包（研究建议，非期刊硬性规定）：
+
+- 相同数据、目标尺度、划分和调参预算；验证选模型，测试仅用于冻结后的报告；所有任务和负结果均报告。
+- 原GraphCliff、ECFP+SVR/RF、Chemprop D-MPNN为核心对照，补充能在统一协议下重现的相关近期方法。作者论文值与本地复现不混为一张公平排名。
+- 至少3个匹配训练种子，资源允许用5个；分清固定划分的训练随机性和不同划分的泛化变化。
+- 逐任务Overall/Cliff/Noncliff RMSE，宏平均、中位相对变化和赢/平/输，置信区间或合适配对统计；不能只靠几个大幅改善任务拉低平均值。
+- 单模块与组合消融、参数/运行成本、失败任务分析；若强调activity-cliff能力，补充合法评估分子对上的差值误差及方向指标，不能将单分子Cliff RMSE等同于解决配对悬崖问题。
+- 一个独立化学系列、较严格划分或外部数据验证，以及结构变化案例，会加强主张；范围由论文声称的用途决定，不能自动保证发表。
+
+## 本地结果与边界
+
+已核对 D:/GraphCliff-Pair/experiments/long_branch_swap/结果报告.md。两个开发任务seed42的六组完整预算训练表明：跨分子逐层替换相对原双分支Cliff变化分别为-0.08%和+4.93%，未过预注册门槛；停止该具体路线仍合理。
+
+已核对 configs/ablation_seed42.json。此前FPPool与动态/静态权重组合的variant是global_diff、cross_attention及pair_mlp，没有direct+FPPool。差值回归中的负结果不能直接当作direct+FPPool的结果；也不能把未执行的组合说成有增益。
+
+## 候选排序
+
+| 候选 | 推荐位置与理由 | 已有先例/创新风险 | 当前状态 |
+|---|---|---|---|
+| A 原GraphCliff+ACA loss | 优先做诊断性验证；保持单分子推断，用训练表征约束区分活性相近/不同的分子。与先前仅改变MSE样本权重不同 | ACANet已有公开论文和代码；官方v3还实现结构相似度gate，不能声称首次加入结构筛选。简单移植不构成明确新方法 | 尚未接入或训练 |
+| B 原GraphCliff+FPPool | 第二候选；只替换读出，不改双分支和Loss；已有本地FPPool适配可供复用，需增加direct接口 | FPPool官方已有MoleculeACE30评估。组合效果可能有意义，但“首次指纹池化”已不成立 | 直接预测组合未测 |
+| C 多视图/蛋白条件化 | 有相关成功先例，但输入和跨靶标协议改变较大，不作为当前低成本首选 | PrismNet、MTPNet等已覆盖，需更明确的差异和资源预算 | 不建议立即启动 |
+| D 继续全原子Cross-Attention或堆动态权重 | 当前不推荐；已有本地负证据，继续扩大搜索易积累模型选择偏差 | 模块通用性不能提供原创性，涨点也需要解释来源 | 保持暂停 |
+
+A的可检验假设：在相同单分子GraphCliff和回归主损失下，加入已有cliff-aware表征约束能否改善Cliff RMSE，而不是依赖参考分子的已知活性。先做3个预先选定任务、3种子及匹配对照；这是待验证建议，并非已授权启动的新训练。包含现有失败任务，并按训练规模/cliff覆盖等开发元数据选取其余任务，不能查看测试效果来挑任务。若不稳定或只增加成本，停止；不顺势扩大到30个任务。
+
+A的实现核对要点：官方ACALoss(squared=True)支持MSE；用alpha=0对应同一种回归主损失，以免将MAE/MSE差异错归因于表征项。活性差阈值需转换到当前标准化标签尺度；只在训练批次使用标签构建triplets，超参数仅由训练/验证决定。核对实际有效triplet数量、许可、依赖和批次成本后再移植。训练三元组Loss可以借用，不能当作本项目原创。
+
+A/B任何一项成功后，才讨论机制特异的研究贡献、组合消融以及冻结后的30任务报告。提升相对于已公开方法仍需公平复现；加模块只是探索手段，不是录用理由。
+
+## 核对的原始来源
+
+1. MoleculeACE官方工具和原始论文：30靶标、Overall/Cliff评测、传统指纹基线重要。
+   - https://github.com/molML/MoleculeACE
+   - https://pmc.ncbi.nlm.nih.gov/articles/PMC9749029/
+2. MTPNet，IJCAI2025：蛋白全局及口袋条件化；论文声称30任务上的提升，这里没有本地复现。
+   - https://www.ijcai.org/proceedings/2025/0860.pdf
+   - https://github.com/ZishanShu/MTPNet
+3. SemiMol，IJCAI2024：MoleculeACE30和低样本情境下的半监督表征增强。
+   - https://www.ijcai.org/proceedings/2024/0672.pdf
+4. FPPool官方仓库：知识引导指纹子结构池化；仓库声称30任务中23个取得最佳RMSE。这里不将其直接解读成Cliff RMSE最佳或本地复现结果。
+   - https://github.com/shenwxlab/FPPool
+5. PrismNet官方仓库及论文：多化学语义视图、谱频率分解、动态学习，64任务包含30个cliff任务。
+   - https://github.com/GZU-SAMLab/PrismNet
+   - https://doi.org/10.1002/advs.202517579
+6. ACANet，Nature Communications2026：ACA训练表征约束，公开v3归档及Loss代码可复用；多数任务改进不等于支持未经实验的新组合。
+   - https://www.nature.com/articles/s41467-026-75713-2
+   - https://zenodo.org/records/20607015
+   - https://github.com/shenwanxiang/ACANet/tree/v3
+   - https://raw.githubusercontent.com/shenwanxiang/ACANet/v3/clsar/model/loss.py
+
+局限：这是有限范围的一手资料调研，不是穷尽性创新检索；部分出版社页面直接访问失败，相关机制用搜索可读取的原文及作者仓库交叉核对。未验证以上方法在本地协议下的效果、未完成选刊、未保证分区或录用。
