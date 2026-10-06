@@ -12,7 +12,7 @@
     "D:\\GraphCliff-Pair\\experiments\\reliability_base\\check_simple_risk_control.py": "7189c7445ae62c7fba1807d794653b8309b5ff29d46056e213d08b75423339cb",
     "D:\\GraphCliff-Pair\\experiments\\reliability_base\\check_support_risk.py": "ff0b3a3b63b9caf4a92d8c18baccc0c4a8c1692071a23c7b73074489618aa06d",
     "D:\\GraphCliff-Pair\\experiments\\reliability_base\\component_roughness.py": "93d54726892013d349ee9c898888e826854832391223f2cd4a8c7ecf4bad07bd",
-    "D:\\GraphCliff-Pair\\experiments\\reliability_base\\explain_component_cases.py": "4d0a38d7ff58ff734eb24a957dd09ad772e9bf1cb59f3e23f2b1f5ccc54eef01",
+    "D:\\GraphCliff-Pair\\experiments\\reliability_base\\explain_component_cases.py": "2c51a136f7e9410baec81f7aea41775a61dd064300506f1a8a864f962386b2f3",
     "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_component_pilot.py": "4f1ebf853c5c79655bfd3bca88c58cf9a0b7b55d600c5d795acfc245369a33b0",
     "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
     "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_roughness_permutation.py": "1fb3ad47caf3d18a7889690c1f26257ccba3bc98d9ee551b6ed4d6ec34b73b8f",
@@ -51,6 +51,5 @@
     "rdkit": "2026.3.4",
     "joblib": "1.5.3"
   },
-  "preparation_commit": "739edbd16ebbfc7edecffa042a1bd4a7ee98390f",
-  "pre_run_failure": "First command failed at input binding with missing pathlib.Path import, before artifact creation, graph/case analysis or any risk inference. Import-only correction; no case rules changed."
+  "preparation_commit": "739edbd16ebbfc7edecffa042a1bd4a7ee98390f"
 }
