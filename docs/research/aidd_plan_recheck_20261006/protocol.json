@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-06",
+  "baseline_commit": "0933721bec24ef1ffa8ec1ac493d9264689ac284",
+  "registration": "PDF全文已读取及部分网络核验后登记；以下结构/字段预检计算前冻结",
+  "pdf": {
+    "filename": "局部结构—活性粗糙度能否跨时间改善QSAR拒答：活性悬崖方法的严格独立复核 _ AIDD Idea Atlas.pdf",
+    "bytes": 1054065,
+    "sha256": "b8b4cdbff7e4574b8e3bc737d7c9ab18e418ab0193f2133f4c3fc457376b8e21",
+    "pages": 19,
+    "extractor": "installed MiKTeX pdftotext -layout -enc UTF-8",
+    "extraction_warnings": "MiKTeX cache rename permission warning; text extraction completed, 19 nonempty pages with printed page numbers; initial Python display encoding corrected",
+    "page_text_sha256": [
+      "03810d843c60c1c6d7720e4a80eccce369f00e8e6ef48f8ce2d12d19fdf9cd91",
+      "2b066c36f47a7652a8a902997d384962b8ecb79cb79288f2fafe7392e7606182",
+      "49ff022379c2792256861bbced52a993bd9260c1380a8ca74a683ba9ab4f748b",
+      "aae97cdc2a124167312ffc1994c3d16118237652d9d863c7e9c28a046f8ae741",
+      "8f1d86362dcc8f3b7994a8efbac90cea21335aa1c56a2a5beddf663d06d91fbf",
+      "bf3d4d67ac3773df4c661433ddc712e1e99d0525c9378ffc20f5a21a2da071c5",
+      "04a7abd4f386ac3590980ccd7d8121b26d2ad9dfd27fbd8d8220d094bdc3b0b8",
+      "1ff07399acbd907b290185848161942cce69fb179c46a30b4c3747ba43990329",
+      "c13fe4d82706795c420b708e9e3a49870500381d1472cd8723b963d9865f4298",
+      "d6ed25fdaac08f14d335ebbe81cbc824b0a0775c3cc2ed549063be856b397349",
+      "d4270126d170f2a7e2ec93bbc5b14bf1259dc354d3ebeb679412442f9a3d6dca",
+      "a2b17ef456177b7d6a81237caec399c16fffd2e54d807cc70f4c732c30b7d21f",
+      "3ca44780998fc16771642b153716d11c9f6ccdb4cf9363f137cf8d8be469afca",
+      "1b95d7fa9026af58c1104b0bda410b4498b2cdeb1d66972c53ceb1f6c422e618",
+      "3624404c5d97f348e563889f592aa9f85660159a718cc8ef81d222da877928f2",
+      "62832d6f7609e6711620528a9a3dc26d48bcdb72e18b3782cdf2bd3a4e972088",
+      "f73e5145d458f29b8e5585706c2c87e0eca766b13d41665580e2fd3a90ffae59",
+      "303d38e94a5f146d8e10294a196d62294be4dcc6569947442087e8094b904d54",
+      "0d36ad5ef484049f7a3eb0ec64dbe00bfb54104bfe752977ecc52fefe8479411"
+    ]
+  },
+  "tasks": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki",
+    "CHEMBL4792_Ki"
+  ],
+  "data_root": "D:/GraphCliff-main/benchmark_data",
+  "partitions": "artifacts/reliability_protocol_20261005_v2",
+  "selection": "M25 fixed roles only; parse smiles/split, do not load y/cliff or official test records",
+  "scaffold": "RDKit MurckoScaffoldSmiles(includeChirality=False); nonempty exact scaffold only, not generic skeleton; empty scaffold rows separate/unknown, not collapsed into one family",
+  "budget": {
+    "fits": 0,
+    "checkpoint_predictions": 0,
+    "test_performance": 0,
+    "new_splits": 0,
+    "permutations": 0
+  },
+  "scope": "Feasibility and claim audit only; no significance/innovation/performance conclusions, no completed joint-MMP split assertion",
+  "inputs": {
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL244_Ki.csv": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL4792_Ki.csv": "7fca442ad925803a72f9285b01d28a7b32372466a61183a0d5f2cdc4be90eb5e",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3"
+  }
+}
