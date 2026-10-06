@@ -1,0 +1,40 @@
+{
+  "milestone": "M40",
+  "scope": "Read-only reusable asset and publication-gap audit; no new method, fit, inference, label reads, test evaluation or literature expansion",
+  "base_commit": "9244f5088745b0f64fa5a76d7aec4aec02bc81ec",
+  "inputs": {
+    "experiments/reliability_base/local_reuse_inventory.json": "8298e69fc812cd094c8b6424568dd09f16b3a0f350e0eb892d05914c7ea7eaff",
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "experiments/reliability_base/phase_a_results.json": "1a599ae818c72a296c4ef55b1943e47f2d0782a155803007c5e7175d08aae593",
+    "experiments/reliability_base/objective_diagnostic_results.json": "dbd2ec4656da719673050bc3078f82e8236064f4aa33d39faf53687820607ea0",
+    "experiments/reliability_base/support_diagnostic_results.json": "9516094be3230f4227e7771b3ae566d0f528aad45424e35861db2f99d9c2a999",
+    "docs/research/reliability_core_review_20261006/decision.json": "bafd74ef3a9a7b6d88e5b73835eb60f84491166dd0f702cb40191cb63221d922",
+    "docs/research/reliability_core_review_20261006/report.md": "e9e75655ebfcf1d202415fd4cf7ddd11bf5cb1fd9a4763229ea42aba0c0ea6fd",
+    "docs/research/component_roughness_pilot_20261006/results.json": "04ac5a445f06986be4e6aeeb6d3ade6f43fae668ea8736e1bfd000660d05f846",
+    "docs/research/component_roughness_cases_20261006/report.md": "c363092a05d68e706aec3b8bbb1dd3991a2f94f6aa30805d7b06657c166a2bc2",
+    "docs/research/component_roughness_cases_20261006/verification.json": "e48bfbb3165010168466e3e897e18136f70d29cb721e0243f847cd373c8c7202",
+    "docs/research/module_pause_review_20261006/comparisons.json": "7427a1fc00c9cdcd6730f38f9d96b31061523a970e536a85f9e4c457f5f601f1",
+    "docs/research/module_pause_review_20261006/report.md": "c936641eb644e6069bb6aa7337d3fdcf9a40556be1a24d58571ac742957392db",
+    "docs/research/component_role_feasibility_20261006/results.json": "75b5c70255caa069ad6616d6abf7207ed1c5bba7dedba4f67f5829c5feadfb7e"
+  },
+  "actions": [
+    "Recheck 30 historic Chemprop manifests/checkpoint hashes and 27 neural config/manifest/weight/validation-file hashes; no deserialize or scores",
+    "Check 12 current fold/full Chemprop weights and nine role caches; compare row counts/canonical identities using selected columns only",
+    "Check M38 artifact hash binding and M39 input/output bindings without model inference",
+    "Build reusable-assets ledger and five publication gaps; separate implementation readiness from independent evidence",
+    "Compare only already-reviewed problem families; keep zero new cores unless concrete evidence supplies an operation difference",
+    "Write stopping scope and next selection boundary; triple audit, check links/privacy/local-remote SHA, commit/push"
+  ],
+  "planned": {
+    "audit_passes": 1,
+    "old_chemprop_checkpoints": 30,
+    "old_neural_asset_sets": 27,
+    "current_point_checkpoints": 12,
+    "current_role_caches": 9,
+    "fits": 0,
+    "prediction": 0,
+    "test_label_reads": 0,
+    "new_sources": 0
+  },
+  "selection_boundary": "M39 local balancing stays stopped. Existing baseline gains may not be renamed as innovation. Historical validation selected checkpoints, not independent calibration. No task/seed/threshold search."
+}
