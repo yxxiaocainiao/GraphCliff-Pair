@@ -1,0 +1,23 @@
+{
+  "milestone": "M34",
+  "date": "2026-10-06",
+  "source": "CARA Zenodo v1 only",
+  "url": "https://zenodo.org/api/records/11063965/files/CARA.zip/content",
+  "expected_bytes": 106000271,
+  "expected_md5": "b6bd8b9ff0ce6752fbc8bf0a45d71b6b",
+  "scope": "Download one archive into ignored artifacts; list archive members; inspect all Task tabular headers and metadata columns only; do not extract or execute archive code.",
+  "limits": {
+    "download_attempts": 1,
+    "download_wall_seconds": 300,
+    "fits": 0,
+    "model_inference": 0,
+    "performance_evaluations": 0,
+    "new_splits": 0
+  },
+  "checks": [
+    "size and MD5 plus SHA256",
+    "date/assay/endpoint/relation/target header presence",
+    "metadata completeness and three target-ID overlap only where explicit fields exist"
+  ],
+  "decision": "Absent per-record dates means not time-validation-ready. Assay split or archive deposit date cannot substitute. Metadata feasibility is not algorithm innovation; no expansion training authorized."
+}
