@@ -1,0 +1,34 @@
+{
+  "milestone": "M36",
+  "authorization": "2026-10-06 user requests publication-centered plan and flexible thresholds",
+  "scope": "Prospective plan revision; old protocols/results retained without changing historical gate outcomes. Begin bounded method audit, no fitting.",
+  "priority": "Make one incremental algorithm contribution with fair evidence; CAS division2 preferred, division3 fallback, Chinese core additional fallback; no acceptance guarantee.",
+  "nonnegotiable": [
+    "No query labels/cliff/error in inference",
+    "Legal OOF references and fair shared predictions",
+    "Reproducible identity/hash and all results",
+    "No performance-driven split/seed/task selection",
+    "Fit/GPU budget and data licenses"
+  ],
+  "diagnostic_not_veto": [
+    "fixed 3/5 percent gain",
+    "4/6 win count",
+    "M35 10/20 component counts",
+    "all-task gains",
+    "all 3 original modules",
+    "30 tasks as unconditional prerequisite"
+  ],
+  "next_review": {
+    "maximum_method_families": 3,
+    "sources": [
+      "scikit-learn official grouped cross-validation",
+      "original group-distributionally-robust risk learning with official code",
+      "original selective risk learning (SELE/JMLR already audited)"
+    ],
+    "deliverable": "nearest-method comparison, at most one prospective falsifiable candidate or explicit unresolved-core report; do not claim novelty from group balancing or sample weights",
+    "fits": 0,
+    "inference": 0,
+    "new_partitions": 0
+  },
+  "decisions": "Warnings prompt one bounded sensitivity/uncertainty analysis if it can change a stated claim; only repeated unsupported core, no clear contribution over strong baselines, unrecoverable validity issues or exhausted budget stop the route. No automatic approval of training from softer thresholds."
+}
