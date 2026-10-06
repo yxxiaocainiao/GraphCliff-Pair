@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-06",
+  "base_commit": "42e37c7091317298bd74d64fbff85127d7c878b8",
+  "tasks": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki",
+    "CHEMBL4792_Ki"
+  ],
+  "input_directory": "artifacts/reliability_phase_a_20261005_v3",
+  "base_protocol": "experiments/reliability_base/fixed_protocol.json",
+  "author_conformal": "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py",
+  "partition_directory": "artifacts/reliability_protocol_20261005_v2",
+  "permutation_repeats": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "required_tasks": 2,
+  "max_fits": 18,
+  "replay_tolerance": 1e-10,
+  "rf": {
+    "n_estimators": 200,
+    "max_features": "sqrt",
+    "min_samples_leaf": 5,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "permutation_seed_rule": "PCG64 seed=int(SHA256(20261006|roughness-block|dataset|role|repeat)[:16],16); sorted source_row, two EXTRA columns shuffled jointly within each role",
+  "gate": "at least 2 tasks true RMSE below permutation median; task mean(median-true)>0",
+  "scope": "post-hoc development diagnostic; neither chemical intervention nor new independent data",
+  "software": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "inputs": {
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "experiments/reliability_base/run_roughness_permutation.py": "0a7ab4820c1fbc8d1e61dc774db829d9194bf6d3c726681290a313a161bff02e",
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f",
+    "artifacts/reliability_phase_a_20261005_v3/artifact_binding.json": "2c894993caacdd524db6718937d59626e260b4b2ef8ba09ff3875c57b0fcd1db",
+    "artifacts/reliability_phase_a_20261005_v3/results.json": "894c74559a66fcb85a36551dd2dc5050af4ee66731373642d3e9eb46d157d007",
+    "artifacts/reliability_phase_a_20261005_v3/execution.json": "857d364ef4e6df1438c3afa7913c5daa13abb25eafe8f2025669f91d821e9e69",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/oof.csv": "76854dc683144aa6bdc8abd8771b14cb4970a20a162e700d1b6166ed0fa1c8f3",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/oof.csv": "e1b866a4f227546954704f1ecf0d9cbe00d60a75a19a1bb05fe484aa21a793b4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/oof.csv": "fea00e6c9d38f91457e2d79dc041bcccf6969630972515805ced4c27a02170f6",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3"
+  }
+}
