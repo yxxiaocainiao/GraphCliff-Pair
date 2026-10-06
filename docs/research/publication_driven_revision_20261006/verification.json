@@ -1,0 +1,9 @@
+{
+  "historical_snapshot_bytes_match": true,
+  "three_source_files_hash_and_size_match": true,
+  "relative_links_checked": 5,
+  "historical_protocols_and_results_not_in_change_scope": true,
+  "new_fits": 0,
+  "new_partitions": 0,
+  "verification": "doc content/hash/link checks + git diff scope and remote identity; no tests or model execution"
+}

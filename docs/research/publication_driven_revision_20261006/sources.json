@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-06",
+  "scope_commit": "106f77e",
+  "historical_plan_sha256": "f1bfce9ed53f5622db4a2bb982b87d623882e8218427421390c7833f95e307c5",
+  "method_families": 3,
+  "new_fits": 0,
+  "model_inference": 0,
+  "new_partitions": 0,
+  "installed_sklearn": "1.9.0",
+  "online_sklearn_docs": "stable docs observed 1.9.1; do not assume same installed behavior",
+  "group_DRO_files": [
+    {
+      "file": "README.md",
+      "commit": "cbbc1c5b06844e46b87e264326b56056d2a437d1",
+      "sha256": "99840dcf648e4e642ae0538bcd26635e734a3678b03f117024a59e14a4847e93",
+      "bytes": 9813
+    },
+    {
+      "file": "LICENSE",
+      "commit": "cbbc1c5b06844e46b87e264326b56056d2a437d1",
+      "sha256": "38fa8076706fbc935204984b5485927e6e68be0cca3f468e35b846e9a1a53079",
+      "bytes": 1068
+    },
+    {
+      "file": "loss.py",
+      "commit": "cbbc1c5b06844e46b87e264326b56056d2a437d1",
+      "sha256": "ca6f012de93791118479a89ddc9c23695ddf53ae75bd8bf8076b5841e1bcbc80",
+      "bytes": 8669
+    }
+  ],
+  "group_DRO_license": "MIT, LICENSE bytes read; source not executed",
+  "read_scope": {
+    "group_cv": "official API page and local version/signature only",
+    "group_DRO": "original paper abstract, README/LICENSE/loss.py read; not full paper reading or regression integration",
+    "selective_risk": "JMLR abstract reread; full-method conclusions inherited from preserved M29 audit"
+  },
+  "remaining": "No algorithm core retained yet; next M37 needs explicit candidate and closest applicable code contract."
+}
