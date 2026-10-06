@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "base_commit": "f0e998a92f2fcd7c6e95b58bb54750b2ed36f5f4",
+  "tasks": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki",
+    "CHEMBL4792_Ki"
+  ],
+  "data_root": "D:/GraphCliff-main/benchmark_data",
+  "partitions": "artifacts/reliability_protocol_20261005_v2",
+  "reuse_source": "D:\\GraphCliff-main\\scripts\\fppool_pilot\\analyze_pairs.py",
+  "reuse_sha256": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73",
+  "mmp_definition": "RDKit default cut-bond SMARTS, maxCuts=1; exact shared core >=2/3 heavy atoms of each molecule; different variable fragments required. Reuse heavy/fragments AST from existing local source.",
+  "explicit_change": "Add maxCutBonds=mol.GetNumBonds() to FragmentMol, removing hidden default20 cutoff. No 2/3-cut or alternative bond patterns searched.",
+  "canonical": "RDKit MolToSmiles canonical+isomeric default; no salt/tautomer standardization added",
+  "scaffold": "Exact nonempty MurckoScaffoldSmiles includeChirality=False; empty remains ungrouped except canonical/MMP links",
+  "graph": "Union canonical, nonempty scaffold and single-cut MMP relationships. Spanning edges preserve the full logical connected components; candidate-pair occurrences across cores are not unique MMP pair counts.",
+  "limits": {
+    "task_cpu_seconds": 1200,
+    "task_wall_seconds": 1200,
+    "tasks_max": 3,
+    "fits": 0,
+    "checkpoint_predictions": 0,
+    "official_test_records": 0,
+    "new_splits": 0
+  },
+  "necessary_checks": "For exact 60/20/20 target ratios: >=3 components and largest<=ceil(0.6*N) are necessary only, not sufficient. No cliff power/quality/date or formal confirmability claim.",
+  "scope": "Development structures of 3 already seen tasks only; graph complete for frozen finite single-cut definition, not all possible MMP definitions or full30/test benchmark",
+  "inputs": {
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL244_Ki.csv": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL4792_Ki.csv": "7fca442ad925803a72f9285b01d28a7b32372466a61183a0d5f2cdc4be90eb5e",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3"
+  }
+}
