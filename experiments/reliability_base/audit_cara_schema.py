@@ -1,4 +1,4 @@
-"""M34 schema/metadata audit; never evaluates models or loads activity values."""
+"""M34 schema/metadata audit; never evaluates models or uses activity values."""
 import argparse,csv,hashlib,io,json,time,zipfile
 from collections import Counter
 from pathlib import Path
@@ -21,15 +21,21 @@ def audit(archive):
                 reader=csv.reader(io.TextIOWrapper(f,encoding='utf-8-sig'),delimiter='\t' if name.endswith('.tsv') else ',')
                 header=next(reader); selected={i:category(h) for i,h in enumerate(header) if category(h)}
                 counts={i:Counter() for i in selected}; missing={i:0 for i in selected}; rows=0
+                target_endpoints={t:Counter() for t in ('CHEMBL234','CHEMBL244','CHEMBL4792')}; ki_assays={t:set() for t in target_endpoints}
+                paired=all(h in header for h in ('Target ChEMBL ID','Value Type','Assay ChEMBL ID'))
+                if paired: ti,vi,ai=(header.index(h) for h in ('Target ChEMBL ID','Value Type','Assay ChEMBL ID'))
                 for row in reader:
                     if len(row)!=len(header): raise ValueError(f'row width mismatch: {name}:{rows+2}')
                     rows+=1
+                    if paired and row[ti] in target_endpoints:
+                        target_endpoints[row[ti]][row[vi]]+=1
+                        if row[vi]=='Ki': ki_assays[row[ti]].add(row[ai])
                     for i in selected:
                         value=row[i].strip()
                         if not value or value.lower() in ('nan','none','null'): missing[i]+=1
                         else: counts[i][value]+=1
                 fields={header[i]:{'category':selected[i],'nonmissing':rows-missing[i],'missing':missing[i],'unique':len(counts[i]),'top':counts[i].most_common(12),'requested_target_rows':{t:counts[i][t] for t in ('CHEMBL234','CHEMBL244','CHEMBL4792')} if selected[i]=='target' else None} for i in selected}
-                out['tables'].append({'member':name,'rows':rows,'headers':header,'metadata':fields})
+                out['tables'].append({'member':name,'rows':rows,'headers':header,'metadata':fields,'target_endpoint_metadata':{t:{'endpoint_rows':dict(target_endpoints[t]),'Ki_unique_assays':len(ki_assays[t])} for t in target_endpoints} if paired else None})
     out['seconds']=time.monotonic()-start
     return out
 

@@ -1,0 +1,3396 @@
+{
+  "milestone": "M34",
+  "download": {
+    "status": "verified",
+    "bytes": 106000271,
+    "md5": "b6bd8b9ff0ce6752fbc8bf0a45d71b6b",
+    "sha256": "8d6ab35e17bfd27454b8960375d1f62ca3b21f0e40dde2ca34483105432ebb33",
+    "seconds": 91.90700000000652,
+    "members": 33,
+    "code_commit": "80eb76d"
+  },
+  "tables": [
+    {
+      "member": "CARA/Task/ChEMBL30_seq.csv",
+      "rows": 140816,
+      "headers": [
+        "Task ID",
+        "Assay ChEMBL ID",
+        "Target ChEMBL ID",
+        "Target Sequence",
+        "protein_class_id"
+      ],
+      "metadata": {
+        "Task ID": {
+          "category": "assay",
+          "nonmissing": 140816,
+          "missing": 0,
+          "unique": 137900,
+          "top": [
+            [
+              "CHEMBL1613847_IC50",
+              5
+            ],
+            [
+              "CHEMBL3384012_IC50",
+              5
+            ],
+            [
+              "CHEMBL3384011_IC50",
+              5
+            ],
+            [
+              "CHEMBL3384010_IC50",
+              5
+            ],
+            [
+              "CHEMBL3384009_IC50",
+              5
+            ],
+            [
+              "CHEMBL3384004_IC50",
+              5
+            ],
+            [
+              "CHEMBL3384009_Ki",
+              5
+            ],
+            [
+              "CHEMBL3389701_IC50",
+              5
+            ],
+            [
+              "CHEMBL3390525_Kd",
+              5
+            ],
+            [
+              "CHEMBL3390524_IC50",
+              5
+            ],
+            [
+              "CHEMBL3384004_Ki",
+              5
+            ],
+            [
+              "CHEMBL3384012_Ki",
+              5
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Assay ChEMBL ID": {
+          "category": "assay",
+          "nonmissing": 140816,
+          "missing": 0,
+          "unique": 135742,
+          "top": [
+            [
+              "CHEMBL3384012",
+              10
+            ],
+            [
+              "CHEMBL3384011",
+              10
+            ],
+            [
+              "CHEMBL3384010",
+              10
+            ],
+            [
+              "CHEMBL3384009",
+              10
+            ],
+            [
+              "CHEMBL3384004",
+              10
+            ],
+            [
+              "CHEMBL2071957",
+              6
+            ],
+            [
+              "CHEMBL4770963",
+              6
+            ],
+            [
+              "CHEMBL1613847",
+              5
+            ],
+            [
+              "CHEMBL3389701",
+              5
+            ],
+            [
+              "CHEMBL3390525",
+              5
+            ],
+            [
+              "CHEMBL3390524",
+              5
+            ],
+            [
+              "CHEMBL1065351",
+              4
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target ChEMBL ID": {
+          "category": "target",
+          "nonmissing": 140816,
+          "missing": 0,
+          "unique": 5835,
+          "top": [
+            [
+              "CHEMBL240",
+              1569
+            ],
+            [
+              "CHEMBL203",
+              1322
+            ],
+            [
+              "CHEMBL340",
+              1252
+            ],
+            [
+              "CHEMBL217",
+              1107
+            ],
+            [
+              "CHEMBL247",
+              1010
+            ],
+            [
+              "CHEMBL279",
+              932
+            ],
+            [
+              "CHEMBL2971",
+              870
+            ],
+            [
+              "CHEMBL220",
+              851
+            ],
+            [
+              "CHEMBL233",
+              795
+            ],
+            [
+              "CHEMBL205",
+              740
+            ],
+            [
+              "CHEMBL3397",
+              726
+            ],
+            [
+              "CHEMBL237",
+              716
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 616,
+            "CHEMBL244": 444,
+            "CHEMBL4792": 129
+          }
+        }
+      },
+      "target_endpoint_metadata": null
+    },
+    {
+      "member": "CARA/Task/LO_All.tsv",
+      "rows": 1187136,
+      "headers": [
+        "",
+        "Task ID",
+        "Assay ChEMBL ID",
+        "Molecule ChEMBL ID",
+        "Target ChEMBL ID",
+        "Smiles",
+        "Value Type",
+        "pChEMBL Value",
+        "Task Type",
+        "Target Cluster 0.3",
+        "Target Cluster 0.4",
+        "Target Cluster 0.5",
+        "Target Cluster 0.6",
+        "Target Type"
+      ],
+      "metadata": {
+        "Task ID": {
+          "category": "assay",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 81187,
+          "top": [
+            [
+              "CHEMBL3888191_IC50",
+              1060
+            ],
+            [
+              "CHEMBL2328568_IC50",
+              1017
+            ],
+            [
+              "CHEMBL4482726_IC50",
+              834
+            ],
+            [
+              "CHEMBL3888383_IC50",
+              794
+            ],
+            [
+              "CHEMBL3705899_IC50",
+              766
+            ],
+            [
+              "CHEMBL3705123_IC50",
+              748
+            ],
+            [
+              "CHEMBL3706373_Ki",
+              733
+            ],
+            [
+              "CHEMBL2218781_IC50",
+              725
+            ],
+            [
+              "CHEMBL3888158_Ki",
+              724
+            ],
+            [
+              "CHEMBL3705362_IC50",
+              720
+            ],
+            [
+              "CHEMBL3889097_IC50",
+              700
+            ],
+            [
+              "CHEMBL3705476_IC50",
+              662
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Assay ChEMBL ID": {
+          "category": "assay",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 80488,
+          "top": [
+            [
+              "CHEMBL3888191",
+              1060
+            ],
+            [
+              "CHEMBL2328568",
+              1017
+            ],
+            [
+              "CHEMBL4482726",
+              834
+            ],
+            [
+              "CHEMBL3888383",
+              794
+            ],
+            [
+              "CHEMBL3705899",
+              766
+            ],
+            [
+              "CHEMBL3705123",
+              748
+            ],
+            [
+              "CHEMBL3706373",
+              733
+            ],
+            [
+              "CHEMBL2218781",
+              725
+            ],
+            [
+              "CHEMBL3888158",
+              724
+            ],
+            [
+              "CHEMBL3705362",
+              720
+            ],
+            [
+              "CHEMBL3889097",
+              700
+            ],
+            [
+              "CHEMBL3705476",
+              662
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target ChEMBL ID": {
+          "category": "target",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 4456,
+          "top": [
+            [
+              "CHEMBL203",
+              10763
+            ],
+            [
+              "CHEMBL4822",
+              10674
+            ],
+            [
+              "CHEMBL279",
+              10166
+            ],
+            [
+              "CHEMBL205",
+              9823
+            ],
+            [
+              "CHEMBL217",
+              9685
+            ],
+            [
+              "CHEMBL261",
+              8308
+            ],
+            [
+              "CHEMBL247",
+              8305
+            ],
+            [
+              "CHEMBL240",
+              8131
+            ],
+            [
+              "CHEMBL253",
+              7999
+            ],
+            [
+              "CHEMBL244",
+              6862
+            ],
+            [
+              "CHEMBL4296",
+              6688
+            ],
+            [
+              "CHEMBL233",
+              6437
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 5775,
+            "CHEMBL244": 6862,
+            "CHEMBL4792": 3733
+          }
+        },
+        "Value Type": {
+          "category": "endpoint",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 7,
+          "top": [
+            [
+              "IC50",
+              740800
+            ],
+            [
+              "Ki",
+              324237
+            ],
+            [
+              "EC50",
+              96354
+            ],
+            [
+              "Kd",
+              23403
+            ],
+            [
+              "AC50",
+              1226
+            ],
+            [
+              "Potency",
+              1103
+            ],
+            [
+              "XC50",
+              13
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target Cluster 0.3": {
+          "category": "target",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 2854,
+          "top": [
+            [
+              "3197",
+              15104
+            ],
+            [
+              "1027",
+              13441
+            ],
+            [
+              "3121",
+              10862
+            ],
+            [
+              "2157",
+              10791
+            ],
+            [
+              "1645",
+              10707
+            ],
+            [
+              "3202",
+              10527
+            ],
+            [
+              "2248",
+              10257
+            ],
+            [
+              "1881",
+              9897
+            ],
+            [
+              "1026",
+              9776
+            ],
+            [
+              "3179",
+              9699
+            ],
+            [
+              "1186",
+              9091
+            ],
+            [
+              "3220",
+              8960
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.4": {
+          "category": "target",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 2614,
+          "top": [
+            [
+              "2811",
+              28268
+            ],
+            [
+              "1711",
+              20747
+            ],
+            [
+              "2878",
+              15104
+            ],
+            [
+              "941",
+              13441
+            ],
+            [
+              "1907",
+              13433
+            ],
+            [
+              "1967",
+              10791
+            ],
+            [
+              "1506",
+              10707
+            ],
+            [
+              "2882",
+              10527
+            ],
+            [
+              "2042",
+              10257
+            ],
+            [
+              "940",
+              9776
+            ],
+            [
+              "2861",
+              9699
+            ],
+            [
+              "1526",
+              9655
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.5": {
+          "category": "target",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 2282,
+          "top": [
+            [
+              "2426",
+              31843
+            ],
+            [
+              "827",
+              23217
+            ],
+            [
+              "2475",
+              21685
+            ],
+            [
+              "1672",
+              21229
+            ],
+            [
+              "1503",
+              20747
+            ],
+            [
+              "2464",
+              15403
+            ],
+            [
+              "1724",
+              13206
+            ],
+            [
+              "1889",
+              12762
+            ],
+            [
+              "1327",
+              12129
+            ],
+            [
+              "2394",
+              11839
+            ],
+            [
+              "2163",
+              11242
+            ],
+            [
+              "2462",
+              10900
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.6": {
+          "category": "target",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 1880,
+          "top": [
+            [
+              "1933",
+              34324
+            ],
+            [
+              "693",
+              26115
+            ],
+            [
+              "1952",
+              25811
+            ],
+            [
+              "1959",
+              24921
+            ],
+            [
+              "1226",
+              22000
+            ],
+            [
+              "1364",
+              21406
+            ],
+            [
+              "1968",
+              17427
+            ],
+            [
+              "1433",
+              16251
+            ],
+            [
+              "1960",
+              14312
+            ],
+            [
+              "1945",
+              13902
+            ],
+            [
+              "1908",
+              13784
+            ],
+            [
+              "1744",
+              13213
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Type": {
+          "category": "target",
+          "nonmissing": 1187136,
+          "missing": 0,
+          "unique": 1,
+          "top": [
+            [
+              "All",
+              1187136
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        }
+      },
+      "target_endpoint_metadata": {
+        "CHEMBL234": {
+          "endpoint_rows": {
+            "Ki": 5112,
+            "EC50": 405,
+            "IC50": 237,
+            "Kd": 9,
+            "AC50": 12
+          },
+          "Ki_unique_assays": 335
+        },
+        "CHEMBL244": {
+          "endpoint_rows": {
+            "IC50": 3027,
+            "Ki": 3823,
+            "Kd": 12
+          },
+          "Ki_unique_assays": 209
+        },
+        "CHEMBL4792": {
+          "endpoint_rows": {
+            "Ki": 1917,
+            "IC50": 1658,
+            "Kd": 146,
+            "EC50": 12
+          },
+          "Ki_unique_assays": 49
+        }
+      }
+    },
+    {
+      "member": "CARA/Task/LO_GPCR.tsv",
+      "rows": 321904,
+      "headers": [
+        "",
+        "Task ID",
+        "Assay ChEMBL ID",
+        "Molecule ChEMBL ID",
+        "Target ChEMBL ID",
+        "Smiles",
+        "Value Type",
+        "pChEMBL Value",
+        "Task Type",
+        "Target Cluster 0.3",
+        "Target Cluster 0.4",
+        "Target Cluster 0.5",
+        "Target Cluster 0.6",
+        "Target Type"
+      ],
+      "metadata": {
+        "Task ID": {
+          "category": "assay",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 22917,
+          "top": [
+            [
+              "CHEMBL3888966_EC50",
+              498
+            ],
+            [
+              "CHEMBL3887887_IC50",
+              464
+            ],
+            [
+              "CHEMBL3887886_IC50",
+              460
+            ],
+            [
+              "CHEMBL3887945_IC50",
+              432
+            ],
+            [
+              "CHEMBL3734174_IC50",
+              402
+            ],
+            [
+              "CHEMBL3734552_EC50",
+              395
+            ],
+            [
+              "CHEMBL3888087_EC50",
+              382
+            ],
+            [
+              "CHEMBL3705567_Ki",
+              377
+            ],
+            [
+              "CHEMBL3707609_Ki",
+              352
+            ],
+            [
+              "CHEMBL3889140_Ki",
+              317
+            ],
+            [
+              "CHEMBL3721139_EC50",
+              310
+            ],
+            [
+              "CHEMBL3888094_IC50",
+              306
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Assay ChEMBL ID": {
+          "category": "assay",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 22713,
+          "top": [
+            [
+              "CHEMBL3888966",
+              498
+            ],
+            [
+              "CHEMBL3887887",
+              464
+            ],
+            [
+              "CHEMBL3887886",
+              460
+            ],
+            [
+              "CHEMBL3887945",
+              432
+            ],
+            [
+              "CHEMBL3734174",
+              402
+            ],
+            [
+              "CHEMBL3734552",
+              395
+            ],
+            [
+              "CHEMBL3888087",
+              382
+            ],
+            [
+              "CHEMBL3705567",
+              377
+            ],
+            [
+              "CHEMBL3707609",
+              352
+            ],
+            [
+              "CHEMBL3889140",
+              317
+            ],
+            [
+              "CHEMBL3721139",
+              310
+            ],
+            [
+              "CHEMBL3888094",
+              306
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target ChEMBL ID": {
+          "category": "target",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 579,
+          "top": [
+            [
+              "CHEMBL217",
+              9685
+            ],
+            [
+              "CHEMBL253",
+              7999
+            ],
+            [
+              "CHEMBL233",
+              6437
+            ],
+            [
+              "CHEMBL218",
+              6233
+            ],
+            [
+              "CHEMBL214",
+              5791
+            ],
+            [
+              "CHEMBL234",
+              5775
+            ],
+            [
+              "CHEMBL237",
+              5702
+            ],
+            [
+              "CHEMBL251",
+              5534
+            ],
+            [
+              "CHEMBL264",
+              5212
+            ],
+            [
+              "CHEMBL256",
+              5090
+            ],
+            [
+              "CHEMBL236",
+              4991
+            ],
+            [
+              "CHEMBL224",
+              4976
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 5775,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 3733
+          }
+        },
+        "Value Type": {
+          "category": "endpoint",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 6,
+          "top": [
+            [
+              "Ki",
+              164414
+            ],
+            [
+              "IC50",
+              98104
+            ],
+            [
+              "EC50",
+              52422
+            ],
+            [
+              "Kd",
+              6671
+            ],
+            [
+              "AC50",
+              193
+            ],
+            [
+              "Potency",
+              100
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target Cluster 0.3": {
+          "category": "target",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 234,
+          "top": [
+            [
+              "3197",
+              15104
+            ],
+            [
+              "3121",
+              10862
+            ],
+            [
+              "3202",
+              10527
+            ],
+            [
+              "3179",
+              9699
+            ],
+            [
+              "3220",
+              8960
+            ],
+            [
+              "3120",
+              8751
+            ],
+            [
+              "3122",
+              8620
+            ],
+            [
+              "3219",
+              8467
+            ],
+            [
+              "3169",
+              8067
+            ],
+            [
+              "3182",
+              7675
+            ],
+            [
+              "3078",
+              7511
+            ],
+            [
+              "3198",
+              6581
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.4": {
+          "category": "target",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 213,
+          "top": [
+            [
+              "2811",
+              28233
+            ],
+            [
+              "2878",
+              15104
+            ],
+            [
+              "2882",
+              10527
+            ],
+            [
+              "2861",
+              9699
+            ],
+            [
+              "2898",
+              8960
+            ],
+            [
+              "2897",
+              8467
+            ],
+            [
+              "2853",
+              8067
+            ],
+            [
+              "2840",
+              7945
+            ],
+            [
+              "2750",
+              7738
+            ],
+            [
+              "2864",
+              7675
+            ],
+            [
+              "2769",
+              7511
+            ],
+            [
+              "2879",
+              6581
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.5": {
+          "category": "target",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 164,
+          "top": [
+            [
+              "2426",
+              31803
+            ],
+            [
+              "2475",
+              21685
+            ],
+            [
+              "2464",
+              15403
+            ],
+            [
+              "2394",
+              11839
+            ],
+            [
+              "2462",
+              10900
+            ],
+            [
+              "2478",
+              10527
+            ],
+            [
+              "2465",
+              10408
+            ],
+            [
+              "2490",
+              8960
+            ],
+            [
+              "2449",
+              8806
+            ],
+            [
+              "2489",
+              8467
+            ],
+            [
+              "2460",
+              8067
+            ],
+            [
+              "2378",
+              7738
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.6": {
+          "category": "target",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 110,
+          "top": [
+            [
+              "1933",
+              34284
+            ],
+            [
+              "1952",
+              25811
+            ],
+            [
+              "1959",
+              24921
+            ],
+            [
+              "1968",
+              17427
+            ],
+            [
+              "1960",
+              14312
+            ],
+            [
+              "1945",
+              13896
+            ],
+            [
+              "1908",
+              13784
+            ],
+            [
+              "1950",
+              10900
+            ],
+            [
+              "424",
+              10486
+            ],
+            [
+              "1949",
+              10075
+            ],
+            [
+              "1896",
+              7738
+            ],
+            [
+              "1961",
+              7021
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Type": {
+          "category": "target",
+          "nonmissing": 321904,
+          "missing": 0,
+          "unique": 1,
+          "top": [
+            [
+              "GPCR",
+              321904
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        }
+      },
+      "target_endpoint_metadata": {
+        "CHEMBL234": {
+          "endpoint_rows": {
+            "Ki": 5112,
+            "EC50": 405,
+            "IC50": 237,
+            "Kd": 9,
+            "AC50": 12
+          },
+          "Ki_unique_assays": 335
+        },
+        "CHEMBL244": {
+          "endpoint_rows": {},
+          "Ki_unique_assays": 0
+        },
+        "CHEMBL4792": {
+          "endpoint_rows": {
+            "IC50": 1658,
+            "Ki": 1917,
+            "Kd": 146,
+            "EC50": 12
+          },
+          "Ki_unique_assays": 49
+        }
+      }
+    },
+    {
+      "member": "CARA/Task/LO_Kinase.tsv",
+      "rows": 200800,
+      "headers": [
+        "",
+        "Task ID",
+        "Assay ChEMBL ID",
+        "Molecule ChEMBL ID",
+        "Target ChEMBL ID",
+        "Smiles",
+        "Value Type",
+        "pChEMBL Value",
+        "Task Type",
+        "Target Cluster 0.3",
+        "Target Cluster 0.4",
+        "Target Cluster 0.5",
+        "Target Cluster 0.6",
+        "Target Type"
+      ],
+      "metadata": {
+        "Task ID": {
+          "category": "assay",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 11276,
+          "top": [
+            [
+              "CHEMBL3888383_IC50",
+              794
+            ],
+            [
+              "CHEMBL3705362_IC50",
+              720
+            ],
+            [
+              "CHEMBL3887063_IC50",
+              643
+            ],
+            [
+              "CHEMBL3706037_IC50",
+              641
+            ],
+            [
+              "CHEMBL4739818_EC50",
+              636
+            ],
+            [
+              "CHEMBL3706327_IC50",
+              630
+            ],
+            [
+              "CHEMBL4739817_EC50",
+              628
+            ],
+            [
+              "CHEMBL3880339_IC50",
+              620
+            ],
+            [
+              "CHEMBL3888428_IC50",
+              620
+            ],
+            [
+              "CHEMBL3880337_IC50",
+              618
+            ],
+            [
+              "CHEMBL3880338_IC50",
+              617
+            ],
+            [
+              "CHEMBL3888429_IC50",
+              607
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Assay ChEMBL ID": {
+          "category": "assay",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 11228,
+          "top": [
+            [
+              "CHEMBL3888383",
+              794
+            ],
+            [
+              "CHEMBL3705362",
+              720
+            ],
+            [
+              "CHEMBL3887063",
+              643
+            ],
+            [
+              "CHEMBL3706037",
+              641
+            ],
+            [
+              "CHEMBL4739818",
+              636
+            ],
+            [
+              "CHEMBL3706327",
+              630
+            ],
+            [
+              "CHEMBL4739817",
+              628
+            ],
+            [
+              "CHEMBL3880339",
+              620
+            ],
+            [
+              "CHEMBL3888428",
+              620
+            ],
+            [
+              "CHEMBL3880337",
+              618
+            ],
+            [
+              "CHEMBL3880338",
+              617
+            ],
+            [
+              "CHEMBL3888429",
+              607
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target ChEMBL ID": {
+          "category": "target",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 487,
+          "top": [
+            [
+              "CHEMBL203",
+              10763
+            ],
+            [
+              "CHEMBL279",
+              10166
+            ],
+            [
+              "CHEMBL2971",
+              6398
+            ],
+            [
+              "CHEMBL5145",
+              5324
+            ],
+            [
+              "CHEMBL260",
+              5165
+            ],
+            [
+              "CHEMBL2835",
+              4741
+            ],
+            [
+              "CHEMBL2842",
+              4523
+            ],
+            [
+              "CHEMBL2147",
+              4300
+            ],
+            [
+              "CHEMBL3717",
+              4031
+            ],
+            [
+              "CHEMBL267",
+              3790
+            ],
+            [
+              "CHEMBL2599",
+              3729
+            ],
+            [
+              "CHEMBL4282",
+              3473
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Value Type": {
+          "category": "endpoint",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 6,
+          "top": [
+            [
+              "IC50",
+              178130
+            ],
+            [
+              "Ki",
+              14861
+            ],
+            [
+              "EC50",
+              4595
+            ],
+            [
+              "Kd",
+              3086
+            ],
+            [
+              "Potency",
+              122
+            ],
+            [
+              "AC50",
+              6
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target Cluster 0.3": {
+          "category": "target",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 317,
+          "top": [
+            [
+              "2157",
+              10791
+            ],
+            [
+              "2248",
+              10257
+            ],
+            [
+              "2197",
+              6459
+            ],
+            [
+              "2340",
+              5689
+            ],
+            [
+              "2423",
+              5652
+            ],
+            [
+              "2175",
+              5397
+            ],
+            [
+              "2199",
+              4741
+            ],
+            [
+              "2362",
+              4716
+            ],
+            [
+              "33",
+              4628
+            ],
+            [
+              "2232",
+              4524
+            ],
+            [
+              "2245",
+              4112
+            ],
+            [
+              "2151",
+              4039
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.4": {
+          "category": "target",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 271,
+          "top": [
+            [
+              "1967",
+              10791
+            ],
+            [
+              "2042",
+              10257
+            ],
+            [
+              "2039",
+              7527
+            ],
+            [
+              "2031",
+              7046
+            ],
+            [
+              "2004",
+              6459
+            ],
+            [
+              "2181",
+              5766
+            ],
+            [
+              "2118",
+              5689
+            ],
+            [
+              "1984",
+              5397
+            ],
+            [
+              "2127",
+              4857
+            ],
+            [
+              "2006",
+              4741
+            ],
+            [
+              "2136",
+              4716
+            ],
+            [
+              "32",
+              4628
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.5": {
+          "category": "target",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 221,
+          "top": [
+            [
+              "1724",
+              13206
+            ],
+            [
+              "1889",
+              12762
+            ],
+            [
+              "1775",
+              10273
+            ],
+            [
+              "1752",
+              9892
+            ],
+            [
+              "1837",
+              8223
+            ],
+            [
+              "1772",
+              7527
+            ],
+            [
+              "1765",
+              7066
+            ],
+            [
+              "1736",
+              6567
+            ],
+            [
+              "1844",
+              4857
+            ],
+            [
+              "1764",
+              4808
+            ],
+            [
+              "1753",
+              4741
+            ],
+            [
+              "1851",
+              4716
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.6": {
+          "category": "target",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 182,
+          "top": [
+            [
+              "1433",
+              16245
+            ],
+            [
+              "1408",
+              13206
+            ],
+            [
+              "1525",
+              12762
+            ],
+            [
+              "1442",
+              12081
+            ],
+            [
+              "1446",
+              11504
+            ],
+            [
+              "1497",
+              8223
+            ],
+            [
+              "1445",
+              7527
+            ],
+            [
+              "1506",
+              6592
+            ],
+            [
+              "1419",
+              6567
+            ],
+            [
+              "1507",
+              5724
+            ],
+            [
+              "1524",
+              5397
+            ],
+            [
+              "1502",
+              4857
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Type": {
+          "category": "target",
+          "nonmissing": 200800,
+          "missing": 0,
+          "unique": 1,
+          "top": [
+            [
+              "Kinase",
+              200800
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        }
+      },
+      "target_endpoint_metadata": {
+        "CHEMBL234": {
+          "endpoint_rows": {},
+          "Ki_unique_assays": 0
+        },
+        "CHEMBL244": {
+          "endpoint_rows": {},
+          "Ki_unique_assays": 0
+        },
+        "CHEMBL4792": {
+          "endpoint_rows": {},
+          "Ki_unique_assays": 0
+        }
+      }
+    },
+    {
+      "member": "CARA/Task/VS_All.tsv",
+      "rows": 1237256,
+      "headers": [
+        "",
+        "Task ID",
+        "Assay ChEMBL ID",
+        "Molecule ChEMBL ID",
+        "Target ChEMBL ID",
+        "Smiles",
+        "Value Type",
+        "pChEMBL Value",
+        "Task Type",
+        "Target Cluster 0.3",
+        "Target Cluster 0.4",
+        "Target Cluster 0.5",
+        "Target Cluster 0.6",
+        "Target Type"
+      ],
+      "metadata": {
+        "Task ID": {
+          "category": "assay",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 12029,
+          "top": [
+            [
+              "CHEMBL1614458_Potency",
+              75289
+            ],
+            [
+              "CHEMBL1614530_Potency",
+              61584
+            ],
+            [
+              "CHEMBL1614087_Potency",
+              51900
+            ],
+            [
+              "CHEMBL1614421_Potency",
+              49100
+            ],
+            [
+              "CHEMBL1614249_Potency",
+              42027
+            ],
+            [
+              "CHEMBL1613914_Potency",
+              39289
+            ],
+            [
+              "CHEMBL1614441_Potency",
+              36235
+            ],
+            [
+              "CHEMBL1614544_Potency",
+              36035
+            ],
+            [
+              "CHEMBL1613842_Potency",
+              33355
+            ],
+            [
+              "CHEMBL1614236_Potency",
+              32251
+            ],
+            [
+              "CHEMBL1614161_Potency",
+              28319
+            ],
+            [
+              "CHEMBL1613769_Potency",
+              27980
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Assay ChEMBL ID": {
+          "category": "assay",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 11849,
+          "top": [
+            [
+              "CHEMBL1614458",
+              75289
+            ],
+            [
+              "CHEMBL1614530",
+              61584
+            ],
+            [
+              "CHEMBL1614087",
+              51900
+            ],
+            [
+              "CHEMBL1614421",
+              49100
+            ],
+            [
+              "CHEMBL1614249",
+              42027
+            ],
+            [
+              "CHEMBL1613914",
+              39289
+            ],
+            [
+              "CHEMBL1614441",
+              36235
+            ],
+            [
+              "CHEMBL1614544",
+              36035
+            ],
+            [
+              "CHEMBL1613842",
+              33355
+            ],
+            [
+              "CHEMBL1614236",
+              32251
+            ],
+            [
+              "CHEMBL1614161",
+              28319
+            ],
+            [
+              "CHEMBL1613769",
+              27980
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target ChEMBL ID": {
+          "category": "target",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 2242,
+          "top": [
+            [
+              "CHEMBL1293224",
+              93523
+            ],
+            [
+              "CHEMBL1293231",
+              88502
+            ],
+            [
+              "CHEMBL3577",
+              75315
+            ],
+            [
+              "CHEMBL2026",
+              61696
+            ],
+            [
+              "CHEMBL1293254",
+              42369
+            ],
+            [
+              "CHEMBL1293226",
+              39302
+            ],
+            [
+              "CHEMBL1293235",
+              36425
+            ],
+            [
+              "CHEMBL2608",
+              34891
+            ],
+            [
+              "CHEMBL1293232",
+              33385
+            ],
+            [
+              "CHEMBL1293303",
+              32251
+            ],
+            [
+              "CHEMBL3563",
+              30371
+            ],
+            [
+              "CHEMBL1963",
+              28428
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 478,
+            "CHEMBL244": 217,
+            "CHEMBL4792": 89
+          }
+        },
+        "Value Type": {
+          "category": "endpoint",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 6,
+          "top": [
+            [
+              "Potency",
+              1017551
+            ],
+            [
+              "IC50",
+              69152
+            ],
+            [
+              "AC50",
+              56439
+            ],
+            [
+              "Ki",
+              55429
+            ],
+            [
+              "Kd",
+              21050
+            ],
+            [
+              "EC50",
+              17635
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target Cluster 0.3": {
+          "category": "target",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 1693,
+          "top": [
+            [
+              "1806",
+              93523
+            ],
+            [
+              "2763",
+              88572
+            ],
+            [
+              "1245",
+              75331
+            ],
+            [
+              "2842",
+              61709
+            ],
+            [
+              "3423",
+              42369
+            ],
+            [
+              "358",
+              39302
+            ],
+            [
+              "3555",
+              36425
+            ],
+            [
+              "662",
+              34929
+            ],
+            [
+              "2741",
+              33385
+            ],
+            [
+              "3415",
+              32251
+            ],
+            [
+              "1765",
+              30371
+            ],
+            [
+              "3024",
+              28428
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.4": {
+          "category": "target",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 1559,
+          "top": [
+            [
+              "1644",
+              93523
+            ],
+            [
+              "2493",
+              88572
+            ],
+            [
+              "1144",
+              75331
+            ],
+            [
+              "2555",
+              61709
+            ],
+            [
+              "3099",
+              42369
+            ],
+            [
+              "336",
+              39302
+            ],
+            [
+              "3231",
+              36425
+            ],
+            [
+              "615",
+              34929
+            ],
+            [
+              "2473",
+              33385
+            ],
+            [
+              "3091",
+              32251
+            ],
+            [
+              "1607",
+              30379
+            ],
+            [
+              "2722",
+              28428
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.5": {
+          "category": "target",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 1376,
+          "top": [
+            [
+              "1444",
+              93523
+            ],
+            [
+              "2158",
+              88584
+            ],
+            [
+              "1020",
+              75331
+            ],
+            [
+              "2211",
+              61715
+            ],
+            [
+              "2686",
+              42369
+            ],
+            [
+              "289",
+              39302
+            ],
+            [
+              "2818",
+              36425
+            ],
+            [
+              "533",
+              34929
+            ],
+            [
+              "2141",
+              33385
+            ],
+            [
+              "2678",
+              32251
+            ],
+            [
+              "1416",
+              30379
+            ],
+            [
+              "2356",
+              28428
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.6": {
+          "category": "target",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 1173,
+          "top": [
+            [
+              "1177",
+              93523
+            ],
+            [
+              "1724",
+              88584
+            ],
+            [
+              "859",
+              75331
+            ],
+            [
+              "1768",
+              61718
+            ],
+            [
+              "2161",
+              42369
+            ],
+            [
+              "255",
+              39505
+            ],
+            [
+              "2293",
+              36425
+            ],
+            [
+              "453",
+              34941
+            ],
+            [
+              "1711",
+              33385
+            ],
+            [
+              "2153",
+              32251
+            ],
+            [
+              "1073",
+              32001
+            ],
+            [
+              "1156",
+              30388
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Type": {
+          "category": "target",
+          "nonmissing": 1237256,
+          "missing": 0,
+          "unique": 1,
+          "top": [
+            [
+              "All",
+              1237256
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        }
+      },
+      "target_endpoint_metadata": {
+        "CHEMBL234": {
+          "endpoint_rows": {
+            "EC50": 55,
+            "Ki": 321,
+            "IC50": 102
+          },
+          "Ki_unique_assays": 42
+        },
+        "CHEMBL244": {
+          "endpoint_rows": {
+            "Ki": 88,
+            "Kd": 80,
+            "IC50": 49
+          },
+          "Ki_unique_assays": 4
+        },
+        "CHEMBL4792": {
+          "endpoint_rows": {
+            "Ki": 48,
+            "IC50": 41
+          },
+          "Ki_unique_assays": 5
+        }
+      }
+    },
+    {
+      "member": "CARA/Task/VS_GPCR.tsv",
+      "rows": 70179,
+      "headers": [
+        "",
+        "Task ID",
+        "Assay ChEMBL ID",
+        "Molecule ChEMBL ID",
+        "Target ChEMBL ID",
+        "Smiles",
+        "Value Type",
+        "pChEMBL Value",
+        "Task Type",
+        "Target Cluster 0.3",
+        "Target Cluster 0.4",
+        "Target Cluster 0.5",
+        "Target Cluster 0.6",
+        "Target Type"
+      ],
+      "metadata": {
+        "Task ID": {
+          "category": "assay",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 2256,
+          "top": [
+            [
+              "CHEMBL1614361_Potency",
+              16156
+            ],
+            [
+              "CHEMBL1614052_Potency",
+              14856
+            ],
+            [
+              "CHEMBL1614281_Potency",
+              12175
+            ],
+            [
+              "CHEMBL1613930_Potency",
+              4936
+            ],
+            [
+              "CHEMBL1613997_Potency",
+              670
+            ],
+            [
+              "CHEMBL1613991_Potency",
+              480
+            ],
+            [
+              "CHEMBL2354269_EC50",
+              383
+            ],
+            [
+              "CHEMBL2354289_IC50",
+              368
+            ],
+            [
+              "CHEMBL1614336_IC50",
+              280
+            ],
+            [
+              "CHEMBL1614165_IC50",
+              268
+            ],
+            [
+              "CHEMBL616344_Ki",
+              268
+            ],
+            [
+              "CHEMBL1738482_IC50",
+              241
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Assay ChEMBL ID": {
+          "category": "assay",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 2187,
+          "top": [
+            [
+              "CHEMBL1614361",
+              16156
+            ],
+            [
+              "CHEMBL1614052",
+              14856
+            ],
+            [
+              "CHEMBL1614281",
+              12175
+            ],
+            [
+              "CHEMBL1613930",
+              4936
+            ],
+            [
+              "CHEMBL1613997",
+              670
+            ],
+            [
+              "CHEMBL1613991",
+              480
+            ],
+            [
+              "CHEMBL2354269",
+              383
+            ],
+            [
+              "CHEMBL2354289",
+              368
+            ],
+            [
+              "CHEMBL1614336",
+              280
+            ],
+            [
+              "CHEMBL1614165",
+              268
+            ],
+            [
+              "CHEMBL616344",
+              268
+            ],
+            [
+              "CHEMBL1909104",
+              242
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target ChEMBL ID": {
+          "category": "target",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 268,
+          "top": [
+            [
+              "CHEMBL1963",
+              28428
+            ],
+            [
+              "CHEMBL5162",
+              15351
+            ],
+            [
+              "CHEMBL1293316",
+              4936
+            ],
+            [
+              "CHEMBL276",
+              1231
+            ],
+            [
+              "CHEMBL5857",
+              803
+            ],
+            [
+              "CHEMBL237",
+              667
+            ],
+            [
+              "CHEMBL5113",
+              580
+            ],
+            [
+              "CHEMBL1075322",
+              530
+            ],
+            [
+              "CHEMBL273",
+              500
+            ],
+            [
+              "CHEMBL234",
+              478
+            ],
+            [
+              "CHEMBL217",
+              476
+            ],
+            [
+              "CHEMBL225",
+              471
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 478,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 89
+          }
+        },
+        "Value Type": {
+          "category": "endpoint",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 5,
+          "top": [
+            [
+              "Potency",
+              49868
+            ],
+            [
+              "Ki",
+              9864
+            ],
+            [
+              "IC50",
+              7162
+            ],
+            [
+              "EC50",
+              2882
+            ],
+            [
+              "Kd",
+              403
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target Cluster 0.3": {
+          "category": "target",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 157,
+          "top": [
+            [
+              "3024",
+              28428
+            ],
+            [
+              "3052",
+              15351
+            ],
+            [
+              "3010",
+              4936
+            ],
+            [
+              "3175",
+              1564
+            ],
+            [
+              "3183",
+              803
+            ],
+            [
+              "3197",
+              755
+            ],
+            [
+              "3120",
+              750
+            ],
+            [
+              "3202",
+              737
+            ],
+            [
+              "3179",
+              632
+            ],
+            [
+              "3058",
+              582
+            ],
+            [
+              "3182",
+              563
+            ],
+            [
+              "3101",
+              530
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.4": {
+          "category": "target",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 141,
+          "top": [
+            [
+              "2722",
+              28428
+            ],
+            [
+              "2745",
+              15351
+            ],
+            [
+              "2708",
+              4936
+            ],
+            [
+              "2857",
+              1564
+            ],
+            [
+              "2811",
+              1554
+            ],
+            [
+              "2865",
+              803
+            ],
+            [
+              "2878",
+              755
+            ],
+            [
+              "2855",
+              739
+            ],
+            [
+              "2882",
+              737
+            ],
+            [
+              "2750",
+              673
+            ],
+            [
+              "2861",
+              632
+            ],
+            [
+              "2864",
+              563
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.5": {
+          "category": "target",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 114,
+          "top": [
+            [
+              "2356",
+              28428
+            ],
+            [
+              "2375",
+              15351
+            ],
+            [
+              "2345",
+              4936
+            ],
+            [
+              "2462",
+              2790
+            ],
+            [
+              "2426",
+              1636
+            ],
+            [
+              "2475",
+              1282
+            ],
+            [
+              "2464",
+              1114
+            ],
+            [
+              "2394",
+              1008
+            ],
+            [
+              "2470",
+              961
+            ],
+            [
+              "2473",
+              890
+            ],
+            [
+              "2466",
+              803
+            ],
+            [
+              "2478",
+              737
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.6": {
+          "category": "target",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 85,
+          "top": [
+            [
+              "1877",
+              28428
+            ],
+            [
+              "1894",
+              15351
+            ],
+            [
+              "1868",
+              4936
+            ],
+            [
+              "1950",
+              2790
+            ],
+            [
+              "1952",
+              1789
+            ],
+            [
+              "1933",
+              1694
+            ],
+            [
+              "1959",
+              1495
+            ],
+            [
+              "1908",
+              1319
+            ],
+            [
+              "1955",
+              961
+            ],
+            [
+              "1960",
+              955
+            ],
+            [
+              "1968",
+              923
+            ],
+            [
+              "1958",
+              890
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Type": {
+          "category": "target",
+          "nonmissing": 70179,
+          "missing": 0,
+          "unique": 1,
+          "top": [
+            [
+              "GPCR",
+              70179
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        }
+      },
+      "target_endpoint_metadata": {
+        "CHEMBL234": {
+          "endpoint_rows": {
+            "Ki": 321,
+            "EC50": 55,
+            "IC50": 102
+          },
+          "Ki_unique_assays": 42
+        },
+        "CHEMBL244": {
+          "endpoint_rows": {},
+          "Ki_unique_assays": 0
+        },
+        "CHEMBL4792": {
+          "endpoint_rows": {
+            "Ki": 48,
+            "IC50": 41
+          },
+          "Ki_unique_assays": 5
+        }
+      }
+    },
+    {
+      "member": "CARA/Task/VS_Kinase.tsv",
+      "rows": 84605,
+      "headers": [
+        "",
+        "Task ID",
+        "Assay ChEMBL ID",
+        "Molecule ChEMBL ID",
+        "Target ChEMBL ID",
+        "Smiles",
+        "Value Type",
+        "pChEMBL Value",
+        "Task Type",
+        "Target Cluster 0.3",
+        "Target Cluster 0.4",
+        "Target Cluster 0.5",
+        "Target Cluster 0.6",
+        "Target Type"
+      ],
+      "metadata": {
+        "Task ID": {
+          "category": "assay",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 2733,
+          "top": [
+            [
+              "CHEMBL1613808_Potency",
+              7191
+            ],
+            [
+              "CHEMBL1614521_Potency",
+              6482
+            ],
+            [
+              "CHEMBL1614153_Potency",
+              3093
+            ],
+            [
+              "CHEMBL1614064_EC50",
+              2875
+            ],
+            [
+              "CHEMBL1794557_AC50",
+              847
+            ],
+            [
+              "CHEMBL1614141_EC50",
+              815
+            ],
+            [
+              "CHEMBL1963837_Ki",
+              733
+            ],
+            [
+              "CHEMBL1964101_Ki",
+              645
+            ],
+            [
+              "CHEMBL1963807_Ki",
+              621
+            ],
+            [
+              "CHEMBL1963830_Ki",
+              610
+            ],
+            [
+              "CHEMBL1614469_Potency",
+              605
+            ],
+            [
+              "CHEMBL1614504_Potency",
+              558
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Assay ChEMBL ID": {
+          "category": "assay",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 2721,
+          "top": [
+            [
+              "CHEMBL1613808",
+              7191
+            ],
+            [
+              "CHEMBL1614521",
+              6482
+            ],
+            [
+              "CHEMBL1614153",
+              3093
+            ],
+            [
+              "CHEMBL1614064",
+              2875
+            ],
+            [
+              "CHEMBL1794557",
+              847
+            ],
+            [
+              "CHEMBL1614141",
+              815
+            ],
+            [
+              "CHEMBL1963837",
+              733
+            ],
+            [
+              "CHEMBL1964101",
+              645
+            ],
+            [
+              "CHEMBL1963807",
+              621
+            ],
+            [
+              "CHEMBL1963830",
+              610
+            ],
+            [
+              "CHEMBL1614469",
+              605
+            ],
+            [
+              "CHEMBL1614504",
+              558
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target ChEMBL ID": {
+          "category": "target",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 434,
+          "top": [
+            [
+              "CHEMBL4040",
+              14062
+            ],
+            [
+              "CHEMBL1293228",
+              3757
+            ],
+            [
+              "CHEMBL3797",
+              3106
+            ],
+            [
+              "CHEMBL4203",
+              2328
+            ],
+            [
+              "CHEMBL1862",
+              1132
+            ],
+            [
+              "CHEMBL1974",
+              1127
+            ],
+            [
+              "CHEMBL262",
+              1117
+            ],
+            [
+              "CHEMBL203",
+              975
+            ],
+            [
+              "CHEMBL5508",
+              858
+            ],
+            [
+              "CHEMBL3717",
+              851
+            ],
+            [
+              "CHEMBL279",
+              843
+            ],
+            [
+              "CHEMBL2185",
+              774
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Value Type": {
+          "category": "endpoint",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 6,
+          "top": [
+            [
+              "Ki",
+              35688
+            ],
+            [
+              "Potency",
+              19125
+            ],
+            [
+              "Kd",
+              18418
+            ],
+            [
+              "IC50",
+              6372
+            ],
+            [
+              "EC50",
+              3880
+            ],
+            [
+              "AC50",
+              1122
+            ]
+          ],
+          "requested_target_rows": null
+        },
+        "Target Cluster 0.3": {
+          "category": "target",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 337,
+          "top": [
+            [
+              "2421",
+              14090
+            ],
+            [
+              "1102",
+              3757
+            ],
+            [
+              "34",
+              3106
+            ],
+            [
+              "2277",
+              2597
+            ],
+            [
+              "2395",
+              1673
+            ],
+            [
+              "2278",
+              1496
+            ],
+            [
+              "2422",
+              1212
+            ],
+            [
+              "2221",
+              1132
+            ],
+            [
+              "2250",
+              1127
+            ],
+            [
+              "2157",
+              984
+            ],
+            [
+              "2255",
+              961
+            ],
+            [
+              "2232",
+              926
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.4": {
+          "category": "target",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 288,
+          "top": [
+            [
+              "2179",
+              14090
+            ],
+            [
+              "1010",
+              3757
+            ],
+            [
+              "2064",
+              3126
+            ],
+            [
+              "33",
+              3106
+            ],
+            [
+              "2031",
+              2142
+            ],
+            [
+              "2160",
+              1673
+            ],
+            [
+              "2065",
+              1496
+            ],
+            [
+              "2169",
+              1481
+            ],
+            [
+              "2127",
+              1469
+            ],
+            [
+              "2052",
+              1280
+            ],
+            [
+              "2180",
+              1212
+            ],
+            [
+              "2021",
+              1132
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.5": {
+          "category": "target",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 233,
+          "top": [
+            [
+              "1889",
+              15889
+            ],
+            [
+              "895",
+              3757
+            ],
+            [
+              "1793",
+              3164
+            ],
+            [
+              "29",
+              3106
+            ],
+            [
+              "1765",
+              2452
+            ],
+            [
+              "1794",
+              1747
+            ],
+            [
+              "1873",
+              1673
+            ],
+            [
+              "1881",
+              1481
+            ],
+            [
+              "1844",
+              1469
+            ],
+            [
+              "1784",
+              1280
+            ],
+            [
+              "1724",
+              1258
+            ],
+            [
+              "1761",
+              1239
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Cluster 0.6": {
+          "category": "target",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 187,
+          "top": [
+            [
+              "1525",
+              15889
+            ],
+            [
+              "751",
+              3757
+            ],
+            [
+              "1458",
+              3164
+            ],
+            [
+              "1442",
+              3161
+            ],
+            [
+              "27",
+              3106
+            ],
+            [
+              "1524",
+              2433
+            ],
+            [
+              "1506",
+              1947
+            ],
+            [
+              "1459",
+              1747
+            ],
+            [
+              "1520",
+              1673
+            ],
+            [
+              "1446",
+              1670
+            ],
+            [
+              "1502",
+              1469
+            ],
+            [
+              "1455",
+              1452
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        },
+        "Target Type": {
+          "category": "target",
+          "nonmissing": 84605,
+          "missing": 0,
+          "unique": 1,
+          "top": [
+            [
+              "Kinase",
+              84605
+            ]
+          ],
+          "requested_target_rows": {
+            "CHEMBL234": 0,
+            "CHEMBL244": 0,
+            "CHEMBL4792": 0
+          }
+        }
+      },
+      "target_endpoint_metadata": {
+        "CHEMBL234": {
+          "endpoint_rows": {},
+          "Ki_unique_assays": 0
+        },
+        "CHEMBL244": {
+          "endpoint_rows": {},
+          "Ki_unique_assays": 0
+        },
+        "CHEMBL4792": {
+          "endpoint_rows": {},
+          "Ki_unique_assays": 0
+        }
+      }
+    }
+  ],
+  "schema_scan_seconds": 10.09299999999348,
+  "verification": {
+    "checks": [
+      {
+        "member": "CARA/Task/ChEMBL30_seq.csv",
+        "rows": 140816,
+        "headers_match": true,
+        "date_header_absent": true
+      },
+      {
+        "member": "CARA/Task/LO_All.tsv",
+        "rows": 1187136,
+        "headers_match": true,
+        "date_header_absent": true
+      },
+      {
+        "member": "CARA/Task/LO_GPCR.tsv",
+        "rows": 321904,
+        "headers_match": true,
+        "date_header_absent": true
+      },
+      {
+        "member": "CARA/Task/LO_Kinase.tsv",
+        "rows": 200800,
+        "headers_match": true,
+        "date_header_absent": true
+      },
+      {
+        "member": "CARA/Task/VS_All.tsv",
+        "rows": 1237256,
+        "headers_match": true,
+        "date_header_absent": true
+      },
+      {
+        "member": "CARA/Task/VS_GPCR.tsv",
+        "rows": 70179,
+        "headers_match": true,
+        "date_header_absent": true
+      },
+      {
+        "member": "CARA/Task/VS_Kinase.tsv",
+        "rows": 84605,
+        "headers_match": true,
+        "date_header_absent": true
+      }
+    ],
+    "target_endpoint_metadata": {
+      "CHEMBL234": {
+        "row_count": 5775,
+        "endpoint_rows": {
+          "Ki": 5112,
+          "EC50": 405,
+          "IC50": 237,
+          "Kd": 9,
+          "AC50": 12
+        },
+        "Ki_unique_assays": 335
+      },
+      "CHEMBL244": {
+        "row_count": 6862,
+        "endpoint_rows": {
+          "IC50": 3027,
+          "Ki": 3823,
+          "Kd": 12
+        },
+        "Ki_unique_assays": 209
+      },
+      "CHEMBL4792": {
+        "row_count": 3733,
+        "endpoint_rows": {
+          "Ki": 1917,
+          "IC50": 1658,
+          "Kd": 146,
+          "EC50": 12
+        },
+        "Ki_unique_assays": 49
+      }
+    },
+    "method": "independent line/header counts + explicit DictReader metadata selection; activity values unused",
+    "archive_sha256": "8d6ab35e17bfd27454b8960375d1f62ca3b21f0e40dde2ca34483105432ebb33",
+    "replay_matches": true
+  },
+  "decision": {
+    "time_validation_ready": false,
+    "assay_metadata_available": true,
+    "target_endpoint_metadata_available": true,
+    "independent_external_data_confirmed": false,
+    "algorithm_core_count": 0,
+    "expand_training": false
+  },
+  "runtime": {
+    "download_attempts_planned": 1,
+    "download_attempts_actual": 1,
+    "schema_scans_planned": 1,
+    "schema_scans_actual": 2,
+    "metadata_verification_passes": 1,
+    "fits": 0,
+    "inference": 0,
+    "performance_evaluations": 0,
+    "new_splits": 0,
+    "reproduction_replays": 1
+  },
+  "anomaly": "First endpoint name selector omitted Value Type. Original output retained privately; corrected before final counts, correction committed d5a5ee8. No download retry or fitting.",
+  "versions": {
+    "scope_commit": "80eb76d",
+    "first_reader_commit": "9118f92",
+    "corrected_reader_commit": "d5a5ee8",
+    "reader_sha256": "786ee9f976842cb3c5a4da0d38912709dcffba069c2d3715eb91dfcd8dd2dbb6",
+    "final_replay_context": "post-result reproducibility addition: explicit target/endpoint cross-counts, based on d5a5ee8"
+  },
+  "private_inputs": {
+    "download.json": "b32fc850e8f2a363d7a99fb73ac834d4d475d80330e3f676623ffc93343d49d6",
+    "members.json": "e9cce8c39413145bfa238c92712f0839edeb6ee19d0c8905ff714ab340b1fd38",
+    "schema.json": "284074714758550a04e273ec92a84c677fe124fb5ba2ce2b939aef3a9d46ce3d",
+    "schema_corrected.json": "5caf665c406289d74b156da3ff4c4631cb17976602a1a30a1c45432ec2e1d9b5",
+    "verification.json": "44218b2ca62780bdc763b18a102df843fbe48e46aa3833ca87bcacb932d83b05",
+    "replay.json": "2886dc94b3d07867b85fcf9483af1336663bde9e34b42b1f0af22db90b545d66"
+  },
+  "reproduction_seconds": 10.202999999979511
+}
