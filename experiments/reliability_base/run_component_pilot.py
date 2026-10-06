@@ -37,7 +37,7 @@ def reference_graph(smiles,fragment):
     return result
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('mode',choices=['selfcheck','prepare','run']);ap.add_argument('--output',type=Path);a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('mode',choices=['selfcheck','prepare','run']);ap.add_argument('--output',type=Path);ap.add_argument('--resume-first-checkpoint',action='store_true');a=ap.parse_args()
     if a.mode=='selfcheck':selfcheck();return
     p=json.loads((DOC/'pilot_protocol.json').read_text());m=json.loads((DOC/'protocol.json').read_text());base=ROOT/p['point_prediction_cache'];dest=a.output.resolve();assert str(dest).startswith(str(ROOT/'artifacts'))
     inputs={ROOT/k:v for k,v in m['inputs'].items()};g=p['graph_reuse_contract'];inputs.update({ROOT/g['protocol_file']:g['protocol_sha256'],ROOT/g['helper_file']:g['helper_sha256'],Path(g['fragment_source']):g['fragment_source_sha256']})
@@ -66,22 +66,31 @@ def main():
             assert all(sha(f)==h for f,h in inputs.items());state.update(status='prepared',seconds=time.monotonic()-start,input_sha256={str(f):h for f,h in inputs.items()},prepared_files={str(f.relative_to(dest)):sha(f) for f in dest.rglob('*') if f.is_file() and f.name!='preparation.json'});save(dest/'preparation.json',state)
         except Exception as e:state.update(status='failed',error=repr(e));save(dest/'preparation.json',state);raise
         return
-    prep=json.loads((dest/'preparation.json').read_text());assert prep['status']=='prepared';assert all(sha(dest/f)==h for f,h in prep['prepared_files'].items());assert all(sha(Path(f))==h for f,h in prep['input_sha256'].items());assert not (dest/'execution.json').exists()
-    state={'status':'running','risk_fits_started':0,'arms_completed':0,'code_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()};save(dest/'execution.json',state);fixed=json.loads((ROOT/'experiments/reliability_base/fixed_protocol.json').read_text());cq=cq_function(ROOT/'artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py');results=[]
+    prep=json.loads((dest/'preparation.json').read_text());assert prep['status']=='prepared';assert all(sha(dest/f)==h for f,h in prep['prepared_files'].items());assert all(sha(dest/'run_component_pilot_before_replay_fix.py' if a.resume_first_checkpoint and Path(f)==Path(__file__) else Path(f))==h for f,h in prep['input_sha256'].items());assert a.resume_first_checkpoint or not (dest/'execution.json').exists()
+    previous=json.loads((dest/'execution.json').read_text()) if a.resume_first_checkpoint else None
+    if previous:
+        assert previous['status']=='failed' and previous['risk_fits_started']==1 and previous['arms_completed']==0 and not (dest/'execution_first_failure.json').exists()
+        save(dest/'execution_first_failure.json',previous)
+    state={'status':'running','risk_fits_started':1 if previous else 0,'arms_completed':0,'recovered_existing_fit':bool(previous),'code_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()};save(dest/'execution.json',state);fixed=json.loads((ROOT/'experiments/reliability_base/fixed_protocol.json').read_text());cq=cq_function(ROOT/'artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py');results=[]
     try:
         for task in p['tasks']:
             out=dest/task;frames={r:read(out/(r+'.csv')) for r in ['oof','calibration','evaluation']};oof,cal,ev=(frames[r] for r in ['oof','calibration','evaluation']);target=np.abs(oof.prediction-oof.y);ref=json.loads((out/'full_reference_components.json').read_text());group={x['canonical']:x['component'] for x in ref};sizes=Counter(group.values());w=np.array([1/sizes[group[c]] for c in oof.canonical]);w/=w.mean();scores={};arms={}
             for name in ['generic','augmented','simple_combination']:
                 sc,se=(combination(oof,f) if name=='simple_combination' else f[name+'_risk'].to_numpy() for f in [cal,ev]);scores[name]=(sc,se);arms[name]=metrics(ev,se,cal,sc,cq,fixed)
             for name,spec in p['arms'].items():
-                assert state['risk_fits_started']<p['budgets']['max_risk_fits'] and time.monotonic()-start<p['budgets']['total_risk_fit_wall_seconds'];columns=p['generic']+spec['roughness']+p['shared_support'];assert len(columns)==9 and np.isfinite(oof[columns]).all().all();state['risk_fits_started']+=1;save(dest/'execution.json',state);tick=time.monotonic()
-                rf=RandomForestRegressor(**p['rf']).fit(oof[columns],target,sample_weight=w if spec['sample_weight'] else None);sc,se=rf.predict(cal[columns]),rf.predict(ev[columns]);assert np.isfinite(sc).all() and np.isfinite(se).all();joblib.dump(rf,out/(name+'.pkl'));loaded=joblib.load(out/(name+'.pkl'));assert np.array_equal(loaded.predict(ev[columns]),se);scores[name]=(sc,se);arms[name]=metrics(ev,se,cal,sc,cq,fixed);arms[name]['fit_seconds']=time.monotonic()-tick;state['arms_completed']+=1;save(dest/'execution.json',state);print('FIT',task,name,state['risk_fits_started'],'/9',flush=True)
+                assert state['risk_fits_started']<p['budgets']['max_risk_fits'] and time.monotonic()-start<p['budgets']['total_risk_fit_wall_seconds'];columns=p['generic']+spec['roughness']+p['shared_support'];assert len(columns)==9 and np.isfinite(oof[columns]).all().all();tick=time.monotonic()
+                if previous and task==p['tasks'][0] and name=='candidate':
+                    rf=joblib.load(out/(name+'.pkl'));assert rf.feature_names_in_.tolist()==columns and all(rf.get_params()[k]==v for k,v in p['rf'].items())
+                else:
+                    state['risk_fits_started']+=1;save(dest/'execution.json',state)
+                    rf=RandomForestRegressor(**p['rf']).fit(oof[columns],target,sample_weight=w if spec['sample_weight'] else None)
+                sc,se=rf.predict(cal[columns]),rf.predict(ev[columns]);assert np.isfinite(sc).all() and np.isfinite(se).all();joblib.dump(rf,out/(name+'.pkl'));loaded=joblib.load(out/(name+'.pkl'));assert np.allclose(loaded.predict(ev[columns]),se,atol=p['replay_tolerance'],rtol=0);scores[name]=(sc,se);arms[name]=metrics(ev,se,cal,sc,cq,fixed);arms[name]['fit_seconds']=time.monotonic()-tick;state['arms_completed']+=1;save(dest/'execution.json',state);print('FIT',task,name,state['risk_fits_started'],'/9',flush=True)
             for name,(sc,se) in scores.items():cal[name+'_risk']=sc;ev[name+'_risk']=se
             cal.to_csv(out/'scored_calibration.csv',index=False);ev.to_csv(out/'scored_evaluation.csv',index=False)
             nodes=json.loads((ROOT/'artifacts/joint_dependency_preflight_20261006'/task/'nodes.json').read_text());components=json.loads((ROOT/'artifacts/joint_dependency_preflight_20261006'/task/'components.json').read_text());post={n['source_row']:c for n,c in zip(nodes,components)};ec=np.array([post[int(i)] for i in ev.source_row]);largest=sorted(Counter(ec).items(),key=lambda x:(-x[1],x[0]))[:3];influence=[]
             for component,n in largest:
                 keep=ec!=component;influence.append({'removed_component':int(component),'removed_rows':n,'arms':{name:metrics(ev.loc[keep].reset_index(drop=True),se[keep],cal,sc,cq,fixed)['curve_mean_rmse'] for name,(sc,se) in scores.items()}})
             results.append({'dataset':task,'seed':42,'arms':arms,'component_influence':influence});save(dest/'results.json',{'results':results,'risk_fits_started':state['risk_fits_started'],'new_Chemprop_fits':0,'official_test_rows':0,'protocol_sha256':sha(DOC/'pilot_protocol.json')})
-        assert all(sha(Path(f))==h for f,h in prep['input_sha256'].items());state.update(status='complete',seconds=time.monotonic()-start);save(dest/'execution.json',state)
+        assert all(sha(dest/'run_component_pilot_before_replay_fix.py' if previous and Path(f)==Path(__file__) else Path(f))==h for f,h in prep['input_sha256'].items());state.update(status='complete',seconds=time.monotonic()-start);save(dest/'execution.json',state)
     except Exception as e:state.update(status='failed',error=repr(e));save(dest/'execution.json',state);raise
 if __name__=='__main__':main()
