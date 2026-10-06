@@ -1,0 +1,219 @@
+{
+  "results": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "arms": {
+        "distance": {
+          "curve_rmse": [
+            0.6638918641385456,
+            0.6608331285299783,
+            0.6782524966997238,
+            0.7115763188557792,
+            0.7518706075037406,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7130701462348817
+        },
+        "sali": {
+          "curve_rmse": [
+            0.7351455411778943,
+            0.7715661592617272,
+            0.7767683329067399,
+            0.7862480375757416,
+            0.8049665125951071,
+            0.8119964616815233
+          ],
+          "curve_mean_rmse": 0.7811151741997889
+        },
+        "generic": {
+          "curve_rmse": [
+            0.6441615822418397,
+            0.6881593000218779,
+            0.7052097588685812,
+            0.7393359104709605,
+            0.78087951095968,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7282904207074105
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.6456756354059194,
+            0.6597581759023515,
+            0.7020600611386355,
+            0.7050904676993351,
+            0.7542640966281442,
+            0.8119964616815233
+          ],
+          "curve_mean_rmse": 0.7131408164093181
+        },
+        "simple_combination": {
+          "curve_rmse": [
+            0.6680432614837796,
+            0.6757680400761417,
+            0.7107805652827953,
+            0.7558365603461987,
+            0.7736111488677347,
+            0.8119964616815233
+          ],
+          "curve_mean_rmse": 0.7326726729563622
+        }
+      },
+      "augmented_vs_combination_pct": 2.6658366372847304
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "arms": {
+        "distance": {
+          "curve_rmse": [
+            0.8302472632815052,
+            0.835632751625424,
+            0.8450413763950158,
+            0.9269057616195047,
+            0.9380360827277546,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8893194900659784
+        },
+        "sali": {
+          "curve_rmse": [
+            0.8622721157176205,
+            0.8873832661759644,
+            0.9082478134416709,
+            0.9323835996736282,
+            0.9448021879569355,
+            0.9600537047466658
+          ],
+          "curve_mean_rmse": 0.9158571146187474
+        },
+        "generic": {
+          "curve_rmse": [
+            0.8075715424604307,
+            0.8251067804356879,
+            0.8450708740383831,
+            0.8848794091977507,
+            0.9278352183062891,
+            0.9600537047466658
+          ],
+          "curve_mean_rmse": 0.8750862548642012
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.7675570859329395,
+            0.7801233289789571,
+            0.8234429388504207,
+            0.8711807363753707,
+            0.9175680006127084,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.853320965916177
+        },
+        "simple_combination": {
+          "curve_rmse": [
+            0.7698088466632709,
+            0.8118364195768589,
+            0.8490545122891464,
+            0.8814152418326446,
+            0.9354518812763374,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8679367677308206
+        }
+      },
+      "augmented_vs_combination_pct": 1.6839708096312054
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "arms": {
+        "distance": {
+          "curve_rmse": [
+            0.8181639949204855,
+            0.8046325847445717,
+            0.7869600817074167,
+            0.7671531941425914,
+            0.7573699718380671,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7914599461613867
+        },
+        "sali": {
+          "curve_rmse": [
+            0.7459654751654624,
+            0.7981464650751762,
+            0.7878936937041915,
+            0.7676484030914676,
+            0.7953164523808167,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7849083898387171
+        },
+        "generic": {
+          "curve_rmse": [
+            0.7498188684654019,
+            0.7192756255063278,
+            0.7484739812649281,
+            0.7483672391057266,
+            0.7775869211935221,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7596670808585158
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.6722329251651569,
+            0.669873678112277,
+            0.7152528625391762,
+            0.7286751049299318,
+            0.7861029050159658,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7311028875629493
+        },
+        "simple_combination": {
+          "curve_rmse": [
+            0.696951053219029,
+            0.6748770887318599,
+            0.7177685338965983,
+            0.73105771788441,
+            0.7676520361352832,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7337977132470614
+        }
+      },
+      "augmented_vs_combination_pct": 0.3672436743073973
+    }
+  ],
+  "mean_relative_improvement_pct": 1.572350373741111,
+  "gate_G0_pass": true,
+  "new_fits": 0,
+  "new_checkpoint_predictions": 0,
+  "official_test_rows": 0,
+  "source_commit": "14b1d87",
+  "plan": "Registered before new control computation; existing evaluation previously observed.",
+  "decision": "Prepare bounded replication; method-contribution gate unresolved",
+  "input_sha256": {
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "experiments/reliability_base/incremental_evidence_protocol.md": "7c7433c0924d0c96d23ec46352e224618909e31e1c4b628ce279d12a504a5a0b",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f",
+    "experiments/reliability_base/check_simple_risk_control.py": "7189c7445ae62c7fba1807d794653b8309b5ff29d46056e213d08b75423339cb",
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "artifacts/reliability_phase_a_20261005_v3/results.json": "894c74559a66fcb85a36551dd2dc5050af4ee66731373642d3e9eb46d157d007",
+    "artifacts/reliability_phase_a_20261005_v3/artifact_binding.json": "2c894993caacdd524db6718937d59626e260b4b2ef8ba09ff3875c57b0fcd1db",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/oof.csv": "76854dc683144aa6bdc8abd8771b14cb4970a20a162e700d1b6166ed0fa1c8f3",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/oof.csv": "e1b866a4f227546954704f1ecf0d9cbe00d60a75a19a1bb05fe484aa21a793b4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/oof.csv": "fea00e6c9d38f91457e2d79dc041bcccf6969630972515805ced4c27a02170f6",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3"
+  }
+}
