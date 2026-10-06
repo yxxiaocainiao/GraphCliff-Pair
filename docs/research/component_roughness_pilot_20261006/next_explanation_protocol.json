@@ -1,0 +1,22 @@
+{
+  "status": "M39 prospective exploratory failure analysis, not executed",
+  "fits": 0,
+  "new_point_predictions": 0,
+  "tasks": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki",
+    "CHEMBL4792_Ki"
+  ],
+  "case_rule": "Using saved candidate/ablation scores with existing canonical/source-row tie break, compute percentile ranks u_c,u_a. e50 is calibration median absolute point error. U=(u_c-u_a)*(evaluation absolute point error-e50). Per task: highest U>0 success, lowest U<0 failure, minimum abs(U) among remaining as ordinary; source_row tie. Missing sign slot reported missing, no fabricated substitute. This is an exploratory rank/error proxy, not causal or individual RMSE improvement.",
+  "timing": "Defined after M38 aggregate results; do not claim before-test registration. Query truth is used only for case selection/display, never inference.",
+  "perturbation": "Rebuild legal full-reference graph only; top10 neighbors. Freeze reference labels, delete up to3 most-similar neighbors from largest represented component (component tie integer), compare20 uniformly random same-size deletions using stable SHA(task|source_row|rep). Recompute roughness/support and nn_sim/local_dens; fixed point prediction/rf_var/mol_size/model. This masks local evidence, not a real reference deletion or chemistry intervention.",
+  "plots": "Show all selected structures, true/predicted activity, point error, risk/ranks, legal neighbors/component evidence, including failures; no atom importance claim without atom fidelity tests.",
+  "limits": {
+    "max_cases": 9,
+    "random_masks_per_case": 20,
+    "reference_graph_wall_seconds_per_task": 120,
+    "total_wall_seconds": 900,
+    "hyperparameter_search": 0
+  },
+  "decision": "Only explain current conditional benefit and failure; no new fits or wider task selection. If no credible prospective applicability criterion emerges, stop local-balancing candidate and report evidence gaps; do not use nine chosen cases as independent validation or rescue aggregate negative result."
+}

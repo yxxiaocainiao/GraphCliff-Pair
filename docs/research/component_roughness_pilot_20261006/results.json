@@ -1,0 +1,1268 @@
+{
+  "results": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "arms": {
+        "generic": {
+          "curve_rmse": [
+            0.6441615822418397,
+            0.6881593000218779,
+            0.7052097588685812,
+            0.7393359104709604,
+            0.78087951095968,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7282904207074105,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.8816964285714286,
+          "interval_mean_width": 2.478507926927719,
+          "calibration_q": 1.9482187467544783,
+          "acceptance_threshold": 0.6918200304332098,
+          "deployment_acceptance": 0.6674107142857143,
+          "deployment_rmse": 0.6929883688899642,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8492462311557789,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.9076305220883534
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.6456756354059194,
+            0.6597581759023515,
+            0.7020600611386355,
+            0.7050904676993351,
+            0.7542640966281442,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7131408164093181,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.8638392857142857,
+          "interval_mean_width": 2.409619499419582,
+          "calibration_q": 1.8775015405316926,
+          "acceptance_threshold": 0.7006733023200991,
+          "deployment_acceptance": 0.6808035714285714,
+          "deployment_rmse": 0.698200480892461,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8190954773869347,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.8995983935742972
+        },
+        "simple_combination": {
+          "curve_rmse": [
+            0.6680432614837796,
+            0.6757680400761417,
+            0.7107805652827953,
+            0.7558365603461988,
+            0.7736111488677347,
+            0.8119964616815233
+          ],
+          "curve_mean_rmse": 0.7326726729563622,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.8973214285714286,
+          "interval_mean_width": 1051.1190492918172,
+          "calibration_q": 849.5253235138125,
+          "acceptance_threshold": 0.32194258863423386,
+          "deployment_acceptance": 0.6517857142857143,
+          "deployment_rmse": 0.6962958117810164,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8793969849246231,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.9116465863453815
+        },
+        "candidate": {
+          "curve_rmse": [
+            0.6048853169861773,
+            0.6573428008894132,
+            0.6808559877478407,
+            0.7091762097081483,
+            0.7579515113239932,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.703701381389516,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.8794642857142857,
+          "interval_mean_width": 2.4752252196010676,
+          "calibration_q": 1.9295853644106613,
+          "acceptance_threshold": 0.6996839277688152,
+          "deployment_acceptance": 0.6674107142857143,
+          "deployment_rmse": 0.6657020791603158,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8391959798994975,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.9116465863453815,
+          "fit_seconds": 0.18800000002374873
+        },
+        "remove_local_balancing": {
+          "curve_rmse": [
+            0.627598626463928,
+            0.6481237618918596,
+            0.702579226416547,
+            0.7153939797875696,
+            0.7491831905529898,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7091458744657362,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.875,
+          "interval_mean_width": 2.419832639875868,
+          "calibration_q": 1.8834137109593607,
+          "acceptance_threshold": 0.6934645274833978,
+          "deployment_acceptance": 0.6696428571428571,
+          "deployment_rmse": 0.6999617763326443,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8241206030150754,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.9156626506024096,
+          "fit_seconds": 0.2970000000204891
+        },
+        "simple_group_weighting": {
+          "curve_rmse": [
+            0.6438356721254304,
+            0.6762972796253093,
+            0.7287254388707453,
+            0.7496252943526963,
+            0.7604494405407816,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7284882645327477,
+          "full_rmse": 0.8119964616815233,
+          "full_mae": 0.6243149436289249,
+          "interval_coverage": 0.8772321428571429,
+          "interval_mean_width": 2.504312134536719,
+          "calibration_q": 1.8799383061084862,
+          "acceptance_threshold": 0.724132563726019,
+          "deployment_acceptance": 0.6941964285714286,
+          "deployment_rmse": 0.7146686072445042,
+          "cliff_rows": 199,
+          "cliff_rmse": 0.778446431403295,
+          "cliff_coverage": 0.8291457286432161,
+          "noncliff_rows": 249,
+          "noncliff_rmse": 0.8378442102185363,
+          "noncliff_coverage": 0.9156626506024096,
+          "fit_seconds": 0.2649999999557622
+        }
+      },
+      "component_influence": [
+        {
+          "removed_component": 17,
+          "removed_rows": 55,
+          "arms": {
+            "generic": 0.7243251150979813,
+            "augmented": 0.7129019264660988,
+            "simple_combination": 0.7370304372041468,
+            "candidate": 0.7039817122709201,
+            "remove_local_balancing": 0.7111127547740207,
+            "simple_group_weighting": 0.7313306236040198
+          }
+        },
+        {
+          "removed_component": 67,
+          "removed_rows": 41,
+          "arms": {
+            "generic": 0.7569808713373152,
+            "augmented": 0.743741551141342,
+            "simple_combination": 0.7652471669853553,
+            "candidate": 0.7334160859846975,
+            "remove_local_balancing": 0.7407872610146135,
+            "simple_group_weighting": 0.758898458931045
+          }
+        },
+        {
+          "removed_component": 597,
+          "removed_rows": 31,
+          "arms": {
+            "generic": 0.7447801063102625,
+            "augmented": 0.735840344596013,
+            "simple_combination": 0.7550659012239297,
+            "candidate": 0.7198166507172062,
+            "remove_local_balancing": 0.7283428625344364,
+            "simple_group_weighting": 0.7466713233972414
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "arms": {
+        "generic": {
+          "curve_rmse": [
+            0.8075715424604308,
+            0.8251067804356877,
+            0.8450708740383831,
+            0.8848794091977507,
+            0.9278352183062891,
+            0.9600537047466658
+          ],
+          "curve_mean_rmse": 0.8750862548642012,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.8631840796019901,
+          "interval_mean_width": 2.8905079525981336,
+          "calibration_q": 1.8173091619785846,
+          "acceptance_threshold": 0.8837534793727551,
+          "deployment_acceptance": 0.7014925373134329,
+          "deployment_rmse": 0.8450708740383831,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8172043010752689,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9027777777777778
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.7675570859329395,
+            0.7801233289789571,
+            0.8234429388504209,
+            0.8711807363753707,
+            0.9175680006127084,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.853320965916177,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.8855721393034826,
+          "interval_mean_width": 3.0149695219174206,
+          "calibration_q": 1.8930781161839456,
+          "acceptance_threshold": 0.8604341267059151,
+          "deployment_acceptance": 0.6716417910447762,
+          "deployment_rmse": 0.8015738516220063,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8494623655913979,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9166666666666666
+        },
+        "simple_combination": {
+          "curve_rmse": [
+            0.7698088466632709,
+            0.8118364195768589,
+            0.8490545122891464,
+            0.8814152418326446,
+            0.9354518812763374,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8679367677308206,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.9203980099502488,
+          "interval_mean_width": 1222.1271893075796,
+          "calibration_q": 972.6963460476245,
+          "acceptance_threshold": 0.7629866292444505,
+          "deployment_acceptance": 0.736318407960199,
+          "deployment_rmse": 0.8712684246053328,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.9139784946236559,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9259259259259259
+        },
+        "candidate": {
+          "curve_rmse": [
+            0.7805144966960406,
+            0.8154442870612589,
+            0.8739420672237889,
+            0.8903835001376714,
+            0.9105215459578916,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8718099336372195,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.8830845771144279,
+          "interval_mean_width": 3.0405757982459836,
+          "calibration_q": 1.934362138108397,
+          "acceptance_threshold": 0.848484412867817,
+          "deployment_acceptance": 0.6865671641791045,
+          "deployment_rmse": 0.8574903818217785,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8494623655913979,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9120370370370371,
+          "fit_seconds": 0.25
+        },
+        "remove_local_balancing": {
+          "curve_rmse": [
+            0.7386459595191683,
+            0.8033637778948817,
+            0.8230030299146487,
+            0.8623989323568094,
+            0.9119894661197752,
+            0.9600537047466658
+          ],
+          "curve_mean_rmse": 0.8499091450919914,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.8781094527363185,
+          "interval_mean_width": 2.9674526416130393,
+          "calibration_q": 1.8697739407923317,
+          "acceptance_threshold": 0.858651110930154,
+          "deployment_acceptance": 0.6865671641791045,
+          "deployment_rmse": 0.8205018670510051,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8440860215053764,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9074074074074074,
+          "fit_seconds": 0.25
+        },
+        "simple_group_weighting": {
+          "curve_rmse": [
+            0.8140353429773372,
+            0.8285052637471239,
+            0.8558384441161095,
+            0.8777213203283684,
+            0.9080786270739111,
+            0.9600537047466658
+          ],
+          "curve_mean_rmse": 0.874038783831586,
+          "full_rmse": 0.9600537047466658,
+          "full_mae": 0.7559606997401846,
+          "interval_coverage": 0.8805970149253731,
+          "interval_mean_width": 2.934436633412637,
+          "calibration_q": 1.7412043796541479,
+          "acceptance_threshold": 0.9126496818070314,
+          "deployment_acceptance": 0.7139303482587065,
+          "deployment_rmse": 0.8609258653015266,
+          "cliff_rows": 186,
+          "cliff_rmse": 1.0175595697289517,
+          "cliff_coverage": 0.8387096774193549,
+          "noncliff_rows": 216,
+          "noncliff_rmse": 0.9076198567238076,
+          "noncliff_coverage": 0.9166666666666666,
+          "fit_seconds": 0.28200000000651926
+        }
+      },
+      "component_influence": [
+        {
+          "removed_component": 113,
+          "removed_rows": 24,
+          "arms": {
+            "generic": 0.872664570749409,
+            "augmented": 0.8451665400476,
+            "simple_combination": 0.8725291689380734,
+            "candidate": 0.8716465569093907,
+            "remove_local_balancing": 0.8499371546613771,
+            "simple_group_weighting": 0.8731556875205998
+          }
+        },
+        {
+          "removed_component": 1,
+          "removed_rows": 22,
+          "arms": {
+            "generic": 0.8874153130630039,
+            "augmented": 0.8653727206610892,
+            "simple_combination": 0.8782379428401005,
+            "candidate": 0.88604096634486,
+            "remove_local_balancing": 0.8649218928562261,
+            "simple_group_weighting": 0.8831018388596567
+          }
+        },
+        {
+          "removed_component": 29,
+          "removed_rows": 21,
+          "arms": {
+            "generic": 0.8865196831462322,
+            "augmented": 0.8674322728139426,
+            "simple_combination": 0.8822534288063298,
+            "candidate": 0.886650662914264,
+            "remove_local_balancing": 0.8661796907573178,
+            "simple_group_weighting": 0.8856630777686498
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "arms": {
+        "generic": {
+          "curve_rmse": [
+            0.7498188684654019,
+            0.7192756255063278,
+            0.7484739812649281,
+            0.7483672391057266,
+            0.7775869211935221,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7596670808585158,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.9251336898395722,
+          "interval_mean_width": 2.931437746752581,
+          "calibration_q": 2.050109323308157,
+          "acceptance_threshold": 0.7921000985607891,
+          "deployment_acceptance": 0.732620320855615,
+          "deployment_rmse": 0.7499835032822112,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.8837209302325582,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9603960396039604
+        },
+        "augmented": {
+          "curve_rmse": [
+            0.6722329251651569,
+            0.669873678112277,
+            0.7152528625391763,
+            0.7286751049299318,
+            0.7861029050159658,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7311028875629493,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.93048128342246,
+          "interval_mean_width": 2.979439095569589,
+          "calibration_q": 2.1209889167487943,
+          "acceptance_threshold": 0.7606520815009311,
+          "deployment_acceptance": 0.7058823529411765,
+          "deployment_rmse": 0.7142759292742537,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.9069767441860465,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9504950495049505
+        },
+        "simple_combination": {
+          "curve_rmse": [
+            0.6969510532190288,
+            0.6748770887318599,
+            0.7177685338965983,
+            0.73105771788441,
+            0.7676520361352832,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7337977132470614,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.93048128342246,
+          "interval_mean_width": 1863.5916622973828,
+          "calibration_q": 1074.4769303521316,
+          "acceptance_threshold": 0.8266307888345795,
+          "deployment_acceptance": 0.732620320855615,
+          "deployment_rmse": 0.7228826112530331,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.9186046511627907,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9405940594059405
+        },
+        "candidate": {
+          "curve_rmse": [
+            0.6589598929425685,
+            0.6772362032963287,
+            0.7090754350532291,
+            0.7309223325851598,
+            0.8064127131588601,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7328477377752224,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.9144385026737968,
+          "interval_mean_width": 2.7874124046219952,
+          "calibration_q": 2.0078964174686833,
+          "acceptance_threshold": 0.7500244208536069,
+          "deployment_acceptance": 0.7165775401069518,
+          "deployment_rmse": 0.7200207789415178,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.872093023255814,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9504950495049505,
+          "fit_seconds": 0.3279999999795109
+        },
+        "remove_local_balancing": {
+          "curve_rmse": [
+            0.6387302867944536,
+            0.6403177217530218,
+            0.7128589393731355,
+            0.7438828312137359,
+            0.7915391132622325,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7236347903352947,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.9197860962566845,
+          "interval_mean_width": 2.890784490725532,
+          "calibration_q": 2.053462951135955,
+          "acceptance_threshold": 0.7492813935272732,
+          "deployment_acceptance": 0.6844919786096256,
+          "deployment_rmse": 0.6940767731467122,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.8837209302325582,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9504950495049505,
+          "fit_seconds": 0.34399999998277053
+        },
+        "simple_group_weighting": {
+          "curve_rmse": [
+            0.6862551374996491,
+            0.7147731584222717,
+            0.7282035602841683,
+            0.7532680435481774,
+            0.7720533001261659,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7448388415826034,
+          "full_rmse": 0.8144798496151883,
+          "full_mae": 0.6079405768205127,
+          "interval_coverage": 0.9251336898395722,
+          "interval_mean_width": 3.021248410577423,
+          "calibration_q": 2.273549547420575,
+          "acceptance_threshold": 0.7122522013401904,
+          "deployment_acceptance": 0.7058823529411765,
+          "deployment_rmse": 0.7254441446485814,
+          "cliff_rows": 86,
+          "cliff_rmse": 0.8210788640090281,
+          "cliff_coverage": 0.9069767441860465,
+          "noncliff_rows": 101,
+          "noncliff_rmse": 0.8088184480709748,
+          "noncliff_coverage": 0.9405940594059405,
+          "fit_seconds": 0.43700000003445894
+        }
+      },
+      "component_influence": [
+        {
+          "removed_component": 57,
+          "removed_rows": 41,
+          "arms": {
+            "generic": 0.7675588363894491,
+            "augmented": 0.7419917566920796,
+            "simple_combination": 0.7356015517978464,
+            "candidate": 0.7492157513727916,
+            "remove_local_balancing": 0.7321090511611343,
+            "simple_group_weighting": 0.7668217734117461
+          }
+        },
+        {
+          "removed_component": 60,
+          "removed_rows": 25,
+          "arms": {
+            "generic": 0.7745538509540806,
+            "augmented": 0.7534142417562185,
+            "simple_combination": 0.7479078199485784,
+            "candidate": 0.7443505781468603,
+            "remove_local_balancing": 0.7374775612241441,
+            "simple_group_weighting": 0.7762850000287963
+          }
+        },
+        {
+          "removed_component": 26,
+          "removed_rows": 21,
+          "arms": {
+            "generic": 0.7768583045572509,
+            "augmented": 0.7469532059537135,
+            "simple_combination": 0.7479268502863832,
+            "candidate": 0.7481084194090885,
+            "remove_local_balancing": 0.7439599831338359,
+            "simple_group_weighting": 0.7659938889253354
+          }
+        }
+      ]
+    }
+  ],
+  "preparation": {
+    "jobs": [
+      {
+        "task": "CHEMBL234_Ki",
+        "job": "fold0",
+        "reference_rows": 1184,
+        "reference_components": 450,
+        "query_rows": 571,
+        "raw_replay_max_abs": 1.0658141036401503e-14,
+        "component_count_histogram": {
+          "6": 84,
+          "4": 51,
+          "5": 66,
+          "7": 65,
+          "1": 88,
+          "2": 60,
+          "3": 53,
+          "9": 41,
+          "8": 52,
+          "10": 11
+        },
+        "changed_rows": 472,
+        "seconds": 8.422000000020489
+      },
+      {
+        "task": "CHEMBL234_Ki",
+        "job": "fold1",
+        "reference_rows": 1147,
+        "reference_components": 442,
+        "query_rows": 608,
+        "raw_replay_max_abs": 1.0658141036401503e-14,
+        "component_count_histogram": {
+          "9": 24,
+          "8": 60,
+          "4": 75,
+          "7": 69,
+          "3": 71,
+          "10": 14,
+          "6": 77,
+          "2": 58,
+          "1": 93,
+          "5": 67
+        },
+        "changed_rows": 501,
+        "seconds": 8.436999999976251
+      },
+      {
+        "task": "CHEMBL234_Ki",
+        "job": "fold2",
+        "reference_rows": 1179,
+        "reference_components": 455,
+        "query_rows": 576,
+        "raw_replay_max_abs": 7.105427357601002e-15,
+        "component_count_histogram": {
+          "9": 37,
+          "8": 56,
+          "6": 52,
+          "7": 71,
+          "1": 111,
+          "5": 67,
+          "2": 75,
+          "3": 40,
+          "10": 14,
+          "4": 53
+        },
+        "changed_rows": 451,
+        "seconds": 9.297000000020489
+      },
+      {
+        "task": "CHEMBL234_Ki",
+        "job": "full",
+        "reference_rows": 1755,
+        "reference_components": 560,
+        "query_rows": 874,
+        "raw_replay_max_abs": 1.0658141036401503e-14,
+        "component_count_histogram": {
+          "4": 97,
+          "7": 81,
+          "6": 84,
+          "5": 85,
+          "1": 175,
+          "3": 120,
+          "2": 114,
+          "9": 35,
+          "10": 21,
+          "8": 62
+        },
+        "changed_rows": 678,
+        "seconds": 14.202999999979511
+      },
+      {
+        "task": "CHEMBL244_Ki",
+        "job": "fold0",
+        "reference_rows": 970,
+        "reference_components": 285,
+        "query_rows": 492,
+        "raw_replay_max_abs": 2.220446049250313e-15,
+        "component_count_histogram": {
+          "3": 46,
+          "4": 71,
+          "2": 84,
+          "1": 132,
+          "6": 48,
+          "7": 36,
+          "5": 49,
+          "8": 19,
+          "9": 4,
+          "10": 3
+        },
+        "changed_rows": 357,
+        "seconds": 9.719000000040978
+      },
+      {
+        "task": "CHEMBL244_Ki",
+        "job": "fold1",
+        "reference_rows": 977,
+        "reference_components": 301,
+        "query_rows": 485,
+        "raw_replay_max_abs": 1.3322676295501878e-15,
+        "component_count_histogram": {
+          "4": 58,
+          "5": 57,
+          "2": 85,
+          "1": 118,
+          "3": 57,
+          "6": 57,
+          "7": 23,
+          "9": 13,
+          "8": 16,
+          "10": 1
+        },
+        "changed_rows": 366,
+        "seconds": 10.296999999962281
+      },
+      {
+        "task": "CHEMBL244_Ki",
+        "job": "fold2",
+        "reference_rows": 977,
+        "reference_components": 297,
+        "query_rows": 485,
+        "raw_replay_max_abs": 2.6645352591003757e-15,
+        "component_count_histogram": {
+          "2": 57,
+          "5": 78,
+          "4": 65,
+          "3": 70,
+          "1": 113,
+          "6": 41,
+          "7": 29,
+          "8": 15,
+          "9": 15,
+          "10": 2
+        },
+        "changed_rows": 370,
+        "seconds": 10.53100000001723
+      },
+      {
+        "task": "CHEMBL244_Ki",
+        "job": "full",
+        "reference_rows": 1462,
+        "reference_components": 325,
+        "query_rows": 777,
+        "raw_replay_max_abs": 1.7763568394002505e-15,
+        "component_count_histogram": {
+          "3": 121,
+          "1": 283,
+          "4": 64,
+          "2": 135,
+          "5": 66,
+          "6": 57,
+          "7": 26,
+          "9": 10,
+          "8": 12,
+          "10": 3
+        },
+        "changed_rows": 491,
+        "seconds": 15.811999999976251
+      },
+      {
+        "task": "CHEMBL4792_Ki",
+        "job": "fold0",
+        "reference_rows": 460,
+        "reference_components": 141,
+        "query_rows": 242,
+        "raw_replay_max_abs": 8.881784197001252e-16,
+        "component_count_histogram": {
+          "4": 49,
+          "3": 38,
+          "6": 24,
+          "5": 34,
+          "8": 7,
+          "7": 20,
+          "9": 4,
+          "2": 44,
+          "1": 20,
+          "10": 2
+        },
+        "changed_rows": 220,
+        "seconds": 3.0
+      },
+      {
+        "task": "CHEMBL4792_Ki",
+        "job": "fold1",
+        "reference_rows": 472,
+        "reference_components": 153,
+        "query_rows": 230,
+        "raw_replay_max_abs": 1.3322676295501878e-15,
+        "component_count_histogram": {
+          "2": 55,
+          "3": 37,
+          "4": 52,
+          "5": 20,
+          "7": 12,
+          "6": 16,
+          "10": 2,
+          "1": 33,
+          "9": 3
+        },
+        "changed_rows": 195,
+        "seconds": 3.1410000000032596
+      },
+      {
+        "task": "CHEMBL4792_Ki",
+        "job": "fold2",
+        "reference_rows": 472,
+        "reference_components": 151,
+        "query_rows": 230,
+        "raw_replay_max_abs": 1.3322676295501878e-15,
+        "component_count_histogram": {
+          "1": 28,
+          "3": 43,
+          "2": 38,
+          "5": 23,
+          "7": 16,
+          "6": 18,
+          "9": 9,
+          "10": 4,
+          "4": 30,
+          "8": 21
+        },
+        "changed_rows": 198,
+        "seconds": 3.1709999999729916
+      },
+      {
+        "task": "CHEMBL4792_Ki",
+        "job": "full",
+        "reference_rows": 702,
+        "reference_components": 169,
+        "query_rows": 366,
+        "raw_replay_max_abs": 1.3322676295501878e-15,
+        "component_count_histogram": {
+          "2": 93,
+          "6": 26,
+          "4": 33,
+          "8": 6,
+          "1": 93,
+          "5": 20,
+          "3": 75,
+          "7": 12,
+          "9": 6,
+          "10": 2
+        },
+        "changed_rows": 271,
+        "seconds": 4.704000000027008
+      }
+    ],
+    "seconds": 101.04699999996228,
+    "input_sha256": {
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold0\\features\\data\\fixture.csv": "1845dfeff2ff39453df171d9748e6405b5dd568849c08f6dd5b100a7c65ca86c",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold0\\joined.csv": "9904e0d8e7ac5fd110a8552f07cb4afaa0c192ad849ac617b6da1831601b9cd2",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold1\\features\\data\\fixture.csv": "1750c6205484cdfaac2b52014f33f8dd96a8591c0a53ed2541519c1f86d1b499",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold1\\joined.csv": "c674241b84b16d46a33eb0b053a482eda839d9849d2ece915ce4bbba66746467",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold2\\features\\data\\fixture.csv": "86e848c08452ade00f9edded2a30363fc097474a7ffa9c69e05df1dd1d2593e3",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold2\\joined.csv": "898da7891612f9097e36d01328b3c36c1845b73db1de2544f39b35d660360387",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\full\\features\\data\\fixture.csv": "3c67ec55d5b00371f7d8b0e000a52dec4528de8039c83463c6526d3dad642427",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\full\\joined.csv": "4398015be7644890b4efd7c933045963c22a05d515d2a39b037e547a53684f55",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\oof.csv": "76854dc683144aa6bdc8abd8771b14cb4970a20a162e700d1b6166ed0fa1c8f3",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold0\\features\\data\\fixture.csv": "c130d9f590008d71247e036ea81d083896d6641bfeb62521406fa2b0714d4f67",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold0\\joined.csv": "3148014e566ea5d38b1b6f5c82ca1c3f170489b540d3ce40081b9b6e5a5af4fe",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold1\\features\\data\\fixture.csv": "6b3d148dc2d89152bc382856451b98e35329bd68235a3f65be02d55adddc8ed8",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold1\\joined.csv": "7de2feb311ad59b4f7751b6b6f6f371ba7a1d842aa3bdfacddc3d11483055305",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold2\\features\\data\\fixture.csv": "6ec1a8e07f0c9bd96f425b9b968add978e095714f1951fad395d684e0a9213d3",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold2\\joined.csv": "a5fcc5191a21db4af9ddb953468d19f724ab7e09ca513ca880d839b587456d70",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\full\\features\\data\\fixture.csv": "98eb6a5046399350cb67baaa2fa417e6b165dfb541caf44f38709cd8f4f796ea",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\full\\joined.csv": "ca88f2f521eba778f9bc8cf318a59f261ff9eaabe4a4ff63332ceb3817814ca4",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\oof.csv": "e1b866a4f227546954704f1ecf0d9cbe00d60a75a19a1bb05fe484aa21a793b4",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold0\\features\\data\\fixture.csv": "60fc71639786aedb16b794bd4d3d8ab52f39be9c5b98ff9ae514f94536720603",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold0\\joined.csv": "5b38e245011feec451b0af65a683e38e8e1dc715771700d3a2ebb4f35a350ed8",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold1\\features\\data\\fixture.csv": "1cbdf07d222954008b07a057b23404c0f3e92e1abbadee986680718d8810dc28",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold1\\joined.csv": "fb25ddf3ea1480cf492426776dba4df797f363103d88ce4e161eb5ea48b383a9",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold2\\features\\data\\fixture.csv": "fe4edeaf5d52fbf608304efa80daaa5af4fbbf9aa33eff40f59b4da810835eef",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold2\\joined.csv": "924c42b07b938893d985dfa40840d597fe2e6016bb49f7ad769f67b9d2cf3b88",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\full\\features\\data\\fixture.csv": "571bb883b361248f006cf75940d6e908a80ab8c7c1926ed0572d50483f2944e8",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\full\\joined.csv": "45677ddb81de5feb56ecd1404bac87507af8a8703735a1fbbf2fdc04fb60758d",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\oof.csv": "fea00e6c9d38f91457e2d79dc041bcccf6969630972515805ced4c27a02170f6",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+      "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+      "D:\\GraphCliff-Pair\\artifacts\\roughness_sources_20261005\\qsar-landscape-roughness\\src\\build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+      "D:\\GraphCliff-Pair\\artifacts\\roughness_sources_20261005\\qsar-landscape-roughness\\paper\\main.tex": "94f6b83208670fd13cfa7e8546fb649850dca7f0b82d2b8445abf31c96ac333e",
+      "D:\\GraphCliff-Pair\\artifacts\\roughness_sources_20261005\\qsar-landscape-roughness\\LICENSE": "692eff71860f45438688b0630b92739637cd105e9b086ad6e39d7d2805a0a147",
+      "D:\\GraphCliff-Pair\\experiments\\reliability_base\\fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+      "D:\\GraphCliff-Pair\\docs\\research\\joint_dependency_preflight_20261006\\protocol.json": "0a0f2c31b51a8dcfaa47df80657f2d1c2801614697c91484dcd9bd786bc8b439",
+      "D:\\GraphCliff-Pair\\experiments\\reliability_base\\audit_joint_dependencies.py": "01209f77826dc952c38116f6316591f44f39e96c5d2217d8cb62a2651f1318c7",
+      "D:\\GraphCliff-main\\scripts\\fppool_pilot\\analyze_pairs.py": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73",
+      "D:\\GraphCliff-Pair\\docs\\research\\component_roughness_candidate_20261006\\pilot_protocol.json": "66619907c6c835fe7ddb2f381e92523466b18b56c5c1f199ab04b60bd604ee52",
+      "D:\\GraphCliff-Pair\\docs\\research\\component_roughness_candidate_20261006\\protocol.json": "1f7a935cd4cf5f0e21036e0f3ab85a4e00ad340f7d07b01b44adc72593f55ab9",
+      "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_component_pilot.py": "f4475911c593bab797263323db97042fc1db35befe0242c4941906ad2f8a806d",
+      "D:\\GraphCliff-Pair\\experiments\\reliability_base\\component_roughness.py": "93d54726892013d349ee9c898888e826854832391223f2cd4a8c7ecf4bad07bd",
+      "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1"
+    }
+  },
+  "execution": {
+    "status": "complete",
+    "risk_fits_started": 9,
+    "arms_completed": 9,
+    "recovered_existing_fit": true,
+    "code_commit": "75a1b6661ae554f8f9bc96af6777f713c0fc1c91",
+    "seconds": 3.4530000000377186
+  },
+  "first_failure": {
+    "status": "failed",
+    "risk_fits_started": 1,
+    "arms_completed": 0,
+    "code_commit": "625eec9ef8adb7b996e59f62c7ab6046c5582038",
+    "error": "AssertionError()"
+  },
+  "failure_diagnostic": {
+    "max_absolute_difference": 6.661338147750939e-16,
+    "exact_equal": false,
+    "fits_added": 0,
+    "diagnostic": "same stored model, parallel prediction accumulation may differ in floating point; tolerance1e-10 already fixed for replay"
+  },
+  "verification": {
+    "tasks": [
+      {
+        "task": "CHEMBL234_Ki",
+        "all_six_arm_curves_and_three_component_omissions_verified": true,
+        "models": [
+          {
+            "arm": "candidate",
+            "load_replay_max_abs": 5.551115123125783e-16
+          },
+          {
+            "arm": "remove_local_balancing",
+            "load_replay_max_abs": 6.661338147750939e-16
+          },
+          {
+            "arm": "simple_group_weighting",
+            "load_replay_max_abs": 4.440892098500626e-16
+          }
+        ]
+      },
+      {
+        "task": "CHEMBL244_Ki",
+        "all_six_arm_curves_and_three_component_omissions_verified": true,
+        "models": [
+          {
+            "arm": "candidate",
+            "load_replay_max_abs": 4.440892098500626e-16
+          },
+          {
+            "arm": "remove_local_balancing",
+            "load_replay_max_abs": 6.661338147750939e-16
+          },
+          {
+            "arm": "simple_group_weighting",
+            "load_replay_max_abs": 8.881784197001252e-16
+          }
+        ]
+      },
+      {
+        "task": "CHEMBL4792_Ki",
+        "all_six_arm_curves_and_three_component_omissions_verified": true,
+        "models": [
+          {
+            "arm": "candidate",
+            "load_replay_max_abs": 4.440892098500626e-16
+          },
+          {
+            "arm": "remove_local_balancing",
+            "load_replay_max_abs": 4.440892098500626e-16
+          },
+          {
+            "arm": "simple_group_weighting",
+            "load_replay_max_abs": 4.440892098500626e-16
+          }
+        ]
+      }
+    ],
+    "primary_curves_checked": 18,
+    "component_omission_curves_checked": 54,
+    "models_replayed_without_fitting": 9,
+    "inputs_unchanged_except_documented_runner_fix": true,
+    "fits_added": 0,
+    "table": [
+      {
+        "task": "CHEMBL234_Ki",
+        "generic": 0.7282904207074105,
+        "augmented": 0.7131408164093181,
+        "simple_combination": 0.7326726729563622,
+        "candidate": 0.703701381389516,
+        "remove_local_balancing": 0.7091458744657362,
+        "simple_group_weighting": 0.7284882645327477
+      },
+      {
+        "task": "CHEMBL244_Ki",
+        "generic": 0.8750862548642012,
+        "augmented": 0.853320965916177,
+        "simple_combination": 0.8679367677308206,
+        "candidate": 0.8718099336372195,
+        "remove_local_balancing": 0.8499091450919914,
+        "simple_group_weighting": 0.874038783831586
+      },
+      {
+        "task": "CHEMBL4792_Ki",
+        "generic": 0.7596670808585158,
+        "augmented": 0.7311028875629493,
+        "simple_combination": 0.7337977132470614,
+        "candidate": 0.7328477377752224,
+        "remove_local_balancing": 0.7236347903352947,
+        "simple_group_weighting": 0.7448388415826034
+      }
+    ],
+    "macro": {
+      "generic": 0.7876812521433759,
+      "augmented": 0.7658548899628149,
+      "simple_combination": 0.7781357179780813,
+      "candidate": 0.7694530176006525,
+      "remove_local_balancing": 0.7608966032976742,
+      "simple_group_weighting": 0.782455296648979
+    }
+  },
+  "baseline_replay": [
+    {
+      "task": "CHEMBL234_Ki",
+      "arm": "generic",
+      "max_curve_replay_abs": 0.0
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "arm": "augmented",
+      "max_curve_replay_abs": 0.0
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "arm": "simple_combination",
+      "max_curve_replay_abs": 1.1102230246251565e-16
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "arm": "generic",
+      "max_curve_replay_abs": 0.0
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "arm": "augmented",
+      "max_curve_replay_abs": 0.0
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "arm": "simple_combination",
+      "max_curve_replay_abs": 0.0
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "arm": "generic",
+      "max_curve_replay_abs": 0.0
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "arm": "augmented",
+      "max_curve_replay_abs": 0.0
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "arm": "simple_combination",
+      "max_curve_replay_abs": 1.1102230246251565e-16
+    }
+  ],
+  "activation_by_role": [
+    {
+      "task": "CHEMBL234_Ki",
+      "role": "oof",
+      "rows": 1755,
+      "changed_rows": 1424,
+      "fraction": 0.8113960113960114
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "role": "calibration",
+      "rows": 426,
+      "changed_rows": 328,
+      "fraction": 0.7699530516431925
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "role": "evaluation",
+      "rows": 448,
+      "changed_rows": 350,
+      "fraction": 0.78125
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "role": "oof",
+      "rows": 1462,
+      "changed_rows": 1093,
+      "fraction": 0.7476060191518468
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "role": "calibration",
+      "rows": 375,
+      "changed_rows": 234,
+      "fraction": 0.624
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "role": "evaluation",
+      "rows": 402,
+      "changed_rows": 257,
+      "fraction": 0.6393034825870647
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "role": "oof",
+      "rows": 702,
+      "changed_rows": 613,
+      "fraction": 0.8732193732193733
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "role": "calibration",
+      "rows": 179,
+      "changed_rows": 131,
+      "fraction": 0.7318435754189944
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "role": "evaluation",
+      "rows": 187,
+      "changed_rows": 140,
+      "fraction": 0.7486631016042781
+    }
+  ],
+  "macro_improvement_pct": {
+    "generic": 2.314163818565206,
+    "augmented": -0.4698184584304639,
+    "simple_combination": 1.1158336748748723,
+    "remove_local_balancing": -1.1245173478098678,
+    "simple_group_weighting": 1.661728037884242
+  },
+  "decision": "Do not expand seeds or tasks now. Broad advantage from local balancing is unsupported; retain CHEMBL234 exploratory conditional benefit and at most one zero-fit explanatory follow-up. Do not replace candidate with ablation and claim the original core succeeded.",
+  "scope": "Three previously seen development task/seed42 caches, not strict component-independent or temporal evaluation.",
+  "new_risk_fits": 9,
+  "new_Chemprop_fits": 0,
+  "official_test_rows": 0,
+  "input_model_snapshot_sha256": "f4475911c593bab797263323db97042fc1db35befe0242c4941906ad2f8a806d",
+  "corrected_runner_sha256": "4f1ebf853c5c79655bfd3bca88c58cf9a0b7b55d600c5d795acfc245369a33b0",
+  "additional_source_sha256": {
+    "experiments\\reliability_base\\check_simple_risk_control.py": "7189c7445ae62c7fba1807d794653b8309b5ff29d46056e213d08b75423339cb",
+    "artifacts\\roughness_sources_20261005\\qsar-landscape-roughness\\src\\conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f",
+    "artifacts\\reliability_phase_a_20261005_v3\\results.json": "894c74559a66fcb85a36551dd2dc5050af4ee66731373642d3e9eb46d157d007",
+    "artifacts\\reliability_simple_control_20261006_v2\\results.json": "70695856dbb9cf608947ed4e9c2f48b64f1a6970e958b4d76bc39362b4412ad4"
+  },
+  "private_output_sha256": {
+    "baseline_replay.json": "61c40cd733ea3580bae4ef9beed3734d0dc2ef14e44170674a5b296a42a50235",
+    "execution.json": "d1598054dd3b9973d3629c4b5036b76b5083e72af750922e8cd33e2c0d4372a7",
+    "execution_first_failure.json": "4b93fc3dc6e3840dc8ed7691948f785f0d70c58caa2086a1c37ced513df9e8f6",
+    "preparation.json": "2f78ea80f012b73b5cefa78f72875993f6be1d82c8473bf8277f0cb7fe8c12cf",
+    "replay_failure_diagnostic.json": "bb059c5b871462f5bcb8e08d385c0b9a4e9d2f1dbaebaaf884948c34733e3a2f",
+    "results.json": "281d05ff08fdf7c2820ce01d4b2ea1d4c9fb03a9a8c9facd3fd3ef8ec0d4dd61",
+    "verification.json": "1986db22cc57e310cfc95b7cd3af8525766c616d2746bfc92281d39bede95ff1",
+    "CHEMBL234_Ki\\calibration.csv": "ef5ac9dda71a56265aea9aeddb4bbd38de4c064d46c9bddeefe3f8838495f6b2",
+    "CHEMBL234_Ki\\candidate.pkl": "850e99783e4133207e06d022cfefe89dc48a25d903a7582ec5d37c0718e52e19",
+    "CHEMBL234_Ki\\evaluation.csv": "c8f465006de4c93acd3c6679946dd476a43d6216e227d8897908dce153aeb877",
+    "CHEMBL234_Ki\\fold0.csv": "e159c0346c532d592c05c0872bbc0ddf728d4da1e5b2109cb3e7b787e3ce2c3d",
+    "CHEMBL234_Ki\\fold1.csv": "ceb40cc2c2a62019827a4e4870ab674eb1a9088906942f393c4fcc34840e3553",
+    "CHEMBL234_Ki\\fold2.csv": "bd9808fff640b25d27fc3023c8aefde70895c31664fd6748cc688ec1e4896013",
+    "CHEMBL234_Ki\\full.csv": "86ae223d40dcf448627d2093b23b3cc42229eabad5e54cd129706d46ce1d81cd",
+    "CHEMBL234_Ki\\full_reference_components.json": "cf7c566eb20aaa96ff804a0889303c2c8ee9410e765c4378039c2a3fd56181d8",
+    "CHEMBL234_Ki\\oof.csv": "e1d59544942d27101629465dd5ffd0c77d925605a592e956d80091b43b4f0c76",
+    "CHEMBL234_Ki\\remove_local_balancing.pkl": "4064496ac674a0bf58fb05539cebab9f0197bc66575b4866fbe34e773b824f14",
+    "CHEMBL234_Ki\\scored_calibration.csv": "e07d1272a172fb3c029f2f3d1a81508f89da6b43f51659aad7f283664e9f0bd8",
+    "CHEMBL234_Ki\\scored_evaluation.csv": "9c3b1ad3c94b3c3172c57dca0b1f768ce234df665302d4728b78d67e14ec3004",
+    "CHEMBL234_Ki\\simple_group_weighting.pkl": "b821bba9bbf906e4fa33fb30015a1c7d7c40d756c92ad4eba579cab2a24b04c2",
+    "CHEMBL244_Ki\\calibration.csv": "00fa66536d105419589088efceadc0810c648907f0d8b27e8f225bfe44b7d2da",
+    "CHEMBL244_Ki\\candidate.pkl": "52f3e44ab1bbf8995f1f7b72e47aacec186969fed732dfa8dc0af92f6d8b034e",
+    "CHEMBL244_Ki\\evaluation.csv": "69971a6ae885e130892a9e8c5ec9db95d664336eaa09763350c1128ac27dfeba",
+    "CHEMBL244_Ki\\fold0.csv": "7e37e7913ceba9b2713138e6f301e7e622240718ef487dc17b0852c2d93bd6ca",
+    "CHEMBL244_Ki\\fold1.csv": "1041536d66da66e05f3030e76285e7259b76bfb650d3886381cf1b0cd43f3d9e",
+    "CHEMBL244_Ki\\fold2.csv": "ddd5223724677c33a5472adf96a9abacc149e710db6f267ba39d16290fb9f9fa",
+    "CHEMBL244_Ki\\full.csv": "8ac43e73d3fe151bab245691fe6918b94e09fa490009980939cb64532609d897",
+    "CHEMBL244_Ki\\full_reference_components.json": "fc99d12e4045ff0f08ed050b5dcacf376a3603fb2056477dd47f6479fbd6abb4",
+    "CHEMBL244_Ki\\oof.csv": "59c71289decd373e4506bd827c4a73286ada8044aded5cfe926aec7bd5ca3b9f",
+    "CHEMBL244_Ki\\remove_local_balancing.pkl": "46db3c2b7af7122b4e1c859befb3944009577453429d4536e191767e142dda8a",
+    "CHEMBL244_Ki\\scored_calibration.csv": "608c00559f304e54ea2e29e688e64af1078cf036395942348db96167f2c3ed0a",
+    "CHEMBL244_Ki\\scored_evaluation.csv": "065e99abf910be50e3d193de1c46490d10a0516787709731e8a579340bf63c4c",
+    "CHEMBL244_Ki\\simple_group_weighting.pkl": "4758d0653dcd86fd9560e11dba6914a7dbae2da894c25058074201abed0510f9",
+    "CHEMBL4792_Ki\\calibration.csv": "dc5203040abd5e74320c6c94935c21942e94eb8a703435f74fa3f88e49292ae6",
+    "CHEMBL4792_Ki\\candidate.pkl": "3da5ea12f333d7130245294fbd11333e99631a5d5fbe4c569cd9f1bcb1ecc50b",
+    "CHEMBL4792_Ki\\evaluation.csv": "132e1e9a56ed2aef732e1eb5ef0b8a5a42f7aca35bcf2568dc390d3b91c0e9b2",
+    "CHEMBL4792_Ki\\fold0.csv": "9da49007186327b828f4253ab4bd1c5994bc5fca9a5b15ab3473bf6da0e0ae4d",
+    "CHEMBL4792_Ki\\fold1.csv": "3b1d34baf17c7feea05353bb53ecb73e8c0724d63a9d506cc7bdc4ace7f44a3d",
+    "CHEMBL4792_Ki\\fold2.csv": "2f1ba230289932cf53ae4059cd93f5432abac4e35836551403c2011f9113a5f8",
+    "CHEMBL4792_Ki\\full.csv": "0b23f3f9bf5e96f1c432278c7d5c8bbb85970724d675ef0f9d0e85458978402b",
+    "CHEMBL4792_Ki\\full_reference_components.json": "82bb99b002a3526aa0bba9c1d5c2027e38d5acd117ec1eaa57fd60fbb4425af0",
+    "CHEMBL4792_Ki\\oof.csv": "0810fdc87b801bfc613e10581fd20d280104cebe607683d0eb3a7e4dd29d2c31",
+    "CHEMBL4792_Ki\\remove_local_balancing.pkl": "413c580a364b4c36f939d7b0c857a5fb475e5e6f5ab81e1a594ad8d98eaadb99",
+    "CHEMBL4792_Ki\\scored_calibration.csv": "57f1a913c9a81ee67798449b2b3485ac671228a553871b4c2bf365ae04b3fc5f",
+    "CHEMBL4792_Ki\\scored_evaluation.csv": "f8111f8b30b21e3e55ebe5b6a7867234651f848214bbff98a540880d381e84b8",
+    "CHEMBL4792_Ki\\simple_group_weighting.pkl": "7d5075ed26e98eeeb6a0ff6ccd35d6a8af1ee302024722f1d1ef3ad8123a9dd2",
+    "sequential_replay.json": "9c3ba8704f190c3f65c74a56279045f2dcb37d940f28901338ce8a8f29baa2f0"
+  },
+  "sequential_replay": [
+    {
+      "task": "CHEMBL234_Ki",
+      "arm": "candidate",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "arm": "remove_local_balancing",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "arm": "simple_group_weighting",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "arm": "candidate",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "arm": "remove_local_balancing",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "arm": "simple_group_weighting",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "arm": "candidate",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "arm": "remove_local_balancing",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "arm": "simple_group_weighting",
+      "sequential_replay_curve_max_abs": 0.0,
+      "sequential_predict_bitwise_stable": true
+    }
+  ]
+}
