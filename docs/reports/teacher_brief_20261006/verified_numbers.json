@@ -1,0 +1,458 @@
+{
+  "historical_comparisons": [
+    {
+      "comparison": "direct_fppool_vs_baseline",
+      "dataset": "CHEMBL3979_EC50",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "overall_rmse",
+      "baseline_mean": 0.5844894474057695,
+      "candidate_mean": 0.5937440304918364,
+      "improvement_pct": -1.5833618771293523
+    },
+    {
+      "comparison": "direct_fppool_vs_baseline",
+      "dataset": "CHEMBL3979_EC50",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.6751691672960721,
+      "candidate_mean": 0.6903738515485931,
+      "improvement_pct": -2.2519814276195294
+    },
+    {
+      "comparison": "residual3979_vs_baseline",
+      "dataset": "CHEMBL3979_EC50",
+      "seeds": [
+        42
+      ],
+      "metric": "overall_rmse",
+      "baseline_mean": 0.5469326146169193,
+      "candidate_mean": 0.5644302201036947,
+      "improvement_pct": -3.199225099975247
+    },
+    {
+      "comparison": "residual3979_vs_baseline",
+      "dataset": "CHEMBL3979_EC50",
+      "seeds": [
+        42
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.6738334891276424,
+      "candidate_mean": 0.6279655056951262,
+      "improvement_pct": 6.807020454251651
+    },
+    {
+      "comparison": "residual_fppool_vs_baseline",
+      "dataset": "CHEMBL2047_EC50",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.4425719076482804,
+      "candidate_mean": 0.45580774230623167,
+      "improvement_pct": -2.9906630830418632
+    },
+    {
+      "comparison": "residual_fppool_vs_baseline",
+      "dataset": "CHEMBL235_EC50",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.7647843188551635,
+      "candidate_mean": 0.7571734237981749,
+      "improvement_pct": 0.9951688167955245
+    },
+    {
+      "comparison": "residual_fppool_vs_baseline",
+      "dataset": "CHEMBL287_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.7005227190066067,
+      "candidate_mean": 0.6848410004251988,
+      "improvement_pct": 2.2385738757546254
+    },
+    {
+      "comparison": "residual_fppool_vs_gmt",
+      "dataset": "CHEMBL2047_EC50",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.47047498659970294,
+      "candidate_mean": 0.45580774230623167,
+      "improvement_pct": 3.1175396591170297
+    },
+    {
+      "comparison": "residual_fppool_vs_gmt",
+      "dataset": "CHEMBL287_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.7030190987317732,
+      "candidate_mean": 0.6848410004251988,
+      "improvement_pct": 2.5857189853543288
+    },
+    {
+      "comparison": "cross_vs_direct",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.6621383978280105,
+      "candidate_mean": 0.7431795199483243,
+      "improvement_pct": -12.23930259688158
+    },
+    {
+      "comparison": "cross_vs_direct",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.8642776082079136,
+      "candidate_mean": 1.085042807587836,
+      "improvement_pct": -25.5433204890823
+    },
+    {
+      "comparison": "cross_vs_pair_mlp",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.730134887851513,
+      "candidate_mean": 0.7431795199483243,
+      "improvement_pct": -1.786605778446812
+    },
+    {
+      "comparison": "cross_vs_pair_mlp",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.9876994132366878,
+      "candidate_mean": 1.085042807587836,
+      "improvement_pct": -9.855568713172994
+    },
+    {
+      "comparison": "branch_cross_vs_full",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42
+      ],
+      "metric": "overall_rmse",
+      "baseline_mean": 0.7418689894597396,
+      "candidate_mean": 0.7137774543484786,
+      "improvement_pct": 3.786589749723653
+    },
+    {
+      "comparison": "branch_cross_vs_full",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.771412911108169,
+      "candidate_mean": 0.7707836098194875,
+      "improvement_pct": 0.08157774903942563
+    },
+    {
+      "comparison": "branch_cross_vs_full",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42
+      ],
+      "metric": "overall_rmse",
+      "baseline_mean": 0.9136961935181571,
+      "candidate_mean": 0.9242901410412555,
+      "improvement_pct": -1.1594606170248718
+    },
+    {
+      "comparison": "branch_cross_vs_full",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 1.038045553428822,
+      "candidate_mean": 1.0892435212835545,
+      "improvement_pct": -4.932150394134233
+    },
+    {
+      "comparison": "global_fp_vs_global",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.77218892394994,
+      "candidate_mean": 0.7054089202458023,
+      "improvement_pct": 8.648143172339388
+    },
+    {
+      "comparison": "global_fp_vs_global",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42,
+        43
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.9927763026689289,
+      "candidate_mean": 1.118480187101393,
+      "improvement_pct": -12.661853843058921
+    },
+    {
+      "comparison": "cross_fp_vs_cross",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.7367848622149905,
+      "candidate_mean": 0.7500064515138656,
+      "improvement_pct": -1.794497956856376
+    },
+    {
+      "comparison": "cross_fp_vs_cross",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42,
+        43
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 1.0479606633238365,
+      "candidate_mean": 1.1166086448125547,
+      "improvement_pct": -6.550625790760706
+    },
+    {
+      "comparison": "global_dynamic_vs_global",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.77218892394994,
+      "candidate_mean": 0.7804061776623703,
+      "improvement_pct": -1.0641506835395933
+    },
+    {
+      "comparison": "global_dynamic_vs_global",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42,
+        43
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.9927763026689289,
+      "candidate_mean": 1.1348751613871992,
+      "improvement_pct": -14.313280679268738
+    },
+    {
+      "comparison": "cross_fp_dynamic_vs_direct",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.6609156045370389,
+      "candidate_mean": 0.8102561271256856,
+      "improvement_pct": -22.59600493065335
+    },
+    {
+      "comparison": "cross_fp_dynamic_vs_direct",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.8617367985339476,
+      "candidate_mean": 1.1507057130889922,
+      "improvement_pct": -33.5333149340565
+    },
+    {
+      "comparison": "balanced_vs_mse",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.6440120746769467,
+      "candidate_mean": 0.6366894746327476,
+      "improvement_pct": 1.1370283775924936
+    },
+    {
+      "comparison": "balanced_vs_mse",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.8481926386762186,
+      "candidate_mean": 0.8615004510440064,
+      "improvement_pct": -1.5689610780585632
+    },
+    {
+      "comparison": "balanced_vs_uniform",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.623999686747901,
+      "candidate_mean": 0.6366894746327476,
+      "improvement_pct": -2.033620874231847
+    },
+    {
+      "comparison": "balanced_vs_uniform",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.8519262211117651,
+      "candidate_mean": 0.8615004510440064,
+      "improvement_pct": -1.1238332258099704
+    },
+    {
+      "comparison": "aca_vs_mse",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "overall_rmse",
+      "baseline_mean": 0.5909789273627334,
+      "candidate_mean": 0.6178419583684999,
+      "improvement_pct": -4.54551419043718
+    },
+    {
+      "comparison": "aca_vs_mse",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metric": "cliff_rmse",
+      "baseline_mean": 0.6393403338602933,
+      "candidate_mean": 0.6586064268492241,
+      "improvement_pct": -3.0134330603863875
+    },
+    {
+      "comparison": "roughness_vs_generic",
+      "dataset": "CHEMBL234_Ki",
+      "seeds": [
+        42
+      ],
+      "metric": "mean_selective_rmse",
+      "baseline_mean": 0.7282904207074105,
+      "candidate_mean": 0.7131408164093181,
+      "improvement_pct": 2.0801597642019023
+    },
+    {
+      "comparison": "roughness_vs_generic",
+      "dataset": "CHEMBL244_Ki",
+      "seeds": [
+        42
+      ],
+      "metric": "mean_selective_rmse",
+      "baseline_mean": 0.8750862548642012,
+      "candidate_mean": 0.853320965916177,
+      "improvement_pct": 2.4872164117583835
+    },
+    {
+      "comparison": "roughness_vs_generic",
+      "dataset": "CHEMBL4792_Ki",
+      "seeds": [
+        42
+      ],
+      "metric": "mean_selective_rmse",
+      "baseline_mean": 0.7596670808585158,
+      "candidate_mean": 0.7311028875629493,
+      "improvement_pct": 3.7600936009081085
+    }
+  ],
+  "risk_comparisons": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "values": {
+        "generic": 0.7282904207074105,
+        "augmented": 0.7131408164093181,
+        "remove_local_balancing": 0.7091458744657362,
+        "candidate": 0.703701381389516
+      },
+      "candidate_vs_ablation_pct": 0.7677536135032896
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "values": {
+        "generic": 0.8750862548642012,
+        "augmented": 0.853320965916177,
+        "remove_local_balancing": 0.8499091450919914,
+        "candidate": 0.8718099336372195
+      },
+      "candidate_vs_ablation_pct": -2.5768387917343287
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "values": {
+        "generic": 0.7596670808585158,
+        "augmented": 0.7311028875629493,
+        "remove_local_balancing": 0.7236347903352947,
+        "candidate": 0.7328477377752224
+      },
+      "candidate_vs_ablation_pct": -1.2731487710339262
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "local_links_checked": 10,
+  "fits": 0,
+  "prediction": 0
+}

@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-06",
+  "purpose": "Teacher briefing of completed work, sources, negative and conditional findings; not a new experiment or expanded research plan",
+  "base_commit": "f5e0338259a11843ee9011f181b9ec3b7d4739ef",
+  "input_sha256": {
+    "docs/sources.json": "b3cddc83f69c4e2cb7008444bb7b6e5367a7d3305379dd7dc7a64c694b156d47",
+    "experiments/aca_pilot/sources.json": "98ff4d3f446351d14e0229efaab71a49aae458e4bf79fa847e4bc14577783e29",
+    "graphcliff_pair/model.py": "3207d09c60bd468f579d3495808221f28198bf771cced0530898c8b2170e31eb",
+    "graphcliff_pair/loss.py": "66ac7610d88cc4273300b0f4afb60f0e43b98496a92e813d92915d262bf09c98",
+    "graphcliff_pair/predict.py": "a3e9350ff3d82c73578c3bff576bb3a304f4bbe3e78224df477dc583bc4a9d10",
+    "docs/research/module_pause_review_20261006/report.md": "c936641eb644e6069bb6aa7337d3fdcf9a40556be1a24d58571ac742957392db",
+    "docs/research/module_pause_review_20261006/comparisons.json": "7427a1fc00c9cdcd6730f38f9d96b31061523a970e536a85f9e4c457f5f601f1",
+    "docs/research/roughness_method_review_20261005/report.md": "59681f46f84f9cf4dab74b3253756a8f61410b8c0cd572eb01f97ffd506f52a5",
+    "experiments/reliability_base/phase_a_results.json": "1a599ae818c72a296c4ef55b1943e47f2d0782a155803007c5e7175d08aae593",
+    "docs/research/reliability_core_review_20261006/decision.json": "bafd74ef3a9a7b6d88e5b73835eb60f84491166dd0f702cb40191cb63221d922",
+    "docs/research/component_roughness_candidate_20261006/candidate.md": "ea2aa8a9835f4132e85707ca8b335bf6a8330f234e3b5a6eb89314915d75caab",
+    "docs/research/component_roughness_pilot_20261006/results.json": "04ac5a445f06986be4e6aeeb6d3ade6f43fae668ea8736e1bfd000660d05f846",
+    "docs/research/component_roughness_cases_20261006/report.md": "c363092a05d68e706aec3b8bbb1dd3991a2f94f6aa30805d7b06657c166a2bc2",
+    "docs/research/publication_assets_20261006/asset_checks.json": "e55aabc90d3ec8503bc8dbdc146b6af4f2fda9a84c73799d95a71b4d37d644fe",
+    "docs/research/aidd_plan_recheck_20261006/report.md": "4aaa2242ea01a00bbb805d7cd64512826d3b5ec18b093f42b5ed9e778c2b0ddd"
+  },
+  "external_checks": [
+    {
+      "url": "https://github.com/dmis-lab/GraphCliff",
+      "checked": "README method/title; formal journal status not established here"
+    },
+    {
+      "url": "https://github.com/shenwxlab/FPPool",
+      "checked": "Method and title; README bibliography journal is XXXX, do not invent journal/DOI"
+    },
+    {
+      "url": "https://github.com/shenwanxiang/ACANet",
+      "checked": "README title, paper DOI and GPL; corresponding Nature primary search metadata"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-026-75713-2",
+      "checked": "Primary search supported title/DOI; direct page open failed; not new full-text reading"
+    },
+    {
+      "url": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+      "checked": "Current README checked; our executed version pinned91522b8, manuscript title differs from current README; journal status unknown"
+    },
+    {
+      "url": "https://github.com/Novartis/UNIQUE",
+      "checked": "Repository role; exact RF interface from previously pinned source audit, not latest API reproduction"
+    },
+    {
+      "url": "https://github.com/chemprop/chemprop",
+      "checked": "Official MPNN repo and v2 citation title; DOI page open failed, not full-text reading"
+    },
+    {
+      "url": "https://github.com/molML/MoleculeACE",
+      "checked": "30-task benchmark and JCIM2022 citation/DOI"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html",
+      "checked": "Page redirect, no detailed online API assertion; local model imports torch.nn.MultiheadAttention"
+    }
+  ],
+  "fits": 0,
+  "predictions": 0,
+  "original_projects": "read only"
+}
