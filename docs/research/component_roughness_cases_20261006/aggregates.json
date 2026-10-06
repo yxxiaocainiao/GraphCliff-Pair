@@ -1,0 +1,65 @@
+[
+  {
+    "task": "CHEMBL234_Ki",
+    "cases": 3,
+    "missing_categories": [],
+    "arms": {
+      "candidate": {
+        "target_above_random_median": 2,
+        "target_above_random_max": 1,
+        "target_zero_change": 0,
+        "mean_target_abs_change": 0.17010192887540754,
+        "mean_random_abs_change": 0.039631965411063105
+      },
+      "remove_local_balancing": {
+        "target_above_random_median": 3,
+        "target_above_random_max": 1,
+        "target_zero_change": 0,
+        "mean_target_abs_change": 0.1660245676744049,
+        "mean_random_abs_change": 0.06650183110412582
+      }
+    }
+  },
+  {
+    "task": "CHEMBL244_Ki",
+    "cases": 3,
+    "missing_categories": [],
+    "arms": {
+      "candidate": {
+        "target_above_random_median": 1,
+        "target_above_random_max": 0,
+        "target_zero_change": 0,
+        "mean_target_abs_change": 0.033964865224135776,
+        "mean_random_abs_change": 0.0870372174530019
+      },
+      "remove_local_balancing": {
+        "target_above_random_median": 1,
+        "target_above_random_max": 1,
+        "target_zero_change": 0,
+        "mean_target_abs_change": 0.16682147246496917,
+        "mean_random_abs_change": 0.09464525016224372
+      }
+    }
+  },
+  {
+    "task": "CHEMBL4792_Ki",
+    "cases": 3,
+    "missing_categories": [],
+    "arms": {
+      "candidate": {
+        "target_above_random_median": 2,
+        "target_above_random_max": 0,
+        "target_zero_change": 0,
+        "mean_target_abs_change": 0.06427579543052564,
+        "mean_random_abs_change": 0.110954104029814
+      },
+      "remove_local_balancing": {
+        "target_above_random_median": 2,
+        "target_above_random_max": 1,
+        "target_zero_change": 0,
+        "mean_target_abs_change": 0.09978784176655553,
+        "mean_random_abs_change": 0.06553611240110642
+      }
+    }
+  }
+]

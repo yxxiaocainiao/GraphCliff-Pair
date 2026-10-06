@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "code_commit": "5c73730fe5fb10af89ee70bc7816fe0e05bd1b31",
+  "fits": 0,
+  "new_point_predictions": 0,
+  "cases": 9,
+  "risk_predict_calls": 18,
+  "risk_prediction_rows": 396,
+  "tasks": [
+    {
+      "task": "CHEMBL234_Ki",
+      "seconds": 9.953000000037719,
+      "reference_rows": 1755,
+      "reference_components": 560
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "seconds": 11.09399999998277,
+      "reference_rows": 1462,
+      "reference_components": 325
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "seconds": 3.5459999999729916,
+      "reference_rows": 702,
+      "reference_components": 169
+    }
+  ],
+  "seconds": 24.655999999959022,
+  "input_hashes_unchanged": true
+}
