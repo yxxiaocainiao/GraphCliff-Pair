@@ -1,0 +1,1904 @@
+[
+  {
+    "comparison": "direct_fppool_vs_baseline",
+    "dataset": "CHEMBL3979_EC50",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.5844894474057695,
+        "candidate_mean": 0.5937440304918364,
+        "improvement_pct": -1.5833618771293523,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.5643115434891982,
+            "candidate": 0.5591083496095405
+          },
+          {
+            "seed": 43,
+            "baseline": 0.5997265425644053,
+            "candidate": 0.611685504833495
+          },
+          {
+            "seed": 44,
+            "baseline": 0.5894302561637049,
+            "candidate": 0.6104382370324738
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.6751691672960721,
+        "candidate_mean": 0.6903738515485931,
+        "improvement_pct": -2.2519814276195294,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6280636626933104,
+            "candidate": 0.6406208609943578
+          },
+          {
+            "seed": 43,
+            "baseline": 0.686008004981786,
+            "candidate": 0.7375757811470629
+          },
+          {
+            "seed": 44,
+            "baseline": 0.71143583421312,
+            "candidate": 0.6929249125043587
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "residual3979_vs_baseline",
+    "dataset": "CHEMBL3979_EC50",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.5469326146169193,
+        "candidate_mean": 0.5644302201036947,
+        "improvement_pct": -3.199225099975247,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.5469326146169193,
+            "candidate": 0.5644302201036947
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.6738334891276424,
+        "candidate_mean": 0.6279655056951262,
+        "improvement_pct": 6.807020454251651,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6738334891276424,
+            "candidate": 0.6279655056951262
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "residual_fppool_vs_baseline",
+    "dataset": "CHEMBL2047_EC50",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.43895077009779027,
+        "candidate_mean": 0.42274613413785245,
+        "improvement_pct": 3.6916750268663887,
+        "improved_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.4542996508552108,
+            "candidate": 0.41936108975062
+          },
+          {
+            "seed": 43,
+            "baseline": 0.4164663425786855,
+            "candidate": 0.4066997977702829
+          },
+          {
+            "seed": 44,
+            "baseline": 0.4460863168594746,
+            "candidate": 0.44217751489265444
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.4425719076482804,
+        "candidate_mean": 0.45580774230623167,
+        "improvement_pct": -2.9906630830418632,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.4526105761475638,
+            "candidate": 0.4827665680092493
+          },
+          {
+            "seed": 43,
+            "baseline": 0.40290849993296557,
+            "candidate": 0.4002594924133757
+          },
+          {
+            "seed": 44,
+            "baseline": 0.47219664686431195,
+            "candidate": 0.48439716649607006
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "residual_fppool_vs_baseline",
+    "dataset": "CHEMBL235_EC50",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.6386417097883632,
+        "candidate_mean": 0.6339442976691935,
+        "improvement_pct": 0.7355316834420973,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6381149340316895,
+            "candidate": 0.598564708633749
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6336331082106129,
+            "candidate": 0.6280613971118995
+          },
+          {
+            "seed": 44,
+            "baseline": 0.6441770871227871,
+            "candidate": 0.675206787261932
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.7647843188551635,
+        "candidate_mean": 0.7571734237981749,
+        "improvement_pct": 0.9951688167955245,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7631554165129811,
+            "candidate": 0.7179971966140931
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7293373167155933,
+            "candidate": 0.731234342155867
+          },
+          {
+            "seed": 44,
+            "baseline": 0.8018602233369162,
+            "candidate": 0.8222887326245645
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "residual_fppool_vs_baseline",
+    "dataset": "CHEMBL287_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7072927663934836,
+        "candidate_mean": 0.7048059549248682,
+        "improvement_pct": 0.3515957728927105,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7083557366087864,
+            "candidate": 0.6927676120337468
+          },
+          {
+            "seed": 43,
+            "baseline": 0.691636869117692,
+            "candidate": 0.6986935640734191
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7218856934539725,
+            "candidate": 0.7229566886674387
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.7005227190066067,
+        "candidate_mean": 0.6848410004251988,
+        "improvement_pct": 2.2385738757546254,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7155685717110796,
+            "candidate": 0.7217054442921045
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6768332860482439,
+            "candidate": 0.653380709716476
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7091662992604967,
+            "candidate": 0.6794368472670158
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "residual_fppool_vs_gmt",
+    "dataset": "CHEMBL2047_EC50",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.42248896159675314,
+        "candidate_mean": 0.42274613413785245,
+        "improvement_pct": -0.060870830832442886,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.4056545189063703,
+            "candidate": 0.41936108975062
+          },
+          {
+            "seed": 43,
+            "baseline": 0.4352382873115607,
+            "candidate": 0.4066997977702829
+          },
+          {
+            "seed": 44,
+            "baseline": 0.42657407857232843,
+            "candidate": 0.44217751489265444
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.47047498659970294,
+        "candidate_mean": 0.45580774230623167,
+        "improvement_pct": 3.1175396591170297,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.4912192602155719,
+            "candidate": 0.4827665680092493
+          },
+          {
+            "seed": 43,
+            "baseline": 0.4660284020944203,
+            "candidate": 0.4002594924133757
+          },
+          {
+            "seed": 44,
+            "baseline": 0.4541772974891166,
+            "candidate": 0.48439716649607006
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "residual_fppool_vs_gmt",
+    "dataset": "CHEMBL287_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7010457624720222,
+        "candidate_mean": 0.7048059549248682,
+        "improvement_pct": -0.536369043810609,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7215734340641028,
+            "candidate": 0.6927676120337468
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6731276684501568,
+            "candidate": 0.6986935640734191
+          },
+          {
+            "seed": 44,
+            "baseline": 0.708436184901807,
+            "candidate": 0.7229566886674387
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.7030190987317732,
+        "candidate_mean": 0.6848410004251988,
+        "improvement_pct": 2.5857189853543288,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7524671995164595,
+            "candidate": 0.7217054442921045
+          },
+          {
+            "seed": 43,
+            "baseline": 0.690583193943455,
+            "candidate": 0.653380709716476
+          },
+          {
+            "seed": 44,
+            "baseline": 0.666006902735405,
+            "candidate": 0.6794368472670158
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "true_membership_vs_permuted",
+    "dataset": "CHEMBL2047_EC50",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.43031147454178104,
+        "candidate_mean": 0.42274613413785245,
+        "improvement_pct": 1.7581079872398413,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.4305861760797498,
+            "candidate": 0.41936108975062
+          },
+          {
+            "seed": 43,
+            "baseline": 0.4055477687646923,
+            "candidate": 0.4066997977702829
+          },
+          {
+            "seed": 44,
+            "baseline": 0.454800478780901,
+            "candidate": 0.44217751489265444
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.43572124551034386,
+        "candidate_mean": 0.45580774230623167,
+        "improvement_pct": -4.609942022074516,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.5173470711634032,
+            "candidate": 0.4827665680092493
+          },
+          {
+            "seed": 43,
+            "baseline": 0.34969365697015564,
+            "candidate": 0.4002594924133757
+          },
+          {
+            "seed": 44,
+            "baseline": 0.44012300839747276,
+            "candidate": 0.48439716649607006
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "true_membership_vs_permuted",
+    "dataset": "CHEMBL287_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7056806596533044,
+        "candidate_mean": 0.7048059549248682,
+        "improvement_pct": 0.12395192024476624,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7086858201416047,
+            "candidate": 0.6927676120337468
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6863634043600859,
+            "candidate": 0.6986935640734191
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7219927544582225,
+            "candidate": 0.7229566886674387
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.7130522919649552,
+        "candidate_mean": 0.6848410004251988,
+        "improvement_pct": 3.9564127144188395,
+        "improved_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.723568911055443,
+            "candidate": 0.7217054442921045
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7052948640743559,
+            "candidate": 0.653380709716476
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7102931007650668,
+            "candidate": 0.6794368472670158
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "cross_vs_direct",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.6073953920062503,
+        "candidate_mean": 0.6938656532567121,
+        "improvement_pct": -14.236239258392674,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6155629054869616,
+            "candidate": 0.7024005847804078
+          },
+          {
+            "seed": 43,
+            "baseline": 0.5918245845375864,
+            "candidate": 0.6868065311105037
+          },
+          {
+            "seed": 44,
+            "baseline": 0.614798685994203,
+            "candidate": 0.6923898438792249
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.6621383978280105,
+        "candidate_mean": 0.7431795199483243,
+        "improvement_pct": -12.23930259688158,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6703955325438462,
+            "candidate": 0.750771675078579
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6514356765302316,
+            "candidate": 0.722798049351402
+          },
+          {
+            "seed": 44,
+            "baseline": 0.6645839844099539,
+            "candidate": 0.755968835414992
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_vs_direct",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7264796372563431,
+        "candidate_mean": 0.9105584822372221,
+        "improvement_pct": -25.338472758311543,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7311638912578117,
+            "candidate": 0.9034126936321617
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7238176677722062,
+            "candidate": 0.8858822759338107
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7244573527390116,
+            "candidate": 0.9423804771456938
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.8642776082079136,
+        "candidate_mean": 1.085042807587836,
+        "improvement_pct": -25.5433204890823,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8617367985339476,
+            "candidate": 1.0632781188593385
+          },
+          {
+            "seed": 43,
+            "baseline": 0.8570541617407385,
+            "candidate": 1.0326432077883343
+          },
+          {
+            "seed": 44,
+            "baseline": 0.8740418643490547,
+            "candidate": 1.1592070961158354
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_vs_pair_mlp",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.6788904527707742,
+        "candidate_mean": 0.6938656532567121,
+        "improvement_pct": -2.20583459744046,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6803540176472437,
+            "candidate": 0.7024005847804078
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6843505053858939,
+            "candidate": 0.6868065311105037
+          },
+          {
+            "seed": 44,
+            "baseline": 0.6719668352791851,
+            "candidate": 0.6923898438792249
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.730134887851513,
+        "candidate_mean": 0.7431795199483243,
+        "improvement_pct": -1.786605778446812,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7505110860007488,
+            "candidate": 0.750771675078579
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7087854368324573,
+            "candidate": 0.722798049351402
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7311081407213331,
+            "candidate": 0.755968835414992
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_vs_pair_mlp",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.8372272175772745,
+        "candidate_mean": 0.9105584822372221,
+        "improvement_pct": -8.758824739614886,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8133667407473288,
+            "candidate": 0.9034126936321617
+          },
+          {
+            "seed": 43,
+            "baseline": 0.825806354785438,
+            "candidate": 0.8858822759338107
+          },
+          {
+            "seed": 44,
+            "baseline": 0.8725085571990566,
+            "candidate": 0.9423804771456938
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.9876994132366878,
+        "candidate_mean": 1.085042807587836,
+        "improvement_pct": -9.855568713172994,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.9503422561022238,
+            "candidate": 1.0632781188593385
+          },
+          {
+            "seed": 43,
+            "baseline": 0.9860286675359917,
+            "candidate": 1.0326432077883343
+          },
+          {
+            "seed": 44,
+            "baseline": 1.0267273160718478,
+            "candidate": 1.1592070961158354
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_vs_global",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7287463246101897,
+        "candidate_mean": 0.6938656532567121,
+        "improvement_pct": 4.786394136826071,
+        "improved_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7165470563920642,
+            "candidate": 0.7024005847804078
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7598038928674263,
+            "candidate": 0.6868065311105037
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7098880245710787,
+            "candidate": 0.6923898438792249
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.7694388019844275,
+        "candidate_mean": 0.7431795199483243,
+        "improvement_pct": 3.4127837026647154,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7475415873124363,
+            "candidate": 0.750771675078579
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7968362605874438,
+            "candidate": 0.722798049351402
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7639385580534023,
+            "candidate": 0.755968835414992
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 2
+  },
+  {
+    "comparison": "cross_vs_global",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.8682552836448679,
+        "candidate_mean": 0.9105584822372221,
+        "improvement_pct": -4.872207447418998,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8941309427304965,
+            "candidate": 0.9034126936321617
+          },
+          {
+            "seed": 43,
+            "baseline": 0.8443867072398665,
+            "candidate": 0.8858822759338107
+          },
+          {
+            "seed": 44,
+            "baseline": 0.8662482009642407,
+            "candidate": 0.9423804771456938
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.9996120061295533,
+        "candidate_mean": 1.085042807587836,
+        "improvement_pct": -8.546396095127593,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 1.0217487639440428,
+            "candidate": 1.0632781188593385
+          },
+          {
+            "seed": 43,
+            "baseline": 0.9638038413938151,
+            "candidate": 1.0326432077883343
+          },
+          {
+            "seed": 44,
+            "baseline": 1.0132834130508017,
+            "candidate": 1.1592070961158354
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "branch_cross_vs_full",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7418689894597396,
+        "candidate_mean": 0.7137774543484786,
+        "improvement_pct": 3.786589749723653,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7418689894597396,
+            "candidate": 0.7137774543484786
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.771412911108169,
+        "candidate_mean": 0.7707836098194875,
+        "improvement_pct": 0.08157774903942563,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.771412911108169,
+            "candidate": 0.7707836098194875
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "branch_cross_vs_full",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.9136961935181571,
+        "candidate_mean": 0.9242901410412555,
+        "improvement_pct": -1.1594606170248718,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.9136961935181571,
+            "candidate": 0.9242901410412555
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 1.038045553428822,
+        "candidate_mean": 1.0892435212835545,
+        "improvement_pct": -4.932150394134233,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 1.038045553428822,
+            "candidate": 1.0892435212835545
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "branch_cross_vs_short",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7220700925350925,
+        "candidate_mean": 0.7137774543484786,
+        "improvement_pct": 1.1484533527070067,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7220700925350925,
+            "candidate": 0.7137774543484786
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.7912037444243643,
+        "candidate_mean": 0.7707836098194875,
+        "improvement_pct": 2.580894586100998,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7912037444243643,
+            "candidate": 0.7707836098194875
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "branch_cross_vs_short",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.9135092895648472,
+        "candidate_mean": 0.9242901410412555,
+        "improvement_pct": -1.1801578374253612,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.9135092895648472,
+            "candidate": 0.9242901410412555
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 1.1043633510395137,
+        "candidate_mean": 1.0892435212835545,
+        "improvement_pct": 1.3690991956340441,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 1.1043633510395137,
+            "candidate": 1.0892435212835545
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "global_fp_vs_global",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7381754746297453,
+        "candidate_mean": 0.6986443318526177,
+        "improvement_pct": 5.355250091037734,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7165470563920642,
+            "candidate": 0.6800759004284621
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7598038928674263,
+            "candidate": 0.7172127632767731
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.77218892394994,
+        "candidate_mean": 0.7054089202458023,
+        "improvement_pct": 8.648143172339388,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7475415873124363,
+            "candidate": 0.6785360763759154
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7968362605874438,
+            "candidate": 0.7322817641156891
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 2
+  },
+  {
+    "comparison": "global_fp_vs_global",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.8692588249851816,
+        "candidate_mean": 0.9267425292941325,
+        "improvement_pct": -6.61295607898267,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8941309427304965,
+            "candidate": 0.9099556504969412
+          },
+          {
+            "seed": 43,
+            "baseline": 0.8443867072398665,
+            "candidate": 0.9435294080913239
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.9927763026689289,
+        "candidate_mean": 1.118480187101393,
+        "improvement_pct": -12.661853843058921,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 1.0217487639440428,
+            "candidate": 1.1012843443239226
+          },
+          {
+            "seed": 43,
+            "baseline": 0.9638038413938151,
+            "candidate": 1.135676029878863
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_fp_vs_cross",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.6946035579454557,
+        "candidate_mean": 0.7072290979162592,
+        "improvement_pct": -1.8176612869862296,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7024005847804078,
+            "candidate": 0.7029197990970232
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6868065311105037,
+            "candidate": 0.7115383967354953
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.7367848622149905,
+        "candidate_mean": 0.7500064515138656,
+        "improvement_pct": -1.794497956856376,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.750771675078579,
+            "candidate": 0.7497162944984456
+          },
+          {
+            "seed": 43,
+            "baseline": 0.722798049351402,
+            "candidate": 0.7502966085292857
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_fp_vs_cross",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.8946474847829862,
+        "candidate_mean": 0.9152721588562638,
+        "improvement_pct": -2.305340865992657,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.9034126936321617,
+            "candidate": 0.9156080687235152
+          },
+          {
+            "seed": 43,
+            "baseline": 0.8858822759338107,
+            "candidate": 0.9149362489890125
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 1.0479606633238365,
+        "candidate_mean": 1.1166086448125547,
+        "improvement_pct": -6.550625790760706,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 1.0632781188593385,
+            "candidate": 1.1142195170869145
+          },
+          {
+            "seed": 43,
+            "baseline": 1.0326432077883343,
+            "candidate": 1.118997772538195
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "global_dynamic_vs_global",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7381754746297453,
+        "candidate_mean": 0.757401536429231,
+        "improvement_pct": -2.6045381430653927,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7165470563920642,
+            "candidate": 0.7473910130768033
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7598038928674263,
+            "candidate": 0.7674120597816587
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.77218892394994,
+        "candidate_mean": 0.7804061776623703,
+        "improvement_pct": -1.0641506835395933,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7475415873124363,
+            "candidate": 0.7722434605224195
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7968362605874438,
+            "candidate": 0.7885688948023212
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "global_dynamic_vs_global",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.8692588249851816,
+        "candidate_mean": 0.938521110264287,
+        "improvement_pct": -7.967970331539184,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8941309427304965,
+            "candidate": 0.943473208288892
+          },
+          {
+            "seed": 43,
+            "baseline": 0.8443867072398665,
+            "candidate": 0.9335690122396819
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.9927763026689289,
+        "candidate_mean": 1.1348751613871992,
+        "improvement_pct": -14.313280679268738,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 1.0217487639440428,
+            "candidate": 1.1409259314415292
+          },
+          {
+            "seed": 43,
+            "baseline": 0.9638038413938151,
+            "candidate": 1.1288243913328693
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_dynamic_vs_cross",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.6946035579454557,
+        "candidate_mean": 0.7192394039670547,
+        "improvement_pct": -3.546749183731292,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7024005847804078,
+            "candidate": 0.6836356495604091
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6868065311105037,
+            "candidate": 0.7548431583737003
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.7367848622149905,
+        "candidate_mean": 0.784309619354793,
+        "improvement_pct": -6.450289572580147,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.750771675078579,
+            "candidate": 0.7365586796297876
+          },
+          {
+            "seed": 43,
+            "baseline": 0.722798049351402,
+            "candidate": 0.8320605590797985
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "cross_dynamic_vs_cross",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.8946474847829862,
+        "candidate_mean": 0.9239104888554069,
+        "improvement_pct": -3.27089770777359,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.9034126936321617,
+            "candidate": 0.9191740122551736
+          },
+          {
+            "seed": 43,
+            "baseline": 0.8858822759338107,
+            "candidate": 0.9286469654556403
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 1.0479606633238365,
+        "candidate_mean": 1.1276940718118458,
+        "improvement_pct": -7.60843524747554,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 1.0632781188593385,
+            "candidate": 1.124204955523941
+          },
+          {
+            "seed": 43,
+            "baseline": 1.0326432077883343,
+            "candidate": 1.1311831880997507
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_fp_dynamic_vs_direct",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.6036937450122739,
+        "candidate_mean": 0.7488794206485625,
+        "improvement_pct": -24.049557716278272,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6155629054869616,
+            "candidate": 0.7505774058670222
+          },
+          {
+            "seed": 43,
+            "baseline": 0.5918245845375864,
+            "candidate": 0.747181435430103
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.6609156045370389,
+        "candidate_mean": 0.8102561271256856,
+        "improvement_pct": -22.59600493065335,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6703955325438462,
+            "candidate": 0.7968985106775022
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6514356765302316,
+            "candidate": 0.823613743573869
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "cross_fp_dynamic_vs_direct",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7311638912578117,
+        "candidate_mean": 0.9362949699689116,
+        "improvement_pct": -28.05541700893019,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7311638912578117,
+            "candidate": 0.9362949699689116
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.8617367985339476,
+        "candidate_mean": 1.1507057130889922,
+        "improvement_pct": -33.5333149340565,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8617367985339476,
+            "candidate": 1.1507057130889922
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "balanced_vs_mse",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.5980261103878366,
+        "candidate_mean": 0.5882037270628189,
+        "improvement_pct": 1.642467302748309,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.5820245724061588,
+            "candidate": 0.6019381906252661
+          },
+          {
+            "seed": 43,
+            "baseline": 0.634437558386565,
+            "candidate": 0.5759392409621411
+          },
+          {
+            "seed": 44,
+            "baseline": 0.5776162003707861,
+            "candidate": 0.5867337496010494
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.6440120746769467,
+        "candidate_mean": 0.6366894746327476,
+        "improvement_pct": 1.1370283775924936,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6411758813389486,
+            "candidate": 0.6854185588081452
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6750231969152379,
+            "candidate": 0.6122417022571736
+          },
+          {
+            "seed": 44,
+            "baseline": 0.6158371457766534,
+            "candidate": 0.612408162832924
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "balanced_vs_mse",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7312969784309767,
+        "candidate_mean": 0.7421626888342743,
+        "improvement_pct": -1.4858136603559196,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7260271593658836,
+            "candidate": 0.7577056385155878
+          },
+          {
+            "seed": 43,
+            "baseline": 0.731892931469005,
+            "candidate": 0.7369339726467858
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7359708444580416,
+            "candidate": 0.7318484553404492
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.8481926386762186,
+        "candidate_mean": 0.8615004510440064,
+        "improvement_pct": -1.5689610780585632,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8431369526565398,
+            "candidate": 0.8786421426623259
+          },
+          {
+            "seed": 43,
+            "baseline": 0.8518745615259652,
+            "candidate": 0.8577369616364778
+          },
+          {
+            "seed": 44,
+            "baseline": 0.8495664018461508,
+            "candidate": 0.8481222488332155
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "balanced_vs_uniform",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.5972125699033689,
+        "candidate_mean": 0.5882037270628189,
+        "improvement_pct": 1.5084817859757536,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.5902978171737776,
+            "candidate": 0.6019381906252661
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6074920440821567,
+            "candidate": 0.5759392409621411
+          },
+          {
+            "seed": 44,
+            "baseline": 0.5938478484541723,
+            "candidate": 0.5867337496010494
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.623999686747901,
+        "candidate_mean": 0.6366894746327476,
+        "improvement_pct": -2.033620874231847,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6190896675798127,
+            "candidate": 0.6854185588081452
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6095884411443425,
+            "candidate": 0.6122417022571736
+          },
+          {
+            "seed": 44,
+            "baseline": 0.6433209515195476,
+            "candidate": 0.612408162832924
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "balanced_vs_uniform",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7234849372831661,
+        "candidate_mean": 0.7421626888342743,
+        "improvement_pct": -2.5816365467464957,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.7350660885270737,
+            "candidate": 0.7577056385155878
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7247684076800959,
+            "candidate": 0.7369339726467858
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7106203156423289,
+            "candidate": 0.7318484553404492
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.8519262211117651,
+        "candidate_mean": 0.8615004510440064,
+        "improvement_pct": -1.1238332258099704,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8808785260686589,
+            "candidate": 0.8786421426623259
+          },
+          {
+            "seed": 43,
+            "baseline": 0.8561908728907731,
+            "candidate": 0.8577369616364778
+          },
+          {
+            "seed": 44,
+            "baseline": 0.8187092643758632,
+            "candidate": 0.8481222488332155
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "balanced_vs_permuted",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.6074073443841486,
+        "candidate_mean": 0.5882037270628189,
+        "improvement_pct": 3.1615714724029678,
+        "improved_seeds": 3,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.611132740504201,
+            "candidate": 0.6019381906252661
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6176598541095029,
+            "candidate": 0.5759392409621411
+          },
+          {
+            "seed": 44,
+            "baseline": 0.5934294385387419,
+            "candidate": 0.5867337496010494
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.6515765733323362,
+        "candidate_mean": 0.6366894746327476,
+        "improvement_pct": 2.2847811460519534,
+        "improved_seeds": 2,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.643628196095376,
+            "candidate": 0.6854185588081452
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6535606444858743,
+            "candidate": 0.6122417022571736
+          },
+          {
+            "seed": 44,
+            "baseline": 0.6575408794157582,
+            "candidate": 0.612408162832924
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 2
+  },
+  {
+    "comparison": "balanced_vs_permuted",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.7193337897932915,
+        "candidate_mean": 0.7421626888342743,
+        "improvement_pct": -3.1736169445818563,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.6935374124309082,
+            "candidate": 0.7577056385155878
+          },
+          {
+            "seed": 43,
+            "baseline": 0.7228893729804857,
+            "candidate": 0.7369339726467858
+          },
+          {
+            "seed": 44,
+            "baseline": 0.7415745839684809,
+            "candidate": 0.7318484553404492
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.8346160260899629,
+        "candidate_mean": 0.8615004510440064,
+        "improvement_pct": -3.221172864364058,
+        "improved_seeds": 0,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.8230609991173738,
+            "candidate": 0.8786421426623259
+          },
+          {
+            "seed": 43,
+            "baseline": 0.841976245511917,
+            "candidate": 0.8577369616364778
+          },
+          {
+            "seed": 44,
+            "baseline": 0.8388108336405977,
+            "candidate": 0.8481222488332155
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 0
+  },
+  {
+    "comparison": "aca_vs_mse",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "overall_rmse": {
+        "baseline_mean": 0.5909789273627334,
+        "candidate_mean": 0.6178419583684999,
+        "improvement_pct": -4.54551419043718,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.5800601286833155,
+            "candidate": 0.6250233597838626
+          },
+          {
+            "seed": 43,
+            "baseline": 0.5891419589615162,
+            "candidate": 0.6294670859769022
+          },
+          {
+            "seed": 44,
+            "baseline": 0.6037346944433684,
+            "candidate": 0.5990354293447347
+          }
+        ]
+      },
+      "cliff_rmse": {
+        "baseline_mean": 0.6393403338602933,
+        "candidate_mean": 0.6586064268492241,
+        "improvement_pct": -3.0134330603863875,
+        "improved_seeds": 1,
+        "per_seed": [
+          {
+            "seed": 42,
+            "baseline": 0.632782928150926,
+            "candidate": 0.6749972518310603
+          },
+          {
+            "seed": 43,
+            "baseline": 0.6442571335152916,
+            "candidate": 0.6656362107274036
+          },
+          {
+            "seed": 44,
+            "baseline": 0.6409809399146624,
+            "candidate": 0.6351858179892084
+          }
+        ]
+      }
+    },
+    "joint_improved_seeds": 1
+  },
+  {
+    "comparison": "roughness_vs_generic",
+    "dataset": "CHEMBL234_Ki",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "mean_selective_rmse": {
+        "baseline_mean": 0.7282904207074105,
+        "candidate_mean": 0.7131408164093181,
+        "improvement_pct": 2.0801597642019023,
+        "improved_seeds": 1
+      }
+    }
+  },
+  {
+    "comparison": "roughness_vs_generic",
+    "dataset": "CHEMBL244_Ki",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "mean_selective_rmse": {
+        "baseline_mean": 0.8750862548642012,
+        "candidate_mean": 0.853320965916177,
+        "improvement_pct": 2.4872164117583835,
+        "improved_seeds": 1
+      }
+    }
+  },
+  {
+    "comparison": "roughness_vs_generic",
+    "dataset": "CHEMBL4792_Ki",
+    "seeds": [
+      42
+    ],
+    "metrics": {
+      "mean_selective_rmse": {
+        "baseline_mean": 0.7596670808585158,
+        "candidate_mean": 0.7311028875629493,
+        "improvement_pct": 3.7600936009081085,
+        "improved_seeds": 1
+      }
+    }
+  }
+]
