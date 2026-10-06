@@ -1,0 +1,3040 @@
+{
+  "status": "pass",
+  "code_commit": "9782d0adea536eb2d78b63167855956261263c98",
+  "runner_sha256": "29a9084e69aa054e1f7c90ea303895dce61c58bc0726baf77be144cf2536ed5c",
+  "seconds": 0.48399999999674037,
+  "source_bindings": [
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\local_reuse_inventory.json",
+      "exists": true,
+      "sha256": "8298e69fc812cd094c8b6424568dd09f16b3a0f350e0eb892d05914c7ea7eaff",
+      "expected_sha256": "8298e69fc812cd094c8b6424568dd09f16b3a0f350e0eb892d05914c7ea7eaff",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\fixed_protocol.json",
+      "exists": true,
+      "sha256": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+      "expected_sha256": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\phase_a_results.json",
+      "exists": true,
+      "sha256": "1a599ae818c72a296c4ef55b1943e47f2d0782a155803007c5e7175d08aae593",
+      "expected_sha256": "1a599ae818c72a296c4ef55b1943e47f2d0782a155803007c5e7175d08aae593",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\objective_diagnostic_results.json",
+      "exists": true,
+      "sha256": "dbd2ec4656da719673050bc3078f82e8236064f4aa33d39faf53687820607ea0",
+      "expected_sha256": "dbd2ec4656da719673050bc3078f82e8236064f4aa33d39faf53687820607ea0",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\support_diagnostic_results.json",
+      "exists": true,
+      "sha256": "9516094be3230f4227e7771b3ae566d0f528aad45424e35861db2f99d9c2a999",
+      "expected_sha256": "9516094be3230f4227e7771b3ae566d0f528aad45424e35861db2f99d9c2a999",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\reliability_core_review_20261006\\decision.json",
+      "exists": true,
+      "sha256": "bafd74ef3a9a7b6d88e5b73835eb60f84491166dd0f702cb40191cb63221d922",
+      "expected_sha256": "bafd74ef3a9a7b6d88e5b73835eb60f84491166dd0f702cb40191cb63221d922",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\reliability_core_review_20261006\\report.md",
+      "exists": true,
+      "sha256": "e9e75655ebfcf1d202415fd4cf7ddd11bf5cb1fd9a4763229ea42aba0c0ea6fd",
+      "expected_sha256": "e9e75655ebfcf1d202415fd4cf7ddd11bf5cb1fd9a4763229ea42aba0c0ea6fd",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\component_roughness_pilot_20261006\\results.json",
+      "exists": true,
+      "sha256": "04ac5a445f06986be4e6aeeb6d3ade6f43fae668ea8736e1bfd000660d05f846",
+      "expected_sha256": "04ac5a445f06986be4e6aeeb6d3ade6f43fae668ea8736e1bfd000660d05f846",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\component_roughness_cases_20261006\\report.md",
+      "exists": true,
+      "sha256": "c363092a05d68e706aec3b8bbb1dd3991a2f94f6aa30805d7b06657c166a2bc2",
+      "expected_sha256": "c363092a05d68e706aec3b8bbb1dd3991a2f94f6aa30805d7b06657c166a2bc2",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\component_roughness_cases_20261006\\verification.json",
+      "exists": true,
+      "sha256": "e48bfbb3165010168466e3e897e18136f70d29cb721e0243f847cd373c8c7202",
+      "expected_sha256": "e48bfbb3165010168466e3e897e18136f70d29cb721e0243f847cd373c8c7202",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\module_pause_review_20261006\\comparisons.json",
+      "exists": true,
+      "sha256": "7427a1fc00c9cdcd6730f38f9d96b31061523a970e536a85f9e4c457f5f601f1",
+      "expected_sha256": "7427a1fc00c9cdcd6730f38f9d96b31061523a970e536a85f9e4c457f5f601f1",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\module_pause_review_20261006\\report.md",
+      "exists": true,
+      "sha256": "c936641eb644e6069bb6aa7337d3fdcf9a40556be1a24d58571ac742957392db",
+      "expected_sha256": "c936641eb644e6069bb6aa7337d3fdcf9a40556be1a24d58571ac742957392db",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\component_role_feasibility_20261006\\results.json",
+      "exists": true,
+      "sha256": "75b5c70255caa069ad6616d6abf7207ed1c5bba7dedba4f67f5829c5feadfb7e",
+      "expected_sha256": "75b5c70255caa069ad6616d6abf7207ed1c5bba7dedba4f67f5829c5feadfb7e",
+      "matches": true
+    }
+  ],
+  "historic_assets": [
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL1862_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL1862_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "2a35e090e1087d7cab9dcd737b66e76cfc992f2a9640ee4cf6d67f482d281f90",
+          "expected_sha256": "2a35e090e1087d7cab9dcd737b66e76cfc992f2a9640ee4cf6d67f482d281f90",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL1862_Ki\\best.pt",
+          "exists": true,
+          "sha256": "514b0d6a5f7ba34773c654c026e20783561b6d4e1e6e8be1fbcdb2086f0a60be",
+          "expected_sha256": "514b0d6a5f7ba34773c654c026e20783561b6d4e1e6e8be1fbcdb2086f0a60be",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL1871_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL1871_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "cc78a9b56b0151fb43c04642c7c9459c219ba0d1876798a4f99f12e4bf4e2b60",
+          "expected_sha256": "cc78a9b56b0151fb43c04642c7c9459c219ba0d1876798a4f99f12e4bf4e2b60",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL1871_Ki\\best.pt",
+          "exists": true,
+          "sha256": "f8487ba82324b956ab63d865bf7af4c493c14a8c707a55a1d166c936736b627a",
+          "expected_sha256": "f8487ba82324b956ab63d865bf7af4c493c14a8c707a55a1d166c936736b627a",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL2034_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL2034_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "a6a3a5abcbf2de5bf4e30b804e094448d00f096732055f5f038bc0904df3093d",
+          "expected_sha256": "a6a3a5abcbf2de5bf4e30b804e094448d00f096732055f5f038bc0904df3093d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL2034_Ki\\best.pt",
+          "exists": true,
+          "sha256": "cbb72637d772bbc0741acd5bac1066e9b426c92b7382c2b7a158433be53bd96f",
+          "expected_sha256": "cbb72637d772bbc0741acd5bac1066e9b426c92b7382c2b7a158433be53bd96f",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL2047_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL2047_EC50\\manifest.json",
+          "exists": true,
+          "sha256": "42cf63a3374c95e69af1ed0a4babae2c7aaf6b692937c48fa4c919fe36e3cf6f",
+          "expected_sha256": "42cf63a3374c95e69af1ed0a4babae2c7aaf6b692937c48fa4c919fe36e3cf6f",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL2047_EC50\\best.pt",
+          "exists": true,
+          "sha256": "ddf74600485a3b810579187dda64905f5e3c8662642be0dcdaadb12e4a15edd0",
+          "expected_sha256": "ddf74600485a3b810579187dda64905f5e3c8662642be0dcdaadb12e4a15edd0",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL204_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL204_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "81b840fac48e0c994a1a9d859d086e754191c8e1c2dbcb22d608db231e26cb4e",
+          "expected_sha256": "81b840fac48e0c994a1a9d859d086e754191c8e1c2dbcb22d608db231e26cb4e",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL204_Ki\\best.pt",
+          "exists": true,
+          "sha256": "56e0df3092a8a6bec4a32649204830b00112d9f74b3e69c00d291432d0963e52",
+          "expected_sha256": "56e0df3092a8a6bec4a32649204830b00112d9f74b3e69c00d291432d0963e52",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL2147_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL2147_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "7b1279642a5f479963a3668e30c00a5317d57ac7cc50825cb5bec523ca658952",
+          "expected_sha256": "7b1279642a5f479963a3668e30c00a5317d57ac7cc50825cb5bec523ca658952",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL2147_Ki\\best.pt",
+          "exists": true,
+          "sha256": "4069099ff6c59254459d3fc6576ef603b71a5e11b53cfa17fedce6a54f16e306",
+          "expected_sha256": "4069099ff6c59254459d3fc6576ef603b71a5e11b53cfa17fedce6a54f16e306",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL214_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL214_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "f6748e76c601ee1225824e8444da506163f058111c351617c869a481f20de598",
+          "expected_sha256": "f6748e76c601ee1225824e8444da506163f058111c351617c869a481f20de598",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL214_Ki\\best.pt",
+          "exists": true,
+          "sha256": "14a27391055650370a40625219d0ec5d0532e258152bc163209a411ad208b8c1",
+          "expected_sha256": "14a27391055650370a40625219d0ec5d0532e258152bc163209a411ad208b8c1",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL218_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL218_EC50\\manifest.json",
+          "exists": true,
+          "sha256": "2411a85cf1702b79a92770c64c6f48d76204f85cfb2941edf9d571b9a5bdf0a9",
+          "expected_sha256": "2411a85cf1702b79a92770c64c6f48d76204f85cfb2941edf9d571b9a5bdf0a9",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL218_EC50\\best.pt",
+          "exists": true,
+          "sha256": "37bcd0a47b466d37b29cc9bfe05942f922c9763000853f0922dbab13aea9912c",
+          "expected_sha256": "37bcd0a47b466d37b29cc9bfe05942f922c9763000853f0922dbab13aea9912c",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL219_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL219_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "025e094bab64df6b7855bd9368a8fb34b22b6028fe16241a6ed76ee099dc2c6b",
+          "expected_sha256": "025e094bab64df6b7855bd9368a8fb34b22b6028fe16241a6ed76ee099dc2c6b",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL219_Ki\\best.pt",
+          "exists": true,
+          "sha256": "744f8c8e3e7349d029de19b75b43108c4f7f9c0a4dbd60f58396b474448d6243",
+          "expected_sha256": "744f8c8e3e7349d029de19b75b43108c4f7f9c0a4dbd60f58396b474448d6243",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL228_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL228_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "bb664616c0ad5dac3ad81a5fa858c35b5cb931f08116424457005e27ad0375ea",
+          "expected_sha256": "bb664616c0ad5dac3ad81a5fa858c35b5cb931f08116424457005e27ad0375ea",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL228_Ki\\best.pt",
+          "exists": true,
+          "sha256": "5633394087ee534ec0bd3bab4a001aab74557059774f9c4ead9dc806c067b18d",
+          "expected_sha256": "5633394087ee534ec0bd3bab4a001aab74557059774f9c4ead9dc806c067b18d",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL231_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL231_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "3c6824e071eab5b633ddc267067e373749bcaf25fc45692695f57fb2bafa1f10",
+          "expected_sha256": "3c6824e071eab5b633ddc267067e373749bcaf25fc45692695f57fb2bafa1f10",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL231_Ki\\best.pt",
+          "exists": true,
+          "sha256": "b10b246f8d79ec52aaf63e0a417edccc92a16ed6df174a24e7f244f59c539d67",
+          "expected_sha256": "b10b246f8d79ec52aaf63e0a417edccc92a16ed6df174a24e7f244f59c539d67",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL233_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL233_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "41053a51c75f489a704b430b30d5683d551afa06920880f34c82c8cb46c6e659",
+          "expected_sha256": "41053a51c75f489a704b430b30d5683d551afa06920880f34c82c8cb46c6e659",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL233_Ki\\best.pt",
+          "exists": true,
+          "sha256": "bb9b72b52e0b359c16d570ff604af9881c6458b101038928fa50ae4fb6fbcdad",
+          "expected_sha256": "bb9b72b52e0b359c16d570ff604af9881c6458b101038928fa50ae4fb6fbcdad",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL234_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL234_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "003379c3fd6653444c6baaceeea2795d17295e070daeb0203a8ba5bffbb7990a",
+          "expected_sha256": "003379c3fd6653444c6baaceeea2795d17295e070daeb0203a8ba5bffbb7990a",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL234_Ki\\best.pt",
+          "exists": true,
+          "sha256": "2e3444e15014eec3cc76930f99c7f1ab4321aec09f9d0be6a7a145d01f9ec5e0",
+          "expected_sha256": "2e3444e15014eec3cc76930f99c7f1ab4321aec09f9d0be6a7a145d01f9ec5e0",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL235_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL235_EC50\\manifest.json",
+          "exists": true,
+          "sha256": "30a4447533c6effd833e901285ece29e3985de964833c3c436529abacc480d59",
+          "expected_sha256": "30a4447533c6effd833e901285ece29e3985de964833c3c436529abacc480d59",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL235_EC50\\best.pt",
+          "exists": true,
+          "sha256": "cce3158184914be0de65b9beb6a430294944bda5c8e39337440177f65b53f4e4",
+          "expected_sha256": "cce3158184914be0de65b9beb6a430294944bda5c8e39337440177f65b53f4e4",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL236_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL236_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "4fbfb36cb5aef2d3af954dfeea2fe2393ce1fd716de09cabc50ae8c6cd4cdde7",
+          "expected_sha256": "4fbfb36cb5aef2d3af954dfeea2fe2393ce1fd716de09cabc50ae8c6cd4cdde7",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL236_Ki\\best.pt",
+          "exists": true,
+          "sha256": "8c1997c79935d2e8b7e333a85780a0265c86eb5f7881d9d2ba1cb0bfb4488c7f",
+          "expected_sha256": "8c1997c79935d2e8b7e333a85780a0265c86eb5f7881d9d2ba1cb0bfb4488c7f",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL237_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL237_EC50\\manifest.json",
+          "exists": true,
+          "sha256": "d4fd5f8c09c2dc8007f858ab10060707acbe886432076991378d7bfca3caa091",
+          "expected_sha256": "d4fd5f8c09c2dc8007f858ab10060707acbe886432076991378d7bfca3caa091",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL237_EC50\\best.pt",
+          "exists": true,
+          "sha256": "15fb36d64d73262daa0f2e75a821cead2c88b7238f3f29310904371ee42676df",
+          "expected_sha256": "15fb36d64d73262daa0f2e75a821cead2c88b7238f3f29310904371ee42676df",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL237_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL237_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "4e56a0c5fd2e9562f2b4f74e059eda3d94bf5b7447551f130293e71ede822531",
+          "expected_sha256": "4e56a0c5fd2e9562f2b4f74e059eda3d94bf5b7447551f130293e71ede822531",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL237_Ki\\best.pt",
+          "exists": true,
+          "sha256": "4d43a100d9f81a4da9865cf638359f7470dfbe54693872bccc8a5e08c2653a8f",
+          "expected_sha256": "4d43a100d9f81a4da9865cf638359f7470dfbe54693872bccc8a5e08c2653a8f",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL238_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL238_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "a56e6daa644dabf91092e6e1092f7944d137e3e3a8f18118f4ab19dae9801844",
+          "expected_sha256": "a56e6daa644dabf91092e6e1092f7944d137e3e3a8f18118f4ab19dae9801844",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL238_Ki\\best.pt",
+          "exists": true,
+          "sha256": "014e88deefd51258c9ff1b87908a718ef877947c9d0f6518e2c27c9d3c7deed1",
+          "expected_sha256": "014e88deefd51258c9ff1b87908a718ef877947c9d0f6518e2c27c9d3c7deed1",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL239_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL239_EC50\\manifest.json",
+          "exists": true,
+          "sha256": "c9e06364d2044356389abcbfd4326199daa1db9792e998df3b23670d35f37fe5",
+          "expected_sha256": "c9e06364d2044356389abcbfd4326199daa1db9792e998df3b23670d35f37fe5",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL239_EC50\\best.pt",
+          "exists": true,
+          "sha256": "e1583467b9424cb53443a479e720b7e1f62a8a432d24bbefeeb9fa34a9518d9e",
+          "expected_sha256": "e1583467b9424cb53443a479e720b7e1f62a8a432d24bbefeeb9fa34a9518d9e",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL244_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL244_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "1bd65671d19cf43a0ce6c346436d9af99d1c6267ba58d59de6c2b474e052a043",
+          "expected_sha256": "1bd65671d19cf43a0ce6c346436d9af99d1c6267ba58d59de6c2b474e052a043",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL244_Ki\\best.pt",
+          "exists": true,
+          "sha256": "844fadb335f834dcc19b1773d4e1ae2d4d82d9b917bed909f1ff17b3e8e78f5b",
+          "expected_sha256": "844fadb335f834dcc19b1773d4e1ae2d4d82d9b917bed909f1ff17b3e8e78f5b",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL262_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL262_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "1b9b43305c81b11c59839344c6128b72d0faa8b78793abaf1c542a871c2ad78b",
+          "expected_sha256": "1b9b43305c81b11c59839344c6128b72d0faa8b78793abaf1c542a871c2ad78b",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL262_Ki\\best.pt",
+          "exists": true,
+          "sha256": "01f9392f6d4448f5fe566648195427e480ea22999c83a01ddf8602c844ee4c05",
+          "expected_sha256": "01f9392f6d4448f5fe566648195427e480ea22999c83a01ddf8602c844ee4c05",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL264_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL264_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "386c63487f13aeae44d6ccf5d92a162add9976b5ee20ef2b3449cfbbbc94497d",
+          "expected_sha256": "386c63487f13aeae44d6ccf5d92a162add9976b5ee20ef2b3449cfbbbc94497d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL264_Ki\\best.pt",
+          "exists": true,
+          "sha256": "e6a115d97b2ff7a1c1517f7b7df377fb31839b9e3db80600ea4a022ad1426484",
+          "expected_sha256": "e6a115d97b2ff7a1c1517f7b7df377fb31839b9e3db80600ea4a022ad1426484",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL2835_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL2835_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "de4ce2ed3fdac1b4b68da3aa5799ca47a37e9e8eccb2040aa8457d725caf0925",
+          "expected_sha256": "de4ce2ed3fdac1b4b68da3aa5799ca47a37e9e8eccb2040aa8457d725caf0925",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL2835_Ki\\best.pt",
+          "exists": true,
+          "sha256": "3423b466966e955b231a6b41d54a184396fbe84a3328f5169df314c5b9003fa1",
+          "expected_sha256": "3423b466966e955b231a6b41d54a184396fbe84a3328f5169df314c5b9003fa1",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL287_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL287_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "b28081a5c8e6fc4c26e38a05ee2a27d0691a4c46b2608788a00bda9f308e311a",
+          "expected_sha256": "b28081a5c8e6fc4c26e38a05ee2a27d0691a4c46b2608788a00bda9f308e311a",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL287_Ki\\best.pt",
+          "exists": true,
+          "sha256": "9876436e5ec57f3f829de774058c7c31d542eaa226edf2ea5b36458d3ecc68ef",
+          "expected_sha256": "9876436e5ec57f3f829de774058c7c31d542eaa226edf2ea5b36458d3ecc68ef",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL2971_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL2971_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "8fc7201e6da16e5d80b538dd6b98a5e9ef4dcfa3deaadf257c25b8a521f7efe9",
+          "expected_sha256": "8fc7201e6da16e5d80b538dd6b98a5e9ef4dcfa3deaadf257c25b8a521f7efe9",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL2971_Ki\\best.pt",
+          "exists": true,
+          "sha256": "9dfaeb8bf5a9aef2fb4f986f29936059762ea77eabf2bea2f1bf2ae9ad6a06ae",
+          "expected_sha256": "9dfaeb8bf5a9aef2fb4f986f29936059762ea77eabf2bea2f1bf2ae9ad6a06ae",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL3979_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL3979_EC50\\manifest.json",
+          "exists": true,
+          "sha256": "d6088b1f33df0e06ab60dab9bca72b10983927b8089e6949d6418ae1ed795ce3",
+          "expected_sha256": "d6088b1f33df0e06ab60dab9bca72b10983927b8089e6949d6418ae1ed795ce3",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL3979_EC50\\best.pt",
+          "exists": true,
+          "sha256": "0dcece309f774ffbbcf9687c3611936e90b1fb2ec5509723627745aa62ea8ea5",
+          "expected_sha256": "0dcece309f774ffbbcf9687c3611936e90b1fb2ec5509723627745aa62ea8ea5",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL4005_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL4005_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "3f3d25a14fbaf5e7dbb3f2f56b85bd736238024577ff506af1244943c2e49ecc",
+          "expected_sha256": "3f3d25a14fbaf5e7dbb3f2f56b85bd736238024577ff506af1244943c2e49ecc",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL4005_Ki\\best.pt",
+          "exists": true,
+          "sha256": "7d0129892f908e693208a405f92f7b65cca91977e4d7662a0199249d5f6ac4d8",
+          "expected_sha256": "7d0129892f908e693208a405f92f7b65cca91977e4d7662a0199249d5f6ac4d8",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL4203_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL4203_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "d71a86dcf03708a99651cd432b485317d095083cf30ad28c731cb6cbc155985f",
+          "expected_sha256": "d71a86dcf03708a99651cd432b485317d095083cf30ad28c731cb6cbc155985f",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL4203_Ki\\best.pt",
+          "exists": true,
+          "sha256": "b0b65e8d7686081c8e89714a6f6f063b91338165c195d0a43c70997c66235886",
+          "expected_sha256": "b0b65e8d7686081c8e89714a6f6f063b91338165c195d0a43c70997c66235886",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL4616_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL4616_EC50\\manifest.json",
+          "exists": true,
+          "sha256": "aa58c4f1c445ea4f117e3e7e5aec162b7bef9a16d6f7aa3e9d8776e0cda31dbd",
+          "expected_sha256": "aa58c4f1c445ea4f117e3e7e5aec162b7bef9a16d6f7aa3e9d8776e0cda31dbd",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL4616_EC50\\best.pt",
+          "exists": true,
+          "sha256": "308a925a88591e2203ac4bea8ee2b7b64771bc58517aca90893f38dde7cea2cd",
+          "expected_sha256": "308a925a88591e2203ac4bea8ee2b7b64771bc58517aca90893f38dde7cea2cd",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_chemprop",
+      "task": "CHEMBL4792_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\chemprop\\CHEMBL4792_Ki\\manifest.json",
+          "exists": true,
+          "sha256": "d15c13a2137e561cda54b035224549d75728ecaa8d413b285113faae9d7ae02a",
+          "expected_sha256": "d15c13a2137e561cda54b035224549d75728ecaa8d413b285113faae9d7ae02a",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\chemprop\\CHEMBL4792_Ki\\best.pt",
+          "exists": true,
+          "sha256": "3fcee9db23382bebc2258f4ef5fc75fed8067f99499113147fd68ebcc1dadfb3",
+          "expected_sha256": "3fcee9db23382bebc2258f4ef5fc75fed8067f99499113147fd68ebcc1dadfb3",
+          "matches": true
+        }
+      ],
+      "evidence": "hash only, historical validation-selected; test predictions not read"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL3979_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "c8332e4466671d9f00d5eb0b46120ecb0e4cc6b01882a61cc0958811a41a8e14",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL3979_EC50\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "0370e8ce4985221820015cb4e3ad349c889949c61e3f5a22b794aeb95df32c4d",
+          "expected_sha256": "0370e8ce4985221820015cb4e3ad349c889949c61e3f5a22b794aeb95df32c4d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "fd9b4c0038430cf1ff15fdd3694190378794750dae870d7fcaa30940bdde2ec7",
+          "expected_sha256": "fd9b4c0038430cf1ff15fdd3694190378794750dae870d7fcaa30940bdde2ec7",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "030070d8dde5c25010729cae5a5f7e9dd583a3c0056fae8aade0386a0841b79d",
+          "expected_sha256": "030070d8dde5c25010729cae5a5f7e9dd583a3c0056fae8aade0386a0841b79d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "68a12a2f3d01f64dd6bd89afc08485e2433da65da90d698cb23eafe83002d9f5",
+          "expected_sha256": "68a12a2f3d01f64dd6bd89afc08485e2433da65da90d698cb23eafe83002d9f5",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "b22479f8f3135728ce6772ea0c9a333bee055c804bf89834c9c5869b1095de22",
+          "expected_sha256": "b22479f8f3135728ce6772ea0c9a333bee055c804bf89834c9c5869b1095de22",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL3979_EC50",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "c8a57626099134d7815c038161f3a511ad3bd70904c3ba77dc2a30c68fba8aab",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL3979_EC50\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "a5f6894d212a33019ea4e8256312793e4e96a7c2169760f013e7b29f79af8598",
+          "expected_sha256": "a5f6894d212a33019ea4e8256312793e4e96a7c2169760f013e7b29f79af8598",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "b4947782228dc763659581fd390e24d235b11b19878510497ac88c4e41837344",
+          "expected_sha256": "b4947782228dc763659581fd390e24d235b11b19878510497ac88c4e41837344",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "d9a9d7f47bdd2856e42cac13de42deec8f8691d2a451dc47580e1d357b933992",
+          "expected_sha256": "d9a9d7f47bdd2856e42cac13de42deec8f8691d2a451dc47580e1d357b933992",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "45c252c6d53eb7bca892d758aa80821ab05ad175a87716006649e4cbc089739b",
+          "expected_sha256": "45c252c6d53eb7bca892d758aa80821ab05ad175a87716006649e4cbc089739b",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "f431d689867947667187c313412d8d9a3dab7e146840e8d3f0807eb66aa00c1e",
+          "expected_sha256": "f431d689867947667187c313412d8d9a3dab7e146840e8d3f0807eb66aa00c1e",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL3979_EC50",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "de569ff2d3567787d47b952c218f295a14941d6d9983091ddd249ac23cf4df06",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL3979_EC50\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "dc2172dc0603c1f522d4d69ff16a44160235ecd12912e2d8e5101d01b90fd85e",
+          "expected_sha256": "dc2172dc0603c1f522d4d69ff16a44160235ecd12912e2d8e5101d01b90fd85e",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "c4c510ca2b5fa2592fde0d51a6979be800ef2b4371e53da65a0d9f9504ae9b4d",
+          "expected_sha256": "c4c510ca2b5fa2592fde0d51a6979be800ef2b4371e53da65a0d9f9504ae9b4d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "f4d02f22df5df93324a67ba451afd36b63e2e3d03b7584229b3c9dd02fd69476",
+          "expected_sha256": "f4d02f22df5df93324a67ba451afd36b63e2e3d03b7584229b3c9dd02fd69476",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "10eb7eedda215e0292550f0da57298e39615ff49a5c6199874a7d973438715be",
+          "expected_sha256": "10eb7eedda215e0292550f0da57298e39615ff49a5c6199874a7d973438715be",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL3979_EC50\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "6fa36df48d94a472abe2ad0d895afd18c595433440831e2036d719733ce8634a",
+          "expected_sha256": "6fa36df48d94a472abe2ad0d895afd18c595433440831e2036d719733ce8634a",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL4792_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "648b61bcb75be29a018879a8f4a9112f911ae313daa272fe14211b73877b005a",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL4792_Ki\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "e9b14acd94ed9aa159eb3a3810fe765c12ec5b79adcd2e5dee8e1e920edfb6c5",
+          "expected_sha256": "e9b14acd94ed9aa159eb3a3810fe765c12ec5b79adcd2e5dee8e1e920edfb6c5",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "8ec1af629a79eba96e674c5216edd830cebd13c002a6336f6ebbd467c5224571",
+          "expected_sha256": "8ec1af629a79eba96e674c5216edd830cebd13c002a6336f6ebbd467c5224571",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "daf658a40b3d9a5c6378608156836f448431695703843596b9c489b6576d8968",
+          "expected_sha256": "daf658a40b3d9a5c6378608156836f448431695703843596b9c489b6576d8968",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "0c1a1a228b19883448dc184e119e6323d50d0da213b3b58ccabab0830df8f474",
+          "expected_sha256": "0c1a1a228b19883448dc184e119e6323d50d0da213b3b58ccabab0830df8f474",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "045ba43fd77bd9602d1e5b444cd507eaeb87d22c5d33cb753c7fe7487c74d8ae",
+          "expected_sha256": "045ba43fd77bd9602d1e5b444cd507eaeb87d22c5d33cb753c7fe7487c74d8ae",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL4792_Ki",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "d3bb2ef56725e38a2c151ac81d8980da7b75a809d287fac615f7fd4dd05de271",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL4792_Ki\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "42ce2db9abce82d93157b8b9db12a1f1d9a4e23125e96eb7a7930d6680e0c3cc",
+          "expected_sha256": "42ce2db9abce82d93157b8b9db12a1f1d9a4e23125e96eb7a7930d6680e0c3cc",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "c5409813449a76b1e09b7e28ce291feb5fa83b4df7381cb212a2be2e61a7425a",
+          "expected_sha256": "c5409813449a76b1e09b7e28ce291feb5fa83b4df7381cb212a2be2e61a7425a",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "824ea4016c3a9041131d707040ad5385d03920878f45d7cd42e8ea8ec306653b",
+          "expected_sha256": "824ea4016c3a9041131d707040ad5385d03920878f45d7cd42e8ea8ec306653b",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "2c59bb71b47431797b3e2381e012b3f19152875cb489054b08d67b4e88750df9",
+          "expected_sha256": "2c59bb71b47431797b3e2381e012b3f19152875cb489054b08d67b4e88750df9",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "0f595ac5df0c6955649e8eae66c837b2f9e73b736d245180cf6d53b5421594c6",
+          "expected_sha256": "0f595ac5df0c6955649e8eae66c837b2f9e73b736d245180cf6d53b5421594c6",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL4792_Ki",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "bc5ea80cb86b87520b3632750f627fc2c1b03029fc046251bfd94ffc15b20f8b",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL4792_Ki\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "07b596a212d85693e998df75f60cacc1e7e0fbbb0ab3035aeaf1538ebbdacac5",
+          "expected_sha256": "07b596a212d85693e998df75f60cacc1e7e0fbbb0ab3035aeaf1538ebbdacac5",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "861603e38ff5984d17f0a515d21f908fef5d1124e9e666eb342969dd83ff35d8",
+          "expected_sha256": "861603e38ff5984d17f0a515d21f908fef5d1124e9e666eb342969dd83ff35d8",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "4cf013a924171d426f0cca499a210ecb3d038f20414654017d0a99a70ecd3635",
+          "expected_sha256": "4cf013a924171d426f0cca499a210ecb3d038f20414654017d0a99a70ecd3635",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "7d131d6b8fcc105a02c1045358dfa387651aa2247f87926334e3c7380124b472",
+          "expected_sha256": "7d131d6b8fcc105a02c1045358dfa387651aa2247f87926334e3c7380124b472",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL4792_Ki\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "2b975b2829c2fc142b4e65401f8db109e31f7ce46fb6dcdceb0b95f3f3b8b6c1",
+          "expected_sha256": "2b975b2829c2fc142b4e65401f8db109e31f7ce46fb6dcdceb0b95f3f3b8b6c1",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL234_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "27c1aec438ae18d4e4716838bbb9ab726e61abc5d50a473bd3569c942b7108ee",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL234_Ki\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "4d5f83c8e3205ae7a0ef94969a7885eac6c1ce59688d6f04606da066390f3752",
+          "expected_sha256": "4d5f83c8e3205ae7a0ef94969a7885eac6c1ce59688d6f04606da066390f3752",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "69ff0adaae0938ee912ddd33b29a4e5bce4c6d03b98b925cff45a573c0ef41e5",
+          "expected_sha256": "69ff0adaae0938ee912ddd33b29a4e5bce4c6d03b98b925cff45a573c0ef41e5",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "fc7bf84bfce50ce4ebb36a9bb762b29947c8d17360d9cf7c61955b45a0383b6c",
+          "expected_sha256": "fc7bf84bfce50ce4ebb36a9bb762b29947c8d17360d9cf7c61955b45a0383b6c",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "8b69da23710789e5f34b9e1ef1d29862a7d433b35556703e371597ecada4733e",
+          "expected_sha256": "8b69da23710789e5f34b9e1ef1d29862a7d433b35556703e371597ecada4733e",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "5a9aba77829b6e2f6fbc07a10920d48c904959026ef6970eb7ebfb42d33a6d35",
+          "expected_sha256": "5a9aba77829b6e2f6fbc07a10920d48c904959026ef6970eb7ebfb42d33a6d35",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL234_Ki",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "967195a1caceabeadc00483b6e5c5c2a6525b01434ca88de5b162629773e23c1",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL234_Ki\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "1819b5aae8e46989745a20fd1a7357362ec75aa6f2fdee1651c27567606d1abc",
+          "expected_sha256": "1819b5aae8e46989745a20fd1a7357362ec75aa6f2fdee1651c27567606d1abc",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "c6e50b122bdb03fa8368bb924fed7c77861557d49cc73fdb672d1f29fa2ff0e8",
+          "expected_sha256": "c6e50b122bdb03fa8368bb924fed7c77861557d49cc73fdb672d1f29fa2ff0e8",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "a7c0f6cd401d4fa066fddb03eeb441916c1d7cbfd6a539defe689b70ce1df466",
+          "expected_sha256": "a7c0f6cd401d4fa066fddb03eeb441916c1d7cbfd6a539defe689b70ce1df466",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "6cebfbf38fa7ce5a474db92327dbbc4a5c936c2d3d97e382bfb018946e7d4a21",
+          "expected_sha256": "6cebfbf38fa7ce5a474db92327dbbc4a5c936c2d3d97e382bfb018946e7d4a21",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "b4a500f62c5bf079ace2c3e97a490ff498b41a2bd905225a9ea994c114413238",
+          "expected_sha256": "b4a500f62c5bf079ace2c3e97a490ff498b41a2bd905225a9ea994c114413238",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gcn",
+      "task": "CHEMBL234_Ki",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "4cca8a3897a4c5e35521e2572f50157f71c90f4992ed899019ddf5609fc49821",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gcn\\CHEMBL234_Ki\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "64a5130e7221f3cebe09b9ee92721fb113c6b53f5867abdb839a11778eb9bf27",
+          "expected_sha256": "64a5130e7221f3cebe09b9ee92721fb113c6b53f5867abdb839a11778eb9bf27",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "42b62cbfbc053d7148a4e13386bf57ee76e31737bb061072c3efcd7c8286f9d6",
+          "expected_sha256": "42b62cbfbc053d7148a4e13386bf57ee76e31737bb061072c3efcd7c8286f9d6",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "4caae8ddab154806805e091c51cd92f915a81c75d8187340ddfbb1cf1646f2f2",
+          "expected_sha256": "4caae8ddab154806805e091c51cd92f915a81c75d8187340ddfbb1cf1646f2f2",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "ac431f3796c91fdc172d52b018abeedb1c6f4721014c26a94dd95c3c356b5a21",
+          "expected_sha256": "ac431f3796c91fdc172d52b018abeedb1c6f4721014c26a94dd95c3c356b5a21",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gcn\\CHEMBL234_Ki\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "9310ac8219c194e8581dcdaad1baf98b1b67839bb11dbc5bf282a70b6405d7c9",
+          "expected_sha256": "9310ac8219c194e8581dcdaad1baf98b1b67839bb11dbc5bf282a70b6405d7c9",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL3979_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "cc3e8362a2f8a9a4f6f5ae2b05e03ed6af68763560f6424d8d0e454b9acd6d45",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL3979_EC50\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "df1065195484ef829ad9b78baf0d4b8909f64ef9daa2acb7ab4206f43f9b6739",
+          "expected_sha256": "df1065195484ef829ad9b78baf0d4b8909f64ef9daa2acb7ab4206f43f9b6739",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "2fee0ed18398dd614707714b60ba89cf4a9c977ae139ee380710fffc47c6252e",
+          "expected_sha256": "2fee0ed18398dd614707714b60ba89cf4a9c977ae139ee380710fffc47c6252e",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "4f3aef9fcf4745ae6150d6d37a266c9b41833cf4d865a9a7fb4639261b7eae07",
+          "expected_sha256": "4f3aef9fcf4745ae6150d6d37a266c9b41833cf4d865a9a7fb4639261b7eae07",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "007c9758a33f1fe6533bbef4428408b058a6c791dfdca41404789ff7f7d92770",
+          "expected_sha256": "007c9758a33f1fe6533bbef4428408b058a6c791dfdca41404789ff7f7d92770",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "8c80481ba3a24cf9854854e75be2cfdfda8986f34513a06b12bfdc38178378b7",
+          "expected_sha256": "8c80481ba3a24cf9854854e75be2cfdfda8986f34513a06b12bfdc38178378b7",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL3979_EC50",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "10a6f0a5dc9107c1577d4b8999db4c3cd915e33d73d1853da05b764d35472898",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL3979_EC50\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "daf318ab73ebaa69fe4701bf01efd7258175493d5b0f9c1ef1870a69798acf1d",
+          "expected_sha256": "daf318ab73ebaa69fe4701bf01efd7258175493d5b0f9c1ef1870a69798acf1d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "086c1ce79a0d81fbe62ea3ebe6862e963540281ce4eed75617839e9004029c6b",
+          "expected_sha256": "086c1ce79a0d81fbe62ea3ebe6862e963540281ce4eed75617839e9004029c6b",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "0249ccbce2862f1312b4316f92d0467b3a7d37c06a8cf4eac25814003a209e57",
+          "expected_sha256": "0249ccbce2862f1312b4316f92d0467b3a7d37c06a8cf4eac25814003a209e57",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "bdb818af5091adba01dbfcb61bf4ece7e337447022b193fb412bec87a54558b3",
+          "expected_sha256": "bdb818af5091adba01dbfcb61bf4ece7e337447022b193fb412bec87a54558b3",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "d61c4d05c1e84357004e24b054913b42e3f3c758950d79098e53ac36c45a26f4",
+          "expected_sha256": "d61c4d05c1e84357004e24b054913b42e3f3c758950d79098e53ac36c45a26f4",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL3979_EC50",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "8d2f3afabdea93034a912eed98bd82d7aeba0defc5a1c6dcbd5935e06a81adfd",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL3979_EC50\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "ef9c688dc6771adcfe75a2e6703d0352cc27e2a5f886f4ade01438dc993aeea6",
+          "expected_sha256": "ef9c688dc6771adcfe75a2e6703d0352cc27e2a5f886f4ade01438dc993aeea6",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "7ad0f16c98670a5873f49b5a4c2872c4a4b437e9c72943a711448d4ff734532c",
+          "expected_sha256": "7ad0f16c98670a5873f49b5a4c2872c4a4b437e9c72943a711448d4ff734532c",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "d00ee8855c384f48cb811d5a023a960788b04cf734eb51c9921f2a0da6b304a6",
+          "expected_sha256": "d00ee8855c384f48cb811d5a023a960788b04cf734eb51c9921f2a0da6b304a6",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "a33429cfd9e07b8a1c21f6b2e622e8248d3e8c49d7acb0fd7e20446f2311d27f",
+          "expected_sha256": "a33429cfd9e07b8a1c21f6b2e622e8248d3e8c49d7acb0fd7e20446f2311d27f",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL3979_EC50\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "2e57d1a3af415c32c775f7fa7e119360040ba78e3f37f34818dd3f9a4d8f8404",
+          "expected_sha256": "2e57d1a3af415c32c775f7fa7e119360040ba78e3f37f34818dd3f9a4d8f8404",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL4792_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "255f6719e7953888d63d9b2e1946827f7d5e5e35c368b896f46b5535512dc1ec",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL4792_Ki\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "cf975b5a0f91a0372eaacb28583667edfd44edf295736fc89455e98f1319032e",
+          "expected_sha256": "cf975b5a0f91a0372eaacb28583667edfd44edf295736fc89455e98f1319032e",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "194f55be8c81f6fd34b14cc64526f645e2ee45cbd489df6fab7075b87b43e508",
+          "expected_sha256": "194f55be8c81f6fd34b14cc64526f645e2ee45cbd489df6fab7075b87b43e508",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "587f05a0186920bf20969fa152d5dd3aa882c1af65ce7c2f0e9ff0645e25019f",
+          "expected_sha256": "587f05a0186920bf20969fa152d5dd3aa882c1af65ce7c2f0e9ff0645e25019f",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "7074cf0683d2991f296b10d8ee10dba66736b84fac54a0cb0fb0e3e80e05c212",
+          "expected_sha256": "7074cf0683d2991f296b10d8ee10dba66736b84fac54a0cb0fb0e3e80e05c212",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "72728fc10260f71e4afb710535ea69476323be47be966bfb890bffc2c663ad92",
+          "expected_sha256": "72728fc10260f71e4afb710535ea69476323be47be966bfb890bffc2c663ad92",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL4792_Ki",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "48d3ca675e79304098ad467a918dbd4f916a36b520dcf75a2c8f704d68c3ba03",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL4792_Ki\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "123742ede470092c8ea95f74a5c8aaca8ec0abcb88307adcf6f409214d6c453d",
+          "expected_sha256": "123742ede470092c8ea95f74a5c8aaca8ec0abcb88307adcf6f409214d6c453d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "3abccdb1dd33090a7c669842c5e171306cdd340a768ad4263e0ffa106ad770e3",
+          "expected_sha256": "3abccdb1dd33090a7c669842c5e171306cdd340a768ad4263e0ffa106ad770e3",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "3622ba9568a6a02f31b46c4204671722f49555792f874df8db7ead7948a4b090",
+          "expected_sha256": "3622ba9568a6a02f31b46c4204671722f49555792f874df8db7ead7948a4b090",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "891f2b27ce7b4f51efa0252ab3b0d41274a3ca0cf1603296c72cce4a34820577",
+          "expected_sha256": "891f2b27ce7b4f51efa0252ab3b0d41274a3ca0cf1603296c72cce4a34820577",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "df8e42816358f5f631f532ecd13a775d13e32a7e157823d0870dcd25dc1b0e8e",
+          "expected_sha256": "df8e42816358f5f631f532ecd13a775d13e32a7e157823d0870dcd25dc1b0e8e",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL4792_Ki",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "6b599f07c64c225447fa84c0fe0dacc4a50055a882a75185b746838747e82545",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL4792_Ki\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "a1cf80a26c1a01af6d0af1778c1f663f75abd91c23d3081f7f8620ed1148f06f",
+          "expected_sha256": "a1cf80a26c1a01af6d0af1778c1f663f75abd91c23d3081f7f8620ed1148f06f",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "422ab0cc27c01eba677d32279291d983d6bf5dec7e9ff8d43ef5f1553eb8a465",
+          "expected_sha256": "422ab0cc27c01eba677d32279291d983d6bf5dec7e9ff8d43ef5f1553eb8a465",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "12c7b72ddf635a0df658cc8ee5aa6b41b803d2ca65b6e5bdd442136879e68608",
+          "expected_sha256": "12c7b72ddf635a0df658cc8ee5aa6b41b803d2ca65b6e5bdd442136879e68608",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "f17331b83ffddd7a6cedef6e449029f0907479fe2d29139f9fbc84d0010aecf3",
+          "expected_sha256": "f17331b83ffddd7a6cedef6e449029f0907479fe2d29139f9fbc84d0010aecf3",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL4792_Ki\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "a02f6fd77dcb76b9b30c5a3ba3f2307f2d8a0f5d1760af59a9294db18485aba5",
+          "expected_sha256": "a02f6fd77dcb76b9b30c5a3ba3f2307f2d8a0f5d1760af59a9294db18485aba5",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL234_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "7b4927fb54caea74ace2ff85f270b5729ff30d3454cb045e2e818acb4c560cc0",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL234_Ki\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "c5708b80e243412605851b9e9d1e5af5d2c0288ad3528dc0ec015afec4752e89",
+          "expected_sha256": "c5708b80e243412605851b9e9d1e5af5d2c0288ad3528dc0ec015afec4752e89",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "4114a351836841259899b4d0dbd13112e19f3378eb50068ec042b2bb5158d4c6",
+          "expected_sha256": "4114a351836841259899b4d0dbd13112e19f3378eb50068ec042b2bb5158d4c6",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "e10bc956d3fd8b2e37e3fcaba5ef93007bbfa092924532aa3e26dce595f6e7c7",
+          "expected_sha256": "e10bc956d3fd8b2e37e3fcaba5ef93007bbfa092924532aa3e26dce595f6e7c7",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "ef88d1df02138907f00417795499660f487bc8b0506c9ec879a3ba7e7cdcda9c",
+          "expected_sha256": "ef88d1df02138907f00417795499660f487bc8b0506c9ec879a3ba7e7cdcda9c",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "b3183a4b529c4d28de4acfe9bd53609b301e7f7aac19ffdc964a55935a5cd36e",
+          "expected_sha256": "b3183a4b529c4d28de4acfe9bd53609b301e7f7aac19ffdc964a55935a5cd36e",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL234_Ki",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "ad25e8630dc4c398d92e0053220277c55925cebafb7e8b91a6bf9a3a9297ae4d",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL234_Ki\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "d1b768f8a55bd13b516591e3a3bdb3bfe24701e5da250864197f8d8dbc907d81",
+          "expected_sha256": "d1b768f8a55bd13b516591e3a3bdb3bfe24701e5da250864197f8d8dbc907d81",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "ba5f4121fe6e4fa8cab815b8aefa712e3906da02efa48f24a1683e0ac61549ad",
+          "expected_sha256": "ba5f4121fe6e4fa8cab815b8aefa712e3906da02efa48f24a1683e0ac61549ad",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "ebe230cf9a149da78c29b94ae4f039c26536705b9bbccafe962a59271f7b5e57",
+          "expected_sha256": "ebe230cf9a149da78c29b94ae4f039c26536705b9bbccafe962a59271f7b5e57",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "05fddf0548a66a600e99c19543d606a182ffd3f6232c6868e56477e581ecbd81",
+          "expected_sha256": "05fddf0548a66a600e99c19543d606a182ffd3f6232c6868e56477e581ecbd81",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "7696c977824fdb7923ae952d5d295dd4263dc69e228d4f627d002ef67a4a69b2",
+          "expected_sha256": "7696c977824fdb7923ae952d5d295dd4263dc69e228d4f627d002ef67a4a69b2",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_gat",
+      "task": "CHEMBL234_Ki",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "de373334aec7d0c8582a2d34e7503be13c8787fd979fad10566c871062b65222",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\gat\\CHEMBL234_Ki\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "80a81a2eae7274c7fb36e2d7d47010f98dc0f263b95061d3dfe3dded6e7ca096",
+          "expected_sha256": "80a81a2eae7274c7fb36e2d7d47010f98dc0f263b95061d3dfe3dded6e7ca096",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "9637c9f95d9794735f9e1f639a766f83424ac3fbd656fd5bb91a5034c3c781d1",
+          "expected_sha256": "9637c9f95d9794735f9e1f639a766f83424ac3fbd656fd5bb91a5034c3c781d1",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "8520a00ecc5b9a0a831752b32244796439f70909e64dbb9d4d5853e608272203",
+          "expected_sha256": "8520a00ecc5b9a0a831752b32244796439f70909e64dbb9d4d5853e608272203",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "9edec17ac39e6dce98abbadd5b0676d31b085c402cc7b462a88351f34d7376ff",
+          "expected_sha256": "9edec17ac39e6dce98abbadd5b0676d31b085c402cc7b462a88351f34d7376ff",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\gat\\CHEMBL234_Ki\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "964a648d4136d39ebdce99e320bb8f1daa7cf046a5e78d9b2074b9bfe0399eeb",
+          "expected_sha256": "964a648d4136d39ebdce99e320bb8f1daa7cf046a5e78d9b2074b9bfe0399eeb",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL3979_EC50",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "154c6ccefed5bfd10f0f72af5c29ea115fc802e36cd0f32dfa5581bb6899aadf",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL3979_EC50\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "59279470078d3bbce79cd1e41a0456eaab15519e53fd00cdcf3096220dccada5",
+          "expected_sha256": "59279470078d3bbce79cd1e41a0456eaab15519e53fd00cdcf3096220dccada5",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "458d60bc88b02e020faf6bc1ca7cb925f92dfa94432e875834a76732ec0a23c6",
+          "expected_sha256": "458d60bc88b02e020faf6bc1ca7cb925f92dfa94432e875834a76732ec0a23c6",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "71d56fc2edb84c38dfed8bcc5f006fc16f00e58ae150e0ae988a1e71b287e1f7",
+          "expected_sha256": "71d56fc2edb84c38dfed8bcc5f006fc16f00e58ae150e0ae988a1e71b287e1f7",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "f1cdf0465f287a3d9d85980613eb34dd5361a7270edf7139bc66ec3cebeea0e8",
+          "expected_sha256": "f1cdf0465f287a3d9d85980613eb34dd5361a7270edf7139bc66ec3cebeea0e8",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "e4eb44ec47fb89cc67a93262bc4ba9cc9abd70bf5a5374a2db382f2a1e090a59",
+          "expected_sha256": "e4eb44ec47fb89cc67a93262bc4ba9cc9abd70bf5a5374a2db382f2a1e090a59",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL3979_EC50",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "4f54c3c01acc88b2efa0f2197996ce3123d976684917f5aa5076ff4fb0a4abf8",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL3979_EC50\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "9484341d4bfc61a6d858fe38bd4262da79a8142018c7059fcde42bc6487304e5",
+          "expected_sha256": "9484341d4bfc61a6d858fe38bd4262da79a8142018c7059fcde42bc6487304e5",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "be23d2cfda1681fa018fa7ce0624d071bc7b095d54744ce38ed1fa2cd769fec4",
+          "expected_sha256": "be23d2cfda1681fa018fa7ce0624d071bc7b095d54744ce38ed1fa2cd769fec4",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "c4f9c36e48de5ae00404844549fc5963a55967cb44c554d634dce5ddc10621ac",
+          "expected_sha256": "c4f9c36e48de5ae00404844549fc5963a55967cb44c554d634dce5ddc10621ac",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "f4cc4c149f13bbbedbac47f9bda64d3c948e73af3811691bdbaf1f126c7ed564",
+          "expected_sha256": "f4cc4c149f13bbbedbac47f9bda64d3c948e73af3811691bdbaf1f126c7ed564",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "bac8954efc84761e2996f1459dc166c0aceaa7cd9fd0083bc761067859a3440f",
+          "expected_sha256": "bac8954efc84761e2996f1459dc166c0aceaa7cd9fd0083bc761067859a3440f",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL3979_EC50",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "9b549e03a875792be23d3fb73b96c8c28c63e0c52af5fdb3a71d9709a9f761bf",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL3979_EC50\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "d11c7b3eeb5a3270e832df232b010b87a6ead9bc21bf2958517ff87e8cc99c71",
+          "expected_sha256": "d11c7b3eeb5a3270e832df232b010b87a6ead9bc21bf2958517ff87e8cc99c71",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "28fc6b4c3f97f466331fd06452d79599a9205fbd1b03864de03c40b3a323b2f8",
+          "expected_sha256": "28fc6b4c3f97f466331fd06452d79599a9205fbd1b03864de03c40b3a323b2f8",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "f80e772836f65adf17e0f1146c798b40f01a1572060905be772767534ffb4b17",
+          "expected_sha256": "f80e772836f65adf17e0f1146c798b40f01a1572060905be772767534ffb4b17",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "e71ccbf54466a6f39607d8a912c341102d4360efb7235efdca027bd989331498",
+          "expected_sha256": "e71ccbf54466a6f39607d8a912c341102d4360efb7235efdca027bd989331498",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL3979_EC50\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "0167fc031336b2888d3f6d69d5a84a4abe8e4203f68c6f5b7ae418f49e2c290f",
+          "expected_sha256": "0167fc031336b2888d3f6d69d5a84a4abe8e4203f68c6f5b7ae418f49e2c290f",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL4792_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "80977d440b37ea7922221b7b0f4a9129654bd80803a5bcdba9502ebb7b2a508d",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL4792_Ki\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "94a4c5a96f10d1bc9d3206b65203b4c4c2c92df8a60bdff70076384782b75f11",
+          "expected_sha256": "94a4c5a96f10d1bc9d3206b65203b4c4c2c92df8a60bdff70076384782b75f11",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "5c121132ed1085db4b671e83e57794907d32cf75d2919607ae4a2c99f735750d",
+          "expected_sha256": "5c121132ed1085db4b671e83e57794907d32cf75d2919607ae4a2c99f735750d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "307b3de0b64ada3674a2f63780a269af5f86beb9d0ed1e464d54527cd7c0d07e",
+          "expected_sha256": "307b3de0b64ada3674a2f63780a269af5f86beb9d0ed1e464d54527cd7c0d07e",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "7ccdd4cd6df52827fef5be803ad2b1022b0cc0272aa2a494f8c0b5e2cc2c1c2e",
+          "expected_sha256": "7ccdd4cd6df52827fef5be803ad2b1022b0cc0272aa2a494f8c0b5e2cc2c1c2e",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "420807711143ce1bfad286037b16a94e0e087a5a67497b88b322474beee88717",
+          "expected_sha256": "420807711143ce1bfad286037b16a94e0e087a5a67497b88b322474beee88717",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL4792_Ki",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "91aa09a7fe79c3714d5b8b15d9b2b23064210a4ac31bf24a0406961efd884c52",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL4792_Ki\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "cc57fa24e54950f7803e2d13df0a0be7844322334c9698f0eb30f6f3dbbd4050",
+          "expected_sha256": "cc57fa24e54950f7803e2d13df0a0be7844322334c9698f0eb30f6f3dbbd4050",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "9a6685f878766ca006e8a6c53f1194f0682245b064173e63b338bae0dcc36390",
+          "expected_sha256": "9a6685f878766ca006e8a6c53f1194f0682245b064173e63b338bae0dcc36390",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "3aad468303bc10c08b735779216817cb9e7f5bfafcbdd9561980ad7b2ff11f2c",
+          "expected_sha256": "3aad468303bc10c08b735779216817cb9e7f5bfafcbdd9561980ad7b2ff11f2c",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "37e88f8a3abb186db1a95a1a27def08851033025ecf68cf088af99580f9209f7",
+          "expected_sha256": "37e88f8a3abb186db1a95a1a27def08851033025ecf68cf088af99580f9209f7",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "a60116887c6f76039f0bc8967f938abb369ff6a9f8d03adad092592e2ed706d1",
+          "expected_sha256": "a60116887c6f76039f0bc8967f938abb369ff6a9f8d03adad092592e2ed706d1",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL4792_Ki",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "712f177fa61067b2a127fd42fcb77e4e924dfc269050b2b41c5f6cf1c168ad94",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL4792_Ki\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "fb80538171b446938c55495167ec30ffcb5eff6c836ade1d56f6f94193f3641d",
+          "expected_sha256": "fb80538171b446938c55495167ec30ffcb5eff6c836ade1d56f6f94193f3641d",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "5a9c9a58492690f006e75c92eeb910ef92ac958722743c19aa670aed6b83dc1c",
+          "expected_sha256": "5a9c9a58492690f006e75c92eeb910ef92ac958722743c19aa670aed6b83dc1c",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "01a77f2e212406b273584cb9ec2b27195693a9aab7cdea49b7aea9c9d58cbf1e",
+          "expected_sha256": "01a77f2e212406b273584cb9ec2b27195693a9aab7cdea49b7aea9c9d58cbf1e",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "12e5ee331d41e341ecd4ee533fcdefb5949a38814854e5cf182c39ff8f32c9e1",
+          "expected_sha256": "12e5ee331d41e341ecd4ee533fcdefb5949a38814854e5cf182c39ff8f32c9e1",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL4792_Ki\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "99d50b650bb31503138ebe4973896fea9ba2ee21e68ce129dcbd90cd393cf496",
+          "expected_sha256": "99d50b650bb31503138ebe4973896fea9ba2ee21e68ce129dcbd90cd393cf496",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL234_Ki",
+      "seed": 42,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_42\\manifest.json",
+          "exists": true,
+          "sha256": "b4c574289aec8ba828a4012b11314820a145df0567e215dad1c26f637c0cb659",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL234_Ki\\seed_42\\best.pt",
+          "exists": true,
+          "sha256": "31fcc2930b0eb8688039863553b849c6549f45b2e907af81ea1b7a6dfe41719b",
+          "expected_sha256": "31fcc2930b0eb8688039863553b849c6549f45b2e907af81ea1b7a6dfe41719b",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_42\\config.json",
+          "exists": true,
+          "sha256": "16d53592f08f6a62348f3a0ed5d86716e5a035c5144466837154155fa0c6c022",
+          "expected_sha256": "16d53592f08f6a62348f3a0ed5d86716e5a035c5144466837154155fa0c6c022",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_42\\history.csv",
+          "exists": true,
+          "sha256": "fe11105a2784db00d392ffd74ad1c3a7af046057390775a555177873cf53f337",
+          "expected_sha256": "fe11105a2784db00d392ffd74ad1c3a7af046057390775a555177873cf53f337",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_42\\metrics.json",
+          "exists": true,
+          "sha256": "8d866d964854f49606616008afacf03406009db16b18d4099813075909cd47b4",
+          "expected_sha256": "8d866d964854f49606616008afacf03406009db16b18d4099813075909cd47b4",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_42\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "c53e3b8cf592fb783d1635f661d23aecaba778ba1c44b0f283dae8c40f0b2ffd",
+          "expected_sha256": "c53e3b8cf592fb783d1635f661d23aecaba778ba1c44b0f283dae8c40f0b2ffd",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL234_Ki",
+      "seed": 43,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_43\\manifest.json",
+          "exists": true,
+          "sha256": "fea25bf4a6b8a43868ced3263071071b6c30bf25fd40773cc31bcab4cd7caf34",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL234_Ki\\seed_43\\best.pt",
+          "exists": true,
+          "sha256": "355ca1965e1026da99c05f5c149006b9f52c0b75500097d773a2c9d467944b0f",
+          "expected_sha256": "355ca1965e1026da99c05f5c149006b9f52c0b75500097d773a2c9d467944b0f",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_43\\config.json",
+          "exists": true,
+          "sha256": "8b5c03f5723114b0644ba676c853c84d544454e43941093465bd2c5a47477357",
+          "expected_sha256": "8b5c03f5723114b0644ba676c853c84d544454e43941093465bd2c5a47477357",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_43\\history.csv",
+          "exists": true,
+          "sha256": "414ffccdb532d70d265ac20a7a37430017e65bdc66babc3bacdb9243835a0344",
+          "expected_sha256": "414ffccdb532d70d265ac20a7a37430017e65bdc66babc3bacdb9243835a0344",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_43\\metrics.json",
+          "exists": true,
+          "sha256": "127595120a315dc7da5a6cb973ca49e5a6688eda3cfa61c8a41ceb73ebe57768",
+          "expected_sha256": "127595120a315dc7da5a6cb973ca49e5a6688eda3cfa61c8a41ceb73ebe57768",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_43\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "289fd67593ba9f75193b79798bd1c5888f6b48bb8deb743900555d727d9e7725",
+          "expected_sha256": "289fd67593ba9f75193b79798bd1c5888f6b48bb8deb743900555d727d9e7725",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    },
+    {
+      "kind": "historic_mlp",
+      "task": "CHEMBL234_Ki",
+      "seed": 44,
+      "checks": [
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_44\\manifest.json",
+          "exists": true,
+          "sha256": "bef74909789c4f356e9f35eede3db236cc1be2413b34fa0a03e0cef69d38449e",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\checkpoints\\mlp\\CHEMBL234_Ki\\seed_44\\best.pt",
+          "exists": true,
+          "sha256": "e17616b65fa36b765d85c0a56e7201c1d99b4cd217b28fee17f3cc677ca001fc",
+          "expected_sha256": "e17616b65fa36b765d85c0a56e7201c1d99b4cd217b28fee17f3cc677ca001fc",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_44\\config.json",
+          "exists": true,
+          "sha256": "11e68b887726b84815dee7ca0f1527fd00ea62b8fe4b6f0aa16916f2abaeaf81",
+          "expected_sha256": "11e68b887726b84815dee7ca0f1527fd00ea62b8fe4b6f0aa16916f2abaeaf81",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_44\\history.csv",
+          "exists": true,
+          "sha256": "c4c31d8fb6fbaeb6ef10c5fc6e39ab5bbeb7cc87555f3541f35e48bec83caac0",
+          "expected_sha256": "c4c31d8fb6fbaeb6ef10c5fc6e39ab5bbeb7cc87555f3541f35e48bec83caac0",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_44\\metrics.json",
+          "exists": true,
+          "sha256": "db1123172739274b7fb76b053dc383a773964e227028deb1f0cee7366899fa4f",
+          "expected_sha256": "db1123172739274b7fb76b053dc383a773964e227028deb1f0cee7366899fa4f",
+          "matches": true
+        },
+        {
+          "path": "D:\\WORK_SPACE\\WORK_SPACE\\my_work\\graphcliff_baselines\\results\\mlp\\CHEMBL234_Ki\\seed_44\\validation_predictions.csv",
+          "exists": true,
+          "sha256": "60cbad6cd6886abf39547abc98e5bfc0b6dcf801202ad3b37ce3f9f7314d4309",
+          "expected_sha256": "60cbad6cd6886abf39547abc98e5bfc0b6dcf801202ad3b37ce3f9f7314d4309",
+          "matches": true
+        }
+      ],
+      "evidence": "manifest-bound files only; validation was selected, no inference/score replay"
+    }
+  ],
+  "current_assets": [
+    {
+      "task": "CHEMBL234_Ki",
+      "weights": [
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold0\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "32769c026bb6e481293d81f6ec1a63f89c39bcdd507e7c3c38ef10165a3f88dd",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold1\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "7714a18118583c5d16bded072f8c33f8d5e086f157071e4fe426573b54ccec9f",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\fold2\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "4bce197eea2e9483249f94404431fdd133fb044749a2a5a7ecf9c0e9842a6854",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\full\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "35523862aeb1fb5d028d0c7bb104433e0b649008bbc90be00ece867f80e2fcdd",
+          "expected_sha256": null,
+          "matches": true
+        }
+      ],
+      "roles": [
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\oof.csv",
+          "exists": true,
+          "sha256": "76854dc683144aa6bdc8abd8771b14cb4970a20a162e700d1b6166ed0fa1c8f3",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "oof",
+          "rows": 1755
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\calibration.csv",
+          "exists": true,
+          "sha256": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "calibration",
+          "rows": 426
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\evaluation.csv",
+          "exists": true,
+          "sha256": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "evaluation",
+          "rows": 448
+        }
+      ],
+      "canonical_role_overlap": 0,
+      "evidence": "existence/hash and identity only; no point inference or labels loaded"
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "weights": [
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold0\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "39162e6346f12485f7b91fc43d68262cb1410afe5710e5f48e858d431a0b2b63",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold1\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "47d1527b989825dd9b2ead7ec34bdfbd1d75a6b7c21f1fee88fb19c0e604e791",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\fold2\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "21c074b76c4b6832f7ac8aa3b4d74131a73b2971e4b598f295b724bac001fdb5",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\full\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "0a3035b16e410a018f00a3060d80fbe6d742e0b1c5109ae6f4f5e55699e914b4",
+          "expected_sha256": null,
+          "matches": true
+        }
+      ],
+      "roles": [
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\oof.csv",
+          "exists": true,
+          "sha256": "e1b866a4f227546954704f1ecf0d9cbe00d60a75a19a1bb05fe484aa21a793b4",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "oof",
+          "rows": 1462
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\calibration.csv",
+          "exists": true,
+          "sha256": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "calibration",
+          "rows": 375
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\evaluation.csv",
+          "exists": true,
+          "sha256": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "evaluation",
+          "rows": 402
+        }
+      ],
+      "canonical_role_overlap": 0,
+      "evidence": "existence/hash and identity only; no point inference or labels loaded"
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "weights": [
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold0\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "e5f7f55e153d963ef9d09d80b3d6dc41016c5f89d49c3d86cca83bf052b9ab52",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold1\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "40b25c844421336b65f77bb86bf920ea37f642986f4ab012b96921dd9386a0c4",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\fold2\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "a901c424f929d73c31aed7eb52ae7f9e9fd316f49f93921b926b33a7cdf0bb67",
+          "expected_sha256": null,
+          "matches": true
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\full\\training\\model_0\\best.pt",
+          "exists": true,
+          "sha256": "17dd2d45273e6d6543273591f0e514dac303607437c510c8d0bf8bea154ef562",
+          "expected_sha256": null,
+          "matches": true
+        }
+      ],
+      "roles": [
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\oof.csv",
+          "exists": true,
+          "sha256": "fea00e6c9d38f91457e2d79dc041bcccf6969630972515805ced4c27a02170f6",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "oof",
+          "rows": 702
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\calibration.csv",
+          "exists": true,
+          "sha256": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "calibration",
+          "rows": 179
+        },
+        {
+          "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\evaluation.csv",
+          "exists": true,
+          "sha256": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+          "expected_sha256": null,
+          "matches": true,
+          "role": "evaluation",
+          "rows": 187
+        }
+      ],
+      "canonical_role_overlap": 0,
+      "evidence": "existence/hash and identity only; no point inference or labels loaded"
+    }
+  ],
+  "M38_M39_bindings": [
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\baseline_replay.json",
+      "exists": true,
+      "sha256": "61c40cd733ea3580bae4ef9beed3734d0dc2ef14e44170674a5b296a42a50235",
+      "expected_sha256": "61c40cd733ea3580bae4ef9beed3734d0dc2ef14e44170674a5b296a42a50235",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\execution.json",
+      "exists": true,
+      "sha256": "d1598054dd3b9973d3629c4b5036b76b5083e72af750922e8cd33e2c0d4372a7",
+      "expected_sha256": "d1598054dd3b9973d3629c4b5036b76b5083e72af750922e8cd33e2c0d4372a7",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\execution_first_failure.json",
+      "exists": true,
+      "sha256": "4b93fc3dc6e3840dc8ed7691948f785f0d70c58caa2086a1c37ced513df9e8f6",
+      "expected_sha256": "4b93fc3dc6e3840dc8ed7691948f785f0d70c58caa2086a1c37ced513df9e8f6",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\preparation.json",
+      "exists": true,
+      "sha256": "2f78ea80f012b73b5cefa78f72875993f6be1d82c8473bf8277f0cb7fe8c12cf",
+      "expected_sha256": "2f78ea80f012b73b5cefa78f72875993f6be1d82c8473bf8277f0cb7fe8c12cf",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\replay_failure_diagnostic.json",
+      "exists": true,
+      "sha256": "bb059c5b871462f5bcb8e08d385c0b9a4e9d2f1dbaebaaf884948c34733e3a2f",
+      "expected_sha256": "bb059c5b871462f5bcb8e08d385c0b9a4e9d2f1dbaebaaf884948c34733e3a2f",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\results.json",
+      "exists": true,
+      "sha256": "281d05ff08fdf7c2820ce01d4b2ea1d4c9fb03a9a8c9facd3fd3ef8ec0d4dd61",
+      "expected_sha256": "281d05ff08fdf7c2820ce01d4b2ea1d4c9fb03a9a8c9facd3fd3ef8ec0d4dd61",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\verification.json",
+      "exists": true,
+      "sha256": "1986db22cc57e310cfc95b7cd3af8525766c616d2746bfc92281d39bede95ff1",
+      "expected_sha256": "1986db22cc57e310cfc95b7cd3af8525766c616d2746bfc92281d39bede95ff1",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\calibration.csv",
+      "exists": true,
+      "sha256": "ef5ac9dda71a56265aea9aeddb4bbd38de4c064d46c9bddeefe3f8838495f6b2",
+      "expected_sha256": "ef5ac9dda71a56265aea9aeddb4bbd38de4c064d46c9bddeefe3f8838495f6b2",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\candidate.pkl",
+      "exists": true,
+      "sha256": "850e99783e4133207e06d022cfefe89dc48a25d903a7582ec5d37c0718e52e19",
+      "expected_sha256": "850e99783e4133207e06d022cfefe89dc48a25d903a7582ec5d37c0718e52e19",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\evaluation.csv",
+      "exists": true,
+      "sha256": "c8f465006de4c93acd3c6679946dd476a43d6216e227d8897908dce153aeb877",
+      "expected_sha256": "c8f465006de4c93acd3c6679946dd476a43d6216e227d8897908dce153aeb877",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\fold0.csv",
+      "exists": true,
+      "sha256": "e159c0346c532d592c05c0872bbc0ddf728d4da1e5b2109cb3e7b787e3ce2c3d",
+      "expected_sha256": "e159c0346c532d592c05c0872bbc0ddf728d4da1e5b2109cb3e7b787e3ce2c3d",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\fold1.csv",
+      "exists": true,
+      "sha256": "ceb40cc2c2a62019827a4e4870ab674eb1a9088906942f393c4fcc34840e3553",
+      "expected_sha256": "ceb40cc2c2a62019827a4e4870ab674eb1a9088906942f393c4fcc34840e3553",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\fold2.csv",
+      "exists": true,
+      "sha256": "bd9808fff640b25d27fc3023c8aefde70895c31664fd6748cc688ec1e4896013",
+      "expected_sha256": "bd9808fff640b25d27fc3023c8aefde70895c31664fd6748cc688ec1e4896013",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\full.csv",
+      "exists": true,
+      "sha256": "86ae223d40dcf448627d2093b23b3cc42229eabad5e54cd129706d46ce1d81cd",
+      "expected_sha256": "86ae223d40dcf448627d2093b23b3cc42229eabad5e54cd129706d46ce1d81cd",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\full_reference_components.json",
+      "exists": true,
+      "sha256": "cf7c566eb20aaa96ff804a0889303c2c8ee9410e765c4378039c2a3fd56181d8",
+      "expected_sha256": "cf7c566eb20aaa96ff804a0889303c2c8ee9410e765c4378039c2a3fd56181d8",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\oof.csv",
+      "exists": true,
+      "sha256": "e1d59544942d27101629465dd5ffd0c77d925605a592e956d80091b43b4f0c76",
+      "expected_sha256": "e1d59544942d27101629465dd5ffd0c77d925605a592e956d80091b43b4f0c76",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\remove_local_balancing.pkl",
+      "exists": true,
+      "sha256": "4064496ac674a0bf58fb05539cebab9f0197bc66575b4866fbe34e773b824f14",
+      "expected_sha256": "4064496ac674a0bf58fb05539cebab9f0197bc66575b4866fbe34e773b824f14",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\scored_calibration.csv",
+      "exists": true,
+      "sha256": "e07d1272a172fb3c029f2f3d1a81508f89da6b43f51659aad7f283664e9f0bd8",
+      "expected_sha256": "e07d1272a172fb3c029f2f3d1a81508f89da6b43f51659aad7f283664e9f0bd8",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\scored_evaluation.csv",
+      "exists": true,
+      "sha256": "9c3b1ad3c94b3c3172c57dca0b1f768ce234df665302d4728b78d67e14ec3004",
+      "expected_sha256": "9c3b1ad3c94b3c3172c57dca0b1f768ce234df665302d4728b78d67e14ec3004",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\simple_group_weighting.pkl",
+      "exists": true,
+      "sha256": "b821bba9bbf906e4fa33fb30015a1c7d7c40d756c92ad4eba579cab2a24b04c2",
+      "expected_sha256": "b821bba9bbf906e4fa33fb30015a1c7d7c40d756c92ad4eba579cab2a24b04c2",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\calibration.csv",
+      "exists": true,
+      "sha256": "00fa66536d105419589088efceadc0810c648907f0d8b27e8f225bfe44b7d2da",
+      "expected_sha256": "00fa66536d105419589088efceadc0810c648907f0d8b27e8f225bfe44b7d2da",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\candidate.pkl",
+      "exists": true,
+      "sha256": "52f3e44ab1bbf8995f1f7b72e47aacec186969fed732dfa8dc0af92f6d8b034e",
+      "expected_sha256": "52f3e44ab1bbf8995f1f7b72e47aacec186969fed732dfa8dc0af92f6d8b034e",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\evaluation.csv",
+      "exists": true,
+      "sha256": "69971a6ae885e130892a9e8c5ec9db95d664336eaa09763350c1128ac27dfeba",
+      "expected_sha256": "69971a6ae885e130892a9e8c5ec9db95d664336eaa09763350c1128ac27dfeba",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\fold0.csv",
+      "exists": true,
+      "sha256": "7e37e7913ceba9b2713138e6f301e7e622240718ef487dc17b0852c2d93bd6ca",
+      "expected_sha256": "7e37e7913ceba9b2713138e6f301e7e622240718ef487dc17b0852c2d93bd6ca",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\fold1.csv",
+      "exists": true,
+      "sha256": "1041536d66da66e05f3030e76285e7259b76bfb650d3886381cf1b0cd43f3d9e",
+      "expected_sha256": "1041536d66da66e05f3030e76285e7259b76bfb650d3886381cf1b0cd43f3d9e",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\fold2.csv",
+      "exists": true,
+      "sha256": "ddd5223724677c33a5472adf96a9abacc149e710db6f267ba39d16290fb9f9fa",
+      "expected_sha256": "ddd5223724677c33a5472adf96a9abacc149e710db6f267ba39d16290fb9f9fa",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\full.csv",
+      "exists": true,
+      "sha256": "8ac43e73d3fe151bab245691fe6918b94e09fa490009980939cb64532609d897",
+      "expected_sha256": "8ac43e73d3fe151bab245691fe6918b94e09fa490009980939cb64532609d897",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\full_reference_components.json",
+      "exists": true,
+      "sha256": "fc99d12e4045ff0f08ed050b5dcacf376a3603fb2056477dd47f6479fbd6abb4",
+      "expected_sha256": "fc99d12e4045ff0f08ed050b5dcacf376a3603fb2056477dd47f6479fbd6abb4",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\oof.csv",
+      "exists": true,
+      "sha256": "59c71289decd373e4506bd827c4a73286ada8044aded5cfe926aec7bd5ca3b9f",
+      "expected_sha256": "59c71289decd373e4506bd827c4a73286ada8044aded5cfe926aec7bd5ca3b9f",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\remove_local_balancing.pkl",
+      "exists": true,
+      "sha256": "46db3c2b7af7122b4e1c859befb3944009577453429d4536e191767e142dda8a",
+      "expected_sha256": "46db3c2b7af7122b4e1c859befb3944009577453429d4536e191767e142dda8a",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\scored_calibration.csv",
+      "exists": true,
+      "sha256": "608c00559f304e54ea2e29e688e64af1078cf036395942348db96167f2c3ed0a",
+      "expected_sha256": "608c00559f304e54ea2e29e688e64af1078cf036395942348db96167f2c3ed0a",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\scored_evaluation.csv",
+      "exists": true,
+      "sha256": "065e99abf910be50e3d193de1c46490d10a0516787709731e8a579340bf63c4c",
+      "expected_sha256": "065e99abf910be50e3d193de1c46490d10a0516787709731e8a579340bf63c4c",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\simple_group_weighting.pkl",
+      "exists": true,
+      "sha256": "4758d0653dcd86fd9560e11dba6914a7dbae2da894c25058074201abed0510f9",
+      "expected_sha256": "4758d0653dcd86fd9560e11dba6914a7dbae2da894c25058074201abed0510f9",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\calibration.csv",
+      "exists": true,
+      "sha256": "dc5203040abd5e74320c6c94935c21942e94eb8a703435f74fa3f88e49292ae6",
+      "expected_sha256": "dc5203040abd5e74320c6c94935c21942e94eb8a703435f74fa3f88e49292ae6",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\candidate.pkl",
+      "exists": true,
+      "sha256": "3da5ea12f333d7130245294fbd11333e99631a5d5fbe4c569cd9f1bcb1ecc50b",
+      "expected_sha256": "3da5ea12f333d7130245294fbd11333e99631a5d5fbe4c569cd9f1bcb1ecc50b",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\evaluation.csv",
+      "exists": true,
+      "sha256": "132e1e9a56ed2aef732e1eb5ef0b8a5a42f7aca35bcf2568dc390d3b91c0e9b2",
+      "expected_sha256": "132e1e9a56ed2aef732e1eb5ef0b8a5a42f7aca35bcf2568dc390d3b91c0e9b2",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\fold0.csv",
+      "exists": true,
+      "sha256": "9da49007186327b828f4253ab4bd1c5994bc5fca9a5b15ab3473bf6da0e0ae4d",
+      "expected_sha256": "9da49007186327b828f4253ab4bd1c5994bc5fca9a5b15ab3473bf6da0e0ae4d",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\fold1.csv",
+      "exists": true,
+      "sha256": "3b1d34baf17c7feea05353bb53ecb73e8c0724d63a9d506cc7bdc4ace7f44a3d",
+      "expected_sha256": "3b1d34baf17c7feea05353bb53ecb73e8c0724d63a9d506cc7bdc4ace7f44a3d",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\fold2.csv",
+      "exists": true,
+      "sha256": "2f1ba230289932cf53ae4059cd93f5432abac4e35836551403c2011f9113a5f8",
+      "expected_sha256": "2f1ba230289932cf53ae4059cd93f5432abac4e35836551403c2011f9113a5f8",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\full.csv",
+      "exists": true,
+      "sha256": "0b23f3f9bf5e96f1c432278c7d5c8bbb85970724d675ef0f9d0e85458978402b",
+      "expected_sha256": "0b23f3f9bf5e96f1c432278c7d5c8bbb85970724d675ef0f9d0e85458978402b",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\full_reference_components.json",
+      "exists": true,
+      "sha256": "82bb99b002a3526aa0bba9c1d5c2027e38d5acd117ec1eaa57fd60fbb4425af0",
+      "expected_sha256": "82bb99b002a3526aa0bba9c1d5c2027e38d5acd117ec1eaa57fd60fbb4425af0",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\oof.csv",
+      "exists": true,
+      "sha256": "0810fdc87b801bfc613e10581fd20d280104cebe607683d0eb3a7e4dd29d2c31",
+      "expected_sha256": "0810fdc87b801bfc613e10581fd20d280104cebe607683d0eb3a7e4dd29d2c31",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\remove_local_balancing.pkl",
+      "exists": true,
+      "sha256": "413c580a364b4c36f939d7b0c857a5fb475e5e6f5ab81e1a594ad8d98eaadb99",
+      "expected_sha256": "413c580a364b4c36f939d7b0c857a5fb475e5e6f5ab81e1a594ad8d98eaadb99",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\scored_calibration.csv",
+      "exists": true,
+      "sha256": "57f1a913c9a81ee67798449b2b3485ac671228a553871b4c2bf365ae04b3fc5f",
+      "expected_sha256": "57f1a913c9a81ee67798449b2b3485ac671228a553871b4c2bf365ae04b3fc5f",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\scored_evaluation.csv",
+      "exists": true,
+      "sha256": "f8111f8b30b21e3e55ebe5b6a7867234651f848214bbff98a540880d381e84b8",
+      "expected_sha256": "f8111f8b30b21e3e55ebe5b6a7867234651f848214bbff98a540880d381e84b8",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\simple_group_weighting.pkl",
+      "exists": true,
+      "sha256": "7d5075ed26e98eeeb6a0ff6ccd35d6a8af1ee302024722f1d1ef3ad8123a9dd2",
+      "expected_sha256": "7d5075ed26e98eeeb6a0ff6ccd35d6a8af1ee302024722f1d1ef3ad8123a9dd2",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\sequential_replay.json",
+      "exists": true,
+      "sha256": "9c3ba8704f190c3f65c74a56279045f2dcb37d940f28901338ce8a8f29baa2f0",
+      "expected_sha256": "9c3ba8704f190c3f65c74a56279045f2dcb37d940f28901338ce8a8f29baa2f0",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\docs\\research\\component_roughness_pilot_20261006\\next_explanation_protocol.json",
+      "exists": true,
+      "sha256": "c792fa57f7faec8d36a17db555a963c68102061c668e20f19488962b4fd8a6bc",
+      "expected_sha256": "c792fa57f7faec8d36a17db555a963c68102061c668e20f19488962b4fd8a6bc",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-main\\scripts\\fppool_pilot\\analyze_pairs.py",
+      "exists": true,
+      "sha256": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73",
+      "expected_sha256": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\roughness_sources_20261005\\qsar-landscape-roughness\\src\\build_features.py",
+      "exists": true,
+      "sha256": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+      "expected_sha256": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\audit_cara_schema.py",
+      "exists": true,
+      "sha256": "786ee9f976842cb3c5a4da0d38912709dcffba069c2d3715eb91dfcd8dd2dbb6",
+      "expected_sha256": "786ee9f976842cb3c5a4da0d38912709dcffba069c2d3715eb91dfcd8dd2dbb6",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\audit_component_roles.py",
+      "exists": true,
+      "sha256": "a6b8429fea47cf3227cca5a614d8030060b0135c86596e17f590b17a538037a5",
+      "expected_sha256": "a6b8429fea47cf3227cca5a614d8030060b0135c86596e17f590b17a538037a5",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\audit_joint_dependencies.py",
+      "exists": true,
+      "sha256": "01209f77826dc952c38116f6316591f44f39e96c5d2217d8cb62a2651f1318c7",
+      "expected_sha256": "01209f77826dc952c38116f6316591f44f39e96c5d2217d8cb62a2651f1318c7",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\audit_pdf_data.py",
+      "exists": true,
+      "sha256": "02bc4d72ac8f3f233c7a6e53c4b567e41b423114bcfed09ad8f52870e2dacbed",
+      "expected_sha256": "02bc4d72ac8f3f233c7a6e53c4b567e41b423114bcfed09ad8f52870e2dacbed",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\check_objective_order.py",
+      "exists": true,
+      "sha256": "bb039c6db2950c1c16f81bfeb5431ee7483a82c63fb0e6e5ca665f15a45688e9",
+      "expected_sha256": "bb039c6db2950c1c16f81bfeb5431ee7483a82c63fb0e6e5ca665f15a45688e9",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\check_simple_risk_control.py",
+      "exists": true,
+      "sha256": "7189c7445ae62c7fba1807d794653b8309b5ff29d46056e213d08b75423339cb",
+      "expected_sha256": "7189c7445ae62c7fba1807d794653b8309b5ff29d46056e213d08b75423339cb",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\check_support_risk.py",
+      "exists": true,
+      "sha256": "ff0b3a3b63b9caf4a92d8c18baccc0c4a8c1692071a23c7b73074489618aa06d",
+      "expected_sha256": "ff0b3a3b63b9caf4a92d8c18baccc0c4a8c1692071a23c7b73074489618aa06d",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\component_roughness.py",
+      "exists": true,
+      "sha256": "93d54726892013d349ee9c898888e826854832391223f2cd4a8c7ecf4bad07bd",
+      "expected_sha256": "93d54726892013d349ee9c898888e826854832391223f2cd4a8c7ecf4bad07bd",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\explain_component_cases.py",
+      "exists": true,
+      "sha256": "4d0a38d7ff58ff734eb24a957dd09ad772e9bf1cb59f3e23f2b1f5ccc54eef01",
+      "expected_sha256": "4d0a38d7ff58ff734eb24a957dd09ad772e9bf1cb59f3e23f2b1f5ccc54eef01",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_component_pilot.py",
+      "exists": true,
+      "sha256": "4f1ebf853c5c79655bfd3bca88c58cf9a0b7b55d600c5d795acfc245369a33b0",
+      "expected_sha256": "4f1ebf853c5c79655bfd3bca88c58cf9a0b7b55d600c5d795acfc245369a33b0",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_phase_a.py",
+      "exists": true,
+      "sha256": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+      "expected_sha256": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_roughness_permutation.py",
+      "exists": true,
+      "sha256": "1fb3ad47caf3d18a7889690c1f26257ccba3bc98d9ee551b6ed4d6ec34b73b8f",
+      "expected_sha256": "1fb3ad47caf3d18a7889690c1f26257ccba3bc98d9ee551b6ed4d6ec34b73b8f",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\experiments\\reliability_base\\run_smoke.py",
+      "exists": true,
+      "sha256": "ff90fda504ab3e9df727d6de05798e10eecd5fcddf1b8ddff6f8d96887425e7a",
+      "expected_sha256": "ff90fda504ab3e9df727d6de05798e10eecd5fcddf1b8ddff6f8d96887425e7a",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\scored_calibration.csv",
+      "exists": true,
+      "sha256": "e07d1272a172fb3c029f2f3d1a81508f89da6b43f51659aad7f283664e9f0bd8",
+      "expected_sha256": "e07d1272a172fb3c029f2f3d1a81508f89da6b43f51659aad7f283664e9f0bd8",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\scored_evaluation.csv",
+      "exists": true,
+      "sha256": "9c3b1ad3c94b3c3172c57dca0b1f768ce234df665302d4728b78d67e14ec3004",
+      "expected_sha256": "9c3b1ad3c94b3c3172c57dca0b1f768ce234df665302d4728b78d67e14ec3004",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\candidate.pkl",
+      "exists": true,
+      "sha256": "850e99783e4133207e06d022cfefe89dc48a25d903a7582ec5d37c0718e52e19",
+      "expected_sha256": "850e99783e4133207e06d022cfefe89dc48a25d903a7582ec5d37c0718e52e19",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\remove_local_balancing.pkl",
+      "exists": true,
+      "sha256": "4064496ac674a0bf58fb05539cebab9f0197bc66575b4866fbe34e773b824f14",
+      "expected_sha256": "4064496ac674a0bf58fb05539cebab9f0197bc66575b4866fbe34e773b824f14",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL234_Ki\\full_reference_components.json",
+      "exists": true,
+      "sha256": "cf7c566eb20aaa96ff804a0889303c2c8ee9410e765c4378039c2a3fd56181d8",
+      "expected_sha256": "cf7c566eb20aaa96ff804a0889303c2c8ee9410e765c4378039c2a3fd56181d8",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL234_Ki\\full\\features\\data\\fixture.csv",
+      "exists": true,
+      "sha256": "3c67ec55d5b00371f7d8b0e000a52dec4528de8039c83463c6526d3dad642427",
+      "expected_sha256": "3c67ec55d5b00371f7d8b0e000a52dec4528de8039c83463c6526d3dad642427",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\scored_calibration.csv",
+      "exists": true,
+      "sha256": "608c00559f304e54ea2e29e688e64af1078cf036395942348db96167f2c3ed0a",
+      "expected_sha256": "608c00559f304e54ea2e29e688e64af1078cf036395942348db96167f2c3ed0a",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\scored_evaluation.csv",
+      "exists": true,
+      "sha256": "065e99abf910be50e3d193de1c46490d10a0516787709731e8a579340bf63c4c",
+      "expected_sha256": "065e99abf910be50e3d193de1c46490d10a0516787709731e8a579340bf63c4c",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\candidate.pkl",
+      "exists": true,
+      "sha256": "52f3e44ab1bbf8995f1f7b72e47aacec186969fed732dfa8dc0af92f6d8b034e",
+      "expected_sha256": "52f3e44ab1bbf8995f1f7b72e47aacec186969fed732dfa8dc0af92f6d8b034e",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\remove_local_balancing.pkl",
+      "exists": true,
+      "sha256": "46db3c2b7af7122b4e1c859befb3944009577453429d4536e191767e142dda8a",
+      "expected_sha256": "46db3c2b7af7122b4e1c859befb3944009577453429d4536e191767e142dda8a",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL244_Ki\\full_reference_components.json",
+      "exists": true,
+      "sha256": "fc99d12e4045ff0f08ed050b5dcacf376a3603fb2056477dd47f6479fbd6abb4",
+      "expected_sha256": "fc99d12e4045ff0f08ed050b5dcacf376a3603fb2056477dd47f6479fbd6abb4",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL244_Ki\\full\\features\\data\\fixture.csv",
+      "exists": true,
+      "sha256": "98eb6a5046399350cb67baaa2fa417e6b165dfb541caf44f38709cd8f4f796ea",
+      "expected_sha256": "98eb6a5046399350cb67baaa2fa417e6b165dfb541caf44f38709cd8f4f796ea",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\scored_calibration.csv",
+      "exists": true,
+      "sha256": "57f1a913c9a81ee67798449b2b3485ac671228a553871b4c2bf365ae04b3fc5f",
+      "expected_sha256": "57f1a913c9a81ee67798449b2b3485ac671228a553871b4c2bf365ae04b3fc5f",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\scored_evaluation.csv",
+      "exists": true,
+      "sha256": "f8111f8b30b21e3e55ebe5b6a7867234651f848214bbff98a540880d381e84b8",
+      "expected_sha256": "f8111f8b30b21e3e55ebe5b6a7867234651f848214bbff98a540880d381e84b8",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\candidate.pkl",
+      "exists": true,
+      "sha256": "3da5ea12f333d7130245294fbd11333e99631a5d5fbe4c569cd9f1bcb1ecc50b",
+      "expected_sha256": "3da5ea12f333d7130245294fbd11333e99631a5d5fbe4c569cd9f1bcb1ecc50b",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\remove_local_balancing.pkl",
+      "exists": true,
+      "sha256": "413c580a364b4c36f939d7b0c857a5fb475e5e6f5ab81e1a594ad8d98eaadb99",
+      "expected_sha256": "413c580a364b4c36f939d7b0c857a5fb475e5e6f5ab81e1a594ad8d98eaadb99",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_pilot_20261006\\CHEMBL4792_Ki\\full_reference_components.json",
+      "exists": true,
+      "sha256": "82bb99b002a3526aa0bba9c1d5c2027e38d5acd117ec1eaa57fd60fbb4425af0",
+      "expected_sha256": "82bb99b002a3526aa0bba9c1d5c2027e38d5acd117ec1eaa57fd60fbb4425af0",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\reliability_phase_a_20261005_v3\\CHEMBL4792_Ki\\full\\features\\data\\fixture.csv",
+      "exists": true,
+      "sha256": "571bb883b361248f006cf75940d6e908a80ab8c7c1926ed0572d50483f2944e8",
+      "expected_sha256": "571bb883b361248f006cf75940d6e908a80ab8c7c1926ed0572d50483f2944e8",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\aggregates.json",
+      "exists": true,
+      "sha256": "26b63b694bbe2c414cf72c18b54947b15a7f3f720f1f9ac7d1c136f09d84ea81",
+      "expected_sha256": "26b63b694bbe2c414cf72c18b54947b15a7f3f720f1f9ac7d1c136f09d84ea81",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\cases.json",
+      "exists": true,
+      "sha256": "cf8c723585782bec7810e55b18e88a6b22baf7d8ea18e505cf1d7daf40994672",
+      "expected_sha256": "cf8c723585782bec7810e55b18e88a6b22baf7d8ea18e505cf1d7daf40994672",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL234_Ki_failure.json",
+      "exists": true,
+      "sha256": "e291009f500624150ae1641fa5d6ade43094b8ecb3b9721fa7dbeaea33b07f53",
+      "expected_sha256": "e291009f500624150ae1641fa5d6ade43094b8ecb3b9721fa7dbeaea33b07f53",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL234_Ki_failure.png",
+      "exists": true,
+      "sha256": "73f84ffbb21ae74fa33d4c95cf9eb3d52bf272f190fe4eaf006819c2c7e69a30",
+      "expected_sha256": "73f84ffbb21ae74fa33d4c95cf9eb3d52bf272f190fe4eaf006819c2c7e69a30",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL234_Ki_ordinary.json",
+      "exists": true,
+      "sha256": "953acce73738584521a282369a27225daa009b28872e50542aadabf39adba535",
+      "expected_sha256": "953acce73738584521a282369a27225daa009b28872e50542aadabf39adba535",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL234_Ki_ordinary.png",
+      "exists": true,
+      "sha256": "8b548cea68a79add9adfebd54ec353c1800719f5bd88d7140d3cf9492fc953cc",
+      "expected_sha256": "8b548cea68a79add9adfebd54ec353c1800719f5bd88d7140d3cf9492fc953cc",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL234_Ki_success.json",
+      "exists": true,
+      "sha256": "21a6693dd73fa8691f809815de8c08bcb5d35eb603075b8c01f7b174ccce0420",
+      "expected_sha256": "21a6693dd73fa8691f809815de8c08bcb5d35eb603075b8c01f7b174ccce0420",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL234_Ki_success.png",
+      "exists": true,
+      "sha256": "4051f374ff3ab17e5497629b82a62c6f8c156d090c4c41ed6640e5592058d1a0",
+      "expected_sha256": "4051f374ff3ab17e5497629b82a62c6f8c156d090c4c41ed6640e5592058d1a0",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL244_Ki_failure.json",
+      "exists": true,
+      "sha256": "1b26be3f8b9e792da3bf005c57152e18d9cf297aeef532b9e2f31e76c1b49b74",
+      "expected_sha256": "1b26be3f8b9e792da3bf005c57152e18d9cf297aeef532b9e2f31e76c1b49b74",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL244_Ki_failure.png",
+      "exists": true,
+      "sha256": "e2b0daae765ca8616f7bd64fd561db899c69085c9205b167b852dda5836c1fa3",
+      "expected_sha256": "e2b0daae765ca8616f7bd64fd561db899c69085c9205b167b852dda5836c1fa3",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL244_Ki_ordinary.json",
+      "exists": true,
+      "sha256": "d954c3a3d893df56228e637f4f4a583e3b106092bd9d816374a6b97a6500c94a",
+      "expected_sha256": "d954c3a3d893df56228e637f4f4a583e3b106092bd9d816374a6b97a6500c94a",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL244_Ki_ordinary.png",
+      "exists": true,
+      "sha256": "757062f594c90ffcf291b198fe9f5bc2b1f21140fd4e85d543255a7378351b00",
+      "expected_sha256": "757062f594c90ffcf291b198fe9f5bc2b1f21140fd4e85d543255a7378351b00",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL244_Ki_success.json",
+      "exists": true,
+      "sha256": "3cf8ff7c7f5273ede0fd7520b6b25ff53c50598c62e1e5e618e8481f3e557c1a",
+      "expected_sha256": "3cf8ff7c7f5273ede0fd7520b6b25ff53c50598c62e1e5e618e8481f3e557c1a",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL244_Ki_success.png",
+      "exists": true,
+      "sha256": "158c2b92b9b707d9557d548ae38fa29d6f94e070cbd8feb39197d8d23c5aa6e6",
+      "expected_sha256": "158c2b92b9b707d9557d548ae38fa29d6f94e070cbd8feb39197d8d23c5aa6e6",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL4792_Ki_failure.json",
+      "exists": true,
+      "sha256": "b581454b71597caa34875b60ff02b1f8a473d8316dca6598670999b6b8353221",
+      "expected_sha256": "b581454b71597caa34875b60ff02b1f8a473d8316dca6598670999b6b8353221",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL4792_Ki_failure.png",
+      "exists": true,
+      "sha256": "442436081e68dc7ce5ce6e56c5b2b2f38e6a2be0d01fded9bd3d55f2a58d4818",
+      "expected_sha256": "442436081e68dc7ce5ce6e56c5b2b2f38e6a2be0d01fded9bd3d55f2a58d4818",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL4792_Ki_ordinary.json",
+      "exists": true,
+      "sha256": "78ad7128ed9c0e5402aebe31c53d77d11e2e6ead98acc52ab72cf44fdba31d06",
+      "expected_sha256": "78ad7128ed9c0e5402aebe31c53d77d11e2e6ead98acc52ab72cf44fdba31d06",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL4792_Ki_ordinary.png",
+      "exists": true,
+      "sha256": "e04da840fb85819880649cbd539ee97fc1af80875a84d53c957c88aefad2ead9",
+      "expected_sha256": "e04da840fb85819880649cbd539ee97fc1af80875a84d53c957c88aefad2ead9",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL4792_Ki_success.json",
+      "exists": true,
+      "sha256": "efde7acfaa79ab31906ddd14182651661f89826e20b45025e619805d5296fdde",
+      "expected_sha256": "efde7acfaa79ab31906ddd14182651661f89826e20b45025e619805d5296fdde",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\CHEMBL4792_Ki_success.png",
+      "exists": true,
+      "sha256": "50b4bac9f34ce2aa52f4f6b03b2bcd245808527adb47d441b38bf69c80c3de5a",
+      "expected_sha256": "50b4bac9f34ce2aa52f4f6b03b2bcd245808527adb47d441b38bf69c80c3de5a",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\execution.json",
+      "exists": true,
+      "sha256": "85fee4c4b8cb0ef3d6cdcc8ed249700e24bc4e35db0da4ee78985ce57e5123d9",
+      "expected_sha256": "85fee4c4b8cb0ef3d6cdcc8ed249700e24bc4e35db0da4ee78985ce57e5123d9",
+      "matches": true
+    },
+    {
+      "path": "D:\\GraphCliff-Pair\\artifacts\\component_roughness_cases_20261006\\gallery.html",
+      "exists": true,
+      "sha256": "59a616cf21f275e5e189232e8f20c6863025e93457061c14ac5ecdbecaf5f316",
+      "expected_sha256": "59a616cf21f275e5e189232e8f20c6863025e93457061c14ac5ecdbecaf5f316",
+      "matches": true
+    }
+  ],
+  "counts": {
+    "old_chemprop": 30,
+    "old_neural": 27,
+    "current_point_weights": 12,
+    "current_role_caches": 9,
+    "checks": 359
+  },
+  "fits": 0,
+  "predictions": 0,
+  "test_labels_read": 0,
+  "new_sources": 0,
+  "limit": "These checks do not certify prospective protocol, checkpoint forward replay, independent calibration, method novelty or publication acceptance."
+}

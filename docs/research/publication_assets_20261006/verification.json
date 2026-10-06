@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "source_bindings": 13,
+  "count_match": true,
+  "role_identity_counts_match": true,
+  "links_checked": 132,
+  "triple_audit": "pass with evidence/logic/uncertainty limits",
+  "fits": 0,
+  "predictions": 0,
+  "private_data_publication": false,
+  "readiness": "0 retained novel cores; pipeline reusable, publication not ready",
+  "script_sha256": "29a9084e69aa054e1f7c90ea303895dce61c58bc0726baf77be144cf2536ed5c"
+}
