@@ -1,0 +1,16 @@
+{
+  "scope_commit": "9d493dd",
+  "jobs_contract_verified": 12,
+  "pure_kernel_selfchecks": 2,
+  "new_real_data_features": 0,
+  "new_fits": 0,
+  "model_inference": 0,
+  "metric_evaluations": 0,
+  "code_sha256": "93d54726892013d349ee9c898888e826854832391223f2cd4a8c7ecf4bad07bd",
+  "protocol_sha256": "1f7a935cd4cf5f0e21036e0f3ab85a4e00ad340f7d07b01b44adc72593f55ab9",
+  "pilot_protocol_sha256": "66619907c6c835fe7ddb2f381e92523466b18b56c5c1f199ab04b60bd604ee52",
+  "input_hashes_unchanged": true,
+  "limits": "Not graph/feature replay on real data, performance replication, or confirmed novelty.",
+  "relative_links_checked": 10,
+  "matched_three_arms_and_nine_fit_budget_verified": true
+}

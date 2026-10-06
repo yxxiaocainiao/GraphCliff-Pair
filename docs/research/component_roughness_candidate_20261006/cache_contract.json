@@ -1,0 +1,131 @@
+{
+  "jobs": [
+    {
+      "task": "CHEMBL234_Ki",
+      "job": "fold0",
+      "reference_rows": 1184,
+      "query_rows": 571,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "job": "fold1",
+      "reference_rows": 1147,
+      "query_rows": 608,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "job": "fold2",
+      "reference_rows": 1179,
+      "query_rows": 576,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "job": "full",
+      "reference_rows": 1755,
+      "query_rows": 874,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "job": "fold0",
+      "reference_rows": 970,
+      "query_rows": 492,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "job": "fold1",
+      "reference_rows": 977,
+      "query_rows": 485,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "job": "fold2",
+      "reference_rows": 977,
+      "query_rows": 485,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "job": "full",
+      "reference_rows": 1462,
+      "query_rows": 777,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "job": "fold0",
+      "reference_rows": 460,
+      "query_rows": 242,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "job": "fold1",
+      "reference_rows": 472,
+      "query_rows": 230,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "job": "fold2",
+      "reference_rows": 472,
+      "query_rows": 230,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "job": "full",
+      "reference_rows": 702,
+      "query_rows": 366,
+      "reference_order_and_activity_matches_manifest": true,
+      "query_placeholders_zero": true,
+      "canonical_overlap": 0,
+      "query_identity_matches_cached_features": true
+    }
+  ],
+  "new_fits": 0,
+  "new_real_data_features": 0,
+  "model_inference": 0,
+  "metric_evaluations": 0,
+  "official_test_rows": 0,
+  "method": "Saved fixture references checked against existing OOF identities and original manifests; fixtures split=test are placeholders, not official test records. No component graph or neighbors constructed.",
+  "limitation": "Reference-group topology and top10 mixed multiplicity remain unmeasured; actual feature replay belongs to M38."
+}

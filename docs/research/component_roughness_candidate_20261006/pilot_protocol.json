@@ -1,0 +1,89 @@
+{
+  "status": "frozen_next_milestone_only_not_executed",
+  "candidate": "component-balanced local dispersion and nonempty component-pair SALI blocks",
+  "tasks": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki",
+    "CHEMBL4792_Ki"
+  ],
+  "point_prediction_cache": "artifacts/reliability_phase_a_20261005_v3",
+  "manifest_directory": "artifacts/reliability_protocol_20261005_v2",
+  "reference_graph": "Rebuild only saved train reference rows for each job using M33 fixed finite relation; no query nodes. Full-fit graph additionally supplies group labels for risk-loss weighting of OOF rows.",
+  "generic": [
+    "prediction",
+    "nn_sim",
+    "local_dens",
+    "mol_size",
+    "rf_var"
+  ],
+  "shared_support": [
+    "component_count",
+    "component_max_fraction"
+  ],
+  "arms": {
+    "candidate": {
+      "roughness": [
+        "cb_disp",
+        "cb_sali"
+      ],
+      "sample_weight": null
+    },
+    "remove_local_balancing": {
+      "roughness": [
+        "nbr_disp",
+        "sali_mean"
+      ],
+      "sample_weight": null
+    },
+    "simple_group_weighting": {
+      "roughness": [
+        "nbr_disp",
+        "sali_mean"
+      ],
+      "sample_weight": "For each OOF risk-training row: 1/(size of its full-fit-reference component), normalized to mean1. Not Group DRO; ordinary sklearn weighted RF."
+    }
+  },
+  "all_new_arm_feature_dimensions": 9,
+  "rf": {
+    "n_estimators": 200,
+    "max_features": "sqrt",
+    "min_samples_leaf": 5,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "risk_target": "abs(cached OOF prediction - cached y)",
+  "main_metric": "fixed six-acceptance-fraction mean RMSE from existing fixed_protocol.json; lower better",
+  "baseline_reuse": [
+    "ordinary generic5 RF saved risk predictions",
+    "ordinary augmented7 RF saved risk predictions",
+    "frozen equal-combination result; replay source identities and metric before comparison"
+  ],
+  "replay_tolerance": 1e-10,
+  "budgets": {
+    "max_risk_fits": 9,
+    "new_Chemprop_fits": 0,
+    "max_graph_feature_wall_seconds_per_job": 120,
+    "total_preparation_wall_seconds": 1800,
+    "total_risk_fit_wall_seconds": 1800,
+    "official_test_rows": 0,
+    "hyperparameter_search": 0
+  },
+  "diagnostics": [
+    "Report component-count histogram and proportion of queries where balanced features differ from raw; no query labels used",
+    "Three largest evaluation M33 components omitted one at a time for all arms, keep calibration and predictions fixed; posthoc descriptive influence only, global M33 graph never used in risk inputs",
+    "Finite risk outputs, save/load replay, full curves and full errors for all tasks"
+  ],
+  "decision": "No fixed percentage or win-count veto. Evaluate identifiable local-balancing effect vs both fitted controls, ordinary RF and simple combination; stability/scope/cost, all failures and harms retained. If all declared benefits unsupported and no one bounded corrective evidence can change judgment, stop candidate. No automatic tuning on cached evaluation.",
+  "explanation": "If retained, fixed cases and risk-neighbor perturbations plus point-model atom attribution fidelity from current master plan. This pilot does not claim chemical causality or journal-ready novelty.",
+  "graph_reuse_contract": {
+    "protocol_file": "docs\\research\\joint_dependency_preflight_20261006\\protocol.json",
+    "protocol_sha256": "0a0f2c31b51a8dcfaa47df80657f2d1c2801614697c91484dcd9bd786bc8b439",
+    "helper_file": "experiments/reliability_base/audit_joint_dependencies.py",
+    "helper_sha256": "01209f77826dc952c38116f6316591f44f39e96c5d2217d8cb62a2651f1318c7",
+    "fragment_source": "D:\\GraphCliff-main\\scripts\\fppool_pilot\\analyze_pairs.py",
+    "fragment_source_sha256": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73",
+    "relation": "RDKit default cut-bond SMARTS, maxCuts=1; exact shared core >=2/3 heavy atoms of each molecule; different variable fragments required. Reuse heavy/fragments AST from existing local source.",
+    "canonical": "RDKit MolToSmiles canonical+isomeric default; no salt/tautomer standardization added",
+    "scaffold": "Exact nonempty MurckoScaffoldSmiles includeChirality=False; empty remains ungrouped except canonical/MMP links"
+  }
+}
