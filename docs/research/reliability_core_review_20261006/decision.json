@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-06",
+  "retained_core_count": 0,
+  "decision": "stop_current_topic_expansion",
+  "publication_goal_complete": false,
+  "permutation_gate": null,
+  "reason": "直接改法已有明确重叠；支持量/规模失效未确认；无可冻结增量核心",
+  "review_new_fits": 0,
+  "new_plan_fits_started": 18,
+  "accepted_outputs": 17,
+  "next_training_authorized_by_gate": false,
+  "third_task_permutations": 4,
+  "source_count": 11,
+  "math_counterexample": {
+    "A_abs": 2,
+    "A_squared": 4,
+    "B_abs": 1,
+    "B_squared": 10
+  },
+  "unknowns": [
+    "分子中排序失配是否存在",
+    "低支持量是否导致粗糙度风险误判",
+    "参考规模迁移效应",
+    "跨seed重复性",
+    "解释忠实度"
+  ],
+  "verification": {
+    "source_limit": true,
+    "input_hashes": true,
+    "curve_values_checked": 102,
+    "accepted_runs": 17,
+    "permutation_counts": [
+      5,
+      5,
+      4
+    ],
+    "local_links_checked": 12,
+    "theoretical_example": true,
+    "checks_add_fits": 0
+  }
+}

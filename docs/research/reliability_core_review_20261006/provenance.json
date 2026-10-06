@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-06",
+  "baseline_commit": "11f056707a9797ebc96f511aa9a057e5eed28197",
+  "registration": "检索中登记/事后整理",
+  "source_count": 11,
+  "sources": [
+    {
+      "id": "sele",
+      "url": "https://proceedings.mlr.press/v97/franc19a.html",
+      "evidence": "2019原始论文：条件风险排序；官方代码README",
+      "official_code": "https://github.com/xfrancv/sele",
+      "commit": "d9f6f2f6a72b9458b411d4a3af97dccd5ee544da",
+      "license": "未确认",
+      "execution": "Matlab/MATCONVNET；未运行",
+      "web_content_sha256": null
+    },
+    {
+      "id": "optimal_strategies",
+      "url": "https://jmlr.org/papers/v24/21-0048.html",
+      "evidence": "2023原始论文PDF第3.3/3.4节：损失回归/SELE代理",
+      "official_code": "https://github.com/xfrancv/sele",
+      "commit": null,
+      "license": "同SELE许可未确认",
+      "execution": "未运行",
+      "web_content_sha256": null
+    },
+    {
+      "id": "selectivenet",
+      "url": "https://proceedings.mlr.press/v97/geifman19a.html",
+      "evidence": "2019原始论文第3节选择风险/覆盖约束；官方README",
+      "official_code": "https://github.com/geifmany/selectivenet",
+      "commit": "a6d0a8fd33dae61da910b61a2aae93102d2d4869",
+      "license": "未确认",
+      "execution": "图像示例；回归适配与环境未验证",
+      "web_content_sha256": null
+    },
+    {
+      "id": "rdn",
+      "url": "https://doi.org/10.1186/s13321-016-0182-y",
+      "evidence": "2016原始论文全文：方法及式1；作者大学PDF",
+      "official_code": null,
+      "commit": null,
+      "license": "论文CC-BY；代码未确认",
+      "execution": "官方可运行实现未定位",
+      "web_content_sha256": null
+    },
+    {
+      "id": "roughness",
+      "url": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+      "evidence": "作者源码build_features/conformal及paper/main.tex；继承M20固定版本审查",
+      "official_code": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "license": "MIT，继承本地审查",
+      "execution": "已复用特征；作者论文正式发表状态未确认",
+      "web_content_sha256": null
+    },
+    {
+      "id": "unique",
+      "url": "https://github.com/Novartis/UNIQUE",
+      "evidence": "官方源码random_forest_regressor及输入文档；继承M20固定版本",
+      "official_code": "https://github.com/Novartis/UNIQUE",
+      "commit": "c6d65b9c63102bc18e68c25c98d76e24650c3e4a",
+      "license": "BSD-3-Clause，源码许可头",
+      "execution": "薄RF等价适配；完整UNIQUE未运行",
+      "web_content_sha256": null
+    },
+    {
+      "id": "cvplus",
+      "url": "https://arxiv.org/abs/1905.02928",
+      "evidence": "原始论文v3/2020，第3节式10/11；非当前模型覆盖保证",
+      "official_code": null,
+      "commit": null,
+      "license": "论文与代码分别处理；此项未定位官方代码",
+      "execution": "拟采用MAPIE需另验接口",
+      "web_content_sha256": null
+    },
+    {
+      "id": "jab",
+      "url": "https://proceedings.neurips.cc/paper/2020/hash/2b346a0aa375a07f5a90a344a61416c4-Abstract.html",
+      "evidence": "NeurIPS2020原始PDF前3页，子采样模型与对应残差",
+      "official_code": null,
+      "commit": null,
+      "license": "此项官方代码未定位",
+      "execution": "未运行",
+      "web_content_sha256": null
+    },
+    {
+      "id": "mapie",
+      "url": "https://github.com/scikit-learn-contrib/MAPIE",
+      "evidence": "官方README与固定commit LICENSE全文",
+      "official_code": "https://github.com/scikit-learn-contrib/MAPIE",
+      "commit": "3b84b8212db2bba452ef5a09ae06a0dd545869ae",
+      "license": "BSD-3-Clause，固定LICENSE核验",
+      "execution": "未安装；回归适配未运行",
+      "web_content_sha256": null
+    },
+    {
+      "id": "puqsar",
+      "url": "https://github.com/Merck/puqsar",
+      "evidence": "辅助复用筛查：README及论文元数据，非对应2024论文全文核验",
+      "official_code": "https://github.com/Merck/puqsar",
+      "commit": "6998b6d44a2908c0aa3c26de9d9e731d8e5d1ee2",
+      "license": "README声明GPL-3；固定LICENSE获取未成功",
+      "execution": "TF/Keras/LightGBM依赖，未安装运行",
+      "web_content_sha256": null
+    },
+    {
+      "id": "selective_fairness",
+      "url": "https://proceedings.mlr.press/v162/shah22a.html",
+      "evidence": "辅助筛查：ICML2022原始论文方法，群体选择回归公平；未列Q1第四主方法",
+      "official_code": null,
+      "commit": null,
+      "license": "未核验代码",
+      "execution": "不保留/不运行",
+      "web_content_sha256": null
+    }
+  ],
+  "primary_by_question": [
+    [
+      "sele",
+      "optimal_strategies",
+      "selectivenet"
+    ],
+    [
+      "rdn",
+      "roughness",
+      "unique"
+    ],
+    [
+      "cvplus",
+      "jab",
+      "mapie"
+    ]
+  ],
+  "input_hashes": {
+    "experiments/reliability_base/permutation_results.json": "260162e7957a50547a17dbce4fc8a4817f10bdabc92a9d1be6815c527f9303a2",
+    "experiments/reliability_base/permutation_report.md": "0cbf94fd39f0b5b58b8e11977e690cccf78a67384b12189f7317b43ede752c51",
+    "docs/research/literature_29_20261005/method_boundary.md": "ea62b05ffe5c0a89c62e9fdefa35f807ed18402bfa3b0681403b6f34120f995b",
+    "docs/research/reliability_publication_plan.md": "ac7173bd2b7855ca284a63c9d6b7b07f4c4bb940f9d11c30fe4a3df1355f509e",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/paper/main.tex": "94f6b83208670fd13cfa7e8546fb649850dca7f0b82d2b8445abf31c96ac333e",
+    "artifacts/roughness_sources_20261005/UNIQUE/unique/error_models/models/random_forest_regressor.py": "104a570bf1a2010b09beef4facc7c8cd96c842b727445871f1b9421bd03c45d5"
+  },
+  "input_hash_note": "本地读取时原始字节SHA；总计划为M29状态更新前版本，可由baseline_commit还原（Git LF/工作树CRLF区别已核验）。网络未逐字归档记null。"
+}
