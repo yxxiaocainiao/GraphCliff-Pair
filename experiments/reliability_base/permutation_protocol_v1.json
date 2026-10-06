@@ -38,7 +38,7 @@
   },
   "inputs": {
     "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
-    "experiments/reliability_base/run_roughness_permutation.py": "1fb3ad47caf3d18a7889690c1f26257ccba3bc98d9ee551b6ed4d6ec34b73b8f",
+    "experiments/reliability_base/run_roughness_permutation.py": "0a7ab4820c1fbc8d1e61dc774db829d9194bf6d3c726681290a313a161bff02e",
     "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
     "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f",
     "artifacts/reliability_phase_a_20261005_v3/artifact_binding.json": "2c894993caacdd524db6718937d59626e260b4b2ef8ba09ff3875c57b0fcd1db",
@@ -55,10 +55,6 @@
     "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/oof.csv": "fea00e6c9d38f91457e2d79dc041bcccf6969630972515805ced4c27a02170f6",
     "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
     "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
-    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
-    "artifacts/roughness_permutation_20261006/execution.json": "fbf1621985edfd242ac1d40f83afee4d6a7c785f77a213fa2ae4867207d0aa06"
-  },
-  "prior_fits_started": 1,
-  "prior_execution_sha256": "fbf1621985edfd242ac1d40f83afee4d6a7c785f77a213fa2ae4867207d0aa06",
-  "revision": "Technical v2 before remaining fits: round-trip CSV input restores original doubles; one prior fit charged; no threshold/feature/seed/budget change; incomplete matrix cannot pass gate."
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3"
+  }
 }

@@ -7,3 +7,7 @@
 置乱破坏粗糙度和普通特征的关联，可能产生不自然特征组合；因此只检查模型对正确匹配的依赖，不是化学因果，也不是完备条件独立检验。通过不等于算法创新，失败不等于粗糙度所有用途无效。失败暂停增强候选；有界三问题审查仍需交付。完整计划见../../docs/research/reliability_publication_plan.md。
 
 计划18fit/实际0，0新主干/0官方test；输入来源与hash、软件及配置见permutation_protocol.json。旧runner/协议及GraphCliff/my_work不变。采用experimental-design技能的配对和正确重复层级规范，工具引用继承M27报告。
+
+
+## 技术修订v2（1fit后、0置乱后）
+首次234真实重放差异0.0019457，来源核验显示普通CSV解析的73标签舍入，round-trip恢复原标签及OOF预测/特征逐值一致。v1 JSON另存，剩余运行使用round-trip；前1次计入18总预算，最多17新增fit，按原任务顺序执行，预算不足导致缺失重复则gate=null，不以部分中位数冒充通过或失败，不自动补跑。代码/输入/前运行ledger hash绑定后提交再执行。

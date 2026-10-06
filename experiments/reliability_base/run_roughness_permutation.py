@@ -39,6 +39,7 @@ def main():
     parser.add_argument('--self-check',action='store_true')
     parser.add_argument('--input',type=Path)
     parser.add_argument('--output',type=Path)
+    parser.add_argument('--prior-execution',type=Path)
     args=parser.parse_args()
     if args.self_check:
         self_check(); return
@@ -62,22 +63,28 @@ def main():
         roles=json.loads(manifest.read_text(encoding='utf-8'))['roles']
         for role in ['oof','calibration','evaluation']:
             p=src/task/(role+'.csv'); assert sha(p)==bindings[str(p.relative_to(src))]
-            f=pd.read_csv(p).sort_values('source_row').reset_index(drop=True)
+            f=pd.read_csv(p,float_precision='round_trip').sort_values('source_row').reset_index(drop=True)
             assert f.source_row.is_unique and set(f.source_row)==set(roles['fit' if role=='oof' else role])
             assert np.isfinite(f[GENERIC+EXTRA+['y']]).all().all()
             frames[task][role]=f
         sets=[set(frames[task][r].canonical) for r in ['oof','calibration','evaluation']]
         assert not any(sets[i]&sets[j] for i in range(3) for j in range(i))
+    prior=json.loads(args.prior_execution.read_text(encoding='utf-8')) if args.prior_execution else {'fits_started':0}
+    assert prior['fits_started']==plan['prior_fits_started']
+    if args.prior_execution:
+        assert sha(args.prior_execution)==plan['prior_execution_sha256']
     dest.mkdir(parents=True)
     state=dict(code_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         runner_sha256=sha(Path(__file__)),protocol_sha256=sha(fixed),fits_started=0,fits_completed=0,
-        status='running',chemprop_fits=0,official_test_rows=0,runs=[])
+        status='running',prior_fits_started=prior['fits_started'],chemprop_fits=0,official_test_rows=0,runs=[])
     tick=time.monotonic();results=[]
     try:
         for task in plan['tasks']:
             original=frames[task];target=np.abs(original['oof'].prediction.to_numpy()-original['oof'].y.to_numpy())
             records=[]
             for repeat in [-1]+plan['permutation_repeats']:
+                if state['fits_started']+state['prior_fits_started']>=plan['max_fits']:
+                    break
                 arm='true_replay' if repeat==-1 else f'permuted_{repeat}'
                 folder=dest/task/arm;folder.mkdir(parents=True)
                 current={};seed_meta={}
@@ -88,7 +95,7 @@ def main():
                         assert current[role].drop(columns=EXTRA).equals(f.drop(columns=EXTRA))
                         seed_meta[role]=dict(seed=seed,permutation_sha256=hashlib.sha256(indices.astype('<i8').tobytes()).hexdigest())
                         pd.DataFrame(dict(source_row=f.source_row,donor_source_row=f.source_row.to_numpy()[indices])).to_csv(folder/(role+'_permutation.csv'),index=False)
-                assert state['fits_started']<plan['max_fits']
+                assert state['fits_started']+state['prior_fits_started']<plan['max_fits']
                 state['fits_started']+=1;save(dest/'execution.json',state)
                 start=time.monotonic()
                 rf=RandomForestRegressor(**plan['rf']).fit(current['oof'][GENERIC+EXTRA],target)
@@ -106,16 +113,20 @@ def main():
                 for role,scores in [('calibration',sc),('evaluation',se)]:
                     pd.DataFrame(dict(source_row=original[role].source_row,risk=scores)).to_csv(folder/(role+'_risk.csv'),index=False)
                 save(dest/'execution.json',state);print('DONE',task,arm,flush=True)
-            true=records[0]['curve_mean_rmse'];median=float(np.median([r['curve_mean_rmse'] for r in records[1:]]))
+            if not records: break
+            true=records[0]['curve_mean_rmse'];median=float(np.median([r['curve_mean_rmse'] for r in records[1:]])) if len(records)>1 else None
             results.append(dict(dataset=task,seed=42,runs=records,permuted_median=median,true_rmse=true,
-                absolute_advantage=median-true,relative_advantage_pct=100*(median-true)/median))
+                absolute_advantage=median-true if median is not None else None,relative_advantage_pct=100*(median-true)/median if median is not None else None,
+                complete=len(records)==1+len(plan['permutation_repeats'])))
+        complete=len(results)==len(plan['tasks']) and all(r['complete'] for r in results)
         differences=[r['absolute_advantage'] for r in results]
-        passed=sum(x>0 for x in differences)>=plan['required_tasks'] and np.mean(differences)>0
+        passed=bool(sum(x>0 for x in differences)>=plan['required_tasks'] and np.mean(differences)>0) if complete else None
         assert all(sha(p)==h for p,h in protected.items()),'Input changed during fits'
-        save(dest/'results.json',dict(results=results,gate_pass=bool(passed),mean_absolute_advantage=float(np.mean(differences)),
+        save(dest/'results.json',dict(results=results,gate_pass=passed,matrix_complete=complete,mean_absolute_advantage=float(np.mean(differences)) if complete else None,
             fits=state['fits_started'],fits_completed=state['fits_completed'],code_commit=state['code_commit'],
+            prior_fits=state['prior_fits_started'],total_fits_started=state['fits_started']+state['prior_fits_started'],
             protocol_sha256=state['protocol_sha256'],runner_sha256=state['runner_sha256'],input_sha256=plan['inputs'],official_test_rows=0))
-        state['status']='complete';state['gate_pass']=bool(passed)
+        state['status']='complete' if complete else 'budget_exhausted_incomplete';state['gate_pass']=passed
     except BaseException as error:
         state['status']='failed';state['exception']=repr(error)
         raise
