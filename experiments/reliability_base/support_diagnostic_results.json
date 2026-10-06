@@ -1,0 +1,547 @@
+{
+  "results": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "calibration_rows": 426,
+      "evaluation_rows": 448,
+      "threshold": 0.6028019172634909,
+      "groups": {
+        "low": {
+          "rows": 230,
+          "eligible": true,
+          "original": {
+            "generic": {
+              "curve_rmse": [
+                0.7639600573943757,
+                0.7816390263459766,
+                0.8259390694702405,
+                0.8587038947244255,
+                0.9009645650464007,
+                0.939009632970129
+              ],
+              "curve_mean_rmse": 0.8450360409919248
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.7798134331306594,
+                0.7746528188920734,
+                0.7943490054587675,
+                0.8474781124979314,
+                0.8838742470191827,
+                0.9390096329701288
+              ],
+              "curve_mean_rmse": 0.8365295416614572
+            },
+            "gain": 0.008506499330467543
+          },
+          "tail_removed": {
+            "generic": {
+              "curve_rmse": [
+                0.7639600573943757,
+                0.7816390263459766,
+                0.8259390694702405,
+                0.8587038947244255,
+                0.9009645650464007,
+                0.9131045361279112
+              ],
+              "curve_mean_rmse": 0.8407185248515551
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.7798134331306594,
+                0.7746528188920734,
+                0.7943490054587675,
+                0.8474781124979314,
+                0.8838742470191827,
+                0.9131045361279111
+              ],
+              "curve_mean_rmse": 0.8322120255210876
+            },
+            "gain": 0.008506499330467432
+          }
+        },
+        "high": {
+          "rows": 218,
+          "eligible": true,
+          "original": {
+            "generic": {
+              "curve_rmse": [
+                0.5644177904190049,
+                0.5839844263121375,
+                0.6178931104861223,
+                0.653871409836153,
+                0.6520912414557165,
+                0.6516864037604024
+              ],
+              "curve_mean_rmse": 0.6206573970449227
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.5444914887841895,
+                0.5525728364679126,
+                0.5903131551066856,
+                0.6227413678487946,
+                0.6481557560248937,
+                0.6516864037604024
+              ],
+              "curve_mean_rmse": 0.6016601679988131
+            },
+            "gain": 0.018997229046109676
+          },
+          "tail_removed": {
+            "generic": {
+              "curve_rmse": [
+                0.5392969015996631,
+                0.5645089087606455,
+                0.6034047129258765,
+                0.642147484364844,
+                0.6416558220631096,
+                0.6422604391379021
+              ],
+              "curve_mean_rmse": 0.6055457114753401
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.5444914887841895,
+                0.5309745851042479,
+                0.5749397770151488,
+                0.6102327307671943,
+                0.6376354626300788,
+                0.6422604391379021
+              ],
+              "curve_mean_rmse": 0.5900890805731268
+            },
+            "gain": 0.015456630902213275
+          }
+        }
+      },
+      "versions": {
+        "original": {
+          "pattern": false,
+          "high_minus_low_gain": 0.010490729715642133
+        },
+        "tail_removed": {
+          "pattern": false,
+          "high_minus_low_gain": 0.006950131571745843
+        }
+      },
+      "eligible": true,
+      "robust_pattern": false
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "calibration_rows": 375,
+      "evaluation_rows": 402,
+      "threshold": 0.6353928159726744,
+      "groups": {
+        "low": {
+          "rows": 208,
+          "eligible": true,
+          "original": {
+            "generic": {
+              "curve_rmse": [
+                0.9173977174179618,
+                0.9489854809471614,
+                1.0364042706473322,
+                1.0334250308958075,
+                1.0469302160148302,
+                1.0770063324311177
+              ],
+              "curve_mean_rmse": 1.0100248413923685
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.8187163978801467,
+                0.9280610438479902,
+                0.9483492244986332,
+                0.9790484135915798,
+                1.052312655356803,
+                1.0770063324311177
+              ],
+              "curve_mean_rmse": 0.9672490112677119
+            },
+            "gain": 0.04277583012465658
+          },
+          "tail_removed": {
+            "generic": {
+              "curve_rmse": [
+                0.9173977174179618,
+                0.9489854809471614,
+                1.0040364512896836,
+                1.005107244008593,
+                1.0222372907054227,
+                1.0555065315746903
+              ],
+              "curve_mean_rmse": 0.9922117859905856
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.8187163978801467,
+                0.9280610438479902,
+                0.9515920229806087,
+                0.9675642566628362,
+                1.027778453092621,
+                1.0555065315746903
+              ],
+              "curve_mean_rmse": 0.9582031176731488
+            },
+            "gain": 0.03400866831743676
+          }
+        },
+        "high": {
+          "rows": 194,
+          "eligible": true,
+          "original": {
+            "generic": {
+              "curve_rmse": [
+                0.7581796118140341,
+                0.7876963812913058,
+                0.7869925774754665,
+                0.7642577236832222,
+                0.7899903242124635,
+                0.8162542795738701
+              ],
+              "curve_mean_rmse": 0.7838951496750605
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.7590503784942033,
+                0.7308387463699971,
+                0.7257149978836828,
+                0.7755207424714563,
+                0.7900499245702943,
+                0.8162542795738701
+              ],
+              "curve_mean_rmse": 0.7662381782272507
+            },
+            "gain": 0.017656971447809755
+          },
+          "tail_removed": {
+            "generic": {
+              "curve_rmse": [
+                0.6914069555185541,
+                0.7372241954045159,
+                0.7485286620465149,
+                0.7254341933368965,
+                0.7568320787126422,
+                0.7875588742660153
+              ],
+              "curve_mean_rmse": 0.7411641598808565
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.691734880369618,
+                0.6755848468682158,
+                0.6844462460710604,
+                0.7373664015265441,
+                0.7568946475865393,
+                0.7875588742660155
+              ],
+              "curve_mean_rmse": 0.7222643161146656
+            },
+            "gain": 0.018899843766190916
+          }
+        }
+      },
+      "versions": {
+        "original": {
+          "pattern": false,
+          "high_minus_low_gain": -0.025118858676846822
+        },
+        "tail_removed": {
+          "pattern": false,
+          "high_minus_low_gain": -0.015108824551245847
+        }
+      },
+      "eligible": true,
+      "robust_pattern": false
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "calibration_rows": 179,
+      "evaluation_rows": 187,
+      "threshold": 0.6418735480465326,
+      "groups": {
+        "low": {
+          "rows": 112,
+          "eligible": true,
+          "original": {
+            "generic": {
+              "curve_rmse": [
+                0.8411108054635617,
+                0.8245920550545821,
+                0.8168857705008488,
+                0.8093136684941739,
+                0.8619930332509085,
+                0.8902558399343244
+              ],
+              "curve_mean_rmse": 0.8406918621163998
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.7720498060581819,
+                0.8050335514065371,
+                0.8012925301194453,
+                0.8332803652875637,
+                0.9105872584257604,
+                0.8902558399343244
+              ],
+              "curve_mean_rmse": 0.8354165585386356
+            },
+            "gain": 0.005275303577764179
+          },
+          "tail_removed": {
+            "generic": {
+              "curve_rmse": [
+                0.8411108054635617,
+                0.8262965489717538,
+                0.8200580174770733,
+                0.8100884793525408,
+                0.822611981883685,
+                0.8562911221260517
+              ],
+              "curve_mean_rmse": 0.8294094925457777
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.7720498060581819,
+                0.8095132652858835,
+                0.8064116670160837,
+                0.8139938764462598,
+                0.8738930199007124,
+                0.8562911221260517
+              ],
+              "curve_mean_rmse": 0.8220254594721954
+            },
+            "gain": 0.0073840330735822635
+          }
+        },
+        "high": {
+          "rows": 75,
+          "eligible": true,
+          "original": {
+            "generic": {
+              "curve_rmse": [
+                0.5511288843120735,
+                0.5950312423814518,
+                0.645210441006942,
+                0.6389271998193273,
+                0.6344852412184537,
+                0.6859092940527304
+              ],
+              "curve_mean_rmse": 0.6251153837984965
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.47316335968862683,
+                0.5020343122955488,
+                0.5428407287779498,
+                0.5811886693969249,
+                0.5976472906372584,
+                0.6859092940527305
+              ],
+              "curve_mean_rmse": 0.5637972758081733
+            },
+            "gain": 0.06131810799032322
+          },
+          "tail_removed": {
+            "generic": {
+              "curve_rmse": [
+                0.5570913069198312,
+                0.5950312423814518,
+                0.6487145683288558,
+                0.6389271998193273,
+                0.6348164132216814,
+                0.6267639702684339
+              ],
+              "curve_mean_rmse": 0.6168907834899303
+            },
+            "augmented": {
+              "curve_rmse": [
+                0.4791598356724804,
+                0.5020343122955488,
+                0.5345066384736042,
+                0.5811886693969249,
+                0.5919128175886937,
+                0.6267639702684339
+              ],
+              "curve_mean_rmse": 0.552594373949281
+            },
+            "gain": 0.0642964095406493
+          }
+        }
+      },
+      "versions": {
+        "original": {
+          "pattern": false,
+          "high_minus_low_gain": 0.056042804412559044
+        },
+        "tail_removed": {
+          "pattern": false,
+          "high_minus_low_gain": 0.05691237646706704
+        }
+      },
+      "eligible": true,
+      "robust_pattern": false
+    }
+  ],
+  "mean_interaction": {
+    "original": 0.013804891817118118,
+    "tail_removed": 0.016251227829189013
+  },
+  "issue_screen": false,
+  "new_fits": 0,
+  "new_checkpoint_predictions": 0,
+  "official_test_rows": 0,
+  "scope": "Post-hoc seen development evaluation, 1 seed, not a significance test or causal support effect; subgroup selection curves are not a new deployable acceptance policy.",
+  "code_commit": "cc52217fe69a19b2a02884b0cb3652606f5479bd",
+  "input_sha256": {
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "artifacts/reliability_phase_a_20261005_v3/artifact_binding.json": "2c894993caacdd524db6718937d59626e260b4b2ef8ba09ff3875c57b0fcd1db",
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
+    "experiments/reliability_base/support_diagnostic_protocol.json": "8e538fc9ed9425d28a9e5d39f82135fea6f9455bd5301d032c3135ae83ca3add",
+    "experiments/reliability_base/check_support_risk.py": "ff0b3a3b63b9caf4a92d8c18baccc0c4a8c1692071a23c7b73074489618aa06d"
+  },
+  "decision": "End support-proxy diagnostic; no new training",
+  "execution_log": {
+    "planned_analysis_attempts": 1,
+    "actual_analysis_attempts": 1,
+    "execution": {
+      "status": "complete",
+      "analysis_attempts": 1,
+      "fits": 0,
+      "checkpoint_predictions": 0,
+      "official_test_rows": 0,
+      "code_commit": "cc52217fe69a19b2a02884b0cb3652606f5479bd",
+      "seconds": 0.125
+    },
+    "protocol_commit": "cc52217fe69a19b2a02884b0cb3652606f5479bd",
+    "deviations": [],
+    "secondary_appendix": "Third-question cache feasibility audit after support results; no effect estimation, no pre-registration claim."
+  },
+  "verification": {
+    "independent_implementation": "stdlib csv/statistics; no shared subgroup/metrics code",
+    "groups_checked": 6,
+    "curve_points_checked": 144,
+    "gain_versions_checked": 12,
+    "input_hashes_unchanged": true,
+    "reference_cache_fold_comparisons": 9,
+    "matched_queries": 0,
+    "new_fits": 0
+  },
+  "reference_size_cache_audit": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "full_reference_rows": 1755,
+      "full_query_rows": 874,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_rows": 1184,
+          "query_rows": 571,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "9904e0d8e7ac5fd110a8552f07cb4afaa0c192ad849ac617b6da1831601b9cd2"
+        },
+        {
+          "fold": 1,
+          "reference_rows": 1147,
+          "query_rows": 608,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "c674241b84b16d46a33eb0b053a482eda839d9849d2ece915ce4bbba66746467"
+        },
+        {
+          "fold": 2,
+          "reference_rows": 1179,
+          "query_rows": 576,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "898da7891612f9097e36d01328b3c36c1845b73db1de2544f39b35d660360387"
+        }
+      ],
+      "interpretation": "No paired query in this pinned cache; different-role distributions cannot identify reference-size effect.",
+      "full_joined_sha256": "4398015be7644890b4efd7c933045963c22a05d515d2a39b037e547a53684f55"
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "full_reference_rows": 1462,
+      "full_query_rows": 777,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_rows": 970,
+          "query_rows": 492,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "3148014e566ea5d38b1b6f5c82ca1c3f170489b540d3ce40081b9b6e5a5af4fe"
+        },
+        {
+          "fold": 1,
+          "reference_rows": 977,
+          "query_rows": 485,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "7de2feb311ad59b4f7751b6b6f6f371ba7a1d842aa3bdfacddc3d11483055305"
+        },
+        {
+          "fold": 2,
+          "reference_rows": 977,
+          "query_rows": 485,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "a5fcc5191a21db4af9ddb953468d19f724ab7e09ca513ca880d839b587456d70"
+        }
+      ],
+      "interpretation": "No paired query in this pinned cache; different-role distributions cannot identify reference-size effect.",
+      "full_joined_sha256": "ca88f2f521eba778f9bc8cf318a59f261ff9eaabe4a4ff63332ceb3817814ca4"
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "full_reference_rows": 702,
+      "full_query_rows": 366,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_rows": 460,
+          "query_rows": 242,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "5b38e245011feec451b0af65a683e38e8e1dc715771700d3a2ebb4f35a350ed8"
+        },
+        {
+          "fold": 1,
+          "reference_rows": 472,
+          "query_rows": 230,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "fb25ddf3ea1480cf492426776dba4df797f363103d88ce4e161eb5ea48b383a9"
+        },
+        {
+          "fold": 2,
+          "reference_rows": 472,
+          "query_rows": 230,
+          "matched_full_query_ids": 0,
+          "matched_full_canonical_queries": 0,
+          "joined_sha256": "924c42b07b938893d985dfa40840d597fe2e6016bb49f7ad769f67b9d2cf3b88"
+        }
+      ],
+      "interpretation": "No paired query in this pinned cache; different-role distributions cannot identify reference-size effect.",
+      "full_joined_sha256": "45677ddb81de5feb56ecd1404bac87507af8a8703735a1fbbf2fdc04fb60758d"
+    }
+  ]
+}
