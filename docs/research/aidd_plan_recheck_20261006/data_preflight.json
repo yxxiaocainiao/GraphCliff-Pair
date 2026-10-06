@@ -1,0 +1,184 @@
+{
+  "results": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "header": [
+        "smiles",
+        "exp_mean [nM]",
+        "y",
+        "cliff_mol",
+        "split",
+        "y [pEC50/pKi]"
+      ],
+      "selected_rows": 2924,
+      "role_rows": {
+        "fit": 1755,
+        "monitor": 295,
+        "calibration": 426,
+        "evaluation": 448
+      },
+      "canonical": {
+        "group_count": 2924,
+        "cross_role_groups": 0,
+        "cross_role_rows": 0,
+        "largest_group_rows": 1,
+        "shared_groups_by_role_pair": {}
+      },
+      "nonempty_murcko": {
+        "group_count": 1446,
+        "cross_role_groups": 311,
+        "cross_role_rows": 1671,
+        "largest_group_rows": 32,
+        "shared_groups_by_role_pair": {
+          "evaluation|fit": 159,
+          "fit|monitor": 126,
+          "calibration|evaluation": 96,
+          "calibration|fit": 164,
+          "calibration|monitor": 71,
+          "evaluation|monitor": 70
+        }
+      },
+      "empty_scaffold_rows": 2,
+      "missing_required_metadata": [
+        "assay_chembl_id",
+        "standard_relation",
+        "document_date",
+        "experiment_date",
+        "chembl_release"
+      ],
+      "labels_loaded": false,
+      "official_test_records_loaded": false
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "header": [
+        "smiles",
+        "exp_mean [nM]",
+        "y",
+        "cliff_mol",
+        "split",
+        "y [pEC50/pKi]"
+      ],
+      "selected_rows": 2476,
+      "role_rows": {
+        "fit": 1462,
+        "monitor": 237,
+        "calibration": 375,
+        "evaluation": 402
+      },
+      "canonical": {
+        "group_count": 2476,
+        "cross_role_groups": 0,
+        "cross_role_rows": 0,
+        "largest_group_rows": 1,
+        "shared_groups_by_role_pair": {}
+      },
+      "nonempty_murcko": {
+        "group_count": 1067,
+        "cross_role_groups": 251,
+        "cross_role_rows": 1546,
+        "largest_group_rows": 75,
+        "shared_groups_by_role_pair": {
+          "calibration|evaluation": 76,
+          "calibration|fit": 123,
+          "calibration|monitor": 58,
+          "evaluation|fit": 141,
+          "evaluation|monitor": 57,
+          "fit|monitor": 98
+        }
+      },
+      "empty_scaffold_rows": 1,
+      "missing_required_metadata": [
+        "assay_chembl_id",
+        "standard_relation",
+        "document_date",
+        "experiment_date",
+        "chembl_release"
+      ],
+      "labels_loaded": false,
+      "official_test_records_loaded": false
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "header": [
+        "smiles",
+        "exp_mean [nM]",
+        "y",
+        "cliff_mol",
+        "split",
+        "y [pEC50/pKi]"
+      ],
+      "selected_rows": 1174,
+      "role_rows": {
+        "fit": 702,
+        "monitor": 106,
+        "calibration": 179,
+        "evaluation": 187
+      },
+      "canonical": {
+        "group_count": 1174,
+        "cross_role_groups": 0,
+        "cross_role_rows": 0,
+        "largest_group_rows": 1,
+        "shared_groups_by_role_pair": {}
+      },
+      "nonempty_murcko": {
+        "group_count": 574,
+        "cross_role_groups": 122,
+        "cross_role_rows": 653,
+        "largest_group_rows": 35,
+        "shared_groups_by_role_pair": {
+          "evaluation|fit": 72,
+          "evaluation|monitor": 26,
+          "fit|monitor": 40,
+          "calibration|evaluation": 35,
+          "calibration|fit": 60,
+          "calibration|monitor": 26
+        }
+      },
+      "empty_scaffold_rows": 0,
+      "missing_required_metadata": [
+        "assay_chembl_id",
+        "standard_relation",
+        "document_date",
+        "experiment_date",
+        "chembl_release"
+      ],
+      "labels_loaded": false,
+      "official_test_records_loaded": false
+    }
+  ],
+  "scope": "Feasibility and claim audit only; no significance/innovation/performance conclusions, no completed joint-MMP split assertion",
+  "rdkit_version": "2026.03.4",
+  "code_commit": "fb3ab776010def1db2b7fa189719ee6a6b0c47e1",
+  "input_sha256": {
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "D:\\GraphCliff-Pair\\artifacts\\reliability_protocol_20261005_v2\\CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL244_Ki.csv": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+    "D:\\GraphCliff-Pair\\artifacts\\reliability_protocol_20261005_v2\\CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL4792_Ki.csv": "7fca442ad925803a72f9285b01d28a7b32372466a61183a0d5f2cdc4be90eb5e",
+    "D:\\GraphCliff-Pair\\artifacts\\reliability_protocol_20261005_v2\\CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
+    "D:\\GraphCliff-Pair\\docs\\research\\aidd_plan_recheck_20261006\\protocol.json": "36da3ce22651412788e864ee25235f170c232b04c5d53f7a5c5e6277609b0a00",
+    "D:\\GraphCliff-Pair\\experiments\\reliability_base\\audit_pdf_data.py": "02bc4d72ac8f3f233c7a6e53c4b567e41b423114bcfed09ad8f52870e2dacbed"
+  },
+  "fits": 0,
+  "checkpoint_predictions": 0,
+  "joint_mmp_audit_completed": false,
+  "time_validation_ready": false,
+  "verification": {
+    "method": "Counter role-scaffold tally using GetScaffoldForMol; separate from diagnostic summarize/MurckoScaffoldSmiles",
+    "tasks": 3,
+    "source_hashes_unchanged": true,
+    "all_shared_counts_checked": true,
+    "new_fits": 0
+  },
+  "execution": {
+    "status": "complete",
+    "attempts": 1,
+    "fits": 0,
+    "checkpoint_predictions": 0,
+    "official_test_labels_loaded": false,
+    "code_commit": "fb3ab776010def1db2b7fa189719ee6a6b0c47e1",
+    "seconds": 2.077999999979511
+  }
+}

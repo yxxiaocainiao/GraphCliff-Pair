@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-06",
+  "user_pdf": {
+    "filename": "局部结构—活性粗糙度能否跨时间改善QSAR拒答：活性悬崖方法的严格独立复核 _ AIDD Idea Atlas.pdf",
+    "bytes": 1054065,
+    "sha256": "b8b4cdbff7e4574b8e3bc737d7c9ab18e418ab0193f2133f4c3fc457376b8e21",
+    "pages": 19,
+    "extractor": "installed MiKTeX pdftotext -layout -enc UTF-8",
+    "extraction_warnings": "MiKTeX cache rename permission warning; text extraction completed, 19 nonempty pages with printed page numbers; initial Python display encoding corrected",
+    "page_text_sha256": [
+      "03810d843c60c1c6d7720e4a80eccce369f00e8e6ef48f8ce2d12d19fdf9cd91",
+      "2b066c36f47a7652a8a902997d384962b8ecb79cb79288f2fafe7392e7606182",
+      "49ff022379c2792256861bbced52a993bd9260c1380a8ca74a683ba9ab4f748b",
+      "aae97cdc2a124167312ffc1994c3d16118237652d9d863c7e9c28a046f8ae741",
+      "8f1d86362dcc8f3b7994a8efbac90cea21335aa1c56a2a5beddf663d06d91fbf",
+      "bf3d4d67ac3773df4c661433ddc712e1e99d0525c9378ffc20f5a21a2da071c5",
+      "04a7abd4f386ac3590980ccd7d8121b26d2ad9dfd27fbd8d8220d094bdc3b0b8",
+      "1ff07399acbd907b290185848161942cce69fb179c46a30b4c3747ba43990329",
+      "c13fe4d82706795c420b708e9e3a49870500381d1472cd8723b963d9865f4298",
+      "d6ed25fdaac08f14d335ebbe81cbc824b0a0775c3cc2ed549063be856b397349",
+      "d4270126d170f2a7e2ec93bbc5b14bf1259dc354d3ebeb679412442f9a3d6dca",
+      "a2b17ef456177b7d6a81237caec399c16fffd2e54d807cc70f4c732c30b7d21f",
+      "3ca44780998fc16771642b153716d11c9f6ccdb4cf9363f137cf8d8be469afca",
+      "1b95d7fa9026af58c1104b0bda410b4498b2cdeb1d66972c53ceb1f6c422e618",
+      "3624404c5d97f348e563889f592aa9f85660159a718cc8ef81d222da877928f2",
+      "62832d6f7609e6711620528a9a3dc26d48bcdb72e18b3782cdf2bd3a4e972088",
+      "f73e5145d458f29b8e5585706c2c87e0eca766b13d41665580e2fd3a90ffae59",
+      "303d38e94a5f146d8e10294a196d62294be4dcc6569947442087e8094b904d54",
+      "0d36ad5ef484049f7a3eb0ec64dbe00bfb54104bfe752977ecc52fefe8479411"
+    ]
+  },
+  "baseline_commit": "0933721bec24ef1ffa8ec1ac493d9264689ac284",
+  "sources": [
+    {
+      "url": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+      "evidence": "Official README and pinned source reused; no independent proof of reported performance",
+      "commit": "91522b8b81a52d5c95ae216d01a00cbbf0c66209",
+      "license": "MIT code; benchmark data separate",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://doi.org/10.21203/rs.3.rs-10071162/v1",
+      "evidence": "Listed in supplied PDF; DOI and Research Square page inaccessible this turn; no search hit for exact record",
+      "commit": null,
+      "license": null,
+      "unknown": "Cannot independently confirm current publication status or exact identity; do not infer DOI nonexistent",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://www.nature.com/articles/s42004-024-01204-4",
+      "evidence": "Primary article methods via search full text: ChEMBL30 assay/VS/LO definitions and official code/data links; direct open redirects failed",
+      "unknown": "Not all CARA supplemental data read; no verified experimental date in archive",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://github.com/tiantz17/CARA",
+      "evidence": "Official README: LO new-assay split, not stated chronological split; runTrain/runTest; dependencies inspected but not installed",
+      "commit": "fb672acaecdeb38f05fd712d7362abe0249749c7",
+      "license": "GitHub displays Apache-2.0 for code; dataset terms must be checked separately",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://zenodo.org/records/11063965",
+      "evidence": "v1 record opened: CARA.zip 106.0MB, published 2024-04-25, MD5 b6bd8b9ff0ce6752fbc8bf0a45d71b6b; newer version advertised",
+      "unknown": "Archive not downloaded; SHA256/data schema/data-license text not yet verified; deposit date is not experiment date",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jcim.5c02381",
+      "evidence": "Publisher search text: error models, data-shift evaluation, UNIQUE/data availability; bibliographic cross-check via PubMed",
+      "unknown": "Not a new full-text systematic literature review",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://www.rdkit.org/docs/source/rdkit.Chem.Scaffolds.MurckoScaffold.html",
+      "evidence": "Official GetScaffoldForMol/MurckoScaffoldSmiles docs; implementation runtime recorded locally",
+      "unknown": "Nonempty Murcko grouping is not complete MMP joint dependency graph",
+      "web_content_sha256": null
+    }
+  ],
+  "source_scope": "Recheck of supplied PDF and feasibility sources; M29 11-source algorithm review preserved, not retroactively expanded or relabelled",
+  "pdf_reading": "All 19 nonempty pages extracted and read in bounded page batches; references listed are not all independently full-text reread",
+  "tool_issues": [
+    "MiKTeX cache permission warning during extraction, extraction completed",
+    "Initial Python console encoding unreadable; UTF8 display fixed and pages re-read",
+    "DOI/Nature direct opens inaccessible; alternate primary source search text/official repository inspected"
+  ],
+  "local_source_hashes": {
+    "D:\\GraphCliff-main\\scripts\\fppool_pilot\\analyze_pairs.py": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73"
+  }
+}
