@@ -1,0 +1,53 @@
+{
+  "source_check": {
+    "status": "PASS",
+    "bound_files": 10,
+    "reference_image_unchanged": true,
+    "basis": "实际源码与既有审计报告"
+  },
+  "logic_check": {
+    "status": "PASS",
+    "items": [
+      "Cross位置区分",
+      "指纹来自结构",
+      "预测和标签分别进入Loss",
+      "合法训练参考恢复差值",
+      "候选/消融vs而非串联",
+      "可靠性不属于GraphCliff改层"
+    ]
+  },
+  "unverified_check": {
+    "status": "PASS",
+    "limits": [
+      "简化示意",
+      "灰虚线核心未定",
+      "阴性候选未包装成功",
+      "不承诺创新/分区/录用"
+    ]
+  },
+  "artifacts": {
+    "visual_review": 6,
+    "png_size": [
+      5100,
+      2700
+    ],
+    "svg_xml_valid": 6,
+    "single_pdf_page_objects": 6,
+    "combined_pdf_page_objects": 6,
+    "pdf_check": "stdlib Page object count, no full PDF parser"
+  },
+  "runs": {
+    "render_attempts": 4,
+    "failed": 1,
+    "successful": 3,
+    "fits": 0,
+    "inference": 0
+  },
+  "anomalies": [
+    "missing subscript font fixed with installed fallback",
+    "git read in sandbox failed; authorized environment succeeded",
+    "fitz absent, replaced by stdlib PDF page-object check"
+  ],
+  "code_before": "b4c61d3d105df854edd3bc655446638a1c8cf2ae",
+  "draw_script_sha256": "d8f98593d624cbb22c8165d19ae2b8244ea52f18385d00d5905b98dae72dcc84"
+}

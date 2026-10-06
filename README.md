@@ -185,3 +185,6 @@ seed43在14/18组完成后发生CUDA非法指令，随后在新目录复用14完
 原GraphCliff保留，仅借用官方ACA表征Loss。第一个任务的三种子六组Cliff均值恶化3.01%、Overall恶化4.55%，按用户止损要求触发固定否决条件后提前暂停；剩余12组未完成，未评估测试集。[六组审计与停止报告](experiments/aca_pilot/results.md)。当前没有活跃训练；不把借用Loss当原创或二区发表成果。
 
 实现默认优先复用已审计的本地与GitHub项目，必要时核对原论文；新增工作限定为薄适配和贡献必需的差异。[三个官方候选与复用边界](docs/research/github_reuse_candidates_20261005.md)已核对，尚未启动新性能试验。
+
+
+老师汇报图：[GraphCliff六张改动位置图与PDF](docs/figures/graphcliff_changes_20261006/README.md)。区分暂停实验与Chemprop可靠性方向，未定核心不画成已完成模型。

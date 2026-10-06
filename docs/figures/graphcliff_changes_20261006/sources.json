@@ -1,0 +1,28 @@
+{
+  "purpose": "Six code-grounded architecture/change illustrations for teacher briefing; simplified schematic, no new model/results",
+  "sources": {
+    "graphcliff_pair/vendor/model.py": "20d90ec7602e63bd20a063ac6db94faf3194d1c12c4c96902d927b08d634cb52",
+    "graphcliff_pair/model.py": "3207d09c60bd468f579d3495808221f28198bf771cced0530898c8b2170e31eb",
+    "graphcliff_pair/loss.py": "66ac7610d88cc4273300b0f4afb60f0e43b98496a92e813d92915d262bf09c98",
+    "graphcliff_pair/fppool.py": "7d149e36f21d9a5815b057de466860701fee42be13656415b391329e5dedfc5e",
+    "experiments/long_branch_swap/model.py": "58e76a197a514c1f2a42dab03f2c5759a062b37201e3efa1e4a1d5a8d33d2c39",
+    "experiments/reliability_base/run_component_pilot.py": "4f1ebf853c5c79655bfd3bca88c58cf9a0b7b55d600c5d795acfc245369a33b0",
+    "experiments/reliability_base/component_roughness.py": "93d54726892013d349ee9c898888e826854832391223f2cd4a8c7ecf4bad07bd",
+    "docs/research/component_roughness_cases_20261006/report.md": "c363092a05d68e706aec3b8bbb1dd3991a2f94f6aa30805d7b06657c166a2bc2",
+    "docs/reports/teacher_brief_20261006/report.md": "e0d178e43554970a10db093f5d24f3dbac6c9940cfd7f4e7c41f8750a8dd1281",
+    "D:/GraphCliff-main/fppool_residual.py": "f1822fe6e18f4eb99ae5843780f64136dde3b0cc0f4e67922affc3e19970cdc6"
+  },
+  "reference_image_sha256": "a0bef5e0729444e8566a135a9f5f729fd8cc8a86d62e3f29302ef4a2c6a3b25c",
+  "reference_image_policy": "Layout inspiration only; original attachment unchanged and not republished",
+  "legend": "Blue retained; orange added/replaced; grey crossed replaced; grey dashed undefined",
+  "scope": [
+    "baseline filter and readout",
+    "direct/residual FPPool",
+    "post-encoder cross attention",
+    "per-layer LongPoly swap",
+    "three separate training-loss variants",
+    "Chemprop reliability and stopped local balancing"
+  ],
+  "fits": 0,
+  "inference": 0
+}
