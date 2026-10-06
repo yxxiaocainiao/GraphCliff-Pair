@@ -7,7 +7,7 @@ def category(name):
     s=name.lower().replace('_',' ')
     if any(x in s for x in ('date','year','timestamp')): return 'date'
     if 'assay' in s or s=='task id': return 'assay'
-    if any(x in s for x in ('relation','standard type','standard units','endpoint','measurement type')): return 'endpoint'
+    if s=='value type' or any(x in s for x in ('relation','standard type','standard units','endpoint','measurement type')): return 'endpoint'
     if 'target' in s and 'sequence' not in s: return 'target'
     return None
 
@@ -37,7 +37,7 @@ def selfcheck():
     assert category('pChEMBL Value') is None and category('Smiles') is None
     assert category('Document Year')=='date' and category('Assay ChEMBL ID')=='assay'
     assert category('Standard Type')=='endpoint' and category('Target Sequence') is None
-    assert category('Target ChEMBL ID')=='target'
+    assert category('Target ChEMBL ID')=='target' and category('Value Type')=='endpoint'
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--archive',type=Path);p.add_argument('--output',type=Path);p.add_argument('--selfcheck',action='store_true');a=p.parse_args()
