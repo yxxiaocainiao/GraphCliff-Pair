@@ -1,0 +1,647 @@
+{
+  "results": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "runs": [
+        {
+          "arm": "true_replay",
+          "repeat": -1,
+          "curve_rmse": [
+            0.6456756354059194,
+            0.6597581759023515,
+            0.7020600611386355,
+            0.7050904676993351,
+            0.7542640966281442,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7131408164093181,
+          "replay_max_abs_error": 6.661338147750939e-16,
+          "seconds": 0.20400000002700835,
+          "permutations": {}
+        },
+        {
+          "arm": "permuted_0",
+          "repeat": 0,
+          "curve_rmse": [
+            0.6369606893257733,
+            0.6546030018549822,
+            0.6917238530937844,
+            0.7124280900844692,
+            0.7594717326537533,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.711197304782381,
+          "replay_max_abs_error": null,
+          "seconds": 0.21799999999348074,
+          "permutations": {
+            "oof": {
+              "seed": 2106665838137328094,
+              "permutation_sha256": "2d1308c8c31b571501ecdd99730d1301261fd3a0d53d5050baf78101c9791460"
+            },
+            "calibration": {
+              "seed": 5293608688039335458,
+              "permutation_sha256": "b68f7c55e0c143a0391a9147a003bf1e89aebaf4ad00b7603dc9bec816e77728"
+            },
+            "evaluation": {
+              "seed": 12914941914734716264,
+              "permutation_sha256": "af18161a99ebc4eab63d365b0d38935c99adf2502461184eb3c7d240ac811145"
+            }
+          }
+        },
+        {
+          "arm": "permuted_1",
+          "repeat": 1,
+          "curve_rmse": [
+            0.6621497814875105,
+            0.6633614955803775,
+            0.6978413500336519,
+            0.7316416776024958,
+            0.7534011589739803,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7200653208932565,
+          "replay_max_abs_error": null,
+          "seconds": 0.18699999997625127,
+          "permutations": {
+            "oof": {
+              "seed": 9716685733695692086,
+              "permutation_sha256": "f5354f97914f56f1fef5dd85f5d011f27d36ed5bed5897dbbaa2e25fea6a4275"
+            },
+            "calibration": {
+              "seed": 16516239503023523445,
+              "permutation_sha256": "bed864cba9fbd667b7cea2492c5e4de785c4fe442738d86e892802ae83f3cc8f"
+            },
+            "evaluation": {
+              "seed": 9728016972981994656,
+              "permutation_sha256": "87b24ad3b9a39106af265059320e1bdd28c1eb2b7e81afd547601e2f5ebf7b64"
+            }
+          }
+        },
+        {
+          "arm": "permuted_2",
+          "repeat": 2,
+          "curve_rmse": [
+            0.6480592589723257,
+            0.6759181181429115,
+            0.6961859036468354,
+            0.7391381939840763,
+            0.7529887935857373,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.720714455002235,
+          "replay_max_abs_error": null,
+          "seconds": 0.18699999997625127,
+          "permutations": {
+            "oof": {
+              "seed": 4153092175500790749,
+              "permutation_sha256": "8dd927e87288598433b070953045eebdfcc8350340b04e9002e72062b985ac8f"
+            },
+            "calibration": {
+              "seed": 11232600541350735882,
+              "permutation_sha256": "f7573a59b77748da1d0d5a76d72b3825f963cf992d492af1b200ed27913dc64c"
+            },
+            "evaluation": {
+              "seed": 8692549847703557907,
+              "permutation_sha256": "fc28a5ac71cc1db4392cadac2f5a9034cee3d59e55179bee296d6556bf4a32d7"
+            }
+          }
+        },
+        {
+          "arm": "permuted_3",
+          "repeat": 3,
+          "curve_rmse": [
+            0.6723368357437655,
+            0.682557356454617,
+            0.7059837772405787,
+            0.729339415973951,
+            0.7609831443762357,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7271994985784452,
+          "replay_max_abs_error": null,
+          "seconds": 0.18799999996554106,
+          "permutations": {
+            "oof": {
+              "seed": 6083942579725530965,
+              "permutation_sha256": "dd9814ade0c222f303bce376c4fbdbac92f701060d2573b1bdd721d68ea0896c"
+            },
+            "calibration": {
+              "seed": 12814451476195485086,
+              "permutation_sha256": "bb7642df26df6e27ef44fdb3cd1cfe3950bf2917b4b95dba9a9ed99c4e714d8d"
+            },
+            "evaluation": {
+              "seed": 8360219782693162876,
+              "permutation_sha256": "5a40071ac517be5f84b804320ade8cdfebe6b49703eb0ee561af722eb6f94505"
+            }
+          }
+        },
+        {
+          "arm": "permuted_4",
+          "repeat": 4,
+          "curve_rmse": [
+            0.6525555126151896,
+            0.6804810400141483,
+            0.6930058471235175,
+            0.7276746411418262,
+            0.7741216510277701,
+            0.8119964616815232
+          ],
+          "curve_mean_rmse": 0.7233058589339958,
+          "replay_max_abs_error": null,
+          "seconds": 0.18699999997625127,
+          "permutations": {
+            "oof": {
+              "seed": 1321534322019678192,
+              "permutation_sha256": "c1b056ed2eeae1261f40ed229be393bc7d2be2df2fe8959b0a28d2bcc853d3ac"
+            },
+            "calibration": {
+              "seed": 13846956178227700314,
+              "permutation_sha256": "ec253bd604917e0d1568558546def8cfe96f5ebcab4b56ef13278082a80b90d6"
+            },
+            "evaluation": {
+              "seed": 9851895545602077131,
+              "permutation_sha256": "33199fa597bd4d12f976d16c003a0c7a9fb165f6d308e692b52cd5aef4973d1f"
+            }
+          }
+        }
+      ],
+      "permuted_median": 0.720714455002235,
+      "true_rmse": 0.7131408164093181,
+      "absolute_advantage": 0.00757363859291682,
+      "relative_advantage_pct": 1.0508514905384179,
+      "complete": true
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "runs": [
+        {
+          "arm": "true_replay",
+          "repeat": -1,
+          "curve_rmse": [
+            0.7675570859329395,
+            0.7801233289789571,
+            0.8234429388504209,
+            0.8711807363753707,
+            0.9175680006127084,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.853320965916177,
+          "replay_max_abs_error": 1.3322676295501878e-15,
+          "seconds": 0.18699999997625127,
+          "permutations": {}
+        },
+        {
+          "arm": "permuted_0",
+          "repeat": 0,
+          "curve_rmse": [
+            0.783029759639293,
+            0.806857938577612,
+            0.8485970206707713,
+            0.8825048732722146,
+            0.9136869744634478,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8657883785616675,
+          "replay_max_abs_error": null,
+          "seconds": 0.18699999997625127,
+          "permutations": {
+            "oof": {
+              "seed": 11664505631897819983,
+              "permutation_sha256": "dea85415c1ee102874f7c3c2b0344701e4a1033436ccae3373b711cd1aa39380"
+            },
+            "calibration": {
+              "seed": 17103835977146075177,
+              "permutation_sha256": "16382c7514da644d6e4cfc74fe2e91a7e257354a529d7ecb85858ae41792e849"
+            },
+            "evaluation": {
+              "seed": 1064267224175892001,
+              "permutation_sha256": "a492df772ea3209162874a4674464886c9a16fbee4ee4372e9b5e35fe7126cb1"
+            }
+          }
+        },
+        {
+          "arm": "permuted_1",
+          "repeat": 1,
+          "curve_rmse": [
+            0.8293213610718261,
+            0.8565903618336481,
+            0.8678705601606563,
+            0.8970467700135941,
+            0.9207007289220535,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8885972477914073,
+          "replay_max_abs_error": null,
+          "seconds": 0.1720000000204891,
+          "permutations": {
+            "oof": {
+              "seed": 11107464122022427354,
+              "permutation_sha256": "d0fc2e6506bbdcadff22c84b6f46d40f69edc3992ef404f6bb359ccdbc06cea6"
+            },
+            "calibration": {
+              "seed": 15663252595922674162,
+              "permutation_sha256": "b79f3e5187e16d178c951da58d368669169968eb290b5f7655631a45ed709876"
+            },
+            "evaluation": {
+              "seed": 13163749171891536018,
+              "permutation_sha256": "dc13783bb4914bc8448184f48991f9bb6154a2960edb03be0fa06089cc945004"
+            }
+          }
+        },
+        {
+          "arm": "permuted_2",
+          "repeat": 2,
+          "curve_rmse": [
+            0.7890426139516395,
+            0.8236855529166114,
+            0.8703277123465046,
+            0.9010007619329191,
+            0.9245111530921121,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8781035831644087,
+          "replay_max_abs_error": null,
+          "seconds": 0.18800000002374873,
+          "permutations": {
+            "oof": {
+              "seed": 9118038116184532159,
+              "permutation_sha256": "46733dbf6d16ad820a6ae03202072f6931694bed7624248a5dc8bc1f943bcf13"
+            },
+            "calibration": {
+              "seed": 378381612709700045,
+              "permutation_sha256": "b64f72b4ec832cd40ffe29d57192b3006764ab0d92eed6e95f34d76e87bddf90"
+            },
+            "evaluation": {
+              "seed": 12803549142804958443,
+              "permutation_sha256": "c4fdce54cf7a350ddf3135515e3aa3668ad389154bf32ee91a5999c4b2f6b3d3"
+            }
+          }
+        },
+        {
+          "arm": "permuted_3",
+          "repeat": 3,
+          "curve_rmse": [
+            0.7547182571584284,
+            0.810144793066223,
+            0.8521056074368751,
+            0.8911808562060494,
+            0.9174851092199564,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8642813879723664,
+          "replay_max_abs_error": null,
+          "seconds": 0.18800000002374873,
+          "permutations": {
+            "oof": {
+              "seed": 2663754248035638874,
+              "permutation_sha256": "f8cceffe1d047708f723928e1668afcbad1c8e2e5840c3cd0a4fdc2f144c8bc3"
+            },
+            "calibration": {
+              "seed": 3699865036238544646,
+              "permutation_sha256": "b6d1b1147766044fb07c9e5d094f55d8c898aaddc48035d0f6dd5bd840fd5658"
+            },
+            "evaluation": {
+              "seed": 6323092919391068657,
+              "permutation_sha256": "0004df54358f8e0521b030a328f418c2e1cabe2e49be108f1f512d6e74a2d035"
+            }
+          }
+        },
+        {
+          "arm": "permuted_4",
+          "repeat": 4,
+          "curve_rmse": [
+            0.8104112555165693,
+            0.802774820860133,
+            0.8399320701892963,
+            0.8805140284357797,
+            0.9121228835731671,
+            0.9600537047466657
+          ],
+          "curve_mean_rmse": 0.8676347938869351,
+          "replay_max_abs_error": null,
+          "seconds": 0.20300000003771856,
+          "permutations": {
+            "oof": {
+              "seed": 12374362929843486118,
+              "permutation_sha256": "30f1ef7d6b5b9d976fc1f51e0574705c9dd590577986a56f1160ee58c210b11f"
+            },
+            "calibration": {
+              "seed": 16937295072335503823,
+              "permutation_sha256": "d30bf96d84d02052b455a3fdba1b75ca42c9ce9dfa36ed6bbd5755c89598f0d4"
+            },
+            "evaluation": {
+              "seed": 15386056272409893691,
+              "permutation_sha256": "f9f13e755403cc8f1db722b0af5333b7e891d6f62fdc66f7028a38fb667607ce"
+            }
+          }
+        }
+      ],
+      "permuted_median": 0.8676347938869351,
+      "true_rmse": 0.853320965916177,
+      "absolute_advantage": 0.014313827970758086,
+      "relative_advantage_pct": 1.6497526461143024,
+      "complete": true
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "runs": [
+        {
+          "arm": "true_replay",
+          "repeat": -1,
+          "curve_rmse": [
+            0.6722329251651569,
+            0.669873678112277,
+            0.7152528625391763,
+            0.7286751049299318,
+            0.7861029050159658,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7311028875629493,
+          "replay_max_abs_error": 5.551115123125783e-16,
+          "seconds": 0.18800000002374873,
+          "permutations": {}
+        },
+        {
+          "arm": "permuted_0",
+          "repeat": 0,
+          "curve_rmse": [
+            0.7262675111821938,
+            0.7107593657731395,
+            0.7330513851024343,
+            0.7435454648605383,
+            0.7430122834940439,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7451859766712564,
+          "replay_max_abs_error": null,
+          "seconds": 0.1720000000204891,
+          "permutations": {
+            "oof": {
+              "seed": 13080611421149322058,
+              "permutation_sha256": "ed7ff2e6bada15ce90e322293dd598da779674c3beef2ca62bf161d2c60aa0a3"
+            },
+            "calibration": {
+              "seed": 7994124259268372465,
+              "permutation_sha256": "8db146a5c5762faae7bc04f0ffcaea2c7f4d0556a23798a65aa8dfadf10542a0"
+            },
+            "evaluation": {
+              "seed": 5734144084076579857,
+              "permutation_sha256": "b3f5dda9934191d20bfb71e68fae6d4218c0d62a9ee997c8bc1bc0b132423fd6"
+            }
+          }
+        },
+        {
+          "arm": "permuted_1",
+          "repeat": 1,
+          "curve_rmse": [
+            0.6370211623272822,
+            0.6821838651758355,
+            0.704560768824244,
+            0.7127541902917581,
+            0.739772632336709,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7151287447618362,
+          "replay_max_abs_error": null,
+          "seconds": 0.1720000000204891,
+          "permutations": {
+            "oof": {
+              "seed": 5177315859667516738,
+              "permutation_sha256": "8d9b68c1ce968dafe68bbd1b7120add8393970fe5e69daf777ea7d12aa501e9d"
+            },
+            "calibration": {
+              "seed": 10679792169310237916,
+              "permutation_sha256": "acc6d503dcecbd1eaa24ca2cd6b4b2ae450260957f394339432fa8fc8841d887"
+            },
+            "evaluation": {
+              "seed": 11939464098176638794,
+              "permutation_sha256": "9b0d8bb0205003729a5e45175f3ff66d21cf9f6f058c9b461a62afa903c8b3b9"
+            }
+          }
+        },
+        {
+          "arm": "permuted_2",
+          "repeat": 2,
+          "curve_rmse": [
+            0.6873112273975166,
+            0.6993847891362812,
+            0.7286818816333328,
+            0.7652542310067627,
+            0.7516041576011098,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7411193560650319,
+          "replay_max_abs_error": null,
+          "seconds": 0.18799999996554106,
+          "permutations": {
+            "oof": {
+              "seed": 13793685644849932431,
+              "permutation_sha256": "3498ac1ffbc56462a59cca22fb6f0ce27859df8fc24c0e4e32617fe927eb8e00"
+            },
+            "calibration": {
+              "seed": 11588752523156106529,
+              "permutation_sha256": "45f6ff5868ab7b08ea92509e5a869c2e9d9884dcc6929312ff0055f461d84bf4"
+            },
+            "evaluation": {
+              "seed": 16738873892699786809,
+              "permutation_sha256": "3b7cb77e5ad6fe9eb39677c0d14b0e351452a379411535274a856369548ef90b"
+            }
+          }
+        },
+        {
+          "arm": "permuted_3",
+          "repeat": 3,
+          "curve_rmse": [
+            0.6968985495830433,
+            0.6813302099468533,
+            0.7607059691277501,
+            0.7538755302833396,
+            0.755371333977798,
+            0.8144798496151883
+          ],
+          "curve_mean_rmse": 0.7437769070889955,
+          "replay_max_abs_error": null,
+          "seconds": 0.18699999997625127,
+          "permutations": {
+            "oof": {
+              "seed": 16447234391019254785,
+              "permutation_sha256": "b3968e7c17b6854320dc97a147378920ea3543213155c3a50b90b45423fe54c3"
+            },
+            "calibration": {
+              "seed": 14707563274213025244,
+              "permutation_sha256": "a633c95d7d585c0fe5367d025d833e9ee3a56d128f8661578bcb5afdd73892ac"
+            },
+            "evaluation": {
+              "seed": 8777135693378548664,
+              "permutation_sha256": "70e00f6f05a3a606e1b91c44ce039f30a8a7cbdaec08cd859a6f74970600349d"
+            }
+          }
+        }
+      ],
+      "permuted_median": 0.7424481315770137,
+      "true_rmse": 0.7311028875629493,
+      "absolute_advantage": 0.011345244014064448,
+      "relative_advantage_pct": 1.5280857384564126,
+      "complete": false
+    }
+  ],
+  "gate_pass": null,
+  "matrix_complete": false,
+  "mean_absolute_advantage": null,
+  "fits": 17,
+  "fits_completed": 17,
+  "code_commit": "9c01f4c411adca378a4e2bdd9bce2903789934cf",
+  "prior_fits": 1,
+  "total_fits_started": 18,
+  "protocol_sha256": "205af98346efda112c35d249d95b9454ffdb7324f013d6dadf210099fbf05366",
+  "runner_sha256": "1fb3ad47caf3d18a7889690c1f26257ccba3bc98d9ee551b6ed4d6ec34b73b8f",
+  "input_sha256": {
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "experiments/reliability_base/run_roughness_permutation.py": "1fb3ad47caf3d18a7889690c1f26257ccba3bc98d9ee551b6ed4d6ec34b73b8f",
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f",
+    "artifacts/reliability_phase_a_20261005_v3/artifact_binding.json": "2c894993caacdd524db6718937d59626e260b4b2ef8ba09ff3875c57b0fcd1db",
+    "artifacts/reliability_phase_a_20261005_v3/results.json": "894c74559a66fcb85a36551dd2dc5050af4ee66731373642d3e9eb46d157d007",
+    "artifacts/reliability_phase_a_20261005_v3/execution.json": "857d364ef4e6df1438c3afa7913c5daa13abb25eafe8f2025669f91d821e9e69",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/oof.csv": "76854dc683144aa6bdc8abd8771b14cb4970a20a162e700d1b6166ed0fa1c8f3",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/oof.csv": "e1b866a4f227546954704f1ecf0d9cbe00d60a75a19a1bb05fe484aa21a793b4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/oof.csv": "fea00e6c9d38f91457e2d79dc041bcccf6969630972515805ced4c27a02170f6",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
+    "artifacts/roughness_permutation_20261006/execution.json": "fbf1621985edfd242ac1d40f83afee4d6a7c785f77a213fa2ae4867207d0aa06"
+  },
+  "official_test_rows": 0,
+  "verification": {
+    "independent_curve_values": 102,
+    "risk_checkpoint_reloads": 17,
+    "all_input_hashes_unchanged": true,
+    "fit_starts_total": 18,
+    "fit_completions_total": 18,
+    "accepted_runs": 17,
+    "failed_replay_runs": 1
+  },
+  "output_sha256": {
+    "execution.json": "dda1997f37de6d73ecf9a04634348090e94a1a665460101fb3d5546579f876b1",
+    "results.json": "daf83f6091a57d60e62a385f01bb633f0e68f20aca5213c5d8c43eb5f7f73a32",
+    "CHEMBL234_Ki/permuted_0/calibration_permutation.csv": "edc08f5d24118bb31f54ce947b297e5659fa2975e371f94da7c993c1400d2c6e",
+    "CHEMBL234_Ki/permuted_0/calibration_risk.csv": "dc241db6a230473cfe84aafd7e7e23a602ce2b84f413b5f9caaca75d82608959",
+    "CHEMBL234_Ki/permuted_0/evaluation_permutation.csv": "779f9cb98ae6cd52e381cb382e591957a2e75d1085312a6a11f4a550c71def17",
+    "CHEMBL234_Ki/permuted_0/evaluation_risk.csv": "ca34a6b72bc9441515cb11f05cc453e4b30a1596126f8d886f46b809b86ae4fa",
+    "CHEMBL234_Ki/permuted_0/metrics.json": "ffd791f8e7d0343e89a17832a2633540b6622396096bd47ca51ffbbc83800cd6",
+    "CHEMBL234_Ki/permuted_0/oof_permutation.csv": "10fcbe1600d4b90d775a0039ed6d6f8a2b98f61974265a1c0c5995e0fc022fb7",
+    "CHEMBL234_Ki/permuted_0/risk_rf.joblib": "4f01872521e7d0dc587186ca87a31999b937c3a8694aa9b32296429da79821f1",
+    "CHEMBL234_Ki/permuted_1/calibration_permutation.csv": "d4436b7e2ecf86da9421dc2cdbb71cbf6993decc29c5c5f15262615217ca0ebe",
+    "CHEMBL234_Ki/permuted_1/calibration_risk.csv": "805c8dd1703f0ff0f8c185648209a32d03b993b3b82e14fef07a7c5f0a7a07c8",
+    "CHEMBL234_Ki/permuted_1/evaluation_permutation.csv": "97a652672208237656a1342d0e9562018cacc703ed2e06c2789fd5b322b74ae8",
+    "CHEMBL234_Ki/permuted_1/evaluation_risk.csv": "3738c3c5d32a0eb07e6e816a8f0be6af477e00cb361d8d65173f4f8f81139f9d",
+    "CHEMBL234_Ki/permuted_1/metrics.json": "f29ed46ffb0ba5268eb31a6183176aa8c627143f4d9e10bd27cc36438fc1e4b5",
+    "CHEMBL234_Ki/permuted_1/oof_permutation.csv": "9d5e5e35758b0acb8f17ecaa23ab50f90c218942f504ca16c651c0f0163cdfb9",
+    "CHEMBL234_Ki/permuted_1/risk_rf.joblib": "d020045e2c0dc3de655316b11b002a9a4bc3f1c2be41ad5220ec6636c28ce737",
+    "CHEMBL234_Ki/permuted_2/calibration_permutation.csv": "cdab9351383baf5ac5d899e017a5515609f948a3b5aea0eb0b5e660a17176134",
+    "CHEMBL234_Ki/permuted_2/calibration_risk.csv": "8086a5c48baebd20d9530ba6aef3bf45f8744fd33e8e419b219aaa5d74468e23",
+    "CHEMBL234_Ki/permuted_2/evaluation_permutation.csv": "7ddfb1c5d1b8d71e74c58b6f603aa8ba80c07228c5ba266f3bd5aad34cd104c3",
+    "CHEMBL234_Ki/permuted_2/evaluation_risk.csv": "e7be1ad386fb740ab602d7db3dd1d276fc4b309c0efee6fe2874ed7aba457fb3",
+    "CHEMBL234_Ki/permuted_2/metrics.json": "9e110f8b28d5f85560bbad043218253c4b2a14e75d3c9cd5f795f29017253c8c",
+    "CHEMBL234_Ki/permuted_2/oof_permutation.csv": "c680fcf2e2812c32d525411fe4166928eaa3b526c00a983ae3562b8adfe8d0e9",
+    "CHEMBL234_Ki/permuted_2/risk_rf.joblib": "28b752e1dbd97a9516e63f783d3de583d9c31f793cbe7eed8eb4185ed398b9c8",
+    "CHEMBL234_Ki/permuted_3/calibration_permutation.csv": "b1de678bdabf111a37bbcf80150c9533792521c622fce3f8caaf69bbf77c839f",
+    "CHEMBL234_Ki/permuted_3/calibration_risk.csv": "3aeefbebc46d9ab5d85b79e6c72b86fcac38cad18f6bf49298585434a308c2e2",
+    "CHEMBL234_Ki/permuted_3/evaluation_permutation.csv": "083e43e6ab8eb59ccd907edd1e4238653f5908fb2622aa245e909ff1d65e6956",
+    "CHEMBL234_Ki/permuted_3/evaluation_risk.csv": "d2ea9a857c04bad696bca6f155d52bee02934bd914e1f0bbefa52e30086a0cef",
+    "CHEMBL234_Ki/permuted_3/metrics.json": "896c44791f21344e9e656fa0d2bf5c1eef7f48e83f8ddce2d613b267ee935d6b",
+    "CHEMBL234_Ki/permuted_3/oof_permutation.csv": "2d46bb46bc54fc22fb42a6ced059f8b2dfa10793b42d3705feddbac8ac038e60",
+    "CHEMBL234_Ki/permuted_3/risk_rf.joblib": "2d0c2ad182a4650fe25ea1369b4756bbe32d74a77c68b339bf0e433cda49782a",
+    "CHEMBL234_Ki/permuted_4/calibration_permutation.csv": "702ed13662b9448ced968426688fc02b6ee9e85a10aef644f7e8524c8adb84ef",
+    "CHEMBL234_Ki/permuted_4/calibration_risk.csv": "fc5d15675cdd5c1a72d1bf12ac5a4e6cdc4965f55567f17c7b78242c4d92b5d0",
+    "CHEMBL234_Ki/permuted_4/evaluation_permutation.csv": "18abeff9b17198eeb8d7532d624a5aaadd2f48f40b17c259932a2815c5edfc13",
+    "CHEMBL234_Ki/permuted_4/evaluation_risk.csv": "85297511cb785eef24363f8719b899b7386a4f7c09c25ca07a9c4b5f819bce2c",
+    "CHEMBL234_Ki/permuted_4/metrics.json": "89e720c22159f9986b51feb966c372fb7280f94a453dc1a722f4b848a10dd21c",
+    "CHEMBL234_Ki/permuted_4/oof_permutation.csv": "d740baaf3e4777192b5cf31bbff8dcc0b9619722ac61992704d2dcda2426ba62",
+    "CHEMBL234_Ki/permuted_4/risk_rf.joblib": "3623f998ba85210406bd7a7fe0d925bd2c7dd9208e2c0cbe8ece6bbd7a6d72c9",
+    "CHEMBL234_Ki/true_replay/calibration_risk.csv": "3426f9b882559f7989561b42040accb8e057114327a08b29bf913a439539ed4b",
+    "CHEMBL234_Ki/true_replay/evaluation_risk.csv": "5502c270b10c7801ae1ca7921b1f012bab9cc8dc99c13cd708963ea27d1f1e6e",
+    "CHEMBL234_Ki/true_replay/metrics.json": "100e91df02b28124b8ecfaebefef7e1672eff2051885ef3294b410bae2da5415",
+    "CHEMBL234_Ki/true_replay/risk_rf.joblib": "c72c66ed1484c0b116eb29176d21607c79df339860fb2baafef641bc83762ab0",
+    "CHEMBL244_Ki/permuted_0/calibration_permutation.csv": "b5ab25bda73b936e4778e84286511afc04fe3b3df71b20cd261f1936bcd30ce0",
+    "CHEMBL244_Ki/permuted_0/calibration_risk.csv": "cfa208ac7fb81c20660355da632c17f3f2dff95c51c82a54996e26f33d37015f",
+    "CHEMBL244_Ki/permuted_0/evaluation_permutation.csv": "4b0034a90a6a875da1449c567654e10071eefaf34029768e572d11623126e35f",
+    "CHEMBL244_Ki/permuted_0/evaluation_risk.csv": "c484a7276065d41ce1396c331d637ceafc17ab06fb419e1799a605e13a068575",
+    "CHEMBL244_Ki/permuted_0/metrics.json": "520c70ee29c7210afac1c27efa76864afff44c85142987be3104138c163368cc",
+    "CHEMBL244_Ki/permuted_0/oof_permutation.csv": "5a5380d4d061c3259030a8463e1bd46ca83c29708a553ac4e32bbeea19465d4c",
+    "CHEMBL244_Ki/permuted_0/risk_rf.joblib": "6ba99d72693ba576f53b1b3110871c62a7511624148a0b00d36513c3b39bf374",
+    "CHEMBL244_Ki/permuted_1/calibration_permutation.csv": "c36923df5802d6779917faed393aed438f88d3e9f3d6bab8ce0e91de4781aa39",
+    "CHEMBL244_Ki/permuted_1/calibration_risk.csv": "a7b42b66e44f9374e312a3633773d62ad191f30bd027bbfcb5689ef8e030c2ec",
+    "CHEMBL244_Ki/permuted_1/evaluation_permutation.csv": "4bfc847af0c4f1ff12d5dc3db734ad750d4a4c1988e6766ee0c30e8f5d1c5159",
+    "CHEMBL244_Ki/permuted_1/evaluation_risk.csv": "71bd27af9637bb322ccd3d15784597e0e8b97765c01ca70ac8b1dd9cb4c66076",
+    "CHEMBL244_Ki/permuted_1/metrics.json": "5e8b6d2f8d249be3bafb093c6e476a14256ecf54b2999fab187fcfc7a647ba8d",
+    "CHEMBL244_Ki/permuted_1/oof_permutation.csv": "1aff72015e11c422b66aca8201c9577373ef5f9121d038a0d264db13de82a290",
+    "CHEMBL244_Ki/permuted_1/risk_rf.joblib": "9a9bcc1f7f7e6f6c7cd949d13ae47fb4f6941db40d096fb453193e99ccd972d0",
+    "CHEMBL244_Ki/permuted_2/calibration_permutation.csv": "a1fa4420a945142237fb71fa6a4379fa883afc31d69d624209c0e0be9e4c933e",
+    "CHEMBL244_Ki/permuted_2/calibration_risk.csv": "249b582ea7d5df870a1d74212236815fe5c91aae705fe91ad26fad82ac0bbe71",
+    "CHEMBL244_Ki/permuted_2/evaluation_permutation.csv": "f3a2a3ab2aaa2c7486d5eb65a1676331cebf628b1e50ca36092b4f86707b5ff8",
+    "CHEMBL244_Ki/permuted_2/evaluation_risk.csv": "83e6177fd0d22d845d7021ea09a920ffe129e4f0c4edc62595c4902ecbba5b8f",
+    "CHEMBL244_Ki/permuted_2/metrics.json": "addd4a9b61086dfe75fbca20219adf48934a26b5951ad9556756be8ace24826b",
+    "CHEMBL244_Ki/permuted_2/oof_permutation.csv": "3e3008c9cb8595aadd6b940a0a980f1d025e961c6ca9701f3cf9c7bc4c0d9da3",
+    "CHEMBL244_Ki/permuted_2/risk_rf.joblib": "89686719fd4aafacd56c239d53841cf8d9164933e848b03da47c9da87a094c6b",
+    "CHEMBL244_Ki/permuted_3/calibration_permutation.csv": "af09ff54a0b6164c401f796c80f0a4ad8b060d8173027635f9215d01ba03ea95",
+    "CHEMBL244_Ki/permuted_3/calibration_risk.csv": "bbb888ff09ea371c8c4b8930f9286466ed6c17686b0aaf78561cdbab6f50d516",
+    "CHEMBL244_Ki/permuted_3/evaluation_permutation.csv": "02b893de8c324251060bb0110942b8c2a942f7fe02f9e9f85ce86b76c4886b43",
+    "CHEMBL244_Ki/permuted_3/evaluation_risk.csv": "6b1738e68f4f63c802abf799653844f031cc33b3a9411556a830e1c9906a946b",
+    "CHEMBL244_Ki/permuted_3/metrics.json": "8519d968423e711c8f15b517683285e3ab957f33afa952ababba828d8c00d4eb",
+    "CHEMBL244_Ki/permuted_3/oof_permutation.csv": "2852b1a786bccbae04a3137cf10f14f1892b9146387174aab67312f6faa647b9",
+    "CHEMBL244_Ki/permuted_3/risk_rf.joblib": "bd3eafc81d389a841b5ee2dca62b552c81b0c7c97cbaef185a946a25d59151a7",
+    "CHEMBL244_Ki/permuted_4/calibration_permutation.csv": "2151e169d5eeb3edf0dfd42f9a9114b2f7467542f2fd3150e5e901f63032153e",
+    "CHEMBL244_Ki/permuted_4/calibration_risk.csv": "06efcbc7debcf62e104fa49e8d8222065b716c22eadf55b520c73bd12b4b1176",
+    "CHEMBL244_Ki/permuted_4/evaluation_permutation.csv": "71987e339109ba0ce74c98a2fd6396d6ad9918226ff5f9c47ea470821da3765f",
+    "CHEMBL244_Ki/permuted_4/evaluation_risk.csv": "537c1b37bfce41edaa5bf5b25e693e66500f4c3d2cd9c2524ec00ddc01f85df3",
+    "CHEMBL244_Ki/permuted_4/metrics.json": "05eca33d7712a1f7251572a4cf35530ce0469f48eec7f5cff7b303250083d830",
+    "CHEMBL244_Ki/permuted_4/oof_permutation.csv": "74f363848e0690614db85372cddf49fe90a84deb014143cbcbd2625ef6363d75",
+    "CHEMBL244_Ki/permuted_4/risk_rf.joblib": "45a33f67dba6165f4337467b239cd92894d8588b991c8998ac43e6075315089c",
+    "CHEMBL244_Ki/true_replay/calibration_risk.csv": "2fa3f649a14b739faf1223e0db9b61935a681ff5b8f73fab9779c0c22667d500",
+    "CHEMBL244_Ki/true_replay/evaluation_risk.csv": "8a7007f6706a30b67abd2dbe4d1a14fcc0f42305b6f696c2652c4d64cfe3dc43",
+    "CHEMBL244_Ki/true_replay/metrics.json": "b8ced8b3f63912a3502b88330563c3de842b8b9a7f36f94396f0b3e02c729b34",
+    "CHEMBL244_Ki/true_replay/risk_rf.joblib": "6a45be24cdb0e55aa3e0eb8dd88ade86038c2d33d0a36d56e3f03b14d5e693c9",
+    "CHEMBL4792_Ki/permuted_0/calibration_permutation.csv": "55bcad4ddd754266c1b0deac0f25d968d77990d53dd3dbc7e6eeae7cc1290cd0",
+    "CHEMBL4792_Ki/permuted_0/calibration_risk.csv": "5e53e637ca757b8605051ab7459d0e3bc33a4655f690f2d9f4f6d464919a9576",
+    "CHEMBL4792_Ki/permuted_0/evaluation_permutation.csv": "4f7fba1c97b0d64cf1577a4eb275b30e42d6a7524033b143f5e741453a5a66f3",
+    "CHEMBL4792_Ki/permuted_0/evaluation_risk.csv": "c1a17229895fde92a41ee6faafa581cd14953c467cde6f89e605ffd2d470d8a2",
+    "CHEMBL4792_Ki/permuted_0/metrics.json": "dbe12f2571a25760311dc85a21e9fd1b7618e372a27286caba1e093a74a9a687",
+    "CHEMBL4792_Ki/permuted_0/oof_permutation.csv": "99c8f3231fa03b346a1ac42f1f23dce8bec94ff557e18eb3c3124a24c8b30e81",
+    "CHEMBL4792_Ki/permuted_0/risk_rf.joblib": "18b758bc47ecb9583581d9f549799390a6ee56da77fba2e1fc380de6737b7c7d",
+    "CHEMBL4792_Ki/permuted_1/calibration_permutation.csv": "ca22ea98b62f780ec67d355de4d035b4deb7e8ea6373c285a61a5aa7dcad4c82",
+    "CHEMBL4792_Ki/permuted_1/calibration_risk.csv": "4c7d1294343e619248fcd3f8f48f4c8b1fd239152e2efc605041c1f58f7a5a4b",
+    "CHEMBL4792_Ki/permuted_1/evaluation_permutation.csv": "b45829aff663b87e23f80ecc80d98f4802403a77f501293e01796bc1f5b9327b",
+    "CHEMBL4792_Ki/permuted_1/evaluation_risk.csv": "8b7cc2511a92d3f72890e5698ce66cefa03e73a0e87a288289a9a31ed2d250e4",
+    "CHEMBL4792_Ki/permuted_1/metrics.json": "6f20129264c2b17e7aad2909ec03e636cff57afde5d609a91b50d2d820d01d3d",
+    "CHEMBL4792_Ki/permuted_1/oof_permutation.csv": "970af8097e2cf11b980314edf106eca5560a92c9c3674d78de140b4b0f5f0f75",
+    "CHEMBL4792_Ki/permuted_1/risk_rf.joblib": "f8bebe1d569537bfbe656486687699100b0d65f02bbee3cb00441e7cc11615ae",
+    "CHEMBL4792_Ki/permuted_2/calibration_permutation.csv": "44b556f36421c7f518486ec642697abe48d5a50689ebee0c45ab754a5828d49a",
+    "CHEMBL4792_Ki/permuted_2/calibration_risk.csv": "82812190b2a39d011b809a161b7f6353a40b3a43a2703296fb751e8704c8dd4b",
+    "CHEMBL4792_Ki/permuted_2/evaluation_permutation.csv": "60544eee21a85dd1bc0d00ea20826e66d547e774daabece38596541ae8ae259a",
+    "CHEMBL4792_Ki/permuted_2/evaluation_risk.csv": "57c2d39b506f62f915a639c8409d07783251d668e1100518443a2f510e4715d5",
+    "CHEMBL4792_Ki/permuted_2/metrics.json": "a7707f084094cf98b50ed00bd0225c922b7732ec3dd4d92826e35b64d3a0fc26",
+    "CHEMBL4792_Ki/permuted_2/oof_permutation.csv": "f6c70bdc413409416987a4e4eebbaa8707ae8bb861d1886a8947de2da8474891",
+    "CHEMBL4792_Ki/permuted_2/risk_rf.joblib": "58acf849b7a3f7a73109d2a429795b44473d4430fe501e42c25986b30278f5f6",
+    "CHEMBL4792_Ki/permuted_3/calibration_permutation.csv": "c304b54324ed0435efeb7a59c3af73c5208582fb55330750de95e98011384314",
+    "CHEMBL4792_Ki/permuted_3/calibration_risk.csv": "62f01029aa4d3957c2e4db8d9371cb0abf4ba17e9d6e781824b98700325480ff",
+    "CHEMBL4792_Ki/permuted_3/evaluation_permutation.csv": "d06866ad31c37289a658d5fa42cc8720dcad7151286e933ce587c13e1ce10849",
+    "CHEMBL4792_Ki/permuted_3/evaluation_risk.csv": "f4c3441940436e5a01f4990d07f176df0129cf957a99d8bf4dcbff0c17d6067f",
+    "CHEMBL4792_Ki/permuted_3/metrics.json": "b6af4a6583685bb47b0529917ce0906b1b7fce84238eac009b98ce63ca550a23",
+    "CHEMBL4792_Ki/permuted_3/oof_permutation.csv": "1cc5b6dc7d56d933de85abc5cad704df3fcb3fa5aaf1fd6b4412131a992f268c",
+    "CHEMBL4792_Ki/permuted_3/risk_rf.joblib": "ff994895efb56ddc982b5000ac5ce6bd8185fe27b020fba7504dfc1d169a6f94",
+    "CHEMBL4792_Ki/true_replay/calibration_risk.csv": "9e052e5da3769f96264a94ec174a730154a09daa5e7e09663ebc463bf8cf22ca",
+    "CHEMBL4792_Ki/true_replay/evaluation_risk.csv": "ec6126fd74d0615d3c20643fd31ae218eddb24918ce9841e519283f4c1c17ba5",
+    "CHEMBL4792_Ki/true_replay/metrics.json": "fffe8456b4dce6ee7522b5592b1213820832a5da12adf4eb7188f8a4ba3a1fd7",
+    "CHEMBL4792_Ki/true_replay/risk_rf.joblib": "523383ef79db920e57d329f527cad295e3c7d1cf7914b49c225285f86a750571"
+  }
+}
