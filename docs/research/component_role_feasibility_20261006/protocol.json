@@ -1,0 +1,65 @@
+{
+  "milestone": "M35",
+  "tasks": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki",
+    "CHEMBL4792_Ki"
+  ],
+  "scope": "Existing development rows only; one label-blind tentative assignment, no official test rows or model evaluation; not a formal new benchmark split.",
+  "roles": {
+    "fit": 0.48,
+    "monitor": 0.12,
+    "calibration": 0.2,
+    "evaluation": 0.2
+  },
+  "allocation": "Joint components sorted by descending size then SHA256(task + sorted canonical identities); assign to role with largest remaining target row capacity, role-order tie fit/monitor/calibration/evaluation. No retries or balancing on labels.",
+  "oof": "fit components only: 3 folds, descending component size and same hash; assign to currently smallest row fold, index tie.",
+  "minimum_rows": {
+    "fit": 400,
+    "monitor": 100,
+    "calibration": 150,
+    "evaluation": 150
+  },
+  "minimum_components": {
+    "fit": 30,
+    "monitor": 10,
+    "calibration": 20,
+    "evaluation": 20
+  },
+  "maximum_absolute_ratio_deviation": 0.05,
+  "oof_minimum": {
+    "held_rows": 100,
+    "held_components": 10,
+    "reference_rows": 250,
+    "reference_components": 20
+  },
+  "cliff_definition": "Exact M33 finite single-cut MMP core>=2/3 each; different variables; enumerate unique unordered pairs inside each outer role; abs(pKi difference)>1.0. Not MoleculeACE consensus cliffs.",
+  "cliff_minimum_calibration_evaluation": {
+    "participating_rows": 20,
+    "unique_pairs": 20,
+    "participating_joint_components": 5
+  },
+  "threshold_status": "Project data screening rules chosen before assignment, not power calculation, significance or journal acceptance standards. Counts per role are not independent pairs.",
+  "limits": {
+    "assignment_attempts_per_task": 1,
+    "task_wall_seconds": 120,
+    "fits": 0,
+    "inference": 0,
+    "official_test_rows": 0,
+    "hyperparameter_search": 0
+  },
+  "reuse_source": "D:\\GraphCliff-main\\scripts\\fppool_pilot\\analyze_pairs.py",
+  "reuse_sha256": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73",
+  "data_root": "D:/GraphCliff-main/benchmark_data",
+  "inputs": {
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL234_Ki\\nodes.json": "7c34cb8b4e9c984bcdeb3cfd76be2f063ea77ade1f5f78070ae20b665f6c09c5",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL234_Ki\\components.json": "0ae69dfb888e468db5f3c56acf9a961b1f105b75230e056f44a341d98eddabdd",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL244_Ki\\nodes.json": "cb8ebfd9b1dbcfb6dc176879a5a4145ef8353a3f9a94b3733b7a2b7b7242d7e5",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL244_Ki\\components.json": "b79d7f08988d1d57c172179d411742f8aecfc15fc7984088c25021c3cbf16732",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL244_Ki.csv": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL4792_Ki\\nodes.json": "847a47f4a5ddc511f7f063b4a3b807b0fc8fabfda82a48b2f3ee924b96bd86bf",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL4792_Ki\\components.json": "06ed336bcceef6cdd4dc03fa4231812a7a0f723a1408c7ed702b117afe282db9",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL4792_Ki.csv": "7fca442ad925803a72f9285b01d28a7b32372466a61183a0d5f2cdc4be90eb5e"
+  }
+}
