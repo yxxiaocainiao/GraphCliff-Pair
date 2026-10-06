@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-06",
+  "baseline_commit": "e70c3d8db49c51685d147edc0404a5979b5861bc",
+  "tasks": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki",
+    "CHEMBL4792_Ki"
+  ],
+  "input_directory": "artifacts/reliability_phase_a_20261005_v3",
+  "partition_directory": "artifacts/reliability_protocol_20261005_v2",
+  "base_protocol": "experiments/reliability_base/fixed_protocol.json",
+  "risk_column": "augmented_risk",
+  "quantiles": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "quantile_method": "linear",
+  "boundary_side": "right",
+  "min_bin_rows": 20,
+  "sensitivity": "remove largest absolute residual in left, right, and both bins separately; all three must preserve inversion",
+  "budget": {
+    "fits": 0,
+    "checkpoint_predictions": 0,
+    "official_test_rows": 0,
+    "parameter_searches": 0
+  },
+  "continuation_screen": "At least 2 tasks have at least 1 eligible inversion robust to all three one-tail removals. This only motivates issue-specific evidence review, not candidate training or innovation.",
+  "scope": "post-hoc descriptive diagnostics; seed42 evaluation previously seen; no independent validation or significance claim",
+  "inputs": {
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "artifacts/reliability_phase_a_20261005_v3/artifact_binding.json": "2c894993caacdd524db6718937d59626e260b4b2ef8ba09ff3875c57b0fcd1db",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3"
+  }
+}
