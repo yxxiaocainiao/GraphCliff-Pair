@@ -82,7 +82,7 @@ def main():
             manifest=json.loads((ROOT/plan['partition_directory']/(task+'.json')).read_text(encoding='utf-8'))
             frames={}
             for role in ['calibration','evaluation']:
-                p=src/task/(role+'.csv');assert sha(p)==binding[p.relative_to(src).as_posix()]
+                p=src/task/(role+'.csv');assert sha(p)==binding[str(p.relative_to(src))]
                 f=pd.read_csv(p,float_precision='round_trip').sort_values('source_row').reset_index(drop=True)
                 assert f.source_row.is_unique and set(f.source_row)==set(manifest['roles'][role])
                 assert np.isfinite(f[['prediction','y',plan['risk_column']]]).all().all()
