@@ -109,6 +109,7 @@ if __name__=='__main__':
             for label in AX.texts:
                 b=label.get_window_extent(renderer);assert b.x0>=bound.x0 and b.y0>=bound.y0 and b.x1<=bound.x1 and b.y1<=bound.y1,(name,label.get_text())
             for ext in ['png','svg','pdf']:fig.savefig(OUT/(name+'.'+ext),dpi=300,facecolor='white')
+            svg=OUT/(name+'.svg');svg.write_text('\n'.join(row.rstrip() for row in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
             pdf.savefig(fig);plt.close(fig);print('DRAWN',name,flush=True)
     assert len(list(OUT.glob('*.png')))==6 and all((OUT/(n+'.'+e)).stat().st_size>1000 for n in names for e in ['png','svg','pdf'])
     (OUT/'gallery.html').write_text('<meta charset="utf-8"><title>GraphCliff改动图</title><style>body{max-width:1400px;margin:20px auto;font-family:sans-serif}img{width:100%}</style>'+''.join('<h2>'+n+'</h2><img src="'+n+'.png">' for n in names),encoding='utf-8')

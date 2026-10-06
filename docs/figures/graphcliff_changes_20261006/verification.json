@@ -46,8 +46,10 @@
   "anomalies": [
     "missing subscript font fixed with installed fallback",
     "git read in sandbox failed; authorized environment succeeded",
-    "fitz absent, replaced by stdlib PDF page-object check"
+    "fitz absent, replaced by stdlib PDF page-object check",
+    "Staged check detected Matplotlib SVG trailing whitespace; stripped and XML rechecked",
+    "Cleanup first read failed on default GBK before mutation; explicit UTF8 fixed"
   ],
   "code_before": "b4c61d3d105df854edd3bc655446638a1c8cf2ae",
-  "draw_script_sha256": "d8f98593d624cbb22c8165d19ae2b8244ea52f18385d00d5905b98dae72dcc84"
+  "draw_script_sha256": "15e2b96bcb05b8672f57ac8b4ac03d4c3c501e6eb36c02a94ea2997655567ad2"
 }
