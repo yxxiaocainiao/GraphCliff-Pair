@@ -1,0 +1,451 @@
+{
+  "results": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "calibration_rows": 426,
+      "evaluation_rows": 448,
+      "risk_boundaries": [
+        0.5150193239616758,
+        0.6118233943312832,
+        0.7321787747687142
+      ],
+      "bins": [
+        {
+          "bin": 0,
+          "rows": 112,
+          "mae": 0.4818446333693232,
+          "mse": 0.3471942194784881,
+          "rmse": 0.5892318893937157,
+          "top_tenth_squared_share": 0.4496645516227186
+        },
+        {
+          "bin": 1,
+          "rows": 112,
+          "mae": 0.5588238742247302,
+          "mse": 0.48659983283518754,
+          "rmse": 0.6975670812439385,
+          "top_tenth_squared_share": 0.4463825202074371
+        },
+        {
+          "bin": 2,
+          "rows": 101,
+          "mae": 0.6250081716684842,
+          "mse": 0.6542353840383693,
+          "rmse": 0.8088481835538541,
+          "top_tenth_squared_share": 0.5157593322456098
+        },
+        {
+          "bin": 3,
+          "rows": 123,
+          "mae": 0.8131089150951828,
+          "mse": 1.1050473987635563,
+          "rmse": 1.0512123471323747,
+          "top_tenth_squared_share": 0.475113682836804
+        }
+      ],
+      "pairs": [
+        {
+          "left": 0,
+          "right": 1,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        }
+      ],
+      "has_robust_inversion": false,
+      "curve_rmse": [
+        0.6456756354059194,
+        0.6597581759023515,
+        0.7020600611386355,
+        0.7050904676993351,
+        0.7542640966281442,
+        0.8119964616815232
+      ]
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "calibration_rows": 375,
+      "evaluation_rows": 402,
+      "risk_boundaries": [
+        0.628682873245165,
+        0.7478583426124945,
+        0.9227193546948402
+      ],
+      "bins": [
+        {
+          "bin": 0,
+          "rows": 108,
+          "mae": 0.6171349389893431,
+          "mse": 0.6151600039786326,
+          "rmse": 0.7843213652442681,
+          "top_tenth_squared_share": 0.496187829337265
+        },
+        {
+          "bin": 1,
+          "rows": 84,
+          "mae": 0.5628363469224995,
+          "mse": 0.5315621658465783,
+          "rmse": 0.7290830994108822,
+          "top_tenth_squared_share": 0.5454770776656243
+        },
+        {
+          "bin": 2,
+          "rows": 112,
+          "mae": 0.7966125687024123,
+          "mse": 1.0027975980855481,
+          "rmse": 1.0013978220894773,
+          "top_tenth_squared_share": 0.4728529757593976
+        },
+        {
+          "bin": 3,
+          "rows": 98,
+          "mae": 1.0280282351892351,
+          "mse": 1.501253258007434,
+          "rmse": 1.2252564050056765,
+          "top_tenth_squared_share": 0.3895342069052909
+        }
+      ],
+      "pairs": [
+        {
+          "left": 0,
+          "right": 1,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        }
+      ],
+      "has_robust_inversion": false,
+      "curve_rmse": [
+        0.7675570859329395,
+        0.7801233289789571,
+        0.8234429388504209,
+        0.8711807363753707,
+        0.9175680006127084,
+        0.9600537047466657
+      ]
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "seed": 42,
+      "calibration_rows": 179,
+      "evaluation_rows": 187,
+      "risk_boundaries": [
+        0.590405003003287,
+        0.6728789350623472,
+        0.7899034042092965
+      ],
+      "bins": [
+        {
+          "bin": 0,
+          "rows": 52,
+          "mae": 0.4660893240694014,
+          "mse": 0.3883605349171326,
+          "rmse": 0.6231857948614784,
+          "top_tenth_squared_share": 0.5378917138002606
+        },
+        {
+          "bin": 1,
+          "rows": 36,
+          "mae": 0.5254292516902955,
+          "mse": 0.43440770832247433,
+          "rmse": 0.6590961298038962,
+          "top_tenth_squared_share": 0.4944110116398324
+        },
+        {
+          "bin": 2,
+          "rows": 52,
+          "mae": 0.655409004375038,
+          "mse": 0.6960117542260572,
+          "rmse": 0.8342731892048655,
+          "top_tenth_squared_share": 0.49374022151872327
+        },
+        {
+          "bin": 3,
+          "rows": 47,
+          "mae": 0.7755642920313699,
+          "mse": 1.1069264259617375,
+          "rmse": 1.0521057104501133,
+          "top_tenth_squared_share": 0.5471263081092544
+        }
+      ],
+      "pairs": [
+        {
+          "left": 0,
+          "right": 1,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            true,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "eligible": true,
+          "raw_inversion": false,
+          "one_tail_removal_inversions": [
+            false,
+            false,
+            false
+          ],
+          "robust_inversion": false
+        }
+      ],
+      "has_robust_inversion": false,
+      "curve_rmse": [
+        0.6722329251651569,
+        0.669873678112277,
+        0.7152528625391763,
+        0.7286751049299318,
+        0.7861029050159658,
+        0.8144798496151883
+      ]
+    }
+  ],
+  "issue_screen": false,
+  "new_fits": 0,
+  "new_checkpoint_predictions": 0,
+  "official_test_rows": 0,
+  "scope": "post-hoc descriptive diagnostics; seed42 evaluation previously seen; no independent validation or significance claim",
+  "input_sha256": {
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "artifacts/reliability_phase_a_20261005_v3/artifact_binding.json": "2c894993caacdd524db6718937d59626e260b4b2ef8ba09ff3875c57b0fcd1db",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
+    "experiments/reliability_base/objective_diagnostic_protocol.json": "03c9459149513e616ca54bb60a0e438ca1cc066d5b834fcc15c52c5350d36631",
+    "experiments/reliability_base/check_objective_order.py": "bb039c6db2950c1c16f81bfeb5431ee7483a82c63fb0e6e5ca665f15a45688e9"
+  },
+  "decision": "End this objective diagnostic; no new training",
+  "code_commit": "0f092835791ce097ece0eb2809366760070f673a",
+  "execution_log": {
+    "planned_analysis_attempts": 1,
+    "actual_analysis_attempts": 2,
+    "failed": {
+      "status": "failed",
+      "analysis_attempts": 1,
+      "fits": 0,
+      "checkpoint_predictions": 0,
+      "official_test_rows": 0,
+      "code_commit": "b1d7fefadd3a9d6d32853c7859b701d2acfeca62",
+      "error": "KeyError('CHEMBL234_Ki/calibration.csv')",
+      "seconds": 0.0
+    },
+    "successful": {
+      "status": "complete",
+      "analysis_attempts": 1,
+      "fits": 0,
+      "checkpoint_predictions": 0,
+      "official_test_rows": 0,
+      "code_commit": "0f092835791ce097ece0eb2809366760070f673a",
+      "seconds": 0.0779999999795109
+    },
+    "protocol_commit": "b1d7fefadd3a9d6d32853c7859b701d2acfeca62",
+    "fix_commit": "0f092835791ce097ece0eb2809366760070f673a",
+    "deviation": "1 Windows binding-key failure, corrected path format only; new output directory retained both attempts; no rule/budget change",
+    "timing_limit": "elapsed seconds are coarse local process timing, not total wall-clock research cost"
+  },
+  "verification": {
+    "independent_implementation": "stdlib csv/statistics, no shared diagnostic functions",
+    "bins_checked": 12,
+    "pairs_checked": 18,
+    "tail_removal_checks": 54,
+    "old_curve_points_checked": 18,
+    "input_hashes_unchanged": true,
+    "new_fits": 0
+  },
+  "additional_source_sha256": {
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "experiments/reliability_base/phase_a_results.json": "1a599ae818c72a296c4ef55b1943e47f2d0782a155803007c5e7175d08aae593",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f"
+  }
+}
