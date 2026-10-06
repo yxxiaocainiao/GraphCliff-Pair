@@ -1,0 +1,250 @@
+{
+  "code_commit": "230dbacfaf959337b4f846d451666a3c192c53ee",
+  "script_sha256": "a6b8429fea47cf3227cca5a614d8030060b0135c86596e17f590b17a538037a5",
+  "protocol_sha256": "820bdc6ef0fc20b045cd928323172e4595b60ef67582247ddd860464436b015d",
+  "input_sha256": {
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL234_Ki\\nodes.json": "7c34cb8b4e9c984bcdeb3cfd76be2f063ea77ade1f5f78070ae20b665f6c09c5",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL234_Ki\\components.json": "0ae69dfb888e468db5f3c56acf9a961b1f105b75230e056f44a341d98eddabdd",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL244_Ki\\nodes.json": "cb8ebfd9b1dbcfb6dc176879a5a4145ef8353a3f9a94b3733b7a2b7b7242d7e5",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL244_Ki\\components.json": "b79d7f08988d1d57c172179d411742f8aecfc15fc7984088c25021c3cbf16732",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL244_Ki.csv": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL4792_Ki\\nodes.json": "847a47f4a5ddc511f7f063b4a3b807b0fc8fabfda82a48b2f3ee924b96bd86bf",
+    "D:\\GraphCliff-Pair\\artifacts\\joint_dependency_preflight_20261006\\CHEMBL4792_Ki\\components.json": "06ed336bcceef6cdd4dc03fa4231812a7a0f723a1408c7ed702b117afe282db9",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL4792_Ki.csv": "7fca442ad925803a72f9285b01d28a7b32372466a61183a0d5f2cdc4be90eb5e",
+    "D:\\GraphCliff-main\\scripts\\fppool_pilot\\analyze_pairs.py": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73"
+  },
+  "tasks": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "roles": {
+        "fit": {
+          "rows": 1403,
+          "components": 191,
+          "fraction": 0.4798221614227086,
+          "mmp_cliff_pairs": 1512,
+          "cliff_participating_rows": 717,
+          "cliff_participating_components": 30
+        },
+        "monitor": {
+          "rows": 351,
+          "components": 178,
+          "fraction": 0.12004103967168263,
+          "mmp_cliff_pairs": 26,
+          "cliff_participating_rows": 41,
+          "cliff_participating_components": 16
+        },
+        "calibration": {
+          "rows": 585,
+          "components": 188,
+          "fraction": 0.20006839945280439,
+          "mmp_cliff_pairs": 291,
+          "cliff_participating_rows": 206,
+          "cliff_participating_components": 25
+        },
+        "evaluation": {
+          "rows": 585,
+          "components": 189,
+          "fraction": 0.20006839945280439,
+          "mmp_cliff_pairs": 157,
+          "cliff_participating_rows": 170,
+          "cliff_participating_components": 28
+        }
+      },
+      "oof": [
+        {
+          "fold": 0,
+          "held_rows": 468,
+          "held_components": 60,
+          "reference_rows": 935,
+          "reference_components": 131
+        },
+        {
+          "fold": 1,
+          "held_rows": 468,
+          "held_components": 65,
+          "reference_rows": 935,
+          "reference_components": 126
+        },
+        {
+          "fold": 2,
+          "held_rows": 467,
+          "held_components": 66,
+          "reference_rows": 936,
+          "reference_components": 125
+        }
+      ],
+      "failed_conditions": [],
+      "screening_pass": true,
+      "seconds": 14.26500000001397
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "roles": {
+        "fit": {
+          "rows": 1189,
+          "components": 98,
+          "fraction": 0.48021001615508885,
+          "mmp_cliff_pairs": 2168,
+          "cliff_participating_rows": 701,
+          "cliff_participating_components": 31
+        },
+        "monitor": {
+          "rows": 297,
+          "components": 88,
+          "fraction": 0.11995153473344103,
+          "mmp_cliff_pairs": 111,
+          "cliff_participating_rows": 111,
+          "cliff_participating_components": 20
+        },
+        "calibration": {
+          "rows": 495,
+          "components": 92,
+          "fraction": 0.19991922455573505,
+          "mmp_cliff_pairs": 537,
+          "cliff_participating_rows": 247,
+          "cliff_participating_components": 27
+        },
+        "evaluation": {
+          "rows": 495,
+          "components": 93,
+          "fraction": 0.19991922455573505,
+          "mmp_cliff_pairs": 504,
+          "cliff_participating_rows": 218,
+          "cliff_participating_components": 24
+        }
+      },
+      "oof": [
+        {
+          "fold": 0,
+          "held_rows": 397,
+          "held_components": 33,
+          "reference_rows": 792,
+          "reference_components": 65
+        },
+        {
+          "fold": 1,
+          "held_rows": 396,
+          "held_components": 32,
+          "reference_rows": 793,
+          "reference_components": 66
+        },
+        {
+          "fold": 2,
+          "held_rows": 396,
+          "held_components": 33,
+          "reference_rows": 793,
+          "reference_components": 65
+        }
+      ],
+      "failed_conditions": [],
+      "screening_pass": true,
+      "seconds": 19.92200000002049
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "roles": {
+        "fit": {
+          "rows": 563,
+          "components": 48,
+          "fraction": 0.479557069846678,
+          "mmp_cliff_pairs": 524,
+          "cliff_participating_rows": 277,
+          "cliff_participating_components": 6
+        },
+        "monitor": {
+          "rows": 141,
+          "components": 48,
+          "fraction": 0.1201022146507666,
+          "mmp_cliff_pairs": 93,
+          "cliff_participating_rows": 58,
+          "cliff_participating_components": 8
+        },
+        "calibration": {
+          "rows": 235,
+          "components": 49,
+          "fraction": 0.20017035775127767,
+          "mmp_cliff_pairs": 524,
+          "cliff_participating_rows": 146,
+          "cliff_participating_components": 8
+        },
+        "evaluation": {
+          "rows": 235,
+          "components": 49,
+          "fraction": 0.20017035775127767,
+          "mmp_cliff_pairs": 170,
+          "cliff_participating_rows": 112,
+          "cliff_participating_components": 7
+        }
+      },
+      "oof": [
+        {
+          "fold": 0,
+          "held_rows": 251,
+          "held_components": 1,
+          "reference_rows": 312,
+          "reference_components": 47
+        },
+        {
+          "fold": 1,
+          "held_rows": 156,
+          "held_components": 15,
+          "reference_rows": 407,
+          "reference_components": 33
+        },
+        {
+          "fold": 2,
+          "held_rows": 156,
+          "held_components": 32,
+          "reference_rows": 407,
+          "reference_components": 16
+        }
+      ],
+      "failed_conditions": [
+        "oof0:held_components",
+        "oof2:reference_components"
+      ],
+      "screening_pass": false,
+      "seconds": 5.405999999959022
+    }
+  ],
+  "fits": 0,
+  "inference": 0,
+  "official_test_rows": 0,
+  "verification": {
+    "tasks": [
+      {
+        "dataset": "CHEMBL234_Ki",
+        "identity_roles_and_oof_verified": true,
+        "independent_pair_enumeration_matches": true,
+        "role_manifest_sha256": "6548599c61aa6a073f0dd816a1f32eef958c2f054ea655e94cffe586b830551d"
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "identity_roles_and_oof_verified": true,
+        "independent_pair_enumeration_matches": true,
+        "role_manifest_sha256": "4064b9ce782ad2437ac50e78593159625f1a6f0e6bff070dbc723d5ca94f7f3b"
+      },
+      {
+        "dataset": "CHEMBL4792_Ki",
+        "identity_roles_and_oof_verified": true,
+        "independent_pair_enumeration_matches": true,
+        "role_manifest_sha256": "d6dfb5d1d91ddd3ea4fefe587edeea55e1102eb0ae2e72982f419fea6b4b1f7e"
+      }
+    ],
+    "seconds": 46.59399999998277,
+    "method": "Independent within-component unordered molecule pairs with common-core/different-variable check; canonical SMILES used, matched source-SMILES enumeration. Saved source identities and OOF roles independently recounted; inputs unchanged."
+  },
+  "execution": {
+    "planned_analysis_runs": 1,
+    "actual_analysis_runs": 1,
+    "planned_assignments_per_task": 1,
+    "actual_assignments_per_task": 1,
+    "independent_verification_runs": 1,
+    "faults": 0,
+    "interruptions": 0,
+    "formal_new_benchmark_splits": 0,
+    "tentative_private_assignments": 3,
+    "decision": "No expanded training; 4792 fixed OOF assignment failed, two tasks passed data screening only; algorithm core remains undetermined."
+  }
+}
