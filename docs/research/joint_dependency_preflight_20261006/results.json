@@ -1,0 +1,499 @@
+{
+  "results": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "selected_rows": 2924,
+      "role_rows": {
+        "fit": 1755,
+        "monitor": 295,
+        "calibration": 426,
+        "evaluation": 448
+      },
+      "empty_scaffold_rows": 2,
+      "molecules_over_default20": 36,
+      "active_mmp_cores": 1201,
+      "mmp_pair_occurrences_not_unique": 24382,
+      "spanning_edges_by_type": {
+        "canonical": 0,
+        "scaffold": 1476,
+        "mmp": 2720
+      },
+      "canonical_scaffold": {
+        "components": 1448,
+        "largest_rows": 32,
+        "largest_fraction": 0.01094391244870041,
+        "top_ten_component_rows": [
+          32,
+          29,
+          29,
+          27,
+          26,
+          24,
+          24,
+          22,
+          21,
+          21
+        ],
+        "cross_role_components": 311,
+        "cross_role_rows": 1671,
+        "components_touching_role": {
+          "calibration": 335,
+          "evaluation": 344,
+          "fit": 1003,
+          "monitor": 243
+        },
+        "necessary_three_roles": true
+      },
+      "joint": {
+        "components": 746,
+        "largest_rows": 352,
+        "largest_fraction": 0.12038303693570451,
+        "top_ten_component_rows": [
+          352,
+          243,
+          211,
+          46,
+          45,
+          44,
+          32,
+          32,
+          31,
+          30
+        ],
+        "cross_role_components": 219,
+        "cross_role_rows": 2307,
+        "components_touching_role": {
+          "calibration": 199,
+          "evaluation": 221,
+          "fit": 529,
+          "monitor": 158
+        },
+        "necessary_three_roles": true
+      },
+      "seconds": 18.64000000001397,
+      "cpu_seconds": 18.453125,
+      "complete_for_frozen_definition": true
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "selected_rows": 2476,
+      "role_rows": {
+        "fit": 1462,
+        "monitor": 237,
+        "calibration": 375,
+        "evaluation": 402
+      },
+      "empty_scaffold_rows": 1,
+      "molecules_over_default20": 11,
+      "active_mmp_cores": 1235,
+      "mmp_pair_occurrences_not_unique": 18129,
+      "spanning_edges_by_type": {
+        "canonical": 0,
+        "scaffold": 1408,
+        "mmp": 2518
+      },
+      "canonical_scaffold": {
+        "components": 1068,
+        "largest_rows": 75,
+        "largest_fraction": 0.030290791599353797,
+        "top_ten_component_rows": [
+          75,
+          49,
+          41,
+          34,
+          33,
+          31,
+          30,
+          26,
+          26,
+          22
+        ],
+        "cross_role_components": 251,
+        "cross_role_rows": 1546,
+        "components_touching_role": {
+          "calibration": 272,
+          "evaluation": 272,
+          "fit": 726,
+          "monitor": 182
+        },
+        "necessary_three_roles": true
+      },
+      "joint": {
+        "components": 371,
+        "largest_rows": 160,
+        "largest_fraction": 0.06462035541195477,
+        "top_ten_component_rows": [
+          160,
+          131,
+          119,
+          117,
+          107,
+          101,
+          77,
+          60,
+          54,
+          45
+        ],
+        "cross_role_components": 161,
+        "cross_role_rows": 2227,
+        "components_touching_role": {
+          "calibration": 139,
+          "evaluation": 146,
+          "fit": 283,
+          "monitor": 111
+        },
+        "necessary_three_roles": true
+      },
+      "seconds": 21.18699999997625,
+      "cpu_seconds": 21.03125,
+      "complete_for_frozen_definition": true
+    },
+    {
+      "dataset": "CHEMBL4792_Ki",
+      "selected_rows": 1174,
+      "role_rows": {
+        "fit": 702,
+        "monitor": 106,
+        "calibration": 179,
+        "evaluation": 187
+      },
+      "empty_scaffold_rows": 0,
+      "molecules_over_default20": 0,
+      "active_mmp_cores": 541,
+      "mmp_pair_occurrences_not_unique": 6582,
+      "spanning_edges_by_type": {
+        "canonical": 0,
+        "scaffold": 600,
+        "mmp": 1141
+      },
+      "canonical_scaffold": {
+        "components": 574,
+        "largest_rows": 35,
+        "largest_fraction": 0.029812606473594547,
+        "top_ten_component_rows": [
+          35,
+          34,
+          25,
+          19,
+          19,
+          18,
+          18,
+          18,
+          16,
+          15
+        ],
+        "cross_role_components": 122,
+        "cross_role_rows": 653,
+        "components_touching_role": {
+          "calibration": 121,
+          "evaluation": 146,
+          "fit": 403,
+          "monitor": 86
+        },
+        "necessary_three_roles": true
+      },
+      "joint": {
+        "components": 194,
+        "largest_rows": 251,
+        "largest_fraction": 0.21379897785349233,
+        "top_ten_component_rows": [
+          251,
+          142,
+          101,
+          89,
+          89,
+          38,
+          27,
+          18,
+          17,
+          16
+        ],
+        "cross_role_components": 54,
+        "cross_role_rows": 1018,
+        "components_touching_role": {
+          "calibration": 51,
+          "evaluation": 54,
+          "fit": 145,
+          "monitor": 45
+        },
+        "necessary_three_roles": true
+      },
+      "seconds": 6.23399999999674,
+      "cpu_seconds": 6.21875,
+      "complete_for_frozen_definition": true
+    }
+  ],
+  "code_commit": "1cd39330d3f02bb15ea05e71252ca473a520a805",
+  "rdkit_version": "2026.03.4",
+  "input_sha256": {
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+    "D:\\GraphCliff-Pair\\artifacts\\reliability_protocol_20261005_v2\\CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL244_Ki.csv": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+    "D:\\GraphCliff-Pair\\artifacts\\reliability_protocol_20261005_v2\\CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "D:\\GraphCliff-main\\benchmark_data\\CHEMBL4792_Ki.csv": "7fca442ad925803a72f9285b01d28a7b32372466a61183a0d5f2cdc4be90eb5e",
+    "D:\\GraphCliff-Pair\\artifacts\\reliability_protocol_20261005_v2\\CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
+    "D:\\GraphCliff-Pair\\docs\\research\\joint_dependency_preflight_20261006\\protocol.json": "0a0f2c31b51a8dcfaa47df80657f2d1c2801614697c91484dcd9bd786bc8b439",
+    "D:\\GraphCliff-main\\scripts\\fppool_pilot\\analyze_pairs.py": "d30a20fe488348ab0518e57621603fb267d4a1e3e4faad345cf24c3905fd4f73",
+    "D:\\GraphCliff-Pair\\experiments\\reliability_base\\audit_joint_dependencies.py": "69ac21a8e532f50b7071eab853909c86b4c3b4a0e87e39ba2daf05cb6946dcae"
+  },
+  "new_fits": 0,
+  "checkpoint_predictions": 0,
+  "scope": "Development structures of 3 already seen tasks only; graph complete for frozen finite single-cut definition, not all possible MMP definitions or full30/test benchmark",
+  "formal_split_feasibility": "unknown: no assignment, cliff counts, power or external dates evaluated",
+  "verification": {
+    "component_algorithm": "Independent stdlib disjoint-set vs SciPy csgraph",
+    "tasks": [
+      "CHEMBL234_Ki",
+      "CHEMBL244_Ki",
+      "CHEMBL4792_Ki"
+    ],
+    "both_graph_partitions_checked": true,
+    "complete_joint_partition_bijection_checked": true,
+    "input_hashes_unchanged": true,
+    "private_output_sha256": {
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL234_Ki\\nodes.json": "7c34cb8b4e9c984bcdeb3cfd76be2f063ea77ade1f5f78070ae20b665f6c09c5",
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL234_Ki\\edges.json": "8d581143b531e32cd22b648a1afad39bb75e689018f1a3d4d974ef60b413143a",
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL234_Ki\\components.json": "0ae69dfb888e468db5f3c56acf9a961b1f105b75230e056f44a341d98eddabdd",
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL244_Ki\\nodes.json": "cb8ebfd9b1dbcfb6dc176879a5a4145ef8353a3f9a94b3733b7a2b7b7242d7e5",
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL244_Ki\\edges.json": "74a6d5e576c2c7dbf796bd4fee4aca6d121103ab2b57dcd7591e91710b7f592c",
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL244_Ki\\components.json": "b79d7f08988d1d57c172179d411742f8aecfc15fc7984088c25021c3cbf16732",
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL4792_Ki\\nodes.json": "847a47f4a5ddc511f7f063b4a3b807b0fc8fabfda82a48b2f3ee924b96bd86bf",
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL4792_Ki\\edges.json": "8ef0e58d5c722541a8155bab07b99161d4010c7195977a0d19ca681fb0461aa2",
+      "artifacts\\joint_dependency_preflight_20261006\\CHEMBL4792_Ki\\components.json": "06ed336bcceef6cdd4dc03fa4231812a7a0f723a1408c7ed702b117afe282db9"
+    },
+    "new_fits": 0
+  },
+  "execution": {
+    "status": "complete",
+    "attempts": 1,
+    "fits": 0,
+    "checkpoint_predictions": 0,
+    "official_test_records_loaded": false,
+    "code_commit": "1cd39330d3f02bb15ea05e71252ca473a520a805",
+    "tasks": [
+      {
+        "dataset": "CHEMBL234_Ki",
+        "selected_rows": 2924,
+        "role_rows": {
+          "fit": 1755,
+          "monitor": 295,
+          "calibration": 426,
+          "evaluation": 448
+        },
+        "empty_scaffold_rows": 2,
+        "molecules_over_default20": 36,
+        "active_mmp_cores": 1201,
+        "mmp_pair_occurrences_not_unique": 24382,
+        "spanning_edges_by_type": {
+          "canonical": 0,
+          "scaffold": 1476,
+          "mmp": 2720
+        },
+        "canonical_scaffold": {
+          "components": 1448,
+          "largest_rows": 32,
+          "largest_fraction": 0.01094391244870041,
+          "top_ten_component_rows": [
+            32,
+            29,
+            29,
+            27,
+            26,
+            24,
+            24,
+            22,
+            21,
+            21
+          ],
+          "cross_role_components": 311,
+          "cross_role_rows": 1671,
+          "components_touching_role": {
+            "calibration": 335,
+            "evaluation": 344,
+            "fit": 1003,
+            "monitor": 243
+          },
+          "necessary_three_roles": "True"
+        },
+        "joint": {
+          "components": 746,
+          "largest_rows": 352,
+          "largest_fraction": 0.12038303693570451,
+          "top_ten_component_rows": [
+            352,
+            243,
+            211,
+            46,
+            45,
+            44,
+            32,
+            32,
+            31,
+            30
+          ],
+          "cross_role_components": 219,
+          "cross_role_rows": 2307,
+          "components_touching_role": {
+            "calibration": 199,
+            "evaluation": 221,
+            "fit": 529,
+            "monitor": 158
+          },
+          "necessary_three_roles": "True"
+        },
+        "seconds": 18.64000000001397,
+        "cpu_seconds": 18.453125,
+        "complete_for_frozen_definition": true
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "selected_rows": 2476,
+        "role_rows": {
+          "fit": 1462,
+          "monitor": 237,
+          "calibration": 375,
+          "evaluation": 402
+        },
+        "empty_scaffold_rows": 1,
+        "molecules_over_default20": 11,
+        "active_mmp_cores": 1235,
+        "mmp_pair_occurrences_not_unique": 18129,
+        "spanning_edges_by_type": {
+          "canonical": 0,
+          "scaffold": 1408,
+          "mmp": 2518
+        },
+        "canonical_scaffold": {
+          "components": 1068,
+          "largest_rows": 75,
+          "largest_fraction": 0.030290791599353797,
+          "top_ten_component_rows": [
+            75,
+            49,
+            41,
+            34,
+            33,
+            31,
+            30,
+            26,
+            26,
+            22
+          ],
+          "cross_role_components": 251,
+          "cross_role_rows": 1546,
+          "components_touching_role": {
+            "calibration": 272,
+            "evaluation": 272,
+            "fit": 726,
+            "monitor": 182
+          },
+          "necessary_three_roles": "True"
+        },
+        "joint": {
+          "components": 371,
+          "largest_rows": 160,
+          "largest_fraction": 0.06462035541195477,
+          "top_ten_component_rows": [
+            160,
+            131,
+            119,
+            117,
+            107,
+            101,
+            77,
+            60,
+            54,
+            45
+          ],
+          "cross_role_components": 161,
+          "cross_role_rows": 2227,
+          "components_touching_role": {
+            "calibration": 139,
+            "evaluation": 146,
+            "fit": 283,
+            "monitor": 111
+          },
+          "necessary_three_roles": "True"
+        },
+        "seconds": 21.18699999997625,
+        "cpu_seconds": 21.03125,
+        "complete_for_frozen_definition": true
+      },
+      {
+        "dataset": "CHEMBL4792_Ki",
+        "selected_rows": 1174,
+        "role_rows": {
+          "fit": 702,
+          "monitor": 106,
+          "calibration": 179,
+          "evaluation": 187
+        },
+        "empty_scaffold_rows": 0,
+        "molecules_over_default20": 0,
+        "active_mmp_cores": 541,
+        "mmp_pair_occurrences_not_unique": 6582,
+        "spanning_edges_by_type": {
+          "canonical": 0,
+          "scaffold": 600,
+          "mmp": 1141
+        },
+        "canonical_scaffold": {
+          "components": 574,
+          "largest_rows": 35,
+          "largest_fraction": 0.029812606473594547,
+          "top_ten_component_rows": [
+            35,
+            34,
+            25,
+            19,
+            19,
+            18,
+            18,
+            18,
+            16,
+            15
+          ],
+          "cross_role_components": 122,
+          "cross_role_rows": 653,
+          "components_touching_role": {
+            "calibration": 121,
+            "evaluation": 146,
+            "fit": 403,
+            "monitor": 86
+          },
+          "necessary_three_roles": "True"
+        },
+        "joint": {
+          "components": 194,
+          "largest_rows": 251,
+          "largest_fraction": 0.21379897785349233,
+          "top_ten_component_rows": [
+            251,
+            142,
+            101,
+            89,
+            89,
+            38,
+            27,
+            18,
+            17,
+            16
+          ],
+          "cross_role_components": 54,
+          "cross_role_rows": 1018,
+          "components_touching_role": {
+            "calibration": 51,
+            "evaluation": 54,
+            "fit": 145,
+            "monitor": 45
+          },
+          "necessary_three_roles": "True"
+        },
+        "seconds": 6.23399999999674,
+        "cpu_seconds": 6.21875,
+        "complete_for_frozen_definition": true
+      }
+    ]
+  },
+  "output_schema_correction": "Original private necessary_three_roles was NumPy bool serialized as string by shared save(default=str). Public field independently recalculated to native bool; runner cast corrected for future replay, no repeat fragmentation or numerical changes."
+}

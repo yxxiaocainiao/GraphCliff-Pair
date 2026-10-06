@@ -57,7 +57,7 @@ def describe(value,roles):
         top_ten_component_rows=sorted(map(int,counts),reverse=True)[:10],
         cross_role_components=len(crossing),cross_role_rows=sum(int(counts[c]) for c in crossing),
         components_touching_role={r:sum(r in v for v in component_roles.values()) for r in sorted(set(roles))},
-        necessary_three_roles=(len(counts)>=3 and counts.max()<=int(np.ceil(.6*len(value)))))
+        necessary_three_roles=bool(len(counts)>=3 and counts.max()<=int(np.ceil(.6*len(value)))))
 
 
 def self_check(source):
@@ -70,6 +70,7 @@ def self_check(source):
     edges=set(mmp_spanning(variables));full={(i,j) for a,ids in variables.items() for b,js in variables.items() if a!=b for i in ids for j in js}
     assert np.array_equal(labels(5,edges)[:,None]==labels(5,edges),labels(5,full)[:,None]==labels(5,full))
     assert mmp_spanning({'a':[0,1]})==[]
+    assert isinstance(describe(np.arange(3),['a','b','c'])['necessary_three_roles'],bool)
     print('PASS: small-molecule equivalence, default20 cutoff, exact component-preserving compression')
 
 

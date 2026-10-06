@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-06",
+  "source": "CARA only",
+  "code_files": [
+    {
+      "path": "README.md",
+      "commit": "fb672acaecdeb38f05fd712d7362abe0249749c7",
+      "bytes": 11872,
+      "sha256": "99112de546d0ed0401b30caf92cb6d370df976a87263c18b2a169f1708de5842",
+      "url": "https://github.com/tiantz17/CARA/blob/fb672acaecdeb38f05fd712d7362abe0249749c7/README.md"
+    },
+    {
+      "path": "LICENSE",
+      "commit": "fb672acaecdeb38f05fd712d7362abe0249749c7",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "url": "https://github.com/tiantz17/CARA/blob/fb672acaecdeb38f05fd712d7362abe0249749c7/LICENSE"
+    },
+    {
+      "path": "src/datasets/CARADataset.py",
+      "commit": "fb672acaecdeb38f05fd712d7362abe0249749c7",
+      "bytes": 2416,
+      "sha256": "29f1d97ad38046e194a58b9b30d1e771ac83cadd04491ff98b48f79342af60ed",
+      "url": "https://github.com/tiantz17/CARA/blob/fb672acaecdeb38f05fd712d7362abe0249749c7/src/datasets/CARADataset.py"
+    }
+  ],
+  "code_license": "Apache-2.0, LICENSE bytes verified",
+  "data_record": {
+    "url": "https://zenodo.org/api/records/11063965",
+    "sha256": "e03854407dc8fcf304a70c89ba3c7d478d1b455564c296019296ac67b6481718",
+    "doi": "10.5281/zenodo.11063965",
+    "version": "v1, newer version indicated",
+    "license": "cc-by-4.0",
+    "publication_date": "2024-04-25",
+    "files": [
+      {
+        "key": "CARA.zip",
+        "size": 106000271,
+        "checksum": "md5:b6bd8b9ff0ce6752fbc8bf0a45d71b6b"
+      },
+      {
+        "key": "baseline.zip",
+        "size": 59599416,
+        "checksum": "md5:902a91c348a1246a96b3b5bc80fd2063"
+      }
+    ]
+  },
+  "required_loader_fields": [
+    "Task ID",
+    "Target Sequence",
+    "pChEMBL Value"
+  ],
+  "default_LO_split": "NewAssay",
+  "date_field_verified": false,
+  "archive_downloaded": false,
+  "target_and_endpoint_match_verified": false,
+  "execution": "3 small official code files fetched,1 successful Zenodo API request; web API opens failed first, gh/urllib read-only fallback succeeded;0 model runs",
+  "interpretation": "Record deposit date is not experiment/publication date of individual activities. Loader field use is not an exhaustive archive schema audit."
+}
