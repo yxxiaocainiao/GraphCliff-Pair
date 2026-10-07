@@ -44,3 +44,18 @@
 结果提交范围限定本目录README.md、worktree.md、layer_results_20261007.md/.json和tools/report_layer_retry.py。模型/训练源码/原六臂配置/既有测试均未改；不写可靠性目录或计划，不自动合并。提交前逐路径与diff核对，推送本分支并验证远端SHA。
 
 23:54提交前只读复核：可靠性worktree已自行推进到cb41459d6fce7dd211d4c457583da029df72fae4，其docs/milestones.md、docs/research/reliability_publication_plan.md、notes.md、task_plan.md为另一方向未提交改动；本任务未写入、未暂存这些文件，不把对方HEAD推进当隔离失败，不恢复到旧HEAD。
+
+## M48 — 2026-10-08 继续现有预测诊断
+
+用户要求“继续”。默认承接M47的No-Go，继续已有预测的收益/代价分析；已询问是否意指重新讨论扩训，等待澄清。不把简短继续自动解释为撤销停止条件。开始时本worktree干净，HEAD1939dbc；可靠性worktree只读状态检查干净，不写其目录。
+
+1. 核对已有结果与数据来源；只读取本worktree的8组验证预测，不训练、不读官方test。
+2. 复用已有审计，对centered相对full/self/cross按既有Overall/Cliff/Noncliff三组计算逐查询平方误差差、改善比例与残差恒等式；核验按组人数加权恢复Overall。
+3. 保存明确标为事后描述诊断的中文说明和聚合JSON，不发布逐分子记录，不改主候选、门槛或原结果。判断哪些陈述可写、哪些仍缺证据。
+4. 只提交本方向诊断文件和此日志，逐路径核对后推送独立分支，不合并。
+
+expression-skill、planning-with-files、results-analysis/results-report在本地两个skills根目录均未找到；本轮继续使用本文件作持久计划，不因此增加审批步骤。
+
+M48完成：复用审计确认8组和18份源码，保存8份预测hash；18项子集风险恒等式、6项人数加权恢复及另行直接平方误差重算通过，报告6行数值/计数/链接核对通过。centered对self两任务均Cliff改善、Noncliff退化：234加权贡献+0.001167128与−0.013777421，244为+0.025673509与−0.016681573。该共同模式限于self对照，244对full两组均改善，不扩大成普遍机制。
+
+交付layer_tradeoffs_20261008.md/.json与tools/report_layer_tradeoffs.py，加本日志共4文件。事后描述，不作显著性/化学因果声明；新增fit0，官方test0，原No-Go/候选/门槛/配置及结果均不改。用户未进一步澄清时按上述默认路径完成诊断，不自行启动新训练。提交前核对4文件归属，只推送本方向分支，不合并。

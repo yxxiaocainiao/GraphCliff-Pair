@@ -1,0 +1,287 @@
+{
+  "analysis_date": "2026-10-08",
+  "scope": "post-hoc descriptive analysis; not independent confirmation",
+  "candidate": "centered",
+  "source_commit": "151cda243d792b3ca596a8cda0e9dcd6e600ba61",
+  "manifest_sha256": "bd72612bc0f4cd7b012916df3e6a0743a5c9827103f4a65807f8fff7bd5ba1b1",
+  "prediction_sha256": {
+    "CHEMBL234_Ki\\seed42\\full\\validation_predictions.csv": "1136198ad84a780642da2ae156d06a5e8dfe4d99b2039e96315f2697f89cecd9",
+    "CHEMBL234_Ki\\seed42\\self\\validation_predictions.csv": "8c046723ab6c3a01c4b5ad68808b8f04ac9e90607beba99aebe7a976040e5b26",
+    "CHEMBL234_Ki\\seed42\\cross\\validation_predictions.csv": "f960411a5df0b1b2f8299b5b8fbd635a50703f9aa5cc181700f8452d5937eace",
+    "CHEMBL234_Ki\\seed42\\centered\\validation_predictions.csv": "b281ff804ab56e013f03333af707b3e30ad7a725d9baf44c18eb532819bda1ed",
+    "CHEMBL244_Ki\\seed42\\full\\validation_predictions.csv": "6add59f6867785314e83994487df8ec3fbd1376541fdc07bfd3de8f3f54930e3",
+    "CHEMBL244_Ki\\seed42\\self\\validation_predictions.csv": "212ea5119d48aa62a8c1556e44b9103dbb549294622bfb6d8c1335cf14bb4f1c",
+    "CHEMBL244_Ki\\seed42\\cross\\validation_predictions.csv": "bbd179ac6cc193bd9d70564dccc3d59b7387921f97cfbfb7eff063a827a72e72",
+    "CHEMBL244_Ki\\seed42\\centered\\validation_predictions.csv": "d524185aa4b3d8658c1858e060fd588870f4d08fb5ae1b4a970f4dbdbc84fac2"
+  },
+  "comparisons": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "comparator": "full",
+      "groups": {
+        "overall": {
+          "count": 292,
+          "mse_gain": 0.004691857797649831,
+          "twice_error_correction_product": 0.22901701656718534,
+          "correction_energy": 0.22432515876953552,
+          "improved_queries": 146,
+          "worsened_queries": 146,
+          "tied_queries": 0
+        },
+        "cliff": {
+          "count": 128,
+          "mse_gain": 0.06585405850279173,
+          "twice_error_correction_product": 0.26673919433311216,
+          "correction_energy": 0.20088513583032042,
+          "improved_queries": 67,
+          "worsened_queries": 61,
+          "tied_queries": 0
+        },
+        "noncliff": {
+          "count": 164,
+          "mse_gain": -0.04304449397221703,
+          "twice_error_correction_product": 0.1995753168474376,
+          "correction_energy": 0.2426198108196546,
+          "improved_queries": 79,
+          "worsened_queries": 85,
+          "tied_queries": 0
+        }
+      },
+      "weighted_overall_mse_gain": 0.004691857797649823
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "comparator": "self",
+      "groups": {
+        "overall": {
+          "count": 292,
+          "mse_gain": -0.012610293072091844,
+          "twice_error_correction_product": 0.23381961240182597,
+          "correction_energy": 0.24642990547391777,
+          "improved_queries": 135,
+          "worsened_queries": 157,
+          "tied_queries": 0
+        },
+        "cliff": {
+          "count": 128,
+          "mse_gain": 0.0026625113950343587,
+          "twice_error_correction_product": 0.24492460601306787,
+          "correction_energy": 0.2422620946180335,
+          "improved_queries": 58,
+          "worsened_queries": 70,
+          "tied_queries": 0
+        },
+        "noncliff": {
+          "count": 164,
+          "mse_gain": -0.024530530704970816,
+          "twice_error_correction_product": 0.225152300315003,
+          "correction_energy": 0.24968283101997388,
+          "improved_queries": 77,
+          "worsened_queries": 87,
+          "tied_queries": 0
+        }
+      },
+      "weighted_overall_mse_gain": -0.012610293072091834
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "comparator": "cross",
+      "groups": {
+        "overall": {
+          "count": 292,
+          "mse_gain": 0.022446942669225325,
+          "twice_error_correction_product": 0.2249054721702395,
+          "correction_energy": 0.2024585295010142,
+          "improved_queries": 145,
+          "worsened_queries": 147,
+          "tied_queries": 0
+        },
+        "cliff": {
+          "count": 128,
+          "mse_gain": 0.10645872124458394,
+          "twice_error_correction_product": 0.2993928714705366,
+          "correction_energy": 0.19293415022595267,
+          "improved_queries": 65,
+          "worsened_queries": 63,
+          "tied_queries": 0
+        },
+        "noncliff": {
+          "count": 164,
+          "mse_gain": -0.043123225974957005,
+          "twice_error_correction_product": 0.16676896539927596,
+          "correction_energy": 0.20989219137423293,
+          "improved_queries": 80,
+          "worsened_queries": 84,
+          "tied_queries": 0
+        }
+      },
+      "weighted_overall_mse_gain": 0.022446942669225325
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "comparator": "full",
+      "groups": {
+        "overall": {
+          "count": 247,
+          "mse_gain": 0.041501316221468576,
+          "twice_error_correction_product": 0.1756843736322782,
+          "correction_energy": 0.1341830574108096,
+          "improved_queries": 119,
+          "worsened_queries": 128,
+          "tied_queries": 0
+        },
+        "cliff": {
+          "count": 118,
+          "mse_gain": 0.0674761209793635,
+          "twice_error_correction_product": 0.20945531834642386,
+          "correction_energy": 0.14197919736706036,
+          "improved_queries": 62,
+          "worsened_queries": 56,
+          "tied_queries": 0
+        },
+        "noncliff": {
+          "count": 129,
+          "mse_gain": 0.01774141729564223,
+          "twice_error_correction_product": 0.14479312187825347,
+          "correction_energy": 0.12705170458261125,
+          "improved_queries": 57,
+          "worsened_queries": 72,
+          "tied_queries": 0
+        }
+      },
+      "weighted_overall_mse_gain": 0.04150131622146858
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "comparator": "self",
+      "groups": {
+        "overall": {
+          "count": 247,
+          "mse_gain": 0.008991935942071193,
+          "twice_error_correction_product": 0.12941598202897145,
+          "correction_energy": 0.12042404608690024,
+          "improved_queries": 124,
+          "worsened_queries": 123,
+          "tied_queries": 0
+        },
+        "cliff": {
+          "count": 118,
+          "mse_gain": 0.05374031205443417,
+          "twice_error_correction_product": 0.19235822715889747,
+          "correction_energy": 0.1386179151044633,
+          "improved_queries": 62,
+          "worsened_queries": 56,
+          "tied_queries": 0
+        },
+        "noncliff": {
+          "count": 129,
+          "mse_gain": -0.03194068716846237,
+          "twice_error_correction_product": 0.07184090508841895,
+          "correction_energy": 0.1037815922568813,
+          "improved_queries": 62,
+          "worsened_queries": 67,
+          "tied_queries": 0
+        }
+      },
+      "weighted_overall_mse_gain": 0.0089919359420712
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "comparator": "cross",
+      "groups": {
+        "overall": {
+          "count": 247,
+          "mse_gain": 0.004336092242194523,
+          "twice_error_correction_product": 0.12648380220166025,
+          "correction_energy": 0.12214770995946571,
+          "improved_queries": 116,
+          "worsened_queries": 131,
+          "tied_queries": 0
+        },
+        "cliff": {
+          "count": 118,
+          "mse_gain": 0.01083383974659223,
+          "twice_error_correction_product": 0.15823318183024754,
+          "correction_energy": 0.14739934208365535,
+          "improved_queries": 57,
+          "worsened_queries": 61,
+          "tied_queries": 0
+        },
+        "noncliff": {
+          "count": 129,
+          "mse_gain": -0.001607583769580111,
+          "twice_error_correction_product": 0.09744173401427032,
+          "correction_energy": 0.09904931778385041,
+          "improved_queries": 59,
+          "worsened_queries": 70,
+          "tied_queries": 0
+        }
+      },
+      "weighted_overall_mse_gain": 0.00433609224219453
+    }
+  ],
+  "audit": {
+    "output": "D:\\GraphCliff-Pair-FPPool-LongPoly\\artifacts\\mechanism_retry_layer_core_screen_20261007",
+    "runs": 8,
+    "source_hashes_checked": 18,
+    "frozen_tensors_checked": 0,
+    "residual_risk_checks": [],
+    "test_evaluated": false,
+    "performance_claim": false,
+    "records": [
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "full",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "self",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "cross",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "centered",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "full",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "self",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "cross",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "centered",
+        "count": 247
+      }
+    ]
+  },
+  "additional_fits": 0,
+  "test_evaluated": false,
+  "changes_original_gate": false,
+  "statistical_significance_claim": false,
+  "chemical_causality_claim": false
+}
