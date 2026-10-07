@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "date": "2026-10-07",
+  "pre_execution_commit": "74269a07596ee6d64a3da8e8d8fcb99a28ab81f6",
+  "input_hashes": 11,
+  "fingerprint_rows": 2629,
+  "query_rows": 874,
+  "structural_pairs": 87,
+  "queries_with_pairs": 74,
+  "distinct_fit_references": 82,
+  "shared_reference_count": 5,
+  "excluded_identical_fingerprint_pairs": 5,
+  "selfcheck_runs": 1,
+  "real_run_count": 1,
+  "index_audit_count": 1,
+  "fits": 0,
+  "model_loads": 0,
+  "model_predict_calls": 0,
+  "labels_used": false,
+  "new_risk_features": 0,
+  "official_test_rows_read": 0,
+  "wall_seconds": 0.625,
+  "nn_sim_replay_max_abs": 1.1102230246251565e-16,
+  "decision": "Limited local sampling feasibility only; no automatic labels/inference/training; next cheapest action is fixed-pair activity-difference count",
+  "deliverable_sha256": {
+    "docs/research/query_reference_support_20261007/check_support.py": "e7fed5755e787eda6b238801625ff29528ab392ae31d3829becd0bdfb79f20db",
+    "docs/research/query_reference_support_20261007/protocol.json": "87028a415ff43ef5e07244514b082c08c369431953d378ac585d2d7103043760",
+    "docs/research/query_reference_support_20261007/results.json": "476e1de009276b3f516752e7c1c87abd3570290210b0b50d5d5796720a314978",
+    "docs/research/query_reference_support_20261007/report.md": "dd23ab86909c01961aebc93fc41ecc8e0ff9dec428451559f28b30fb36e8710b"
+  }
+}

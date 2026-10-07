@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "roles": {
+    "calibration": {
+      "support": {
+        "query_rows": 426,
+        "pairs": 38,
+        "queries_with_pairs": 29,
+        "query_coverage": 0.06807511737089202,
+        "unique_references": 38,
+        "query_degree_histogram": {
+          "0": 397,
+          "1": 24,
+          "2": 3,
+          "4": 2
+        },
+        "max_reference_degree": 1,
+        "greedy_disjoint_pairs": 29
+      },
+      "excluded_identical_pairs": 2
+    },
+    "evaluation": {
+      "support": {
+        "query_rows": 448,
+        "pairs": 49,
+        "queries_with_pairs": 45,
+        "query_coverage": 0.10044642857142858,
+        "unique_references": 49,
+        "query_degree_histogram": {
+          "0": 403,
+          "1": 41,
+          "2": 4
+        },
+        "max_reference_degree": 1,
+        "greedy_disjoint_pairs": 45
+      },
+      "excluded_identical_pairs": 3
+    }
+  },
+  "task": "CHEMBL234_Ki",
+  "code_commit": "74269a07596ee6d64a3da8e8d8fcb99a28ab81f6",
+  "shared_reference_count": 5,
+  "reference_rows": 1755,
+  "fingerprint_rows": 2629,
+  "nn_sim_replay_max_abs": 1.1102230246251565e-16,
+  "wall_seconds": 0.625,
+  "fits": 0,
+  "model_loads": 0,
+  "model_predict_calls": 0,
+  "labels_used": false,
+  "official_test_rows_read": 0
+}
