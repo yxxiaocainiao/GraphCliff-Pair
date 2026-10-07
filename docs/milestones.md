@@ -1,5 +1,9 @@
 # Milestone log
 
+## M47 — 2026-10-07 配对增量最近方法、资产和五分数冻结
+
+[核查报告](research/paired_increment_review_20261007/report.md)与[未执行协议](research/paired_increment_review_20261007/protocol.json)完成。新发现NeurIPS2016同场景baseline regret与候选关键动机重叠；不认定逐式同算法，但当前不足作为原创新核心，不建议补训。39绑定hash/9角色/12reference作业审计及合成自检各1次成功；3增强权重可追溯，审计范围未识别普通5维权重。53输入hash，五分数与条件预算<=3fit/48predict/16136行已冻结、当前实际0模型/fit/predict/新特征/test。独立分支codex/paired-increment-plan-20261007起点cf4aa83，继承保留M45/M46；只新增审计/方案和日志，不自动更换算法或执行。可信最终核心仍0。
+
 ## M44 — 2026-10-07 独立增量候选与理论自检
 
 按用户建议，定义[配对增量上界](research/paired_increment_candidate_20261007/candidate.md)：s=a_full+max_b(t_b-a_b)，解释和已有误差学习/普通max鲁棒化的运算差别。三条代理性质及真实误差恶化反例；[标准库合成自检](research/paired_increment_candidate_20261007/selfcheck.py)一次通过，三复用源码未改。没有真实样本/模型/训练/推理/参数搜索；待验证候选1，可信最终核心仍0。普通RF权重缺口及潜在三次拟合成本明确，不自动授权。只改本候选文档/合成检查与计划日志，历史报告/模型/六图和原仓库只读；核验后commit/push。

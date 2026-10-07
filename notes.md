@@ -1,5 +1,13 @@
 # Findings and decisions
 
+## M47 — 2026-10-07 配对增量核查与冻结
+
+本聊天ok仅授权最近方法/只读资产/协议冻结。发现当前分支已含M45/M46，读取日志后从cf4aa83另建codex/paired-increment-plan-20261007，不覆盖另一候选和No-Go。NeurIPS2016原始PDF pp1—3/定义2式2已提出同场景候选减baseline并指出分别悲观/乐观端点过度保守；与M44关键动机接近。DEUP/UNIQUE/有限鲁棒选择及2025uncertainty-dependent baseline摘要限定核查，不宣称穷尽新颖性。贡献判断收紧：保留工程反证设计，不建议作为原创新核心补训练，非性能失败。
+
+audit_assets.py只读hash/身份，不load模型；1次合成检查及1主审计成功，39历史绑定SHA、9角色、12reference作业核验通过。当前artifacts26风险序列化路径无可识别普通5维RF；三增强7维权重身份hash匹配，非forward重放。五分数协议53输入hash冻结，后续若另授权最多3g0fit/48风险predict/16136风险行/900秒CPUwall；原g0分数及full特征重放前不进入比较。当前0fit/load/predict/新特征/test/搜索；不把冻结当执行许可。
+
+新增review目录report/protocol/audit_assets/asset_audit，更新四计划日志；原代码/配置/历史报告/图/权重/数据与原项目不改。expression技能仍缺失，限定检索初始噪声后直读原始PDF，主审计无失败或中断。核文档链接/公式预算/53输入hash/git边界后commit push独立分支，原M44文档保留历史原样。
+
 ## M44 — 2026-10-07 用户要求独立方法改进
 
 用户强调复用实现不能代替自己的算法思考与理论。提出一个待验证小改进：s=a_full+max_b(t_b-a_b)，固定普通风险为锚点，对同reference下增强减普通的配对增量取上界。推导三条代理性质，给出接受实际误差反而变差的合成反例；不把基础鲁棒优化数学称新定理，也不承诺RMSE/覆盖保证。DEUP/UNIQUE及粗糙度是已有基础；有限鲁棒选择为已知思想，新颖性尚未确认。

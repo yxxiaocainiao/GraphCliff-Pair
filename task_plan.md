@@ -469,3 +469,15 @@ M45实现与冒烟完成：独立分支codex/residual-fp-centered-cross-20261007
 停止规则：FP输出冻结候选须在两个任务同时降低相对base的Overall/Cliff误差；同时检查是否胜过feature_frozen与membership null。未满足不扩种子/任务，不启动layer组合来补救。单seed不声明普遍有效或无效。输出artifacts/mechanism_retry_fp_screen_20261007；遇失败保留现场，不覆盖重跑。
 
 M46完成：287/2047×六臂×seed42共12/12正式训练、12个GPU最佳checkpoint独立重放全部通过；402冻结state tensor逐位一致，18项分组风险恒等式/12组保存预测指标及输入/源码/继承依赖核验通过。主候选output_frozen在287 Overall/Cliff改善1.32%/1.93%，但均不及feature_frozen及null；2047恶化1.73%/3.87%，未通过已固定继续条件，No-Go，不扩seed/任务。feature_joint在2047改善5.00%/4.18%，但287 Cliff恶化6.93%，不能概括所有FP无效。12次fit累计43.68分钟，全部早停；0官方test。正式结果experiments/mechanism_retry/fp_results_20261007.md及JSON；原始目录artifacts/mechanism_retry_fp_screen_20261007保留；逐层替换和组合未启动。研究/发刊目标未完成，本次FP先导执行及报告完成。
+
+## M47：配对增量候选最小对照冻结（执行前，2026-10-07）
+
+本聊天用户ok仅授权上轮第1/2步：有限最近方法核查、只读权重/身份审计、冻结五分数对照；不授权真实特征重算、模型加载/推理或fit。当前已包含其他工作M45/M46，原样保留，另建codex/paired-increment-plan-20261007分支，起点cf4aa83。
+1. 核对最接近的误差学习、相对/最坏情形方法，区分运算差异与未确认新颖性。
+2. 在当前项目artifacts内核权重文件/来源hash及角色缓存身份，仅读取元数据与字节，不反序列化模型；明确缺失普通RF的最低重建成本。
+3. 冻结五分数、三个任务、场景、主指标、必要对照、预算/反证和解释合同，保存未执行协议。
+4. 复核来源/数值/逻辑/未知、链接和git边界，更新日志，commit/push并核对分支远端。原项目、M45/M46实现及结果不改。
+
+expression-skill指定文件仍不存在，沿用task_plan/notes持久记录；不安装技能。旧候选暂停不变；本轮不训练。
+
+M47完成：有限方法核查发现NeurIPS2016 Robust Baseline Regret已提出同不确定场景相减及反对分别取不利端点的动机；M44具体分子分数非逐式同一算法，但投稿级差异仍不足，不建议以它作新核心启动训练。只读资产审计1次＋合成自检1次成功，39绑定SHA/9角色/12作业通过，当前26风险序列化路径未识别普通5维RF，3增强7维权重hash匹配历史。冻结五分数protocol.json，53输入hash；若未来另授权工程反证，最多3普通RF fit、48风险predict/16136输出、900秒CPU wall，当前实际全0。交付docs/research/paired_increment_review_20261007；M45/M46及历史结论保持，不临时更换机制救新颖性，可信核心仍0。
