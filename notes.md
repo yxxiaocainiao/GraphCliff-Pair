@@ -342,3 +342,10 @@ M42补记：暂存检查发现Matplotlib SVG行末空格，清理6份SVG并在�
 结果：output_frozen在287双指标较base改善1.32%/1.93%，但不及feature_frozen和null；2047较base恶化1.73%/3.87%，虽胜null也未胜底座。按执行前规则No-Go，不扩seed/任务/组合。feature_joint在2047改善5.00%/4.18%，但287 Cliff恶化6.93%；保留条件性收益，不能宣称FP普遍无效。风险分解在2047 Cliff的2*mean(e*c)为负，支持描述统计层面的纠错不适配，不能据此断言优化/标签噪声/化学机制原因。
 
 新增正式结果MD/JSON及薄报告/重放工具，更新两个README、task_plan、notes、milestones。模型/Loss/训练器/配置/vendor/原项目/历史结果不改；聚合报告公开，数据/checkpoint/逐分子预测/进程日志忽略。单seed、重复开发任务、同validation二阶段选模、小Cliff样本及弱null限制明确。0官方test，逐层替换独立候选未运行，研究与发表目标仍未完成。最终diff/链接/报告表核对后提交推送当前独立分支并核对SHA。
+
+
+## M48完成 — 2026-10-07：残差粗糙度候选推导与停止
+
+用户授权设定有停止条件目标继续，仅方法研究。独立提出真实差值扣除预测差值的完整邻居对能量R；严格推得R=2倍局部带符号残差样本方差，补均值平方即恢复普通局部残差MSE，故不作原创核心推进。常数偏置反例R=0而MSE=25；原三折reference邻居的OOF模型训练集包含当前训练查询，直接拼接会有查询标签间接依赖，未运行模型测影响，不能追认旧无此输入的特征泄漏。独立AI反方核数学/依赖路径，不称外部专家评审。Springer出版全文Local error/Error model和UNIQUE官方表核验；PMC验证码及EuropePMC/Wiley失败留日志，非全文的PRESS条目不用于论证。
+
+新增docs/research/residual_roughness_review_20261007/report.md、selfcheck.py、verification.json，同步四份计划日志。1次纯合成自检通过：4组代数/平移、3无效输入、4邻居训练集合依赖；0真实fit/load/predict/特征/test/调参，训练代码、模型、配置、六图、历史报告及原项目不改。可信核心仍0，可靠性主线保留；不加权/门控换名救该候选，不扩训，不自动替换另一候选。来源/逻辑/未知及公开边界核验后提交推送当前codex/paired-increment-plan-20261007，远端另核SHA。

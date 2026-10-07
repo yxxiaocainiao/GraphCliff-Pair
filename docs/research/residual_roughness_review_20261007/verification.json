@@ -1,0 +1,91 @@
+{
+  "milestone": "M48",
+  "date": "2026-10-07",
+  "baseline_commit": "8f04e225ab20a4918becd7815efbdccf4d0fbaf6",
+  "decision": "No-Go for this candidate as algorithm core; reliability research retained; credible core count remains zero",
+  "inputs_sha256": {
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "docs/research/paired_increment_review_20261007/report.md": "e69a0ffadd9e2f56861917e526c22e8396fe79aeacc53792d52a0e6ffeeefb33",
+    "docs/research/paired_increment_review_20261007/protocol.json": "f830583ddbc53987fd59f95007ae33d0461b08963cfd0f849ebdc88107fd68bc",
+    "docs/research/reliability_core_review_20261006/report.md": "e9e75655ebfcf1d202415fd4cf7ddd11bf5cb1fd9a4763229ea42aba0c0ea6fd",
+    "docs/research/roughness_method_review_20261005/report.md": "59681f46f84f9cf4dab74b3253756a8f61410b8c0cd572eb01f97ffd506f52a5"
+  },
+  "skill": {
+    "path": "C:\\Users\\yangxu\\.agents\\skills\\scientific-brainstorming\\SKILL.md",
+    "sha256": "db8e7782fab72979a92b4f00ac13f208bff89f5b3705f92fb441b65efd95a080",
+    "review": "Separate AI adversarial review; not external expert or peer review"
+  },
+  "sources": [
+    {
+      "url": "https://link.springer.com/article/10.1007/s10822-013-9639-5",
+      "scope": "Primary publisher full text: Local error and Error model sections",
+      "finding": "Neighborhood cross-validated RMSE and auxiliary error models precede candidate; not exact R formula"
+    },
+    {
+      "url": "https://opensource.nibr.com/UNIQUE/indepth/available_inputs_uq_methods.html",
+      "scope": "Official table, updated 2026-09-11",
+      "finding": "DiffkNN and RF/LASSO error models; not proof of exact formula identity"
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.00065",
+      "scope": "Primary metadata, current v2 revised 2026-09-02",
+      "finding": "Skill citation authors/year verified; no algorithm evidence"
+    }
+  ],
+  "search_queries": [
+    "QSAR reliability residual local variance prediction error neighboring molecules uncertainty",
+    "molecular uncertainty estimation residual roughness predicted activity cliffs local residuals",
+    "residual Dirichlet uncertainty graph prediction molecular",
+    "residual variance QSAR uncertainty local"
+  ],
+  "access_exceptions": [
+    "PMC3639359/PMC3225832 open returned browser CAPTCHA; search text not treated as full-text verification",
+    "EuropePMC3639359 and Wiley minf.201200131 open failed; PRESS formula not used",
+    "PowerShell output on an earlier combined read truncated; targeted source reads used subsequently"
+  ],
+  "synthetic_check": {
+    "command": "python docs/research/residual_roughness_review_20261007/selfcheck.py",
+    "runs": 1,
+    "passed": true,
+    "algebra_cases": 4,
+    "invalid_cases": 3,
+    "lineage_neighbors": 4,
+    "constant_bias_mse": 25,
+    "constant_bias_energy": 0
+  },
+  "actual": {
+    "real_fits": 0,
+    "model_deserializations": 0,
+    "model_predict_calls": 0,
+    "real_feature_recomputations": 0,
+    "real_label_or_prediction_values_analyzed": 0,
+    "official_test_evaluations": 0,
+    "parameter_searches": 0
+  },
+  "local_links": [
+    "selfcheck.py",
+    "../../../experiments/reliability_base/run_phase_a.py",
+    "verification.json"
+  ],
+  "source_runner_matches_M47_pin": true,
+  "changed_files": [
+    "docs/research/residual_roughness_review_20261007/report.md",
+    "docs/research/residual_roughness_review_20261007/selfcheck.py",
+    "docs/research/residual_roughness_review_20261007/verification.json",
+    "task_plan.md",
+    "notes.md",
+    "docs/milestones.md",
+    "docs/research/reliability_publication_plan.md"
+  ],
+  "untouched": "Training/model/config files, private assets, historical reports, six figures, original GraphCliff-main and my_work",
+  "limitations": [
+    "Bounded search does not certify novelty or universal ineffectiveness",
+    "Model training-set lineage shows a possible dependence path, not its measured size",
+    "No new empirical performance or chemical explanation"
+  ],
+  "deliverable_sha256": {
+    "report.md": "5f4939abcfacac869214a657a850e543cdedbf19b9a6e066209112f1be9b796f",
+    "selfcheck.py": "6c330b76e94c2a1560bfe84cc105fbae7ac110182020128cabe56fc9db62707c"
+  }
+}
