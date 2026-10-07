@@ -6,6 +6,8 @@
 
 M47更新：在专用worktree按[分阶段执行前方案](layer_execution_20261007.md)及[预检](layer_preflight_20261007.json)完成full/self/cross/centered共8次正式fit。centered在234/244均优于full的双指标，但234 Overall未胜self；因此不扩训，另4次FP组合消融未执行。没有恢复旧队列、调参补救或改选主候选；[完整结果和零点导数理论补充](layer_results_20261007.md)保留局部阳性及限制。
 
+M50更新：老师反馈后提出[共同self尺度的小改动](self_context_scale_proposal_20261008.md)，真实隐藏状态诊断支持检查其幅度动机；按新[执行前方案](self_context_scale_execution_20261008.md)完成6/6三臂训练与独立重放。[结果](context_scale_results_20261008.md)8项比较仅通过2项，候选不扩训。同期旧臂出现同seed训练分歧，原因未定位，原centered相对self的Cliff优势未保持；此前误差权衡仅限原单次运行描述。当前没有可宣称已验证的最终方法，旧No-Go不改，8次seed扩训与FP组合未启动。
+
 ## 1. 历史证据决定这次只改哪里
 
 依据[暂停复核](../../docs/research/module_pause_review_20261006/report.md)：残差FP在287的三seed Cliff均值改善2.24%，2047则恶化2.99%；真实membership相对扰动在两任务方向相反。逐层替换只做了两个任务各一个seed，同时增加约79万参数，并改变规范化/dropout。因此不能说它们普遍无效，也不能凭部分阳性支持原样重跑。

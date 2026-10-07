@@ -82,3 +82,15 @@ tools/check_self_context_scale.py构造检查通过：旧初始零点导数1448.
 诊断完成：2个checkpoint全部539条预测重放通过，12组103785次节点出现覆盖完整；eps占self分母最大约1.53e-6，无>=1%的节点。旧后两层10倍差分的幅度响应中位数仅1.14–2.09倍，候选约9.93–9.98倍；第一层旧响应更接近线性。支持继续测试设计动机，不证明泛化或原差距因果。
 
 在用户“ok继续”的授权下，固定新的6fit先导：234/244×self/旧centered/context×seed42；相对两对照的两任务双指标共8项必须全部严格改善才建议后续补证，不自动扩展。方案self_context_scale_execution_20261008.md、配置context_scale_screen.json；H32全模型契约及H256真实大图batch32梯度预检通过，三臂6810654参数与完整初始化hash一致。函数从prototype移到实际候选模块，旧模型/训练器/配置不改。执行前先提交上述9个本方向文件，再训练；运行中冻结源码，结果另提交。
+
+执行前提交aa1381fb7f3a2da6ab8cd4de4f56706f97adbb9c已推送。00:43:51在本worktree启动6fit顺序训练，PID50252，输出artifacts/mechanism_retry_context_scale_screen_20261008，同名前缀日志/process.json保存启动信息。只新增tools/report_context_scale.py准备结果审计，不修改训练捕获的源码/配置；候选结果尚未完成。
+
+00:55核心3/6完成：234 self Overall/Cliff为0.724281067/0.753278543，旧centered为0.739218832/0.810960484，context为0.731176223/0.830053490。候选仅改善旧centered Overall，Cliff退化且双指标未胜self，已不满足新门槛；继续完成244预定对照，不追加其他变体。以上暂为训练器保存值，等待完整独立重放。
+
+同期旧臂出现重跑差异。两轮历史源码hash、优化参数、torch/PyG/RDKit与完整初始化一致；234 self验证轨迹前16epoch完全一致，第17起分歧，旧centered第1epoch起有差异。当前未定位原因，不把它直接归因GPU；协议本来只承诺best-effort deterministic。结果工具将保存历史预测SHA、重跑偏差与双指标，评价只用本轮同期对照，限制小幅收益解释。
+
+M50完成：6/6训练ALL_DONE，进程退出、stderr空；6个checkpoint独立重放1617条预测最大差8.89e-16，首batch交换/同输入契约各192对误差0，当前19份来源及历史8组18份来源、身份/覆盖/初始化/预算/指标/选权重均核验通过。共1109.97秒即18.50分钟fit计时，官方test0。
+
+context在234为Overall0.731176223/Cliff0.830053490，在244为0.916479053/1.097131332；相对self双指标均退化，仅改善旧centered的Overall，两任务共8项仅2项通过，按预定规则No-Go，不扩训/不调eps/不组合FP。旧centered相对self的Cliff优势也未在同期重跑保持，M48模式只能作为原单次运行描述，不能当稳定机制。重跑来源与记录环境字段一致但原因仍未定位，后续机制收益评价需先处理复现范围，不把它作为泛化保证或直接归因GPU。
+
+中文报告/机器核验为context_scale_results_20261008.md/.json，tools/report_context_scale.py复用原审计并核对历史对照。16行报告表格/8判断/链接/参数与JSON核对通过。结果只提交上述三文件、本目录README.md及本日志，共5文件；运行期间模型/训练源码与配置未改。可靠性目录仅只读核对，本任务未写入其计划；推送本分支，不合并。

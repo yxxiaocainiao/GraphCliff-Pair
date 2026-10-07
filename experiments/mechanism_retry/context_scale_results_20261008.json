@@ -1,0 +1,329 @@
+{
+  "status": "No-Go for expansion",
+  "primary_candidate": "context",
+  "decisions": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "comparisons": {
+        "self": {
+          "overall_rmse": false,
+          "cliff_rmse": false
+        },
+        "centered": {
+          "overall_rmse": true,
+          "cliff_rmse": false
+        }
+      },
+      "pass_all": false
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "comparisons": {
+        "self": {
+          "overall_rmse": false,
+          "cliff_rmse": false
+        },
+        "centered": {
+          "overall_rmse": true,
+          "cliff_rmse": false
+        }
+      },
+      "pass_all": false
+    }
+  ],
+  "rows": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "self",
+      "overall_rmse": 0.7242810671248188,
+      "cliff_rmse": 0.7532785430623263,
+      "noncliff_rmse": 0.7008157208158774,
+      "best_epoch": 18,
+      "epochs_run": 33,
+      "parameters": 6810654,
+      "fit_seconds": 205.39174620000085,
+      "peak_cuda_mib": 537.23779296875
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "centered",
+      "overall_rmse": 0.7392188315572659,
+      "cliff_rmse": 0.8109604840644746,
+      "noncliff_rmse": 0.6779708982343104,
+      "best_epoch": 7,
+      "epochs_run": 22,
+      "parameters": 6810654,
+      "fit_seconds": 158.11541109999962,
+      "peak_cuda_mib": 657.04052734375
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "context",
+      "overall_rmse": 0.7311762228530979,
+      "cliff_rmse": 0.8300534901048601,
+      "noncliff_rmse": 0.6435329570894032,
+      "best_epoch": 14,
+      "epochs_run": 29,
+      "parameters": 6810654,
+      "fit_seconds": 227.83048899999994,
+      "peak_cuda_mib": 656.56201171875
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "self",
+      "overall_rmse": 0.8977446986582482,
+      "cliff_rmse": 1.0744041217849438,
+      "noncliff_rmse": 0.6980367361400727,
+      "best_epoch": 21,
+      "epochs_run": 36,
+      "parameters": 6810654,
+      "fit_seconds": 207.2664952999985,
+      "peak_cuda_mib": 930.189453125
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "centered",
+      "overall_rmse": 0.9267602273339366,
+      "cliff_rmse": 1.096952292968225,
+      "noncliff_rmse": 0.7374509043462137,
+      "best_epoch": 6,
+      "epochs_run": 21,
+      "parameters": 6810654,
+      "fit_seconds": 138.0351888999994,
+      "peak_cuda_mib": 1460.2001953125
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "context",
+      "overall_rmse": 0.9164790530843346,
+      "cliff_rmse": 1.0971313320316531,
+      "noncliff_rmse": 0.7121721183485651,
+      "best_epoch": 9,
+      "epochs_run": 24,
+      "parameters": 6810654,
+      "fit_seconds": 173.32582360000015,
+      "peak_cuda_mib": 1484.35546875
+    }
+  ],
+  "checkpoint_replays": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "self",
+      "count": 292,
+      "checkpoint_sha256": "de5b3f2cf0855e7d0f1811a52b5043a4f9765171b135116dd98fc9da0a995659",
+      "max_abs_difference": 4.440892098500626e-16,
+      "exchange_max_abs_sum": 0.0,
+      "identical_max_abs_delta": 0.0,
+      "contract_pairs_checked": 32
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "centered",
+      "count": 292,
+      "checkpoint_sha256": "7641b5657c160981250bce4375152646b1c105a76bf2011d6e38b8ed702982a4",
+      "max_abs_difference": 8.881784197001252e-16,
+      "exchange_max_abs_sum": 0.0,
+      "identical_max_abs_delta": 0.0,
+      "contract_pairs_checked": 32
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "context",
+      "count": 292,
+      "checkpoint_sha256": "0a2b6266bacc1f33658a2668960dac7710301ef44bb52a33441295d774cef55e",
+      "max_abs_difference": 8.881784197001252e-16,
+      "exchange_max_abs_sum": 0.0,
+      "identical_max_abs_delta": 0.0,
+      "contract_pairs_checked": 32
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "self",
+      "count": 247,
+      "checkpoint_sha256": "aeaae5bae8f17b873b7d2c824f3c483640f7aa45609e9bf550a621f86cab6325",
+      "max_abs_difference": 4.440892098500626e-16,
+      "exchange_max_abs_sum": 0.0,
+      "identical_max_abs_delta": 0.0,
+      "contract_pairs_checked": 32
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "centered",
+      "count": 247,
+      "checkpoint_sha256": "1fd39cf73faf63b65f9ab7bf81c60ea27154c1f2bdbb8e8a16ea171ade10912e",
+      "max_abs_difference": 8.881784197001252e-16,
+      "exchange_max_abs_sum": 0.0,
+      "identical_max_abs_delta": 0.0,
+      "contract_pairs_checked": 32
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "context",
+      "count": 247,
+      "checkpoint_sha256": "5e18d0f7c23d5edd64abd44ce4e8ca6e156769c406883b2997067485b1844c2c",
+      "max_abs_difference": 8.881784197001252e-16,
+      "exchange_max_abs_sum": 0.0,
+      "identical_max_abs_delta": 0.0,
+      "contract_pairs_checked": 32
+    }
+  ],
+  "audit": {
+    "output": "D:\\GraphCliff-Pair-FPPool-LongPoly\\artifacts\\mechanism_retry_context_scale_screen_20261008",
+    "runs": 6,
+    "source_hashes_checked": 19,
+    "frozen_tensors_checked": 0,
+    "residual_risk_checks": [],
+    "test_evaluated": false,
+    "performance_claim": false,
+    "records": [
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "self",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "centered",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "context",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "self",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "centered",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "context",
+        "count": 247
+      }
+    ]
+  },
+  "control_repeats": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "self",
+      "historical_prediction_sha256": "8c046723ab6c3a01c4b5ad68808b8f04ac9e90607beba99aebe7a976040e5b26",
+      "max_abs_difference": 1.127961993217468,
+      "mean_abs_prediction_difference": 0.2741685651166186,
+      "old_overall_rmse": 0.7334418791808262,
+      "new_overall_rmse": 0.7242810671248188,
+      "old_cliff_rmse": 0.7832165063348375,
+      "new_cliff_rmse": 0.7532785430623263
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "centered",
+      "historical_prediction_sha256": "b281ff804ab56e013f03333af707b3e30ad7a725d9baf44c18eb532819bda1ed",
+      "max_abs_difference": 1.0900194644927979,
+      "mean_abs_prediction_difference": 0.31709679846383937,
+      "old_overall_rmse": 0.7419887352301202,
+      "new_overall_rmse": 0.7392188315572659,
+      "old_cliff_rmse": 0.7815149290962485,
+      "new_cliff_rmse": 0.8109604840644746
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "self",
+      "historical_prediction_sha256": "212ea5119d48aa62a8c1556e44b9103dbb549294622bfb6d8c1335cf14bb4f1c",
+      "max_abs_difference": 1.6475701332092287,
+      "mean_abs_prediction_difference": 0.3746620881623826,
+      "old_overall_rmse": 0.9318545299526908,
+      "new_overall_rmse": 0.8977446986582482,
+      "old_cliff_rmse": 1.1419512700467631,
+      "new_cliff_rmse": 1.0744041217849438
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "centered",
+      "historical_prediction_sha256": "d524185aa4b3d8658c1858e060fd588870f4d08fb5ae1b4a970f4dbdbc84fac2",
+      "max_abs_difference": 0.7584438323974609,
+      "mean_abs_prediction_difference": 0.1088865603723748,
+      "old_overall_rmse": 0.9270172215505379,
+      "new_overall_rmse": 0.9267602273339366,
+      "old_cliff_rmse": 1.1181736855725863,
+      "new_cliff_rmse": 1.096952292968225
+    }
+  ],
+  "actual_fit_seconds": 1109.9651540999985,
+  "source_commit": "aa1381fb7f3a2da6ab8cd4de4f56706f97adbb9c",
+  "config_sha256": "549578417396838fbd8dd1ec3cd43f17c4180638c7ae6cd2781fad560afd4fa9",
+  "test_evaluated": false,
+  "independent_confirmation": false,
+  "old_pilot_decision_changed": false,
+  "historical_control_audit": {
+    "output": "D:\\GraphCliff-Pair-FPPool-LongPoly\\artifacts\\mechanism_retry_layer_core_screen_20261007",
+    "runs": 8,
+    "source_hashes_checked": 18,
+    "frozen_tensors_checked": 0,
+    "residual_risk_checks": [],
+    "test_evaluated": false,
+    "performance_claim": false,
+    "records": [
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "full",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "self",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "cross",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "centered",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "full",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "self",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "cross",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "centered",
+        "count": 247
+      }
+    ]
+  },
+  "repeated_control_sources_hyperparameters_and_environment_equal": true
+}
