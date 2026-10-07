@@ -2,7 +2,7 @@
 
 日期：2026-10-07。用户确认两个候选分别重试，组合仅作消融。
 
-本分支交付可运行候选、与代码一致的推导及冒烟验证。正式效果筛查尚未运行；旧队列没有恢复。**可证明的代数性质不等于泛化保证，也不等于原创性确认。**
+本分支交付可运行候选、与代码一致的推导及冒烟验证。2026-10-07用户“试试”授权后，[FPPool正式先导](fp_results_20261007.md)12/12完成并独立核验，主候选不扩训；逐层替换未启动，旧队列没有恢复。**可证明的代数性质不等于泛化保证，也不等于原创性确认。**
 
 ## 1. 历史证据决定这次只改哪里
 
@@ -143,7 +143,7 @@ $I<0$只是当前数据上的额外误差降低，不等于统计显著协同。
 
 ## 5. 正式筛查怎样决定是否继续
 
-screen配置沿用原100epoch上限、patience15、lr1e-4、AdamW、batch32、H256、3层、split_seed42和seed42，不称文献最优参数。本分支仅运行H32/1层/2epoch/8训练查询/4验证查询的smoke。正式配置未执行，不能拿它当已注册过的历史方案。
+screen配置沿用原100epoch上限、patience15、lr1e-4、AdamW、batch32、H256、3层、split_seed42和seed42，不称文献最优参数。M45只运行H32/1层/2epoch/8训练查询/4验证查询的smoke；M46按独立执行前方案启动FP正式先导，不能拿M46方案当旧实验的预注册。
 
 优先单独FP，再单独layer；组合只用于归因。先导两任务×六臂各12次，共24次完整训练上限。冻结臂还需计入同轮底座训练成本；不引用旧checkpoint冒充同轮对照。
 
@@ -163,4 +163,4 @@ screen配置沿用原100epoch上限、patience15、lr1e-4、AdamW、batch32、H2
 
 输入：`D:/GraphCliff-main/benchmark_data`（只读）、现有vendor/FPPool适配及历史复核报告。输出：本目录实现/配置/推导、`tests/test_mechanism_retry.py`、被忽略的`artifacts/mechanism_retry_*`运行产物。训练器、原模型、Loss、原项目和旧结果均未修改。新的SingleBaseline只在新进程内适配空边图，避免上游LongPoly空边特殊分支随混合batch改变；因此不把这次baseline结果当成旧实现的逐位复现。
 
-runner复用既有训练器和其最佳权重重载检查，适配器仅顺序运行，进程内临时路由在finally恢复，不支持同进程并发启动。新输出目录存在则拒绝覆盖。数据、权重和逐分子预测仍由.gitignore排除。最终验证与运行身份见[verification.json](verification.json)。
+runner复用既有训练器和其最佳权重重载检查，适配器仅顺序运行，进程内临时路由在finally恢复，不支持同进程并发启动。新输出目录存在则拒绝覆盖。数据、权重和逐分子预测仍由.gitignore排除。M45冒烟验证见[verification.json](verification.json)；M46正式运行与独立核验见[fp_results_20261007.json](fp_results_20261007.json)，两者不能混算成正式效果矩阵。

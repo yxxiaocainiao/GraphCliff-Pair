@@ -1,5 +1,7 @@
 # GraphCliff-Pair
 
+当前独立分支 M46（2026-10-07）：[FPPool正式先导12/12完成](experiments/mechanism_retry/fp_results_20261007.md)，最佳checkpoint独立重放通过；预测空间冻结残差主候选未获跨任务/机制对照优势，不扩训。保留条件性正向结果，不称FPPool普遍无效。逐层替换及组合未启动，以下早期阶段记录保留为历史。
+
 供老师汇报：[研究历程、模块来源、指标与当前进度（2026-10-06）](docs/reports/teacher_brief_20261006/report.md)。本汇报保留阴性与未完成项，不改变M40当前选题状态。
 
 ## 2026-10-06 M40：唯一当前状态
@@ -190,4 +192,4 @@ seed43在14/18组完成后发生CUDA非法指令，随后在新目录复用14完
 老师汇报图：[GraphCliff六张改动位置图与PDF](docs/figures/graphcliff_changes_20261006/README.md)。区分暂停实验与Chemprop可靠性方向，未定核心不画成已完成模型。
 # 2026-10-07 独立机制重试分支
 
-`codex/residual-fp-centered-cross-20261007` 分别实现预测空间残差FPPool及相对自身注意力中心化的逐层LongPoly替换，组合仅作消融。见[候选公式、反例、对照与入口](experiments/mechanism_retry/README.md)。46项测试及最终24组小样本冒烟通过；完整效果筛查未运行，不能称有效最终模型；旧实验停止状态不改。
+`codex/residual-fp-centered-cross-20261007` 分别实现预测空间残差FPPool及相对自身注意力中心化的逐层LongPoly替换，组合仅作消融。见[候选公式、反例、对照与入口](experiments/mechanism_retry/README.md)。46项测试及最终24组小样本冒烟通过；[FPPool正式先导](experiments/mechanism_retry/fp_results_20261007.md)12/12完成并独立重放核验，主候选不扩训；逐层替换未启动，不能称有效最终模型；旧实验停止状态不改。

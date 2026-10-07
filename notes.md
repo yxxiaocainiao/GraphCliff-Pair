@@ -324,3 +324,13 @@ M42补记：暂存检查发现Matplotlib SVG行末空格，清理6份SVG并在�
 
 ## M46执行前记录 — 2026-10-07
 用户“试试”授权上一轮建议的FP正式先导；已核对独立分支及GPU，无其他训练Python进程。固定主候选output_frozen，287/2047×六臂×seed42共12次，配置不改。执行前方案fp_execution_20261007.md、输入/拆分/null覆盖fp_preflight_20261007.json已保存；源模型/旧结果不改，先提交后训练。expression-skill仍缺失，使用已有计划日志跟踪。
+
+## M46完成 — 2026-10-07
+
+执行前e24190b2e7d4f62c0b1b06fd6b3dab95864c3331已推送，固定主候选/两任务/六臂/seed42/普通MSE/原配置运行12次正式fit；中途无训练失败、参数修改、任务替换或旧队列恢复。隐藏Start-Process PID135140日志和完成状态保留在忽略目录；进程已退出，12/12 completed.json存在。所有fit早停，总拟合2620.53秒；预检/准备/后续重放不计入fit耗时。
+
+独立新工具tools/report_fp_retry.py复用audit，核对固定配置、官方train/validation完整覆盖、CSV与源码/来源hash，补查继承的long_branch_swap两文件同训练提交内容（LF规范比较，实际bytes另记hash）。12组Overall/Cliff指标重算、402冻结tensor逐位一致、18项分组风险分解；12checkpoint CUDA独立重放预测与保存值一致，最大差8.88e-16，属于CSV回读精度，不作跨机器确定性保证。工具实际全矩阵运行通过，非模拟报告。未改变训练代码，未重复训练。
+
+结果：output_frozen在287双指标较base改善1.32%/1.93%，但不及feature_frozen和null；2047较base恶化1.73%/3.87%，虽胜null也未胜底座。按执行前规则No-Go，不扩seed/任务/组合。feature_joint在2047改善5.00%/4.18%，但287 Cliff恶化6.93%；保留条件性收益，不能宣称FP普遍无效。风险分解在2047 Cliff的2*mean(e*c)为负，支持描述统计层面的纠错不适配，不能据此断言优化/标签噪声/化学机制原因。
+
+新增正式结果MD/JSON及薄报告/重放工具，更新两个README、task_plan、notes、milestones。模型/Loss/训练器/配置/vendor/原项目/历史结果不改；聚合报告公开，数据/checkpoint/逐分子预测/进程日志忽略。单seed、重复开发任务、同validation二阶段选模、小Cliff样本及弱null限制明确。0官方test，逐层替换独立候选未运行，研究与发表目标仍未完成。最终diff/链接/报告表核对后提交推送当前独立分支并核对SHA。

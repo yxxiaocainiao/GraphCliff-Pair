@@ -467,3 +467,5 @@ M45实现与冒烟完成：独立分支codex/residual-fp-centered-cross-20261007
 4. P1 根据已写规则判断继续/停止；保存中文报告、原始目录与输入hash，提交推送当前独立分支并核对SHA。
 
 停止规则：FP输出冻结候选须在两个任务同时降低相对base的Overall/Cliff误差；同时检查是否胜过feature_frozen与membership null。未满足不扩种子/任务，不启动layer组合来补救。单seed不声明普遍有效或无效。输出artifacts/mechanism_retry_fp_screen_20261007；遇失败保留现场，不覆盖重跑。
+
+M46完成：287/2047×六臂×seed42共12/12正式训练、12个GPU最佳checkpoint独立重放全部通过；402冻结state tensor逐位一致，18项分组风险恒等式/12组保存预测指标及输入/源码/继承依赖核验通过。主候选output_frozen在287 Overall/Cliff改善1.32%/1.93%，但均不及feature_frozen及null；2047恶化1.73%/3.87%，未通过已固定继续条件，No-Go，不扩seed/任务。feature_joint在2047改善5.00%/4.18%，但287 Cliff恶化6.93%，不能概括所有FP无效。12次fit累计43.68分钟，全部早停；0官方test。正式结果experiments/mechanism_retry/fp_results_20261007.md及JSON；原始目录artifacts/mechanism_retry_fp_screen_20261007保留；逐层替换和组合未启动。研究/发刊目标未完成，本次FP先导执行及报告完成。

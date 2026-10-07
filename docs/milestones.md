@@ -368,3 +368,7 @@ M42补记：暂存检查发现Matplotlib SVG行末空格，清理6份SVG并在�
 ## M45 — 2026-10-07 独立机制重试（实现完成，效果未知）
 
 分支codex/residual-fp-centered-cross-20261007；交付experiments/mechanism_retry（候选/复用训练入口/审计/四配置/公式反例/验证）和新契约测试，更新项目日志。46项测试、最终24组小样本GPU冒烟、186冻结tensor和6风险恒等式核对通过。FP与Layer分别测试、组合仅消融；正式效果筛查0次，官方test0次，旧队列不恢复。原项目/模型/Loss/历史实验未改，FP官方源码不随分支发布；新颖性与有效性仍未证实。
+
+## M46 — 2026-10-07 FP正式先导完成，No-Go for expansion
+
+用户“试试”授权后先推送执行前方案e24190b，再完成287/2047×六臂×seed42共12正式fit。12最佳checkpoint独立GPU重放、402冻结tensor、18分组风险恒等式、输入/配置/来源及完整预测指标核验通过，累计fit43.68分钟，0官方test。主候选287有小收益但不胜机制对照，2047两指标退化，按固定门槛不扩训；保留feature_joint/feature_frozen的条件性正向记录，不宣称所有FP无效。新增experiments/mechanism_retry/fp_results_20261007.md/JSON及tools/report_fp_retry.py，更新状态日志；原模型/训练器/Loss/配置/历史结果不改，逐层替换及组合未启动。
