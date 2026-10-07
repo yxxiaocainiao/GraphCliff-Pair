@@ -1,0 +1,35 @@
+{
+  "milestone": "M60",
+  "date": "2026-10-07",
+  "selfcheck_runs": 1,
+  "synthetic_checks_passed": 7,
+  "source_hashes_verified": 5,
+  "source_ast_checks": "density direction, discriminator direction and official regression test statically checked",
+  "local_report_links_verified": [
+    "../component_role_feasibility_20261006/report.md",
+    "../problem_localization_20261007/report.md",
+    "../acceptance_exchange_20261007/report.md",
+    "../joint_holdout_contract_20261007/report.md"
+  ],
+  "runtime_skada_compatibility": "not tested, package absent",
+  "real_fit": 0,
+  "real_model_load": 0,
+  "real_predict": 0,
+  "real_labels_predictions_features_parsed": 0,
+  "official_test_reads": 0,
+  "new_splits": 0,
+  "parameter_searches": 0,
+  "source_fetch_failures": [
+    {
+      "path": "skada/_reweight.py",
+      "error": "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))"
+    }
+  ],
+  "source_fetch_manual_retry": 1,
+  "web_failures": "Almeida PDF entries; RuLSIF final refresh timeout; no claims of full theorem verification",
+  "artifact_hashes": {
+    "report.md": "c14dfb91748279f3d6239f31177024a68207aeeabbaa1e3239da4597ddea8612",
+    "selfcheck.py": "ad120e5cf0277af82a27b63881b0d03a3d853eb0d4d2db2889c4bf78c576bcd3",
+    "sources.json": "a49d402bc3268887f4171d1eb06227af8fd71fa696babb19943848054d0ada04"
+  }
+}

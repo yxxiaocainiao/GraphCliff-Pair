@@ -1,0 +1,60 @@
+{
+  "repo": "scikit-adaptation/skada",
+  "commit": "31f2ff8b6492bba0d8a28cd8296952b33123563b",
+  "files": {
+    "COPYING": {
+      "sha256": "942566bddc297378fe1e5ce45a9927bb3902372b8046084cba7e675603c36cc8",
+      "bytes": 1519,
+      "url": "https://raw.githubusercontent.com/scikit-adaptation/skada/31f2ff8b6492bba0d8a28cd8296952b33123563b/COPYING"
+    },
+    "pyproject.toml": {
+      "sha256": "a45e69f54ebfb04eb85ab172a61d63f2a47b08690ec357bbd208b94334ac29b6",
+      "bytes": 3206,
+      "url": "https://raw.githubusercontent.com/scikit-adaptation/skada/31f2ff8b6492bba0d8a28cd8296952b33123563b/pyproject.toml"
+    },
+    "skada/_pipeline.py": {
+      "sha256": "820dd9de551f43f4944303753e9af3bb69d2745490688ad405dc2a112a751c0c",
+      "bytes": 7685,
+      "url": "https://raw.githubusercontent.com/scikit-adaptation/skada/31f2ff8b6492bba0d8a28cd8296952b33123563b/skada/_pipeline.py"
+    },
+    "skada/tests/test_reweight.py": {
+      "sha256": "a280709f4f3d26f400ff9013501435b77a55b34a033faed2e1aa23faec056de6",
+      "bytes": 12048,
+      "url": "https://raw.githubusercontent.com/scikit-adaptation/skada/31f2ff8b6492bba0d8a28cd8296952b33123563b/skada/tests/test_reweight.py"
+    },
+    "skada/_reweight.py": {
+      "sha256": "71600a0d98cbaef0f856a5274d597588364a91672a9ac026395a40fb4321bb93",
+      "bytes": 49115,
+      "url": "https://raw.githubusercontent.com/scikit-adaptation/skada/31f2ff8b6492bba0d8a28cd8296952b33123563b/skada/_reweight.py"
+    }
+  },
+  "failures": [
+    {
+      "path": "skada/_reweight.py",
+      "error": "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))"
+    }
+  ],
+  "installed_skada": null,
+  "installed_sklearn": "1.9.0",
+  "manual_source_fetch_retry": 1,
+  "selected_adapter": "DensityReweightAdapter",
+  "execution": "static source only; no SKADA import, install or fits",
+  "recent_sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12848971/",
+      "checked": "Full text sections on RF error model and shift constructions; DOI 10.1021/acs.jcim.5c02381"
+    },
+    {
+      "url": "https://arxiv.org/html/2603.29725v1",
+      "checked": "Introduction and equations 9-14; preprint, not claimed peer-reviewed"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v266/almeida25a.html",
+      "checked": "Abstract only; PDF entry points failed"
+    },
+    {
+      "url": "https://www.ms.k.u-tokyo.ac.jp/sugi/2013/RuLSIF.pdf",
+      "checked": "Earlier parsed access; final refresh timed out; formula verified against 2026 source, not fresh full review"
+    }
+  ]
+}
