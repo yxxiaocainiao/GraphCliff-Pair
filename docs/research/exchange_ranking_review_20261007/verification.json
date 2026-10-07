@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "date": "2026-10-07",
+  "starting_commit": "dc9a78e104c222d9ab7ef3554767b1af312114e1",
+  "branch": "codex/paired-increment-plan-20261007",
+  "selfcheck_runs": 1,
+  "exact_fraction_array_cases": 7,
+  "checks": [
+    "additive projection order including ties",
+    "centered squared difference loss identity",
+    "pure cycle and normal equations",
+    "harmful tie counterexample",
+    "same-fold free offset counterexample",
+    "correlated loss worlds conditional MSE separability",
+    "MSE versus expected RMSE scope distinguished",
+    "ordinary RF absolute target distinguished",
+    "paired input own/counterpart label dependence distinguished",
+    "four formulas not four innovations",
+    "local links and cited reading levels"
+  ],
+  "fits": 0,
+  "model_loads": 0,
+  "predict_calls": 0,
+  "real_data_rows_parsed": 0,
+  "official_test_rows_read": 0,
+  "real_feature_recomputations": 0,
+  "real_experiment_failures": 0,
+  "retries": 0,
+  "decision": "No-Go for this draft as an algorithm core; no second candidate or training",
+  "public_artifacts_sha256": {
+    "report.md": "b72653c6a8a1b3ff352b8d4b462bd725a75f8028078fbb1b16b9ec0343df0f81",
+    "selfcheck.py": "577e8ce1465cb6bd572875b4026925321b6a0e1776399f9459aecd9c6cce1b6b",
+    "sources.json": "677b1cfce37bb300913ad92b0e734beb77eae73d9937c473002b2fe064b2a152"
+  },
+  "evidence_sha256": {
+    "docs/research/acceptance_exchange_20261007/report.md": "b84582a4e31632a1026bd0e97a9cb5b6e45b93d807ccce7009515c8b094aa270",
+    "docs/research/acceptance_exchange_20261007/method_gap.md": "f223f11d12dc20449f8eb05557bff8d82bf667f49724a478fbd4bbc4d458e7a4",
+    "docs/research/joint_holdout_contract_20261007/report.md": "bf5070b4e16d2cca152a580757dd0799156f2045b1b26373a0a41f74d47f9421",
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1"
+  }
+}

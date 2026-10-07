@@ -1,0 +1,74 @@
+{
+  "checked_on": "2026-10-07",
+  "scope": "Finite original-source review; not exhaustive novelty certification; no new external code reused",
+  "entries": [
+    {
+      "title": "Statistical ranking and combinatorial Hodge theory",
+      "authors": [
+        "Xiaoye Jiang",
+        "Lek-Heng Lim",
+        "Yuan Yao",
+        "Yinyu Ye"
+      ],
+      "year": 2011,
+      "url": "https://www.math.ucdavis.edu/~saito/data/acha.read.w12/jiang-lim-yao-ye-hodgerank.pdf",
+      "metadata_url": "https://arxiv.org/abs/0811.1067",
+      "reading": "PDF searchable text theorem 5.1 neighborhood and equation 29, PDF page index 25; complete-graph sign convention checked",
+      "relation": "Least-squares projection and complete unweighted graph closed form are prior art"
+    },
+    {
+      "title": "Optimal Strategies for Reject Option Classifiers",
+      "authors": [
+        "Vojtech Franc",
+        "Daniel Prusa",
+        "Vaclav Voracek"
+      ],
+      "year": 2023,
+      "url": "https://www.jmlr.org/papers/volume24/21-0048/21-0048.pdf",
+      "metadata_url": "https://www.jmlr.org/papers/v24/21-0048.html",
+      "reading": "Official metadata and PDF sections 3.3-3.4, theorem 7 and equations 28-30; PDF screenshot call returned successfully",
+      "relation": "Loss regression and selective ordering objective are prior art; no claimed direct molecular guarantee"
+    },
+    {
+      "title": "AdaPRL: Adaptive Pairwise Regression Learning with Uncertainty Estimation for Universal Regression Tasks",
+      "authors": [
+        "Fuhang Liang",
+        "Rucong Xu",
+        "Deng Lin"
+      ],
+      "year": 2025,
+      "url": "https://arxiv.org/html/2501.05809v1",
+      "metadata_url": "https://arxiv.org/abs/2501.05809",
+      "reading": "v1 HTML section 2.2 equations 1-5 and 13-15; current metadata says v3 revised 2025-02-10; v3 method text not reviewed",
+      "relation": "Pairwise regression differences and point/pair hybrid loss already studied; task is regression rather than posthoc risk ranking"
+    },
+    {
+      "title": "Conformalized selective regression",
+      "authors": [
+        "Anna Sokol",
+        "Nuno Moniz",
+        "Nitesh V. Chawla"
+      ],
+      "year": 2026,
+      "published": "2026-07-29",
+      "doi": "10.1007/s44248-026-00113-2",
+      "url": "https://link.springer.com/article/10.1007/s44248-026-00113-2",
+      "reading": "Publisher abstract, introductory scope, section 5.3 fixed-prediction comparison and formal publication date",
+      "relation": "Recent fixed-prediction rejection method; does not establish pairwise projection overlap or conditional coverage guarantee"
+    }
+  ],
+  "screened_not_used_as_direct_overlap": [
+    {
+      "title": "Semi-Supervised Regression with Heteroscedastic Pseudo-Labels",
+      "url": "https://papers.neurips.cc/paper_files/paper/2025/file/30a129d6b8e4229d1ed6d90a65ee1a76-Paper-Conference.pdf",
+      "reading": "Abstract and introductory method scope; distinct semi-supervised pseudo-label task"
+    }
+  ],
+  "access_limits": [
+    "Stanford HodgeRank PDF fetch timed out; used UC Davis author-paper mirror",
+    "Hodge PDF screenshot returned internal error; formula checked from searchable PDF text",
+    "CSR DOI open returned internal error; publisher article opened successfully",
+    "AdaPRL v1 methods only, not full latest v3",
+    "No browser source-byte snapshots archived; no fabricated web-content hashes"
+  ]
+}
