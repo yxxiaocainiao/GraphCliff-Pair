@@ -2,17 +2,7 @@
 import json
 import torch
 from experiments.mechanism_retry.model import LayerSwap
-
-
-def contextual_difference(module, self_output, cross_output):
-    def affine(x):
-        grouped = x.reshape(-1, module.groups, module.group_channels)
-        return (grouped * module.group_scale[None, :, None] + module.group_bias[None, :, None]).flatten(1)
-    anchor, cross = affine(self_output), affine(cross_output)
-    eps = torch.finfo(anchor.dtype).eps if module.norm.eps is None else module.norm.eps
-    scale = (anchor.square().mean(-1, keepdim=True) + eps).sqrt()
-    # Both terms use the same self-context scale; no stop-gradient is proposed.
-    return module.activation(module.norm.weight * cross / scale) - module.activation(module.norm.weight * anchor / scale)
+from experiments.mechanism_retry.context_scale import contextual_difference
 
 
 if __name__ == "__main__":
