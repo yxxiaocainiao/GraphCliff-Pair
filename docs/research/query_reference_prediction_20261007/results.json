@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "cli_calls_started": 1,
+  "code_commit": "0ccd029bd56e9b45a2cc51e31ba2fe652f9a5984",
+  "summary": {
+    "roles": {
+      "calibration": {
+        "pairs": 5,
+        "query_rmse": 0.966552737315644,
+        "reference_training_rmse": 0.5784574872090729,
+        "query_mae": 0.9348014592748445,
+        "reference_training_mae": 0.4967002952618255,
+        "delta_mae": 1.1261742153849006,
+        "delta_sign_accuracy": 0.6,
+        "pair_mse": 0.6344186292602995,
+        "common_squared": 0.23185993967357357,
+        "contrast_squared": 0.402558689586726,
+        "contrast_fraction": 0.6345316341925352,
+        "zero_reference_contrast_squared": 0.23355604850309106
+      },
+      "evaluation": {
+        "pairs": 10,
+        "query_rmse": 0.6730631909778625,
+        "reference_training_rmse": 0.6258732483943736,
+        "query_mae": 0.47188703232907736,
+        "reference_training_mae": 0.5124979404999073,
+        "delta_mae": 0.9283556257062979,
+        "delta_sign_accuracy": 0.9,
+        "pair_mse": 0.422365691052514,
+        "common_squared": 0.11176861200254214,
+        "contrast_squared": 0.3105970790499718,
+        "contrast_fraction": 0.7353747845284961,
+        "zero_reference_contrast_squared": 0.11325351476232566
+      }
+    },
+    "replay_rows": 15,
+    "replay_max_abs": 2.9999999995311555e-07
+  },
+  "wall_seconds": 6.921999999962281,
+  "training_fits": 0,
+  "official_test_rows_read": 0
+}

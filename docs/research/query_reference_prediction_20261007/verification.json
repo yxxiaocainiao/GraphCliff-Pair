@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "selfcheck_runs": 1,
+  "prepare_runs": 1,
+  "real_inference_cli_calls": 1,
+  "audit_runs": 1,
+  "independent_scalar_audit_attempts": 2,
+  "independent_scalar_audit_passes": 1,
+  "training_fits": 0,
+  "official_test_rows_read": 0,
+  "private_predictions_ignored": true,
+  "pair_identity_max_absolute_residual": 2.220446049250313e-16,
+  "frozen_input_hashes": 26,
+  "freeze_commit": "0ccd029bd56e9b45a2cc51e31ba2fe652f9a5984",
+  "cli_wall_seconds": 6.921999999962281,
+  "real_inference_failures": 0,
+  "real_inference_retries": 0,
+  "administrative_failure": "First independent scalar audit used platform GBK read_text default for UTF-8 JSON and stopped before arithmetic. Explicit UTF-8 corrected the audit only; inference not repeated.",
+  "notes": "Installed CLI emitted optional Triton, unused GPU, worker and deprecation warnings; successful CPU prediction. No packages installed or device switches.",
+  "public_artifacts_sha256": {
+    "diagnose.py": "4a8e0d39fe6e2a3cf07b3324bb2ff360d875b789a248e64aaaad048610956239",
+    "protocol.json": "08224d0950c0ebc345f9d053c82891c0bd51b0aba6282456aa88e6efd4d265f7",
+    "report.md": "e9f63da5506ebccfdec9737fce9b3f7a55f74f4e5a27efb2c69cbd1a71774b77",
+    "results.json": "5999a45fc38c1dbc5d188bb9d9219a6e09291a1c5771fdac97ced16127813a5f"
+  },
+  "report_links_checked": true,
+  "privacy_check": "Only aggregate/hash/protocol/code/report public; artifacts ignored"
+}
