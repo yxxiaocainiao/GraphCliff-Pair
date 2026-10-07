@@ -379,3 +379,10 @@ M49提交审核补记：git diff --cached --check发现新报告末尾多余空�
 用户“可以，用先做做实验吗”授权在M51之上运行有限先导。先冻结docs/research/query_pair_pilot_20261007/protocol.json及薄适配脚本run_query_pair_pilot.py；复用作者featurize与原metrics、固定Chemprop/辅助RF缓存。三任务seed42，各joint/去关联separate/普通径向radial，固定同9维同RF，最多9风险fit/9新风险权重load/36predict；0点模型训练加载推理、0辅助活性RF训练、0官方test读取、0调参扩任务。12份fold/full真实几何作业，准备900秒+风险900秒，外部各930秒硬超时；失败或中断留日志、不自动补跑。输入hash/身份/折内reference合法性与原特征重放先核；先导前提交push，再执行；全部任务两角色六比例独立复算后公开聚合、再次提交push。候选只与公平两控制比较，旧7维仅背景；恒等式是特征解释，不冒充RF归因/化学机制，分区与原创性仍未证实。指定expression-skill文件未找到，沿既有计划日志持久记录，不安装依赖。
 
 M52执行前异常：一次协议hash更新命令未指定UTF-8，Windows默认GBK读取中文JSON报UnicodeDecodeError，未计算真实特征/fit；改为显式UTF-8并统一新脚本JSON读取后重新核47输入hash。两次合成selfcheck通过；不是实验失败或训练重试。
+
+
+## M52完成 — 2026-10-07：三点几何真实有限先导
+
+冻结提交13df07eaf1dd006ef598a81f7b22b86f3d378627已push后执行；12作业5936 query行267120参考对，原特征重放最大1.07e-14，47输入hash/角色/合法reference通过。3任务seed42×joint/separate/radial同9维，共9风险fit/9新风险load/36predict，0点模型与辅助活性RF新增训练/加载/推理、0官方test、0调参扩任务。准备6.281秒、风险3.390秒；新checkpoint回放≤1e-10；两角色108曲线点独立复算≤1e-12，100%一致。evaluation joint对separate两负一正，宏平均-0.042109%；对radial两正一负，宏平均+0.170559%。只作探索，未支持三点耦合核心；不自动扩seed/任务/改公式，也不把更好对照改名创新。可靠性主线和旧正向证据保留，可信核心0。公开protocol/results/report/verification及薄适配，private逐分子/权重留ignored artifacts；旧训练代码/配置/模型/报告/六图/原项目不改。执行前UTF-8辅助命令异常已留notes，真实fit无失败重启。按全部曲线/来源/隐私/逻辑复核后commit/push。
+
+M52交付审核：报告复算数量由草稿54纠正为108（9臂×2角色×6比例）；随后delivery hash更新混用Windows反斜杠与POSIX路径，旧key导致一次断言失败。统一键并重新核4交付hash/47冻结hash/108表格值/链接通过，未改变实验脚本、协议、真实缓存或补跑fit。

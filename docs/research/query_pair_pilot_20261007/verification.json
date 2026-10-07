@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "pre_execution_commit": "13df07eaf1dd006ef598a81f7b22b86f3d378627",
+  "frozen_inputs": 47,
+  "all_input_hashes_unchanged": true,
+  "macro_relative_improvements_percent": {
+    "calibration": {
+      "separate": 0.3163433728262481,
+      "radial": -0.9394961980599081
+    },
+    "evaluation": {
+      "separate": -0.04210885509786655,
+      "radial": 0.17055918550260193
+    }
+  },
+  "risk_fits": 9,
+  "new_risk_model_loads": 9,
+  "predict_calls": 36,
+  "official_test_rows_read": 0,
+  "independent_curve_points": 108,
+  "decision": "No automatic expansion; triangle coupling not established; reliability line retained",
+  "checks": [
+    "synthetic geometry/collision/triangle/ties/ceil",
+    "roles and query/reference ordering",
+    "old feature replay",
+    "all-row covariance identity and bounds",
+    "new checkpoint reload",
+    "both-role independent cached-score replay",
+    "100 percent all-arm identity"
+  ],
+  "source_sha256": {
+    "docs/research/query_pair_pilot_20261007/protocol.json": "0a169e1b3c913c36310c04ffedc05e72380d0fe49da63055b6d5f33e813605b3",
+    "docs/research/query_pair_pilot_20261007/results.json": "3417a4454f8f69d7a85c67fcf391a15ae2612982113740cb7593d3808ba4316e",
+    "docs/research/query_pair_pilot_20261007/report.md": "b8775ef78f157eb8bef3e45bbc48f16e92bba4d7d47f9acbf25e05bc7a5c24b6",
+    "experiments/reliability_base/run_query_pair_pilot.py": "a0f1175714e4270c580cbb6a3d1830198773f241f5c0f19bbf7249d780afb3ef"
+  },
+  "review_corrections": [
+    "Report audit count corrected from 54 to 108 before publication",
+    "Windows backslash delivery hash key normalized after a verification assertion; frozen inputs and experiment unchanged"
+  ]
+}
