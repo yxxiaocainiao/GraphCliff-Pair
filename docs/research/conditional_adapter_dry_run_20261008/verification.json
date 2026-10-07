@@ -1,0 +1,72 @@
+{
+  "milestone": "M63",
+  "date": "2026-10-08",
+  "status": "segmented_checks_passed",
+  "synthetic_kde_fits_planned": 8,
+  "synthetic_kde_fits_actual": 8,
+  "execution_log": [
+    {
+      "attempt": 1,
+      "mode": "full",
+      "synthetic_kde_fits": 8,
+      "density_checks": "passed_before_input_guard_failure",
+      "status": "failed",
+      "error": "TypeError: Cannot interpret Pandas StringDtype as a NumPy dtype"
+    },
+    {
+      "attempt": 2,
+      "mode": "validation-only",
+      "synthetic_kde_fits": 0,
+      "status": "passed",
+      "invalid_evidence_cases": 7,
+      "invalid_log_weights": 3,
+      "legacy_coverages": 6
+    },
+    {
+      "attempt": 3,
+      "mode": "validation-only",
+      "synthetic_kde_fits": 0,
+      "status": "passed",
+      "invalid_evidence_cases": 9,
+      "invalid_log_weights": 3,
+      "legacy_coverages": 6,
+      "change": "reject complex and bool rather than silently converting"
+    }
+  ],
+  "final_complete_full_rerun": false,
+  "real_operations": {
+    "chemprop_fits": 0,
+    "aux_rf_fits": 0,
+    "risk_rf_fits": 0,
+    "model_loads": 0,
+    "real_predictions": 0,
+    "real_features_labels_predictions_parsed": 0,
+    "official_test_reads": 0,
+    "new_splits": 0,
+    "installs": 0
+  },
+  "dependency_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1"
+  },
+  "skada_pipeline_runtime_verified": false,
+  "reuse": "installed sklearn KernelDensity also used by audited SKADA adapter; not vendored code",
+  "installed_kde_source_sha256": "09eb2c30d533863ea932eb8813f1c0a156810da44420740c5fda3aeab1647e3e",
+  "input_and_adapter_sha256": {
+    "experiments/reliability_base/conditional_risk_weights.py": "9481360f65c6bae4f134ed53cdfb6065389e1d635f704d3e90836512f830fbde",
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "docs/research/atlas_design_bridge_20261008/report.md": "bbb631202d5da10eb6a9946d09cc770e47e0bc9df483b779ddf88e7ad75510ed",
+    "docs/research/series_risk_pilot_protocol_20261008/protocol.json": "6de1b48e9fd060f95bb557b801d8ff320b63b3e3a98ffc2e86a05db07a4ee60a"
+  },
+  "local_links_checked": [
+    "../../../experiments/reliability_base/conditional_risk_weights.py",
+    "../atlas_design_bridge_20261008/report.md",
+    "check.py"
+  ],
+  "artifact_sha256": {
+    "report.md": "a7b20fb9b7cd9a7b529cc7c10cb258af7662ae04d11f2b6a919bcd23e78a6533",
+    "check.py": "e36c7b8dd5c420bcdd62ac093cec2e63462cfeb48b5551414b9640da48ded742"
+  }
+}

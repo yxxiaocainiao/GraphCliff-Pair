@@ -555,3 +555,19 @@ selfcheck1/prepare1/真实run1/audit1通过；独立标量审核首命令默认G
 有限核官方粗糙度仓库方法范围与MIT说明、Chen/Lei2025原文条件比讨论；条件密度比是既有工具，未完成全部近邻方法新颖性碰撞。Research Square原页访问失败，最新发表状态未确认，不引用搜索片段指标。未来训练参考活性反事实仅重算R和其下游，点预测/源误差监督/G/目标真值固定，不能称化学因果或原子忠实归因，不把旧列置乱当训练活性置换，不恢复M38。
 
 新增docs/research/atlas_design_bridge_20261008/report.md、check.py、sources.json、verification.json，追加四日志；来源/数学/本地链接/公开聚合与暂存范围核验后commit/push可靠性分支。0真实fit/load/predict/标签预测特征解析或重算/新划分/官方test/安装/调参；历史模型/训练代码/报告/协议/缓存/图、原PDF、原项目及另一FPPool/LongPoly worktree不改。三贡献仍为研究组织目标，不保证中科院二区/三区或已形成最终核心。
+
+
+## M63执行前 — 2026-10-08：条件版本薄适配与仅合成KDE dry-run
+
+用户“继续”授权M62下一步实现准备，不授权真实训练。本轮只新增最小条件密度比适配，直接复用已安装sklearn KernelDensity（已审SKADA DensityReweight底层同估计器），不为管线安装SKADA/POT，不自写核。输入固定7列且禁止y/身份混入特征；source-only缩放由调用者负责，边缘沿各端7维带宽；log域归一化避免exp溢出，错误输入/数值失败明确拒绝。dry-run仅2个小型合成fixture、至多8次KDE fit，0Chemprop/辅助RF/风险RF/真实fit/load/predict/标签特征/新划分/test；用已存在的run_phase_a排序函数体验证并列/ceil与接受交换，不修改原函数。检查后更新报告/核验及四日志，明确文件暂存commit/push可靠性分支。M61/M62历史协议与报告不改，不宣称实际SKADA管线兼容或真实性能验证。
+
+
+## M63完成 — 2026-10-08：条件权重接口实现，仅合成KDE核验
+
+新增experiments/reliability_base/conditional_risk_weights.py：严格7列/source_row隔离/实数有限检查，直接复用本机sklearn KDE，四KDE共享返回joint和conditional权重与log分解/ESS；前5维边缘沿各端7维带宽。无source/target标签参数，scaler由调用者source-only处理，不能由列白名单推断上游无泄漏。log最大值平移后exp均值归一化不改变相对权重，不剪裁/均匀回退；数值不足两正权重拒绝。返回的是源风险训练权重，不是目标风险分数；不能拿权重直接排序目标。未来联合IW复用这两个joint估计，完整拟议五臂8KDE而非重复10KDE。未安装SKADA/POT，未宣称完整SKADA管线兼容。
+
+仅两组合成source12/target8共8次KDE fit完成密度计算、同端带宽、log分解和R恒定/G变化后归一化权重1检查。首次全检查随后在Pandas3 StringDtype与np.issubdtype兼容性处失败，未进入额外fit。改用Pandas dtype接口，第一次validation-only补验7类输入/3类log权重/六覆盖通过；再明确拒绝复数/布尔防止静默实数转换，第二次validation-only补验9类输入通过，均0fit。总合成KDE仍8，完整失败与分段补验记verification，不声称修复后重跑完整8fit。非有限/重复身份/重叠角色/错序列/y附列/非数值/样本不足拒绝。
+
+排序沿旧metrics AST的校准前原函数体，仅合成分数与frame；cal/cal_scores/cq=None，六比例并列canonical/source_row与ceil、交换人数/MSE恒等式、100%一致均通过，未改旧metrics或执行三任务入口。合成手工分数仅接线检查，非候选RF预测或真实收益。C1映射log分解，C2共享joint/conditional供未来去核心消融，C3映射决策解释接线，训练活性反事实/化学归因尚未实现。
+
+新增薄适配代码及docs/research/conditional_adapter_dry_run_20261008/check.py、report.md、verification.json，追加四日志。0Chemprop/辅助RF/风险RF或其他真实fit/load/predict/真实标签特征解析/新划分/官方test/安装/调参；原PDF/原项目/历史报告协议/缓存模型图、旧训练入口和另一FPPool/LongPoly worktree保持。核验来源hash/本地链接/分段检查与暂存范围后commit/push可靠性分支。下一步接单任务五臂准备入口并冻结新预算，仅命令与身份dry-run；真实训练仍未获授权，不新增第二算法或模块。
