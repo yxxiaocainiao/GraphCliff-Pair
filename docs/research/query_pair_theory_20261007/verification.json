@@ -1,0 +1,118 @@
+{
+  "milestone": "M51",
+  "date": "2026-10-07",
+  "baseline_commit": "63a3503bd337bf88787ab89a83610e0dbe1b5771",
+  "status": "One discussion candidate; mathematical definition checked, novelty and actual benefit unverified; not frozen executable pilot",
+  "credible_core_count": 0,
+  "discussion_candidate_count": 1,
+  "formulas": {
+    "one": "Proposed specific triangle relevance operation; originality unverified",
+    "two": "Query-pair weighted SALI; independent proposed application, ordinary weighted aggregation not claimed novel",
+    "three": "Standard covariance identity and explicit no-alignment control; not new theorem",
+    "four": "Reused fixed absolute-error RF and acceptance rule; not original"
+  },
+  "inputs_sha256": {
+    "docs/research/acceptance_exchange_20261007/report.md": "b84582a4e31632a1026bd0e97a9cb5b6e45b93d807ccce7009515c8b094aa270",
+    "docs/research/acceptance_exchange_20261007/results.json": "3fcba799f3bda67b3b2445fddaf66736cf97cb7f51fc228d6089b794530646e1",
+    "docs/research/acceptance_exchange_20261007/method_gap.md": "f223f11d12dc20449f8eb05557bff8d82bf667f49724a478fbd4bbc4d458e7a4",
+    "docs/research/residual_roughness_review_20261007/report.md": "5f4939abcfacac869214a657a850e543cdedbf19b9a6e066209112f1be9b796f",
+    "docs/research/roughness_method_review_20261005/report.md": "59681f46f84f9cf4dab74b3253756a8f61410b8c0cd572eb01f97ffd506f52a5",
+    "docs/research/reliability_core_review_20261006/report.md": "e9e75655ebfcf1d202415fd4cf7ddd11bf5cb1fd9a4763229ea42aba0c0ea6fd",
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537"
+  },
+  "deliverables_sha256": {
+    "draft.md": "491a1155039c1131a6db5f06b6841b92e5e4dbcd254dfbce526199ce9f3de828",
+    "selfcheck.py": "c67e7733f8012b2f807f1f5a5d0610604d5d760423da0fc5c2545a7da5111849"
+  },
+  "selfcheck": {
+    "command": "python docs/research/query_pair_theory_20261007/selfcheck.py",
+    "runs": 3,
+    "passed": 3,
+    "reason": "Initial check; second added reversed-query-error worlds; third added equal-radius SALI-distance-cancellation check",
+    "bitset_triples_per_run": 512,
+    "qa_joint": 0.4444444444444444,
+    "qb_joint": 0.8888888888888888,
+    "separate_both": 0.7407407407407407,
+    "radial_qa": 0,
+    "radial_qb": 0.16666666666666666,
+    "collision_joint": 0,
+    "collision_sali": 2000,
+    "invalid_triangle_cases": 3,
+    "equal_radius_distance_cancellation": true
+  },
+  "actual": {
+    "real_fits": 0,
+    "model_deserializations": 0,
+    "model_predict_calls": 0,
+    "real_feature_recomputations": 0,
+    "new_real_numeric_cache_analyses": 0,
+    "official_test_rows": 0,
+    "parameter_searches": 0
+  },
+  "bounded_search_queries": [
+    "activity cliffs query SALI weighting",
+    "structure activity roughness triangle",
+    "Jaccard triangle inequality molecular similarity metric",
+    "local roughness query QSAR uncertainty",
+    "QSAR query weighted roughness",
+    "activity cliff query triangle"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+      "level": "Current README; author claims not independently verified"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/main/src/build_features.py",
+      "level": "Current raw source in memory, not executed or copied",
+      "sha256": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+      "bytes": 4618,
+      "same_as_local_pinned": true
+    },
+    {
+      "url": "https://www.cs.kent.ac.uk/people/staff/aaf/pub_papers.dir/J-Cheminformatics-2016-Aniceto-Open-Access.pdf",
+      "level": "PDF pp2-4 methodology; not entire paper review"
+    },
+    {
+      "url": "https://opensource.nibr.com/UNIQUE/indepth/available_inputs_uq_methods.html",
+      "level": "Official table updated 2026-09-11"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1612.02696",
+      "level": "Primary Jaccard metric definitions/proof, not a new theorem claim"
+    }
+  ],
+  "errors_or_exceptions": [
+    "Initial combined source read truncated; targeted author source and primary methods read used",
+    "Search returned unrelated companies and biochemical papers; excluded",
+    "No training/runtime failure or interrupted synthetic check"
+  ],
+  "future_pilot": {
+    "authorized": false,
+    "ready_to_execute": false,
+    "conditional_risk_fits_max": 9,
+    "arms_per_task": 3,
+    "input_dimensions": 9,
+    "additional_point_or_auxiliary_rf_fits": 0,
+    "unresolved": [
+      "per-job neighbor reconstruction and exact tie order",
+      "actual new-feature SHA and historical replay contract",
+      "measured preparation/runtime budget",
+      "novelty vs query-weighted neighborhood methods"
+    ]
+  },
+  "local_links": [
+    "selfcheck.py"
+  ],
+  "limitations": [
+    "No empirical mechanism attribution of old 2-4 percent gains",
+    "Synthetic bitsets are not real molecules",
+    "Radial weighting also distinguishes toy example",
+    "Fingerprint collisions and learned-cliff cases remain blind spots",
+    "Four formulas do not establish four original contributions",
+    "No guarantee of CAS partition journal acceptance",
+    "Equal query distances cancel reference-pair distance amplification above SALI floor; benefit vs lost cliff sharpness unknown"
+  ]
+}
