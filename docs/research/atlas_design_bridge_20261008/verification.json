@@ -1,0 +1,25 @@
+{
+  "milestone": "M62",
+  "date": "2026-10-08",
+  "synthetic_check_runs": 1,
+  "synthetic_checks_passed": 7,
+  "pdf_pages_read": 19,
+  "pdf_sha256_verified_against_M32": true,
+  "local_links_verified": [
+    "../aidd_plan_recheck_20261006/report.md",
+    "../series_risk_transfer_20261007/report.md",
+    "../series_risk_pilot_protocol_20261008/report.md"
+  ],
+  "real_fit_load_predict_feature_recomputation": 0,
+  "real_labels_predictions_features_parsed": 0,
+  "official_test_reads": 0,
+  "new_splits": 0,
+  "dependency_installs": 0,
+  "candidate_count": 1,
+  "protocol_state": "M61 unchanged; conditional refinement designed only, future integration not executed",
+  "artifact_sha256": {
+    "report.md": "bbb631202d5da10eb6a9946d09cc770e47e0bc9df483b779ddf88e7ad75510ed",
+    "check.py": "f9f27790122567b0bda77a023766e1413570f63fff1e56addac6e81d4c07bb91",
+    "sources.json": "751c499c735cab5802216de1a09a2f0f399a968d6e0ef0aa085b5cde118b45e8"
+  }
+}

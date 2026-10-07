@@ -1,0 +1,132 @@
+{
+  "milestone": "M62",
+  "pdf": {
+    "file_name": "局部结构—活性粗糙度能否跨时间改善QSAR拒答：活性悬崖方法的严格独立复核 _ AIDD Idea Atlas.pdf",
+    "bytes": 1054065,
+    "sha256": "b8b4cdbff7e4574b8e3bc737d7c9ab18e418ab0193f2133f4c3fc457376b8e21",
+    "pages": 19,
+    "page_text_sha256_and_read_scope": [
+      {
+        "page": 1,
+        "sha256": "03810d843c60c1c6d7720e4a80eccce369f00e8e6ef48f8ce2d12d19fdf9cd91",
+        "scope": "Title and proposal identity"
+      },
+      {
+        "page": 2,
+        "sha256": "2b066c36f47a7652a8a902997d384962b8ecb79cb79288f2fafe7392e7606182",
+        "scope": "Abstract, independent review scope"
+      },
+      {
+        "page": 3,
+        "sha256": "49ff022379c2792256861bbced52a993bd9260c1380a8ca74a683ba9ab4f748b",
+        "scope": "Literature claims and limits"
+      },
+      {
+        "page": 4,
+        "sha256": "aae97cdc2a124167312ffc1994c3d16118237652d9d863c7e9c28a046f8ae741",
+        "scope": "Generic information vs roughness gap"
+      },
+      {
+        "page": 5,
+        "sha256": "8f1d86362dcc8f3b7994a8efbac90cea21335aa1c56a2a5beddf663d06d91fbf",
+        "scope": "Main and alternative hypotheses"
+      },
+      {
+        "page": 6,
+        "sha256": "bf3d4d67ac3773df4c661433ddc712e1e99d0525c9378ffc20f5a21a2da071c5",
+        "scope": "Legal roughness and cliff definitions"
+      },
+      {
+        "page": 7,
+        "sha256": "04a7abd4f386ac3590980ccd7d8121b26d2ad9dfd27fbd8d8220d094bdc3b0b8",
+        "scope": "OOF, training-label permutations, source roles"
+      },
+      {
+        "page": 8,
+        "sha256": "1ff07399acbd907b290185848161942cce69fb179c46a30b4c3747ba43990329",
+        "scope": "Series splits, strong controls, tentative confirmation criteria"
+      },
+      {
+        "page": 9,
+        "sha256": "c13fe4d82706795c420b708e9e3a49870500381d1472cd8723b963d9865f4298",
+        "scope": "Temporal validation proposal"
+      },
+      {
+        "page": 10,
+        "sha256": "d6ed25fdaac08f14d335ebbe81cbc824b0a0775c3cc2ed549063be856b397349",
+        "scope": "Independent units and external-data requirements"
+      },
+      {
+        "page": 11,
+        "sha256": "d4270126d170f2a7e2ec93bbc5b14bf1259dc354d3ebeb679412442f9a3d6dca",
+        "scope": "Splits, repeated baselines and timing limits"
+      },
+      {
+        "page": 12,
+        "sha256": "a2b17ef456177b7d6a81237caec399c16fffd2e54d807cc70f4c732c30b7d21f",
+        "scope": "Endpoints, permutation and target-level inference"
+      },
+      {
+        "page": 13,
+        "sha256": "3ca44780998fc16771642b153716d11c9f6ccdb4cf9363f137cf8d8be469afca",
+        "scope": "Feasibility, resources, giant components"
+      },
+      {
+        "page": 14,
+        "sha256": "1b95d7fa9026af58c1104b0bda410b4498b2cdeb1d66972c53ceb1f6c422e618",
+        "scope": "Risks and alternatives"
+      },
+      {
+        "page": 15,
+        "sha256": "3624404c5d97f348e563889f592aa9f85660159a718cc8ef81d222da877928f2",
+        "scope": "Four review contributions and explicit non-originality boundary"
+      },
+      {
+        "page": 16,
+        "sha256": "62832d6f7609e6711620528a9a3dc26d48bcdb72e18b3782cdf2bd3a4e972088",
+        "scope": "Negative results, implications, first reference"
+      },
+      {
+        "page": 17,
+        "sha256": "f73e5145d458f29b8e5585706c2c87e0eca766b13d41665580e2fd3a90ffae59",
+        "scope": "References 2-9 including Research Square DOI"
+      },
+      {
+        "page": 18,
+        "sha256": "303d38e94a5f146d8e10294a196d62294be4dcc6569947442087e8094b904d54",
+        "scope": "Proposal identity and evidence limits"
+      },
+      {
+        "page": 19,
+        "sha256": "0d36ad5ef484049f7a3eb0ec64dbe00bfb54104bfe752977ecc52fefe8479411",
+        "scope": "Label noise, no prospective claims, footer"
+      }
+    ],
+    "reader": "installed pdftotext -layout -enc UTF-8",
+    "raw_text": "ignored artifacts only; not redistributed",
+    "prior_reading": "docs/research/aidd_plan_recheck_20261006/report.md"
+  },
+  "primary_web_sources": [
+    {
+      "url": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+      "checked": "README method scope and MIT code license statement; no independent replication, no new commit pin"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10994-024-06719-4",
+      "checked": "2025 Chen and Lei primary full-text intro and conditional-ratio discussion; conditional ratios are established, not a claimed new estimator"
+    },
+    {
+      "url": "https://www.researchsquare.com/article/rs-10071162/v1",
+      "checked": "access failed; current publication status not established"
+    }
+  ],
+  "existing_reuse_sources": [
+    "docs/research/series_risk_transfer_20261007/sources.json",
+    "docs/research/series_risk_pilot_protocol_20261008/protocol.json"
+  ],
+  "novelty_status": "one task-specific conditional adaptation draft; no exhaustive novelty or efficacy claim",
+  "failure_log": [
+    "First large Python PDF excerpt emitted mojibake and was truncated; reread pages 5-19 in three bounded UTF-8 batches plus page4; no missed pages claimed based on broken output.",
+    "Research Square direct page failed; did not substitute search snippets as evidence."
+  ]
+}
