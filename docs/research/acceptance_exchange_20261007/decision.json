@@ -1,0 +1,75 @@
+{
+  "milestone": "M50",
+  "date": "2026-10-07",
+  "stage1_commit": "496ca14",
+  "status": "completed_method_gap_branch",
+  "credible_core_count": 0,
+  "new_candidates_defined": 0,
+  "decision": "Retain reliability research; stop this diagnostic-led candidate round before candidate construction. No proven deployment-legal harmful-swap identifier or task-specific operation.",
+  "facts": {
+    "evaluation_nonfull_positive": 13,
+    "evaluation_nonfull_negative": 2,
+    "cal_eval_sign_matches": 8,
+    "cal_eval_sign_comparisons": 15,
+    "evaluation_losses_have_positive_cal_gain": true
+  },
+  "limitations": [
+    "Nested fractions are not independent trials",
+    "No proof that existing deployment features lack predictive information",
+    "No candidate defined, so no candidate pilot, ablation budget or performance assertion",
+    "Calibration sign disagreement does not refute all calibration methods",
+    "No complete frontier literature review"
+  ],
+  "actual_stage2": {
+    "real_numeric_cache_reads": 0,
+    "model_loads": 0,
+    "fits": 0,
+    "model_predict_calls": 0,
+    "real_feature_recomputation": 0,
+    "new_subgroup_thresholds": 0,
+    "strategy_backtests": 0,
+    "official_test_rows": 0
+  },
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2102.08501v4",
+      "level": "Relevant fixed-training-set and interactive error-prediction sections"
+    },
+    {
+      "url": "https://opensource.nibr.com/UNIQUE/indepth/available_inputs_uq_methods.html",
+      "level": "Official method table, updated 2026-09-11"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2208.02814",
+      "level": "Current v4 2025-06-13, pp1-2 bounded monotone loss/algorithm preview; not full-paper review"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3549ef9b5ff520a7e41ff3cc306ab2b-Abstract-Conference.html",
+      "level": "ICLR2024 publication identity"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/de04896f011beff76c91e094f72727f4-Abstract-Conference.html",
+      "level": "Official abstract only; full assumptions not verified"
+    }
+  ],
+  "source_web_hashes": null,
+  "input_sha256": {
+    "docs/research/acceptance_exchange_20261007/report.md": "b84582a4e31632a1026bd0e97a9cb5b6e45b93d807ccce7009515c8b094aa270",
+    "docs/research/acceptance_exchange_20261007/results.json": "3fcba799f3bda67b3b2445fddaf66736cf97cb7f51fc228d6089b794530646e1",
+    "docs/research/acceptance_exchange_20261007/protocol.json": "1dcdc5d66ae3533dffa10de68e0806cd318eb6a92f2cfdcb5ef1e04de550260b",
+    "docs/research/acceptance_exchange_20261007/diagnose.py": "f82fb80b1b44e60bf51367947e5e20524aa3c9d3fb46d0f4d99db147a2166a4d",
+    "docs/research/residual_roughness_review_20261007/report.md": "5f4939abcfacac869214a657a850e543cdedbf19b9a6e066209112f1be9b796f",
+    "docs/research/paired_increment_review_20261007/report.md": "e69a0ffadd9e2f56861917e526c22e8396fe79aeacc53792d52a0e6ffeeefb33"
+  },
+  "access_exceptions": [
+    "CRC v5 HTML returned404; actual latest v4 verified via arXiv metadata and PDF",
+    "PMLR guessed location inaccessible and not used as evidence",
+    "ICLR CRC PDF timed out; primary arXiv PDF relevant pages read instead"
+  ],
+  "checks": {
+    "two_world_arithmetic": true,
+    "independent_stage1_decimal_check": true,
+    "no_individual_data_public": true
+  },
+  "revisit": "One specified lawful information source and non-equivalent operation, explicit assumptions/counterexample, same-information falsification and actual legal validation cost. Not authorized now."
+}
