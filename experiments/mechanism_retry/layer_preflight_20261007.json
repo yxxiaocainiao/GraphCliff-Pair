@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-07",
+  "base_six_arm_config_sha256": "b11a25f9e86cf2825b9f46305e7ea4b06eed7126bbab6eb2234dba12d9da6d44",
+  "core_config_sha256": "811a62aeae9a6729800b2fa1acfa50dc30f6b3324a34b85de0fbf607a614b5a7",
+  "core_runs": 8,
+  "max_optional_fp_runs": 4,
+  "primary_candidate": "centered",
+  "parameters": {
+    "full": 6021198,
+    "self": 6810654,
+    "cross": 6810654,
+    "centered": 6810654
+  },
+  "datasets": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "input_path": "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv",
+      "input_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+      "train_count": 2632,
+      "valid_count": 292,
+      "valid_cliff_count": 128,
+      "train_pair_count": 2632,
+      "valid_pair_count": 292,
+      "largest_graph_nodes": 84
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "input_path": "D:\\GraphCliff-main\\benchmark_data\\CHEMBL244_Ki.csv",
+      "input_sha256": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+      "train_count": 2229,
+      "valid_count": 247,
+      "valid_cliff_count": 118,
+      "train_pair_count": 2229,
+      "valid_pair_count": 247,
+      "largest_graph_nodes": 245
+    }
+  ],
+  "test_labels_parsed": false,
+  "contract_tests_passed": 4,
+  "large_real_batch_checks": [
+    {
+      "arm": "full",
+      "batch_size": 32,
+      "max_query_nodes": 245,
+      "max_reference_nodes": 245,
+      "init_sha256": "d274af323563422132fdbfaf18a887d283ed5fe593314fd41414b067f5ffc8e9",
+      "finite_loss": 1.7373218536376953,
+      "peak_cuda_mib": 782.76611328125
+    },
+    {
+      "arm": "self",
+      "batch_size": 32,
+      "max_query_nodes": 245,
+      "max_reference_nodes": 245,
+      "init_sha256": "30d154fb519f3750e5c24dfcd8efea743b75da78573c7e4eeb4d1c96b113a098",
+      "finite_loss": 1.6503119468688965,
+      "peak_cuda_mib": 1035.87841796875
+    },
+    {
+      "arm": "cross",
+      "batch_size": 32,
+      "max_query_nodes": 245,
+      "max_reference_nodes": 245,
+      "init_sha256": "30d154fb519f3750e5c24dfcd8efea743b75da78573c7e4eeb4d1c96b113a098",
+      "finite_loss": 1.7150566577911377,
+      "peak_cuda_mib": 1036.587890625
+    },
+    {
+      "arm": "centered",
+      "batch_size": 32,
+      "max_query_nodes": 245,
+      "max_reference_nodes": 245,
+      "init_sha256": "30d154fb519f3750e5c24dfcd8efea743b75da78573c7e4eeb4d1c96b113a098",
+      "finite_loss": 1.4862476587295532,
+      "peak_cuda_mib": 1591.095703125
+    }
+  ],
+  "optimization_steps": 0
+}
