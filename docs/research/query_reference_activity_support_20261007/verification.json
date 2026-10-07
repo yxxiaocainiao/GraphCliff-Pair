@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "date": "2026-10-07",
+  "pre_execution_commit": "e919413922a3b088956ac4a277fe8f9624fe2623",
+  "frozen_inputs": 13,
+  "fixed_structural_pairs": 87,
+  "activity_difference_pairs": 15,
+  "distinct_subset_queries": 15,
+  "distinct_subset_references": 15,
+  "subset_references_shared_across_roles": 0,
+  "distinct_reference_labels_selected": 82,
+  "distinct_query_labels_selected": 74,
+  "selfcheck_runs": 1,
+  "real_runs": 1,
+  "independent_audits": 1,
+  "additional_synthetic_residual_product_cases": 4,
+  "fits": 0,
+  "model_loads": 0,
+  "model_predict_calls": 0,
+  "fingerprint_recomputations": 0,
+  "new_risk_features": 0,
+  "official_test_rows_read": 0,
+  "wall_seconds": 0.061999999976251274,
+  "decision": "Limited-case inference could use only 15 references; no inference executed and no original algorithm core established",
+  "deliverable_sha256": {
+    "docs/research/query_reference_activity_support_20261007/count_support.py": "43e078254aeb2a1b38f71e273739636f34e66a5af75cf262a39a17bd56f8e63f",
+    "docs/research/query_reference_activity_support_20261007/protocol.json": "b7143f6d09b027cec4efe48033024e7e324719ccc9f1b9a0ef202c790463e505",
+    "docs/research/query_reference_activity_support_20261007/results.json": "48661bd662b3df120c7a327ea3ebf56bad640cdd171fb4dba462bcc90143af31",
+    "docs/research/query_reference_activity_support_20261007/report.md": "f09c82d07bb30e7c6c3d86a9083f984dbbf7b22a20b40139a7702a2a16a1925e"
+  }
+}

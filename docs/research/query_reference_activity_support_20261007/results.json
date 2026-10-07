@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "code_commit": "e919413922a3b088956ac4a277fe8f9624fe2623",
+  "summary": {
+    "roles": {
+      "calibration": {
+        "all_structural": {
+          "query_rows": 426,
+          "pairs": 38,
+          "queries_with_pairs": 29,
+          "query_coverage": 0.06807511737089202,
+          "unique_references": 38,
+          "query_degree_histogram": {
+            "0": 397,
+            "1": 24,
+            "2": 3,
+            "4": 2
+          },
+          "max_reference_degree": 1,
+          "greedy_disjoint_pairs": 29
+        },
+        "delta_at_least_1": {
+          "query_rows": 426,
+          "pairs": 5,
+          "queries_with_pairs": 5,
+          "query_coverage": 0.011737089201877934,
+          "unique_references": 5,
+          "query_degree_histogram": {
+            "0": 421,
+            "1": 5
+          },
+          "max_reference_degree": 1,
+          "greedy_disjoint_pairs": 5
+        },
+        "below_one_pairs": 33,
+        "fraction_of_structural_pairs": 0.13157894736842105,
+        "fraction_of_supported_queries": 0.1724137931034483
+      },
+      "evaluation": {
+        "all_structural": {
+          "query_rows": 448,
+          "pairs": 49,
+          "queries_with_pairs": 45,
+          "query_coverage": 0.10044642857142858,
+          "unique_references": 49,
+          "query_degree_histogram": {
+            "0": 403,
+            "1": 41,
+            "2": 4
+          },
+          "max_reference_degree": 1,
+          "greedy_disjoint_pairs": 45
+        },
+        "delta_at_least_1": {
+          "query_rows": 448,
+          "pairs": 10,
+          "queries_with_pairs": 10,
+          "query_coverage": 0.022321428571428572,
+          "unique_references": 10,
+          "query_degree_histogram": {
+            "0": 438,
+            "1": 10
+          },
+          "max_reference_degree": 1,
+          "greedy_disjoint_pairs": 10
+        },
+        "below_one_pairs": 39,
+        "fraction_of_structural_pairs": 0.20408163265306123,
+        "fraction_of_supported_queries": 0.2222222222222222
+      }
+    },
+    "distinct_required_references": 15,
+    "references_shared_across_roles": 0
+  },
+  "selected_reference_labels": 82,
+  "selected_query_labels": 74,
+  "wall_seconds": 0.061999999976251274,
+  "fits": 0,
+  "model_loads": 0,
+  "model_predict_calls": 0,
+  "fingerprint_recomputations": 0,
+  "official_test_rows_read": 0
+}
