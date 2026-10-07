@@ -311,3 +311,13 @@ P0：绑定历史模块/当前风险/资产证据，区分实际改动、参考�
 六图：原Filter、FPPool两方案、编码后交互、逐层LongPoly替换、三类独立Loss、Chemprop可靠性。交付18个单图文件、六页PDF、HTML、脚本、来源/产物哈希及三级审核。10源hash及原图hash不变；目视、PNG尺寸、SVG XML、PDF页对象计数通过。4次渲染1缺字失败3成功（2次修订）；已有字体回退修复，改正指纹归属/标签箭头/AtomEncoder/对照关系/重叠。默认sandbox git失败，授权环境恢复；fitz未安装，改标准库PDF页对象计数，不称完整PDF解析。0训练/推理；模型、原项目、原图及历史报告不改；M40停止状态不变。目录docs/figures/graphcliff_changes_20261006；下一步用报告与图向老师核对研究问题，不重启旧队列。
 
 M42补记：暂存检查发现Matplotlib SVG行末空格，清理6份SVG并在脚本加入相同处理；首次清理读取因默认GBK失败、未修改，显式UTF8后成功。XML/脚本语法与三级复审通过，几何、文本和研究结论不变，更新manifest后另提交；未增加渲染或模型运行。
+
+## M45：2026-10-07 独立机制重试
+
+用户确认分别重试残差FPPool及逐层LongPoly替换，组合仅作消融。基于M26混合结果，先做最小实现和机制对照，未恢复历史训练。新增experiments/mechanism_retry与tests/test_mechanism_retry.py；更新README/task_plan/notes/milestones；原graphcliff_pair、vendor、D:/GraphCliff-main、历史实验和Loss不改。
+
+候选：FP在预测空间补偿冻结底座误差，保留feature/output与joint/frozen控制及固定行反转null；Layer用共享MHA cross输出减self输出，扣除T(0)保持零增量；self/cross/centered同容量，保留原scale/bias/RMSNorm/SiLU/dropout。full/full_fp/centered/centered_fp只作Pair内2×2消融，不混排单分子结果。Friedman/标准Attention/Differential Transformer原始来源核验；PrismNet页面验证码、ACES-GNN原文403，未声称完成新颖性审查。FP来源许可不确定性保留。
+
+过程：初始3项契约测试及22组smoke通过；新增空边baseline契约发现手工构造Batch无法to_data_list，改用PyG subgraph分图编码并修复。随后4项新契约及全套46项测试通过；补full_fp以完成组合2×2，最终24组smoke全部完成且最佳checkpoint已由训练器重载核验。两阶段合计46个小样本smoke fit，正式有效验收只引用最终24组，不合并成效果矩阵。GPU best-effort确定性限制继承原训练器，不作逐位跨运行复现承诺。全套tests输出的78模型test是临时合成测试fixture，不是运行官方test。
+
+输出：artifacts/mechanism_retry_fp_smoke_final_20261007、artifacts/mechanism_retry_layer_smoke_final_20261007（忽略目录）；verification.json公开计数和绑定hash。独立audit核对24组预测/指标/来源、186个冻结tensor、6项残差风险恒等式。H32/1层/2epoch，每任务8train查询、4valid查询，不作为性能证据。完整screen配置H256/3层/100epoch上限已保存但未执行；不保证公式蕴含泛化提升，不保证原创或发表。提交前核验diff/文件边界/公开内容，推送独立分支后核对远端SHA。

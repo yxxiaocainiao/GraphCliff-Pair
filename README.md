@@ -188,3 +188,6 @@ seed43在14/18组完成后发生CUDA非法指令，随后在新目录复用14完
 
 
 老师汇报图：[GraphCliff六张改动位置图与PDF](docs/figures/graphcliff_changes_20261006/README.md)。区分暂停实验与Chemprop可靠性方向，未定核心不画成已完成模型。
+# 2026-10-07 独立机制重试分支
+
+`codex/residual-fp-centered-cross-20261007` 分别实现预测空间残差FPPool及相对自身注意力中心化的逐层LongPoly替换，组合仅作消融。见[候选公式、反例、对照与入口](experiments/mechanism_retry/README.md)。46项测试及最终24组小样本冒烟通过；完整效果筛查未运行，不能称有效最终模型；旧实验停止状态不改。

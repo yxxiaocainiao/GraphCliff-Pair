@@ -1,0 +1,78 @@
+{
+  "status": "exploratory validation-only retry; no efficacy established",
+  "datasets": [
+    "CHEMBL287_Ki",
+    "CHEMBL2047_EC50"
+  ],
+  "seeds": [
+    42
+  ],
+  "split_seed": 42,
+  "hidden_size": 256,
+  "num_layers": 3,
+  "heads": 4,
+  "epochs": 100,
+  "schedule_epochs": 100,
+  "warmup_epochs": 10,
+  "patience": 15,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "min_lr": 1e-06,
+  "weight_decay": 1e-05,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "gradient_clip": 1,
+  "alpha_max": 1,
+  "weight_cap": 3,
+  "arms": [
+    {
+      "name": "base",
+      "variant": "direct",
+      "readout": "sag",
+      "loss": "mse"
+    },
+    {
+      "name": "feature_joint",
+      "variant": "fp_feature",
+      "readout": "fppool",
+      "loss": "mse",
+      "space": "feature",
+      "frozen": false
+    },
+    {
+      "name": "output_joint",
+      "variant": "fp_output",
+      "readout": "fppool",
+      "loss": "mse",
+      "space": "output",
+      "frozen": false
+    },
+    {
+      "name": "feature_frozen",
+      "variant": "fp_feature",
+      "readout": "fppool",
+      "loss": "mse",
+      "space": "feature",
+      "frozen": true
+    },
+    {
+      "name": "output_frozen",
+      "variant": "fp_output",
+      "readout": "fppool",
+      "loss": "mse",
+      "space": "output",
+      "frozen": true
+    },
+    {
+      "name": "output_frozen_null",
+      "variant": "fp_output",
+      "readout": "fppool",
+      "loss": "mse",
+      "space": "output",
+      "frozen": true,
+      "shuffle": true
+    }
+  ]
+}

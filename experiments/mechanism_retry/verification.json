@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-07",
+  "scope": "smoke and implementation only",
+  "unit_tests_passed": 46,
+  "new_contract_tests": 4,
+  "smoke_runs": 24,
+  "epochs_per_run": 2,
+  "hidden_size": 32,
+  "num_layers": 1,
+  "train_queries_per_task": 8,
+  "valid_queries_per_task": 4,
+  "test_evaluated": false,
+  "formal_screen_executed": false,
+  "efficacy_established": false,
+  "audits": [
+    {
+      "output": "D:\\GraphCliff-Pair\\artifacts\\mechanism_retry_fp_smoke_final_20261007",
+      "runs": 12,
+      "source_hashes_checked": 17,
+      "frozen_tensors_checked": 186,
+      "residual_risk_checks": [
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "feature_frozen",
+          "mse_difference": -8.021224031118379e-05,
+          "expansion": -8.021224031115078e-05
+        },
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "output_frozen",
+          "mse_difference": -0.004561924227924896,
+          "expansion": -0.0045619242279248025
+        },
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "output_frozen_null",
+          "mse_difference": -0.004579330322503572,
+          "expansion": -0.00457933032250352
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "feature_frozen",
+          "mse_difference": -0.0002713896099502122,
+          "expansion": -0.00027138960994950673
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "output_frozen",
+          "mse_difference": -0.01658620868933891,
+          "expansion": -0.0165862086893388
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "output_frozen_null",
+          "mse_difference": -0.016763006475486897,
+          "expansion": -0.01676300647548687
+        }
+      ],
+      "test_evaluated": false,
+      "performance_claim": false,
+      "records": [
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "base",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "feature_joint",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "output_joint",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "feature_frozen",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "output_frozen",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL287_Ki",
+          "seed": 42,
+          "arm": "output_frozen_null",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "base",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "feature_joint",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "output_joint",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "feature_frozen",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "output_frozen",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL2047_EC50",
+          "seed": 42,
+          "arm": "output_frozen_null",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "output": "D:\\GraphCliff-Pair\\artifacts\\mechanism_retry_layer_smoke_final_20261007",
+      "runs": 12,
+      "source_hashes_checked": 17,
+      "frozen_tensors_checked": 0,
+      "residual_risk_checks": [],
+      "test_evaluated": false,
+      "performance_claim": false,
+      "records": [
+        {
+          "dataset": "CHEMBL234_Ki",
+          "seed": 42,
+          "arm": "full",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL234_Ki",
+          "seed": 42,
+          "arm": "self",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL234_Ki",
+          "seed": 42,
+          "arm": "cross",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL234_Ki",
+          "seed": 42,
+          "arm": "centered",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL234_Ki",
+          "seed": 42,
+          "arm": "full_fp",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL234_Ki",
+          "seed": 42,
+          "arm": "centered_fp",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL244_Ki",
+          "seed": 42,
+          "arm": "full",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL244_Ki",
+          "seed": 42,
+          "arm": "self",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL244_Ki",
+          "seed": 42,
+          "arm": "cross",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL244_Ki",
+          "seed": 42,
+          "arm": "centered",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL244_Ki",
+          "seed": 42,
+          "arm": "full_fp",
+          "count": 4
+        },
+        {
+          "dataset": "CHEMBL244_Ki",
+          "seed": 42,
+          "arm": "centered_fp",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "code_sha256": {
+    "experiments\\mechanism_retry\\audit.py": "a3bee5de3c4e3ca378eb2696ab88e1fd1ed93ac86bdb900f2f8d4d02da448c28",
+    "experiments\\mechanism_retry\\model.py": "14f2c2c0855e402bc53576c2fdca2181f2a9da7dcfb7713d30e4dbd7b39b2fe3",
+    "experiments\\mechanism_retry\\run.py": "e5c20d0e7add31047c90e691c70302effd89d1f031b956200159eb2a2a6fa119",
+    "experiments\\mechanism_retry\\__init__.py": "8d5f86dcbbb2d52118e08dcd14c744d8fb2d07f91831bf83ff5ff8a4463cc196"
+  }
+}
