@@ -1,5 +1,11 @@
 # Milestone log
 
+## M43 — 2026-10-07 问题定位与方案讨论
+
+接续M40—M42及指定证据，保留可靠性主线，具体候选扩训继续停止，可信新核心仍0。交付[问题定位报告](research/problem_localization_20261007/report.md)：唯一优先讨论同查询固定点预测下OOF/full合法reference变化与接受损失；DEUP/UNIQUE等已覆盖普通误差学习/数据集相关特征，不能把reference匹配或均值改名创新。最低成本反证仅讨论，未执行；0fit/模型推理/真实特征重算/新划分/官方test/搜索。
+
+本轮只六份文档改动；历史报告、模型/数据/权重与原GraphCliff/my_work只读。技能缺失、网页访问失败和错路径已在报告登记。原始数值/源码/历史报告hash、文档链接与改动边界核验见[evidence.json](research/problem_localization_20261007/evidence.json)；按授权核验后commit/push，不自动进入检查或训练。
+
 ## M0 — 2026-10-04
 
 建立终极目标、只读原项目边界、分阶段验收、来源记录和上传排除规则。源码/实验尚未实现；后续逐项记录验证结果与 GitHub commit。

@@ -1,0 +1,331 @@
+{
+  "date": "2026-10-07",
+  "milestone": "M43",
+  "scope": "problem localization and discussion only",
+  "baseline_local_and_remote": "e12fd1d3e20c9c4c6eeed9c918dffa2a3b0af28d",
+  "current_new_algorithm_cores": 0,
+  "actual": {
+    "fits": 0,
+    "point_model_inference": 0,
+    "risk_model_inference": 0,
+    "real_feature_recomputation": 0,
+    "new_splits": 0,
+    "official_test_records": 0,
+    "parameter_search": 0
+  },
+  "proposed_check_not_executed": {
+    "risk_predict_batches": 24,
+    "risk_output_rows": 8068,
+    "cpu_wall_cap_seconds": 600,
+    "authorization": "not authorized to execute by this discussion deliverable"
+  },
+  "inputs": [
+    {
+      "path": "docs/reports/teacher_brief_20261006/report.md",
+      "worktree_sha256": "e0d178e43554970a10db093f5d24f3dbac6c9940cfd7f4e7c41f8750a8dd1281",
+      "baseline_git_blob_sha256": "3a525dcd9d324a56eda7ebc31cd718541552e79e28ff279618ce1d3c61a88893",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "docs/research/module_pause_review_20261006/report.md",
+      "worktree_sha256": "c936641eb644e6069bb6aa7337d3fdcf9a40556be1a24d58571ac742957392db",
+      "baseline_git_blob_sha256": "001ab53bb02f9eb91e810c428b742aa3a7f030f7cb9f6c6276e427203b8e828b",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "docs/research/reliability_core_review_20261006/report.md",
+      "worktree_sha256": "e9e75655ebfcf1d202415fd4cf7ddd11bf5cb1fd9a4763229ea42aba0c0ea6fd",
+      "baseline_git_blob_sha256": "354939a1be13358e68f921971cd1472139406f0bb609ae86e36bdd436687c1d2",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "docs/research/component_roughness_pilot_20261006/report.md",
+      "worktree_sha256": "6ba213f4f28f76550d915be3693e928065f0e486da51005861ec92bfce76a40c",
+      "baseline_git_blob_sha256": "d25a1192139f8f70f79b9c5f6c9e7deb16f7f204d0ab17639d666941e3751acb",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "docs/research/component_roughness_cases_20261006/report.md",
+      "worktree_sha256": "c363092a05d68e706aec3b8bbb1dd3991a2f94f6aa30805d7b06657c166a2bc2",
+      "baseline_git_blob_sha256": "f39614d985af8fdcf5675c5bc8eb11691c8160ef6556e0fb80c51977cbd36952",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "docs/research/publication_assets_20261006/report.md",
+      "worktree_sha256": "6f7f04182c561c3fe5593b74fe33755d508ab85bbbe6945e898047f628b5fc74",
+      "baseline_git_blob_sha256": "8a7cbc9a6c9c6139ba305b77e5e5dbd2a74ba13b1fd3375673be4f70f227ab13",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "experiments/reliability_base/phase_a_report.md",
+      "worktree_sha256": "816e91ba936c7e10862a4f921f491573e98c98d7055002b817db44d153e51b41",
+      "baseline_git_blob_sha256": "d93b1445d8c067c76216c8b5533be9168df4f345e27f5af53a9ab21a08cadde2",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "experiments/reliability_base/phase_a_results.json",
+      "worktree_sha256": "1a599ae818c72a296c4ef55b1943e47f2d0782a155803007c5e7175d08aae593",
+      "baseline_git_blob_sha256": "eab3f216617ae80ca3abde12bc25cf45ecf41d4a612ba4e9cac35aea8b04b9d9",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "experiments/reliability_base/objective_diagnostic_report.md",
+      "worktree_sha256": "a7179b9467dd3291e762fc96f1a450be3f0eef490653e91695a673f728789c0e",
+      "baseline_git_blob_sha256": "77e3f15121c115dc4c23860f2fd55c6083f64b97a93da40618a94c55f49a3aff",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "experiments/reliability_base/support_diagnostic_report.md",
+      "worktree_sha256": "361454704b53a875a191fd714870c6021cf512e2863dd4c6683ed9aba286c996",
+      "baseline_git_blob_sha256": "fc4c655697bd9b1b7cdbba673a5b4f6beadec8e3a5ece4a516f392fd2ab11c72",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "docs/research/component_roughness_pilot_20261006/results.json",
+      "worktree_sha256": "04ac5a445f06986be4e6aeeb6d3ade6f43fae668ea8736e1bfd000660d05f846",
+      "baseline_git_blob_sha256": "40178743e19e4195219cefdafd523c84d56099a1e31506020a709afe29f751c5",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "experiments/reliability_base/run_phase_a.py",
+      "worktree_sha256": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+      "baseline_git_blob_sha256": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "experiments/reliability_base/run_component_pilot.py",
+      "worktree_sha256": "4f1ebf853c5c79655bfd3bca88c58cf9a0b7b55d600c5d795acfc245369a33b0",
+      "baseline_git_blob_sha256": "a1954aa6b1673005bd9beecdd541f1c12dea16a6331c65bdca5d9eeaa911c157",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "experiments/reliability_base/run_roughness_permutation.py",
+      "worktree_sha256": "1fb3ad47caf3d18a7889690c1f26257ccba3bc98d9ee551b6ed4d6ec34b73b8f",
+      "baseline_git_blob_sha256": "1fb3ad47caf3d18a7889690c1f26257ccba3bc98d9ee551b6ed4d6ec34b73b8f",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "docs/figures/graphcliff_changes_20261006/manifest.json",
+      "worktree_sha256": "3cd1620317ab16a3fb89c5af75e4a078c1af66116a70ca11617489c90bb46af3",
+      "baseline_git_blob_sha256": "221e02b0b54931fd71d7e8bf90d1d07807d59a3b2d699ffe2c5f0a2f2428f406",
+      "unchanged_normalized_LF": true
+    },
+    {
+      "path": "task_plan.md",
+      "baseline_git_blob_sha256": "07fe43811dc36e1eeb5495297b0e2da1faea09b37c03f59552c5596e8dcce907",
+      "role": "prior plan/log read; intentionally appended current discussion"
+    },
+    {
+      "path": "notes.md",
+      "baseline_git_blob_sha256": "27444f7942f0e29221a8139e6cb59059a46bdd15f168f5830acde7393f36fbe5",
+      "role": "prior plan/log read; intentionally appended current discussion"
+    },
+    {
+      "path": "docs/milestones.md",
+      "baseline_git_blob_sha256": "b1536f270153578873a4586aff7a7e0d08cd5e9e71697f205877681951341d00",
+      "role": "prior plan/log read; intentionally appended current discussion"
+    },
+    {
+      "path": "docs/research/reliability_publication_plan.md",
+      "baseline_git_blob_sha256": "edf155e6c09be5ca485619946a8f3477a4b2aeaa6f53bc4483fce71b3a0ee22f",
+      "role": "prior plan/log read; intentionally appended current discussion"
+    },
+    {
+      "path": "artifacts/roughness_sources_20261005/qsar-landscape-roughness/LICENSE",
+      "sha256": "692eff71860f45438688b0630b92739637cd105e9b086ad6e39d7d2805a0a147",
+      "matches_historical_binding": true
+    },
+    {
+      "path": "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/config.py",
+      "sha256": "f4e1c25a9afc201d2b38dd104c30b69bb6060ca277435115b1cbb2ed21a3e0da",
+      "matches_historical_binding": true
+    },
+    {
+      "path": "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/build_features.py",
+      "sha256": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+      "matches_historical_binding": true
+    },
+    {
+      "path": "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/conformal.py",
+      "sha256": "8fa131d94084d4141c3d27e37cef3e4a712e78c2e2002d663bdd386a3817945f",
+      "matches_historical_binding": true
+    },
+    {
+      "path": "artifacts/roughness_sources_20261005/UNIQUE/LICENSE.md",
+      "current_sha256": "27d53fe57014dae91df0ec17a331af3175b5ff82696bdd929beb5f40e5fcb325",
+      "role": "local fixed-cache read; no new remote byte equivalence claim"
+    },
+    {
+      "path": "artifacts/roughness_sources_20261005/UNIQUE/unique/error_models/models/random_forest_regressor.py",
+      "current_sha256": "104a570bf1a2010b09beef4facc7c8cd96c842b727445871f1b9421bd03c45d5",
+      "role": "local fixed-cache read; no new remote byte equivalence claim"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2102.08501v4",
+      "evidence_level": "DEUP sections 3.1/3.2 and stationarizing-feature passages; HTML accessed, not full-paper review",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://opensource.nibr.com/UNIQUE/indepth/available_inputs_uq_methods.html",
+      "evidence_level": "official feature/error-model table accessed",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+      "evidence_level": "current README accessed; not same version as historical implementation",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/91522b8b81a52d5c95ae216d01a00cbbf0c66209/LICENSE",
+      "evidence_level": "fixed MIT license accessed",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Novartis/UNIQUE/c6d65b9c63102bc18e68c25c98d76e24650c3e4a/LICENSE.md",
+      "evidence_level": "fixed BSD-3-Clause license accessed after wrong LICENSE path returned 404",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://arxiv.org/abs/1905.02928",
+      "evidence_level": "jackknife+/CV+ abstract accessed; detailed claim also inherits M29 review, not newly full-text verified",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c02381",
+      "evidence_level": "publisher search-index excerpts only; direct full page 403",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12848971/",
+      "evidence_level": "browser verification blocked; no full-text claim",
+      "web_content_sha256": null
+    },
+    {
+      "url": "https://openreview.net/pdf?id=eGLdVRvvfQ",
+      "evidence_level": "verification blocked; DEUP related sections obtained from arXiv HTML",
+      "web_content_sha256": null
+    }
+  ],
+  "numeric_checks": {
+    "phase_A_gains": [
+      {
+        "task": "CHEMBL234_Ki",
+        "gain_pct": 2.0801597642019054
+      },
+      {
+        "task": "CHEMBL244_Ki",
+        "gain_pct": 2.487216411758386
+      },
+      {
+        "task": "CHEMBL4792_Ki",
+        "gain_pct": 3.76009360090811
+      }
+    ],
+    "M38_candidate_vs_same_support": [
+      {
+        "task": "CHEMBL234_Ki",
+        "gain_pct": 0.7677536135032859
+      },
+      {
+        "task": "CHEMBL244_Ki",
+        "gain_pct": -2.576838791734337
+      },
+      {
+        "task": "CHEMBL4792_Ki",
+        "gain_pct": -1.2731487710339273
+      }
+    ],
+    "macro_gain_pct": -1.1245173478098724
+  },
+  "checks": {
+    "protected_tracked_inputs_equal_baseline_after_LF_normalization": true,
+    "fixed_author_source_hashes_match": true,
+    "new_report_local_links": [
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../../../experiments/reliability_base/phase_a_report.md",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../../../experiments/reliability_base/objective_diagnostic_report.md",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../../../experiments/reliability_base/support_diagnostic_report.md",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../component_roughness_pilot_20261006/report.md",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../component_roughness_cases_20261006/report.md",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../publication_assets_20261006/report.md",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../../reports/teacher_brief_20261006/report.md",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../../figures/graphcliff_changes_20261006/gallery.html",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../../../experiments/reliability_base/run_phase_a.py",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "../../../experiments/reliability_base/run_component_pilot.py",
+        "exists": true
+      },
+      {
+        "from": "docs/research/problem_localization_20261007/report.md",
+        "target": "evidence.json",
+        "exists": true
+      }
+    ],
+    "git_diff_scope": [
+      "docs/milestones.md",
+      "docs/research/reliability_publication_plan.md",
+      "notes.md",
+      "task_plan.md"
+    ],
+    "no_model_loaded_or_experiment_entrypoint_executed": true
+  },
+  "review": {
+    "source": "Historical figures checked against existing aggregate JSON; official web access levels explicit",
+    "logic": "Candidate stop distinct from mainline retention; reference sensitivity is neither harm nor cause nor novelty",
+    "unknown": "No controlled reference result, correction formula, cross-seed/ensemble/fidelity or publication claim"
+  },
+  "anomalies": [
+    "expression-skill/planning-with-files absent in standard roots",
+    "batched output truncated; key reports reread separately",
+    "wrong UNIQUE LICENSE and models.py URLs; corrected using LICENSE.md and existing local RF source",
+    "ACS/PMC/OpenReview access blocked; CV+ HTML failed; no full-text claim"
+  ],
+  "changed_files": [
+    "task_plan.md",
+    "notes.md",
+    "docs/milestones.md",
+    "docs/research/reliability_publication_plan.md",
+    "docs/research/problem_localization_20261007/report.md",
+    "docs/research/problem_localization_20261007/evidence.json"
+  ],
+  "untouched": "original repositories, all code/config/model/data/prediction/weight files, historical reports and six diagrams; verified current-repository git scope, did not rescan all external repositories",
+  "deliverable_sha256": "961eb20914fb16d63432b6b88a2879dab55728e7eccce4596803f938dfb42c6d"
+}

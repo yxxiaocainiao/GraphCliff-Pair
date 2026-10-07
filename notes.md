@@ -1,5 +1,11 @@
 # Findings and decisions
 
+## M43 — 2026-10-07 接续选题讨论
+
+起点本地/远端main=e12fd1d3e20c9c4c6eeed9c918dffa2a3b0af28d、工作树干净。读取指定计划/报告和现有源码，不新建项目。保留可靠性主线与底座，粗糙度/局部均衡及旧模块继续停止；可信新核心仍0。唯一优先问题是固定点预测下合法reference变化是否损害接受排序；效应未被同查询设计验证。DEUP相关方法节、UNIQUE官方文档/本地源码及粗糙度当前README限制“reference感知”创新表述；简单子采样平均只作基线。
+
+交付docs/research/problem_localization_20261007/report.md/evidence.json，包含一个未执行的零拟合受控检查设计、反证/止损、复用入口和解释边界。0fit/模型推理/真实特征重算/新划分/test/调参。本轮只文档，未触碰原项目、旧产物或六图。expression/planning技能缺失；批量读取截断后关键报告分读；UNIQUE错误LICENSE/models路径定位纠正；ACS403、PMC/OpenReview验证、CV+HTML访问失败保留，DEUP改读arXiv HTML。不把异常当性能失败。来源/hash/链接/数值/改动范围验证通过后commit/push，远端SHA另行核对。
+
 2026-10-04：用户明确底座 GraphCliff，三项机制为跨分子 Cross-Attention、FPPool、动态加权 Loss；授权按小里程碑推送，随后明确公开仓库。
 
 原项目存在 README 修改与大量 untracked 研究文件。只读引用，全部留在原处。
