@@ -1,0 +1,81 @@
+{
+  "milestone": "M54",
+  "date": "2026-10-07",
+  "status": "frozen_before_execution",
+  "input_commit": "150a5161a4c42ecf72c3467a2d85472254139c65",
+  "authorization": "User approved continuing M53 question; bounded observational diagnosis only, no training or model use",
+  "tasks": [
+    "CHEMBL234_Ki",
+    "CHEMBL244_Ki",
+    "CHEMBL4792_Ki"
+  ],
+  "cache_root": "artifacts/reliability_phase_a_20261005_v3",
+  "manifest_root": "artifacts/reliability_protocol_20261005_v2",
+  "author_features": "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/build_features.py",
+  "output": "artifacts/model_conditioned_pair_diagnostic_20261007",
+  "inputs_sha256": {
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+    "docs/research/model_conditioned_pair_diagnostic_20261007/diagnose.py": "2df569079c30f3f6b1377af2de627c2c78edfc6d5b02e6b1cdb252d69241816e",
+    "docs/research/query_pair_direction_review_20261007/report.md": "19fca10695529c265b3ba6dc77fe06aee6a3143375823bd9c227424fec390611",
+    "docs/research/residual_roughness_review_20261007/report.md": "5f4939abcfacac869214a657a850e543cdedbf19b9a6e066209112f1be9b796f"
+  },
+  "software": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "rdkit": "2026.3.4"
+  },
+  "wall_seconds": 120,
+  "external_supervisor_timeout_seconds": 150,
+  "max_batches": 6,
+  "max_fingerprint_rows": 2017,
+  "structural_pair_rule": "Within one task and role only, binary Morgan radius2/2048 via pinned author featurize; 0.9 <= Tanimoto < 1.0; identical fingerprints counted and excluded; canonical/source_row order sets orientation; structure only, no label or prediction enters pairing",
+  "sensitivity": "Descending similarity then endpoint row order; greedy matching before any label selection; each endpoint used at most once. Sensitivity, not unbiased sampling or proof of independent observations.",
+  "label_subset": "After structure-only pairing, abs(y_i-y_j)>=1 log10 unit. Analysis subset, not full official MoleculeACE AC definition; true labels used only for evaluation.",
+  "identity": "mean(e_i^2,e_j^2)=((e_i-e_j)/2)^2+((e_i+e_j)/2)^2; first is quarter squared delta prediction error, second common bias. Standard identity, not original algorithm.",
+  "metrics": [
+    "pair counts and unique endpoints",
+    "pair RMSE",
+    "contrast RMS",
+    "common bias RMS",
+    "contrast fraction of aggregate pair MSE",
+    "delta MAE",
+    "sign accuracy only in abs(true delta)>=1 subset",
+    "Descriptive Spearman of mean cached SALI / mean cached augmented risk against contrast2/common2/pair_mse; null for <3 pairs or constant, no p value"
+  ],
+  "reporting": "All six task/role batches x all/disjoint x all_structural/delta_at_least_1; no posthoc thresholds/cases/subgroups. Pairs share endpoints; point-MSE here is pair-weighted, not original whole-partition RMSE.",
+  "interpretation": "Small delta error alone cannot certify low absolute error, learned chemistry or deployable identification. Coupling formula not reactivated. Pair labels not legal features at deployment.",
+  "actual_limits": {
+    "fits": 0,
+    "model_loads": 0,
+    "model_predict_calls": 0,
+    "new_risk_features": 0,
+    "official_test_rows_read": 0,
+    "parameter_search": 0
+  },
+  "stopping": "Any guard/failure/budget stops; no automatic retry, threshold reduction or new group. Sparse pairs or absence of lawful identifier means evidence gap, not rescue training.",
+  "privacy": "Per-pair identities/predictions/labels remain ignored; public aggregates/protocol/code/source hashes only",
+  "sources": [
+    {
+      "url": "https://github.com/molML/MoleculeACE",
+      "level": "Official README excerpt, .9 similarity and 10-fold potency example"
+    },
+    {
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.2c01073",
+      "level": "Publisher-indexed primary methods excerpts: log10 difference and identical ECFP exclusion; no full-text access claimed"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11683855/",
+      "level": "Correction metadata located, not used to assert identical historical data version"
+    }
+  ]
+}

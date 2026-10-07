@@ -398,3 +398,10 @@ M52交付审核：报告复算数量由草稿54纠正为108（9臂×2角色×6�
 复核M52的47冻结输入/4既有交付hash、代码与聚合指标通过；0新增fit/load/predict/真实特征/官方test。三任务单seed的joint对separate宏平均−0.042109%、对radial+0.170559%仅说明未确立增量，不能当统计等效或方向无效。补真实bitset反例：同查询距离/活性差下参考距离1与0.4的SALI2/5，而Q同为2；这说明等距SALI分母抵消，但没有认定它导致真实退化。same9控制有用，separate是前8列确定性函数；9维sqrt抽3列、旧7维抽2列，旧7仅背景。六主要原始来源分阅读层级核查，含2025 iCliff及2026可靠性/粗糙度/解释工作，访问失败和未确认QUAD不作重合证据；UNIQUE固定源码与pipeline确认DiffkNN实际使用predictions/UQ列，不误判为必读查询真值。2次合成审查check均通过，第二次将bitset命名改为wide/close以避免语义倒置，每次81例偏差方差恒等式。保留可靠性主线，当前三点候选暂缓扩大，可信核心0；最值得继续核查是“陡峭变化已被固定点模型学会与尚未学会能否合法区分”，这是M48遗留问题而非新算法。参考训练内预测与参考OOF的合法性/偏差合同区分清楚，不拼其他折OOF列泄漏，也不靠普通偏差/方差统计改名创新。交付docs/research/query_pair_direction_review_20261007/report.md、sources.json、checks.py、verification.json；仅追加四计划日志，历史文件和原项目不改。全文/来源/链接/hash/变更范围核验后commit/push；本轮没有可训练新候选或自动训练队列。
 
 M53文档审核补充：明确rf_var不是Chemprop ensemble、OOF/full迁移及最终解释缺口。一处补丁把段内句误作完整行，锚点不匹配且未写入，按完整标题定位补入；交付hash与内部链接再次核验通过，无实验重跑。
+
+
+## M54执行前 — 2026-10-07：同分区缓存预测的成对误差诊断
+
+用户确认继续M53问题核查。本轮先走更低成本的数据路径：calibration/evaluation各自分区内两查询分子均已有固定Chemprop预测，不用参考预测、不拼其他fold OOF、不加载模型/训练。准备冻结三任务seed42六份角色缓存/manifest/作者featurize源码hash；重算仅用于诊断的Morgan指纹，结构Tanimoto≥0.9形成无序对，不跨分区；标签仅事后标记|Δy|≥1的分析子集并计算误差，明确不等同MoleculeACE完整AC定义，不作为部署输入。精确分解平均两端平方误差为共同偏差平方+差值误差平方/4；公开全部六角色结果、成对依赖及结构选取的端点不重复贪心匹配敏感性。先冻结协议与薄脚本、合成核验commit/push，再执行最多六批、120秒/外层150秒墙钟；失败留日志，不降低阈值或加组找阳性。0fit/load/model predict/模型输入特征变更/官方test/参数搜索；原始分子对和逐分子结果仍在ignored artifacts，仅公开聚合。目标为实际问题证据或信息不足报告，不承诺可部署识别、创新或训练。expression-skill/planning-with-files/research-ideation指定技能仍未找到，沿既有计划文件持久记录，继续采用scientific-critical-thinking的事实/解释/假设区分。
+
+M54冻结核验：14输入hash通过；薄脚本直接复用固定作者featurize AST，不导入sklearn/torch/chemprop。两次selfcheck核验分解、共同偏差盲点、T=.9/同指纹排除、贪心不重复与空子集；执行前补配对身份/标签后评价/匹配审计及2017指纹行上限，随后核脚本hash并commit/push。
