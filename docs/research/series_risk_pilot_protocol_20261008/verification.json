@@ -1,0 +1,44 @@
+{
+  "milestone": "M61",
+  "date": "2026-10-08",
+  "protocol_check_runs": 1,
+  "status": "passed",
+  "input_hashes_checked": 6,
+  "role_rows_checked": 2924,
+  "synthetic_exchange_sizes_checked": 6,
+  "local_links_checked": [
+    "../series_risk_transfer_20261007/report.md",
+    "../component_role_feasibility_20261006/report.md",
+    "../series_risk_transfer_20261007/sources.json"
+  ],
+  "operations_this_milestone": {
+    "fits": 0,
+    "model_loads": 0,
+    "predictions": 0,
+    "real_feature_computations": 0,
+    "real_label_prediction_parses": 0,
+    "official_test_reads": 0,
+    "new_splits": 0,
+    "environment_installs": 0
+  },
+  "observed_dependency_gaps": [
+    "SKADA absent",
+    "POT absent"
+  ],
+  "execution_gate": "not authorized; isolated environment and thin adapter pending",
+  "failures_and_incidents": [
+    "PowerShell wildcard path passed to rg failed; subsequent directory plus glob search succeeded.",
+    "Initial metadata shape inspection printed the list of row/component/role identifiers instead of key names; no structures, labels, predictions or weights printed; no per-molecule output committed. Later checks emit aggregate counts only."
+  ],
+  "sources": {
+    "kde": "https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KernelDensity.html",
+    "scaler": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html",
+    "pca": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html",
+    "version_note": "Web docs 1.9.1; local 1.9.0 Scott formula read statically."
+  },
+  "artifact_sha256": {
+    "report.md": "bc8aceb7ce7da5f209bdaaf2e741a6000e6465cdf713c34377a1e9ecc43b7f33",
+    "protocol.json": "6de1b48e9fd060f95bb557b801d8ff320b63b3e3a98ffc2e86a05db07a4ee60a",
+    "check.py": "bdd159c2d6e365a320d314cc9b1740007f961cb94f5317de8b1b9776a95a64b8"
+  }
+}

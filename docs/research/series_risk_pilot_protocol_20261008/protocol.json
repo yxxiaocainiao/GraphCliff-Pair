@@ -1,0 +1,176 @@
+{
+  "milestone": "M61",
+  "date": "2026-10-08",
+  "status": "design_frozen_not_execution_authorized",
+  "task": "CHEMBL234_Ki",
+  "seed": 42,
+  "private_roles_manifest": "artifacts/component_role_feasibility_20261006/CHEMBL234_Ki_tentative_roles.json",
+  "input_sha256": {
+    "artifacts/component_role_feasibility_20261006/CHEMBL234_Ki_tentative_roles.json": "6548599c61aa6a073f0dd816a1f32eef958c2f054ea655e94cffe586b830551d",
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "artifacts/reliability_phase_a_20261005_v2/author/src/build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+    "artifacts/reliability_phase_a_20261005_v2/CHEMBL234_Ki/full/effective_cli_defaults.json": "253464080f13bac41c5cca4aa981bc88126749a543766ea5ed9361963e918144",
+    "docs/research/component_role_feasibility_20261006/protocol.json": "820bdc6ef0fc20b045cd928323172e4595b60ef67582247ddd860464436b015d",
+    "docs/research/series_risk_transfer_20261007/sources.json": "a49d402bc3268887f4171d1eb06227af8fd71fa696babb19943848054d0ada04"
+  },
+  "roles": {
+    "fit": 1403,
+    "monitor": 351,
+    "calibration": 585,
+    "evaluation": 585
+  },
+  "oof_query_rows": [
+    468,
+    468,
+    467
+  ],
+  "oof_reference_rows": [
+    935,
+    935,
+    936
+  ],
+  "target_batch": "evaluation_only_no_labels",
+  "calibration": "unused_no_predictions_no_label_read",
+  "risk_columns": [
+    "prediction",
+    "nn_sim",
+    "local_dens",
+    "mol_size",
+    "rf_var",
+    "nbr_disp",
+    "sali_mean"
+  ],
+  "risk_target": "absolute_oof_error",
+  "risk_rf": {
+    "n_estimators": 200,
+    "max_features": "sqrt",
+    "min_samples_leaf": 5,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "aux_rf": {
+    "n_estimators": 200,
+    "max_features": "sqrt",
+    "random_state": 0,
+    "n_jobs": -1
+  },
+  "point_model": {
+    "library": "chemprop",
+    "version": "2.2.3",
+    "epochs": 50,
+    "patience": 15,
+    "batch_size": 64,
+    "data_seed": 42,
+    "pytorch_seed": 42,
+    "monitor_rows": 351,
+    "historical_effective_defaults": "artifacts/reliability_phase_a_20261005_v2/CHEMBL234_Ki/full/effective_cli_defaults.json"
+  },
+  "arms": [
+    "RF7",
+    "IW-GEN5",
+    "IW-STRUCT7",
+    "IW-RISK7"
+  ],
+  "weight_dimensions": {
+    "IW-GEN5": 5,
+    "IW-STRUCT7": 7,
+    "IW-RISK7": 7
+  },
+  "density": {
+    "adapter": "DensityReweightAdapter",
+    "skada_commit": "31f2ff8b6492bba0d8a28cd8296952b33123563b",
+    "bandwidth": "scott",
+    "kernel": "gaussian",
+    "metric": "euclidean",
+    "atol": 0,
+    "rtol": 0,
+    "fit_source_and_target_separately": true,
+    "source_rows": 1403,
+    "target_rows": 585,
+    "normalization": "mean_source_weight_1",
+    "clipping": null,
+    "relative_weighting": false
+  },
+  "scaler": {
+    "class": "StandardScaler",
+    "fit": "source_only",
+    "with_mean": true,
+    "with_std": true,
+    "fit_count": 2,
+    "gen5_reuses_risk7_columns": true
+  },
+  "structure_projection": {
+    "class": "PCA",
+    "n_components": 7,
+    "svd_solver": "full",
+    "whiten": false,
+    "fit": "source_only",
+    "input": "Morgan radius2 2048 bits",
+    "rank_below_7": "stop"
+  },
+  "coverage_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "expected_accept_counts": [
+    293,
+    351,
+    410,
+    468,
+    527,
+    585
+  ],
+  "sort": [
+    "risk",
+    "canonical",
+    "source_row"
+  ],
+  "rounding": "ceil",
+  "primary_metric": "mean_of_six_rmse",
+  "necessary_continuation_condition": "IW-RISK7 curve mean strictly below each of RF7, IW-GEN5, IW-STRUCT7; not sufficient Go",
+  "weight_numeric_stop": [
+    "nonfinite",
+    "nonpositive_mean",
+    "fewer_than_2_positive_source_weights",
+    "adapter_uniform_fallback_warning"
+  ],
+  "budget": {
+    "chemprop_fits": 4,
+    "chemprop_predict_batches": 4,
+    "chemprop_predicted_rows": 1988,
+    "auxiliary_activity_rf_fits": 4,
+    "feature_batches": 4,
+    "risk_rf_fits": 4,
+    "risk_predict_batches": 4,
+    "risk_predicted_rows": 2340,
+    "kde_fits": 6,
+    "scaler_fits": 2,
+    "pca_fits": 1,
+    "fit_seconds_each": 900,
+    "predict_seconds_each": 120,
+    "feature_seconds_each": 300,
+    "postprocess_seconds": 600,
+    "whole_run_seconds": 5400,
+    "gpu_training_wall_seconds": 3600,
+    "automatic_retries": 0
+  },
+  "evaluation_gate": "all_four_scores_and_config_hash_locked_before_target_label_join",
+  "runtime_versions_observed": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "pandas": "3.0.5",
+    "POT": null,
+    "skada": null,
+    "chemprop": "2.2.3",
+    "rdkit": "2026.3.4"
+  },
+  "installed_kde_source_sha256": "09eb2c30d533863ea932eb8813f1c0a156810da44420740c5fda3aeab1647e3e",
+  "environment_modifications": 0,
+  "real_training_authorized": false,
+  "next_preparation": "thin adapter plus isolated dependency and synthetic dry-run; no training"
+}

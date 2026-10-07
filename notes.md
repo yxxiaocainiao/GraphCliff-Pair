@@ -491,3 +491,21 @@ selfcheck1/prepare1/真实run1/audit1通过；独立标量审核首命令默认G
 最低未来工程先导只234/seed42，以M35角色可行性选定，未按旧性能挑选。缺匹配合法缓存，沿组件协议需3OOF+1full共4次Chemprop fit及合法特征/辅助RF/密度/风险fit，不能拿旧随机缓存冒充系列验证。同信息/同容量的普通RF、GEN5估权而7维风险输入、完整7维估权及标准结构空间估权比较写入卡片；带宽/尺度/独立开发选择角色/支持门槛和完整成本尚未冻结，因此未建立可启动队列。解释沿六覆盖接受交换、极端点敏感性和去粗糙度估权路径，不称化学因果或原子归因。若不能优于最近标准重加权对照，停止升级贡献，不补第二候选。
 
 新增docs/research/series_risk_transfer_20261007/report.md、selfcheck.py、sources.json、verification.json，追加四日志。0真实fit/load/predict/标签预测特征解析或重算/新划分/官方test/参数搜索；模型和训练代码、历史报告/缓存/图、原项目及另一FP/LongPoly worktree均不改。核验后仅明确暂存这8文件，commit/push可靠性分支。下一步是冻结唯一先导的合法合同与预算，训练另需明确授权，不自动启动。
+
+
+## M61执行前 — 2026-10-08：冻结234最小先导的合法合同与预算
+
+用户“继续”接续M60明确下一步，本轮仅准备，不授权训练。P0核现有组件角色/哈希与训练、辅助RF、特征、排序调用路径；P1为唯一风险分布适配冻结source/target/calibration权限、成熟尺度/带宽规则与同信息同容量对照，列出精确fit/预测预算和中断处置；P0作无真实标签/预测/特征读取的元数据与合成协议检查，记录未决条件及执行门槛后明确暂存commit/push。不得运行旧phase-A入口（其三任务协议/补充校准评价并不直接适用），不重分区/新算法候选/参数搜索/安装改环境。expression-skill和planning-with-files指定位置及定向搜索未找到，沿用现有四日志。发现一条PowerShell rg通配路径失败，改用rg目录+glob，不静默当搜索成功。
+
+
+## M61完成 — 2026-10-08：234四臂先导协议与预算冻结，0训练
+
+接续M60唯一适配，冻结234/seed42设计：M35原组件身份fit1403/monitor351/calibration585/evaluation585，折查询468/468/467、参考935/935/936。calibration整块保留，不生成预测；仅evaluation无标签证据参与目标密度，四臂分数/配置hash锁定后才接目标真值。原phase-A源码query fixture y=0占位、辅助RF seed0与风险RF seed42区别、训练/早停路径已核；不直接运行其旧三任务总入口或带calibration的metrics函数。固定CSV y尺度，不能与M35的pKi统计列混接。
+
+四臂RF7、IW-GEN5、IW-STRUCT7、IW-RISK7；共享未缩放7维风险输入/absOOF监督/200树sqrt叶5 seed42。唯一候选为IW-RISK7，GEN5去粗糙度估权路径；STRUCT7用同Morgan source-only PCA7以匹配候选估权维数，只作有限基础对照，不冒称充分域适应对照。source-only scaler两次（GEN5复用7维scaler子列）；SKADA DensityReweightAdapter算权后接原风险输入，避免直接管线改变RF输入。固定Scott规则，各端n^(-1/(d+4))，无标签调参、截断、相对权重或门控。GEN5估权维度/带宽不同，不称密度估计容量完全相同。
+
+未来上限4Chemprop fit/4批predict共1988行、4辅助活性RF及4特征批次、4风险RF/4批predict2340行、6KDE、1PCA、2scaler。每训练900秒、推理120秒、特征300秒、后处理600秒，总5400秒先到先停，单步和5880秒不保证完成；串行单设备、GPU训练wall至多3600秒。失败记日志，0自动重试/扩任务seed/搜索。主指标沿原六接受比例排序/ceil，585行接受293/351/410/468/527/585；候选均值低于全部三个对照仅为继续讨论必要条件，非显著性或充分Go。固定交换恒等式/极端点敏感性/权重ESS解释，不能用Gaussian正密度或ESS证明支持及条件误差稳定。
+
+本轮一个stdlib检查一次通过：六输入hash、2924条角色身份、组件角色/折互斥、三折参考、预算、六个合成交换规模及并列/100%/MSE恒等式；未解析真实分子结构、标签、预测或特征。SKADA/POT缺失，0安装，隔离环境与薄适配尚未准备。一次rg通配路径错误改为目录glob；一次元数据shape输出误把身份列表打印为key（无结构/标签/预测/权重），已记录，公开文件仅聚合/hash，后续不输出个体。没有训练失败/重跑。expression-skill/planning-with-files定向查无，继续现有计划文件。
+
+新增docs/research/series_risk_pilot_protocol_20261008/report.md、protocol.json、check.py、verification.json，追加四日志；模型/训练代码、历史报告/缓存/图、原项目、另一个FPPool/LongPoly worktree保持。0fit/load/predict/真实特征计算/标签预测数值解析/新划分/官方test/参数搜索。下一步是此单协议的薄适配和无训练dry-run；真实4模型训练仍需明确授权，不因本次“继续”自动启动。核验明确8文件暂存并commit/push可靠性分支。
