@@ -494,3 +494,10 @@ M47完成：有限方法核查发现NeurIPS2016 Robust Baseline Regret已提出�
 用户授权设定有停止条件目标继续，仅方法研究。独立提出真实差值扣除预测差值的完整邻居对能量R；严格推得R=2倍局部带符号残差样本方差，补均值平方即恢复普通局部残差MSE，故不作原创核心推进。常数偏置反例R=0而MSE=25；原三折reference邻居的OOF模型训练集包含当前训练查询，直接拼接会有查询标签间接依赖，未运行模型测影响，不能追认旧无此输入的特征泄漏。独立AI反方核数学/依赖路径，不称外部专家评审。Springer出版全文Local error/Error model和UNIQUE官方表核验；PMC验证码及EuropePMC/Wiley失败留日志，非全文的PRESS条目不用于论证。
 
 新增docs/research/residual_roughness_review_20261007/report.md、selfcheck.py、verification.json，同步四份计划日志。1次纯合成自检通过：4组代数/平移、3无效输入、4邻居训练集合依赖；0真实fit/load/predict/特征/test/调参，训练代码、模型、配置、六图、历史报告及原项目不改。可信核心仍0，可靠性主线保留；不加权/门控换名救该候选，不扩训，不自动替换另一候选。来源/逻辑/未知及公开边界核验后提交推送当前codex/paired-increment-plan-20261007，远端另核SHA。
+
+
+## M49：2026-10-07 接受名单交换诊断（执行前冻结）
+
+用户明确授权实施计划：先核234/244/4792、seed42六张cal/eval缓存及角色/哈希，只比较普通5维/增强7维保存分数；沿用原六接受率、风险/canonical/source_row排序及ceil人数。固定交集/新增/剔除、平方误差净贡献恒等式与逐个贡献归零敏感性（原分母，不冒称合法删除后曲线）；公布全部36组及15个非全接受cal/eval符号配对，不找阈值或追加分组。最多1次真实缓存诊断，wall上限120秒；0fit/load/predict/真实特征/test/参数搜索。通过一个标准库脚本自检后，执行前协议与脚本先提交；完成后核验并commit/push。第二阶段仅在存在部署时合法识别的真实问题时定义最多1候选，否则另交方法缺口/停止记录，不补位。
+
+来源/协议docs/research/acceptance_exchange_20261007/protocol.json。expression-skill、planning-with-files和results-analysis查无，沿用现有持久计划；使用scientific-critical-thinking证据分层，不安装技能。失败/中断保留私有execution.json，不静默补跑。
