@@ -31,4 +31,16 @@
 4. 核心完成后独立重算指标、checkpoint重放及反对称/身份/来源检查，按规则继续或停止，交付中文报告和机器核验；不在中途换候选或救结果。
 5. 只提交本方向文件，核对逐文件diff，推送本分支；不自动合并，不修改对方计划。
 
-当前：4项契约检查及四臂H256/3层实际大图batch32前后向通过；attention三臂初始化hash完全一致，centered峰值1591.10 MiB。输入234为2632train/292valid/128valid-Cliff，244为2229train/247valid/118valid-Cliff。无优化步骤、无正式结果；预检完成，先提交方案后启动8组，组合未启动。
+启动前状态：4项契约检查及四臂H256/3层实际大图batch32前后向通过；attention三臂初始化hash完全一致，centered峰值1591.10 MiB。输入234为2632train/292valid/128valid-Cliff，244为2229train/247valid/118valid-Cliff。预检无优化步骤、无正式结果；先提交方案后启动8组，组合未启动。
+
+执行记录：方案提交并推送 `151cda243d792b3ca596a8cda0e9dcd6e600ba61` 后，23:31:53在本worktree启动核心顺序训练，PID30604。输出 `artifacts/mechanism_retry_layer_core_screen_20261007`，同名前缀stdout/stderr日志及process.json保存启动信息。保持模型/配置/训练来源不变；新增结果核验工具 `tools/report_layer_retry.py`，待全部完成后运行。FP消融仍未启动。
+
+23:44核心4/8完成，234四臂全部完成。centered Overall0.741988735/Cliff0.781514929，full0.745143705/0.822568929，self0.733441879/0.783216506。centered未胜self Overall，已不满足预定继续条件；继续完成244核心四臂以保留完整反证，不追加FP组合或改参数。以上为训练器暂存值，独立checkpoint重放及完整审计仍待全部完成。
+
+23:52核心8/8完成，ALL_DONE、completed.json与进程退出确认，stderr为空。`tools/report_layer_retry.py`完整审计和8个checkpoint独立重放退出0：2156条验证预测最大差8.89e-16，首batch交换/同分子契约各256对误差0，18份源码及两份继承依赖核验、初始化一致性、身份/完整覆盖/最低Overall选权重均通过。244 centered为0.927017222/1.118173686，双指标均胜full/self/cross；两任务合计11/12比较通过，唯一失败为234 Overall相对self。按预定门槛No-Go，不执行4次FP消融、不扩seed/任务、不改选self。
+
+累计fit1167.33秒、19.46分钟，不含准备/重放，官方test评估0。运行中补充了初始化零点导数推导及自动微分核验：RMSNorm有效eps使局部导数约1448，零增量仍为0；只说明零值性质不等于稳定性，不当实际失败归因、不据此调参。中文完整报告及JSON为layer_results_20261007.md/.json。
+
+结果提交范围限定本目录README.md、worktree.md、layer_results_20261007.md/.json和tools/report_layer_retry.py。模型/训练源码/原六臂配置/既有测试均未改；不写可靠性目录或计划，不自动合并。提交前逐路径与diff核对，推送本分支并验证远端SHA。
+
+23:54提交前只读复核：可靠性worktree已自行推进到cb41459d6fce7dd211d4c457583da029df72fae4，其docs/milestones.md、docs/research/reliability_publication_plan.md、notes.md、task_plan.md为另一方向未提交改动；本任务未写入、未暂存这些文件，不把对方HEAD推进当隔离失败，不恢复到旧HEAD。

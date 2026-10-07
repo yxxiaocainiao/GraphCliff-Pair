@@ -1,0 +1,344 @@
+{
+  "date": "2026-10-07",
+  "status": "No-Go for expansion",
+  "primary_candidate": "centered",
+  "optional_fp_ablation_allowed": false,
+  "decisions": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "strict_comparisons": {
+        "full": {
+          "overall_rmse": true,
+          "cliff_rmse": true
+        },
+        "self": {
+          "overall_rmse": false,
+          "cliff_rmse": true
+        },
+        "cross": {
+          "overall_rmse": true,
+          "cliff_rmse": true
+        }
+      },
+      "pass_all": false
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "strict_comparisons": {
+        "full": {
+          "overall_rmse": true,
+          "cliff_rmse": true
+        },
+        "self": {
+          "overall_rmse": true,
+          "cliff_rmse": true
+        },
+        "cross": {
+          "overall_rmse": true,
+          "cliff_rmse": true
+        }
+      },
+      "pass_all": true
+    }
+  ],
+  "rows": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "full",
+      "overall_rmse": 0.7451437049361976,
+      "cliff_rmse": 0.8225689289677225,
+      "noncliff_rmse": 0.6786038163209878,
+      "best_epoch": 5,
+      "epochs_run": 20,
+      "parameters": 6021198,
+      "fit_seconds": 112.67624669999987,
+      "peak_cuda_mib": 517.45947265625,
+      "train_graph_forwards": 105280,
+      "attention_calls_per_batch": 0,
+      "training_attention_calls": 0,
+      "overall_improvement_percent_vs_full": 0.0,
+      "cliff_improvement_percent_vs_full": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "self",
+      "overall_rmse": 0.7334418791808262,
+      "cliff_rmse": 0.7832165063348375,
+      "noncliff_rmse": 0.6921106145643593,
+      "best_epoch": 20,
+      "epochs_run": 35,
+      "parameters": 6810654,
+      "fit_seconds": 220.2087433000006,
+      "peak_cuda_mib": 537.23779296875,
+      "train_graph_forwards": 184240,
+      "attention_calls_per_batch": 6,
+      "training_attention_calls": 17430,
+      "overall_improvement_percent_vs_full": 1.570411945756617,
+      "cliff_improvement_percent_vs_full": 4.784088147150176
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "cross",
+      "overall_rmse": 0.7569638207190743,
+      "cliff_rmse": 0.846890964436921,
+      "noncliff_rmse": 0.6785458035554187,
+      "best_epoch": 4,
+      "epochs_run": 19,
+      "parameters": 6810654,
+      "fit_seconds": 120.18066100000033,
+      "peak_cuda_mib": 537.98779296875,
+      "train_graph_forwards": 100016,
+      "attention_calls_per_batch": 6,
+      "training_attention_calls": 9462,
+      "overall_improvement_percent_vs_full": -1.586286739668392,
+      "cliff_improvement_percent_vs_full": -2.9568385836942945
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "arm": "centered",
+      "overall_rmse": 0.7419887352301202,
+      "cliff_rmse": 0.7815149290962484,
+      "noncliff_rmse": 0.7096109028880728,
+      "best_epoch": 21,
+      "epochs_run": 36,
+      "parameters": 6810654,
+      "fit_seconds": 259.0432154,
+      "peak_cuda_mib": 660.16796875,
+      "train_graph_forwards": 189504,
+      "attention_calls_per_batch": 12,
+      "training_attention_calls": 35856,
+      "overall_improvement_percent_vs_full": 0.42340419508040644,
+      "cliff_improvement_percent_vs_full": 4.990949502918195
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "full",
+      "overall_rmse": 0.9491376324183693,
+      "cliff_rmse": 1.1479496992840517,
+      "noncliff_rmse": 0.7207550420691219,
+      "best_epoch": 2,
+      "epochs_run": 17,
+      "parameters": 6021198,
+      "fit_seconds": 89.96427760000006,
+      "peak_cuda_mib": 610.84130859375,
+      "train_graph_forwards": 75786,
+      "attention_calls_per_batch": 0,
+      "training_attention_calls": 0,
+      "overall_improvement_percent_vs_full": 0.0,
+      "cliff_improvement_percent_vs_full": 0.0
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "self",
+      "overall_rmse": 0.9318545299526908,
+      "cliff_rmse": 1.1419512700467631,
+      "noncliff_rmse": 0.6854237566673314,
+      "best_epoch": 3,
+      "epochs_run": 18,
+      "parameters": 6810654,
+      "fit_seconds": 103.93024530000002,
+      "peak_cuda_mib": 929.27880859375,
+      "train_graph_forwards": 80244,
+      "attention_calls_per_batch": 6,
+      "training_attention_calls": 7560,
+      "overall_improvement_percent_vs_full": 1.8209268998893036,
+      "cliff_improvement_percent_vs_full": 0.5225341529362849
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "cross",
+      "overall_rmse": 0.929353012204444,
+      "cliff_rmse": 1.1230076717696873,
+      "noncliff_rmse": 0.7072049417268231,
+      "best_epoch": 6,
+      "epochs_run": 21,
+      "parameters": 6810654,
+      "fit_seconds": 123.23901940000087,
+      "peak_cuda_mib": 927.43603515625,
+      "train_graph_forwards": 93618,
+      "attention_calls_per_batch": 6,
+      "training_attention_calls": 8820,
+      "overall_improvement_percent_vs_full": 2.0844838027878883,
+      "cliff_improvement_percent_vs_full": 2.1727456812715835
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "arm": "centered",
+      "overall_rmse": 0.9270172215505379,
+      "cliff_rmse": 1.1181736855725863,
+      "noncliff_rmse": 0.7083406054804562,
+      "best_epoch": 6,
+      "epochs_run": 21,
+      "parameters": 6810654,
+      "fit_seconds": 138.08821329999955,
+      "peak_cuda_mib": 1455.9833984375,
+      "train_graph_forwards": 93618,
+      "attention_calls_per_batch": 12,
+      "training_attention_calls": 17640,
+      "overall_improvement_percent_vs_full": 2.3305798982460977,
+      "cliff_improvement_percent_vs_full": 2.5938430690853354
+    }
+  ],
+  "actual_fit_seconds": 1167.3306220000013,
+  "audit": {
+    "output": "D:\\GraphCliff-Pair-FPPool-LongPoly\\artifacts\\mechanism_retry_layer_core_screen_20261007",
+    "runs": 8,
+    "source_hashes_checked": 18,
+    "frozen_tensors_checked": 0,
+    "residual_risk_checks": [],
+    "test_evaluated": false,
+    "performance_claim": false,
+    "records": [
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "full",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "self",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "cross",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "seed": 42,
+        "arm": "centered",
+        "count": 292
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "full",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "self",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "cross",
+        "count": 247
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "seed": 42,
+        "arm": "centered",
+        "count": 247
+      }
+    ]
+  },
+  "checkpoint_replay": {
+    "device": "cuda",
+    "checkpoints": 8,
+    "records": [
+      {
+        "dataset": "CHEMBL234_Ki",
+        "arm": "full",
+        "count": 292,
+        "max_abs_difference": 8.881784197001252e-16,
+        "exchange_max_abs_sum": 0.0,
+        "identical_max_abs_delta": 0.0,
+        "contract_pairs_checked": 32
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "arm": "self",
+        "count": 292,
+        "max_abs_difference": 4.440892098500626e-16,
+        "exchange_max_abs_sum": 0.0,
+        "identical_max_abs_delta": 0.0,
+        "contract_pairs_checked": 32
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "arm": "cross",
+        "count": 292,
+        "max_abs_difference": 4.440892098500626e-16,
+        "exchange_max_abs_sum": 0.0,
+        "identical_max_abs_delta": 0.0,
+        "contract_pairs_checked": 32
+      },
+      {
+        "dataset": "CHEMBL234_Ki",
+        "arm": "centered",
+        "count": 292,
+        "max_abs_difference": 8.881784197001252e-16,
+        "exchange_max_abs_sum": 0.0,
+        "identical_max_abs_delta": 0.0,
+        "contract_pairs_checked": 32
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "arm": "full",
+        "count": 247,
+        "max_abs_difference": 4.440892098500626e-16,
+        "exchange_max_abs_sum": 0.0,
+        "identical_max_abs_delta": 0.0,
+        "contract_pairs_checked": 32
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "arm": "self",
+        "count": 247,
+        "max_abs_difference": 8.881784197001252e-16,
+        "exchange_max_abs_sum": 0.0,
+        "identical_max_abs_delta": 0.0,
+        "contract_pairs_checked": 32
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "arm": "cross",
+        "count": 247,
+        "max_abs_difference": 8.881784197001252e-16,
+        "exchange_max_abs_sum": 0.0,
+        "identical_max_abs_delta": 0.0,
+        "contract_pairs_checked": 32
+      },
+      {
+        "dataset": "CHEMBL244_Ki",
+        "arm": "centered",
+        "count": 247,
+        "max_abs_difference": 8.881784197001252e-16,
+        "exchange_max_abs_sum": 0.0,
+        "identical_max_abs_delta": 0.0,
+        "contract_pairs_checked": 32
+      }
+    ]
+  },
+  "source_commit": "151cda243d792b3ca596a8cda0e9dcd6e600ba61",
+  "config_sha256": "811a62aeae9a6729800b2fa1acfa50dc30f6b3324a34b85de0fbf607a614b5a7",
+  "inherited_dependencies": {
+    "experiments/long_branch_swap/model.py": {
+      "workspace_sha256": "58e76a197a514c1f2a42dab03f2c5759a062b37201e3efa1e4a1d5a8d33d2c39",
+      "commit_lf_sha256": "58e76a197a514c1f2a42dab03f2c5759a062b37201e3efa1e4a1d5a8d33d2c39"
+    },
+    "experiments/long_branch_swap/run.py": {
+      "workspace_sha256": "5eddfc29f5d25fc381351123e90e726ced011d30640e7ac09bd5ed527d4de25b",
+      "commit_lf_sha256": "5eddfc29f5d25fc381351123e90e726ced011d30640e7ac09bd5ed527d4de25b"
+    }
+  },
+  "attention_initialization_equal": true,
+  "head_initialization_equal": true,
+  "centered_local_derivative_check": {
+    "scope": "initialization only; not failure attribution",
+    "effective_eps": 1.1920928955078125e-07,
+    "local_diagonal_derivative": 1448.1546630859375,
+    "predicted_derivative": 1448.1546878700492,
+    "zero_innovation_max_abs": 0.0,
+    "optimization_steps": 0
+  },
+  "test_evaluated": false,
+  "independent_confirmation": false
+}
