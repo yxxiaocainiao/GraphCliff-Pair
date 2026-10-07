@@ -1,5 +1,9 @@
 # Milestone log
 
+## M44 — 2026-10-07 独立增量候选与理论自检
+
+按用户建议，定义[配对增量上界](research/paired_increment_candidate_20261007/candidate.md)：s=a_full+max_b(t_b-a_b)，解释和已有误差学习/普通max鲁棒化的运算差别。三条代理性质及真实误差恶化反例；[标准库合成自检](research/paired_increment_candidate_20261007/selfcheck.py)一次通过，三复用源码未改。没有真实样本/模型/训练/推理/参数搜索；待验证候选1，可信最终核心仍0。普通RF权重缺口及潜在三次拟合成本明确，不自动授权。只改本候选文档/合成检查与计划日志，历史报告/模型/六图和原仓库只读；核验后commit/push。
+
 ## M43 — 2026-10-07 问题定位与方案讨论
 
 接续M40—M42及指定证据，保留可靠性主线，具体候选扩训继续停止，可信新核心仍0。交付[问题定位报告](research/problem_localization_20261007/report.md)：唯一优先讨论同查询固定点预测下OOF/full合法reference变化与接受损失；DEUP/UNIQUE等已覆盖普通误差学习/数据集相关特征，不能把reference匹配或均值改名创新。最低成本反证仅讨论，未执行；0fit/模型推理/真实特征重算/新划分/官方test/搜索。
