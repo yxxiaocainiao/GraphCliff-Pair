@@ -501,3 +501,12 @@ M47完成：有限方法核查发现NeurIPS2016 Robust Baseline Regret已提出�
 用户明确授权实施计划：先核234/244/4792、seed42六张cal/eval缓存及角色/哈希，只比较普通5维/增强7维保存分数；沿用原六接受率、风险/canonical/source_row排序及ceil人数。固定交集/新增/剔除、平方误差净贡献恒等式与逐个贡献归零敏感性（原分母，不冒称合法删除后曲线）；公布全部36组及15个非全接受cal/eval符号配对，不找阈值或追加分组。最多1次真实缓存诊断，wall上限120秒；0fit/load/predict/真实特征/test/参数搜索。通过一个标准库脚本自检后，执行前协议与脚本先提交；完成后核验并commit/push。第二阶段仅在存在部署时合法识别的真实问题时定义最多1候选，否则另交方法缺口/停止记录，不补位。
 
 来源/协议docs/research/acceptance_exchange_20261007/protocol.json。expression-skill、planning-with-files和results-analysis查无，沿用现有持久计划；使用scientific-critical-thinking证据分层，不安装技能。失败/中断保留私有execution.json，不静默补跑。
+
+
+## M49完成 — 2026-10-07：接受名单交换诊断
+
+执行前98e0a8e已push；2次纯合成自检（第二次补符号/集中度断言），1次主诊断成功wall0.076896秒，1次独立45位Decimal复算成功。六缓存2017行、3角色manifest、17输入/脚本/协议SHA前后保持；全部36分区/交换数/三项SSE/两臂RMSE/ΔMSE/逐贡献敏感性及36旧evaluation曲线值通过。evaluation非全接受13/15改善、2/15退化：234@50%对单贡献敏感；4792@90%仅3进3出，逐贡献归零仍退化。cal/eval收益符号8/15同向，两处evaluation退化均cal正向，不能直接用cal符号定位有害交换；覆盖率嵌套，不当独立15实验。
+
+新增docs/research/acceptance_exchange_20261007/report.md及results.json，全36行聚合公开，逐分子身份/误差及执行/复核日志在忽略目录。报告初稿两处手录近似数经JSON核对纠正（10.56%、0.06369022）；不改数据/协议/脚本。0fit/load/predict/真实特征/test/调参，无诊断失败或中断，不重复M30/M31，不新增分组阈值。信源/逻辑/未知及公开范围核验后提交推送；第二阶段候选门槛尚待独立审查，本诊断不等于新算法，核心仍0。原项目、模型/训练代码/配置/历史报告/六图不改。
+
+M49提交审核补记：git diff --cached --check发现新报告末尾多余空行，清理后重新暂存核验；数据、公式与结果不变。
