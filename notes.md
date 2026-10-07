@@ -321,3 +321,6 @@ M42补记：暂存检查发现Matplotlib SVG行末空格，清理6份SVG并在�
 过程：初始3项契约测试及22组smoke通过；新增空边baseline契约发现手工构造Batch无法to_data_list，改用PyG subgraph分图编码并修复。随后4项新契约及全套46项测试通过；补full_fp以完成组合2×2，最终24组smoke全部完成且最佳checkpoint已由训练器重载核验。两阶段合计46个小样本smoke fit，正式有效验收只引用最终24组，不合并成效果矩阵。GPU best-effort确定性限制继承原训练器，不作逐位跨运行复现承诺。全套tests输出的78模型test是临时合成测试fixture，不是运行官方test。
 
 输出：artifacts/mechanism_retry_fp_smoke_final_20261007、artifacts/mechanism_retry_layer_smoke_final_20261007（忽略目录）；verification.json公开计数和绑定hash。独立audit核对24组预测/指标/来源、186个冻结tensor、6项残差风险恒等式。H32/1层/2epoch，每任务8train查询、4valid查询，不作为性能证据。完整screen配置H256/3层/100epoch上限已保存但未执行；不保证公式蕴含泛化提升，不保证原创或发表。提交前核验diff/文件边界/公开内容，推送独立分支后核对远端SHA。
+
+## M46执行前记录 — 2026-10-07
+用户“试试”授权上一轮建议的FP正式先导；已核对独立分支及GPU，无其他训练Python进程。固定主候选output_frozen，287/2047×六臂×seed42共12次，配置不改。执行前方案fp_execution_20261007.md、输入/拆分/null覆盖fp_preflight_20261007.json已保存；源模型/旧结果不改，先提交后训练。expression-skill仍缺失，使用已有计划日志跟踪。

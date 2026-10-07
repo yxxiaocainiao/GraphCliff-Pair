@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-07",
+  "config_path": "experiments\\mechanism_retry\\fp_screen.json",
+  "config_sha256": "02ca03e228ab8cae6679ffad2a88bc481ee6c43d632d2e05199cf466cf602bbf",
+  "training_runs": 12,
+  "test_labels_parsed": false,
+  "formal_training_started": false,
+  "datasets": [
+    {
+      "dataset": "CHEMBL287_Ki",
+      "input_path": "D:\\GraphCliff-main\\benchmark_data\\CHEMBL287_Ki.csv",
+      "input_sha256": "e857875848bb64dc6e327e6c42fe9fd36526bbee1b976de4521b55c4c6629894",
+      "train_count": 955,
+      "valid_count": 106,
+      "valid_cliff_count": 40,
+      "train_pair_count": 955,
+      "valid_pair_count": 106,
+      "null_membership_changed": {
+        "train": {
+          "count": 955,
+          "changed": 955,
+          "fraction": 1.0
+        },
+        "valid": {
+          "count": 106,
+          "changed": 106,
+          "fraction": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "input_path": "D:\\GraphCliff-main\\benchmark_data\\CHEMBL2047_EC50.csv",
+      "input_sha256": "db8946f3daa245ad3e03576aca1e6ea44eda560abd9f730090762a6b68cc8c39",
+      "train_count": 452,
+      "valid_count": 51,
+      "valid_cliff_count": 20,
+      "train_pair_count": 452,
+      "valid_pair_count": 51,
+      "null_membership_changed": {
+        "train": {
+          "count": 452,
+          "changed": 452,
+          "fraction": 1.0
+        },
+        "valid": {
+          "count": 51,
+          "changed": 51,
+          "fraction": 1.0
+        }
+      }
+    }
+  ]
+}

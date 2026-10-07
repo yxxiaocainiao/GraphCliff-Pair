@@ -457,3 +457,13 @@ M44讨论完成：提出s=a_full+max_b(t_b-a_b)，同reference配对两风险臂
 状态：1进行中。expression-skill/planning-with-files指定路径与标准技能目录未找到，沿用已有计划与日志。
 
 M45实现与冒烟完成：独立分支codex/residual-fp-centered-cross-20261007。新增单分子feature/output×joint/frozen及membership null；Pair full/self/cross/centered和full_fp/centered_fp。复用训练器和官方FP适配，分别保持单分子与参考Pair信息条件，组合不充当两个单项的有效证明。公式、残差风险恒等式、同输入零交互、值侧偏置抵消、置换/反对称条件与反例见experiments/mechanism_retry/README.md。46项全套测试、最终24组H32/1层/2epoch/8训练查询/4验证查询冒烟通过；186冻结底座tensor逐位一致，6项残差风险恒等式数值核验通过。正式24组完整筛查未启动，旧队列未恢复，0官方test。实现可复用不等于收益/原创已证实。下一步若继续为固定先导筛查，不从smoke读涨点结论。
+
+## M46：2026-10-07 用户授权正式FPPool先导
+
+用户回复“试试”，承接上一轮建议，执行FP两个任务（287/2047）×六臂×seed42，共12次正式训练上限；逐层替换暂不启动，旧队列保持停止。
+1. P0 核对GPU占用、工作区、固定配置/来源/拆分和Cliff覆盖，执行前保存方案及哈希。
+2. P0 使用已有run入口顺序运行fp_screen.json，不调参、不读官方test标签、不复用旧权重冒充同期底座。
+3. P0 完成后独立audit预测、指标、冻结权重与风险恒等式，报告真实membership扰动覆盖、参数与耗时。
+4. P1 根据已写规则判断继续/停止；保存中文报告、原始目录与输入hash，提交推送当前独立分支并核对SHA。
+
+停止规则：FP输出冻结候选须在两个任务同时降低相对base的Overall/Cliff误差；同时检查是否胜过feature_frozen与membership null。未满足不扩种子/任务，不启动layer组合来补救。单seed不声明普遍有效或无效。输出artifacts/mechanism_retry_fp_screen_20261007；遇失败保留现场，不覆盖重跑。
