@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "date": "2026-10-07",
+  "pre_execution_commit": "62d60c44a09b29458baaae54ff71e364cd048ef8",
+  "frozen_inputs": 14,
+  "fingerprint_rows": 2017,
+  "all_structural_pairs": 18,
+  "unique_analysis_cliff_pairs": 4,
+  "batches": 6,
+  "aggregate_summaries": 24,
+  "selfcheck_runs": 2,
+  "real_fits": 0,
+  "model_loads": 0,
+  "model_predict_calls": 0,
+  "new_risk_features": 0,
+  "official_test_rows_read": 0,
+  "diagnostic_wall_seconds": 0.5469999999622814,
+  "independent_decomposition_max_abs": 2.7755575615628914e-17,
+  "decision": "Insufficient same-role close-pair sample for stable mechanism or deployable candidate; keep reliability line, no threshold relaxation or new training",
+  "deliverable_sha256": {
+    "docs/research/model_conditioned_pair_diagnostic_20261007/diagnose.py": "2df569079c30f3f6b1377af2de627c2c78edfc6d5b02e6b1cdb252d69241816e",
+    "docs/research/model_conditioned_pair_diagnostic_20261007/protocol.json": "f1fa78dd19319b23dc415ca845cc5a8084612b4175fe50a5408a5cf0bf30a380",
+    "docs/research/model_conditioned_pair_diagnostic_20261007/results.json": "92cb4158bc064551358fbf9ba6d81d47c4d0806f8f516a6892ec8bfca3d72ad3",
+    "docs/research/model_conditioned_pair_diagnostic_20261007/report.md": "fdde99fc43ed4ae98040b8da97bf3058e8886aacc7eab95b15afb776451083e2"
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "passed": true,
+  "batches": [
+    {
+      "task": "CHEMBL234_Ki",
+      "role": "calibration",
+      "molecules": 426,
+      "fingerprint_rows": 426,
+      "pairs": 5,
+      "excluded_identical_fingerprint_pairs": 0,
+      "summaries": [
+        {
+          "pairing": "all",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 5,
+            "unique_endpoints": 10,
+            "pair_rmse": 0.37214402224834275,
+            "contrast_rms": 0.23171765430957014,
+            "common_bias_rms": 0.29120113663316216,
+            "contrast_mse_share": 0.3877003136098067,
+            "delta_mae": 0.3519378717731791,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": 0.19999999999999998,
+              "mean_sali_vs_common2": 0.3,
+              "mean_sali_vs_pair_mse": 0.39999999999999997,
+              "mean_augmented_risk_vs_contrast2": 0.19999999999999998,
+              "mean_augmented_risk_vs_common2": 0.7,
+              "mean_augmented_risk_vs_pair_mse": 0.49999999999999994
+            }
+          }
+        },
+        {
+          "pairing": "all",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 1,
+            "unique_endpoints": 2,
+            "pair_rmse": 0.607110594869503,
+            "contrast_rms": 0.19422100693635946,
+            "common_bias_rms": 0.5752055935640998,
+            "contrast_mse_share": 0.10234267845303685,
+            "delta_mae": 0.3884420138727189,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": null,
+              "mean_sali_vs_common2": null,
+              "mean_sali_vs_pair_mse": null,
+              "mean_augmented_risk_vs_contrast2": null,
+              "mean_augmented_risk_vs_common2": null,
+              "mean_augmented_risk_vs_pair_mse": null
+            }
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 5,
+            "unique_endpoints": 10,
+            "pair_rmse": 0.37214402224834275,
+            "contrast_rms": 0.23171765430957014,
+            "common_bias_rms": 0.29120113663316216,
+            "contrast_mse_share": 0.3877003136098067,
+            "delta_mae": 0.3519378717731791,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": 0.19999999999999998,
+              "mean_sali_vs_common2": 0.3,
+              "mean_sali_vs_pair_mse": 0.39999999999999997,
+              "mean_augmented_risk_vs_contrast2": 0.19999999999999998,
+              "mean_augmented_risk_vs_common2": 0.7,
+              "mean_augmented_risk_vs_pair_mse": 0.49999999999999994
+            }
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 1,
+            "unique_endpoints": 2,
+            "pair_rmse": 0.607110594869503,
+            "contrast_rms": 0.19422100693635946,
+            "common_bias_rms": 0.5752055935640998,
+            "contrast_mse_share": 0.10234267845303685,
+            "delta_mae": 0.3884420138727189,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": null,
+              "mean_sali_vs_common2": null,
+              "mean_sali_vs_pair_mse": null,
+              "mean_augmented_risk_vs_contrast2": null,
+              "mean_augmented_risk_vs_common2": null,
+              "mean_augmented_risk_vs_pair_mse": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "CHEMBL234_Ki",
+      "role": "evaluation",
+      "molecules": 448,
+      "fingerprint_rows": 448,
+      "pairs": 5,
+      "excluded_identical_fingerprint_pairs": 0,
+      "summaries": [
+        {
+          "pairing": "all",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 5,
+            "unique_endpoints": 9,
+            "pair_rmse": 0.31708205696528297,
+            "contrast_rms": 0.1394614408774349,
+            "common_bias_rms": 0.2847657587522149,
+            "contrast_mse_share": 0.19344831982831143,
+            "delta_mae": 0.2541046682950765,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": -0.19999999999999998,
+              "mean_sali_vs_common2": 0.19999999999999998,
+              "mean_sali_vs_pair_mse": 0.09999999999999999,
+              "mean_augmented_risk_vs_contrast2": -0.19999999999999998,
+              "mean_augmented_risk_vs_common2": 0.19999999999999998,
+              "mean_augmented_risk_vs_pair_mse": 0.09999999999999999
+            }
+          }
+        },
+        {
+          "pairing": "all",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 1,
+            "unique_endpoints": 2,
+            "pair_rmse": 0.40793038211217036,
+            "contrast_rms": 0.07691459140401025,
+            "common_bias_rms": 0.40061370705373456,
+            "contrast_mse_share": 0.03555047191427704,
+            "delta_mae": 0.1538291828080206,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": null,
+              "mean_sali_vs_common2": null,
+              "mean_sali_vs_pair_mse": null,
+              "mean_augmented_risk_vs_contrast2": null,
+              "mean_augmented_risk_vs_common2": null,
+              "mean_augmented_risk_vs_pair_mse": null
+            }
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 4,
+            "unique_endpoints": 8,
+            "pair_rmse": 0.33892343836485267,
+            "contrast_rms": 0.1191943890358625,
+            "common_bias_rms": 0.31727242977514064,
+            "contrast_mse_share": 0.12368254595574148,
+            "delta_mae": 0.217109372551792,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": -0.39999999999999997,
+              "mean_sali_vs_common2": 0.39999999999999997,
+              "mean_sali_vs_pair_mse": 0.39999999999999997,
+              "mean_augmented_risk_vs_contrast2": -0.39999999999999997,
+              "mean_augmented_risk_vs_common2": 0.39999999999999997,
+              "mean_augmented_risk_vs_pair_mse": 0.39999999999999997
+            }
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 1,
+            "unique_endpoints": 2,
+            "pair_rmse": 0.40793038211217036,
+            "contrast_rms": 0.07691459140401025,
+            "common_bias_rms": 0.40061370705373456,
+            "contrast_mse_share": 0.03555047191427704,
+            "delta_mae": 0.1538291828080206,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": null,
+              "mean_sali_vs_common2": null,
+              "mean_sali_vs_pair_mse": null,
+              "mean_augmented_risk_vs_contrast2": null,
+              "mean_augmented_risk_vs_common2": null,
+              "mean_augmented_risk_vs_pair_mse": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "role": "calibration",
+      "molecules": 375,
+      "fingerprint_rows": 375,
+      "pairs": 4,
+      "excluded_identical_fingerprint_pairs": 0,
+      "summaries": [
+        {
+          "pairing": "all",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 4,
+            "unique_endpoints": 8,
+            "pair_rmse": 0.6241842970887412,
+            "contrast_rms": 0.3253738503357217,
+            "common_bias_rms": 0.5326705306752695,
+            "contrast_mse_share": 0.27173126825822647,
+            "delta_mae": 0.5047704541733976,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": 0.0,
+              "mean_sali_vs_common2": -0.19999999999999998,
+              "mean_sali_vs_pair_mse": -0.39999999999999997,
+              "mean_augmented_risk_vs_contrast2": -0.39999999999999997,
+              "mean_augmented_risk_vs_common2": -0.39999999999999997,
+              "mean_augmented_risk_vs_pair_mse": -0.7999999999999999
+            }
+          }
+        },
+        {
+          "pairing": "all",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 1,
+            "unique_endpoints": 2,
+            "pair_rmse": 0.6088927095953709,
+            "contrast_rms": 0.5534738933041499,
+            "common_bias_rms": 0.2538050063122063,
+            "contrast_mse_share": 0.8262523976265301,
+            "delta_mae": 1.1069477866082997,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": null,
+              "mean_sali_vs_common2": null,
+              "mean_sali_vs_pair_mse": null,
+              "mean_augmented_risk_vs_contrast2": null,
+              "mean_augmented_risk_vs_common2": null,
+              "mean_augmented_risk_vs_pair_mse": null
+            }
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 4,
+            "unique_endpoints": 8,
+            "pair_rmse": 0.6241842970887412,
+            "contrast_rms": 0.3253738503357217,
+            "common_bias_rms": 0.5326705306752695,
+            "contrast_mse_share": 0.27173126825822647,
+            "delta_mae": 0.5047704541733976,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": 0.0,
+              "mean_sali_vs_common2": -0.19999999999999998,
+              "mean_sali_vs_pair_mse": -0.39999999999999997,
+              "mean_augmented_risk_vs_contrast2": -0.39999999999999997,
+              "mean_augmented_risk_vs_common2": -0.39999999999999997,
+              "mean_augmented_risk_vs_pair_mse": -0.7999999999999999
+            }
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 1,
+            "unique_endpoints": 2,
+            "pair_rmse": 0.6088927095953709,
+            "contrast_rms": 0.5534738933041499,
+            "common_bias_rms": 0.2538050063122063,
+            "contrast_mse_share": 0.8262523976265301,
+            "delta_mae": 1.1069477866082997,
+            "sign_accuracy": 1.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": null,
+              "mean_sali_vs_common2": null,
+              "mean_sali_vs_pair_mse": null,
+              "mean_augmented_risk_vs_contrast2": null,
+              "mean_augmented_risk_vs_common2": null,
+              "mean_augmented_risk_vs_pair_mse": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "CHEMBL244_Ki",
+      "role": "evaluation",
+      "molecules": 402,
+      "fingerprint_rows": 402,
+      "pairs": 4,
+      "excluded_identical_fingerprint_pairs": 0,
+      "summaries": [
+        {
+          "pairing": "all",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 4,
+            "unique_endpoints": 8,
+            "pair_rmse": 0.7759793206438231,
+            "contrast_rms": 0.4340051465870591,
+            "common_bias_rms": 0.6432600087078277,
+            "contrast_mse_share": 0.31281636393932566,
+            "delta_mae": 0.71593801330771,
+            "sign_accuracy": 0.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": -0.39999999999999997,
+              "mean_sali_vs_common2": 0.39999999999999997,
+              "mean_sali_vs_pair_mse": 0.19999999999999998,
+              "mean_augmented_risk_vs_contrast2": 0.0,
+              "mean_augmented_risk_vs_common2": 0.19999999999999998,
+              "mean_augmented_risk_vs_pair_mse": 0.39999999999999997
+            }
+          }
+        },
+        {
+          "pairing": "all",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 1,
+            "unique_endpoints": 2,
+            "pair_rmse": 0.7803058514001817,
+            "contrast_rms": 0.7503215721915282,
+            "common_bias_rms": 0.21423062347245314,
+            "contrast_mse_share": 0.9246239497955872,
+            "delta_mae": 1.5006431443830563,
+            "sign_accuracy": 0.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": null,
+              "mean_sali_vs_common2": null,
+              "mean_sali_vs_pair_mse": null,
+              "mean_augmented_risk_vs_contrast2": null,
+              "mean_augmented_risk_vs_common2": null,
+              "mean_augmented_risk_vs_pair_mse": null
+            }
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 4,
+            "unique_endpoints": 8,
+            "pair_rmse": 0.7759793206438231,
+            "contrast_rms": 0.4340051465870591,
+            "common_bias_rms": 0.6432600087078277,
+            "contrast_mse_share": 0.31281636393932566,
+            "delta_mae": 0.71593801330771,
+            "sign_accuracy": 0.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": -0.39999999999999997,
+              "mean_sali_vs_common2": 0.39999999999999997,
+              "mean_sali_vs_pair_mse": 0.19999999999999998,
+              "mean_augmented_risk_vs_contrast2": 0.0,
+              "mean_augmented_risk_vs_common2": 0.19999999999999998,
+              "mean_augmented_risk_vs_pair_mse": 0.39999999999999997
+            }
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 1,
+            "unique_endpoints": 2,
+            "pair_rmse": 0.7803058514001817,
+            "contrast_rms": 0.7503215721915282,
+            "common_bias_rms": 0.21423062347245314,
+            "contrast_mse_share": 0.9246239497955872,
+            "delta_mae": 1.5006431443830563,
+            "sign_accuracy": 0.0,
+            "correlations": {
+              "mean_sali_vs_contrast2": null,
+              "mean_sali_vs_common2": null,
+              "mean_sali_vs_pair_mse": null,
+              "mean_augmented_risk_vs_contrast2": null,
+              "mean_augmented_risk_vs_common2": null,
+              "mean_augmented_risk_vs_pair_mse": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "role": "calibration",
+      "molecules": 179,
+      "fingerprint_rows": 179,
+      "pairs": 0,
+      "excluded_identical_fingerprint_pairs": 0,
+      "summaries": [
+        {
+          "pairing": "all",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 0,
+            "unique_endpoints": 0,
+            "pair_rmse": null,
+            "contrast_rms": null,
+            "common_bias_rms": null,
+            "contrast_mse_share": null,
+            "delta_mae": null,
+            "sign_accuracy": null,
+            "correlations": null
+          }
+        },
+        {
+          "pairing": "all",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 0,
+            "unique_endpoints": 0,
+            "pair_rmse": null,
+            "contrast_rms": null,
+            "common_bias_rms": null,
+            "contrast_mse_share": null,
+            "delta_mae": null,
+            "sign_accuracy": null,
+            "correlations": null
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 0,
+            "unique_endpoints": 0,
+            "pair_rmse": null,
+            "contrast_rms": null,
+            "common_bias_rms": null,
+            "contrast_mse_share": null,
+            "delta_mae": null,
+            "sign_accuracy": null,
+            "correlations": null
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 0,
+            "unique_endpoints": 0,
+            "pair_rmse": null,
+            "contrast_rms": null,
+            "common_bias_rms": null,
+            "contrast_mse_share": null,
+            "delta_mae": null,
+            "sign_accuracy": null,
+            "correlations": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "CHEMBL4792_Ki",
+      "role": "evaluation",
+      "molecules": 187,
+      "fingerprint_rows": 187,
+      "pairs": 0,
+      "excluded_identical_fingerprint_pairs": 0,
+      "summaries": [
+        {
+          "pairing": "all",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 0,
+            "unique_endpoints": 0,
+            "pair_rmse": null,
+            "contrast_rms": null,
+            "common_bias_rms": null,
+            "contrast_mse_share": null,
+            "delta_mae": null,
+            "sign_accuracy": null,
+            "correlations": null
+          }
+        },
+        {
+          "pairing": "all",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 0,
+            "unique_endpoints": 0,
+            "pair_rmse": null,
+            "contrast_rms": null,
+            "common_bias_rms": null,
+            "contrast_mse_share": null,
+            "delta_mae": null,
+            "sign_accuracy": null,
+            "correlations": null
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "all_structural",
+          "values": {
+            "pairs": 0,
+            "unique_endpoints": 0,
+            "pair_rmse": null,
+            "contrast_rms": null,
+            "common_bias_rms": null,
+            "contrast_mse_share": null,
+            "delta_mae": null,
+            "sign_accuracy": null,
+            "correlations": null
+          }
+        },
+        {
+          "pairing": "disjoint",
+          "subset": "delta_at_least_1",
+          "values": {
+            "pairs": 0,
+            "unique_endpoints": 0,
+            "pair_rmse": null,
+            "contrast_rms": null,
+            "common_bias_rms": null,
+            "contrast_mse_share": null,
+            "delta_mae": null,
+            "sign_accuracy": null,
+            "correlations": null
+          }
+        }
+      ]
+    }
+  ],
+  "code_commit": "62d60c44a09b29458baaae54ff71e364cd048ef8",
+  "wall_seconds": 0.5469999999622814,
+  "independent_pair_decomposition_max_abs": 2.7755575615628914e-17,
+  "fits": 0,
+  "model_loads": 0,
+  "model_predict_calls": 0,
+  "official_test_rows_read": 0,
+  "source_sha256": {
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL234_Ki.json": "3bc02eef4ab032c0ddcc7146d057cdc77fc7c1fd410047f9e884215aea1953eb",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/calibration.csv": "b71fe411f7d9562af026e7e2a1deab3700a92b6ab86bc25dd5c66e3736a074d4",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL234_Ki/evaluation.csv": "3ded3910912113fcfb284ed9c6384f355d8b7ac85eab04a11bca421a410f2488",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL244_Ki.json": "19e9aa6c274cc1c1392f49cdf82e9705e7e47b67a4eb1d7537095a351cc2d820",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/calibration.csv": "ba42ac346924f57cbce633735c62b421cb6e1c6c3a4dafa6a3bde314898aeb05",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL244_Ki/evaluation.csv": "07b594dae01ad080ae492f3770bf1f389b0c20e5f91afb96303af3a0966c674b",
+    "artifacts/reliability_protocol_20261005_v2/CHEMBL4792_Ki.json": "006e4632b64c25ea0bfe871768ab36c94158acac0ec256939cc028ea8a55f7e3",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/calibration.csv": "5698e10150f3b0447eb1fd507bf292b2f87aab23aa08e3d9a1245e73ee66132c",
+    "artifacts/reliability_phase_a_20261005_v3/CHEMBL4792_Ki/evaluation.csv": "0c13c85a9df50d596dee1aab40c2c377371725f37bf9acc033fe0928f3a1e3be",
+    "experiments/reliability_base/fixed_protocol.json": "2b6b222f8bb94c89101c8e4dabc173011ec48123e1959afb5dd0623846f0ad2b",
+    "artifacts/roughness_sources_20261005/qsar-landscape-roughness/src/build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+    "docs/research/model_conditioned_pair_diagnostic_20261007/diagnose.py": "2df569079c30f3f6b1377af2de627c2c78edfc6d5b02e6b1cdb252d69241816e",
+    "docs/research/query_pair_direction_review_20261007/report.md": "19fca10695529c265b3ba6dc77fe06aee6a3143375823bd9c227424fec390611",
+    "docs/research/residual_roughness_review_20261007/report.md": "5f4939abcfacac869214a657a850e543cdedbf19b9a6e066209112f1be9b796f"
+  }
+}
