@@ -699,3 +699,21 @@ selfcheck1/prepare1/真实run1/audit1通过；独立标量审核首命令默认G
 排序沿旧metrics AST的校准前原函数体，仅合成分数与frame；cal/cal_scores/cq=None，六比例并列canonical/source_row与ceil、交换人数/MSE恒等式、100%一致均通过，未改旧metrics或执行三任务入口。合成手工分数仅接线检查，非候选RF预测或真实收益。C1映射log分解，C2共享joint/conditional供未来去核心消融，C3映射决策解释接线，训练活性反事实/化学归因尚未实现。
 
 新增薄适配代码及docs/research/conditional_adapter_dry_run_20261008/check.py、report.md、verification.json，追加四日志。0Chemprop/辅助RF/风险RF或其他真实fit/load/predict/真实标签特征解析/新划分/官方test/安装/调参；原PDF/原项目/历史报告协议/缓存模型图、旧训练入口和另一FPPool/LongPoly worktree保持。核验来源hash/本地链接/分段检查与暂存范围后commit/push可靠性分支。下一步接单任务五臂准备入口并冻结新预算，仅命令与身份dry-run；真实训练仍未获授权，不新增第二算法或模块。
+
+
+## M64执行前 — 2026-10-08：单任务五臂准备入口与命令/身份dry-run
+
+用户授权接续M63下一步，仅实现准备。P0复用M61身份/训练参数与M63权重接口，另存五臂v2协议（不覆盖历史）；准备入口只读metadata/代码hash，向忽略目录写作业身份、命令和接口绑定，不生成真实CSV/特征/预测，不运行训练。P1核四点模型共享、calibration保留、五风险RF/八KDE预算与source-only预处理；解析已安装Chemprop CLI检查参数但不执行。P0小型合成身份反例及真实2924角色元数据检查、输出拒绝覆盖/工作区边界，公开聚合报告核验后commit/push可靠性分支。0真实或合成fit/模型权重load/predict/真实标签结构特征/新分区/test/安装/调参，不重新做M63合成KDE。execution入口不在本轮，训练仍未授权。expression-skill指定位置缺失，沿现有四日志持久计划。
+
+
+## M64完成 — 2026-10-08：单任务五臂metadata准备通过，0训练
+
+新增prepare_conditional_pilot.py无execute模式入口，另存conditional_pilot_prepare_20261008/protocol.json，不覆盖M61。读取已冻结2924条身份元数据及源码hash，向忽略artifacts/conditional_pilot_prepare_20261008写jobs/parsed_cli/arm_bindings/summary/state五JSON。未读取分子结构、真实标签、特征、预测或权重，未生成真实CSV。四作业优化935/935/936/1403、查询468/468/467/585、各monitor351，calibration585整块保留。
+
+五臂RF7/IW-GEN5/IW-STRUCT7/IW-RISK7/IW-COND7；后两臂AST核同一M63调用输出joint/conditional，四点模型共享，不重复训练。未来4Chemprop/4辅助RF/5风险RF/8KDE/2scaler/1PCA，点预测1988行、风险预测2925行；额外1风险RF+2边缘KDE保持后处理600秒、整体5400秒、GPU训练wall3600秒帽，时长未知、超时停，不承诺完整完成或扩预算。条件候选相对四对照均值更低仅必要条件，不自动下一seed。
+
+一次自检4个合成metadata作业与4个非法manifest反例通过；一次真实metadata准备通过。已安装Chemprop2.2.3解析4train+4predict命令，不调用handler；4训练命令与旧有效默认比较，仅data_path/output_dir变，未自行调学习率等。当前依赖版本匹配、source hash/组件折角色/查询参考排除/绑定/忽略规则检查通过。已有输出拒绝覆盖，artifacts外路径拒绝，拒绝后输出hash未变。CLI导入有triton缺失FLOP计数警告，未安装或推断GPU训练可用，主准备0失败0重跑。
+
+当前只是metadata和命令准备，真实CSV/特征/点模型/五臂RF均未物化，GEN5及结构估权与RF执行仍只有规格；不能说整条训练流程已可运行。下一步合法输入物化与有上限执行接线，再无训练核验；真实训练仍未授权。不再次做M63合成KDE，不新增算法模块/候选。expression-skill指定路径缺失，沿现有日志。
+
+新增experiments/reliability_base/prepare_conditional_pilot.py及docs/research/conditional_pilot_prepare_20261008/report.md、protocol.json、verification.json，追加四日志。0真实或合成fit/权重load/predict/真实结构标签特征预测解析/新划分/官方test/安装/搜索。旧训练入口、历史报告协议/模型缓存图、PDF/原项目及另一FPPool/LongPoly worktree不改。来源/CLI/身份/接口/输出保护/公开聚合/暂存范围核验后commit/push可靠性分支，不把准备工作或三贡献框架当真实算法结果。

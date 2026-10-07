@@ -1,0 +1,125 @@
+{
+  "milestone": "M64",
+  "date": "2026-10-08",
+  "prepare_runs": 1,
+  "prepare_status": "passed_metadata_only",
+  "selfcheck_runs": 1,
+  "synthetic_jobs": 4,
+  "invalid_synthetic_manifests_rejected": 4,
+  "role_rows_checked": 2924,
+  "cli_commands_parsed": 8,
+  "changed_effective_training_keys_by_job": {
+    "fold0": [
+      "data_path",
+      "output_dir"
+    ],
+    "fold1": [
+      "data_path",
+      "output_dir"
+    ],
+    "fold2": [
+      "data_path",
+      "output_dir"
+    ],
+    "full": [
+      "data_path",
+      "output_dir"
+    ]
+  },
+  "runtime_versions_match": true,
+  "callable_and_output_keys_ast_verified": true,
+  "overwrite_and_outside_artifacts_guards": "passed; existing output hashes unchanged",
+  "private_output_ignored": true,
+  "summary": {
+    "task": "CHEMBL234_Ki",
+    "seed": 42,
+    "jobs": 4,
+    "fit_rows": [
+      935,
+      935,
+      936,
+      1403
+    ],
+    "query_rows": [
+      468,
+      468,
+      467,
+      585
+    ],
+    "monitor_rows": [
+      351,
+      351,
+      351,
+      351
+    ],
+    "arms": [
+      "RF7",
+      "IW-GEN5",
+      "IW-STRUCT7",
+      "IW-RISK7",
+      "IW-COND7"
+    ],
+    "budget": {
+      "chemprop_fits": 4,
+      "chemprop_predict_batches": 4,
+      "chemprop_predicted_rows": 1988,
+      "auxiliary_activity_rf_fits": 4,
+      "feature_batches": 4,
+      "risk_rf_fits": 5,
+      "risk_predict_batches": 5,
+      "risk_predicted_rows": 2925,
+      "kde_fits": 8,
+      "scaler_fits": 2,
+      "pca_fits": 1,
+      "fit_seconds_each": 900,
+      "predict_seconds_each": 120,
+      "feature_seconds_each": 300,
+      "postprocess_seconds": 600,
+      "whole_run_seconds": 5400,
+      "gpu_training_wall_seconds": 3600,
+      "automatic_retries": 0,
+      "budget_note": "Extra risk RF and marginal KDEs remain within existing 600-second postprocess/5400-second total caps; duration unknown, stop if exceeded."
+    },
+    "cli_commands_parsed": 8,
+    "real_input_csv_files_created": 0,
+    "real_features_or_labels_read": 0,
+    "training_authorized": false,
+    "runnable_training": false,
+    "weights_callable": {
+      "code": "experiments/reliability_base/conditional_risk_weights.py",
+      "function": "joint_and_conditional_weights",
+      "output": "conditional",
+      "shared_call": "risk7_and_cond7",
+      "weight_input": "source_scaled_7_columns",
+      "risk_input": "original_7_columns"
+    },
+    "protocol_sha256": "2aeca47dfb796acea43a20d3b78c7432d2a129e716f38a6860d9ca22f41e3271"
+  },
+  "real_or_synthetic_fits": 0,
+  "model_weight_loads": 0,
+  "real_model_predictions": 0,
+  "real_structure_label_feature_prediction_parses": 0,
+  "official_test_reads": 0,
+  "input_csv_files_created": 0,
+  "installation_or_search": 0,
+  "warnings": [
+    "torch CLI import: triton missing, relevant FLOP counting unavailable; no installation or model execution"
+  ],
+  "failed_preparation_runs": 0,
+  "private_output_sha256": {
+    "arm_bindings.json": "6037a2d9e707acc60f4ca71211c2c48ed80bde3746b14500a5b40118b9cc603c",
+    "jobs.json": "a44c1cc703df47e38a328fe33c1ffdd8ff6a787c757f267d7e40b6f2671f20b8",
+    "parsed_cli.json": "5c0942a68e929be13b1b857c38fac15763b824a68c29fb8c9b65c920fe854fe5",
+    "state.json": "b68100691952e961f7edf3cb9039dd714721e1e095ea8ebecf8156e42cd19ab4",
+    "summary.json": "802e2f408a47e38108b960d8073315c4de04cea3a511057e9b580a61f5ada8f1"
+  },
+  "local_links_checked": [
+    "../../../experiments/reliability_base/prepare_conditional_pilot.py",
+    "protocol.json"
+  ],
+  "artifact_sha256": {
+    "report.md": "4e696be0ed3abaa2ec82e24ccdca5bfbe45907196a2ca90e247d5bff4e1ddd0f",
+    "protocol.json": "2aeca47dfb796acea43a20d3b78c7432d2a129e716f38a6860d9ca22f41e3271"
+  },
+  "prepare_code_sha256": "696085198c97de1f27233061e4b597d39d78e793e265e4ef84a8a10fb6ef1db2"
+}
