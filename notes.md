@@ -372,3 +372,10 @@ M49提交审核补记：git diff --cached --check发现新报告末尾多余空�
 用户确认中科院二区优先/三区备选、复用模块不算创新后，在M50结束之上另开一次授权理论审查，不撤销旧停止结论。唯一草案以查询—参考对三点距离权重η联合汇总SALI，四式为η、Q、Q=均值乘积+协方差、现有9维误差RF与排序；仅具体查询成对耦合是待核贡献，协方差恒等式与RF/排序不是原创。原SALI/距离汇总同值的bitset例Q可区分，普通径向加权也能区分，不能据此证明三角权重优越。碰撞Q=0但SALI2000、真实查询误差排序可反转等反例保留。
 
 新增docs/research/query_pair_theory_20261007/draft.md、selfcheck.py、verification.json，同步四份计划日志；3次纯合成自检各512 bitset三点，第二次补显式误差世界对调、第三次补等查询距离下SALI分母抵消断言，均通过；9源hash/本地链接/四式维度归属和未知核验。即时作者main/build_features源码SHA与本地固定源一致，RDN/UNIQUE/Jaccard原始来源有限核查，检索噪声和输出截断如实留存，不冒称全领域新颖性确认。0真实fit/load/predict/特征/新数字缓存/test/调参。保留讨论候选1、可信核心0；三任务×三臂最多9风险fit仅条件设计，尚欠实际邻居重建/重放/wall预算，未冻结可运行先导且未授权执行。训练代码/模型/历史报告/六图/原项目不改；复核后commit/push当前分支并核远端。
+
+
+## M52执行前 — 2026-10-07：查询成对粗糙度有限真实先导
+
+用户“可以，用先做做实验吗”授权在M51之上运行有限先导。先冻结docs/research/query_pair_pilot_20261007/protocol.json及薄适配脚本run_query_pair_pilot.py；复用作者featurize与原metrics、固定Chemprop/辅助RF缓存。三任务seed42，各joint/去关联separate/普通径向radial，固定同9维同RF，最多9风险fit/9新风险权重load/36predict；0点模型训练加载推理、0辅助活性RF训练、0官方test读取、0调参扩任务。12份fold/full真实几何作业，准备900秒+风险900秒，外部各930秒硬超时；失败或中断留日志、不自动补跑。输入hash/身份/折内reference合法性与原特征重放先核；先导前提交push，再执行；全部任务两角色六比例独立复算后公开聚合、再次提交push。候选只与公平两控制比较，旧7维仅背景；恒等式是特征解释，不冒充RF归因/化学机制，分区与原创性仍未证实。指定expression-skill文件未找到，沿既有计划日志持久记录，不安装依赖。
+
+M52执行前异常：一次协议hash更新命令未指定UTF-8，Windows默认GBK读取中文JSON报UnicodeDecodeError，未计算真实特征/fit；改为显式UTF-8并统一新脚本JSON读取后重新核47输入hash。两次合成selfcheck通过；不是实验失败或训练重试。

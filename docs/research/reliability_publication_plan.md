@@ -124,3 +124,8 @@ M35中234/244满足原数据筛查，4792未满足原10/20组件门槛；这属�
 继续公开GraphCliff-Pair，不新建仓库。每小里程碑记录目的/来源hash/代码/配置/计划和实际次数/成本/异常/偏离/核验/下一决定，先核验后commit/push。原始数据、临时身份、逐分子预测和权重留忽略目录。原GraphCliff/my_work只读。
 
 M36是用户授权后向前生效的规则修订，不是旧实验门槛追认；[旧总计划完整快照](reliability_publication_plan_before_M36_20261006.md)与各历史协议保持不变。[修订依据与初步方法比较](publication_driven_revision_20261006/report.md)记录本轮0fit、官方实现版本/许可及未知。
+
+
+## M52执行前 — 2026-10-07：查询成对粗糙度有限真实先导
+
+用户“可以，用先做做实验吗”授权在M51之上运行有限先导。先冻结docs/research/query_pair_pilot_20261007/protocol.json及薄适配脚本run_query_pair_pilot.py；复用作者featurize与原metrics、固定Chemprop/辅助RF缓存。三任务seed42，各joint/去关联separate/普通径向radial，固定同9维同RF，最多9风险fit/9新风险权重load/36predict；0点模型训练加载推理、0辅助活性RF训练、0官方test读取、0调参扩任务。12份fold/full真实几何作业，准备900秒+风险900秒，外部各930秒硬超时；失败或中断留日志、不自动补跑。输入hash/身份/折内reference合法性与原特征重放先核；先导前提交push，再执行；全部任务两角色六比例独立复算后公开聚合、再次提交push。候选只与公平两控制比较，旧7维仅背景；恒等式是特征解释，不冒充RF归因/化学机制，分区与原创性仍未证实。指定expression-skill文件未找到，沿既有计划日志持久记录，不安装依赖。
