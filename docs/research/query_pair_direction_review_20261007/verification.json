@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-07",
+  "passed": true,
+  "input_commit": "8bdc5e9aae9fd234189aae097b80461c589c8330",
+  "scope": "Review, aggregate replay and synthetic math only",
+  "actual_this_review": {
+    "passed": true,
+    "frozen_hashes": 47,
+    "prior_delivery_hashes": 4,
+    "binary_jaccard_cancellation": {
+      "wide": {
+        "joint": 2.0,
+        "separate": 2.0,
+        "alignment": 0.0,
+        "sali": 2.0,
+        "mean_weight": 1.0,
+        "radial": 0.5
+      },
+      "close": {
+        "joint": 2.0,
+        "separate": 2.0,
+        "alignment": 0.0,
+        "sali": 5.0,
+        "mean_weight": 0.4,
+        "radial": 1.25
+      }
+    },
+    "bias_variance_examples": 81,
+    "task_relative_gain_percent": {
+      "calibration": {
+        "separate": [
+          0.3738380192932822,
+          0.23575572529789257,
+          0.3394363738875694
+        ],
+        "radial": [
+          -1.051562704199549,
+          -0.9125661090154447,
+          -0.8543597809647308
+        ]
+      },
+      "evaluation": {
+        "separate": [
+          -0.39176987461424506,
+          -0.1400792341537338,
+          0.4055225434743792
+        ],
+        "radial": [
+          1.2412123717554513,
+          0.4932432365838624,
+          -1.222778051831508
+        ]
+      }
+    },
+    "real_fits": 0,
+    "model_loads": 0,
+    "predict_calls": 0,
+    "real_feature_recomputations": 0,
+    "official_test_rows_read": 0
+  },
+  "synthetic_check_runs": 2,
+  "primary_source_entries": 6,
+  "private_readonly_source_snapshots": 2,
+  "internal_links_checked": [
+    "../query_pair_pilot_20261007/protocol.json",
+    "../../../experiments/reliability_base/run_query_pair_pilot.py",
+    "../query_pair_pilot_20261007/results.json",
+    "../query_pair_pilot_20261007/verification.json",
+    "sources.json",
+    "../residual_roughness_review_20261007/report.md",
+    "checks.py"
+  ],
+  "prior_evidence_sha256": {
+    "docs/research/query_pair_pilot_20261007/report.md": "b8775ef78f157eb8bef3e45bbc48f16e92bba4d7d47f9acbf25e05bc7a5c24b6",
+    "docs/research/query_pair_pilot_20261007/protocol.json": "0a169e1b3c913c36310c04ffedc05e72380d0fe49da63055b6d5f33e813605b3",
+    "docs/research/query_pair_pilot_20261007/results.json": "3417a4454f8f69d7a85c67fcf391a15ae2612982113740cb7593d3808ba4316e",
+    "docs/research/query_pair_pilot_20261007/verification.json": "fa78ca30c794376f00ea02f7439893dc25b3865b60b0787cd4be75978d44ed14",
+    "docs/research/query_pair_theory_20261007/draft.md": "491a1155039c1131a6db5f06b6841b92e5e4dbcd254dfbce526199ce9f3de828",
+    "docs/research/residual_roughness_review_20261007/report.md": "5f4939abcfacac869214a657a850e543cdedbf19b9a6e066209112f1be9b796f",
+    "experiments/reliability_base/run_query_pair_pilot.py": "a0f1175714e4270c580cbb6a3d1830198773f241f5c0f19bbf7249d780afb3ef",
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "artifacts/roughness_sources_20261005/UNIQUE/unique/pipeline.py": "005bfbb8f024fad43cb8d84ef2bc0d14e6c1824aca78ed2411ae664c5922e2aa"
+  },
+  "deliverable_sha256": {
+    "docs/research/query_pair_direction_review_20261007/report.md": "19fca10695529c265b3ba6dc77fe06aee6a3143375823bd9c227424fec390611",
+    "docs/research/query_pair_direction_review_20261007/checks.py": "78065b135545338826a91a0e7fd5e95243a0a959695b8b12113113e8019f8441",
+    "docs/research/query_pair_direction_review_20261007/sources.json": "914a1d30a1ce6e2d7e4d148e3d4754c50bb6fcc29e9c5d00b16e17ed5d7e38e1"
+  },
+  "access_limits": [
+    {
+      "item": "QUAD",
+      "reason": "Found third-party abstracts; DOI gateway unavailable; no verified primary method, so not used to declare overlap or publication status"
+    },
+    {
+      "item": "bioRxiv 2026.08.19.745868",
+      "reason": "Primary fetch403; not used for substantive inference"
+    },
+    {
+      "item": "UNIQUE guessed uncertainty_factory/uq_metric_factory paths",
+      "reason": "Missing paths returned error; resolved exact file via official Git tree, then read pinned source"
+    },
+    {
+      "item": "PMC full-text fetch",
+      "reason": "Browser challenge; indexed primary excerpts explicitly marked partial, no claim of full-text reading"
+    }
+  ],
+  "decision": "Retain reliability line; no established coupling benefit or failure theorem; no credible new algorithm core; next question is lawful model-conditioned local failure identification, not automatic training",
+  "review_edit_anomalies": [
+    "One patch anchor did not match a full paragraph; no mutation; re-applied using exact heading. No experiment or check rerun."
+  ]
+}

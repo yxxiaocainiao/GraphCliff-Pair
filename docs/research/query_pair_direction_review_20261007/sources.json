@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-07",
+  "scope": "Bounded mechanism review, six primary source entries; not exhaustive novelty clearance",
+  "sources": [
+    {
+      "id": "roughness",
+      "url": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+      "evidence": "Pinned README and build_features; live official CITATION; author manuscript/software, no verified peer-reviewed publication identified here",
+      "claim": "Local training-neighbor roughness and combined reliability already explicit; do not claim roughness+RF as original",
+      "level": "author code/README/citation, not independent effect confirmation"
+    },
+    {
+      "id": "unique",
+      "url": "https://opensource.nibr.com/UNIQUE/indepth/available_inputs_uq_methods.html",
+      "evidence": "Official methods table updated 2026-09-11; pinned DiffkNN source lines35-51 and pinned pipeline lines462-484",
+      "claim": "Distances, ensemble variance, error RF already implemented; actual DiffkNN pipeline uses predictions/UQ values, not automatically measured query labels",
+      "level": "official docs and exact pinned implementation"
+    },
+    {
+      "id": "icliff",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12151610/",
+      "doi": "10.1021/acs.jcim.5c00506",
+      "code": "https://github.com/mqcomplab/iCliff",
+      "evidence": "Indexed primary abstract/conclusion and authors GitHub; direct PMC browser challenge and ACS403; no complete PDF read",
+      "claim": "SALI singularity treatment and complementary per-molecule impact already investigated; no evidence it is the same deployment score as M51",
+      "level": "primary indexed sections and code landing page",
+      "license": "GitHub reports LGPL-3.0; no code copied or runtime used; full reuse audit still required"
+    },
+    {
+      "id": "admet2026",
+      "url": "https://link.springer.com/article/10.1186/s13321-026-01217-2",
+      "published": "2026-05-18",
+      "evidence": "Publisher abstract, activity-cliff results and roughness section, lines194-229",
+      "claim": "Thirty MoleculeACE tasks; global roughness diagnosis, expressly not a predictor of specific train/test OOD shift; not M51 pointwise acceptance algorithm",
+      "level": "selected primary full-text sections, not whole-paper systematic review"
+    },
+    {
+      "id": "environment2026",
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/acs.est.6c06820",
+      "doi": "10.1021/acs.est.6c06820",
+      "published": "2026-09-07",
+      "evidence": "Publisher-indexed metadata and abstract; direct article403; full PDF not obtained",
+      "claim": "Training-set roughness related to task-level environmental prediction difficulty; differs from query-specific fixed-Chemprop acceptance",
+      "level": "primary abstract only"
+    },
+    {
+      "id": "explanatory2026",
+      "url": "https://proceedings.mlr.press/v307/wodrich26a.html",
+      "published": "2026",
+      "evidence": "Official PMLR abstract and citation",
+      "claim": "Predictive/explanatory uncertainty already studied; neighboring feature contribution alone is not final prediction attribution",
+      "level": "primary abstract only"
+    }
+  ],
+  "retrieved_source_metadata": [
+    {
+      "name": "unique_diffknn.py",
+      "url": "https://raw.githubusercontent.com/Novartis/UNIQUE/c6d65b9c63102bc18e68c25c98d76e24650c3e4a/unique/uq_metric_factory/combinations/diffknn.py",
+      "sha256": "66835a1d70a721d99c170baa142725c5ece8aae27632e54bd169a32c288cc02a",
+      "bytes": 2347,
+      "snapshot": "ignored artifacts/query_pair_direction_review_20261007/unique_diffknn.py",
+      "executed": false
+    },
+    {
+      "name": "roughness_CITATION.cff",
+      "url": "https://raw.githubusercontent.com/krishnatheaverage/qsar-landscape-roughness/main/CITATION.cff",
+      "sha256": "da8311da02df583feb6aa61721b040d85a5f721a85fdc2765d8d3a24e1360592",
+      "bytes": 1519,
+      "snapshot": "ignored artifacts/query_pair_direction_review_20261007/roughness_CITATION.cff",
+      "executed": false
+    }
+  ],
+  "excluded_or_access_limits": [
+    {
+      "item": "QUAD",
+      "reason": "Found third-party abstracts; DOI gateway unavailable; no verified primary method, so not used to declare overlap or publication status"
+    },
+    {
+      "item": "bioRxiv 2026.08.19.745868",
+      "reason": "Primary fetch403; not used for substantive inference"
+    },
+    {
+      "item": "UNIQUE guessed uncertainty_factory/uq_metric_factory paths",
+      "reason": "Missing paths returned error; resolved exact file via official Git tree, then read pinned source"
+    },
+    {
+      "item": "PMC full-text fetch",
+      "reason": "Browser challenge; indexed primary excerpts explicitly marked partial, no claim of full-text reading"
+    }
+  ],
+  "source_text_hash_policy": "Hash only actual downloaded source bytes; unsnapshotted web pages have no invented hash",
+  "new_external_runtime_dependencies": 0,
+  "new_external_modules_integrated": 0
+}
