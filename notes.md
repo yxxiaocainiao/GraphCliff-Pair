@@ -703,3 +703,10 @@ full点预测字节复制锁定、mol_size逐值不变；source935训练身份/p
 用户ok承接M76明确3风险RF/六臂预算，执行一次234/seed42先导。protocol.json固定27项输入hash及原RF配置/角色/上限/主要比较，新增唯一薄入口run_reference_marginalization.py复用作者featurize、已有geometry的std/SALI、安全读取及独立曲线复核，不调用点训练/作者process。selfcheck通过排序并列、ceil和粗糙度原语；首次路径检索rg的Windows通配目录失败、另一次猜测旧组件脚本缺失，只读失败均未做实验，改用已定位run_query_pair_pilot.py复用，无重跑训练。expression-skill/planning-with-files仍缺失，沿已有计划；科学结论核验沿scientific-critical-thinking。
 
 先提交推送代码/协议，再准备一次（6549行粗糙度预算）与拟合一次（3RF/7020评分行），分数hash锁后才读585评价真值。9新上下文作业、0Chemprop/辅助RF/模型load/校准/官方test/安装；阶段900/600/300秒及整体1800硬上限、失败保留不补跑，已开发分区仅探索。当前尚无真实新特征或fit。下一步执行此唯一先导并完整公布结果，不扩参数/任务/候选。
+# M77完成 — 2026-10-08：六臂先导正向，保留探索候选
+
+交付核验首次临时命令read_text未指定UTF-8，中文报告触发Windows GBK解码异常；修正编码仅重验文档，不重跑实验。全局CSV忽略规则使新聚合CSV默认不显示，最终仅明确force-add本轮curves.csv/exchanges.csv；私有逐分子仍忽略，未改.gitignore。
+
+先推送fdf8152冻结协议/脚本，随后一次prepare/run完成，0失败/中断/补跑。准备3.047s、拟合评分评价3.391s；3RF fit/3predict7020行，9新R作业4561行＋1988旧R核对，0Chemprop/辅助RF/模型load/校准/test/安装。全部分数锁后原CSV解析585评价真值；audit仅重读私有副本。G/点预测严格固定，旧R差8.88e−16、原RF7均值与M66精确一致。独立标量曲线、并列/ceil、36曲线点、36交换、100%一致及响应恒等式通过；两个主要比较全部非100点abs净差>最大个体abs贡献，任意单个归零不翻方向。
+
+Hc-mean平均1.0840053493507429，H0-full1.1218040194999552（降3.369454%）、Hc-full1.094429154147097（降0.952442%），通过冻结两比较；候选也优于其余三对照均值，但80%对Hc-full退化。上下文方差与误差相关弱，不追加敏感性门控。保留待验证候选，效果只属已开发234/seed42探索，原创/任务外推/强ensemble/最终论文均未证。下一步建议仅风险RF seed43/44共6fit复用缓存，未执行或获准，不冒称Chemprop三seed。报告/聚合CSV/核验公开，逐分子及日志忽略；更新当前计划/README/投稿计划/M75历史提示，旧代码/报告/权重/原项目/另一worktree不改。

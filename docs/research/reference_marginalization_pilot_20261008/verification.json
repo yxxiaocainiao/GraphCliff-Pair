@@ -1,0 +1,259 @@
+{
+  "milestone": "M77",
+  "status": "completed_and_independently_checked",
+  "code_commit": "fdf8152b6b251966d2ce568eb1140150c5624d43",
+  "task": "CHEMBL234_Ki",
+  "seed": 42,
+  "exploratory": true,
+  "curves": {
+    "H0-full": {
+      "rmse": [
+        1.0846129305998968,
+        1.102591323903799,
+        1.107268278050003,
+        1.1244039595604338,
+        1.1505654625184536,
+        1.1613821623671454
+      ],
+      "mean_six_rmse": 1.1218040194999552,
+      "accepted": [
+        293,
+        351,
+        410,
+        468,
+        527,
+        585
+      ]
+    },
+    "H0-mean": {
+      "rmse": [
+        1.0341948624741641,
+        1.0358305448830307,
+        1.0734836048816407,
+        1.118360020774078,
+        1.1491147491801008,
+        1.1613821623671454
+      ],
+      "mean_six_rmse": 1.0953943240933601,
+      "accepted": [
+        293,
+        351,
+        410,
+        468,
+        527,
+        585
+      ]
+    },
+    "Hd-full": {
+      "rmse": [
+        1.1107617852333675,
+        1.1090660206414136,
+        1.0997803218931204,
+        1.1135156312793926,
+        1.1320731004972695,
+        1.1613821623671454
+      ],
+      "mean_six_rmse": 1.1210965036519516,
+      "accepted": [
+        293,
+        351,
+        410,
+        468,
+        527,
+        585
+      ]
+    },
+    "Hd-mean": {
+      "rmse": [
+        1.0497478782989067,
+        1.0478864245171207,
+        1.0768273419125254,
+        1.1122955659821487,
+        1.1401571013349954,
+        1.1613821623671454
+      ],
+      "mean_six_rmse": 1.0980494124021405,
+      "accepted": [
+        293,
+        351,
+        410,
+        468,
+        527,
+        585
+      ]
+    },
+    "Hc-full": {
+      "rmse": [
+        1.0370813590876373,
+        1.0580238221334362,
+        1.0877143431610075,
+        1.0874852149306986,
+        1.1348880232026581,
+        1.1613821623671454
+      ],
+      "mean_six_rmse": 1.094429154147097,
+      "accepted": [
+        293,
+        351,
+        410,
+        468,
+        527,
+        585
+      ]
+    },
+    "Hc-mean": {
+      "rmse": [
+        1.02101607536184,
+        1.0301988375344364,
+        1.0650078569178532,
+        1.1029378331927888,
+        1.1234893307303933,
+        1.1613821623671454
+      ],
+      "mean_six_rmse": 1.0840053493507429,
+      "accepted": [
+        293,
+        351,
+        410,
+        468,
+        527,
+        585
+      ]
+    }
+  },
+  "comparisons": {
+    "H0-full": {
+      "candidate_minus_control": -0.03779867014921234,
+      "relative_reduction_percent": 3.3694539770022507,
+      "improved_nonfull_coverages": 5
+    },
+    "H0-mean": {
+      "candidate_minus_control": -0.011388974742617242,
+      "relative_reduction_percent": 1.0397146025056967,
+      "improved_nonfull_coverages": 5
+    },
+    "Hd-full": {
+      "candidate_minus_control": -0.037091154301208684,
+      "relative_reduction_percent": 3.3084711423490236,
+      "improved_nonfull_coverages": 5
+    },
+    "Hd-mean": {
+      "candidate_minus_control": -0.014044063051397604,
+      "relative_reduction_percent": 1.2790010078575793,
+      "improved_nonfull_coverages": 5
+    },
+    "Hc-full": {
+      "candidate_minus_control": -0.010423804796354075,
+      "relative_reduction_percent": 0.9524421710492063,
+      "improved_nonfull_coverages": 4
+    }
+  },
+  "continuation_condition_met": true,
+  "no_automatic_expansion": true,
+  "state": {
+    "status": "completed",
+    "risk_fits_started": 3,
+    "risk_predict_calls_started": 3,
+    "risk_prediction_rows": 7020,
+    "replay_rows": 1988,
+    "context_rows": 4561,
+    "new_jobs": 9,
+    "evaluation_truth_rows_read": 585,
+    "automatic_retries": 0,
+    "replay_max_abs_difference": 8.881784197001252e-16,
+    "fingerprint_molecules": 1988,
+    "prepare_seconds": 3.0469999999986612,
+    "truth_sha256": "a683734bc3f8e92fc9f343ffd43a7c4f360a4e7b60a623f3cbc5fd6ebbb0deae",
+    "results_sha256": "4df9c4f427afd8130f96e45557ba55231bab63e590821a6ad99c7a9e19990ba1",
+    "run_seconds": 3.3909999999959837
+  },
+  "new_counts": {
+    "risk_rf_fits": 3,
+    "risk_predict_calls": 3,
+    "risk_prediction_rows": 7020,
+    "new_context_rows": 4561,
+    "roughness_replay_rows": 1988,
+    "fingerprint_molecules": 1988,
+    "point_model_fits_loads_predictions": 0,
+    "auxiliary_rf_fits_predictions": 0,
+    "model_checkpoint_loads": 0,
+    "evaluation_truth_rows_read_after_lock": 585,
+    "calibration_record_reads": 0,
+    "official_test_record_reads": 0,
+    "failed_experiments": 0,
+    "interrupted_experiments": 0,
+    "automatic_retries": 0
+  },
+  "checks": {
+    "curve_points": 36,
+    "exchange_rows": 36,
+    "partitions": true,
+    "equal_swaps": true,
+    "exchange_identity": true,
+    "full_acceptance_equal": true,
+    "mean_response_identity": true,
+    "independent_scalar_curve_max_abs_difference": 2.220446049250313e-16,
+    "frozen_G_exact": true,
+    "original_RF7_mean_exactly_reproduced": true,
+    "roughness_replay_max_abs_difference": 8.881784197001252e-16,
+    "score_lock_before_original_truth_read": true,
+    "all_primary_nonfull_signs_survive_any_single_contribution_zeroed": true,
+    "report_table_rounding_and_relative_links": true
+  },
+  "diagnostics": [
+    {
+      "model": "H0",
+      "mean_context_score_variance": 0.007138801411336958,
+      "spearman_variance_squared_error": 0.10102554064192985,
+      "spearman_variance_signed_exchange": -0.06895932015245716
+    },
+    {
+      "model": "Hd",
+      "mean_context_score_variance": 0.010264868200027819,
+      "spearman_variance_squared_error": 0.09389510804581898,
+      "spearman_variance_signed_exchange": -0.05054123021713632
+    },
+    {
+      "model": "Hc",
+      "mean_context_score_variance": 0.003911799122298364,
+      "spearman_variance_squared_error": 0.03952484022347997,
+      "spearman_variance_signed_exchange": -0.0625093368182117
+    }
+  ],
+  "private_evidence_sha256": {
+    "absolute_error.csv": "27a857d201b29aaac5f6ae53e3857f2bbfc0426afb0add6533737565099445ee",
+    "augmented.csv": "b5f474f877593dd383e25c47585d05db9d411b2ae501ac97aef73e1244cf9e0d",
+    "contexts.csv": "a8c4b098e579cc1909a120b249a2f0ba5a8548e19e6c92f0798581a63799d78d",
+    "evaluation_truth.csv": "a683734bc3f8e92fc9f343ffd43a7c4f360a4e7b60a623f3cbc5fd6ebbb0deae",
+    "exchanges.csv": "7047b57ba4ed639b0a08cb641b38de435ea95940534e27a6cff63223329c83de",
+    "identities.csv": "a376d350590ed2df16d24f6cef3ae1738e5b4937cd18428c8ce81874c1845622",
+    "individual_contributions.csv": "90e79226ce83b8de5bfcaf5d9a89d4b15cf5a38631a51ab117509f071967207d",
+    "inputs.json": "c07fd2b557002455a55b000fb7b785619f004c8aac5747bc4c2b63753aa5a4b5",
+    "results.json": "4df9c4f427afd8130f96e45557ba55231bab63e590821a6ad99c7a9e19990ba1",
+    "scores.csv": "ddf5bee5dda49ad15ed9c0886a8bb9831c549646223799924b764bd62a1c0b22",
+    "score_lock.json": "96af25ae427bef26fdb893544fb80cfc3714d6870f7b157c7cc283725de464f0",
+    "source.csv": "dd6ef9e80e7e98abd8a63fa79fd29b590646ab47689d723d6682de1fc91540dd",
+    "state.json": "0e931d1e5f7f81e90d5764722cb55ed464c68cb5ea182c95fff490e8abdec7b0",
+    "targets.csv": "5aa7a7f758dcef45bc9e8eb780d8140c74c269d3e9a1c753709a6df1e5ea82be",
+    "prepare_log/compute/command.json": "11b744c70b77ca2c6f6195b08e45180da924206a8111dfeb41f6e4e639f35ff9",
+    "prepare_log/compute/exit.json": "61b58d082c8df02971f28f5f4f60238df41d0e49c3670a9305a6c6929dc91c67",
+    "prepare_log/compute/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepare_log/compute/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run_log/compute/command.json": "8c556aabf015e546a478b825c2f1b06cd6fa86e95727422481ca183965fe512e",
+    "run_log/compute/exit.json": "59d69f09641fbdad02557bc4d3170d34e86c3ac963a5ef9acdfc77fd949ba440",
+    "run_log/compute/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run_log/compute/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run_log/evaluate/command.json": "2695145bc842816fc0a7aa43fb4b43092f45905e76ac7cadac85d1d0769fb66b",
+    "run_log/evaluate/exit.json": "b3e2d1797d9d39b094a80216a36c1d2c49bbaa71bc1c0b95e5ff3de41bae2468",
+    "run_log/evaluate/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run_log/evaluate/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "public_sha256": {
+    "docs/research/reference_marginalization_pilot_20261008/protocol.json": "14955d1cced713f1d9734bad8338d8ae91fca911f7f62bc41cb91c20061b7f13",
+    "docs/research/reference_marginalization_pilot_20261008/curves.csv": "bb7ace1054fe5121d2645cf4e63ddd40fc60fc9e4e7542040a325be26386d891",
+    "docs/research/reference_marginalization_pilot_20261008/exchanges.csv": "7047b57ba4ed639b0a08cb641b38de435ea95940534e27a6cff63223329c83de",
+    "experiments/reliability_base/run_reference_marginalization.py": "432a90b08d0dd63028b11fe7c6198042cbf0492c1ac9a7d46bc82a9d05b9da26",
+    "docs/research/reference_marginalization_pilot_20261008/report.md": "b1aee9c83133efa0c4eb17f00c0c9dd59b057340fe4223d5178a70866ac98fe7"
+  },
+  "delivery_audit_exception": "Temporary report audit defaulted to GBK; explicit UTF-8 correction, no experimental retry"
+}
