@@ -1,0 +1,529 @@
+{
+  "date": "2026-10-08",
+  "purpose": "existing checkpoint train-versus-validation fit diagnostic",
+  "device": "cuda",
+  "audit": {
+    "output": "D:\\GraphCliff-Pair-FPPool-LongPoly\\artifacts\\mechanism_retry_fp_screen_20261007",
+    "runs": 12,
+    "source_hashes_checked": 18,
+    "frozen_tensors_checked": 402,
+    "residual_risk_checks": [
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "feature_frozen",
+        "mse_difference": -0.01604838172955364,
+        "expansion": -0.016048381729553553
+      },
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "output_frozen",
+        "mse_difference": -0.013210154456237577,
+        "expansion": -0.013210154456237543
+      },
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "output_frozen_null",
+        "mse_difference": -0.014726882207052205,
+        "expansion": -0.014726882207052091
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "feature_frozen",
+        "mse_difference": 4.014473535013385e-06,
+        "expansion": 4.01447353504332e-06
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "output_frozen",
+        "mse_difference": 0.005900634193161364,
+        "expansion": 0.005900634193161388
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "output_frozen_null",
+        "mse_difference": 0.007681869773341149,
+        "expansion": 0.007681869773341147
+      }
+    ],
+    "test_evaluated": false,
+    "performance_claim": false,
+    "records": [
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "base",
+        "count": 106
+      },
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "feature_joint",
+        "count": 106
+      },
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "output_joint",
+        "count": 106
+      },
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "feature_frozen",
+        "count": 106
+      },
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "output_frozen",
+        "count": 106
+      },
+      {
+        "dataset": "CHEMBL287_Ki",
+        "seed": 42,
+        "arm": "output_frozen_null",
+        "count": 106
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "base",
+        "count": 51
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "feature_joint",
+        "count": 51
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "output_joint",
+        "count": 51
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "feature_frozen",
+        "count": 51
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "output_frozen",
+        "count": 51
+      },
+      {
+        "dataset": "CHEMBL2047_EC50",
+        "seed": 42,
+        "arm": "output_frozen_null",
+        "count": 51
+      }
+    ]
+  },
+  "source_commit": "e24190b2e7d4f62c0b1b06fd6b3dab95864c3331",
+  "tool_sha256": "a77531c87aa7868398a58aebbc6ddac1ade065ff960755b0693ab47294844ce3",
+  "inputs": [
+    {
+      "dataset": "CHEMBL287_Ki",
+      "path": "D:\\GraphCliff-main\\benchmark_data\\CHEMBL287_Ki.csv",
+      "sha256": "e857875848bb64dc6e327e6c42fe9fd36526bbee1b976de4521b55c4c6629894"
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "path": "D:\\GraphCliff-main\\benchmark_data\\CHEMBL2047_EC50.csv",
+      "sha256": "db8946f3daa245ad3e03576aca1e6ea44eda560abd9f730090762a6b68cc8c39"
+    }
+  ],
+  "checkpoints": [
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "base",
+      "epoch": 28,
+      "sha256": "cc4c34e684fa4896969c70d09fe058645a282615af491795bfddbdad59ea628f"
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen",
+      "epoch": 9,
+      "sha256": "89c9b759014d51a5e32bbaad76c47035af2d6a390434bfe1b9686c8a1336a63b"
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen_null",
+      "epoch": 1,
+      "sha256": "824afef672bac6ae6610c6b1161538263398b3eb9d18293f7e6121d6383ecb8c"
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "base",
+      "epoch": 28,
+      "sha256": "212f51a2924c9c95259771ec94a7b042293e66ef9bd1e82eab0ee22956529549"
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen",
+      "epoch": 15,
+      "sha256": "58afaf5fced2916dd78c6b3c4053d8c03caa302126784f46aaaf7a3f7b9fc182"
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen_null",
+      "epoch": 20,
+      "sha256": "c96c6c2ef0054c5a8447edc76637e73a28cc053a6245c16e1efc24ca8f265451"
+    }
+  ],
+  "config_provenance": {
+    "workspace_sha256": "5ad5e66f020607fa7887db8e2266b94b6d017f4d4664de9b4523deb547703106",
+    "historical_crlf_sha256": "02ca03e228ab8cae6679ffad2a88bc481ee6c43d632d2e05199cf466cf602bbf",
+    "semantic_identity": true
+  },
+  "source_manifest_provenance": {
+    "workspace_sha256": "9d1a94d9db16c99fa253e2a397039235923362b45780527a9ff7d208c5849ec6",
+    "historical_crlf_sha256": "b3cddc83f69c4e2cb7008444bb7b6e5367a7d3305379dd7dc7a64c694b156d47"
+  },
+  "inherited_dependencies": {
+    "experiments/long_branch_swap/model.py": "58e76a197a514c1f2a42dab03f2c5759a062b37201e3efa1e4a1d5a8d33d2c39",
+    "experiments/long_branch_swap/run.py": "5eddfc29f5d25fc381351123e90e726ced011d30640e7ac09bd5ed527d4de25b"
+  },
+  "replay": [
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "base",
+      "count": 106,
+      "max_abs_difference": 0.0
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen",
+      "count": 106,
+      "max_abs_difference": 0.0
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen_null",
+      "count": 106,
+      "max_abs_difference": 0.0
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "base",
+      "count": 51,
+      "max_abs_difference": 0.0
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen",
+      "count": 51,
+      "max_abs_difference": 0.0
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen_null",
+      "count": 51,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen",
+      "partition": "train",
+      "subset": "overall",
+      "count": 955,
+      "base_rmse": 0.4325701101121452,
+      "candidate_rmse": 0.36748616211373974,
+      "mse_gain": 0.052070820817347624,
+      "twice_error_correction_product": 0.09675276021953759,
+      "correction_energy": 0.04468193940218992
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen",
+      "partition": "train",
+      "subset": "cliff",
+      "count": 364,
+      "base_rmse": 0.48847547210437575,
+      "candidate_rmse": 0.42551410976740534,
+      "mse_gain": 0.05754602923644525,
+      "twice_error_correction_product": 0.10251832406764871,
+      "correction_energy": 0.04497229483120351
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen",
+      "partition": "train",
+      "subset": "noncliff",
+      "count": 591,
+      "base_rmse": 0.39421197979368905,
+      "candidate_rmse": 0.32665650732872564,
+      "mse_gain": 0.04869861123265813,
+      "twice_error_correction_product": 0.09320171920310365,
+      "correction_energy": 0.044503107970445516
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen_null",
+      "partition": "train",
+      "subset": "overall",
+      "count": 955,
+      "base_rmse": 0.4325701101121452,
+      "candidate_rmse": 0.3808749746834659,
+      "mse_gain": 0.04205115382230268,
+      "twice_error_correction_product": 0.07636538458267124,
+      "correction_energy": 0.03431423076036854
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen_null",
+      "partition": "train",
+      "subset": "cliff",
+      "count": 364,
+      "base_rmse": 0.48847547210437575,
+      "candidate_rmse": 0.43936319718107625,
+      "mse_gain": 0.04556826781041548,
+      "twice_error_correction_product": 0.07885949191035355,
+      "correction_energy": 0.03329122409993812
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen_null",
+      "partition": "train",
+      "subset": "noncliff",
+      "count": 591,
+      "base_rmse": 0.39421197979368905,
+      "candidate_rmse": 0.33987959654018457,
+      "mse_gain": 0.039884944868541244,
+      "twice_error_correction_product": 0.07482925079709367,
+      "correction_energy": 0.03494430592855242
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen",
+      "partition": "valid",
+      "subset": "overall",
+      "count": 106,
+      "base_rmse": 0.709136821362121,
+      "candidate_rmse": 0.6997605854542931,
+      "mse_gain": 0.013210154456237577,
+      "twice_error_correction_product": 0.04728167393418825,
+      "correction_energy": 0.034071519477950764
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen",
+      "partition": "valid",
+      "subset": "cliff",
+      "count": 40,
+      "base_rmse": 0.6878815517453193,
+      "candidate_rmse": 0.6746234400246792,
+      "mse_gain": 0.018064243400816304,
+      "twice_error_correction_product": 0.05456498792820077,
+      "correction_energy": 0.03650074452738441
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen",
+      "partition": "valid",
+      "subset": "noncliff",
+      "count": 66,
+      "base_rmse": 0.7217142068500266,
+      "candidate_rmse": 0.7145649823497854,
+      "mse_gain": 0.01026828236861399,
+      "twice_error_correction_product": 0.04286754424084734,
+      "correction_energy": 0.0325992618722334
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen_null",
+      "partition": "valid",
+      "subset": "overall",
+      "count": 106,
+      "base_rmse": 0.709136821362121,
+      "candidate_rmse": 0.6986759973009811,
+      "mse_gain": 0.014726882207052094,
+      "twice_error_correction_product": 0.04429167231702013,
+      "correction_energy": 0.029564790109968077
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen_null",
+      "partition": "valid",
+      "subset": "cliff",
+      "count": 40,
+      "base_rmse": 0.6878815517453193,
+      "candidate_rmse": 0.6596046496143817,
+      "mse_gain": 0.038102735438637014,
+      "twice_error_correction_product": 0.06775807906474104,
+      "correction_energy": 0.029655343626103954
+    },
+    {
+      "dataset": "CHEMBL287_Ki",
+      "arm": "output_frozen_null",
+      "partition": "valid",
+      "subset": "noncliff",
+      "count": 66,
+      "base_rmse": 0.7217142068500266,
+      "candidate_rmse": 0.721326346350131,
+      "mse_gain": 0.000559698430333877,
+      "twice_error_correction_product": 0.03006960762143169,
+      "correction_energy": 0.029509909191097847
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen",
+      "partition": "train",
+      "subset": "overall",
+      "count": 452,
+      "base_rmse": 0.44099791867944654,
+      "candidate_rmse": 0.4131653102631149,
+      "mse_gain": 0.023773590674787765,
+      "twice_error_correction_product": 0.038383563166476606,
+      "correction_energy": 0.01460997249168887
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen",
+      "partition": "train",
+      "subset": "cliff",
+      "count": 175,
+      "base_rmse": 0.5299961337485718,
+      "candidate_rmse": 0.5124853566837221,
+      "mse_gain": 0.01825466097319217,
+      "twice_error_correction_product": 0.03253661082712924,
+      "correction_energy": 0.014281949853937041
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen",
+      "partition": "train",
+      "subset": "noncliff",
+      "count": 277,
+      "base_rmse": 0.3740103641559237,
+      "candidate_rmse": 0.3355942093982296,
+      "mse_gain": 0.027260279114423885,
+      "twice_error_correction_product": 0.04207748612454805,
+      "correction_energy": 0.014817207010124142
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen_null",
+      "partition": "train",
+      "subset": "overall",
+      "count": 452,
+      "base_rmse": 0.44099791867944654,
+      "candidate_rmse": 0.41110793736385315,
+      "mse_gain": 0.02546942811604197,
+      "twice_error_correction_product": 0.040347254173590134,
+      "correction_energy": 0.014877826057548199
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen_null",
+      "partition": "train",
+      "subset": "cliff",
+      "count": 175,
+      "base_rmse": 0.5299961337485718,
+      "candidate_rmse": 0.5082621941136698,
+      "mse_gain": 0.02256544382319231,
+      "twice_error_correction_product": 0.03712344873075259,
+      "correction_energy": 0.014558004907560209
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen_null",
+      "partition": "train",
+      "subset": "noncliff",
+      "count": 277,
+      "base_rmse": 0.3740103641559237,
+      "candidate_rmse": 0.3355289514536466,
+      "mse_gain": 0.027304075232463115,
+      "twice_error_correction_product": 0.04238395436310844,
+      "correction_energy": 0.015079879130645304
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen",
+      "partition": "valid",
+      "subset": "overall",
+      "count": 51,
+      "base_rmse": 0.41091345440146315,
+      "candidate_rmse": 0.41803169879963015,
+      "mse_gain": -0.005900634193161364,
+      "twice_error_correction_product": 0.008357435264460322,
+      "correction_energy": 0.014258069457621689
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen",
+      "partition": "valid",
+      "subset": "cliff",
+      "count": 20,
+      "base_rmse": 0.4616239385608712,
+      "candidate_rmse": 0.4794862069194186,
+      "mse_gain": -0.016810361973520566,
+      "twice_error_correction_product": -0.0031382787119639487,
+      "correction_energy": 0.013672083261556622
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen",
+      "partition": "valid",
+      "subset": "noncliff",
+      "count": 31,
+      "base_rmse": 0.37457115282405945,
+      "candidate_rmse": 0.37304912366773035,
+      "mse_gain": 0.001137899858683289,
+      "twice_error_correction_product": 0.01577402492666953,
+      "correction_energy": 0.014636125067986247
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen_null",
+      "partition": "valid",
+      "subset": "overall",
+      "count": 51,
+      "base_rmse": 0.41091345440146315,
+      "candidate_rmse": 0.42015680023234714,
+      "mse_gain": -0.007681869773341149,
+      "twice_error_correction_product": 0.007203652027608403,
+      "correction_energy": 0.014885521800949545
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen_null",
+      "partition": "valid",
+      "subset": "cliff",
+      "count": 20,
+      "base_rmse": 0.4616239385608712,
+      "candidate_rmse": 0.4859595688116826,
+      "mse_gain": -0.02306004186718552,
+      "twice_error_correction_product": -0.008542381685583678,
+      "correction_energy": 0.014517660181601855
+    },
+    {
+      "dataset": "CHEMBL2047_EC50",
+      "arm": "output_frozen_null",
+      "partition": "valid",
+      "subset": "noncliff",
+      "count": 31,
+      "base_rmse": 0.37457115282405945,
+      "candidate_rmse": 0.37156966634861177,
+      "mse_gain": 0.0022395315775262103,
+      "twice_error_correction_product": 0.01736238345547426,
+      "correction_energy": 0.015122851877948054
+    }
+  ],
+  "training_runs": 0,
+  "optimizer_steps": 0,
+  "test_evaluated": false,
+  "raw_predictions": "D:\\GraphCliff-Pair-FPPool-LongPoly\\artifacts\\fp_fit_gap_20261008",
+  "old_no_go_unchanged": true
+}
