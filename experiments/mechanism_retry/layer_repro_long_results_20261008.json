@@ -1,0 +1,92 @@
+{
+  "status": "diverged",
+  "code_commit": "4c54fbd956a7907b68f447da02f0919257b0275e",
+  "manifest_sha256": "f57d060b7215c61f1693391579c5607da3d8b535d67a0ae5e52ea672638356b6",
+  "source_files_verified": 24,
+  "comparisons": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "variant": "retry_self",
+      "optimizer_steps_per_repeat": 1660,
+      "records_compared": 496,
+      "first_difference": {
+        "line": 496,
+        "epoch": 6,
+        "step": 485,
+        "event": "batch",
+        "fields": [
+          "gradient_norm",
+          "gradient_sha256",
+          "loss",
+          "prediction_sha256",
+          "weight_sha256"
+        ]
+      },
+      "trace_sha256": [
+        "284573af552522f0aefd27ddb85badaa6518a13ddbddf6857748204f50785322",
+        "2d921dac4aa235171ada965a4e4cceb0765219a3b644911947c7d5b07292f60b"
+      ]
+    }
+  ],
+  "summaries": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "variant": "retry_self",
+      "optimizer_steps": 1660,
+      "epochs": 20,
+      "elapsed_seconds": 215.3452810000017,
+      "peak_cuda_mb": 565.6513671875,
+      "summary_sha256": "36d75f54bbc706b7e6a43880b5a246ab313c049fd3423a356d2f2699a11e3143"
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "variant": "retry_self",
+      "optimizer_steps": 1660,
+      "epochs": 20,
+      "elapsed_seconds": 212.28295649999927,
+      "peak_cuda_mb": 565.6513671875,
+      "summary_sha256": "ea6d36c2242be8cb8385ec3c5891d08dff94814fca6878f2ac848969673545bb"
+    }
+  ],
+  "divergence_evidence": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "variant": "retry_self",
+      "epoch": 6,
+      "step": 485,
+      "previous_record_equal": true,
+      "tracked_input_equal": true,
+      "rng_before_equal": true,
+      "rng_after_forward_equal": true,
+      "prediction_equal": false,
+      "losses": [
+        0.34009838104248047,
+        0.3401349186897278
+      ],
+      "previous_weight_sha256": "cc9c9bb3a426abe3c7e3fde8a52bfefe1e9a22c0162845d7f025f1edbec6c5a5"
+    }
+  ],
+  "diagnostic_optimizer_steps": 3320,
+  "validation_predictions_hashed": 11680,
+  "trace_records": 3400,
+  "fit_elapsed_seconds": 427.628237500001,
+  "official_test_evaluated": false,
+  "performance_metrics_computed": false,
+  "planned_runs": 8,
+  "completed_runs": 2,
+  "unexecuted": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "variant": "retry_centered"
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "variant": "retry_self"
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "variant": "retry_centered"
+    }
+  ],
+  "limitation": "only completed pairs were checked; same machine/software, seed42, native amax, strict mode, first20epochs"
+}

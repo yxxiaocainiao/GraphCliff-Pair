@@ -120,3 +120,11 @@ M51完成：实际Loss两进程首epoch在第54batch首次出现反向梯度/更
 2. 复用实际模型、读取/批处理/Loss/优化器/调度器；逐batch将输入、样本顺序、RNG、预测、梯度、更新权重SHA写JSONL，逐epoch记录验证预测、优化器状态和RNG。验证只重放，不计算收益、不选权重、不早停。
 3. 执行前提交范围与工具；启动独立进程，启动时固定PYTHONHASHSEED=42和CUBLAS设置，顺序使用本worktree输出，运行期间冻结来源。每对完成即比较，失败则停止后续队列并保留首差异。
 4. 全部通过只说明当前机器/软件/两臂两任务20epoch范围重复；不保证100epoch、其他seed或性能收益。核对来源与历史证据、输出聚合报告，只提交本方向文件并推送独立分支，不合并。
+
+执行前4文件提交并推送4c54fbd956a7907b68f447da02f0919257b0275e；比较工具的晚段差异/完整覆盖检查与原生amax梯度/恢复检查通过。08:09:52在本worktree隐藏启动PID12012，启动manifest为干净Git；输出artifacts/mechanism_retry_repro_long_20261008。运行期间仅准备未被捕获的report_layer_repro_long.py，24份来源及配置保持冻结。
+
+M52完成：234/self两次各20epoch/1660batch完成，第6epoch全局第485batch首次出现前向预测差异（trace第496行）；此前全部记录、该批次输入/配对/CPU-CUDA-Python-NumPy RNG一致，forward后RNG也一致。Loss0.34009838104248047与0.3401349186897278，随后梯度和权重分叉。具体前向算子未定位，不能直接归因某GPU内核、dropout或centered。按预定失败即停规则仅2/8次，另6次（含全部244）未启动，不把计划写成完成。
+
+父进程正常退出，completed.status=diverged，stderr为空。报告工具核验24份来源、两份完整轨迹SHA和20epoch覆盖，3400条记录、3320个优化步骤、11680次验证预测哈希；worker累计427.63秒（含读取/hash/验证），峰值各565.65MiB。验证只重放无指标/选权重，官方test0。M51并列max局部修正仍成立，但长程复现未完成，旧机制No-Go保留。
+
+结果交付layer_repro_long_results_20261008.md/.json、tools/report_layer_repro_long.py及README/本日志共5文件；加执行前4文件，本轮累计9文件，均为本任务。原模型/训练器/Loss/历史配置/报告未改；不写可靠性计划，不合并。下一步捕获并定位第485batch的前向算子，暂不恢复其余6次或收益扩展。
