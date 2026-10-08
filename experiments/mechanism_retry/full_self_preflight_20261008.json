@@ -1,0 +1,174 @@
+{
+  "source_sha256": {
+    "experiments\\mechanism_retry\\full_self_screen.json": "6ba3d26bf9d09b881b231cd37edb7813ffb9f4266f43020d60a156535d4e43a0",
+    "experiments\\mechanism_retry\\full_self_execution_20261008.md": "2778efb49902c908e5354665ff33b36c8962e86011480262cd1091745695f1aa",
+    "tools\\run_full_self_confirmation.py": "10689f438e8c08cfaf4f639666e282321e46058627de634364738f3545a88d0b",
+    "tools\\report_full_self_confirmation.py": "8e88ee3b0612dbc6fe2bf2c85fc8df7312545e3ccadea0f1fc8a1509b27f6176",
+    "docs\\sources.json": "9d1a94d9db16c99fa253e2a397039235923362b45780527a9ff7d208c5849ec6",
+    "external\\fppool\\pooling.py": "8392b0bf6243f78ab52bf445ea575fafe108f26da244a9b0d04a0ef04ddab13f",
+    "experiments\\mechanism_retry\\__init__.py": "8d5f86dcbbb2d52118e08dcd14c744d8fb2d07f91831bf83ff5ff8a4463cc196",
+    "experiments\\mechanism_retry\\audit.py": "a3bee5de3c4e3ca378eb2696ab88e1fd1ed93ac86bdb900f2f8d4d02da448c28",
+    "experiments\\mechanism_retry\\context_scale.py": "9e64edfdd8cd46cce82bea8bfdf574f16756b616d8d7fc0823aa40b1c0a4a1df",
+    "experiments\\mechanism_retry\\model.py": "14f2c2c0855e402bc53576c2fdca2181f2a9da7dcfb7713d30e4dbd7b39b2fe3",
+    "experiments\\mechanism_retry\\repro.py": "effb310139888b7b64cdf9eadac97646c6c49fa2622b8f82d2ca987a227250a6",
+    "experiments\\mechanism_retry\\run.py": "e5c20d0e7add31047c90e691c70302effd89d1f031b956200159eb2a2a6fa119",
+    "experiments\\mechanism_retry\\self_anchor.py": "8824101ddc6d763eecc4a8f7ca261c2b4bd7b7b0b8bb7c25cb0764ef35fdef06",
+    "experiments\\long_branch_swap\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments\\long_branch_swap\\audit.py": "514431cb084a2a9406ae4602499e3980cbfb6441a5396581355391d4c221130a",
+    "experiments\\long_branch_swap\\model.py": "58e76a197a514c1f2a42dab03f2c5759a062b37201e3efa1e4a1d5a8d33d2c39",
+    "experiments\\long_branch_swap\\report.py": "690b822efd9b6f4a3a1487bf0eef9d8f36aa48f62b8899cd0b3e1d402c7e0c50",
+    "experiments\\long_branch_swap\\run.py": "5eddfc29f5d25fc381351123e90e726ced011d30640e7ac09bd5ed527d4de25b",
+    "graphcliff_pair\\__init__.py": "775f6afadfae1b3642db4dea2ec37a849adde23693e8586fb968742042524b3c",
+    "graphcliff_pair\\data.py": "78ed3cb8f49e2402234170f15e71978df6bf91343fd387a4e1739767dd60cf97",
+    "graphcliff_pair\\external.py": "703f616833118664de00430da65cffd41db3a753e42cade5dbebc2982a8ba939",
+    "graphcliff_pair\\fingerprint.py": "4f3204b8eaa64e1d6497ff7f3e152bcb290c1905edf8d81aada84cba573bfacf",
+    "graphcliff_pair\\fppool.py": "7d149e36f21d9a5815b057de466860701fee42be13656415b391329e5dedfc5e",
+    "graphcliff_pair\\loss.py": "66ac7610d88cc4273300b0f4afb60f0e43b98496a92e813d92915d262bf09c98",
+    "graphcliff_pair\\model.py": "3207d09c60bd468f579d3495808221f28198bf771cced0530898c8b2170e31eb",
+    "graphcliff_pair\\predict.py": "a3e9350ff3d82c73578c3bff576bb3a304f4bbe3e78224df477dc583bc4a9d10",
+    "graphcliff_pair\\train.py": "f9b9fe88c0341f78a1d59c1f73f47c18bbeb364e846e70411528937e94739fb8",
+    "graphcliff_pair\\vendor\\__init__.py": "5bfcbfec7e48fb78914210319095c9b35c2706d21d0d47caa94af951289c5557",
+    "graphcliff_pair\\vendor\\dataset_utils.py": "7811462425d9c0c44e4ef3ba007a8043960121da42c24745156755b537179226",
+    "graphcliff_pair\\vendor\\model.py": "20d90ec7602e63bd20a063ac6db94faf3194d1c12c4c96902d927b08d634cb52",
+    "graphcliff_pair\\vendor\\protocol.py": "6be54a19390588fbf0987123030793301d9fbe5e328fa1ac4dcd09cbc32bd1e5",
+    "graphcliff_pair\\vendor\\training.py": "ac137f560475362917d4331d5b3a6bd2855c1d99264a9ff1ba298e7b23a2ab31"
+  },
+  "inputs": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "input_path": "D:\\GraphCliff-main\\benchmark_data\\CHEMBL234_Ki.csv",
+      "input_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+      "train_count": 2632,
+      "valid_count": 292,
+      "valid_cliff_count": 128,
+      "train_pair_count": 2632,
+      "valid_pair_count": 292,
+      "largest_graph_nodes": 84,
+      "pair_sha256": "b9d779dcbacb1f12659fd71fbf9df40bff7838b3cc61eab0e2d7b3e6b74ae247"
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "input_path": "D:\\GraphCliff-main\\benchmark_data\\CHEMBL244_Ki.csv",
+      "input_sha256": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+      "train_count": 2229,
+      "valid_count": 247,
+      "valid_cliff_count": 118,
+      "train_pair_count": 2229,
+      "valid_pair_count": 247,
+      "largest_graph_nodes": 245,
+      "pair_sha256": "c245a0591cdb4c3386f579bded05908e58f87b168e1a9b6f09cd767f069aa362"
+    }
+  ],
+  "records": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "arm": "full",
+      "parameters": 6021198,
+      "full_sha256": "d274af323563422132fdbfaf18a887d283ed5fe593314fd41414b067f5ffc8e9",
+      "head_sha256": "b73fb3c26e4a27f3e8ebe12a6fe93adc81d095da3096bb8d5eca8311aaa403bb",
+      "loss": 0.957138180732727
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 42,
+      "arm": "self",
+      "parameters": 6810654,
+      "full_sha256": "30d154fb519f3750e5c24dfcd8efea743b75da78573c7e4eeb4d1c96b113a098",
+      "head_sha256": "b73fb3c26e4a27f3e8ebe12a6fe93adc81d095da3096bb8d5eca8311aaa403bb",
+      "loss": 0.9797625541687012
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 43,
+      "arm": "full",
+      "parameters": 6021198,
+      "full_sha256": "654ec0eced6131bf100e1ec2a51c192ae2df663738f8e05ec1f29edd545eb203",
+      "head_sha256": "9b7eccbb19c31ed58be145895e6ad75b7a7f204e099463f38f970457b5be2915",
+      "loss": 0.8911821246147156
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 43,
+      "arm": "self",
+      "parameters": 6810654,
+      "full_sha256": "914e72f3aa99c33310ebfcc4e8aed0559689687efde16a60fa2c5268bb280086",
+      "head_sha256": "9b7eccbb19c31ed58be145895e6ad75b7a7f204e099463f38f970457b5be2915",
+      "loss": 1.1075592041015625
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 44,
+      "arm": "full",
+      "parameters": 6021198,
+      "full_sha256": "c642b7a2c1403ce8f07121c13750e903dbf8b36a823e9f8bfc9a7b64c0781793",
+      "head_sha256": "4aa6344e81cc2ebd9e791fd48ea44f031edea92eefdcddb5bb92db3876d18052",
+      "loss": 1.13833487033844
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "seed": 44,
+      "arm": "self",
+      "parameters": 6810654,
+      "full_sha256": "014d9d82633803919cf25ebc5e293cca326ce8addb5f526106cce5315e695c8c",
+      "head_sha256": "4aa6344e81cc2ebd9e791fd48ea44f031edea92eefdcddb5bb92db3876d18052",
+      "loss": 0.9374222755432129
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "arm": "full",
+      "parameters": 6021198,
+      "full_sha256": "d274af323563422132fdbfaf18a887d283ed5fe593314fd41414b067f5ffc8e9",
+      "head_sha256": "b73fb3c26e4a27f3e8ebe12a6fe93adc81d095da3096bb8d5eca8311aaa403bb",
+      "loss": 0.4954029619693756
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 42,
+      "arm": "self",
+      "parameters": 6810654,
+      "full_sha256": "30d154fb519f3750e5c24dfcd8efea743b75da78573c7e4eeb4d1c96b113a098",
+      "head_sha256": "b73fb3c26e4a27f3e8ebe12a6fe93adc81d095da3096bb8d5eca8311aaa403bb",
+      "loss": 0.46786588430404663
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 43,
+      "arm": "full",
+      "parameters": 6021198,
+      "full_sha256": "654ec0eced6131bf100e1ec2a51c192ae2df663738f8e05ec1f29edd545eb203",
+      "head_sha256": "9b7eccbb19c31ed58be145895e6ad75b7a7f204e099463f38f970457b5be2915",
+      "loss": 0.3932013511657715
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 43,
+      "arm": "self",
+      "parameters": 6810654,
+      "full_sha256": "914e72f3aa99c33310ebfcc4e8aed0559689687efde16a60fa2c5268bb280086",
+      "head_sha256": "9b7eccbb19c31ed58be145895e6ad75b7a7f204e099463f38f970457b5be2915",
+      "loss": 0.5284817218780518
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 44,
+      "arm": "full",
+      "parameters": 6021198,
+      "full_sha256": "c642b7a2c1403ce8f07121c13750e903dbf8b36a823e9f8bfc9a7b64c0781793",
+      "head_sha256": "4aa6344e81cc2ebd9e791fd48ea44f031edea92eefdcddb5bb92db3876d18052",
+      "loss": 0.48826444149017334
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "seed": 44,
+      "arm": "self",
+      "parameters": 6810654,
+      "full_sha256": "014d9d82633803919cf25ebc5e293cca326ce8addb5f526106cce5315e695c8c",
+      "head_sha256": "4aa6344e81cc2ebd9e791fd48ea44f031edea92eefdcddb5bb92db3876d18052",
+      "loss": 0.46581193804740906
+    }
+  ],
+  "optimizer_steps": 0,
+  "test_evaluated": false
+}
