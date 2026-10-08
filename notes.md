@@ -698,3 +698,8 @@ full点预测字节复制锁定、mol_size逐值不变；source935训练身份/p
 未来先导234/seed42、3风险RF、6臂、9粗糙度作业4561行＋最多1988旧R重放、3predict调用7020行；0新增Chemprop/辅助RF，未启动。Hc完整/平均同模型对照，另有复制行及无增强控制；不冒称所有跨臂输入信息或有效容量完全相同。已开发分区仅探索，不保证原创/录用。2批4检索，作者综述与官方仓库阅读；2002 DOI失败、2026 PMC验证码均留限制，不用搜索片段作原文证据。PowerShell rg通配目录语法失败一次，改为rg目录＋glob成功，无实验重试。指定expression-skill/planning-with-files仍缺失，沿既有计划；使用scientific-critical-thinking。
 
 更新当前计划/README/投稿计划/M75历史提示和现有日志，新增报告/合成检查/核验；不改训练代码、历史报告结果、权重、原项目、PDF及另一worktree。核验链接/hash/合成/预算/暂存范围后commit/push。下一步只在明确同意具体3风险RF先导范围后写薄脚本并一次执行，不补第二候选或ensemble。
+# M77执行前 — 2026-10-08
+
+用户ok承接M76明确3风险RF/六臂预算，执行一次234/seed42先导。protocol.json固定27项输入hash及原RF配置/角色/上限/主要比较，新增唯一薄入口run_reference_marginalization.py复用作者featurize、已有geometry的std/SALI、安全读取及独立曲线复核，不调用点训练/作者process。selfcheck通过排序并列、ceil和粗糙度原语；首次路径检索rg的Windows通配目录失败、另一次猜测旧组件脚本缺失，只读失败均未做实验，改用已定位run_query_pair_pilot.py复用，无重跑训练。expression-skill/planning-with-files仍缺失，沿已有计划；科学结论核验沿scientific-critical-thinking。
+
+先提交推送代码/协议，再准备一次（6549行粗糙度预算）与拟合一次（3RF/7020评分行），分数hash锁后才读585评价真值。9新上下文作业、0Chemprop/辅助RF/模型load/校准/官方test/安装；阶段900/600/300秒及整体1800硬上限、失败保留不补跑，已开发分区仅探索。当前尚无真实新特征或fit。下一步执行此唯一先导并完整公布结果，不扩参数/任务/候选。

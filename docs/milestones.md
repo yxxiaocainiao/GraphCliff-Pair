@@ -722,3 +722,6 @@ full点预测字节复制锁定、mol_size逐值不变；source935训练身份/p
 用户接受化学信息学应用方法定位，M75强制二选一结束。完成reference_marginalization_20261008/report.md/selfcheck.py/verification.json：参考上下文匹配训练与风险边际化，原7维/固定点预测/合法折参考，非敏感性门控。平方分解是成熟恒等式，不推出接受RMSE改善；合成错误排序、非线性不等价与预算一次核验通过。未来234/seed42三风险RF六臂、9新R作业4561行、最多1988行旧R核对、7020评分行，0新增Chemprop/辅助RF。先导未授权/执行；本轮0真实fit/load/predict/特征/私有标签/官方test。保留待反证应用候选，原创性与效果未确认，不冒称三个创新或最终核心。
 
 来源为官方roughness仓库及作者bagging综述，近期TTA检索命中正文受限如实记录；指定表达/规划技能缺失，沿现有日志。同步计划、README、投稿计划和M75历史提示，旧训练代码/结果/原项目/另一worktree保持。脚本/hash/相对链接/预算/公开范围与git diff核后按明确文件commit/push；下一步范围确认后写薄脚本并执行一次最小先导，不重新拆审计或启动旧模块。
+## M77执行前 — 2026-10-08：冻结唯一3风险RF先导
+
+用户ok授权M76具体范围。新增一个薄脚本experiments/reliability_base/run_reference_marginalization.py及docs/research/reference_marginalization_pilot_20261008/protocol.json，固定27项输入/3RF/六臂/234seed42/三个时间上限、主要两比较及止损，不写新点模型/辅助RF执行器。合成检查通过并列/ceil/复用粗糙度；准备和拟合分别由超时子进程监督，所有评分锁后才评价，拒绝已有目录和重复运行。0新真实fit/load/predict/特征/校准/test/安装。按明确文件先commit/push再一次执行，运行后独立曲线/交换复核、公开聚合并再次提交；逐分子及日志继续忽略。

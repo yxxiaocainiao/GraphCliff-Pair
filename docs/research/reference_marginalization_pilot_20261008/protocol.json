@@ -1,0 +1,95 @@
+{
+  "milestone": "M77",
+  "task": "CHEMBL234_Ki",
+  "seed": 42,
+  "authorization": "User ok after M76 exact 3-risk-RF six-arm proposal",
+  "output": "artifacts/reference_marginalization_pilot_20261008",
+  "base": "artifacts/conditional_pilot_inputs_20261008_v2",
+  "roles_manifest": "artifacts/component_role_feasibility_20261006/CHEMBL234_Ki_tentative_roles.json",
+  "input_sha256": {
+    "artifacts/conditional_pilot_inputs_20261008_v2/inputs.json": "583c40d5243e0c63980ce9ffaeabd49e7803750387855129b31cc1c7a2dedad2",
+    "artifacts/conditional_pilot_inputs_20261008_v2/jobs.json": "650bce99539e5480edd700e96ebe989337b23aa66d7a8ae51ff24897d1f7a118",
+    "artifacts/conditional_pilot_inputs_20261008_v2/protocol.json": "eeb6a8b876cad3e9d6894fb903400f195ff4a7fa3475029655b485aba4cc7f4f",
+    "artifacts/conditional_pilot_inputs_20261008_v2/identities.csv": "aedb47efa2f4d3dc0f84d35a85dc1a3d4bf8aa360a085a32d035e3a65d00406f",
+    "artifacts/conditional_pilot_inputs_20261008_v2/source_labels.csv": "ccd501274248d7fc7c0283683355aff810c71a8810e644f2ade5b6346ca4a130",
+    "artifacts/conditional_pilot_inputs_20261008_v2/score_lock.json": "e98a78297f3fe0a32a289350abb0533643eb1538d2f7f66c7da2d0730d2197d4",
+    "artifacts/conditional_pilot_inputs_20261008_v2/author/LICENSE": "692eff71860f45438688b0630b92739637cd105e9b086ad6e39d7d2805a0a147",
+    "artifacts/conditional_pilot_inputs_20261008_v2/author/src/build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold0/predictions.csv": "5528ea96c9820c5e7399a01ac40f257db504424dc44202c47783bd2519e46063",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold0/features/cache/fixture.csv": "749fcb37e68c0f9b5aa1b9fa8de11eac34f9d631a23f4d1fd734ffc566d77aac",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold0/query.csv": "48be094abc383ffb12011c954982fb77863aaed0bd83c63884ef0e86b798c2d3",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold1/predictions.csv": "104f9b4890d79ecf4bdd340c3bfbc83afffea64e8ca466c0b54364ca7c69bd2f",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold1/features/cache/fixture.csv": "0a82b9691dc9930fe5595ec4183a299ec4c0979638eb8d95afbf0594ffbac171",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold1/query.csv": "b5de672ae4e5b8dde7b777502066706d210c7194e15193a2cd4427afa7abe8d8",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold2/predictions.csv": "805dbecdefcd3a56acf972c6cb74cc181eb615991a4831fff9a1726cc7d54c4e",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold2/features/cache/fixture.csv": "c05ce4e64d7a3dde4d4e5ae8be8376ed7fe36a0003683ea1e2de53ab6c4fb2d6",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/fold2/query.csv": "9b4266a5022be4f251985da9e7c2e05c5cdd98425a6fc32fe0b02e470a0abd94",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/full/predictions.csv": "8a1065fdea21d67151a11749a847d187e169f411cbeb96794968e4a763bbcae0",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/full/features/cache/fixture.csv": "6fc2f0f6379863598817e4f90be75b79ecbf63d196c2676d948bacac62939a9f",
+    "artifacts/conditional_pilot_inputs_20261008_v2/CHEMBL234_Ki/full/query.csv": "2f9963ae90234d9b0d7db337108ce5b706117fa085f151719913b301f4cefa3a",
+    "docs/research/conditional_pilot_run_20261008/verification.json": "3a4664afba737ba641e1f4da547e6b873fb85bbf3951c4b085dd82201ecc079e",
+    "docs/research/reference_context_review_20261008/verification.json": "efcaaaf10270a896df4c7b7b7d6a60db42668c4d29ade550263e11a6a6aa4c3d",
+    "artifacts/component_role_feasibility_20261006/CHEMBL234_Ki_tentative_roles.json": "6548599c61aa6a073f0dd816a1f32eef958c2f054ea655e94cffe586b830551d",
+    "experiments/reliability_base/run_conditional_pilot.py": "1ef7a35ea3dc9f1edc4fdc98b0026a17cc6c8819b73163d55b3b8072e125852f",
+    "experiments/reliability_base/run_query_pair_pilot.py": "a0f1175714e4270c580cbb6a3d1830198773f241f5c0f19bbf7249d780afb3ef",
+    "experiments/reliability_base/run_phase_a.py": "f3fc1543de90e8745b7bb2eae88b837bf4da9fcb6ad3094c13b12f3e7855c3f1",
+    "docs/research/reference_marginalization_20261008/report.md": "251aad8ab19c047c78ccf858e4a341e4c14b8415d2c255b99ae90be8d7a14175"
+  },
+  "source_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+  "risk_rf": {
+    "n_estimators": 200,
+    "max_features": "sqrt",
+    "min_samples_leaf": 5,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "coverage_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "arms": [
+    "H0-full",
+    "H0-mean",
+    "Hd-full",
+    "Hd-mean",
+    "Hc-full",
+    "Hc-mean"
+  ],
+  "candidate": "Hc-mean",
+  "primary_controls": [
+    "H0-full",
+    "Hc-full"
+  ],
+  "continuation": "strictly lower mean-six-RMSE than both primary controls; exploratory only; no automatic expansion",
+  "roles": {
+    "fit": 1403,
+    "evaluation": 585,
+    "calibration_read": 0,
+    "official_test_read": 0
+  },
+  "budgets": {
+    "prepare_seconds": 900,
+    "fit_predict_seconds": 600,
+    "evaluation_seconds": 300,
+    "whole_seconds": 1800,
+    "risk_rf_fits": 3,
+    "risk_predict_calls": 3,
+    "risk_prediction_rows": 7020,
+    "new_context_rows": 4561,
+    "replay_rows": 1988,
+    "fingerprint_molecules": 1988
+  },
+  "software": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "rdkit": "2026.3.4"
+  },
+  "failure": "no automatic retry or extension",
+  "evaluation_labels": "read only after all six scores and hashes locked",
+  "exploratory": true
+}
