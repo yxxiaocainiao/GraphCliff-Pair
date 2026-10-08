@@ -1,0 +1,37 @@
+{
+  "milestone": "M70",
+  "status": "draft_reviewed_not_executable",
+  "input_sha256": {
+    "docs/research/conditional_pilot_prepare_20261008/protocol.json": "2aeca47dfb796acea43a20d3b78c7432d2a129e716f38a6860d9ca22f41e3271",
+    "docs/research/conditional_pilot_run_20261008/verification.json": "3a4664afba737ba641e1f4da547e6b873fb85bbf3951c4b085dd82201ecc079e",
+    "docs/research/roughness_sensitivity_link_20261008/verification.json": "330f1609059219fa72d78f600b08d613a22cdd76b291d86f738f50bb9e6c69e6",
+    "experiments/reliability_base/prepare_conditional_pilot.py": "696085198c97de1f27233061e4b597d39d78e793e265e4ef84a8a10fb6ef1db2",
+    "docs/research/ensemble_gap_review_20261008/report.md": "728165c2a6a6d107f25a66bcc4523dc3fb3d81b2566ba1a81d336a4d34dcc150"
+  },
+  "local_estimator_sha256": "daa1f4a784f0cc9ab891d876ee7b3e0d169782ab844716eec836d4f50ecdd73d",
+  "checks": [
+    "role and OOF counts",
+    "2 full fits and 1170 predictions arithmetic",
+    "6 OOF fits and 2806 predictions arithmetic",
+    "8 total fits and 3976 predictions arithmetic",
+    "local ensemble variance correction=0 static inspection",
+    "point prediction remains seed42",
+    "new seeds and frozen data seed explicitly distinguished",
+    "direct comparison does not establish conditional increment",
+    "official test and calibration remain isolated"
+  ],
+  "actual_execution": {
+    "fits": 0,
+    "model_loads": 0,
+    "predicts": 0,
+    "real_labels_or_prediction_values_read": 0,
+    "features_recomputed": 0
+  },
+  "source_limits": [
+    "official docs latest 2.3.1 differ from installed 2.2.3",
+    "Deep Ensembles abstract only",
+    "Nature 2025 publisher open failed: authentication redirect",
+    "not a comprehensive recent literature review"
+  ],
+  "training_authorized": false
+}

@@ -801,3 +801,16 @@ full点预测字节复制锁定、mol_size逐值不变；source935训练身份/p
 研究决定结束当前“单折敏感性→拒答门控”延伸，不做source配对风险训练/阈值调优、不用负号改门控方向；M66条件加权仍停止，底座与全部负向证据保留，可信最终核心缺失。下一轮需重新定位一个有操作差异和部署信息依据的小问题，若无候选就报告方法缺口，不无限给此假设追加模块。当前无新训练队列。
 
 新增docs/research/roughness_sensitivity_link_20261008/protocol.json、check.py、report.md、verification.json，私有pairs/state留artifacts/roughness_sensitivity_link_20261008；仅追加四日志和README状态。旧M66/M68报告缓存/模型训练代码/原项目/PDF与另一worktree保持。核验hash/公式/链接/拒绝覆盖与公开暂存范围后commit/push可靠性分支。
+
+## M70执行前 — 2026-10-08：强对照缺口与最小ensemble合同，0执行
+
+接续用户“继续吧”。当前无可信算法候选，不恢复条件加权或敏感性门控。P0核M40/M66/M69及既有jobs_for接口；P1核Chemprop官方ensemble接口与Deep Ensembles原始来源，定义固定seed42点预测下的成员分歧风险对照及粗糙度增量问题，列出角色、容量、成本和不能证明事项。仅交付合同草案，不生成可执行队列/模型输入、不读真实标签预测特征、不启动fit/predict/安装。若控制尚不足则明确未冻结，不称可启动协议。更新现有日志并核验commit/push可靠性分支；另一worktree和旧模型协议保持。expression-skill与planning-with-files定向搜索未找到，沿现有日志。
+
+
+## M70完成 — 2026-10-08：ensemble强对照拆成最小2fit草案，未执行
+
+回读M40/M66/M69及既有角色/命令生成接口，保留可靠性问题、不恢复停止候选，不把成熟ensemble当原创。固定seed42点预测，拟只新增full pytorch_seed43/44、data_seed42，训练身份/monitor/参数不变；2fit/2预测批次/1170新预测值即可比较三成员总体方差排序与RF7，无需OOF/风险RF/真实特征重算。原代码jobs_for硬编码42，必须未来薄入口核实际配置，不改历史代码。直接对照不能证明粗糙度条件增量或充分ensemble；完整G/G+V/G+R/G+V+R合同仍缺容量控制与预算，补三折需另6fit/6批/2806值，总计8fit/3976新预测值，当前不建队列。
+
+静态核本机2.2.3 EnsembleEstimator correction=0及源码hash；官方latest网页为2.3.1，只核接口存在，不称本机兼容运行。Deep Ensembles仅原始摘要，MSE成员分歧不冒充完整论文概率/对抗方案。2025Nature页跳身份认证访问失败，未使用搜索片段指标，不称近期综述完成。expression-skill/planning-with-files定向未找到，沿已有持久计划；使用scientific-critical-thinking核可证伪性和混杂。
+
+本轮0fit/load/predict/真实标签预测特征解析/新划分/安装，不写执行脚本。角色/预算算术/本机源码hash和结论边界核验通过；新2fit草案仍需配置差异/hash绑定/输出保护与合成检查及明确训练授权，当前不可启动。新增ensemble_gap_review_20261008/report.md、verification.json并同步README/四日志，历史代码协议模型/原项目/PDF/另一worktree保持。核验明确暂存后commit/push可靠性分支。下一步若继续，仅做2fit合同的零训练配置与合成核验，不自动训练，也不扩到8fit。
