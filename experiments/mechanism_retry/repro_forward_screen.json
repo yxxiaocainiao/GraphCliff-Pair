@@ -1,0 +1,11 @@
+{
+  "purpose": "capture and localize global batch485, not efficacy",
+  "dataset": "CHEMBL234_Ki",
+  "variant": "retry_self",
+  "epochs": 6,
+  "capture_step": 485,
+  "repeats": 2,
+  "seed": 42,
+  "training_config": "experiments/mechanism_retry/context_scale_screen.json",
+  "test_evaluated": false
+}
