@@ -111,3 +111,12 @@ M51完成：实际Loss两进程首epoch在第54batch首次出现反向梯度/更
 新增本方向repro.py可选入口，原生amax在并列时平均分配次梯度，不加参数、不改前向max值，manifest注明协议；退出/异常恢复进程内路由，不支持并发。原型两次及实际helper两次首epoch83batch追踪逐位一致。6个针对性检查通过（原mechanism4、context1、新CPU/GPU并列/恢复契约1），报告工具核验6对追踪、最终5份来源SHA和18段诊断清单，共991个诊断优化步骤，完整性能筛查0、验证选模0、官方test0。首epoch通过不保证完整训练；不据此撤销旧No-Go或声称性能收益。
 
 提交范围为README/worktree、repro.py、结果md/json、tests/test_retry_repro.py和3个tools，共9文件。原模型/训练器/Loss/配置及历史报告/manifest保持不变；不写可靠性目录或计划、不自动合并。下一阶段先验证更长轨迹和另一任务，再讨论有限同期对照，不自动恢复旧队列。
+
+## M52 — 修正协议的长轨迹与第二任务验收（2026-10-08）
+
+用户“继续下一步”授权承接M51。开始时独立worktree干净，HEAD23139e3。默认communication/planning skill仍缺失，继续以本文件持久记录，不写可靠性计划。
+
+1. 冻结新验收范围：234/244 × self/centered × 两次独立进程，seed42、原生amax、strict deterministic、固定20epoch；覆盖历史第17epoch分叉。不是旧seed43/44效果扩训队列，不评估context/FP组合。
+2. 复用实际模型、读取/批处理/Loss/优化器/调度器；逐batch将输入、样本顺序、RNG、预测、梯度、更新权重SHA写JSONL，逐epoch记录验证预测、优化器状态和RNG。验证只重放，不计算收益、不选权重、不早停。
+3. 执行前提交范围与工具；启动独立进程，启动时固定PYTHONHASHSEED=42和CUBLAS设置，顺序使用本worktree输出，运行期间冻结来源。每对完成即比较，失败则停止后续队列并保留首差异。
+4. 全部通过只说明当前机器/软件/两臂两任务20epoch范围重复；不保证100epoch、其他seed或性能收益。核对来源与历史证据、输出聚合报告，只提交本方向文件并推送独立分支，不合并。

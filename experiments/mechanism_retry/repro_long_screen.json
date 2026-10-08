@@ -1,0 +1,13 @@
+{
+  "purpose": "reproducibility acceptance only; no performance selection",
+  "datasets": ["CHEMBL234_Ki", "CHEMBL244_Ki"],
+  "variants": ["retry_self", "retry_centered"],
+  "repeats": 2,
+  "epochs": 20,
+  "seed": 42,
+  "training_config": "experiments/mechanism_retry/context_scale_screen.json",
+  "pooling": "native amax, equal gradient at exact ties",
+  "strict_deterministic": true,
+  "stop_on_first_difference": true,
+  "test_evaluated": false
+}
