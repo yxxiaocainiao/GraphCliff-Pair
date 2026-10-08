@@ -1,6 +1,6 @@
 # GraphCliff-Pair
 
-当前下一步（M71，2026-10-08）：先定位一个有既有证据和合法输入依据的接受/拒答问题，再审最多一个成熟方法上的小改进；理论性质、反例、消融与解释须对应同一机制。M70 ensemble草案降为后续备选，当前不准备或执行。M66/M69具体候选继续停止，0获准新训练；详见[现行计划](docs/research/reliability_publication_plan.md)。
+当前状态（M72，2026-10-08）：[单问题方法缺口及方向审计完成](docs/research/algorithm_gap_closure_20261008/report.md)。预测可靠性主线保留，尚无可信新算法核心；不再循环审查/准备代替方法进展。原粗糙度探索收益保留，M66条件加权/M69敏感性门控停止；M70 ensemble只作后续备选，不准备或执行。现结果不构成Atlas跨时间验证。无获准新训练，详见[现行计划](docs/research/reliability_publication_plan.md)。
 
 本可靠性分支当前状态 M66（2026-10-08）：[234×seed42五臂真实先导已完成](docs/research/conditional_pilot_run_20261008/report.md)。条件粗糙度加权六比例平均RMSE为1.135127，相对RF7退化1.1876%，未超过全部四对照；按冻结条件停止该候选扩训，不扩任务/seed或调参。可靠性底座及合法缓存保留，可信最终算法核心仍缺失。模型/逐分子产物留忽略目录，当前没有活跃训练。以下M46及M40等章节均保留为历史，不覆盖本分支M66结论；另一worktree的FPPool/LongPoly研究独立维护。
 

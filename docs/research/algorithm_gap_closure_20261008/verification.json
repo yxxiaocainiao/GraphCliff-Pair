@@ -1,0 +1,54 @@
+{
+  "milestone": "M72",
+  "status": "method_gap_review_complete",
+  "new_candidates_retained": 0,
+  "new_experiments_scheduled": 0,
+  "actual_execution": {
+    "fits": 0,
+    "model_loads": 0,
+    "predicts": 0,
+    "real_feature_recomputations": 0,
+    "private_query_labels_or_predictions_read": 0,
+    "official_test_records_read": 0,
+    "parameter_searches": 0
+  },
+  "aggregate_checks": {
+    "m49_positive": 13,
+    "m49_negative": 2,
+    "m49_cal_eval_sign_matches": 8,
+    "m49_4792_90_exchange_count": 3,
+    "m66_candidate_relative_degradation_percent": 1.1876282421215745,
+    "m69_main_correlations": [
+      -0.008380094673314464,
+      -0.06807308863554978
+    ]
+  },
+  "source_sha256": {
+    "docs\\research\\acceptance_exchange_20261007\\report.md": "b84582a4e31632a1026bd0e97a9cb5b6e45b93d807ccce7009515c8b094aa270",
+    "docs\\research\\acceptance_exchange_20261007\\results.json": "3fcba799f3bda67b3b2445fddaf66736cf97cb7f51fc228d6089b794530646e1",
+    "docs\\research\\acceptance_exchange_20261007\\method_gap.md": "f223f11d12dc20449f8eb05557bff8d82bf667f49724a478fbd4bbc4d458e7a4",
+    "docs\\research\\joint_holdout_contract_20261007\\report.md": "bf5070b4e16d2cca152a580757dd0799156f2045b1b26373a0a41f74d47f9421",
+    "docs\\research\\exchange_ranking_review_20261007\\report.md": "b72653c6a8a1b3ff352b8d4b462bd725a75f8028078fbb1b16b9ec0343df0f81",
+    "docs\\research\\conditional_pilot_run_20261008\\report.md": "74c9a9a7dd1659cc4df53b5868699e70e92b844365edac17749a5cdae5f4c68e",
+    "docs\\research\\conditional_pilot_run_20261008\\verification.json": "3a4664afba737ba641e1f4da547e6b873fb85bbf3951c4b085dd82201ecc079e",
+    "docs\\research\\reference_context_check_20261008\\report.md": "011a9b559cc47a600320a004dc8a6528727421577e68d3fe024611efef9203c0",
+    "docs\\research\\reference_context_check_20261008\\verification.json": "39f82204835f67c594207c7be4aea45dc4741bd49c8ba631f6aa8ee53bafc9e7",
+    "docs\\research\\roughness_sensitivity_link_20261008\\report.md": "3aa30536b751a0638a80e915b85362c04c8daf10b4c473229a7b3a4210240e35",
+    "docs\\research\\roughness_sensitivity_link_20261008\\verification.json": "330f1609059219fa72d78f600b08d613a22cdd76b291d86f738f50bb9e6c69e6",
+    "docs\\research\\publication_assets_20261006\\report.md": "6f7f04182c561c3fe5593b74fe33755d508ab85bbbe6945e898047f628b5fc74"
+  },
+  "report_sha256": "eac76e967841fd8ba0a3ba9c86bd1ea464be31ea14a6b6f40da917b1685b21e3",
+  "limits": [
+    "historical public aggregates checked only; no rerun of private diagnostics",
+    "M49 and M66 protocols not pooled",
+    "M69 concerns conditional versus RF7, not original RF7 versus RF5",
+    "no new candidate, literature novelty certification or synthetic theory result",
+    "temporal limitations inherited from M32/M34; PDF not reread this pass"
+  ],
+  "direction_audit": {
+    "reliability_scope_preserved": true,
+    "algorithm_core_established": false,
+    "ensemble_priority_deviation_corrected_in": "M71",
+    "repeated_review_preparation_not_algorithm_progress": true
+  }
+}
