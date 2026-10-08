@@ -563,3 +563,19 @@ selfcheck1/prepare1/真实run1/audit1通过；独立标量审核首命令默认G
 当前只是metadata和命令准备，真实CSV/特征/点模型/五臂RF均未物化，GEN5及结构估权与RF执行仍只有规格；不能说整条训练流程已可运行。下一步合法输入物化与有上限执行接线，再无训练核验；真实训练仍未授权。不再次做M63合成KDE，不新增算法模块/候选。expression-skill指定路径缺失，沿现有日志。
 
 新增experiments/reliability_base/prepare_conditional_pilot.py及docs/research/conditional_pilot_prepare_20261008/report.md、protocol.json、verification.json，追加四日志。0真实或合成fit/权重load/predict/真实结构标签特征预测解析/新划分/官方test/安装/搜索。旧训练入口、历史报告协议/模型缓存图、PDF/原项目及另一FPPool/LongPoly worktree不改。来源/CLI/身份/接口/输出保护/公开聚合/暂存范围核验后commit/push可靠性分支，不把准备工作或三贡献框架当真实算法结果。
+
+
+## M65执行前 — 2026-10-08：合法输入物化与五臂执行接线，禁止实际运行
+
+用户“继续”接续M64下一步。复用jobs_for、run_command、作者特征入口及M63条件权重，不重搭项目。仅物化234已固定fit/monitor标签和允许的结构，evaluation只读smiles/split，calibration与official test记录不解析；源文件仅作字节hash。准备新忽略目录，生成训练/查询/占位feature fixture及来源hash，接五臂风险函数和有界执行函数但本轮只prepare/check。最小合成毒标签检查和mock执行接线核验，真实/合成fit与predict为0，失败保留且不静默补跑。历史协议/旧训练入口及另一worktree不改。完成后核验commit/push。
+
+
+## M65完成 — 2026-10-08：合法输入与五臂执行接线通过，0训练
+
+新增run_conditional_pilot.py，复用jobs_for/run_command/作者入口/M63条件权重。最终私有输入artifacts/conditional_pilot_inputs_20261008_v2：12份作业CSV、身份/source-fit标签/作业/协议/作者源码许可副本/hash；2339条允许结构、1754条fit/monitor标签，evaluation真实y读取0、calibration及官方test记录解析0。查询CSV仅smiles、作者fixture查询y=0；canonical/组件角色折隔离与身份顺序、参考标签一致、来源hash通过。
+
+实现五臂相同原始7维RF/绝对OOF误差，source-only 2scaler/1PCA，8KDE含共享联合/条件四KDE；结构源秩不足7停止。CLI仅prepare/check，execute函数未调用，未来显式启动才执行；4点训练/4预测/4特征+子进程五臂后处理限900/120/300/600秒，整体5400秒、训练wall至多3600秒。分数与配置锁定后才读取评价标签，不自动重试、扩预算或扩任务。
+
+前三次递增自检均通过；最终审查修正未来相对目录在子进程cwd误解析的问题，因runner hash变化保留首份准备目录、另生成v2，不重写首份清单。第四次自检在测试夹具Windows跨C/D盘relpath失败，0实际执行；改用contextlib.chdir，最终第五次通过。两次prepare及各自检查、最终独立check/输出拒绝/hash不变检查通过。全部真实/合成估计器fit=0、实际predict=0、真实权重load=0、真实特征重算=0；mock五风险臂/13执行阶段、毒标签、源秩、整体与单步超时、重复执行拒绝、score-lock先于truth、旧metrics AST六点曲线均核验。合成score-lock检查仅计算20个合成结构的Morgan位向量。失败与纠正记录公开verification，不称全部首次通过。
+
+公开新增脚本及docs/research/conditional_pilot_inputs_20261008/check.py、report.md、verification.json，追加四日志。历史训练入口/协议/报告/模型、原项目/PDF和另一FPPool/LongPoly worktree不改。真实GPU/特征/密度/RF时长收益尚未验证；这不是新实验效果或最终贡献。下一步已具体到冻结的234×seed42五臂真实先导，不再增加准备阶段；当前不自动启动。核验公开文件/私有忽略/暂存范围后commit/push可靠性分支。

@@ -1,0 +1,51 @@
+{
+  "milestone": "M65",
+  "status": "passed",
+  "real_inputs": {
+    "status": "checked_inputs",
+    "jobs": 4,
+    "csv_inputs": 12,
+    "structure_rows": 2339,
+    "legal_label_rows": 1754,
+    "evaluation_labels_read": 0,
+    "fits": 0,
+    "predictions": 0
+  },
+  "active_private_output": "artifacts\\conditional_pilot_inputs_20261008_v2",
+  "first_preparation_preserved": "artifacts/conditional_pilot_inputs_20261008",
+  "prepare_calls": 2,
+  "actual_estimator_fits": 0,
+  "actual_predictions": 0,
+  "model_weight_loads": 0,
+  "real_feature_recomputations": 0,
+  "calibration_record_parsing": false,
+  "official_test_record_parsing": false,
+  "whole_source_byte_hashing": true,
+  "source_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+  "protocol_sha256": "2aeca47dfb796acea43a20d3b78c7432d2a129e716f38a6860d9ca22f41e3271",
+  "runner_sha256": "1ef7a35ea3dc9f1edc4fdc98b0026a17cc6c8819b73163d55b3b8072e125852f",
+  "check_sha256": "afbbb8f1a43dfcae2aad17b875ee3c99b2b61ac315667b59cb240c680ffbf821",
+  "output_guard_rejections": [
+    "FileExistsError",
+    "ValueError"
+  ],
+  "guard_files_unchanged": true,
+  "synthetic_check_history": [
+    "pass: base mocks and poison labels",
+    "pass: add score lock and legacy curves",
+    "pass: add rank/weight binding/whole budget checks",
+    "failure: Windows relpath across C and D drives in test harness; zero actual fit/predict",
+    "pass: temporary same-directory chdir relative-path check"
+  ],
+  "failure_correction": "Only synthetic test harness changed; use contextlib.chdir. No training or automatic retry.",
+  "mock_risk_arms": 5,
+  "mock_subprocess_stages": 13,
+  "score_lock_before_truth": true,
+  "legacy_curve_match": true,
+  "source_rank_stop": true,
+  "whole_run_cap_stop": true,
+  "per_stage_timeout_stop": true,
+  "retry_rejected": true,
+  "real_runtime_verified": false,
+  "real_training_authorized": false
+}
