@@ -1,0 +1,108 @@
+{
+  "milestone": "M67",
+  "status": "passed",
+  "role_table": [
+    {
+      "job": "fold0",
+      "reference_rows": 935,
+      "query_rows": 468,
+      "reference_components": 131,
+      "query_components": 60,
+      "queries_shared_with_full": 0
+    },
+    {
+      "job": "fold1",
+      "reference_rows": 935,
+      "query_rows": 468,
+      "reference_components": 126,
+      "query_components": 65,
+      "queries_shared_with_full": 0
+    },
+    {
+      "job": "fold2",
+      "reference_rows": 936,
+      "query_rows": 467,
+      "reference_components": 125,
+      "query_components": 66,
+      "queries_shared_with_full": 0
+    },
+    {
+      "job": "full",
+      "reference_rows": 1403,
+      "query_rows": 585,
+      "reference_components": 191,
+      "query_components": 189,
+      "queries_shared_with_full": 585
+    }
+  ],
+  "paired_query_contexts_available": 0,
+  "cache_hashes_observed_now": {
+    "fold0": "749fcb37e68c0f9b5aa1b9fa8de11eac34f9d631a23f4d1fd734ffc566d77aac",
+    "fold1": "0a82b9691dc9930fe5595ec4183a299ec4c0979638eb8d95afbf0594ffbac171",
+    "fold2": "c05ce4e64d7a3dde4d4e5ae8be8376ed7fe36a0003683ea1e2de53ab6c4fb2d6",
+    "full": "6fc2f0f6379863598817e4f90be75b79ecbf63d196c2676d948bacac62939a9f"
+  },
+  "metadata_and_prior_evidence_hashes_checked": true,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_model_loads": 0,
+  "real_feature_recomputations": 0,
+  "label_value_parsing": false,
+  "prediction_value_parsing": false,
+  "feature_value_parsing": false,
+  "official_test_record_parsing": false,
+  "calibration_record_parsing": false,
+  "future_minimal_check": {
+    "query_rows": 585,
+    "reference_rows": 935,
+    "reference_job": "fold0",
+    "candidate_methods": 0,
+    "chemprop_fits": 0,
+    "chemprop_predictions": 0,
+    "auxiliary_rf_fits": 1,
+    "auxiliary_feature_batches": 1,
+    "auxiliary_query_rows": 585,
+    "risk_rf_fits": 0,
+    "risk_predictions": 0,
+    "kde_fits": 0,
+    "scaler_fits": 0,
+    "pca_fits": 0,
+    "feature_seconds_cap": 300,
+    "whole_run_seconds_cap": 600,
+    "automatic_retries": 0,
+    "target_label_reads": 0,
+    "calibration_reads": 0,
+    "executed": false
+  },
+  "audit_history": [
+    "metadata check passed",
+    "added synthetic sanity examples; expanded check passed",
+    "source access records added; final metadata check passed"
+  ],
+  "access_limits": [
+    "expression-skill missing",
+    "guessed refinement report path missing; located actual records with rg",
+    "PMC full text blocked by captcha; used author arXiv abstract"
+  ],
+  "literature": [
+    {
+      "url": "https://www.jmlr.org/beta/papers/v8/sugiyama07a.html",
+      "scope": "official abstract"
+    },
+    {
+      "url": "https://arxiv.org/abs/2104.00673",
+      "scope": "author abstract and metadata only"
+    }
+  ],
+  "synthetic_checks": {
+    "top_k_similarity_monotonic_example": true,
+    "roughness_can_increase_or_decrease": true,
+    "estimator_fits": 0
+  },
+  "input_hashes": {
+    "protocol": "2aeca47dfb796acea43a20d3b78c7432d2a129e716f38a6860d9ca22f41e3271",
+    "jobs": "650bce99539e5480edd700e96ebe989337b23aa66d7a8ae51ff24897d1f7a118",
+    "roles": "6548599c61aa6a073f0dd816a1f32eef958c2f054ea655e94cffe586b830551d",
+    "runner": "1ef7a35ea3dc9f1edc4fdc98b0026a17cc6c8819b73163d55b3b8072e125852f"
+  }
+}
