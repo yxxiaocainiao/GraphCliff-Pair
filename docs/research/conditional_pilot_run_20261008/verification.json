@@ -1,0 +1,191 @@
+{
+  "milestone": "M66",
+  "status": "completed_and_checked",
+  "task": "CHEMBL234_Ki",
+  "seed": 42,
+  "means": {
+    "RF7": 1.1218040194999552,
+    "IW-GEN5": 1.1199046196722835,
+    "IW-STRUCT7": 1.1374753980523626,
+    "IW-RISK7": 1.1316300700213733,
+    "IW-COND7": 1.1351268808567918
+  },
+  "comparisons": {
+    "RF7": {
+      "candidate_minus_control": 0.01332286135683658,
+      "relative_reduction_percent": -1.1876282421215831
+    },
+    "IW-GEN5": {
+      "candidate_minus_control": 0.015222261184508312,
+      "relative_reduction_percent": -1.3592462176790365
+    },
+    "IW-STRUCT7": {
+      "candidate_minus_control": -0.0023485171955708317,
+      "relative_reduction_percent": 0.2064675156572239
+    },
+    "IW-RISK7": {
+      "candidate_minus_control": 0.003496810835418529,
+      "relative_reduction_percent": -0.3090065320862748
+    }
+  },
+  "necessary_continuation_condition_met": false,
+  "no_automatic_expansion": true,
+  "weight_diagnostics": {
+    "RF7": {
+      "ess": 1403.0,
+      "max_share": 0.0007127583749109052,
+      "positive_rows": 1403,
+      "quantiles": {
+        "0": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    "IW-GEN5": {
+      "ess": 938.6133855245548,
+      "max_share": 0.004627658995518097,
+      "positive_rows": 1403,
+      "quantiles": {
+        "0": 2.735303970452987e-15,
+        "0.5": 0.812704342783713,
+        "0.9": 1.9292544047025153,
+        "0.99": 3.3908972970884186,
+        "1": 6.492605570711891
+      }
+    },
+    "IW-STRUCT7": {
+      "ess": 604.3092291347307,
+      "max_share": 0.0062574898328937485,
+      "positive_rows": 1403,
+      "quantiles": {
+        "0": 3.2701478336578424e-08,
+        "0.5": 0.5839311932893914,
+        "0.9": 2.5336245895287615,
+        "0.99": 4.665896624189453,
+        "1": 8.77925823554993
+      }
+    },
+    "IW-RISK7": {
+      "ess": 837.0495999644908,
+      "max_share": 0.0038378060130515924,
+      "positive_rows": 1403,
+      "quantiles": {
+        "0": 1.4497256422273136e-13,
+        "0.5": 0.7679406424638336,
+        "0.9": 2.1403931433112433,
+        "0.99": 3.470005826391088,
+        "1": 5.384441836311384
+      }
+    },
+    "IW-COND7": {
+      "ess": 1013.0808258565504,
+      "max_share": 0.004546478869648532,
+      "positive_rows": 1403,
+      "quantiles": {
+        "0": 1.4448101482130413e-13,
+        "0.5": 0.970085202206888,
+        "0.9": 1.6442841205504548,
+        "0.99": 2.795738999390073,
+        "1": 6.378709854116891
+      }
+    }
+  },
+  "timings": {
+    "fold0": {
+      "train": 15.31199999999808,
+      "predict": 6.3439999999973224,
+      "feature": 2.2810000000026776
+    },
+    "fold1": {
+      "train": 17.718999999997322,
+      "predict": 6.1560000000026776,
+      "feature": 2.1569999999992433
+    },
+    "fold2": {
+      "train": 16.421000000002095,
+      "predict": 6.281999999999243,
+      "feature": 2.1559999999954016
+    },
+    "full": {
+      "train": 16.312000000005355,
+      "predict": 6.25,
+      "feature": 2.4060000000026776
+    }
+  },
+  "point_training_audit": {
+    "fold0": {
+      "config_sha256": "a5569f9a758ef46788a82ec6d25e35cd789761316a89c5c1f8a50099e39b8113",
+      "last_displayed_epoch_zero_based": 19,
+      "saved_fit_rows": 935,
+      "saved_monitor_rows": 351
+    },
+    "fold1": {
+      "config_sha256": "522d8c2d7f1e31f78bcf164974a275043f08f3fc30d6d603585c30b810e49597",
+      "last_displayed_epoch_zero_based": 27,
+      "saved_fit_rows": 935,
+      "saved_monitor_rows": 351
+    },
+    "fold2": {
+      "config_sha256": "32b73acb4f7d42a6a68e85aa3ddae6cb86e36425fb374931b8d6befbabc9567f",
+      "last_displayed_epoch_zero_based": 24,
+      "saved_fit_rows": 936,
+      "saved_monitor_rows": 351
+    },
+    "full": {
+      "config_sha256": "66f680f92d2724d54e0a235544a625d97867936e6d5e983fe2be0134d01740c0",
+      "last_displayed_epoch_zero_based": 18,
+      "saved_fit_rows": 1403,
+      "saved_monitor_rows": 351
+    }
+  },
+  "postprocess_seconds": 3.7030000000013388,
+  "execution": {
+    "status": "completed",
+    "explicit_training_authorization": true,
+    "chemprop_fits_started": 4,
+    "point_predict_batches_started": 4,
+    "auxiliary_rf_batches_started": 4,
+    "postprocess_started": true,
+    "elapsed_seconds": 103.51499999999942
+  },
+  "completed_path_counts": {
+    "chemprop": 4,
+    "auxiliary_rf": 4,
+    "risk_rf": 5,
+    "kde": 8,
+    "scaler": 2,
+    "pca": 1
+  },
+  "counts_evidence": "four logged point/feature jobs plus completed frozen postprocess code path; no per-estimator instrumentation",
+  "official_test_record_parsing": false,
+  "calibration_record_parsing": false,
+  "target_labels_first_read_after_score_lock": true,
+  "curves_checked": 30,
+  "exchange_rows_checked": 24,
+  "diagnostics_fits": 0,
+  "diagnostics_predictions": 0,
+  "audit_history": [
+    "initial aggregate audit passed",
+    "supplementary read-only config audit: tomllib failed because Chemprop config.toml uses configargparse syntax",
+    "corrected audit uses official Chemprop parser only, never calls CLI handler; no training retry"
+  ],
+  "checks": {
+    "source_order": true,
+    "finite_features": true,
+    "score_config_hashes": true,
+    "acceptance_counts": true,
+    "partitions_and_exchange_identity": true,
+    "full_acceptance_equal": true
+  },
+  "evidence_hashes": {
+    "launch_record.json": "52e95f1bd91cc55e131caab66efadd63e11a78cd21eee1d627aa5928662dbe05",
+    "inputs.json": "583c40d5243e0c63980ce9ffaeabd49e7803750387855129b31cc1c7a2dedad2",
+    "score_lock.json": "e98a78297f3fe0a32a289350abb0533643eb1538d2f7f66c7da2d0730d2197d4",
+    "scores.csv": "eb091d10d1349e7b4b3bc00c5e2b3e57f0858286678e8618d77c81fb88849198",
+    "weights.csv": "2578239e2d9003144bc84d9378723f73991ae66892d0e2f63cb9c9bba4046920",
+    "results.json": "f4042fd6cc8b88233a0f1c4b63a35b0b1264ba4731c87c96916aed361c193942",
+    "execution.json": "340bf6851e592816b7c128aa0b21fafe52751e0bc095dd7b07ef750c17197dcd"
+  }
+}

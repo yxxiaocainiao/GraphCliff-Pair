@@ -1,0 +1,52 @@
+{
+  "milestone": "M66",
+  "task": "CHEMBL234_Ki",
+  "seed": 42,
+  "input_check": {
+    "status": "checked_inputs",
+    "jobs": 4,
+    "csv_inputs": 12,
+    "structure_rows": 2339,
+    "legal_label_rows": 1754,
+    "evaluation_labels_read": 0,
+    "fits": 0,
+    "predictions": 0
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "pandas": "3.0.5",
+    "chemprop": "2.2.3",
+    "rdkit": "2026.3.4"
+  },
+  "torch_version": "2.12.1+cu130",
+  "cuda_device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "explicit_training_authorization": true,
+  "authorization_message": "continue next step following M65 single-task five-arm pilot",
+  "code_commit": "3ce37f4ddc7c0cf64ae37a040cd9b33a01b78fe3",
+  "runner_sha256": "1ef7a35ea3dc9f1edc4fdc98b0026a17cc6c8819b73163d55b3b8072e125852f",
+  "inputs_sha256": "583c40d5243e0c63980ce9ffaeabd49e7803750387855129b31cc1c7a2dedad2",
+  "frozen_protocol_sha256": "2aeca47dfb796acea43a20d3b78c7432d2a129e716f38a6860d9ca22f41e3271",
+  "budget": {
+    "chemprop_fits": 4,
+    "chemprop_predict_batches": 4,
+    "chemprop_predicted_rows": 1988,
+    "auxiliary_activity_rf_fits": 4,
+    "feature_batches": 4,
+    "risk_rf_fits": 5,
+    "risk_predict_batches": 5,
+    "risk_predicted_rows": 2925,
+    "kde_fits": 8,
+    "scaler_fits": 2,
+    "pca_fits": 1,
+    "fit_seconds_each": 900,
+    "predict_seconds_each": 120,
+    "feature_seconds_each": 300,
+    "postprocess_seconds": 600,
+    "whole_run_seconds": 5400,
+    "gpu_training_wall_seconds": 3600,
+    "automatic_retries": 0,
+    "budget_note": "Extra risk RF and marginal KDEs remain within existing 600-second postprocess/5400-second total caps; duration unknown, stop if exceeded."
+  }
+}
