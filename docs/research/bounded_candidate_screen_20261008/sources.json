@@ -1,0 +1,53 @@
+{
+  "checked_on": "2026-10-08",
+  "queries": [
+    "molecular uncertainty activity cliffs local roughness prediction reliability 2025 2026 error estimation",
+    "selective regression residual correction risk estimation local features 2025 2026",
+    "QSAR fixed predictor uncertainty local gradients predicted observed activity differences reliability 2025 2026",
+    "molecular prediction reliability matched molecular pairs discrepancy predicted experimental gradients uncertainty"
+  ],
+  "search_batches": 2,
+  "original_papers": [
+    {
+      "title": "Predicting Activity Cliffs for Autonomous Medicinal Chemistry",
+      "url": "https://arxiv.org/html/2604.07560v1",
+      "version": "v1",
+      "year": 2026,
+      "reading": "Methods 3; discussion and limitations 6-9",
+      "status": "preprint; current publication status not verified",
+      "web_snapshot_sha256": null
+    },
+    {
+      "title": "When Molecular Similarity Works: Property Cliffs Reveal Hidden Errors",
+      "url": "https://arxiv.org/html/2605.17265v1",
+      "version": "v1",
+      "year": 2026,
+      "reading": "Methods 3-4, equations 13-18",
+      "status": "preprint; no claim of fixed-predictor risk method",
+      "web_snapshot_sha256": null
+    },
+    {
+      "title": "Prediction-driven matched molecular pairs to interpret QSARs and aid the molecular optimization process",
+      "url": "https://link.springer.com/article/10.1186/s13321-014-0048-0",
+      "year": 2014,
+      "reading": "Methods: AD, Delta-pair chart; Conclusions",
+      "status": "original journal article",
+      "web_snapshot_sha256": null
+    }
+  ],
+  "official_implementation": {
+    "repo": "https://github.com/krishnatheaverage/qsar-landscape-roughness",
+    "scope": "historically audited local fixed snapshot only; no latest download",
+    "license": "MIT",
+    "files": {
+      "artifacts\\conditional_pilot_inputs_20261008_v2\\author\\src\\build_features.py": "455bc87abb853eeb670e96a09d038fadf38b2e0b842a499b315d1eb741fe2537",
+      "artifacts\\conditional_pilot_inputs_20261008_v2\\author\\LICENSE": "692eff71860f45438688b0630b92739637cd105e9b086ad6e39d7d2805a0a147"
+    }
+  },
+  "limits": [
+    "selected method sections, not full replication or exhaustive novelty search",
+    "2 arXiv v1 manuscripts treated as preprints",
+    "other search hits not used as scientific evidence",
+    "expression-skill missing; no installation"
+  ]
+}

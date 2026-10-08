@@ -1,0 +1,41 @@
+{
+  "milestone": "M74",
+  "status": "completed_no_candidate_retained",
+  "search_queries": 4,
+  "search_batches": 2,
+  "original_method_papers": 3,
+  "official_implementation_snapshots": 1,
+  "initial_ideas": 1,
+  "retained_algorithm_candidates": 0,
+  "synthetic_check_runs": 1,
+  "synthetic_check_status": "passed",
+  "real_fits": 0,
+  "model_loads": 0,
+  "real_predictions": 0,
+  "real_features_recomputed": 0,
+  "private_label_prediction_reads": 0,
+  "official_test_reads": 0,
+  "parameter_searches": 0,
+  "automatic_retries": 0,
+  "synthetic_summary": {
+    "neighbors": 10,
+    "equal_mean": "0",
+    "equal_variance": "59/5",
+    "equal_mean_pair_distance": "194/45",
+    "support_distances": [
+      "1",
+      "8/5"
+    ]
+  },
+  "decision": "Order statistic differs on abstract synthetic inputs; task-linked mechanism and contribution beyond an added feature not established. No training.",
+  "limits": [
+    "No real molecular fingerprint realization checked",
+    "No improvement or general ineffectiveness inferred from counterexample",
+    "No new hypothesis queue, second candidate, or ensemble execution"
+  ],
+  "sha256": {
+    "report.md": "74d753c74ad8a77081e69dd55a3f58f4c9ba7dd046154d7de3f23b818ca98f46",
+    "sources.json": "d28726b59957f0993f013b05f3f7079b1731a87df673556f8ec5744227ad921c",
+    "selfcheck.py": "6c6a3be803eaa85ce5a74ceef07fbfec94beae1bdc787389db626bf4a385c143"
+  }
+}
