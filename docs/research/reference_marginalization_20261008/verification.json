@@ -1,0 +1,53 @@
+{
+  "milestone": "M76",
+  "status": "synthetic_checked_real_pilot_not_executed",
+  "selfcheck": "PASS one run",
+  "checks": [
+    "relative links exist",
+    "budget arithmetic checked in selfcheck",
+    "official roughness source hash matches",
+    "git diff --check passed before final logs; final check follows"
+  ],
+  "actual_counts": {
+    "real_fits": 0,
+    "model_loads": 0,
+    "real_predictions": 0,
+    "molecular_features": 0,
+    "private_per_molecule_value_reads": 0,
+    "official_test_reads": 0
+  },
+  "proposed_counts_not_authorization": {
+    "risk_rf_fits": 3,
+    "arms": 6,
+    "new_roughness_jobs": 9,
+    "new_roughness_rows": 4561,
+    "old_roughness_replay_rows_max": 1988,
+    "risk_fit_input_rows_total": 7015,
+    "risk_predict_calls": 3,
+    "risk_prediction_rows": 7020,
+    "whole_run_seconds_max": 1800
+  },
+  "sha256": {
+    "README.md": "bc89499ea9bdb8df06dc4a3cc216032f2c6e2b22e73437411b73cd31f8933b57",
+    "task_plan.md": "9ad0f227993904c1da7687479b8983962f8825e07fac54d568552f46dae584b7",
+    "notes.md": "38e9db7a9a740a5dc6e46259737f8eecba77a299b28a410516010e693989c1f5",
+    "docs/milestones.md": "7a4e6052cd91c61d4ae45f7b086adea9339faae5e5d9a8d043102ca67bc64922",
+    "docs/research/reliability_publication_plan.md": "125002b6582a2fb2895d3de9eb0a37b41bd5e8bb718e500699d6e66bf626fd4d",
+    "docs/research/paper_execution_choice_20261008.md": "5dc915f8b75479b8a19b529a52f489755f8e7769d920c41487e79db0d5923fb8",
+    "docs/research/reference_marginalization_20261008/report.md": "251aad8ab19c047c78ccf858e4a341e4c14b8415d2c255b99ae90be8d7a14175",
+    "docs/research/reference_marginalization_20261008/selfcheck.py": "80519f6c718357ce5987935691817aae937aa0199e7c8a35088ca4e342f9068e",
+    "docs/research/reference_context_check_20261008/report.md": "011a9b559cc47a600320a004dc8a6528727421577e68d3fe024611efef9203c0",
+    "docs/research/reference_context_review_20261008/report.md": "eb2f02d94be735ceea1977d7fc6e76d8152b18ed6f4d8e7d32dc591e1199b680",
+    "docs/research/roughness_sensitivity_link_20261008/report.md": "3aa30536b751a0638a80e915b85362c04c8daf10b4c473229a7b3a4210240e35",
+    "docs/research/bounded_candidate_screen_20261008/report.md": "74d753c74ad8a77081e69dd55a3f58f4c9ba7dd046154d7de3f23b818ca98f46",
+    "experiments/reliability_base/run_conditional_pilot.py": "1ef7a35ea3dc9f1edc4fdc98b0026a17cc6c8819b73163d55b3b8072e125852f"
+  },
+  "limitations": [
+    "No exhaustive novelty verification",
+    "Previously developed evaluation partition",
+    "No real candidate effectiveness evidence",
+    "DOI entry failed; author review used",
+    "PMC recent paper captcha; not treated as read",
+    "rg Windows wildcard path failed once; corrected scoped search"
+  ]
+}
