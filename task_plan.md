@@ -767,3 +767,19 @@ selfcheck1/prepare1/真实run1/audit1通过；独立标量审核首命令默认G
 基础来源仅核JMLR2007协变量迁移摘要与Bates等arXiv2104.00673作者摘要/元数据，不移植OLS定理到Chemprop、不称近期新颖性综述。PMC入口验证码失败、猜测refinement文件路径失败后rg定位实际记录，已记报告；expression-skill仍缺。M60反例与M39九例风险掩蔽不重做，新增纯合成次序/标准差有限例子仅作sanity，不列原创。首次metadata检查、新增合成核验、访问记录更新后最终刷新均通过，3次0fit检查，无训练失败或重跑。
 
 新增docs/research/reference_context_review_20261008/report.md、check.py、verification.json，追加四日志，README仅追加本轮0训练及下一步范围；旧模型/训练入口/历史协议报告/原项目/PDF与另一worktree保持不变。IW-COND7停止和最终核心缺失的判断不变，可靠性底座保留；没有可部署失败识别器或新候选效果。核验链接/hash/公开范围/暂存后commit/push可靠性分支，未来检查未自动启动。
+
+
+## M68执行前 — 2026-10-08：一次辅助RF的同查询参考上下文检查
+
+用户“继续”接续M67明确下一步，授权固定evaluation585查询和full预测、换fold0参考935的单次输入检查。先核M65输入/M66锁定产物/M67缓存hash及作者代码参数，复用run_command/作者入口，不改旧代码；新忽略目录拒绝覆盖，参考y只取既有fold0 train前935行，查询只读smiles并置y=0，full预测按字节复制锁定。新增最多1辅助RF200树/seed0+585查询特征批次/辅助树预测，0Chemprop或风险RF fit/load/predict、0KDE/scaler/PCA、0目标真值/calibration/官方test解析；特征300秒、整体600秒，无自动重试。核7列身份有限、固定预测与mol_size、嵌套nn_sim/local_dens单调、逐列差值及Spearman；不加组阈值选折、不计算RMSE或重开候选。失败中断留状态和日志；成功公开聚合表/分层结论，读缓存独立check不重训。更新四日志/README，核验暂存后commit/push可靠性分支，旧协议报告/原项目/另一worktree不改。指定expression-skill仍缺失。
+
+
+## M68完成 — 2026-10-08：同查询参考替换影响粗糙度输入，未评估风险改善
+
+一次固定fold0参考935→evaluation585作者特征作业完成，新增1辅助RF200树/seed0及585查询辅助树预测（200棵树各对585人预测）；特征子进程2.547秒、入口内部wall2.594秒（不含导入），完整工具命令wall约4.32秒，低于300/600秒帽。0失败/中断/重跑，不补另外两折。0Chemprop或风险RF fit/predict、0模型checkpoint加载、0KDE/scaler/PCA、0查询真实y/calibration/官方test读取；作者fixture内部split=test只是该开发查询接口，不是官方test。
+
+full点预测字节复制锁定、mol_size逐值不变；source935训练身份/partition与585查询顺序一致，新fixture查询y全0、7列有限。嵌套full相似度nn_sim/local_dens均不小于子集，通过1e-12数值核对。nbr_disp/sali_mean各503/585人变化，前后Spearman0.489829/0.476007，绝对差中位数0.121284/0.283058；差值均值（fold0−full）+0.037049/−0.164097。nn_sim/local_dens相关0.794178/0.882371，rf_var0.684982，全部7列均公布，无分组/新阈值/合成总分。
+
+事实支持这次合法参考上下文替换会改变粗糙度值和排序，但参考数量/组成/辅助RF训练数据捆绑；有输入变化不代表误差条件分布变化或密度迁移假设被证伪，不能断言M66根因/新方法收益/化学因果。没有读取查询真值或计算新RMSE，没有可部署识别器。M67配对缺口已补，M66条件候选停止不变，不因敏感性自动追加稳定性模块或扩训。下一问题仅是敏感性与已冻结不利接受交换是否有关，须先冻结无分组阈值/新模型的只读检验，本轮未执行。
+
+新增experiments/reliability_base/check_reference_context.py及docs/research/reference_context_check_20261008/report.md、verification.json；私有fixture/特征/锁定预测/日志在artifacts/reference_context_check_20261008，未公开逐分子。脚本run一次及内置audit通过；另进程check使用同一audit重读缓存，0额外fit，不冒称独立算法复现。另用NumPy数组公式/平均秩Pearson独立复算六列差值分位数与Spearman一致、核dummy query y及原来源hash，0特征重算/fit。更新四日志与README，旧模型代码/训练入口/作者源码/历史报告协议/原项目/PDF及另一worktree不改。核验输出拒绝/来源/hash/链接/暂存范围后commit/push可靠性分支，无活跃训练。
