@@ -1,0 +1,322 @@
+{
+  "milestone": "M78",
+  "status": "completed_and_independently_checked",
+  "code_commit": "b437b7ffff6a1509e221e4c445a39f091fa2fe18",
+  "task": "CHEMBL234_Ki",
+  "point_model_seed": 42,
+  "risk_seeds": [
+    42,
+    43,
+    44
+  ],
+  "new_risk_seeds": [
+    43,
+    44
+  ],
+  "continuation_condition_met": true,
+  "no_automatic_expansion": true,
+  "three_risk_seed_mean": {
+    "H0-full": 1.1237980771270024,
+    "H0-mean": 1.1026682361921887,
+    "Hd-full": 1.1195286271139218,
+    "Hd-mean": 1.0971279855392568,
+    "Hc-full": 1.0985549488357684,
+    "Hc-mean": 1.0885878474867752
+  },
+  "three_risk_seed_sample_sd_descriptive_only": {
+    "H0-full": 0.0017562720228971602,
+    "H0-mean": 0.006329496160317286,
+    "Hd-full": 0.0014228265835135073,
+    "Hd-mean": 0.0032018143866357333,
+    "Hc-full": 0.003987792695028344,
+    "Hc-mean": 0.005353736921824767
+  },
+  "comparisons": [
+    {
+      "risk_seed": 42,
+      "control": "H0-full",
+      "candidate_mean": 1.0840053493507429,
+      "control_mean": 1.1218040194999552,
+      "relative_reduction_percent": 3.3694539770022507,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 42,
+      "control": "H0-mean",
+      "candidate_mean": 1.0840053493507429,
+      "control_mean": 1.0953943240933601,
+      "relative_reduction_percent": 1.0397146025056967,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 42,
+      "control": "Hd-full",
+      "candidate_mean": 1.0840053493507429,
+      "control_mean": 1.1210965036519516,
+      "relative_reduction_percent": 3.3084711423490236,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 42,
+      "control": "Hd-mean",
+      "candidate_mean": 1.0840053493507429,
+      "control_mean": 1.0980494124021405,
+      "relative_reduction_percent": 1.2790010078575793,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 42,
+      "control": "Hc-full",
+      "candidate_mean": 1.0840053493507429,
+      "control_mean": 1.094429154147097,
+      "relative_reduction_percent": 0.9524421710492063,
+      "improved_nonfull_coverages": 4
+    },
+    {
+      "risk_seed": 43,
+      "control": "H0-full",
+      "candidate_mean": 1.0944725673217595,
+      "control_mean": 1.124475274651527,
+      "relative_reduction_percent": 2.6681518043218246,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 43,
+      "control": "H0-mean",
+      "candidate_mean": 1.0944725673217595,
+      "control_mean": 1.105688609945914,
+      "relative_reduction_percent": 1.014394335192002,
+      "improved_nonfull_coverages": 4
+    },
+    {
+      "risk_seed": 43,
+      "control": "Hd-full",
+      "candidate_mean": 1.0944725673217595,
+      "control_mean": 1.119169845119557,
+      "relative_reduction_percent": 2.2067497534441967,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 43,
+      "control": "Hd-mean",
+      "candidate_mean": 1.0944725673217595,
+      "control_mean": 1.0997680534236667,
+      "relative_reduction_percent": 0.4815093587617812,
+      "improved_nonfull_coverages": 4
+    },
+    {
+      "risk_seed": 43,
+      "control": "Hc-full",
+      "candidate_mean": 1.0944725673217595,
+      "control_mean": 1.1023886805085266,
+      "relative_reduction_percent": 0.7180873068394933,
+      "improved_nonfull_coverages": 3
+    },
+    {
+      "risk_seed": 44,
+      "control": "H0-full",
+      "candidate_mean": 1.0872856257878227,
+      "control_mean": 1.1251149372295248,
+      "relative_reduction_percent": 3.36226195119698,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 44,
+      "control": "H0-mean",
+      "candidate_mean": 1.0872856257878227,
+      "control_mean": 1.1069217745372921,
+      "relative_reduction_percent": 1.7739418630261894,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 44,
+      "control": "Hd-full",
+      "candidate_mean": 1.0872856257878227,
+      "control_mean": 1.1183195325702566,
+      "relative_reduction_percent": 2.775048264703741,
+      "improved_nonfull_coverages": 5
+    },
+    {
+      "risk_seed": 44,
+      "control": "Hd-mean",
+      "candidate_mean": 1.0872856257878227,
+      "control_mean": 1.0935664907919633,
+      "relative_reduction_percent": 0.5743468784958823,
+      "improved_nonfull_coverages": 3
+    },
+    {
+      "risk_seed": 44,
+      "control": "Hc-full",
+      "candidate_mean": 1.0872856257878227,
+      "control_mean": 1.0988470118516815,
+      "relative_reduction_percent": 1.0521379172134773,
+      "improved_nonfull_coverages": 4
+    }
+  ],
+  "checks": {
+    "independent_scalar_curve_points": 108,
+    "independent_scalar_curve_max_abs_difference": 2.220446049250313e-16,
+    "new_shared_evaluator_curve_points": 72,
+    "new_exchange_rows": 72,
+    "frozen_cache_bytes": true,
+    "all_scores_locked_before_cached_truth_parse": true,
+    "no_original_CSV_truth_parse": true,
+    "report_rounding_relative_links_and_final_hashes": true
+  },
+  "actual_counts": {
+    "new_risk_fits": 6,
+    "new_risk_predict_calls": 6,
+    "new_risk_prediction_rows": 14040,
+    "new_point_model_fits_loads_predictions": 0,
+    "new_auxiliary_fits_predictions": 0,
+    "new_features_fingerprints": 0,
+    "new_model_checkpoint_loads": 0,
+    "cached_truth_rows_parsed_execution": 1170,
+    "unique_evaluation_queries": 585,
+    "original_csv_truth_rows_parsed": 0,
+    "calibration_official_test_record_reads": 0,
+    "failed_or_interrupted_experiments": 0,
+    "automatic_retries": 0
+  },
+  "state": {
+    "status": "completed",
+    "adapter_sha256": "47e78b33c6123a3d2a91100d6db82d0568cfc23234594a5a1155d731c5340d0c",
+    "protocol_sha256": "5bf69fca577844829edbc468d5f866eeb6044e81380b218cc1c2c2cc688b0c34",
+    "automatic_retries": 0,
+    "risk_fits": 6,
+    "risk_predict_calls": 6,
+    "risk_prediction_rows": 14040,
+    "original_csv_truth_rows_read": 0,
+    "cached_truth_rows_parsed": 1170,
+    "new_features": 0,
+    "run_seconds": 4.139999999999418
+  },
+  "private_evidence_sha256": {
+    "results.json": "23c2ed8dfb94bb4e7bf3d18b9a58b1f385b8b5f60882ba08f7766f3af3d20415",
+    "state.json": "9cfc339c3baabf5989b311a116fd44d76c8b88bb4aff4ba13cfbd2744689c82b",
+    "43/absolute_error.csv": "27a857d201b29aaac5f6ae53e3857f2bbfc0426afb0add6533737565099445ee",
+    "43/augmented.csv": "b5f474f877593dd383e25c47585d05db9d411b2ae501ac97aef73e1244cf9e0d",
+    "43/contexts.csv": "eb5d11745a620e50d2128e9e9453dcd4a888036e85188d67906f5dd4bf7b6258",
+    "43/evaluation_truth.csv": "a683734bc3f8e92fc9f343ffd43a7c4f360a4e7b60a623f3cbc5fd6ebbb0deae",
+    "43/exchanges.csv": "f0092068e9de151c656db12d53c3a9aa4791c2b3d19fbd124512be2731c044ef",
+    "43/identities.csv": "a376d350590ed2df16d24f6cef3ae1738e5b4937cd18428c8ce81874c1845622",
+    "43/individual_contributions.csv": "a2d44beb426ff8c97ca61a1b1b46f70f4bba1399fa99d9bd88b492028bd1c40d",
+    "43/inputs.json": "d691e0f65b4b50f578bcc94695f81e789398c9475bc2324179a991fa37f0a545",
+    "43/protocol.json": "1b0bacbb20d23ce0767751d5b8057bb3f90bb5ef80755cbc36d9a50982fd8072",
+    "43/results.json": "531f5e9ae4da8f535da5bcb567eda956af3eb8ae93626aef37e2907c058ae9e0",
+    "43/scores.csv": "2596193e2088563b06892befe1320318d7a6819a44c74b0058eb6cfa13f01231",
+    "43/score_lock.json": "a2b2bdec303bc6f226840bcf1a5f5bd522ab6d6ccc167ffbe6db5b17fab1f75f",
+    "43/source.csv": "dd6ef9e80e7e98abd8a63fa79fd29b590646ab47689d723d6682de1fc91540dd",
+    "43/state.json": "55d0c81c7122c149a73b2f121f90de49f6ba43b22464bf51e6baa6578028dbdb",
+    "43/targets.csv": "5aa7a7f758dcef45bc9e8eb780d8140c74c269d3e9a1c753709a6df1e5ea82be",
+    "44/absolute_error.csv": "27a857d201b29aaac5f6ae53e3857f2bbfc0426afb0add6533737565099445ee",
+    "44/augmented.csv": "b5f474f877593dd383e25c47585d05db9d411b2ae501ac97aef73e1244cf9e0d",
+    "44/contexts.csv": "5fa15ab856d78a099df3752b542c778a3bc5f74b936ea37be8bef3f7b79de968",
+    "44/evaluation_truth.csv": "a683734bc3f8e92fc9f343ffd43a7c4f360a4e7b60a623f3cbc5fd6ebbb0deae",
+    "44/exchanges.csv": "e18b5daa38a8cf148faa057fda0473de91107d9ce5b36b269c6c06a557a43666",
+    "44/identities.csv": "a376d350590ed2df16d24f6cef3ae1738e5b4937cd18428c8ce81874c1845622",
+    "44/individual_contributions.csv": "c4a78a60e1b6d005119052c7bf85be77b87f6b82a9a31ed01d6e3e296c6716e7",
+    "44/inputs.json": "1fbb4c033b2e42d6d409b97f5eef50ae0150730c81259057fedac69b60a419fa",
+    "44/protocol.json": "95d3e189575b7d3d55fed64ec6e2980059009633df2badab36181013c2bc06c7",
+    "44/results.json": "c7985122dff5836e2370c21900a43316d5fcad2766e2a16e6c04c2ccc4b0ad07",
+    "44/scores.csv": "8b9ac2fada6b6e31ea2a4a9a476bdf3ee4a90eaa362638bdbcf0e349197e8527",
+    "44/score_lock.json": "e9b8956f98550b14e613092a399d009f9ddd107cb973fc648953d4aa2c6b25c6",
+    "44/source.csv": "dd6ef9e80e7e98abd8a63fa79fd29b590646ab47689d723d6682de1fc91540dd",
+    "44/state.json": "400a426ecf5c530c2f2235392804e17b4ef8ef5cb7f396e7e15f826388a49233",
+    "44/targets.csv": "5aa7a7f758dcef45bc9e8eb780d8140c74c269d3e9a1c753709a6df1e5ea82be",
+    "evaluate_log/command.json": "c362959e0a64ad57f30fadb415986afc5ae955c8bca319ed9002ea64f0349f29",
+    "evaluate_log/exit.json": "2f57746d58016ef9722f34d5bd49154113002127747982d2f28ea6608d62111d",
+    "evaluate_log/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evaluate_log/stdout.txt": "23c2ed8dfb94bb4e7bf3d18b9a58b1f385b8b5f60882ba08f7766f3af3d20415",
+    "fit_log/command.json": "41257543c215ef9bd89b2203431b33c7f40fc412ff8e7d740f45f4086eccebe9",
+    "fit_log/exit.json": "72ba1f377e3b6580cc5186b0d1a6e44acde688fadefe661a6e66d9f944eed9df",
+    "fit_log/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fit_log/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "public_sha256": {
+    "docs/research/reference_marginalization_seeds_20261008/protocol.json": "5bf69fca577844829edbc468d5f866eeb6044e81380b218cc1c2c2cc688b0c34",
+    "docs/research/reference_marginalization_seeds_20261008/curves.csv": "b9c4e6b5224cebb8a26c9b48f8873d0b44531947531100a85b73baca4a35ddb8",
+    "docs/research/reference_marginalization_seeds_20261008/exchanges.csv": "6996334704dafd421190b346607f224a175e8b6954e782b871a9c806ef31f658",
+    "docs/research/reference_marginalization_seeds_20261008/comparisons.csv": "97f3628ff5d75cd1367760d8f326c06bac8b234b2c9d14ce9fdc5aef805009ca",
+    "experiments/reliability_base/check_reference_risk_seeds.py": "47e78b33c6123a3d2a91100d6db82d0568cfc23234594a5a1155d731c5340d0c",
+    "docs/research/reference_marginalization_seeds_20261008/report.md": "d95bd4019ee7fb6687ed89965bab9ac45f9307bd66182f041f1b976b1b251c1d"
+  },
+  "insufficient_single_contribution_bound_primary_points": [
+    {
+      "risk_seed": 43,
+      "baseline": "H0-full",
+      "coverage": 0.9,
+      "mse_delta": -0.002221322891676196,
+      "largest_abs_contribution": 0.017379150817094874,
+      "mse_delta_without_largest": -0.01960047370877107
+    },
+    {
+      "risk_seed": 43,
+      "baseline": "Hc-full",
+      "coverage": 0.5,
+      "mse_delta": -0.008642582466435253,
+      "largest_abs_contribution": 0.020860670511977406,
+      "mse_delta_without_largest": -0.029503252978412657
+    },
+    {
+      "risk_seed": 43,
+      "baseline": "Hc-full",
+      "coverage": 0.8,
+      "mse_delta": 0.0030397157198390444,
+      "largest_abs_contribution": 0.01682971696276923,
+      "mse_delta_without_largest": -0.013790001242930186
+    },
+    {
+      "risk_seed": 43,
+      "baseline": "Hc-full",
+      "coverage": 0.9,
+      "mse_delta": 0.013180516999122517,
+      "largest_abs_contribution": 0.016426930131618386,
+      "mse_delta_without_largest": -0.0032464131324958685
+    },
+    {
+      "risk_seed": 44,
+      "baseline": "Hc-full",
+      "coverage": 0.8,
+      "mse_delta": 0.0063928595555336615,
+      "largest_abs_contribution": 0.019281643858938803,
+      "mse_delta_without_largest": -0.012888784303405142
+    }
+  ],
+  "largest_contribution_zeroing_flips_primary_points": [
+    {
+      "risk_seed": 43,
+      "baseline": "Hc-full",
+      "coverage": 0.8,
+      "mse_delta": 0.0030397157198390444,
+      "largest_abs_contribution": 0.01682971696276923,
+      "mse_delta_without_largest": -0.013790001242930186
+    },
+    {
+      "risk_seed": 43,
+      "baseline": "Hc-full",
+      "coverage": 0.9,
+      "mse_delta": 0.013180516999122517,
+      "largest_abs_contribution": 0.016426930131618386,
+      "mse_delta_without_largest": -0.0032464131324958685
+    },
+    {
+      "risk_seed": 44,
+      "baseline": "Hc-full",
+      "coverage": 0.8,
+      "mse_delta": 0.0063928595555336615,
+      "largest_abs_contribution": 0.019281643858938803,
+      "mse_delta_without_largest": -0.012888784303405142
+    }
+  ],
+  "next_budget_not_authorization": {
+    "tasks": 3,
+    "risk_fits": 9,
+    "risk_prediction_rows": 12444,
+    "new_R_rows": 10949,
+    "old_R_replay_max": 4956,
+    "point_fits": 0,
+    "executed": false
+  },
+  "delivery_audit_exception": "Temporary check command unmatched parenthesis corrected; document-only retry, no extra fit"
+}
