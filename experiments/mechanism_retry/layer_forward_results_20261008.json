@@ -1,0 +1,123 @@
+{
+  "captures": [
+    {
+      "name": "a",
+      "epochs": 6,
+      "optimizer_steps": 498,
+      "historical_prediction_matches": [
+        2
+      ],
+      "observed_calls": 143,
+      "capture_sha256": "f47c54b26281e471e14680a869c595d850ba6aa4b5fe8184b04be67aea6ede28",
+      "forward_report_sha256": "71e4d9d81df13947cab6cba43b65f2403356b2ab50a69a2360c66ed2830f8370",
+      "elapsed_seconds": 68.25296540000272
+    },
+    {
+      "name": "b",
+      "epochs": 6,
+      "optimizer_steps": 498,
+      "historical_prediction_matches": [
+        2
+      ],
+      "observed_calls": 143,
+      "capture_sha256": "f47c54b26281e471e14680a869c595d850ba6aa4b5fe8184b04be67aea6ede28",
+      "forward_report_sha256": "71e4d9d81df13947cab6cba43b65f2403356b2ab50a69a2360c66ed2830f8370",
+      "elapsed_seconds": 67.80998160000308
+    },
+    {
+      "name": "c",
+      "epochs": 6,
+      "optimizer_steps": 498,
+      "historical_prediction_matches": [
+        2
+      ],
+      "observed_calls": 143,
+      "capture_sha256": "f47c54b26281e471e14680a869c595d850ba6aa4b5fe8184b04be67aea6ede28",
+      "forward_report_sha256": "27d46136f7142178b5a74553ea8c3a19f9623a47b83f5f59714fa9f153175aeb",
+      "elapsed_seconds": 66.52050290000625
+    },
+    {
+      "name": "d",
+      "epochs": 6,
+      "optimizer_steps": 498,
+      "historical_prediction_matches": [
+        2
+      ],
+      "observed_calls": 143,
+      "capture_sha256": "f47c54b26281e471e14680a869c595d850ba6aa4b5fe8184b04be67aea6ede28",
+      "forward_report_sha256": "27d46136f7142178b5a74553ea8c3a19f9623a47b83f5f59714fa9f153175aeb",
+      "elapsed_seconds": 68.00367529999494
+    },
+    {
+      "name": "e",
+      "epochs": 6,
+      "optimizer_steps": 498,
+      "historical_prediction_matches": [
+        2
+      ],
+      "observed_calls": 143,
+      "capture_sha256": "f47c54b26281e471e14680a869c595d850ba6aa4b5fe8184b04be67aea6ede28",
+      "forward_report_sha256": "7538b641ba008a6772dd25db1888036681380619190648b14bdb2c1a1d9ccaa8",
+      "elapsed_seconds": 66.58451480000076
+    },
+    {
+      "name": "f",
+      "epochs": 6,
+      "optimizer_steps": 498,
+      "historical_prediction_matches": [
+        2
+      ],
+      "observed_calls": 143,
+      "capture_sha256": "f47c54b26281e471e14680a869c595d850ba6aa4b5fe8184b04be67aea6ede28",
+      "forward_report_sha256": "7538b641ba008a6772dd25db1888036681380619190648b14bdb2c1a1d9ccaa8",
+      "elapsed_seconds": 67.12490640000033
+    }
+  ],
+  "differing_output_calls": [],
+  "replays": [
+    {
+      "name": "replay1",
+      "report_sha256": "a04794a61025e1e0abea3c696c3285127f6e884d0027fc0b2eb9950532f82f90",
+      "changed_output_calls": [],
+      "captured_prediction_equal": true
+    },
+    {
+      "name": "replay2",
+      "report_sha256": "a04794a61025e1e0abea3c696c3285127f6e884d0027fc0b2eb9950532f82f90",
+      "changed_output_calls": [],
+      "captured_prediction_equal": true
+    },
+    {
+      "name": "replay3",
+      "report_sha256": "a04794a61025e1e0abea3c696c3285127f6e884d0027fc0b2eb9950532f82f90",
+      "changed_output_calls": [],
+      "captured_prediction_equal": true
+    },
+    {
+      "name": "deferred_latest1",
+      "report_sha256": "590575d319aa6671c1b8478e8ae7ee4fa51e3355c9e931958a59a21b2aec1783",
+      "changed_output_calls": [],
+      "captured_prediction_equal": true
+    },
+    {
+      "name": "deferred_latest2",
+      "report_sha256": "590575d319aa6671c1b8478e8ae7ee4fa51e3355c9e931958a59a21b2aec1783",
+      "changed_output_calls": [],
+      "captured_prediction_equal": true
+    }
+  ],
+  "plain_replay": {
+    "repetitions": 50,
+    "unique_predictions": 1,
+    "captured_prediction_equal": true,
+    "report_sha256": "e1fec0245c20f71cca90499a778e6409a3fed81854ffd47242e9cd03447182bc"
+  },
+  "diagnostic_optimizer_steps": 2988,
+  "source_hash_checks": 156,
+  "module_output_divergence_observed": false,
+  "operator_localized": false,
+  "historical_divergence_resolved": false,
+  "model_architecture_changed": false,
+  "official_test_evaluated": false,
+  "limit": "captures matching one historical branch cannot identify why the other branch occurred"
+}
