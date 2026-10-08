@@ -682,3 +682,8 @@ full点预测字节复制锁定、mol_size逐值不变；source935训练身份/p
 静态核本机2.2.3 EnsembleEstimator correction=0及源码hash；官方latest网页为2.3.1，只核接口存在，不称本机兼容运行。Deep Ensembles仅原始摘要，MSE成员分歧不冒充完整论文概率/对抗方案。2025Nature页跳身份认证访问失败，未使用搜索片段指标，不称近期综述完成。expression-skill/planning-with-files定向未找到，沿已有持久计划；使用scientific-critical-thinking核可证伪性和混杂。
 
 本轮0fit/load/predict/真实标签预测特征解析/新划分/安装，不写执行脚本。角色/预算算术/本机源码hash和结论边界核验通过；新2fit草案仍需配置差异/hash绑定/输出保护与合成检查及明确训练授权，当前不可启动。新增ensemble_gap_review_20261008/report.md、verification.json并同步README/四日志，历史代码协议模型/原项目/PDF/另一worktree保持。核验明确暂存后commit/push可靠性分支。下一步若继续，仅做2fit合同的零训练配置与合成核验，不自动训练，也不扩到8fit。
+
+
+## M71 — 2026-10-08：核对计划并纠正ensemble优先级
+
+用户提醒“别跑偏”。对照原始范围及M69/M70，确认ensemble准备被提前：强对照不能代替算法核心定位。当前撤回该下一步，M70只留后续资产；先一次性交付最多一个问题与候选的证据/操作/来源/有限性质/反例/依赖/消融/解释及最低成本，缺证据则交付方法缺口，不自动第二候选。不重做已完成的标签诊断、不设公式数量硬指标、不将成熟模块使用本身当否决理由。0真实fit/load/predict/特征重算/新划分/调参，未新增实验、候选或执行器。同步README/主计划/投稿计划/M70提示，历史预算结果与旧代码原项目/另一worktree保持；核验后commit/push可靠性分支。
