@@ -1,0 +1,621 @@
+{
+  "records": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 2612,
+      "reference": 2919,
+      "sampling_sha256": "0038272cfa7d8dc21ed4524fb97e801012ccb156d5e1893496babf40d4aa92e5",
+      "atoms": [
+        31,
+        32
+      ],
+      "common_atoms": 17,
+      "core_fraction": 0.53125,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.3871242000022903
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 239,
+      "reference": 242,
+      "sampling_sha256": "006888d48c73728fb68ab1b62aee6811311ca0f0eab7cbd9f1be4e4269f28898",
+      "atoms": [
+        32,
+        31
+      ],
+      "common_atoms": 31,
+      "core_fraction": 0.96875,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 16,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.0022115000028861687
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 2584,
+      "reference": 2681,
+      "sampling_sha256": "00767de9fc04c96fbfcfe9e59f74a94bb6a6d214ca61e55a9ea2aa961b1aedeb",
+      "atoms": [
+        38,
+        32
+      ],
+      "common_atoms": 17,
+      "core_fraction": 0.4473684210526316,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.37170489999698475
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 3196,
+      "reference": 3221,
+      "sampling_sha256": "0084f4e7e02a703bab8fc347345cee32c6c12d99a9e8f7502b23734595f2d5c1",
+      "atoms": [
+        39,
+        39
+      ],
+      "common_atoms": 17,
+      "core_fraction": 0.4358974358974359,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.4262330000055954
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 2890,
+      "reference": 2927,
+      "sampling_sha256": "008510e02bfade369ce9a93a620ee09843b072f4a1574f4986a9b42882e484c3",
+      "atoms": [
+        38,
+        33
+      ],
+      "common_atoms": 17,
+      "core_fraction": 0.4473684210526316,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.3733652999944752
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 877,
+      "reference": 880,
+      "sampling_sha256": "008879770feaa87b6172d31755405f5128e070ca094ab82343dc4a06a3c8387d",
+      "atoms": [
+        28,
+        28
+      ],
+      "common_atoms": 16,
+      "core_fraction": 0.5714285714285714,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.004329100003815256
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 1635,
+      "reference": 1672,
+      "sampling_sha256": "008f35fc702f37de2db59ca10e1c20e5ee1df87ba48307af280c842c9fbc8ee3",
+      "atoms": [
+        26,
+        26
+      ],
+      "common_atoms": 18,
+      "core_fraction": 0.6923076923076923,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.042320599997765385
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 3492,
+      "reference": 3509,
+      "sampling_sha256": "009bfa8cef5dc6dc9049d263d79ab2330904f876ad38e4c56e01317e9039c223",
+      "atoms": [
+        32,
+        31
+      ],
+      "common_atoms": 30,
+      "core_fraction": 0.9375,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 8,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.11562559999583755
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 3265,
+      "reference": 3317,
+      "sampling_sha256": "0137f4fde6540c7b96bda9a72f636c4073a9b4a9978947f3e156f4d6250e567a",
+      "atoms": [
+        31,
+        35
+      ],
+      "common_atoms": 29,
+      "core_fraction": 0.8285714285714286,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.0008764000085648149
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 402,
+      "reference": 2968,
+      "sampling_sha256": "0142a0ea53dc7cf43d0d1ef058580769301205944a34c6e6493d3cfd5c89c99d",
+      "atoms": [
+        33,
+        30
+      ],
+      "common_atoms": 18,
+      "core_fraction": 0.5454545454545454,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.06534410000313073
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 3394,
+      "reference": 3395,
+      "sampling_sha256": "015d4109ef3c662c8aa57b6a0b25977f369c36d5ebd98a00d0c3d6d8e0a8b94a",
+      "atoms": [
+        30,
+        30
+      ],
+      "common_atoms": 14,
+      "core_fraction": 0.4666666666666667,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.0735741000098642
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 2568,
+      "reference": 2813,
+      "sampling_sha256": "01732536cb8afdbec000d2273a10579ae0548c8a614defae7072e4b499f0b60a",
+      "atoms": [
+        29,
+        27
+      ],
+      "common_atoms": 17,
+      "core_fraction": 0.5862068965517241,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.5981447000085609
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 1452,
+      "reference": 1459,
+      "sampling_sha256": "018618baab9a5b17ebe641c08db7cf84f3143969fd9ff9e6a5d5e01e65474420",
+      "atoms": [
+        37,
+        39
+      ],
+      "common_atoms": 20,
+      "core_fraction": 0.5128205128205128,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 1.0218852999969386
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 178,
+      "reference": 179,
+      "sampling_sha256": "0192eebdf6b2e57d2d415fd9bc705dafc04d6b46d392009b2c52d19bfe1b328d",
+      "atoms": [
+        34,
+        30
+      ],
+      "common_atoms": 11,
+      "core_fraction": 0.3235294117647059,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.005834099996718578
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 445,
+      "reference": 450,
+      "sampling_sha256": "01ec88acd755ec87a713e3f97a6866403ea0336e47e21f00b1432def3c3a6b2e",
+      "atoms": [
+        18,
+        18
+      ],
+      "common_atoms": 14,
+      "core_fraction": 0.7777777777777778,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.0009455999970668927
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "query": 1312,
+      "reference": 1313,
+      "sampling_sha256": "01fbcd1614680f492fd813fd89805b0372e53a2ea29a498b52d3eae3ee51363c",
+      "atoms": [
+        28,
+        27
+      ],
+      "common_atoms": 27,
+      "core_fraction": 0.9642857142857143,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 4,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.0006518000009236857
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 2709,
+      "reference": 2962,
+      "sampling_sha256": "002fc938b9e35b6628aeb1e469a8474c7c3aab319c1c71cac20a7e6dd9912d8a",
+      "atoms": [
+        59,
+        59
+      ],
+      "common_atoms": 14,
+      "core_fraction": 0.23728813559322035,
+      "canceled": true,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 0,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 1.0152266999939457
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 955,
+      "reference": 966,
+      "sampling_sha256": "004079f8172010c4ff7aea4e66e004a04aec338e0b8f641492a51e66725d662b",
+      "atoms": [
+        34,
+        30
+      ],
+      "common_atoms": 22,
+      "core_fraction": 0.6470588235294118,
+      "canceled": true,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 0,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 1.0837885000073584
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 1473,
+      "reference": 1474,
+      "sampling_sha256": "0092429c996ea5e82d86f09dcaa18e320cf645c49ab16e7c8d1081fd9a220f8d",
+      "atoms": [
+        35,
+        35
+      ],
+      "common_atoms": 28,
+      "core_fraction": 0.8,
+      "canceled": true,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 0,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 1.0074506999953883
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 2757,
+      "reference": 2758,
+      "sampling_sha256": "00ac51ae783b5630f70a7a8db92e73cc4620587c086357addb889fe7ef9d08c7",
+      "atoms": [
+        33,
+        33
+      ],
+      "common_atoms": 29,
+      "core_fraction": 0.8787878787878788,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 8,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.1563414999982342
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 1829,
+      "reference": 1833,
+      "sampling_sha256": "00e7b560090c77dab12f5474ff36f152541df98abc797d6bf819945e5b3cafb3",
+      "atoms": [
+        41,
+        38
+      ],
+      "common_atoms": 32,
+      "core_fraction": 0.7804878048780488,
+      "canceled": true,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 0,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 1.026472300000023
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 1256,
+      "reference": 1266,
+      "sampling_sha256": "00f1d5485c1b7f08ea131baa8818965a37ea2f8a7ba34294bd6a804e929aaeb2",
+      "atoms": [
+        36,
+        36
+      ],
+      "common_atoms": 35,
+      "core_fraction": 0.9722222222222222,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 0,
+      "enumeration_truncated": true,
+      "accepted": false,
+      "elapsed_seconds": 0.001607700003660284
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 849,
+      "reference": 898,
+      "sampling_sha256": "01040491a55985803102184a2c8a81d54e5a56ff40070312b6316e11361c43ff",
+      "atoms": [
+        26,
+        26
+      ],
+      "common_atoms": 25,
+      "core_fraction": 0.9615384615384616,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.18278149999969173
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 516,
+      "reference": 802,
+      "sampling_sha256": "013b2e188d0a76c4bd600eb46bcb29fbe9b751b74607e7d7ef5de9f833dbf3bf",
+      "atoms": [
+        33,
+        35
+      ],
+      "common_atoms": 33,
+      "core_fraction": 0.9428571428571428,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.0016566999984206632
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 883,
+      "reference": 1440,
+      "sampling_sha256": "015fce1a9bd56b56ba3afd5f2bd02937c2bbd68b2ed6145c48e4a258d749ea96",
+      "atoms": [
+        32,
+        32
+      ],
+      "common_atoms": 30,
+      "core_fraction": 0.9375,
+      "canceled": true,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 0,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 1.0050744000036502
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 2439,
+      "reference": 2440,
+      "sampling_sha256": "017c6d84a846af01494b99a18a02204a5289742b6c2e3693fae4b3f22ddc515d",
+      "atoms": [
+        35,
+        37
+      ],
+      "common_atoms": 19,
+      "core_fraction": 0.5135135135135135,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.12183959998947103
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 278,
+      "reference": 289,
+      "sampling_sha256": "018f6cab7b018a3e944052285c74f259b5bf52b9ece8f23cbbfcff9faee0882e",
+      "atoms": [
+        25,
+        19
+      ],
+      "common_atoms": 19,
+      "core_fraction": 0.76,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.001203499996336177
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 1691,
+      "reference": 1692,
+      "sampling_sha256": "01be7992b37fd118071ab4908aee81a63c33625d3d189f91976c10c7a9db0aae",
+      "atoms": [
+        45,
+        44
+      ],
+      "common_atoms": 39,
+      "core_fraction": 0.8666666666666667,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 12,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.0046787000028416514
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 1012,
+      "reference": 1037,
+      "sampling_sha256": "01f8b136d7b370aead328b40d62bcdea86a87d1bb8e92b86a1e8945f70e80e0a",
+      "atoms": [
+        31,
+        32
+      ],
+      "common_atoms": 31,
+      "core_fraction": 0.96875,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 2,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.0022542999940924346
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 1321,
+      "reference": 1326,
+      "sampling_sha256": "0208265ca53dc242fd604f9f8a16a86936bbc19ffec39f18c00c03e1d939d7f2",
+      "atoms": [
+        36,
+        34
+      ],
+      "common_atoms": 25,
+      "core_fraction": 0.6944444444444444,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.1515469000005396
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 553,
+      "reference": 726,
+      "sampling_sha256": "020edb238250ec6beb67200cdef4f8c3335b28c434c1856d20e90549c5401a7c",
+      "atoms": [
+        32,
+        30
+      ],
+      "common_atoms": 29,
+      "core_fraction": 0.90625,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": true,
+      "elapsed_seconds": 0.4899703999981284
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "query": 686,
+      "reference": 731,
+      "sampling_sha256": "02351e3ab54a30084dcb4cd27b41ab0e8cacd534a24059a6135386fc3d449c03",
+      "atoms": [
+        33,
+        34
+      ],
+      "common_atoms": 19,
+      "core_fraction": 0.5588235294117647,
+      "canceled": false,
+      "degenerate_queries": 1,
+      "mapping_count_observed": 1,
+      "enumeration_truncated": false,
+      "accepted": false,
+      "elapsed_seconds": 0.03128450000076555
+    }
+  ],
+  "decisions": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "accepted": 5,
+      "sampled": 16,
+      "passed": false
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "accepted": 7,
+      "sampled": 16,
+      "passed": false
+    }
+  ],
+  "inputs": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "csv_sha256": "447d38f659b86c7177f022b16f028db6828ab09c80051e74dad420168970f657",
+      "pairs_sha256": "2efc52184ab01480c61383f5da25fe678e915e726c5bd1db89ca969e0da5e51b"
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "csv_sha256": "b296c5956c9b3659fa039f057ebcb617919acd759c9255ed72bee917d99b4ef2",
+      "pairs_sha256": "6da38e733e0d063ff8414a2cf3a7b034fef74c240729d87b090a1d95ef11b2c8"
+    }
+  ],
+  "math": {
+    "power_commutator_max_errors": [
+      0.0,
+      1.7763568394002505e-15,
+      3.9968028886505635e-15,
+      7.105427357601002e-15
+    ],
+    "pooling_counterexample": -0.13888888888888884,
+    "note": "algebra check only; not a trained model or chemical mechanism"
+  },
+  "tool_sha256": "026776a78f4a9c41c2272f4c3b90089c479804889a9e2431f89dff8cebfc5282",
+  "label_columns_read": [],
+  "training_runs": 0,
+  "test_evaluated": false,
+  "limit": "32 label-free train pairs only; not full-data mapping coverage or efficacy"
+}

@@ -1,0 +1,73 @@
+{
+  "records": [
+    {
+      "device": "cpu",
+      "zero_full_max_abs_difference": 0.0,
+      "zero_degradation_check": true,
+      "signed_swap_check": true,
+      "sparse_dense_check": true
+    },
+    {
+      "device": "cuda",
+      "zero_full_max_abs_difference": 0.0,
+      "zero_degradation_check": true,
+      "signed_swap_check": true,
+      "sparse_dense_check": true
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "mode": "skew",
+      "batch_size": 32,
+      "parameters": 6021318,
+      "loss": 1.302565097808838,
+      "coefficient_gradient_norms": [
+        0.21743595600128174,
+        0.19351422786712646,
+        0.0805499479174614
+      ]
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "mode": "symmetric",
+      "batch_size": 32,
+      "parameters": 6021318,
+      "loss": 1.302565097808838,
+      "coefficient_gradient_norms": [
+        0.3782983422279358,
+        0.24920959770679474,
+        0.154532790184021
+      ]
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "mode": "skew",
+      "batch_size": 32,
+      "parameters": 6021318,
+      "loss": 0.5025876760482788,
+      "coefficient_gradient_norms": [
+        0.3382070064544678,
+        0.16383059322834015,
+        0.10022659599781036
+      ]
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "mode": "symmetric",
+      "batch_size": 32,
+      "parameters": 6021318,
+      "loss": 0.5025876760482788,
+      "coefficient_gradient_norms": [
+        0.2676422894001007,
+        0.2577708661556244,
+        0.12468121200799942
+      ]
+    }
+  ],
+  "source_sha256": {
+    "tools\\check_bond_order_candidate.py": "32605524264ddaa2397e4bcf6760ac655cc4082bff116c17db6b2310f0524f23",
+    "experiments\\mechanism_retry\\bond_order\\model.py": "97f108c94d172e2c9bdc268bb157813f9896789edb483738b33540c825f753af"
+  },
+  "optimizer_steps": 0,
+  "formal_training_runs": 0,
+  "test_evaluated": false
+}

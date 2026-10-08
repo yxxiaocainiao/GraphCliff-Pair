@@ -1,0 +1,1230 @@
+{
+  "records": [
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 178,
+      "atoms": 34,
+      "basis_frobenius_norms": [
+        0.4370036867375631,
+        0.0,
+        0.39674602380793617,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 179,
+      "atoms": 30,
+      "basis_frobenius_norms": [
+        0.31180478223116176,
+        0.0,
+        0.43033148291193524,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 239,
+      "atoms": 32,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.372677996249965,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 1,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 242,
+      "atoms": 31,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.2886751345948129,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 1,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 402,
+      "atoms": 33,
+      "basis_frobenius_norms": [
+        0.2721655269759088,
+        0.0,
+        0.263523138347365,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 445,
+      "atoms": 18,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.23570226039551584,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 1,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 450,
+      "atoms": 18,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.23570226039551584,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 1,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 877,
+      "atoms": 28,
+      "basis_frobenius_norms": [
+        0.32984283575105316,
+        0.0,
+        0.41573970964154916,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 880,
+      "atoms": 28,
+      "basis_frobenius_norms": [
+        0.32984283575105316,
+        0.0,
+        0.41573970964154916,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 1312,
+      "atoms": 28,
+      "basis_frobenius_norms": [
+        0.20412414523193154,
+        0.0,
+        0.3042903097250923,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 1313,
+      "atoms": 27,
+      "basis_frobenius_norms": [
+        0.20412414523193154,
+        0.0,
+        0.3042903097250923,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.734723475976807e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 1452,
+      "atoms": 37,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.5030769521187455,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 1,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 1459,
+      "atoms": 39,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.5030769521187455,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 1,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 1635,
+      "atoms": 26,
+      "basis_frobenius_norms": [
+        0.19245008972987535,
+        0.2041241452319315,
+        0.36641405439647,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 3,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 1672,
+      "atoms": 26,
+      "basis_frobenius_norms": [
+        0.19245008972987535,
+        0.2041241452319315,
+        0.29658550700086983,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 3,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2568,
+      "atoms": 29,
+      "basis_frobenius_norms": [
+        0.21516574145596767,
+        0.0,
+        0.238953479640073,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.734723475976807e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2584,
+      "atoms": 38,
+      "basis_frobenius_norms": [
+        0.21516574145596767,
+        0.0,
+        0.33564016593318263,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2612,
+      "atoms": 31,
+      "basis_frobenius_norms": [
+        0.23570226039551587,
+        0.0,
+        0.238953479640073,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.734723475976807e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2681,
+      "atoms": 32,
+      "basis_frobenius_norms": [
+        0.21516574145596765,
+        0.0,
+        0.2749859704614352,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2813,
+      "atoms": 27,
+      "basis_frobenius_norms": [
+        0.2886751345948129,
+        0.0,
+        0.238953479640073,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.734723475976807e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2890,
+      "atoms": 38,
+      "basis_frobenius_norms": [
+        0.21516574145596767,
+        0.0,
+        0.3068155838107573,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2919,
+      "atoms": 32,
+      "basis_frobenius_norms": [
+        0.23570226039551587,
+        0.0,
+        0.238953479640073,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.734723475976807e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2927,
+      "atoms": 33,
+      "basis_frobenius_norms": [
+        0.21516574145596767,
+        0.0,
+        0.3621779114001472,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 2968,
+      "atoms": 30,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.2576005137637696,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 1,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 3196,
+      "atoms": 39,
+      "basis_frobenius_norms": [
+        0.21516574145596767,
+        0.0,
+        0.3286710990610898,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 3221,
+      "atoms": 39,
+      "basis_frobenius_norms": [
+        0.21516574145596767,
+        0.0,
+        0.3286710990610898,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 3265,
+      "atoms": 31,
+      "basis_frobenius_norms": [
+        0.23570226039551587,
+        0.0,
+        0.4157397096415491,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 3317,
+      "atoms": 35,
+      "basis_frobenius_norms": [
+        0.33333333333333337,
+        0.0,
+        0.4157397096415491,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 3394,
+      "atoms": 30,
+      "basis_frobenius_norms": [
+        0.21516574145596765,
+        0.2041241452319315,
+        0.29917582261858355,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 3,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 3395,
+      "atoms": 30,
+      "basis_frobenius_norms": [
+        0.21516574145596765,
+        0.2041241452319315,
+        0.29917582261858355,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 3,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 3492,
+      "atoms": 32,
+      "basis_frobenius_norms": [
+        0.21516574145596765,
+        0.0,
+        0.31914236925211276,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL234_Ki",
+      "row": 3509,
+      "atoms": 31,
+      "basis_frobenius_norms": [
+        0.21516574145596767,
+        0.0,
+        0.36004114991154784,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 278,
+      "atoms": 25,
+      "basis_frobenius_norms": [
+        0.2721655269759088,
+        0.0,
+        0.3513641844631534,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 289,
+      "atoms": 19,
+      "basis_frobenius_norms": [
+        0.2721655269759088,
+        0.0,
+        0.31426968052735454,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 516,
+      "atoms": 33,
+      "basis_frobenius_norms": [
+        0.4330127018922194,
+        0.0,
+        0.45643546458763845,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.3877787807814457e-17
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 553,
+      "atoms": 32,
+      "basis_frobenius_norms": [
+        0.43033148291193535,
+        0.0,
+        0.45643546458763845,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 686,
+      "atoms": 33,
+      "basis_frobenius_norms": [
+        0.44095855184409855,
+        0.0,
+        0.4157397096415491,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 726,
+      "atoms": 30,
+      "basis_frobenius_norms": [
+        0.47140452079103184,
+        0.0,
+        0.45643546458763845,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 731,
+      "atoms": 34,
+      "basis_frobenius_norms": [
+        0.43033148291193535,
+        0.0,
+        0.372677996249965,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 802,
+      "atoms": 35,
+      "basis_frobenius_norms": [
+        0.42081270576508667,
+        0.0,
+        0.45643546458763845,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.3877787807814457e-17
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 849,
+      "atoms": 26,
+      "basis_frobenius_norms": [
+        0.30429030972509236,
+        0.0,
+        0.48907824615719475,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 883,
+      "atoms": 32,
+      "basis_frobenius_norms": [
+        0.21516574145596767,
+        0.0,
+        0.4356774205932812,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 898,
+      "atoms": 26,
+      "basis_frobenius_norms": [
+        0.30429030972509236,
+        0.0,
+        0.48907824615719475,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 955,
+      "atoms": 34,
+      "basis_frobenius_norms": [
+        0.41387956738198173,
+        0.0,
+        0.33333333333333337,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 966,
+      "atoms": 30,
+      "basis_frobenius_norms": [
+        0.29658550700086983,
+        0.0,
+        0.3118047822311618,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.734723475976807e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1012,
+      "atoms": 31,
+      "basis_frobenius_norms": [
+        0.40397332145136083,
+        0.0,
+        0.3402069087198859,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1037,
+      "atoms": 32,
+      "basis_frobenius_norms": [
+        0.40397332145136083,
+        0.0,
+        0.2965855070008698,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1256,
+      "atoms": 36,
+      "basis_frobenius_norms": [
+        0.36004114991154784,
+        0.0,
+        0.3957724124659725,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1266,
+      "atoms": 36,
+      "basis_frobenius_norms": [
+        0.36004114991154784,
+        0.0,
+        0.3957724124659725,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1321,
+      "atoms": 36,
+      "basis_frobenius_norms": [
+        0.21516574145596765,
+        0.0,
+        0.4157397096415491,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 1.0408340855860843e-17
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1326,
+      "atoms": 34,
+      "basis_frobenius_norms": [
+        0.21516574145596765,
+        0.0,
+        0.4157397096415491,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1440,
+      "atoms": 32,
+      "basis_frobenius_norms": [
+        0.34694433324435553,
+        0.0,
+        0.4356774205932812,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1473,
+      "atoms": 35,
+      "basis_frobenius_norms": [
+        0.288675134594813,
+        0.0,
+        0.43567742059328124,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1474,
+      "atoms": 35,
+      "basis_frobenius_norms": [
+        0.19245008972987535,
+        0.0,
+        0.522635770061855,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1691,
+      "atoms": 45,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.4240093756242709,
+        0.0,
+        0.0,
+        0.288675134594813,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1692,
+      "atoms": 44,
+      "basis_frobenius_norms": [
+        0.0,
+        0.0,
+        0.4240093756242709,
+        0.0,
+        0.0,
+        0.288675134594813,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1829,
+      "atoms": 41,
+      "basis_frobenius_norms": [
+        0.372677996249965,
+        0.0,
+        0.5211573066470478,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 1833,
+      "atoms": 38,
+      "basis_frobenius_norms": [
+        0.30429030972509236,
+        0.0,
+        0.5211573066470478,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 2439,
+      "atoms": 35,
+      "basis_frobenius_norms": [
+        0.31914236925211276,
+        0.0,
+        0.42127085800286396,
+        0.0,
+        0.0,
+        0.21516574145596767,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 3,
+      "max_polynomial_inner_product": 1.0408340855860843e-17
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 2440,
+      "atoms": 37,
+      "basis_frobenius_norms": [
+        0.31914236925211276,
+        0.0,
+        0.421270858002864,
+        0.0,
+        0.0,
+        0.21516574145596767,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 3,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 2709,
+      "atoms": 59,
+      "basis_frobenius_norms": [
+        0.5833333333333335,
+        0.0,
+        0.49065338146265813,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 2757,
+      "atoms": 33,
+      "basis_frobenius_norms": [
+        0.36004114991154784,
+        0.0,
+        0.34020690871988585,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 0.0
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 2758,
+      "atoms": 33,
+      "basis_frobenius_norms": [
+        0.36004114991154784,
+        0.0,
+        0.34020690871988585,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 6.938893903907228e-18
+    },
+    {
+      "dataset": "CHEMBL244_Ki",
+      "row": 2962,
+      "atoms": 59,
+      "basis_frobenius_norms": [
+        0.5833333333333335,
+        0.0,
+        0.49065338146265813,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonzero_bases": 2,
+      "max_polynomial_inner_product": 3.469446951953614e-18
+    }
+  ],
+  "sampled_molecules": 64,
+  "molecules_with_nonzero_basis": 64,
+  "structural_source_sha256": "c4b7cee56eafcc4e5636204815321b3e1c1fa3252f269bde1bf7f978f235cbe7",
+  "tool_sha256": "ed19242ec2658f5cddd561b3cc120328e57872fbe10e39746819b380732dbc60",
+  "node_permutation_checks_passed": true,
+  "kekule_flag_checks_passed": true,
+  "training_runs": 0,
+  "label_columns_read": [],
+  "test_evaluated": false,
+  "limit": "operator feasibility on a fixed train-only structural sample, not expressivity of the full nonlinear GNN or efficacy"
+}

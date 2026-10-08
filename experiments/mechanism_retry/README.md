@@ -2,7 +2,7 @@
 
 日期：2026-10-07。用户确认两个候选分别重试，组合仅作消融。
 
-**当前执行入口（2026-10-08）：[worktree.md顶部活动计划](worktree.md)。** M60固定full/self多seed确认12/12fit已完成；234通过、244未通过，整体No-Go，停止本轮架构方向。没有待执行训练，不自动触发下方历史队列；当前没有新的最终有效模型。
+**当前执行入口（2026-10-08）：[worktree.md顶部活动计划](worktree.md)。** M60固定full/self多seed确认12/12fit已完成，旧架构搜索停止。用户要求自主提出主方法后，M61已提出[LongPoly键顺序响应假设及推导](method_hypothesis_20261008.md)，完成120参数原型和零optimizer预检，尚未训练/证实收益或新颖性。无待执行旧训练队列，当前仍没有最终有效模型。
 
 M60：[完整多seed结果](full_self_results_20261008.md)，两个任务×三个seed×full/self，12个checkpoint独立重放通过。self在234均值Overall/Cliff改善2.32%/2.36%，2/3seed同时改善；244均值恶化5.47%/6.37%，仅1/3seed同时改善。按[预登记协议](full_self_execution_20261008.md)停止本轮架构搜索，不调整门槛或添加模块补救；[老师汇报简报](stage_brief_20261008.md)已更新。保留局部阳性，不声称所有替换或Cross-Attention普遍无效。
 
