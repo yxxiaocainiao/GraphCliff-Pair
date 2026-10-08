@@ -1,0 +1,67 @@
+{
+  "milestone": "M78",
+  "task": "CHEMBL234_Ki",
+  "point_model_seed": 42,
+  "risk_seeds": [
+    43,
+    44
+  ],
+  "authorization": "User continue after explicit M77 next step of six risk RF fits on cached features",
+  "base": "artifacts/reference_marginalization_pilot_20261008",
+  "output": "artifacts/reference_marginalization_seeds_20261008",
+  "risk_rf": {
+    "n_estimators": 200,
+    "max_features": "sqrt",
+    "min_samples_leaf": 5,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "arms": [
+    "H0-full",
+    "H0-mean",
+    "Hd-full",
+    "Hd-mean",
+    "Hc-full",
+    "Hc-mean"
+  ],
+  "coverage_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "primary_controls": [
+    "H0-full",
+    "Hc-full"
+  ],
+  "candidate": "Hc-mean",
+  "input_sha256": {
+    "artifacts/reference_marginalization_pilot_20261008/inputs.json": "c07fd2b557002455a55b000fb7b785619f004c8aac5747bc4c2b63753aa5a4b5",
+    "artifacts/reference_marginalization_pilot_20261008/state.json": "0e931d1e5f7f81e90d5764722cb55ed464c68cb5ea182c95fff490e8abdec7b0",
+    "artifacts/reference_marginalization_pilot_20261008/results.json": "4df9c4f427afd8130f96e45557ba55231bab63e590821a6ad99c7a9e19990ba1",
+    "artifacts/reference_marginalization_pilot_20261008/evaluation_truth.csv": "a683734bc3f8e92fc9f343ffd43a7c4f360a4e7b60a623f3cbc5fd6ebbb0deae",
+    "artifacts/reference_marginalization_pilot_20261008/source.csv": "dd6ef9e80e7e98abd8a63fa79fd29b590646ab47689d723d6682de1fc91540dd",
+    "artifacts/reference_marginalization_pilot_20261008/augmented.csv": "b5f474f877593dd383e25c47585d05db9d411b2ae501ac97aef73e1244cf9e0d",
+    "artifacts/reference_marginalization_pilot_20261008/targets.csv": "5aa7a7f758dcef45bc9e8eb780d8140c74c269d3e9a1c753709a6df1e5ea82be",
+    "artifacts/reference_marginalization_pilot_20261008/absolute_error.csv": "27a857d201b29aaac5f6ae53e3857f2bbfc0426afb0add6533737565099445ee",
+    "artifacts/reference_marginalization_pilot_20261008/identities.csv": "a376d350590ed2df16d24f6cef3ae1738e5b4937cd18428c8ce81874c1845622",
+    "experiments/reliability_base/run_reference_marginalization.py": "432a90b08d0dd63028b11fe7c6198042cbf0492c1ac9a7d46bc82a9d05b9da26",
+    "docs/research/reference_marginalization_pilot_20261008/protocol.json": "14955d1cced713f1d9734bad8338d8ae91fca911f7f62bc41cb91c20061b7f13",
+    "docs/research/reference_marginalization_pilot_20261008/verification.json": "37e84be4f493088954fbc4b45a38cf27e4f7b02fac9ffc47ef92ada722c6a210"
+  },
+  "budgets": {
+    "fit_predict_seconds": 600,
+    "evaluation_seconds": 300,
+    "whole_seconds": 900,
+    "risk_fits": 6,
+    "risk_predict_calls": 6,
+    "risk_prediction_rows": 14040,
+    "new_features": 0
+  },
+  "evaluation": "All twelve arm scores locked before parsing existing private M77 truth copy; no original CSV truth parsing",
+  "continuation": "Both new risk seeds individually have lower candidate mean-six-RMSE than both primary controls; no automatic expansion",
+  "exploratory": true,
+  "failure": "No automatic retry, tuning, or replacement seed"
+}

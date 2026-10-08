@@ -1,5 +1,9 @@
 # GraphCliff-Pair 项目计划
 
+## M78执行计划 — 2026-10-08
+
+用户“继续”承接M77明确建议：固定Chemprop seed42及已核全部特征，仅风险RF seeds43/44，各H0/Hd/Hc三个fit、六臂，总6fit/6predict/14040评分行。P0冻结M77私有准备输入与旧脚本hash/协议，新增薄调用适配复用M77 fit_score/evaluate，旧脚本和特征保持；P0核seed只改risk_rf.random_state与拒绝覆盖保护后先commit/push；P1一次完成两个种子全部分数锁，再读取既有私有评价副本，不解析原CSV新真值；P0独立曲线/交换/100%一致核验及完整三风险seed汇总后commit/push。必要保留条件为两新seed各自同时优于H0-full与Hc-full的六比例均值，不调比例/折/权重。fit评分600秒、评价300秒、整体900秒硬上限，失败中断留状态不补跑。0Chemprop/辅助RF/模型load/新真实特征/指纹/校准/官方test；不称Chemprop三seed或独立确认，不扩大任务。
+
 ## M77当前状态 — 2026-10-08
 
 [唯一六臂先导已完成并核验](docs/research/reference_marginalization_pilot_20261008/report.md)：234/seed42，3风险RF fit、7020评分行，0新增Chemprop/辅助RF。Hc-mean六比例平均RMSE1.084005，原RF7为1.121804（降低3.369%），同模型Hc-full为1.094429（降低0.952%）；通过冻结两个主要比较，80%对Hc-full仍退化。保留待验证候选，不确认原创或最终核心。36曲线点/36交换行/任意单贡献方向/固定G/旧R与原RF7重放通过，逐分子忽略。下一步建议仅补风险RF seed43/44共6fit复用特征/点预测，未执行或获准，不扩任务/点模型/参数。下方M77执行计划及M76均为历史。
