@@ -1,0 +1,29 @@
+{
+  "milestone": "M69",
+  "task": "CHEMBL234_Ki",
+  "seed": 42,
+  "features": [
+    "nbr_disp",
+    "sali_mean"
+  ],
+  "coverage_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "sensitivity": "absolute fold0-minus-full feature difference",
+  "primary_endpoint": "mean six signed MSE exchange contributions: IW-COND7 minus RF7",
+  "secondary_endpoint": "fixed point squared error",
+  "statistics": "four Spearman correlations; average ranks; constants undefined; all 585; no groups/threshold/p-values",
+  "exploratory": true,
+  "training_authorized": false,
+  "input_sha256": {
+    "docs/research/reference_context_check_20261008/verification.json": "39f82204835f67c594207c7be4aea45dc4741bd49c8ba631f6aa8ee53bafc9e7",
+    "docs/research/conditional_pilot_run_20261008/verification.json": "3a4664afba737ba641e1f4da547e6b873fb85bbf3951c4b085dd82201ecc079e",
+    "experiments/reliability_base/run_conditional_pilot.py": "1ef7a35ea3dc9f1edc4fdc98b0026a17cc6c8819b73163d55b3b8072e125852f",
+    "docs/research/roughness_sensitivity_link_20261008/check.py": "acbe01ceea3b6e6de94253be849f4c19a65953dc6cbd1e0b20891e13b21c650d"
+  }
+}

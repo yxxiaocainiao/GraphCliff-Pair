@@ -1,0 +1,61 @@
+{
+  "milestone": "M69",
+  "status": "passed",
+  "correlations": [
+    {
+      "feature": "nbr_disp",
+      "endpoint": "signed_exchange_contribution",
+      "rows": 585,
+      "spearman": -0.008380094673314464
+    },
+    {
+      "feature": "nbr_disp",
+      "endpoint": "point_squared_error",
+      "rows": 585,
+      "spearman": 0.048387402341658635
+    },
+    {
+      "feature": "sali_mean",
+      "endpoint": "signed_exchange_contribution",
+      "rows": 585,
+      "spearman": -0.06807308863554978
+    },
+    {
+      "feature": "sali_mean",
+      "endpoint": "point_squared_error",
+      "rows": 585,
+      "spearman": -0.023755304779633175
+    }
+  ],
+  "summed_contribution": 0.029915253594049288,
+  "mean_six_mse_difference": 0.02991525359404945,
+  "six_mse_differences": [
+    0.0429004958942909,
+    0.02649151536489258,
+    0.036697732489016754,
+    0.027445027845898196,
+    0.045956749970198274,
+    0.0
+  ],
+  "zero_contribution_rows": 391,
+  "positive_contribution_rows": 96,
+  "negative_contribution_rows": 98,
+  "target_rows_read": 585,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "model_loads": 0,
+  "real_feature_recomputations": 0,
+  "official_test_record_reads": 0,
+  "calibration_record_reads": 0,
+  "threshold_searches": 0,
+  "checks": {
+    "curves_replayed": true,
+    "contribution_identity": true,
+    "full_acceptance_zero": true,
+    "score_config_hashes": true,
+    "query_order": true
+  },
+  "protocol_sha256": "bcc02c952781745778dd1ee971fa5090e07f09021515429f7d2aff7502d9cd61",
+  "runner_sha256": "acbe01ceea3b6e6de94253be849f4c19a65953dc6cbd1e0b20891e13b21c650d",
+  "private_pairs_sha256": "d397add6263efc21f4198ea661522630b90d4c97a4f353c6e3fbff79e0896ab5"
+}

@@ -629,3 +629,21 @@ full点预测字节复制锁定、mol_size逐值不变；source935训练身份/p
 事实支持这次合法参考上下文替换会改变粗糙度值和排序，但参考数量/组成/辅助RF训练数据捆绑；有输入变化不代表误差条件分布变化或密度迁移假设被证伪，不能断言M66根因/新方法收益/化学因果。没有读取查询真值或计算新RMSE，没有可部署识别器。M67配对缺口已补，M66条件候选停止不变，不因敏感性自动追加稳定性模块或扩训。下一问题仅是敏感性与已冻结不利接受交换是否有关，须先冻结无分组阈值/新模型的只读检验，本轮未执行。
 
 新增experiments/reliability_base/check_reference_context.py及docs/research/reference_context_check_20261008/report.md、verification.json；私有fixture/特征/锁定预测/日志在artifacts/reference_context_check_20261008，未公开逐分子。脚本run一次及内置audit通过；另进程check使用同一audit重读缓存，0额外fit，不冒称独立算法复现。另用NumPy数组公式/平均秩Pearson独立复算六列差值分位数与Spearman一致、核dummy query y及原来源hash，0特征重算/fit。更新四日志与README，旧模型代码/训练入口/作者源码/历史报告协议/原项目/PDF及另一worktree不改。核验输出拒绝/来源/hash/链接/暂存范围后commit/push可靠性分支，无活跃训练。
+
+
+## M69执行前 — 2026-10-08：粗糙度敏感性与冻结损失的只读连续关联
+
+用户“继续迭代优化”接续M68最后问题，先检验合法敏感性是否对应不利接受交换，不自动加模块。P0先冻结只读协议再打开评价y：只用M68的两列绝对变化S_j=|R_fold0−R_full|，不合成指标、不加分组阈值。主终点为各S与M66候选对RF7六覆盖平均的逐查询带符号MSE交换贡献c_i的Spearman（正相关才在描述上符合“更敏感→更不利交换”方向）；次终点为S与固定点预测平方误差的Spearman，全部585人平均秩处理并列，常数返回未定义。共2×2=4项全公开，不做p值或选最好结果。c_i=e_i²/6×sum_g[(I_COND−I_RF7)/ceil(g×585)]，求和必须等于六比例MSE差均值，不将其冒称主指标六点RMSE差；100%贡献0。score/config/source/hash与身份先核，排序沿risk/canonical/source_row和ceil；评价标签仅读冻结585行y，calibration/官方test仍隔离。已用于开发且事后定义，只作探索关联，c/e²含真值不可部署，敏感性本身合法不等于泛化识别规则。0新fit/模型load/predict/特征重算/阈值搜索；新私有目录拒绝覆盖，失败留记录不静默补跑。核验恒等式、并列、聚合与公开边界后更新四日志/README并commit/push可靠性分支，不恢复IW-COND7。
+
+
+## M69完成 — 2026-10-08：敏感性未给出正向损失关联，不构造门控
+
+先写protocol与四日志，再只读M66/M68锁定缓存与冻结evaluation585的y；0新fit/模型load/predict/真实特征重算/阈值搜索，calibration/官方test记录仍0。一次主分析完成、0失败/中断/补跑。S为既定nbr_disp/sali_mean的|fold0−full|，c为候选对RF7六比例带符号逐查询MSE交换贡献均值；全585人平均秩，常数未定义，4项全报告，无分组/选择最好特征/换方向。
+
+主Spearman(S,c)：nbr_disp −0.008380，sali_mean −0.068073；次Spearman(S,error²)：+0.048387/−0.023755。均未给出“越敏感→越不利交换”的正向单调证据；没有显著性检验或新数值否决阈值，不证明所有非线性/局部稳定性关系不存在。c求和+0.0299152535940493与六比例MSE差均值一致，不是主指标RMSE差；96正/98负/391零，记录并列与跨比例抵消局限，不对这些集合另选规则。
+
+核12个原曲线点、各比例交换恒等式与100%贡献0、来源/score/config/特征/预测hash与身份顺序均通过；合成平均秩/常数检查通过。另进程只读private pairs以round-trip浮点、平均秩Pearson独立复算4相关并核M66公开交换表求和，0fit且无标签重读。S合法但c/error²含真值不可部署，已开发分区和事后定义只作探索；没有泛化识别器或新算法效果。
+
+研究决定结束当前“单折敏感性→拒答门控”延伸，不做source配对风险训练/阈值调优、不用负号改门控方向；M66条件加权仍停止，底座与全部负向证据保留，可信最终核心缺失。下一轮需重新定位一个有操作差异和部署信息依据的小问题，若无候选就报告方法缺口，不无限给此假设追加模块。当前无新训练队列。
+
+新增docs/research/roughness_sensitivity_link_20261008/protocol.json、check.py、report.md、verification.json，私有pairs/state留artifacts/roughness_sensitivity_link_20261008；仅追加四日志和README状态。旧M66/M68报告缓存/模型训练代码/原项目/PDF与另一worktree保持。核验hash/公式/链接/拒绝覆盖与公开暂存范围后commit/push可靠性分支。
